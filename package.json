@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "minimalist-ad-tool",
   "version": "0.1.0",
   "private": true,
@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "eval": "node eval/run.js",`n    "test": "node --test tests/extract.test.js"
+    "eval": "node eval/run.js",
+    "test": "node --test \"tests/*.test.js\""
   },
   "engines": {
     "node": ">=20"
@@ -15,4 +16,3 @@
     "@anthropic-ai/sdk": "^0.131.0"
   }
 }
-
