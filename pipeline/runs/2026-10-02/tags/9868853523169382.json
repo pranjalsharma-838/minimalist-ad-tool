@@ -1,0 +1,24 @@
+{
+  "ad_type": "ingredient_explainer",
+  "hook_angle": "one-product-does-it-all promise with new-launch flag",
+  "headline_text": "ONE SERUM for Bright & Smooth Skin",
+  "visual_layout": "product hero on a pile of strawberries against pink gradient, with three ingredient-to-benefit tag cards and a 'NEW' bubble",
+  "claim_type": "ingredient mechanism (ingredient -> benefit pairs)",
+  "proof_device": "none on image (copy lists 'Clinically Proven' / 'Dermatologically Tested' without detail)",
+  "cta_style": "shop now",
+  "color_palette": "hot pink, strawberry red, white; juicy, playful, youthful",
+  "persona": "product only",
+  "text_density": "medium",
+  "risk_notes": "copy uses generic 'Clinically Proven' badge with no study; otherwise structure is reusable",
+  "why_it_works": "Each tag card pairs one named ingredient with one plain benefit, so the formula is understood in a glance. The fruit hero makes the product memorable and signals a sensory, fun texture.",
+  "advertised_product": {
+    "name": "Dot & Key Strawberry Bright 10% Niacinamide Face Serum",
+    "actives": [
+      {"name": "Niacinamide", "pct": "10%"},
+      {"name": "Vitamin B12", "pct": ""},
+      {"name": "Hyaluronic", "pct": ""}
+    ],
+    "format": "serum",
+    "concerns": ["dullness", "dark spots", "dehydration"]
+  }
+}

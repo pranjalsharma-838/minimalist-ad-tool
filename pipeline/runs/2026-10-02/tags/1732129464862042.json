@@ -1,0 +1,25 @@
+{
+  "ad_type": "routine_regimen",
+  "hook_angle": "ranked duo callout with a single problem (tan)",
+  "headline_text": "Your NO.1 DAILY DUO to fade face & body tan",
+  "visual_layout": "product in hand: two wet hands holding face wash and body wash under a running shower against lilac tiles, bold headline above",
+  "claim_type": "routine benefit (two-step tan fading)",
+  "proof_device": "none ('Dermatologically Tested' on pack only)",
+  "cta_style": "shop now",
+  "color_palette": "lilac, white, bright orange; fresh, energetic, clean",
+  "persona": "hands holding products (no face)",
+  "text_density": "low",
+  "risk_notes": "relies on an unsourced 'NO.1' ranking; 'fade tan' is a result claim; the 4% on the body wash pack sits above a multi-ingredient line, so which active it belongs to is ambiguous",
+  "why_it_works": "Shows the product in the exact moment of use (shower), so the routine is obvious without explanation. Bundling face and body under one problem raises basket size while keeping the message single-minded.",
+  "advertised_product": {
+    "name": "Chemist at Play Daily Exfoliating Body Wash",
+    "actives": [
+      {"name": "Lactic Acid", "pct": "4%"},
+      {"name": "Salicylic Acid", "pct": ""},
+      {"name": "Vitamin E", "pct": ""},
+      {"name": "Zemea", "pct": ""}
+    ],
+    "format": "body",
+    "concerns": ["tan", "dullness", "rough texture"]
+  }
+}

@@ -419,7 +419,7 @@
           "pct": "1%"
         }
       ],
-      "format": "moisturizer",
+      "format": "eye",
       "product_type": "Skin Care",
       "concerns": [
         "dark circles",
@@ -570,7 +570,7 @@
           "pct": "7%"
         }
       ],
-      "format": "cleanser",
+      "format": "lip",
       "product_type": "Skin Care",
       "concerns": [
         "dullness",
@@ -720,7 +720,7 @@
           "pct": "30"
         }
       ],
-      "format": "sunscreen",
+      "format": "lip",
       "product_type": "Skin Care",
       "concerns": [
         "chapped lips",

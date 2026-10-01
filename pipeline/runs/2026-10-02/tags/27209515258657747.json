@@ -1,0 +1,22 @@
+{
+  "ad_type": "offer_promo",
+  "hook_angle": "offer-first with a playful benefit question",
+  "headline_text": "CLEARANCE SALE",
+  "visual_layout": "sale banner: open jelly-cream jar spilling over a second jar, struck-through price vs sale price tags, starburst countdown badge, diagonal Shop Now strip",
+  "claim_type": "price / offer with time urgency",
+  "proof_device": "none",
+  "cta_style": "shop now (on-image strip) with countdown urgency",
+  "color_palette": "hot pink, crimson red, black, white; loud, urgent, juicy",
+  "persona": "product only",
+  "text_density": "medium",
+  "risk_notes": "relies on a countdown ('Sale ends in 4 hours') that must be genuine; 'young, bouncy skin' implies an anti-ageing result",
+  "why_it_works": "Price anchor (struck-through old price beside a big new one) makes the saving instant, and the countdown adds urgency. The glossy spilling gel shows texture so the deal still sells the product.",
+  "advertised_product": {
+    "name": "Conscious Chemist Lift Me Up Collagen Jelly Cream",
+    "actives": [
+      {"name": "Multi-Peptide", "pct": ""}
+    ],
+    "format": "moisturizer",
+    "concerns": ["firmness", "hydration", "ageing"]
+  }
+}

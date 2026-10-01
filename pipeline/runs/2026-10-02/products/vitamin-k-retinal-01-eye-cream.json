@@ -1,0 +1,177 @@
+{
+  "url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+  "title": "Vitamin K + Retinal 1% Eye Cream",
+  "actives": [
+    {
+      "name": "Vitamin K + Retinal",
+      "pct": "1%"
+    }
+  ],
+  "price": 449,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/KRetinalNew.png?v=1721632054",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_K_Eye_02.png?v=1726489863",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_K_Eye_03.png?v=1726489863",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_K_Eye_04.png?v=1726489863",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_K_Eye_06.png?v=1726489861"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Vitamin K + Retinal 1% Eye Cream"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Reduces dark circles, puffiness & fine lines"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A lightweight under-eye cream swiftly combats dark circles, puffiness, and fine lines with a quick-absorbing, non-tacky formula. Vitamin K diminishes dark circles, Caffeine reduces puffiness, and Retinal enhances skin texture. Synergistic Peptides tackle dark circles and puffiness, while Zerumbone addresses hyperpigmentation. Hyaluronic Acid and Aquaporin boosters ensure comprehensive hydration."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Vitamin K, a potent ally in tackling dark circles, effectively combats under-eye discoloration and fortifies fragile blood vessels, contributing to a reduction in dark circles"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Retinal, positioned as the intermediate stage in the conversion from retinol to retinoic acid, showcases remarkable anti-aging attributes. These include the reduction of fine lines & dark circles, all while being significantly better tolerated than Retinoic acid."
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "The trio of Dipeptide-2, Palmitoyl Tetrapeptide-7, and Hesperidin Methyl Chalcone collaborates to reduce capillary permeability, boost lymphatic flow, and mitigate inflammation, resulting in a smoother under-eye area. Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7, working in tandem, enhance under-eye firmness and contribute to an even skin tone, rejuvenating the under-eye appearance"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "To comprehensively address dark circles, our formulation incorporates Chrysin, N-hydroxysuccinimide, and Zerumbone, targeting and eliminating the root causes of these under-eye concerns. This multi-pronged approach leaves your under-eye area feeling refreshed and visibly brighter."
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "All our ingredients are sourced from leading global suppliers. Our high purity grade Vitamin K is sourced from Mckinely, USA."
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: All skin types"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Dark Circles, Fine lines & Eye Puffiness"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F12",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Based on in-vitro studies conducted by suppliers. (Actual results may vary)"
+    },
+    {
+      "id": "F13",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "19% reduction in Under Eye Dark Circle after 8 Weeks"
+    },
+    {
+      "id": "F14",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "40mm3 reduction in eyebags volume in 8 weeks"
+    },
+    {
+      "id": "F15",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "34% increase in skin hydration in 6 hours compared to placebo"
+    },
+    {
+      "id": "F16",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F17",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "After cleansing, apply a small amount onto finger and gently pat around the eye contours."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Everyday"
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Warning: For external use only. Avoid applying very close to the eyes. Patch test recommended before use. Store in cool, dry place."
+    },
+    {
+      "id": "F20",
+      "section": "Vitamin K",
+      "kind": "ingredient_note",
+      "text": "Vitamin K strengthens blood vessel walls, potentially enhancing under-eye microcirculation. This can help in reducing under-eye discoloration and minimizing dark circles."
+    },
+    {
+      "id": "F21",
+      "section": "Retinal",
+      "kind": "ingredient_note",
+      "text": "As an intermediary between retinoic acid and retinol, Retinal activates in one step. It's an anti-aging powerhouse, reducing wrinkles and enhancing skin texture."
+    },
+    {
+      "id": "F22",
+      "section": "Eyeliss",
+      "kind": "ingredient_note",
+      "text": "Combat under-eye bags with Eyeliss, a unique blend of Hesperidin derivative, Dipeptide-2, and Palmitoyl Tetrapeptide-7. This powerful trio works to reduce capillary vessel permeability, improve lymphatic circulation, and enhance skin firmness and elasticity for a youthful look."
+    },
+    {
+      "id": "F23",
+      "section": "Haloxyl",
+      "kind": "ingredient_note",
+      "text": "Experience enhanced firmness and tone in your eye area with the synergistic blend of Palmitoyl Tripeptide-1 and Palmitoyl Tetrapeptide-7 matrikines. Chrysin & N-hydroxysuccinimide target and eliminate the root causes of dark circles and puffiness, clearing away bilirubin and soluble iron for a rejuvenated appearance."
+    },
+    {
+      "id": "F24",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Caprylic/Capric Triglyceride, Niacinamide, Propanediol, Glycerin, Caffeine, Dimethicone, Brassica Glycerides, Diisopropyl Sebacate, Maltodextrin, Glyceryl Glucoside, Butylene Glycol, Glyceryl Stearate SE, Phytonadione Epoxide, Prunus Amygdalus Dulcis (Sweet Almond) Oil, Sodium Hyaluronate, Caprylyl Methicone, Behenyl Alcohol, Pentylene Glycol, PEG-12 Dimethicone/PPG-20 Crosspolymer, Hydrolyzed Sodium Hyaluronate, Carbomer, Phenoxyethanol, Hydroxyethylcellulose, Polyacrylate Crosspolymer-6, Xanthan Gum, Hesperidin Methyl Chalcone, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate, Sodium Hydroxide, Retinal, N-Hydroxysuccinimide, Dipeptide-2, Palmitoyl Tetrapeptide-7, Zerumbone, Steareth-20, Chrysin, Palmitoyl Tripeptide-1"
+    },
+    {
+      "id": "F25",
+      "section": "Can this product be used for men & women both?",
+      "kind": "faq",
+      "text": "Yes. This product is completely suitable for both men & women and the ingredients used are proven to reduce dark circles and puffiness."
+    },
+    {
+      "id": "F26",
+      "section": "What is the recommended age and who can use this product?",
+      "kind": "faq",
+      "text": "Except for pregnant or breastfeeding women and those under 18 years of age, anyone can use this eye cream."
+    }
+  ],
+  "source": "page"
+}

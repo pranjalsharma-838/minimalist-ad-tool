@@ -1,0 +1,22 @@
+{
+  "ad_type": "comparison",
+  "hook_angle": "category face-off (European v/s Korean sunscreens) resolved by a 'best of both' claim",
+  "headline_text": "INDIA'S 1ST BEST OF BOTH WORLDS",
+  "visual_layout": "two-column v/s header over a tilted product tube on a grey plinth against graph-paper background, with a black banner strip",
+  "claim_type": "category-first positioning (combines two sunscreen styles' benefits)",
+  "proof_device": "none on image beyond pack text ('Invivo & Invitro Tested')",
+  "cta_style": "shop now",
+  "color_palette": "white, black, mustard yellow, light grey; clean, editorial, confident",
+  "persona": "product only",
+  "text_density": "medium",
+  "risk_notes": "relies on an unsourced 'India's 1st' first-to-market claim; contrasts against whole competitor categories (European/Korean sunscreens) which needs care to stay fair",
+  "why_it_works": "Frames a familiar trade-off the shopper already knows (long-lasting vs lightweight) and positions one product as ending it, so the benefit lands in two words. The v/s header gives an instant read before the product is even noticed.",
+  "advertised_product": {
+    "name": "de construct Lightweight Gel Sunscreen Broad Spectrum Protection",
+    "actives": [
+      {"name": "SPF", "pct": "SPF 50 PA++++"}
+    ],
+    "format": "sunscreen",
+    "concerns": ["sun protection", "greasiness", "sweat", "blue light"]
+  }
+}

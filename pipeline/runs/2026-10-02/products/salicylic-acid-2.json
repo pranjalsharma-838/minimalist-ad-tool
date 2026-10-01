@@ -1,0 +1,180 @@
+{
+  "url": "https://beminimalist.co/products/salicylic-acid-2",
+  "title": "Salicylic Acid 2% Face Serum",
+  "actives": [
+    {
+      "name": "Salicylic Acid",
+      "pct": "2%"
+    }
+  ],
+  "price": 237,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/products/SalicylicAcid2_1200-1-min.png?v=1646458899",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Serum_2.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Serum_3.png?v=1724763871",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Serum_4.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Serum_5.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Serum_6.png?v=1724763870",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Sali_Serum_ListingImage.png?v=1760691517",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Variant_Listing_10ml.jpg?v=1760691773"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Salicylic Acid 2% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Reduces Acne, Blackheads & Excessive Oil"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A daily gentle exfoliant with 2% salicylic acid that wards off acne, blackheads and keeps your oils in check for that flawless matt looking skin."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Our high-purity salicylic acid easily penetrates the pore lining and scoops out the dirt, debris, and sebum, so skin looks clear and baby-soft"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Oligopeptide-10, a bioactive peptide, works synergistically with Salicylic Acid and provides potent anti-microbial activity against p-acne bacteria"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "EGCG (an active compound found in green tea), is a powerful antioxidant and it can modulate several key pathological factors of acne, including hyperseborrhea, inflammation, and P. acnes overgrowth"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with White Horehound Extract which has anti-microbial & anti-inflammatory properties and it is clinically proven to reduce number of blackheads by 50% after 28 days of application"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with RonaCare Salicylic Acid Extra Pure from Merck, Germany - a leading supplier of high quality ingredients"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Recommended for Combination/Oily Skin"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Acne, Oily & Blackheads"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F12",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply 2-3 drops after cleansing & toning. Let the serum absorb fully into the skin before moving on to the next step of your routine."
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Start with every alternate day and after 2 weeks of usage, use it everyday."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Salicylic acid (BHA), an age-old remedy, works by dissolving dead skin cells and sebum from inner walls of pores, revealing fresh skin underneath."
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects noticed visible skin clarity in 4 weeks"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "93% subjects saw significant reduction in active acne in 4 weeks"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "97% subjects said skin felt less oily throughout the day after using this serum for 2 weeks"
+    },
+    {
+      "id": "F18",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F19",
+      "section": "Salicylic Acid",
+      "kind": "ingredient_note",
+      "text": "It dissolving dead skin cells and sebum from inner walls of pores (where AHAs cannot reach as they are water soluble). This property allows infected pores to open up and let oxygen in. Overall it helps reduce skin oiliness, large pores, blackheads or whiteheads"
+    },
+    {
+      "id": "F20",
+      "section": "Oligopeptide-10",
+      "kind": "ingredient_note",
+      "text": "Has excellent activity against acne causing bacteria and works wonderfully well when used along with Salicylic Acid."
+    },
+    {
+      "id": "F21",
+      "section": "EGCG",
+      "kind": "ingredient_note",
+      "text": "A potent antioxidant (comes from green tea) that has anti-inflammatory properties. Along with Salicylic Acid, it helps soothe down irritated & inflamed skin"
+    },
+    {
+      "id": "F22",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Methylpropanediol, Propylene Glycol, Dimethyl Isosorbide, Glycolic Acid, Ethoxydiglycol, Salicylic Acid, Glycerin, Sodium Hydroxide, Pentylene Glycol, Marrubium Vulgare Extract, Polylysine, Sodium Hyaluronate, Epigallocatechin Gallatyl Glucoside, Polysorbate 20, Hydroxyethylcellulose, Xanthan Gum, Lecithin, Sclerotium Gum, Pullulan, Phenoxyethanol, Lactic Acid, Oligopeptide-10, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F23",
+      "section": "Is salicylic acid good for acne treatment?",
+      "kind": "faq",
+      "text": "Yes. Not only does it reduce active acne, but Salicylic acid also boosts natural cell turnover and unclogs pores, thus preventing future breakouts and blackheads. It helps in balancing your oil by controlling sebum activity and reducing acne marks and dark spots. Also, research shows that Salicylic Acid has anti-inflammatory properties, making it an ideal solution for relieving inflammation."
+    },
+    {
+      "id": "F24",
+      "section": "Can salicylic acid serum cause purging or breakouts?",
+      "kind": "faq",
+      "text": "Any active ingredient that promotes cell turnover can cause purging in certain people, especially with sensitive or acne-prone skin. It is an entirely natural and normal response to active ingredients. Salicylic acid pushes trapped sebum and oil to the surface, and thus those acnes which were supposed to appear later pop up early. The natural cell-shedding cycle in a healthy young person is 28 days. So, purging usually subsides in 3-4 weeks. It is important to stick with a product during the purging phase. You cannot avoid purging, but there are things you can do to ease it out. The first and most important thing is to take it slow. If you are new to acids, apply 2-3 times a week, and gradually increase your frequency. Avoid prolonged sun exposure and do not touch or pop your acne."
+    },
+    {
+      "id": "F25",
+      "section": "What is the recommended age for using the salicylic acid serum?",
+      "kind": "faq",
+      "text": "Scientifically, it is safe for a younger age, but to avoid overconsumption and any undesirable effects, we recommend it for teens and adults (Above 18 years). People below 18 years should consult their doctor before including this in their routine."
+    },
+    {
+      "id": "F26",
+      "section": "What is the recommended age for using the salicylic acid serum?",
+      "kind": "faq",
+      "text": "Since more research is needed on the impact of topical SA on the features of babies, pregnant, and breastfeeding, women should consult their doctor before including SA in their routine. People with specific skin conditions or health issues shall also consult their doctor before using any direct acid."
+    }
+  ],
+  "source": "page"
+}

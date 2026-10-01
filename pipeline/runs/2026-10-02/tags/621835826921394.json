@@ -1,0 +1,24 @@
+{
+  "ad_type": "testimonial_ugc",
+  "hook_angle": "customer-review headline (superlative for a skin type)",
+  "headline_text": "Best Sunscreen For Dry Skin!",
+  "visual_layout": "review-screenshot overlay: hand holding the tube against blue sky beside a white review card with stars, date and verified name",
+  "claim_type": "review quote",
+  "proof_device": "customer quote with five stars, date and 'Verified' badge",
+  "cta_style": "shop now",
+  "color_palette": "sky blue, teal, white, black text; fresh, airy, trustworthy",
+  "persona": "hand holding product",
+  "text_density": "high",
+  "risk_notes": "relies on a real, verifiable customer review (named, dated); the quote contains a superlative ('Best Sunscreen') and a 'skip moisturizer' usage suggestion",
+  "why_it_works": "A repeat-purchase story ('on my 3rd bottle') is stronger proof than any brand claim, and the review-card format reads like native social proof. Sky backdrop reinforces the sun use-case without extra words.",
+  "advertised_product": {
+    "name": "Dot & Key Blueberry Hydrate Barrier Repair Sunscreen",
+    "actives": [
+      {"name": "SPF", "pct": "SPF 50+ PA++++"},
+      {"name": "Hyaluronic", "pct": ""},
+      {"name": "5 Ceramides", "pct": ""}
+    ],
+    "format": "sunscreen",
+    "concerns": ["sun protection", "dryness", "skin barrier"]
+  }
+}

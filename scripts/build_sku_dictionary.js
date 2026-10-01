@@ -15,14 +15,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const FORMATS = [
   ["hair", /hair|shampoo|scalp|dandruff/i],
   ["body", /body|underarm|roll-on/i],
+  ["eye", /eye/i], // before "cream": "Retinal 1% Eye Cream" was filed as a moisturizer (stage 3 review)
+  ["lip", /lip/i],
   ["sunscreen", /sunscreen|spf\s?\d+\s*$/i],
   ["cleanser", /cleanser|face wash|cleansing|body wash/i],
   ["serum", /serum|face oil|squalane/i],
   ["moisturizer", /moisturi[sz]er|cream|lotion|gel(?!.*cleanser)/i],
   ["toner", /toner|exfoliating liquid|mist|spray/i],
   ["exfoliant", /peel|exfoliat/i],
-  ["lip", /lip/i],
-  ["eye", /eye/i],
 ];
 export const formatOf = (title) => (FORMATS.find(([, re]) => re.test(title)) || ["other"])[0];
 

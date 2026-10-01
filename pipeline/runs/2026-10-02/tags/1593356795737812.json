@@ -1,0 +1,24 @@
+{
+  "ad_type": "product_hero",
+  "hook_angle": "spec-sheet / 'nutrition facts' parody",
+  "headline_text": "Sunscreen Facts",
+  "visual_layout": "nutrition-facts style spec label in a blue outlined box with the tube overlapping it, cream dripping over the tube top, white background",
+  "claim_type": "measured spec stats (SPF value, 0% greasy shine, 100% hydration, 80 mins water resistance)",
+  "proof_device": "none (stats shown without source)",
+  "cta_style": "shop now",
+  "color_palette": "white, royal blue, navy; clean, clinical, precise",
+  "persona": "product only",
+  "text_density": "high",
+  "risk_notes": "relies on unsourced numeric specs (SPF 60.82, 'Hydration Level 100%', 'Greasy shine 0%', 'White Cast: Zero'); SPF 60.82 on the label differs from SPF 50+ on the pack",
+  "why_it_works": "Borrowing the familiar food-label format makes product specs feel factual and scannable. Each line answers a common sunscreen objection (greasy, white cast, sweat-off) in one row.",
+  "advertised_product": {
+    "name": "Re'equil Oil-Free Aquagel Sunscreen",
+    "actives": [
+      {"name": "SPF", "pct": "SPF 50+ PA++++"},
+      {"name": "Hyaluronic Acid", "pct": ""},
+      {"name": "L-Carnosine", "pct": ""}
+    ],
+    "format": "sunscreen",
+    "concerns": ["sun protection", "oiliness", "dehydration", "white cast"]
+  }
+}

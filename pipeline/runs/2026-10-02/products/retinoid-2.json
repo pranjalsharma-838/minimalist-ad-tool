@@ -1,0 +1,173 @@
+{
+  "url": "https://beminimalist.co/products/retinoid-2",
+  "title": "Granactive Retinoid 2% Face Cream",
+  "actives": [
+    {
+      "name": "Granactive Retinoid",
+      "pct": "2%"
+    }
+  ],
+  "price": 629,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/1_c3454d37-fbd5-4972-8e70-65df1c3ec8de.jpg?v=1740461339",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/2_fc666428-dce9-457d-97a9-b2fabc1017e8.jpg?v=1740461340",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/3_d160f33d-0e72-4a87-ab6d-5f98448f5292.jpg?v=1740461340",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/4_2967c895-0f61-4713-8b14-4db6c73ce676.jpg?v=1740461340",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/5_c7d92af4-a90f-4111-a510-70798220d054.jpg?v=1740461340",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/6_20af9d12-ea98-4116-b353-023b11e164db.jpg?v=1740461340",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/7_0be09c7f-1d7f-4fa9-9943-57ef69d7fb1c.jpg?v=1740461340"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Granactive Retinoid 2% Face Cream"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Help Reduce Fine Lines & Wrinkles"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Formulated with new-age, bio-available, non-prescription forms of Vitamin-A. Granactive Retinoid decreases the effects of UV induced skin damage and visibly reduces fine lines & wrinkles."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Specialized Retinoid molecule that results in enhanced cell proliferation, biosynthesis of extracellular proteins and glycans, and improved cellular turnover. Targeting these processes help in reversing signs of aging"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosts cell turnover & stimulates collagen production to erase fine lines and wrinkles, revealing radiant glowy skin"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Contains 17 amino acids along with Hyaluronic Acid to restore the damaged stratum corneum & keep skin hydrated and healthy"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Granactive Retinoid is sourced from Grant Industries, USA - a leading global supplier in skincare"
+    },
+    {
+      "id": "F8",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Uneven tone, Wrinkles & Loss of elasticity"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 19+ years of age"
+    },
+    {
+      "id": "F10",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Granactive Retinoid can directly bind with retinoid receptors without the need to break down into more biologically active forms (hence does not irritate skin), making it a potent anti-aging active even for sensitive skin"
+    },
+    {
+      "id": "F11",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects found reduction of fine lines in 4 weeks"
+    },
+    {
+      "id": "F12",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects observed skin firmness in 8 weeks"
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects said skin felt more even & younger in 8 weeks"
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F15",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on cleansed face after all your serums, and before moisturizer. Use of sunscreen is highly recommended when you are using this product."
+    },
+    {
+      "id": "F16",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Start with 2-3 times per week & increase gradually to everyday."
+    },
+    {
+      "id": "F17",
+      "section": "Granactive Retinoid",
+      "kind": "ingredient_note",
+      "text": "Gentle, yet potent form of Vitamin-A that has proven anti-aging results"
+    },
+    {
+      "id": "F18",
+      "section": "17 Amino Acids",
+      "kind": "ingredient_note",
+      "text": "Combination of essential Amino Acids (the building blocks of proteins) that repair, replenish and hydrate skin"
+    },
+    {
+      "id": "F19",
+      "section": "Hyaluronic Acid",
+      "kind": "ingredient_note",
+      "text": "Addresses skin's hydration needs by holding water inside the skin. As a result, makes skin look healthy and plump"
+    },
+    {
+      "id": "F20",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Dimethyl Isosorbide, Caprylic/Capric Triglyceride, Ethoxydiglycol, Coco-Caprylate/Caprate, Propanediol, Arachidyl Alcohol, Hydroxyp­inacolone Retinoate, Tocopheryl Acetate, Pentylene Glycol, Behenyl Alcohol, Arachidyl Glucoside, Sodium Hyaluronate, Lysine, Histidine, Arginine, Aspartic Acid, Threonine, Serine, Glutamic Acid, Proline, Glycine, Alanine, Valine, Methionine, Isoleucine, Leucine, Tyrosine, Phenylalanine, Lactic Acid, Cysteine, Phenoxyethanol, Pullulan, Ethylhexylglycerin, Xanthan Gum, Sclerotium Gum, Lecithin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F21",
+      "section": "How does Retinoid work on your skin?",
+      "kind": "faq",
+      "text": "Retinoids reduce fine lines, wrinkles, and other signs of photo-aging by influencing a variety of cellular processes such as epidermal proliferation, skin thickening, compaction of the stratum corneum, and biosynthesis of the glycosaminoglycans. They also promote cellular growth resulting in younger radiant skin."
+    },
+    {
+      "id": "F22",
+      "section": "Can I use this product every day?",
+      "kind": "faq",
+      "text": "Yes, Retinoid serum is safe to use every night. Start with 2-3 times a week and gradually work your way up as tolerated. It may cause minor side effects such as redness and irritation, which dissipate within a few weeks as your skin gets adjusted."
+    },
+    {
+      "id": "F23",
+      "section": "Does Retinoid cause purging or breakout?",
+      "kind": "faq",
+      "text": "Like any other skincare active, retinoid also takes time to adjust as your skin starts getting accustomed to the same; in the first 2-3 weeks of use, your cell turnover increases, causing your pores to purge. However, these side effects will dissipate in 2-3 weeks as the skin becomes used to the cell turnover rate."
+    },
+    {
+      "id": "F24",
+      "section": "Does Retinoid cause purging or breakout?",
+      "kind": "faq",
+      "text": "The retinoid ingredient added in minimalist serum is of smaller molecule size. It does not clog your pores. So, you might see little purging but not breakouts."
+    },
+    {
+      "id": "F25",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    }
+  ],
+  "source": "page"
+}
