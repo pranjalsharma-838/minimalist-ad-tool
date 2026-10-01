@@ -1,0 +1,4 @@
+node_modules/
+.env
+exports/
+eval/results/*.local.json
