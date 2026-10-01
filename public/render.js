@@ -83,6 +83,14 @@ function layout(spec, s) {
 
   parts.push(`<rect width="${w}" height="${h}" fill="${C.bg}"/>`);
 
+  // Optional generated BACKGROUND (scene only — lib/image_prompt_check.js forbids product, text, skin).
+  // A translucent panel keeps the copy legible whatever the scene looks like.
+  if (spec.backgroundHref) {
+    parts.push(`<image href="${esc(spec.backgroundHref)}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`);
+    parts.push(`<rect x="40" y="40" width="540" height="${BAND_Y - 40}" rx="8" fill="${C.bg}" fill-opacity="0.9"/>`);
+    parts.push(`<rect x="40" y="${BAND_Y + 8}" width="${w - 80}" height="${h - BAND_Y - 32}" rx="8" fill="${C.bg}" fill-opacity="0.92"/>`);
+  }
+
   // Product photo: right side, aspect preserved, never cropped or retouched. No frame: the
   // Shopify pack shots carry their own studio background (v1 showed a white card clashing with it).
   if (spec.imageHref) {
@@ -157,6 +165,11 @@ function layout(spec, s) {
   if (spec.footnote) {
     const fn = wrap(spec.footnote, FOOT_PX, w - 2 * pad, 0.5).slice(0, 3);
     parts.push(textBlock(fn, pad, bandY + 140, FOOT_PX, 32, `font-family="${FONT}" fill="${C.muted}"`));
+  }
+
+  // Internal-test watermark (Minimalist is a the test brand for this pipeline: never run these).
+  if (spec.testMark) {
+    parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   }
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`;
