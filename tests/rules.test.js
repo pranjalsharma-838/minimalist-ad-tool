@@ -97,6 +97,18 @@ test("eval run 1 over-blocks: severity now matches the independent reviewer", ()
   assert.equal(r.find((f) => f.rule_id === "CLM-20")?.severity, "block", "a strength Minimalist doesn't sell is a block");
 });
 
+test("generator stand-in test: measured SPF and '-free' attributes", () => {
+  assert.ok(!has("Non-comedogenic, shine-free finish", "CLM-16"));
+  assert.ok(!has("Fragrance-free and sulfate-free", "CLM-16"));
+  assert.ok(has("Get a FREE sunscreen!", "CLM-16"));
+  const sheet = { actives: [{ name: "SPF", pct: "50" }], facts: [{ id: "F14", kind: "study", text: "SPF value obtained : 56" }] };
+  const run = (field) => runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "", footnote: "", cta: "", [field]: "SPF 56 obtained in vivo" }, { sheet }).find((f) => f.rule_id === "CLM-19");
+  assert.equal(run("footnote").severity, "advisory");
+  assert.equal(run("on_image_text").severity, "fix");
+  const wrong = runRules({ ad_type: "brand", headline: "SPF 70 protection", primary_text: "", on_image_text: "", footnote: "", cta: "" }, { sheet }).find((f) => f.rule_id === "CLM-19");
+  assert.equal(wrong.severity, "block", "an SPF that's neither labelled nor measured is still a block");
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));

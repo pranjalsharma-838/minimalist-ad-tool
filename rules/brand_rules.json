@@ -521,7 +521,7 @@
       "severity": "fix",
       "rationale": "A 'free' offer that depends on a purchase must state the condition clearly in the same creative (CCPA guidelines on misleading ads).",
       "patterns": [
-        "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry|comment|type|dm|reply)[- ])\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
+        "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry|comment|type|dm|reply)[- ])(?<![\\w]-)\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
       ],
       "unless_same_sentence": [
         "\\b(buy|purchase|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"
