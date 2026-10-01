@@ -1,0 +1,25 @@
+{
+  "ad_type": "before_after",
+  "source_ad_id": "27546140265006255",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "90% said their dark spots faded after 8 weeks*",
+  "subhead": "Made with Ethyl Ascorbic Acid, a stabilised Vitamin C derivative with 86% pure Vitamin C content.",
+  "proof_points": [
+    "88% felt it improved skin radiance in 4 weeks*",
+    "1% Acetyl Glucosamine for skin moisturization",
+    "PHA gently removes dead skin cells for a glow"
+  ],
+  "footnote": "*Consumer study; percentages show what subjects said or felt. Patch tested under the supervision of a Dermatologist.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F18"],
+    "subhead": ["F5"],
+    "proof_points": [["F17"], ["F6"], ["F7"]],
+    "footnote": ["F17", "F18", "F20"]
+  },
+  "layout_description": "Square 1080x1080. Top strip (where the source had its credential strip): headline on one line, left-aligned, with subhead directly beneath in smaller type. Left half below the headline: two empty photo frames stacked vertically, equal size, thin neutral border, reserved for real unretouched study photos (top frame baseline, bottom frame week 8); if real study photos are not supplied, the frames are removed and the proof points move up into that space. Frame labels, if photos are supplied, are plain 'Before' and 'After' only, no added claims. Right 45%: real product photo of the serum standing on the surface, with the small out-of-focus glass beaker in the background as the science cue. Proof points sit as three short lines in a column under the frames, left side. CTA 'Shop now' as a small pill button at the bottom-left. Footnote in small type along the bottom edge, full width. Pack hero '10% Vitamin C' comes from the product photo itself.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a very soft pale sky-blue gradient toward the top and a faint soft lemon-yellow glow near the lower right, soft natural daylight, clinical and calm. A smooth matte off-white surface runs across the bottom of the frame. On the left half, two empty rectangular frames stacked vertically, equal size, with thin light grey borders, completely blank and plain inside, nothing in them; the rest of the left 50% is calm and low-detail, reserved as empty space for copy. The right 45% of the frame stays clear and evenly lit, empty space reserved on the surface for a product photo to be placed later, with only a single small clear glass laboratory beaker softly out of focus at the far back edge. Few props, minimal. No product, no bottle, no packaging, no text, no letters, no numbers, no logos, no badges, no seals, no certificates, no people, no faces, no skin, no hands, no photos inside the frames.",
+  "needs_real_photography": true,
+  "photography_needed": "Two real, unretouched close-up photos of the same study subject's dark-spot area (cheek or similar crop, no full face) taken from the Vitamin C 10% Face Serum consumer study: one at baseline before first use and one after 8 weeks of use, to match the cited 90%/8-week finding. Same camera, lens, distance, angle and lighting setup for both shots, no filters, no retouching or colour grading beyond a matched white balance, with the subject's written consent for advertising use and the study records on file to substantiate that the photos come from the study. If no such study photography exists, run the layout without the frames.",
+  "adaptation_notes": "Kept: the before/after split structure (two stacked image frames on the left, product with a lab-glassware cue on the right), the time-bound stat hook and the asterisk-plus-footnote proof device, and the Shop now CTA. Replaced: the 7-day dark-spot claim becomes Minimalist's own 8-week consumer perception stat (F18), kept as 'said' with the qualifier in the footnote; the brightening actives line is replaced by Ethyl Ascorbic Acid, Acetyl Glucosamine and PHA facts. Dropped: the 'Dermat Recommended. Clinically Certified.' credential strip, because the facts only support dermatologist-supervised patch testing, which goes in the footnote; it is not presented as an endorsement. Dropped: any 7-day or clinical-trial claim, because the facts don't support it. Before/after imagery: needs_real_photography is true; the image model only generates empty frames, since AI-generated result imagery is barred under ASCI's 2026 synthetic-content guideline. Palette toned from neon yellow and bright blue to pale sky blue and soft lemon on off-white."
+}

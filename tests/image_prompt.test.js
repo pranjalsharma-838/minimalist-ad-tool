@@ -22,6 +22,12 @@ test("asking for the product, text, skin, results or endorsements is blocked", (
   ]) assert.equal(checkImagePrompt(bad).blocked, true, bad);
 });
 
+test("reserving space for the real pack shot is not an ask to draw one (first gate run)", () => {
+  const p = "Off-white backdrop. On the right, a low matte plinth with empty space reserved for a product photo to be placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.";
+  assert.equal(checkImagePrompt(p).blocked, false, JSON.stringify(checkImagePrompt(p).findings));
+  assert.equal(checkImagePrompt("A plinth with a product on it, empty space left. No text.").blocked, true);
+});
+
 test("negation directly before the noun is respected", () => {
   assert.equal(checkImagePrompt("A marble surface without a bottle, soft light. Empty space on the right. No text, no product.").blocked, false);
 });

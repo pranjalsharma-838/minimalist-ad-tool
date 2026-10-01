@@ -1,0 +1,25 @@
+{
+  "ad_type": "expert_authority",
+  "source_ad_id": "1115173371246578",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "For oily skin, the active matters: 2% Salicylic Acid",
+  "subhead": "High-purity salicylic acid penetrates the pore lining and clears out dirt, debris and sebum.",
+  "proof_points": [
+    "97% said skin felt less oily throughout the day in 2 weeks*",
+    "With Oligopeptide-10 and EGCG from green tea",
+    "Salicylic acid sourced from Merck, Germany"
+  ],
+  "footnote": "*Minimalist consumer study; % of subjects who reported the result. Recommended for combination/oily skin, 18+ years. Use PM, every alternate day to start.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F9"],
+    "subhead": ["F4"],
+    "proof_points": [["F17"], ["F5", "F6"], ["F8"]],
+    "footnote": ["F17", "F9", "F11", "F13"]
+  },
+  "layout_description": "Square 1080x1080, editorial 'ingredient explainer' feel. Headline top-left in deep green, two lines. Subhead below in charcoal regular weight. The three proof points sit as a short left-aligned list under the subhead, each preceded by a small mint dot. Real product photo (dropper serum bottle) in the right 45%, lower-centre, resting on the desk surface with a soft shadow, placed quietly so the message reads as advice rather than a sales shot. Footnote in small grey type along the bottom-left. CTA 'Shop now' as a small text button bottom-left under the footnote line.",
+  "image_prompt": "Square 1080x1080 background-only scene. A clean, minimal desk top in matte off-white with a soft white wall behind, seen at a slight eye-level angle. Soft natural window light from the left, even and diffused. Few props, kept at the far left edge and very understated: a closed plain notebook with a blank cover and a small sprig of fresh green tea leaves. Palette of off-white, white, soft mint and a touch of deep green; calm, clinical, trustworthy mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm and low-detail for copy. No product, no bottle, no dropper, no packaging, no box, no jar, no text, no letters, no logos, no people, no faces, no skin, no hands, no doctors, no lab coats, no badges or certificates. Empty space reserved for product and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the skin-type callout hook aimed at oily skin, the calm editorial/advice tone, the clinical white-and-green palette, low text density, the product sitting quietly in frame, and the shop-now CTA. Dropped: the on-camera doctor and named-doctor badge (no expert endorsement exists in Minimalist's facts, and doctors/lab coats/badges imply endorsement), so authority now comes from ingredient science and sourcing instead. Dropped the 'your moisturizer might be the problem' framing and wording (competitor phrasing, and it leans on doubt rather than education). Video format adapted to a static image. Match note: the product match is low because the competitor sells a moisturizer; the brief does not describe the serum as a moisturizer."
+}

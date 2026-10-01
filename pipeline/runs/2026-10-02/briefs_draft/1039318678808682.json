@@ -1,0 +1,25 @@
+{
+  "ad_type": "product_hero",
+  "source_ad_id": "1039318678808682",
+  "product_title": "Granactive Retinoid 2% Face Cream",
+  "headline": "A gentle start to retinoids: 2% Granactive Retinoid",
+  "subhead": "Bio-available, non-prescription Vitamin-A. Use 2-3 times a week in the PM, then increase gradually.",
+  "proof_points": [
+    "87% found reduction of fine lines in 4 weeks*",
+    "90% observed skin firmness in 8 weeks*",
+    "87% said skin felt more even & younger in 8 weeks*"
+  ],
+  "footnote": "*Minimalist consumer studies; % of subjects who reported each result. Patch tested under the supervision of a dermatologist. Use sunscreen when using this product.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F17"],
+    "subhead": ["F3", "F16"],
+    "proof_points": [["F11"], ["F12"], ["F13"]],
+    "footnote": ["F11", "F12", "F13", "F14", "F15"]
+  },
+  "layout_description": "Square 1080x1080. Headline top-left in dark navy, two lines, with a thin hairline rule beneath it. Subhead directly under the rule in grey regular weight. The three proof points stack down the left half as large stat numerals (87%, 90%, 87%) with a short label under each; each stat has a thin grey leader line running right towards the product. Real product photo (cream tube, upright) sits in the right 45% of the frame, vertically centred, with a soft contact shadow. Footnote in small italic grey across the bottom-left. CTA 'Shop now' as a small outlined button bottom-right under the product.",
+  "image_prompt": "Square 1080x1080 background-only scene. Seamless soft-grey to off-white studio backdrop curving into a matte off-white tabletop, horizon line at about two-thirds height. Soft, diffused natural daylight from the upper left, gentle and even, with a faint soft shadow area on the tabletop at the right where an object will later be placed. Calm, clinical, premium mood; palette of soft grey, warm off-white and a hint of muted navy in the shadows. No props. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm, smooth and low-detail for copy. No product, no bottle, no tube, no packaging, no cream or texture swatch, no text, no letters, no numbers, no logos, no people, no faces, no skin, no hands. Empty space reserved for product and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: product-hero structure, a reassuring callout to people new to retinoids, three big stat callouts with leader lines moving the eye from copy to pack, a footnoted study source, calm grey clinical styling and a shop-now CTA. Replaced the source's 90-day dermatological-assessment stats with Minimalist's own consumer-study stats (4 and 8 weeks), keeping them as subject-reported results with the qualifier in the footnote. Dropped: 'trusted by' framing (no user-count or trust fact on the page); the 'without purging or irritation' absolute tolerance claim (purging/irritation only appear in FAQ facts, which are not citable, and the F10 'does not irritate' line was not used to avoid an absolute claim); the cream dollop prop (the image model must not render product or texture). Layout shifted from a centred pack to the product on the right and copy on the left to suit our compositing."
+}

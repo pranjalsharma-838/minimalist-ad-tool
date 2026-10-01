@@ -1,0 +1,25 @@
+{
+  "ad_type": "product_hero",
+  "source_ad_id": "1593356795737812",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Light Fluid SPF 50, as tested",
+  "subhead": "A lightweight fluid with a natural, shine-free finish and no white cast, tested in an independent third-party lab.",
+  "proof_points": [
+    "SPF value obtained: 56 | PA rating: ++++",
+    "Test type: in-vivo, ISO 24444:2019",
+    "UV filters: Tinosorb M, Uvinul A Plus, OMC"
+  ],
+  "footnote": "Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP, in-vivo tests by Advanced Science Laboratories, an independent third-party lab. Apply 15 minutes before sun exposure.",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": ["F1", "F11"],
+    "subhead": ["F3", "F11"],
+    "proof_points": [["F14", "F15"], ["F12"], ["F4"]],
+    "footnote": ["F13", "F16", "F18"]
+  },
+  "layout_description": "Square 1080x1080, spec-sheet / lab-report device. A thin charcoal outlined rectangle (drawn by the designer, not the image model) occupies the left 55% from top to about 80% height. Inside it: headline in heavy charcoal type at top, subhead in small regular type below, a thick charcoal rule, then the three proof points as ruled rows (label left, value bold), each separated by a thin hairline. Footnote in small grey type at the bottom of the box. Real product photo (sunscreen tube, upright) in the right 45%, overlapping the right edge of the box slightly, with a soft floor shadow. CTA 'See ingredients' as a small text link bottom-left below the box.",
+  "image_prompt": "Square 1080x1080 background-only scene. Clean, flat, warm off-white seamless studio background with a very subtle soft gradient, brighter at the top-left. Soft, even natural daylight, with a faint soft floor shadow area at the lower right where an object will later stand. No props. Palette of off-white, white and a hint of cool grey; clean, clinical, precise mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% smooth, flat and low-detail for a designer-drawn label and copy. No product, no bottle, no tube, no packaging, no cream or drips, no text, no letters, no numbers, no lines or boxes, no logos, no people, no faces, no skin, no hands. Empty space reserved for product and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the scannable spec-label device with ruled rows, the product overlapping the label edge, clean white clinical styling and high information density. Changed: the label title is our own ('as tested'), not the source's food-label wording. Every row now comes from Minimalist's published third-party lab report (SPF 56, PA++++, ISO 24444:2019, study number), which turns the source's unsourced numbers into disclosed, sourced ones. Dropped rows the facts cannot support: 80-minute water resistance (the page says water-resistant but gives no duration), hydration level 100%, greasy shine 0%, oil content 0% and serving size. Dropped the cream-drip over the pack (the image model must not render product). CTA moved to 'See ingredients' to suit the transparency angle."
+}

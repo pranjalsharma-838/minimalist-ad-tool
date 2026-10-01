@@ -109,6 +109,25 @@ test("generator stand-in test: measured SPF and '-free' attributes", () => {
   assert.equal(wrong.severity, "block", "an SPF that's neither labelled nor measured is still a block");
 });
 
+test("component strengths on the attached product page aren't mismatches (first gate run)", () => {
+  const sheet = { actives: [{ name: "AHA PHA BHA", pct: "32%" }], facts: [{ id: "F3", kind: "claim", text: "A powerful peeling trio of 25% AHA, 5% PHA & 2% BHA" }] };
+  const r = runRules({ ad_type: "brand", headline: "25% AHA, 5% PHA, 2% BHA", primary_text: "", on_image_text: "", footnote: "", cta: "" }, { sheet });
+  assert.ok(!r.some((f) => f.rule_id === "CLM-20"), JSON.stringify(r.map((f) => f.span)));
+  const wrong = runRules({ ad_type: "brand", headline: "30% AHA peel", primary_text: "", on_image_text: "", footnote: "", cta: "" }, { sheet });
+  assert.ok(wrong.some((f) => f.rule_id === "CLM-20"), "a strength not on the page is still flagged");
+});
+
+test("second gate run false blocks stay fixed", () => {
+  const peel = { actives: [{ name: "AHA PHA BHA", pct: "32%" }], facts: [] };
+  const r1 = runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "32% AHA PHA BHA", footnote: "", cta: "" }, { sheet: peel });
+  assert.ok(!r1.some((f) => f.rule_id === "CLM-20"), "product's own strength");
+  const vc = { actives: [{ name: "Vitamin C", pct: "10%" }], facts: [] };
+  const r2 = runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "10% Vitamin C", footnote: "", cta: "" }, { sheet: vc });
+  assert.ok(!r2.some((f) => f.rule_id === "CLM-20"));
+  const r3 = runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "With Salicylic Acid + LHA\n6% of users preferred it", footnote: "", cta: "" });
+  assert.ok(!r3.some((f) => f.rule_id === "CLM-20" && /LHA/.test(f.span)), "no match across a line break");
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));

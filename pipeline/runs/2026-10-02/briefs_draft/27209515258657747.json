@@ -1,0 +1,25 @@
+{
+  "ad_type": "offer_promo",
+  "source_ad_id": "27209515258657747",
+  "product_title": "Multi-Peptides 10% Face Serum",
+  "headline": "7% Matrixyl 3000 with 3% Bio-Placenta",
+  "subhead": "A hydrating, lightweight peptide serum for firmer, younger-looking skin.",
+  "proof_points": [
+    "87% agreed fine lines were visibly smoothened in 8 weeks*",
+    "90% agreed skin feels hydrated & more elastic after application*",
+    "Matrixyl 3000 by Croda, UK; Bio-Placenta by Labio, Korea"
+  ],
+  "footnote": "*Based on what subjects agreed in a consumer study. Patch tested under the supervision of a Dermatologist.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F5", "F6"],
+    "subhead": ["F2", "F7"],
+    "proof_points": [["F14"], ["F16"], ["F8"]],
+    "footnote": ["F14", "F16", "F17"]
+  },
+  "layout_description": "Square 1080x1080. Left half (copy zone): headline set large at top-left in two lines, concentrations given the most weight; subhead directly beneath in a lighter weight. Where the source ad stacked its struck-through and sale price tags, place the three proof points as three stacked, tag-shaped cards with a thin outline in a muted blush accent (one card per proof point, 87% card first). Right 45%: real product photo of the serum, upright, on the plinth in the background, slightly overlapping the tag-card column the way the source jar overlapped its price tags. The source's starburst countdown badge is removed entirely. The source's diagonal Shop Now strip becomes a calm horizontal strip along the bottom-left carrying the CTA 'Shop now'. Footnote in small type along the bottom edge, full width, under the strip. Pack hero '10% Multi-Peptides' comes from the product photo itself; no extra text over the product.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a very faint warm blush tint, soft natural daylight from the upper left, gentle shadows. On the right side, a low, smooth matte white stone plinth with a few small clear glossy water droplets on its top surface; this right 45% of the frame stays clear, uncluttered and evenly lit, with empty space reserved on the plinth top for a product photo to be placed later. The left 50% of the frame is calm, plain and low-detail, a smooth off-white wall with soft light falling across it, reserved as empty space for copy. Palette: off-white, warm white, a hint of soft blush pink. Few props, clinical and minimal, no clutter. No product, no bottle, no jar, no packaging, no text, no letters, no numbers, no logos, no price tags, no badges, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the offer-first structure's layout, i.e. a big headline block, stacked tag-shaped cards as the value device beside the product, a product hero overlapping the cards, and an on-image Shop now strip. Replaced: the price anchor is replaced by Minimalist's concentration anchor (7% Matrixyl 3000 and 3% Bio-Placenta), and the price tags now hold the brand's consumer-study perception stats and ingredient sourcing. Dropped: the struck-through price vs sale price, because no price or offer appears in the product facts (a designer may add a genuine live offer only if one is actually running and approved). Dropped: the 'Sale ends in 4 hours' countdown and starburst, because urgency is against the brand copy rules. Dropped: the playful benefit question hook, because the 'young, bouncy skin' angle implies an anti-ageing result beyond the facts and the brand tone is calm and educational. The F7 instant moisturisation and 4-week wrinkle percentages were left out to avoid time-bound result claims; the 87% and 90% stats stay perception stats, with the qualifier in the footnote. The jelly-texture spill is replaced by water droplets so the image model is never asked for product or texture swatches."
+}

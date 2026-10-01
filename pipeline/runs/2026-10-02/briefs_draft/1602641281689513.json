@@ -1,0 +1,25 @@
+{
+  "ad_type": "problem_solution",
+  "source_ad_id": "1602641281689513",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "Weekend exfoliating facial: 25% AHA, 5% PHA, 2% BHA",
+  "subhead": "Leave on for 10 minutes, then rinse. Multi-level exfoliation on the surface and inside the pores.",
+  "proof_points": [
+    "93% said skin felt softer immediately after 1 application*",
+    "90% said skin felt brighter & glowing after 4 applications*",
+    "Turmeric Extract to calm irritation commonly linked with peeling"
+  ],
+  "footnote": "*Minimalist consumer study; % of subjects who reported each result. Use PM; start once every 2 weeks. Sunscreen is a must when using this peel. For 20+ years.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F2", "F3"],
+    "subhead": ["F11", "F3"],
+    "proof_points": [["F15"], ["F14"], ["F6"]],
+    "footnote": ["F14", "F15", "F12", "F11", "F10"]
+  },
+  "layout_description": "Square 1080x1080. Headline top-left in near-black, two lines, with the three concentrations set slightly bolder. Subhead beneath in regular weight. The three proof points stack on the left as a numbered-feel sequence (soft lavender-grey rule between each) to echo the source's step-by-step panels without photographs. Real product photo (peel bottle) in the right 45%, centred, with a soft shadow on the stone surface. Footnote in small grey type along the bottom-left. CTA 'Shop now' as a small button bottom-right under the product.",
+  "image_prompt": "Square 1080x1080 background-only scene. A smooth off-white stone surface against a plain wall washed in a very pale lavender-grey tone, seen at a low eye-level angle. Soft, diffused natural daylight from the left, calm and even. One minimal prop at the far left edge: a small folded plain white cotton towel. Palette of off-white, pale lavender, soft grey and a touch of deep plum in the shadows; calm, sensorial, modern but minimal. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm and low-detail for copy. No product, no bottle, no jar, no packaging, no texture swatch or swirl, no text, no letters, no logos, no people, no faces, no skin, no hands, no before/after or result imagery. Empty space reserved for product and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the problem-solution hook built around a short, specific time, the step-by-step product-experience flow, the purple/lavender sensorial mood (toned down to Minimalist's off-white style) and the shop-now CTA. The 10-minute element is used only as the label's leave-on time, not as a result promise. Dropped: the monsoon/seasonal framing (no seasonal fact on the page); the 'de-tans' and time-bound radiance result claims (not supported); the three-panel collage of texture swirl, finger scoop and model wearing the product (the image model cannot render product, hands, skin or faces). If the team wants the texture/application panels back, they would need real product photography, but no result photography is required. No competitor wording reused."
+}

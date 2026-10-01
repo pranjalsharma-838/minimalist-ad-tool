@@ -1,0 +1,25 @@
+{
+  "ad_type": "other",
+  "source_ad_id": "1408884340671180",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Whatever your skin type, a light fluid SPF 50",
+  "subhead": "Broad-spectrum UVA/UVB protection from Tinosorb M, Uvinul A Plus and OMC, in a lightweight, water-resistant fluid.",
+  "proof_points": [
+    "Natural, shine-free, hydrated finish with no white cast",
+    "Non-comedogenic formula that won't clog pores",
+    "In-vivo tested to ISO 24444:2019: SPF 56 obtained"
+  ],
+  "footnote": "SPF 56 from an in-vivo ISO 24444:2019 test by Advanced Science Laboratories, an independent third-party lab. Apply at least 15 minutes before sun exposure.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F9"],
+    "subhead": ["F2", "F3"],
+    "proof_points": [["F3"], ["F5"], ["F7"]],
+    "footnote": ["F7", "F16", "F18"]
+  },
+  "layout_description": "Square 1080x1080, sunlit top-down flat-lay. Headline top-left in charcoal, two lines. Subhead beneath in regular weight. The first two proof points sit as small rounded benefit tags stacked on the left, styled like the source's per-variant labels but describing benefits of the one product. The third proof point (ISO test, SPF 56) sits as a small circular badge near the upper-right corner of the product photo. Real product photo (sunscreen tube) lies diagonally in the right 45% of the frame, on the linen surface. Footnote in small type along the bottom-left. CTA 'Shop now' as a small button bottom-right.",
+  "image_prompt": "Square 1080x1080 background-only scene, top-down flat-lay. A warm off-white linen cloth over a pale sand-coloured surface, lit by soft, warm natural sunlight with a gentle, blurred leaf-and-window shadow falling across the top-left corner. A few minimal summer props at the very edges only: the edge of a woven straw basket at the top-left corner and a folded pair of sunglasses at the bottom-left corner, both small and partly cropped. Muted summery palette of off-white, sand, soft butter-yellow and a touch of muted blue; warm but clean and minimal. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm and low-detail for copy. No product, no bottle, no tube, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands, no badges or seals. Empty space reserved for product and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the summery top-down lifestyle flat-lay, the self-selection 'whatever your skin' framing, short benefit labels around the pack, a single technology badge, and the shop-now CTA. Changed: the source is a four-product range-picker, but the fact sheet covers only Light Fluid SPF 50, so the variant menu became a benefit menu for one product, anchored on its 'all skin types' suitability. Replaced the unsupported '100% new-gen UV filters' badge with Minimalist's disclosed in-vivo ISO 24444:2019 result (SPF 56) and the independent lab in the footnote. Toned the bright yellow/cobalt palette down to Minimalist's off-white, minimal style. No competitor wording reused."
+}

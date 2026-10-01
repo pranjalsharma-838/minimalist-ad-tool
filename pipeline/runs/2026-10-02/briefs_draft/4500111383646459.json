@@ -1,0 +1,25 @@
+{
+  "ad_type": "comparison",
+  "source_ad_id": "4500111383646459",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Broad-spectrum protection in a light fluid",
+  "subhead": "SPF 50, PA++++ with Tinosorb M, Uvinul A Plus and OMC, in a lightweight, water-resistant texture.",
+  "proof_points": [
+    "Meets the EU recommendation of SPF / UVA ratio (3:1)",
+    "Sweatproof and fast-absorbing, with no white cast",
+    "SPF 56 confirmed in-vivo to ISO 24444:2019"
+  ],
+  "footnote": "In-vivo data from Advanced Science Laboratories, an independent third party lab. Patch tested under the supervision of a Dermatologist.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F2"],
+    "subhead": ["F2", "F3"],
+    "proof_points": [["F4"], ["F3", "F4"], ["F7", "F12", "F14"]],
+    "footnote": ["F16", "F17"]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines. Directly beneath, where the source had its two-column v/s header, a two-column block across the left half split by a thin vertical rule (no 'v/s' and no category names): left column holds proof point 1 (the protection side), right column holds proof point 2 (the texture side), so the shopper reads protection and lightness side by side and the headline resolves them. Subhead under the two columns. Right 45%: real product photo of the sunscreen tube, tilted slightly, standing on the grey plinth in the background. Bottom: a solid black banner strip across the lower left carrying proof point 3 in white, with the CTA 'Shop now' as a small mustard-accent pill at its right end. Footnote in small type below the banner, full width. Pack hero 'SPF 50' comes from the product photo itself.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white paper backdrop with a very faint, low-contrast light grey grid like fine graph paper, soft natural daylight, calm editorial mood. On the right side, a simple light grey cylindrical plinth with a flat top on a plain matte surface; this right 45% of the frame stays clear and evenly lit, with empty space reserved on and above the plinth for a product photo to be placed later. The left 50% stays calm and low-detail, only the faint grid on off-white, reserved as empty space for copy. Palette: off-white, light grey, a small touch of muted mustard yellow in a soft shadow or edge highlight, black only as a deep shadow accent. No other props. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no banners, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the trade-off structure (two side-by-side columns that set up protection and lightness, resolved by a headline that says the product delivers both), the tilted tube on a grey plinth against a graph-paper background, the black banner strip, and the Shop now CTA. Replaced: the two columns now hold Minimalist's own facts (the EU SPF/UVA ratio for protection; sweatproof, fast-absorbing, no white cast for texture) instead of naming other sunscreen categories. Dropped: the 'India's 1st' first-to-market claim, which is not in the facts. Dropped: the European v/s Korean category comparison, because the facts don't compare against other categories and contrasting whole competitor categories risks unfair comparison; the comparison is now between two needs, not against rivals. Blue-light protection was not claimed, since it appears only in an ingredient note about one filter, not as a product claim. 'Dermatologist-approved' (F5) was left out to avoid an endorsement-style line; patch testing goes in the footnote. Pregnancy suitability was not mentioned, since the FAQ advises against use then."
+}
