@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "derived": "2026-10-02",
   "how_to_read": "Each rule: dimension (policy | tone | language), severity (block = export disabled; fix = must change or attach substantiation; advisory = never blocks), sources (ids in research/regulatory_sources.md and research/brand_corpus.md), confidence (how solid the basis is). Patterns are case-insensitive JavaScript regexes run on each ad field after Minimalist product names are masked. 'provenance: downgrade' lowers severity one step when the same wording appears on the attached product page. creator_severity applies to creator/paid-partnership ads. Source ids: research/regulatory_sources.md (REG entries, OPEN-Qn = open questions for legal), research/brand_corpus.md (BRAND-§n), research/ad_corpus_notes.md (AD-CORPUS).",
   "rules": [
@@ -12,7 +12,7 @@
       "patterns": [
         "\\bcur(e|es|ed|ing)\\b",
         "\\bheal(s|ed|ing)?\\b",
-        "\\btreat(s|ed|ing|ment|ments)?\\b",
+        "\\btreat(s|ed|ing|ment|ments)?\\s+(for\\s+|of\\s+|your\\s+|the\\s+|stubborn\\s+|active\\s+|cystic\\s+)*(acne|pimples|breakouts|eczema|psoriasis|rosacea|dermatitis|melasma|infections?|conditions?|diseases?|disorders?|scars|hyperpigmentation|pigmentation|hair\\s?loss|dandruff)\\b",
         "\\b(eczema|psoriasis|rosacea|dermatitis|melasma|vitiligo|alopecia|diaper rash|fungal|infections?)\\b",
         "\\b(anti-?bacterial|anti-?microbial|anti-?fungal|antiseptic|kills?\\s+([\\w-]+\\s+){0,4}(bacteria|germs|microbes))\\b",
         "\\b(skin\\s+)?cancer\\b",
@@ -85,7 +85,7 @@
         "\\bpermanent(ly)?\\b",
         "\\bforever\\b",
         "\\bnever again\\b",
-        "\\babsolutely\\s+(zero|no|nothing)\\b",
+        "\\babsolutely\\s+(zero|no)\\b",
         "\\bonce and for all\\b",
         "\\b(fall|acne|spots|tan)\\s+finished\\b",
         "\\bworks? (for|on) (everyone|every skin|all skin)\\b"
@@ -155,7 +155,7 @@
       "patterns": [
         "\\bchemical[- ]?free\\b",
         "\\bno (harmful |nasty |toxic )?chemicals\\b",
-        "\\b(no|zero) (side[- ]?effects|nasties)\\b",
+        "\\b(no|zero) side[- ]?effects\\b",
         "\\btoxin[- ]?free\\b",
         "\\bnon[- ]?toxic\\b",
         "\\b(100\\s?%|all|purely)[- ]natural\\b",
@@ -630,9 +630,9 @@
       "id": "CLM-20",
       "dimension": "policy",
       "title": "Concentration doesn't match the product",
-      "severity": "fix",
+      "severity": "block",
       "computed": "concentration_mismatch",
-      "rationale": "Minimalist's whole position is that the concentration on the ad is the concentration in the bottle. A wrong number is a misrepresentation (blocking when the product page is attached).",
+      "rationale": "Minimalist's whole position is that the concentration on the ad is the concentration in the bottle. A strength Minimalist doesn't sell at all, or one that differs from the attached product, is a misrepresentation (raised to block after eval run 1: 'Retinol 1%' was only a fix).",
       "message": "Concentration doesn't match what Minimalist sells.",
       "fix": "Use the exact concentration from the pack title.",
       "sources": [
@@ -761,6 +761,45 @@
         "ASCI-G-NEW"
       ],
       "confidence": "VERIFIED regulation"
+    },
+    {
+      "id": "CLM-26",
+      "dimension": "policy",
+      "title": "Treatment wording without a named condition",
+      "severity": "fix",
+      "rationale": "'Treat' on its own ('brighten, treat, and protect', 'Step 2: Treat', 'treatment plan') positions a cosmetic as a treatment without naming a disease. The independent reviewer rated these must-fix, not block, in eval run 1; 'treats acne' style claims stay a block under CLM-01.",
+      "patterns": [
+        "\\btreat(s|ed|ing|ment|ments)?\\b"
+      ],
+      "message": "'Treat' / 'treatment' positions a cosmetic as a treatment.",
+      "fix": "Use a cosmetic verb: 'target', 'care for', 'help with the look of'. For routine steps, use 'Serum' or 'Step 2' instead of 'Treat'.",
+      "judge_hint": "Treatment vocabulary with no named condition. If a condition is named, it is CLM-01.",
+      "sources": [
+        "DCA-DRUG-DEF",
+        "CDSCO-PN-2026",
+        "OPEN-Q1"
+      ],
+      "confidence": "VERIFIED definition; CDSCO 2026 notice is SECONDARY"
+    },
+    {
+      "id": "CLM-27",
+      "dimension": "policy",
+      "title": "Vague 'clean' safety claim",
+      "severity": "fix",
+      "rationale": "'No nasties' and 'clean beauty' imply other ingredients are unsafe without saying which or why. ASCI's beauty-category report lists natural/clean claims among common violations, and EU 655 bars denigrating legally used ingredients. Narrower than CLM-05 (chemical-free, no side effects), which stays a block.",
+      "patterns": [
+        "\\b(no|zero)\\s+nasties\\b",
+        "\\bclean\\s+beauty\\b",
+        "\\bnothing\\s+(nasty|harmful|toxic)\\b"
+      ],
+      "message": "Vague 'clean' claim: implies other ingredients are unsafe.",
+      "fix": "List what is actually absent and verifiable: 'Fragrance free · Essential-oil free'.",
+      "sources": [
+        "ASCI-RPT-BPC",
+        "EU-655-4/5/6",
+        "BRAND-§6-S3"
+      ],
+      "confidence": "VERIFIED enforcement pattern + brand stated"
     },
     {
       "id": "CRE-01",

@@ -66,13 +66,13 @@ async function evaluate(mode) {
 
 function summarize(rows, title) {
   const splits = ["tuning", "holdout", "synthetic"];
-  const out = [`### ${title}`, "", "| split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |", "|---|---|---|---|---|---|---|---|---|---|"];
+  const out = [`### ${title}`, "", "| split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |", "|---|---|---|---|---|---|---|---|---|---|---|"];
   for (const s of [...splits, "ALL"]) {
     const R = s === "ALL" ? rows : rows.filter((r) => r.split === s);
     if (!R.length) continue;
     const n = (pred) => R.filter(pred).length;
     const pt = R.reduce((a, r) => a + r.phrases_total, 0), pc = R.reduce((a, r) => a + r.phrases_caught, 0);
-    out.push(`| ${s} | ${R.length} | ${n((r) => r.label === r.tool)} | ${n((r) => r.label === "block" && r.tool !== "block")} | ${n((r) => r.label === "fix" && r.tool === "pass")} | ${n((r) => r.label === "pass" && r.tool === "block")} | ${n((r) => r.label === "pass" && r.tool === "fix")} | ${pt ? `${pc}/${pt} (${Math.round((100 * pc) / pt)}%)` : "—"} | ${R.reduce((a, r) => a + r.extra_flags.length, 0)} | ${R.reduce((a, r) => a + r.dropped_model_findings, 0)} |`);
+    out.push(`| ${s} | ${R.length} | ${n((r) => r.label === r.tool)} | ${n((r) => r.label === "block" && r.tool !== "block")} | ${n((r) => r.label === "fix" && r.tool === "pass")} | ${n((r) => r.label === "pass" && r.tool === "block")} | ${n((r) => r.label === "fix" && r.tool === "block")} | ${n((r) => r.label === "pass" && r.tool === "fix")} | ${pt ? `${pc}/${pt} (${Math.round((100 * pc) / pt)}%)` : "—"} | ${R.reduce((a, r) => a + r.extra_flags.length, 0)} | ${R.reduce((a, r) => a + r.dropped_model_findings, 0)} |`);
   }
   return out.join("\n");
 }

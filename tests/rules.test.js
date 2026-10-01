@@ -85,6 +85,18 @@ test("model can't raise code-only checks, and can't exceed rulebook severity", a
   assert.deepEqual(out.rejected.map((r) => r.reason.slice(0, 13)), ["deterministic", "quoted span n"]);
 });
 
+test("eval run 1 over-blocks: severity now matches the independent reviewer", () => {
+  const sev = (text, id) => ids({ primary_text: text }).includes(id);
+  assert.ok(!sev("Designed to brighten, treat, and protect", "CLM-01"), "bare 'treat' is not a block");
+  assert.ok(sev("Designed to brighten, treat, and protect", "CLM-26"), "but it is a fix");
+  assert.ok(sev("Treats acne and prevents breakouts", "CLM-01"), "treat + condition is still a block");
+  assert.ok(!sev("Skincare with absolutely nothing to hide.", "CLM-03"));
+  assert.ok(sev("Absolutely zero white cast", "CLM-03"));
+  assert.ok(!sev("No Nasties", "CLM-05") && sev("No Nasties", "CLM-27"));
+  const r = runRules({ ad_type: "brand", headline: "Retinol 1% for fine lines", primary_text: "", on_image_text: "", footnote: "", cta: "" });
+  assert.equal(r.find((f) => f.rule_id === "CLM-20")?.severity, "block", "a strength Minimalist doesn't sell is a block");
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));
