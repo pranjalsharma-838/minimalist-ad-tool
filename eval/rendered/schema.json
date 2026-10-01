@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "findings",
+    "rule_hit_review",
+    "tone_read",
+    "language_read"
+  ],
+  "properties": {
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "dimension",
+          "field",
+          "span",
+          "severity",
+          "why",
+          "fix"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string"
+          },
+          "dimension": {
+            "type": "string",
+            "enum": [
+              "policy",
+              "tone",
+              "language"
+            ]
+          },
+          "field": {
+            "type": "string",
+            "enum": [
+              "headline",
+              "primary_text",
+              "on_image_text",
+              "footnote",
+              "cta"
+            ]
+          },
+          "span": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "block",
+              "fix",
+              "advisory"
+            ]
+          },
+          "why": {
+            "type": "string"
+          },
+          "fix": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rule_hit_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "index",
+          "assessment",
+          "why"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer"
+          },
+          "assessment": {
+            "type": "string",
+            "enum": [
+              "agree",
+              "likely_false_positive"
+            ]
+          },
+          "why": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tone_read": {
+      "type": "string"
+    },
+    "language_read": {
+      "type": "string"
+    }
+  }
+}
