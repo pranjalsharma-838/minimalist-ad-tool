@@ -26,7 +26,7 @@ Prefer a plain, true headline over a clever one. If the facts are thin, write le
 - headline: ≤ 60 characters. The single most useful true thing about the product.
 - subhead: ≤ 120 characters. One sentence on how it works or who it's for.
 - proof_points: 0–3 items, each ≤ 70 characters. Concrete, checkable facts (ingredient source, test standard, texture, usage). Fewer is fine.
-- footnote: qualifier for any statistic or test claim used, or the patch-test safety statement if present in the facts; ≤ 240 characters. Empty string if nothing needs qualifying.
+- footnote: qualifier for any statistic or test claim used, or the patch-test safety statement if present in the facts; ≤ 200 characters (it is printed at a legible 26px, so it must fit 3 lines). Empty string if nothing needs qualifying.
 - cta: one of "Shop now", "Learn more", "See ingredients".
 - citations: the fact ids for each field, in the same order (proof_points is a list of lists).
 

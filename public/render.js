@@ -52,6 +52,7 @@ function textBlock(lines, x, y, size, lh, attrs) {
 }
 
 const BAND_Y = 820; // everything in the text column must end above this line
+const FOOT_PX = 26;
 
 // spec: { hero: {pct, name}, headline, subhead, proofPoints[], footnote, cta, imageHref, productName }
 // Text is laid out at scale 1, then shrunk in steps until the column fits above the bottom band.
@@ -115,7 +116,8 @@ function layout(spec, s) {
   }
 
   const hs = px(40), hl = px(48);
-  const head = wrap(spec.headline, hs, leftW);
+  // Bold glyphs are wider; 0.52 let "Reduces Acne, Blackheads" run into the photo (app test, Salicylic 2%).
+  const head = wrap(spec.headline, hs, leftW, 0.58);
   parts.push(textBlock(head, pad, y + hs, hs, hl, `font-family="${FONT}" font-weight="600" fill="${C.ink}"`));
   y += hs + (head.length - 1) * hl + px(10);
 
@@ -150,9 +152,11 @@ function layout(spec, s) {
       textBlock(wrap(spec.productName, 22, 560), 372, bandY + 74, 22, 28, `font-family="${FONT}" fill="${C.muted}"`)
     );
   }
+  // Footnote at 26px: ASCI's disclaimer guideline sets >= 26px lower-case text in a 1080 raster for
+  // video; applied here to static by analogy (research/regulatory_sources.md, ASCI-G-DISC).
   if (spec.footnote) {
-    const fn = wrap(spec.footnote, 20, w - 2 * pad, 0.5).slice(0, 3);
-    parts.push(textBlock(fn, pad, bandY + 150, 20, 26, `font-family="${FONT}" fill="${C.muted}"`));
+    const fn = wrap(spec.footnote, FOOT_PX, w - 2 * pad, 0.5).slice(0, 3);
+    parts.push(textBlock(fn, pad, bandY + 140, FOOT_PX, 32, `font-family="${FONT}" fill="${C.muted}"`));
   }
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`;
@@ -164,14 +168,14 @@ export function layoutProblems(spec) {
   const problems = [];
   const m = measure(spec);
   if (!m.fits) problems.push("Copy does not fit the 1080x1080 layout even at 70% text size — shorten it.");
-  if (spec.footnote && wrap(spec.footnote, 20, SIZE.w - 144, 0.5).length > 3) problems.push("Footnote longer than 3 lines would be cut off.");
+  if (spec.footnote && wrap(spec.footnote, FOOT_PX, SIZE.w - 144, 0.5).length > 3) problems.push("Footnote longer than 3 lines would be cut off.");
   const lim = (label, text, max) => {
     if (text && text.length > max) problems.push(`${label} is ${text.length} chars (max ${max})`);
   };
   lim("Headline", spec.headline, 60);
   lim("Subhead", spec.subhead, 120);
   (spec.proofPoints || []).forEach((p, i) => lim(`Proof point ${i + 1}`, p, 70));
-  lim("Footnote", spec.footnote, 240);
+  lim("Footnote", spec.footnote, 200);
   if ((spec.proofPoints || []).length > 3) problems.push("More than 3 proof points");
   return problems;
 }

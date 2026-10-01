@@ -1,27 +1,44 @@
 {
-  "version": "0.1-draft",
+  "version": "0.2",
   "derived": "2026-10-02",
-  "how_to_read": "Each rule: dimension (policy | tone | language), severity (block = export disabled; fix = must change or attach substantiation; advisory = never blocks), sources (ids in research/regulatory_sources.md and research/brand_corpus.md), confidence (how solid the basis is). Patterns are case-insensitive JavaScript regexes run on each ad field after Minimalist product names are masked. 'provenance: downgrade' lowers severity one step when the same wording appears on the attached product page. creator_severity applies to creator/paid-partnership ads.",
+  "how_to_read": "Each rule: dimension (policy | tone | language), severity (block = export disabled; fix = must change or attach substantiation; advisory = never blocks), sources (ids in research/regulatory_sources.md and research/brand_corpus.md), confidence (how solid the basis is). Patterns are case-insensitive JavaScript regexes run on each ad field after Minimalist product names are masked. 'provenance: downgrade' lowers severity one step when the same wording appears on the attached product page. creator_severity applies to creator/paid-partnership ads. Source ids: research/regulatory_sources.md (REG entries, OPEN-Qn = open questions for legal), research/brand_corpus.md (BRAND-§n), research/ad_corpus_notes.md (AD-CORPUS).",
   "rules": [
     {
       "id": "CLM-01",
       "dimension": "policy",
       "title": "Disease or drug claim",
       "severity": "block",
-      "rationale": "A cosmetic that claims to cure, heal or treat a disease, or to kill microbes, is making a drug claim. That is outside what a cosmetic may claim in India and the US.",
+      "rationale": "A cosmetic that claims to cure, heal or treat a disease, or to kill microbes, is making a drug claim. That is outside what a cosmetic may claim in India and the US. Some conditions (cancer, leucoderma, leprosy, lupus) are on the DMR Act Schedule, which no ad may claim to prevent or cure. 'SPF 50 prevents skin cancer' is the realistic case.",
       "patterns": [
         "\\bcur(e|es|ed|ing)\\b",
         "\\bheal(s|ed|ing)?\\b",
         "\\btreat(s|ed|ing|ment|ments)?\\b",
         "\\b(eczema|psoriasis|rosacea|dermatitis|melasma|vitiligo|alopecia|diaper rash|fungal|infections?)\\b",
-        "\\b(anti-?bacterial|anti-?microbial|anti-?fungal|antiseptic|kills?\\s+([\\w-]+\\s+){0,4}(bacteria|germs|microbes))\\b"
+        "\\b(anti-?bacterial|anti-?microbial|anti-?fungal|antiseptic|kills?\\s+([\\w-]+\\s+){0,4}(bacteria|germs|microbes))\\b",
+        "\\b(skin\\s+)?cancer\\b",
+        "\\btumou?rs?\\b",
+        "\\b(leucoderma|leprosy|lupus)\\b"
       ],
       "message": "Treat / cure / heal / disease / anti-bacterial wording makes this a drug claim, which a cosmetic ad can't make.",
       "fix": "Describe the cosmetic, appearance-level effect instead (e.g. 'helps reduce the look of blemishes', 'soothes the feel of dryness'). Name the ingredient and concentration rather than the condition.",
       "judge_hint": "Explicit or implied treatment of a disease or medical condition, killing bacteria, healing. Includes routine-step labels like 'Treat' (flag; the reviewer may accept it as a step name).",
-      "sources": ["DCA-COS-DEF", "DMR-ACT", "FDA-COS-DRUG", "BRAND-§4.1"],
-      "confidence": "regulation (see source file for verification status)",
-      "examples": { "fail": ["Heals acne overnight", "kills 4X more acne-causing bacteria"], "pass": ["Helps reduce the look of blemishes with 2% Salicylic Acid"] }
+      "sources": [
+        "DCA-COS-DEF",
+        "DMR-3",
+        "DMR-SCHED",
+        "FDA-DEF",
+        "BRAND-§4.1"
+      ],
+      "confidence": "VERIFIED regulation (D&C Act s.3(b), DMR s.3 + Schedule, Meta H&W)",
+      "examples": {
+        "fail": [
+          "Heals acne overnight",
+          "kills 4X more acne-causing bacteria"
+        ],
+        "pass": [
+          "Helps reduce the look of blemishes with 2% Salicylic Acid"
+        ]
+      }
     },
     {
       "id": "CLM-02",
@@ -32,15 +49,29 @@
       "patterns": [
         "\\b(prevent(s|ing)?|stop(s|ping)?|clear(s|ing)?|get rid of|banish(es)?|fight(s|ing)?|combat(s|ing)?|tackl(e|es|ing))\\s+(\\w+\\s+){0,2}(acne|breakouts?|pimples?|zits|hair\\s?fall|hair loss)\\b",
         "\\banti-?acne\\b",
-        "\\bacne[- ]?free\\b"
+        "\\bacne[- ]?free\\b",
+        "\\breduc(e|es|ed|ing)\\s+(active\\s+)?(acne|pimples|breakouts|hair\\s?fall)\\b"
       ],
       "provenance": "downgrade",
       "message": "Preventing, clearing or fighting acne / hair fall reads as a treatment claim. It needs legal sign-off and substantiation.",
       "fix": "Use appearance and feel language tied to the active: 'helps reduce the look of breakouts', 'for acne-prone skin', 'helps control excess oil'.",
       "judge_hint": "Claims to prevent, stop, clear or fight acne, breakouts or hair fall, including implied ones ('say goodbye to breakouts').",
-      "sources": ["DCA-COS-DEF", "OPEN-Q-ACNE", "BRAND-§4.1"],
-      "confidence": "judgment on a regulatory grey area — listed as an open question for legal",
-      "examples": { "fail": ["Prevents breakouts", "Say no to acne"], "pass": ["For oily, acne-prone skin"] }
+      "sources": [
+        "DCA-COS-DEF",
+        "DCA-DRUG-DEF",
+        "OPEN-Q1",
+        "BRAND-§4.1"
+      ],
+      "confidence": "VERIFIED regulation, contested application — legal open question Q1",
+      "examples": {
+        "fail": [
+          "Prevents breakouts",
+          "Say no to acne"
+        ],
+        "pass": [
+          "For oily, acne-prone skin"
+        ]
+      }
     },
     {
       "id": "CLM-03",
@@ -62,9 +93,25 @@
       "message": "A guaranteed, permanent or absolute result can't be substantiated for every user.",
       "fix": "State what the product is formulated to do and what was measured, e.g. 'In-vivo tested to ISO 24444:2019 (SPF 56 measured)'. Drop 'guaranteed' / 'absolutely' / 'forever'.",
       "judge_hint": "Promises of certainty, permanence or universality, including implied ones ('no more dark spots').",
-      "sources": ["ASCI-CH1", "CCPA-MISLEAD", "BRAND-§6-S3"],
-      "confidence": "regulation + brand stated",
-      "examples": { "fail": ["In-vivo tested for guaranteed UV safety", "Absolutely zero white cast", "growth guaranteed"], "pass": ["Leaves no visible white cast on application"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "CPA-2(28)",
+        "CCPA-4",
+        "BRAND-§6-S3"
+      ],
+      "confidence": "VERIFIED regulation + brand stated",
+      "examples": {
+        "fail": [
+          "In-vivo tested for guaranteed UV safety",
+          "Absolutely zero white cast",
+          "growth guaranteed"
+        ],
+        "pass": [
+          "Leaves no visible white cast on application"
+        ]
+      }
     },
     {
       "id": "CLM-04",
@@ -82,9 +129,22 @@
       "message": "Removal / elimination language promises more than an appearance-level cosmetic effect.",
       "fix": "Use the measured, hedged form: 'visibly reduces the appearance of dark spots', 'helps fade the look of marks'.",
       "judge_hint": "Elimination verbs applied to skin concerns.",
-      "sources": ["ASCI-CH1", "BRAND-§3.4"],
-      "confidence": "regulation + brand observed (the brand hedges with 'visibly', 'appearance')",
-      "examples": { "fail": ["remove dark spots", "Removes Tanning"], "pass": ["Visibly reduces the appearance of dark spots"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "BRAND-§3.4"
+      ],
+      "confidence": "VERIFIED regulation + brand observed",
+      "examples": {
+        "fail": [
+          "remove dark spots",
+          "Removes Tanning"
+        ],
+        "pass": [
+          "Visibly reduces the appearance of dark spots"
+        ]
+      }
     },
     {
       "id": "CLM-05",
@@ -104,9 +164,24 @@
       "message": "Safety absolutes ('chemical-free', 'no side effects', '100% natural') are misleading, and Minimalist explicitly rejects this framing.",
       "fix": "Say what is actually absent and verifiable: 'Fragrance free · Essential-oil free · Non-comedogenic', plus the patch-test statement.",
       "judge_hint": "Safety absolutes and 'clean / natural is safe' framing, including implied ones.",
-      "sources": ["ASCI-CH1", "CCPA-MISLEAD", "BRAND-§6-S3"],
-      "confidence": "regulation + brand stated",
-      "examples": { "fail": ["No Side Effects", "No Harmful Chemicals"], "pass": ["Fragrance free. Patch tested under dermatological supervision."] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "CPA-2(28)",
+        "CCPA-4",
+        "BRAND-§6-S3"
+      ],
+      "confidence": "VERIFIED regulation + brand stated",
+      "examples": {
+        "fail": [
+          "No Side Effects",
+          "No Harmful Chemicals"
+        ],
+        "pass": [
+          "Fragrance free. Patch tested under dermatological supervision."
+        ]
+      }
     },
     {
       "id": "CLM-06",
@@ -125,9 +200,22 @@
       "message": "Fairness / whitening / skin-lightening wording is not allowed.",
       "fix": "Talk about even-looking tone and the look of dark spots or pigmentation, never skin colour: 'helps even out the look of skin tone'.",
       "judge_hint": "Any suggestion that lighter skin is the goal or darker skin is a problem, including 'complexion' improvements framed as lightening and before/after shade changes.",
-      "sources": ["ASCI-FAIRNESS", "BRAND-§4.2"],
-      "confidence": "regulation (ASCI guideline)",
-      "examples": { "fail": ["a potent & safe skin lightening active", "Skin colour is lighten"], "pass": ["Helps fade the look of dark spots for a more even-looking tone"] }
+      "sources": [
+        "ASCI-G-FAIR",
+        "META-HW-WHITEN",
+        "ASCI-3.1(b)",
+        "BRAND-§4.2"
+      ],
+      "confidence": "VERIFIED regulation (ASCI guideline, Meta policy); scope to tan/brightening is open question Q3",
+      "examples": {
+        "fail": [
+          "a potent & safe skin lightening active",
+          "Skin colour is lighten"
+        ],
+        "pass": [
+          "Helps fade the look of dark spots for a more even-looking tone"
+        ]
+      }
     },
     {
       "id": "CLM-07",
@@ -147,9 +235,25 @@
       "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
       "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
       "judge_hint": "Results promised within a time window, including 'starts working from day one'.",
-      "sources": ["ASCI-CH1", "ASCI-SUBSTANTIATION", "META-UNREALISTIC"],
-      "confidence": "regulation",
-      "examples": { "fail": ["visible glow in just 7 days", "See the change in just 28 days"], "pass": ["90% subjects noticed visible skin clarity in 4 weeks* (*consumer perception study)"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "ASCI-1.2",
+        "CCPA-12",
+        "META-HW-CLAIMS",
+        "GADS-UNREL"
+      ],
+      "confidence": "VERIFIED regulation + platform policy",
+      "examples": {
+        "fail": [
+          "visible glow in just 7 days",
+          "See the change in just 28 days"
+        ],
+        "pass": [
+          "90% subjects noticed visible skin clarity in 4 weeks* (*consumer perception study)"
+        ]
+      }
     },
     {
       "id": "CLM-08",
@@ -165,9 +269,23 @@
       "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
       "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
       "judge_hint": "Any percentage or number describing results or users. Also check the stat isn't strengthened (perception turned into efficacy) and that a qualifier is visible.",
-      "sources": ["ASCI-SUBSTANTIATION", "CCPA-MISLEAD", "BRAND-§3.2"],
-      "confidence": "regulation + brand observed",
-      "examples": { "fail": ["Reduces oil by 90%"], "pass": ["97% subjects said skin felt less oily after 2 weeks* (*consumer perception study)"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.2",
+        "CCPA-12",
+        "CPA-2(28)",
+        "CCPA-4",
+        "BRAND-§3.2"
+      ],
+      "confidence": "VERIFIED regulation + brand observed",
+      "examples": {
+        "fail": [
+          "Reduces oil by 90%"
+        ],
+        "pass": [
+          "97% subjects said skin felt less oily after 2 weeks* (*consumer perception study)"
+        ]
+      }
     },
     {
       "id": "CLM-09",
@@ -187,9 +305,24 @@
       "message": "Authority claims need the specific study or endorsement on file, described accurately.",
       "fix": "Use the exact, narrower wording you can support, e.g. 'Patch tested for safety under the supervision of a Dermatologist', or name the test ('In-vivo SPF test, ISO 24444:2019').",
       "judge_hint": "Evidence or endorsement claims: clinical, dermatologist, doctor, lab, science-proven.",
-      "sources": ["ASCI-SUBSTANTIATION", "ASCI-CH1", "BRAND-§3.5"],
-      "confidence": "regulation",
-      "examples": { "fail": ["clinically proven Glow Boosting Routine", "Dermatologically tested"], "pass": ["Patch tested for safety under the supervision of a Dermatologist"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.2",
+        "CCPA-12",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "BRAND-§3.5"
+      ],
+      "confidence": "VERIFIED regulation; minimum study design is open question Q8",
+      "examples": {
+        "fail": [
+          "clinically proven Glow Boosting Routine",
+          "Dermatologically tested"
+        ],
+        "pass": [
+          "Patch tested for safety under the supervision of a Dermatologist"
+        ]
+      }
     },
     {
       "id": "CLM-10",
@@ -205,9 +338,22 @@
       "message": "Regulator-approval wording is false for a cosmetic.",
       "fix": "Name what actually happened, e.g. 'tested at an independent third-party lab (ISO 24444:2019)'.",
       "judge_hint": "Any claim of regulator approval or certification.",
-      "sources": ["FDA-COS-DRUG", "ASCI-CH1", "BRAND-§3.3"],
-      "confidence": "regulation",
-      "examples": { "fail": ["Clinically tested on humans in US FDA-approved labs"], "pass": ["In-vivo tested by an independent third-party lab"] }
+      "sources": [
+        "FDA-DEF",
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "BRAND-§3.3"
+      ],
+      "confidence": "VERIFIED (FDA, EU 655 Annex 1(1))",
+      "examples": {
+        "fail": [
+          "Clinically tested on humans in US FDA-approved labs"
+        ],
+        "pass": [
+          "In-vivo tested by an independent third-party lab"
+        ]
+      }
     },
     {
       "id": "CLM-11",
@@ -224,13 +370,31 @@
         "\\b(most|only)\\s+(effective|trusted|potent|advanced|loved)\\b",
         "\\bunbeatable\\b"
       ],
-      "unless_same_sentence": ["for best results", "best before"],
+      "unless_same_sentence": [
+        "for best results",
+        "best before"
+      ],
       "message": "Superlatives and rankings need objective, current substantiation, and the basis must be shown.",
       "fix": "Remove it, or state the verifiable basis (source, period, category), e.g. '#1 in serums on <platform>, <month year>'.",
       "judge_hint": "Comparisons with the whole market, rankings, 'best', 'most', 'only'.",
-      "sources": ["ASCI-CH1", "ASCI-SUPERLATIVE", "BRAND-§4.2"],
-      "confidence": "regulation",
-      "examples": { "fail": ["Bestselling Sunscreen For Summer", "Only the best"], "pass": ["Use daily for best results"] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "ASCI-G-AWARD",
+        "ASCI-RPT-BPC",
+        "BRAND-§4.2"
+      ],
+      "confidence": "VERIFIED regulation; accepted data sources are open question Q9",
+      "examples": {
+        "fail": [
+          "Bestselling Sunscreen For Summer",
+          "Only the best"
+        ],
+        "pass": [
+          "Use daily for best results"
+        ]
+      }
     },
     {
       "id": "CLM-12",
@@ -249,9 +413,19 @@
       "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
       "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
       "judge_hint": "Explicit or implied comparison with competitors, 'regular' products or alternatives (e.g. 'than neem').",
-      "sources": ["ASCI-CH4", "BRAND-§3.3"],
-      "confidence": "regulation",
-      "examples": { "fail": ["kills 4X more acne-causing bacteria than neem", "25% more reduction than the benchmark product"], "pass": [] }
+      "sources": [
+        "ASCI-4.1",
+        "EU-655-4/5/6",
+        "BRAND-§3.3"
+      ],
+      "confidence": "VERIFIED regulation",
+      "examples": {
+        "fail": [
+          "kills 4X more acne-causing bacteria than neem",
+          "25% more reduction than the benchmark product"
+        ],
+        "pass": []
+      }
     },
     {
       "id": "CLM-13",
@@ -267,9 +441,21 @@
       "message": "Numbers that aren't about the product's own tested results still need a source.",
       "fix": "Cite the source in the footnote, or remove the number.",
       "judge_hint": "Unsourced factual or statistical statements and social-proof figures.",
-      "sources": ["ASCI-SUBSTANTIATION", "CCPA-MISLEAD"],
-      "confidence": "regulation",
-      "examples": { "fail": ["60% of skin is water.", "Trusted by 100,000+ Women Across India"], "pass": [] }
+      "sources": [
+        "ASCI-1.1",
+        "ASCI-1.2",
+        "CCPA-12",
+        "CPA-2(28)",
+        "CCPA-4"
+      ],
+      "confidence": "VERIFIED regulation",
+      "examples": {
+        "fail": [
+          "60% of skin is water.",
+          "Trusted by 100,000+ Women Across India"
+        ],
+        "pass": []
+      }
     },
     {
       "id": "CLM-14",
@@ -286,9 +472,18 @@
       "message": "Addressing the viewer's own skin condition can breach Meta's personal-attributes policy.",
       "fix": "Talk about the product and who it's formulated for ('for oily, acne-prone skin') instead of the viewer's condition.",
       "judge_hint": "Second-person statements or questions that assert the viewer has a condition.",
-      "sources": ["META-PERSONAL-ATTR"],
-      "confidence": "platform policy",
-      "examples": { "fail": ["Struggling with dark spots, acne marks, or uneven skin tone?"], "pass": ["Formulated for oily, acne-prone skin"] }
+      "sources": [
+        "META-PA"
+      ],
+      "confidence": "VERIFIED platform policy (Meta's own examples)",
+      "examples": {
+        "fail": [
+          "Struggling with dark spots, acne marks, or uneven skin tone?"
+        ],
+        "pass": [
+          "Formulated for oily, acne-prone skin"
+        ]
+      }
     },
     {
       "id": "CLM-15",
@@ -304,9 +499,20 @@
       "message": "Before/after or transformation framing needs representative, unretouched evidence and is restricted on Meta.",
       "fix": "Remove it, or use only documented, unretouched study images with their qualifier.",
       "judge_hint": "Before/after imagery or wording; dramatic transformation stories.",
-      "sources": ["META-BEFORE-AFTER", "ASCI-CH1"],
-      "confidence": "platform policy",
-      "examples": { "fail": ["See the transformation"], "pass": [] }
+      "sources": [
+        "META-HW-BA-AGE",
+        "ASCI-G-SGC",
+        "ASCI-1.4",
+        "ASCI-1.1",
+        "ASCI-1.5"
+      ],
+      "confidence": "VERIFIED platform policy + ASCI; age-gating is open question Q7",
+      "examples": {
+        "fail": [
+          "See the transformation"
+        ],
+        "pass": []
+      }
     },
     {
       "id": "CLM-16",
@@ -317,13 +523,27 @@
       "patterns": [
         "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry)[- ])\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
       ],
-      "unless_same_sentence": ["\\b(buy|purchase|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"],
+      "unless_same_sentence": [
+        "\\b(buy|purchase|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"
+      ],
       "message": "The condition for the free item has to be in the same line or clearly next to it.",
       "fix": "Put the condition right next to 'free': 'Free bottle when you buy any 2 products'.",
       "judge_hint": "Free offers whose conditions are missing or hidden.",
-      "sources": ["CCPA-FREE", "CCPA-MISLEAD"],
-      "confidence": "regulation",
-      "examples": { "fail": ["FREEBIE of your choice!"], "pass": ["Buy any 2 products and get a freebie of your choice"] }
+      "sources": [
+        "CCPA-7",
+        "ASCI-1.5(a)-(c)",
+        "CPA-2(28)",
+        "CCPA-4"
+      ],
+      "confidence": "VERIFIED regulation",
+      "examples": {
+        "fail": [
+          "FREEBIE of your choice!"
+        ],
+        "pass": [
+          "Buy any 2 products and get a freebie of your choice"
+        ]
+      }
     },
     {
       "id": "CLM-17",
@@ -340,9 +560,18 @@
       "message": "Pregnancy, baby or age-safety claims need product-specific evidence and legal sign-off.",
       "fix": "Only state what the product page states for this exact product, with its qualifier, or remove it.",
       "judge_hint": "Safety claims for pregnancy, lactation, infants or children.",
-      "sources": ["ASCI-CH3", "BRAND-§3.7"],
-      "confidence": "regulation + judgment",
-      "examples": { "fail": ["Safe for pregnancy"], "pass": [] }
+      "sources": [
+        "ASCI-1.1",
+        "CCPA-8",
+        "BRAND-§3.7"
+      ],
+      "confidence": "VERIFIED general substantiation rule + judgment (no pregnancy-specific rule found)",
+      "examples": {
+        "fail": [
+          "Safe for pregnancy"
+        ],
+        "pass": []
+      }
     },
     {
       "id": "CLM-18",
@@ -361,9 +590,25 @@
       "message": "Sunscreens can't claim to block everything or be waterproof. Use the tested, specific claim.",
       "fix": "Use SPF/PA as tested ('Broad spectrum SPF 50, PA++++') and 'water-resistant' only if tested, plus the reapplication advice.",
       "judge_hint": "Absolute sun-protection claims, waterproof/sweatproof, no need to reapply.",
-      "sources": ["FDA-SUNSCREEN", "ASCI-CH1", "BRAND-§3.6"],
-      "confidence": "regulation (US explicit; India by analogy — open question)",
-      "examples": { "fail": ["A Sweatproof, fast-absorbing sunscreen"], "pass": ["Broad Spectrum SPF 50, PA++++"] }
+      "sources": [
+        "FDA-OTC-ACNE-SPF",
+        "BIS-SPF",
+        "ASCI-RPT-HEAT",
+        "OPEN-Q4",
+        "ASCI-1.1",
+        "ASCI-1.4",
+        "ASCI-1.5",
+        "BRAND-§3.6"
+      ],
+      "confidence": "US detail UNVERIFIED (from memory); India by analogy + ASCI enforcement focus — open question Q4",
+      "examples": {
+        "fail": [
+          "A Sweatproof, fast-absorbing sunscreen"
+        ],
+        "pass": [
+          "Broad Spectrum SPF 50, PA++++"
+        ]
+      }
     },
     {
       "id": "CLM-19",
@@ -374,7 +619,11 @@
       "rationale": "The SPF on the ad must match the product's labelled SPF exactly.",
       "message": "SPF stated doesn't match the product.",
       "fix": "Use the SPF printed on the pack.",
-      "sources": ["CCPA-MISLEAD", "BRAND-§2.5"],
+      "sources": [
+        "CPA-2(28)",
+        "CCPA-4",
+        "BRAND-§2.5"
+      ],
       "confidence": "deterministic check against the product page / catalog"
     },
     {
@@ -386,7 +635,12 @@
       "rationale": "Minimalist's whole position is that the concentration on the ad is the concentration in the bottle. A wrong number is a misrepresentation (blocking when the product page is attached).",
       "message": "Concentration doesn't match what Minimalist sells.",
       "fix": "Use the exact concentration from the pack title.",
-      "sources": ["CCPA-MISLEAD", "BRAND-§2.1", "BRAND-§6"],
+      "sources": [
+        "CPA-2(28)",
+        "CCPA-4",
+        "BRAND-§2.1",
+        "BRAND-§6"
+      ],
       "confidence": "deterministic check against the product page / catalog"
     },
     {
@@ -398,8 +652,115 @@
       "message": "A testimonial is being used as a claim.",
       "fix": "Use a substantiated product claim instead, or show the testimonial clearly as one person's experience, with a 'results vary' qualifier, and only if it's genuine and on file.",
       "judge_hint": "First-person customer quotes or reviews presented as product results.",
-      "sources": ["ASCI-TESTIMONIAL", "CCPA-ENDORSE"],
-      "confidence": "regulation"
+      "sources": [
+        "CCPA-13",
+        "GADS-UNREL",
+        "CCPA-14"
+      ],
+      "confidence": "VERIFIED regulation"
+    },
+    {
+      "id": "CLM-22",
+      "dimension": "policy",
+      "title": "Negative statement about appearance",
+      "severity": "fix",
+      "rationale": "Meta prohibits cosmetic ads that 'contain statements of inferiority about physical appearance', and ASCI 3.1(b) bars deriding people for colour, age or physical conditions.",
+      "patterns": [
+        "\\bembarrass\\w*\\b",
+        "\\bugly\\b",
+        "\\bashamed\\b",
+        "\\bgross\\b",
+        "\\bdisgusting\\b",
+        "\\bhide\\s+(your|those|the)\\b",
+        "\\bflaws?\\b",
+        "\\b(dull|dark|old|tired)[- ]looking\\s+(face|skin)\\b.*\\b(hold(s|ing)? you back|showing)\\b"
+      ],
+      "message": "Attacking how someone looks (embarrassed, ugly, hide your flaws) breaches Meta's inferiority rule and the brand's tone.",
+      "fix": "Describe what the product does for the skin, not what's wrong with the viewer: 'Oil control that lasts all day'.",
+      "judge_hint": "Language that frames the viewer's appearance as bad, shameful or inferior, including about skin colour or age.",
+      "sources": [
+        "META-HW-INFERIOR",
+        "ASCI-3.1(b)",
+        "ASCI-G-GENDER",
+        "BRAND-§6-S3"
+      ],
+      "confidence": "VERIFIED platform policy + regulation",
+      "examples": {
+        "fail": [
+          "Embarrassed by your oily, pore-filled face?"
+        ],
+        "pass": [
+          "Oil control that lasts all day"
+        ]
+      }
+    },
+    {
+      "id": "CLM-23",
+      "dimension": "policy",
+      "title": "Ingredient efficacy presented as product efficacy",
+      "severity": "fix",
+      "rationale": "ASCI's 2023 beauty-category report lists 'ingredient based product efficacy claims where the product itself is not tested' as a top violation type, and EU 655/2013 says the same. This is the claim pattern a concentration-led brand is most exposed to: '10% Niacinamide is clinically proven to…' cites the ingredient's literature, not this product's test.",
+      "message": "A benefit proven for the ingredient is being presented as a result of this product.",
+      "fix": "Use 'formulated with 10% Niacinamide, an ingredient that helps…' unless there is a finished-product study, in which case cite it in the footnote.",
+      "judge_hint": "Efficacy, clinical or percentage claims attributed to an ingredient ('Niacinamide is clinically proven to…', 'Salicylic acid reduces acne by 50%') used as evidence that the product does it. Not raised for plain mechanism descriptions ('Salicylic acid exfoliates inside the pore').",
+      "sources": [
+        "ASCI-RPT-BPC",
+        "EU-655-2/3",
+        "CCPA-4",
+        "OPEN-Q5"
+      ],
+      "confidence": "VERIFIED enforcement pattern; which SKUs have product studies is open question Q5"
+    },
+    {
+      "id": "CLM-24",
+      "dimension": "policy",
+      "title": "Structure / function claim",
+      "severity": "fix",
+      "rationale": "Claims that the product changes how the body works ('inhibits melanin production', 'boosts collagen', 'regrows hair') are drug claims in the US and fall within the DMR Act's 'structure or organic function' definition in India. That is a grey area for legal, not a regex call.",
+      "patterns": [
+        "\\b(boost(s|ing)?|stimulat(e|es|ing)|increas(e|es|ing)|produc(e|es|ing))\\s+(\\w+\\s+){0,2}collagen\\b",
+        "\\b(inhibit(s|ing)?|decreas(e|es|ing)|reduc(e|es|ing)|block(s|ing)?|control(s|ling)?)\\s+(\\w+\\s+){0,2}melanin(\\s+production)?\\b",
+        "\\bregenerat\\w+\\s+(\\w+\\s+)?cells?\\b",
+        "\\b(regrow\\w*|re-?grow\\w*)\\b",
+        "\\bhair\\s+growth\\b"
+      ],
+      "provenance": "downgrade",
+      "message": "Body structure / function wording ('inhibits melanin production', 'boosts collagen') can make a cosmetic claim a drug claim.",
+      "fix": "Describe the visible result instead: 'helps reduce the look of dark spots', 'helps skin look firmer'.",
+      "judge_hint": "Claims about changing a body process (melanin, collagen, sebum production, cell turnover, hair growth).",
+      "sources": [
+        "DMR-2",
+        "FDA-DEF",
+        "OPEN-Q2"
+      ],
+      "confidence": "VERIFIED definitions; India application is open question Q2",
+      "examples": {
+        "fail": [
+          "helping inhibit melanin production"
+        ],
+        "pass": [
+          "helps reduce the look of dark spots"
+        ]
+      }
+    },
+    {
+      "id": "CLM-25",
+      "dimension": "policy",
+      "title": "'New' or 'improved' claim",
+      "severity": "advisory",
+      "rationale": "ASCI: 'new' or 'improved' must say what is new and may be used only for one year after launch.",
+      "patterns": [
+        "\\bnew(ly)?\\s+(launch|formula|and improved|improved)\\b",
+        "\\bimproved\\b",
+        "\\bintroducing\\b",
+        "\\ball[- ]new\\b"
+      ],
+      "message": "'New' / 'improved' must say what's new and is only valid for 12 months after launch.",
+      "fix": "Say what's new ('New: 0.1% Retinol serum') and check the launch date is within 12 months.",
+      "sources": [
+        "ASCI-G-NEW"
+      ],
+      "confidence": "VERIFIED regulation"
     },
     {
       "id": "CRE-01",
@@ -409,8 +770,12 @@
       "rationale": "ASCI's influencer guidelines and the CCPA endorsement rules require a clear, upfront disclosure on paid creator content.",
       "message": "Creator / paid-partnership ad has no visible disclosure (#ad, Paid partnership).",
       "fix": "Add '#ad' or 'Paid partnership' at the start of the caption and use the platform's paid-partnership label.",
-      "sources": ["ASCI-INFLUENCER", "CCPA-ENDORSE"],
-      "confidence": "regulation"
+      "sources": [
+        "ASCI-G-INF",
+        "CCPA-14",
+        "CCPA-13"
+      ],
+      "confidence": "VERIFIED regulation"
     },
     {
       "id": "TON-01",
@@ -423,12 +788,7 @@
         "\\b(struggling|suffering)\\s+with\\b",
         "\\btired\\s+of\\b",
         "\\bfed\\s+up\\b",
-        "\\bembarrass\\w*\\b",
         "\\binsecur\\w*\\b",
-        "\\bugly\\b",
-        "\\bflaws?\\b",
-        "\\bhide\\s+(your|those|the)\\b",
-        "\\bashamed\\b",
         "\\bwarning\\b",
         "\\bsay\\s+(goodbye|bye|no)\\s+to\\b",
         "\\bdon'?t\\s+let\\b",
@@ -437,9 +797,21 @@
       "message": "Fear / insecurity hook: off-brand for Minimalist, which positions itself against fear-mongering.",
       "fix": "Lead with the ingredient and what it does: 'Salicylic Acid 2% clears out pores' instead of 'Struggling with acne?'.",
       "judge_hint": "Openers that agitate a problem or insecurity, warnings, 'say goodbye to', shame framing.",
-      "sources": ["BRAND-§6-S3", "BRAND-§5"],
+      "sources": [
+        "BRAND-§6-S3",
+        "BRAND-§5",
+        "META-PA"
+      ],
       "confidence": "brand stated",
-      "examples": { "fail": ["Tired of dull, uneven skin?", "Warning ⚠️ You'll stop using your old sunscreen"], "pass": ["A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine."] }
+      "examples": {
+        "fail": [
+          "Tired of dull, uneven skin?",
+          "Warning ⚠️ You'll stop using your old sunscreen"
+        ],
+        "pass": [
+          "A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine."
+        ]
+      }
     },
     {
       "id": "TON-02",
@@ -468,9 +840,17 @@
       ],
       "message": "Hype word: Minimalist's own copy doesn't use it.",
       "fix": "Replace it with the specific fact (ingredient, concentration, what was measured).",
-      "sources": ["BRAND-§6-S3", "BRAND-§4.1"],
+      "sources": [
+        "BRAND-§6-S3",
+        "BRAND-§4.1"
+      ],
       "confidence": "brand stated + observed counts",
-      "examples": { "fail": ["for that flawless matt looking skin"], "pass": [] }
+      "examples": {
+        "fail": [
+          "for that flawless matt looking skin"
+        ],
+        "pass": []
+      }
     },
     {
       "id": "TON-03",
@@ -483,7 +863,10 @@
       "rationale": "Brand-authored site copy has 0 emoji, and Minimalist's brand ads are nearly emoji-free. Emoji bullets are a competitor-category signature.",
       "message": "Emoji-heavy copy reads like a category ad, not Minimalist.",
       "fix": "Remove the emoji. Use plain line breaks for lists.",
-      "sources": ["BRAND-§5", "CORPUS-NOTES"],
+      "sources": [
+        "BRAND-§5",
+        "AD-CORPUS"
+      ],
       "confidence": "brand observed"
     },
     {
@@ -497,7 +880,9 @@
       "rationale": "There is 1 exclamation mark in the whole Shopify description corpus. The voice is calm and declarative.",
       "message": "Several exclamation marks: the brand voice is calm and declarative.",
       "fix": "Use full stops.",
-      "sources": ["BRAND-§5"],
+      "sources": [
+        "BRAND-§5"
+      ],
       "confidence": "brand observed"
     },
     {
@@ -519,7 +904,11 @@
       ],
       "message": "Urgency pressure isn't the brand's register (it's fine on a genuine time-bound offer, but state the dates).",
       "fix": "State the offer and its real end date plainly, or drop the urgency.",
-      "sources": ["BRAND-§5", "CCPA-DARK-PATTERNS"],
+      "sources": [
+        "BRAND-§5",
+        "ASCI-G-DARK",
+        "CCPA-DP"
+      ],
       "confidence": "brand observed + regulation (dark-pattern guidance, if confirmed)"
     },
     {
@@ -532,7 +921,10 @@
       "message": "The ad doesn't say what's in the product or how it works.",
       "fix": "Name the active, its concentration and one plain-language line on what it does.",
       "judge_hint": "Ads that could belong to any skincare brand: mood and outcome words with no named active, concentration or mechanism. Model-judged; only raise for brand-authored product ads (not pure offer/promo ads).",
-      "sources": ["BRAND-§5", "BRAND-§6"],
+      "sources": [
+        "BRAND-§5",
+        "BRAND-§6"
+      ],
       "confidence": "brand stated + judgment"
     },
     {
@@ -545,7 +937,10 @@
       "rationale": "56 of 60 single products lead with a numeric strength, and the concentration is the brand's signature. Naming the hero active without its % throws that away.",
       "message": "Active named without its concentration.",
       "fix": "State it as on the pack: 'Niacinamide 10%'.",
-      "sources": ["BRAND-§2.1", "BRAND-§6"],
+      "sources": [
+        "BRAND-§2.1",
+        "BRAND-§6"
+      ],
       "confidence": "brand observed"
     },
     {
@@ -562,7 +957,9 @@
       "rationale": "Titles never put a space before % (0/49) and always write sub-1 values with a leading '0.' ('0.3%'). Leading zeros like '02%' are used inconsistently by the brand, so they're NOT enforced.",
       "message": "Concentration format differs from the pack ('10%', '0.3%').",
       "fix": "Write it as on the pack: no space before %, '0.3%' not '.3%'.",
-      "sources": ["BRAND-§2.2"],
+      "sources": [
+        "BRAND-§2.2"
+      ],
       "confidence": "brand observed"
     },
     {
@@ -581,7 +978,9 @@
       "rationale": "Minimalist: 'the blind march towards beauty products with Natural claims is really concerning'. The brand sells on actives, not on naturalness.",
       "message": "'Natural' framing runs against the brand's stated position.",
       "fix": "Name the actual ingredient and its function instead.",
-      "sources": ["BRAND-§6-S3"],
+      "sources": [
+        "BRAND-§6-S3"
+      ],
       "confidence": "brand stated"
     },
     {
@@ -594,7 +993,9 @@
       "message": "Outcome stated more strongly than the brand's usual appearance-level wording.",
       "fix": "Scope it: 'visibly', 'the look of', 'helps'.",
       "judge_hint": "Outcome verbs (brightens, fades, evens, transforms, fixes) with no 'visibly / helps / appearance' scoping. Only raise when clearly unhedged; don't flag mechanism statements like 'Niacinamide reduces sebum'.",
-      "sources": ["BRAND-§3.4"],
+      "sources": [
+        "BRAND-§3.4"
+      ],
       "confidence": "brand observed (mixed evidence: the brand is itself inconsistent)"
     },
     {
@@ -602,11 +1003,16 @@
       "dimension": "language",
       "title": "Vague purity claim",
       "severity": "advisory",
-      "patterns": ["\\b100\\s?%\\s+pure\\b", "\\bpurest\\b"],
+      "patterns": [
+        "\\b100\\s?%\\s+pure\\b",
+        "\\bpurest\\b"
+      ],
       "rationale": "Minimalist states purity precisely ('86% pure Vitamin C content', named supplier grades). '100% pure' is the category's vague version.",
       "message": "Vague purity claim: state the grade or source as the product page does.",
       "fix": "Use the page's precise wording, e.g. 'Ethyl Ascorbic Acid, 86% pure Vitamin C content'.",
-      "sources": ["BRAND-§3.3"],
+      "sources": [
+        "BRAND-§3.3"
+      ],
       "confidence": "brand observed"
     }
   ]
