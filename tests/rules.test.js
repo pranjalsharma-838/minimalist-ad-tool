@@ -54,6 +54,37 @@ test("concentration checked against the catalog and the attached product", () =>
   assert.equal(hit.severity, "block");
 });
 
+test("false positives found by the stand-in judges stay fixed", () => {
+  assert.ok(!has("Suitable for all skin types, especially those dealing with dark spots", "CLM-14"));
+  assert.ok(has("Struggling with dark spots, acne marks, or uneven skin tone?", "CLM-14"));
+  assert.ok(!has("Comment FREE for the offer", "CLM-16"));
+  const brand = runRules({ ad_type: "brand", advertiser: "Heaven Magic Beauty", primary_text: "Heaven Magic's Bridal Cream", headline: "", on_image_text: "", footnote: "", cta: "" });
+  assert.ok(!brand.some((f) => f.rule_id === "TON-02"), "brand name is not hype");
+});
+
+test("creator disclosure: missing blocks, buried needs a fix, upfront is fine", () => {
+  const run = (t) => runRules({ ad_type: "creator", primary_text: t, headline: "", on_image_text: "", footnote: "", cta: "" }).find((f) => f.rule_id === "CRE-01");
+  assert.equal(run("Love this cleanser, link in bio").severity, "block");
+  assert.equal(run("I love the Salicylic Acid Cleanser because it's perfect for combination and oily skin like mine, and I carry it every time I travel anywhere. #ad #cleanser").severity, "fix");
+  assert.equal(run("#ad I love this cleanser"), undefined);
+});
+
+test("model can't raise code-only checks, and can't exceed rulebook severity", async () => {
+  const { postProcessJudge } = await import("../lib/judge.js");
+  const ad = { headline: "Lip Balm SPF 50", primary_text: "Guaranteed glow", on_image_text: "", footnote: "", cta: "" };
+  const out = postProcessJudge({
+    findings: [
+      { rule_id: "CLM-19", dimension: "policy", field: "headline", span: "SPF 50", severity: "block", why: "guess", fix: "" },
+      { rule_id: "CLM-03", dimension: "policy", field: "primary_text", span: "Guaranteed", severity: "fix", why: "x", fix: "" },
+      { rule_id: "CLM-03", dimension: "policy", field: "primary_text", span: "not in ad", severity: "block", why: "x", fix: "" },
+    ],
+    rule_hit_review: [], tone_read: "", language_read: "",
+  }, ad, []);
+  assert.equal(out.findings.length, 1);
+  assert.equal(out.findings[0].severity, "fix", "milder of model (fix) and rulebook (block)");
+  assert.deepEqual(out.rejected.map((r) => r.reason.slice(0, 13)), ["deterministic", "quoted span n"]);
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));

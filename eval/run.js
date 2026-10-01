@@ -41,7 +41,7 @@ async function evaluate(mode) {
   for (const c of cases) {
     const label = labels.get(c.id);
     if (!label) continue;
-    const ad = { ad_type: c.ad_type, headline: c.headline, primary_text: c.primary_text, on_image_text: c.on_image_text, footnote: c.footnote, cta: c.cta };
+    const ad = { ad_type: c.ad_type, advertiser: c.advertiser === "synthetic" ? "" : c.advertiser, headline: c.headline, primary_text: c.primary_text, on_image_text: c.on_image_text, footnote: c.footnote, cta: c.cta };
     let ctx = { rulesOnly: true };
     if (mode === "rules+model") {
       const f = `eval/sim_model/${c.id}.json`;

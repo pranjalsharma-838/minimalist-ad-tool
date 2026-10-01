@@ -466,7 +466,7 @@
       "patterns": [
         "\\b(do|did)\\s+you\\s+(have|suffer|get)\\b",
         "\\b(are|were)\\s+you\\s+(suffering|struggling|dealing)\\b",
-        "\\b(struggling|suffering|dealing)\\s+with\\s+([\\w-]+,?\\s+){0,2}(acne|pimples|breakouts|eczema|rosacea|melasma|dark spots|pigmentation|hair\\s?fall|hair loss|wrinkles|dull skin|oily skin)\\b",
+        "(?<!\\b(those|people|anyone|someone|customers|users|who are|for)\\s)\\b(struggling|suffering)\\s+with\\s+([\\w-]+,?\\s+){0,2}(acne|pimples|breakouts|eczema|rosacea|melasma|dark spots|pigmentation|hair\\s?fall|hair loss|wrinkles|dull skin|oily skin)\\b",
         "\\byour\\s+(acne|pimples|breakouts|eczema|rosacea|melasma|hair\\s?loss|bald\\w*|dark spots|pigmentation|wrinkles|stretch marks|oily skin|dull skin|scars)\\b"
       ],
       "message": "Addressing the viewer's own skin condition can breach Meta's personal-attributes policy.",
@@ -521,7 +521,7 @@
       "severity": "fix",
       "rationale": "A 'free' offer that depends on a purchase must state the condition clearly in the same creative (CCPA guidelines on misleading ads).",
       "patterns": [
-        "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry)[- ])\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
+        "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry|comment|type|dm|reply)[- ])\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
       ],
       "unless_same_sentence": [
         "\\b(buy|purchase|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"
