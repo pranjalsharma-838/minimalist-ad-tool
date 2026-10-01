@@ -1,0 +1,27 @@
+# Image prompts - 2026-10-02
+
+Background only. Paste one prompt per new chat. Do not add product, text or people.
+
+## 1039318678808682 - product_hero - Granactive Retinoid 2% Face Cream
+
+Square 1080x1080 background-only scene. Seamless soft-grey to off-white studio backdrop curving into a matte off-white tabletop, horizon line at about two-thirds height. Soft, diffused natural daylight from the upper left, gentle and even, with a faint soft shadow area on the tabletop at the right where an object will later be placed. Calm, clinical, premium mood; palette of soft grey, warm off-white and a hint of muted navy in the shadows. No props. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm, smooth and low-detail for copy. No product, no bottle, no tube, no packaging, no cream or texture swatch, no text, no letters, no numbers, no logos, no people, no faces, no skin, no hands. Empty space reserved for product and copy to be added later.
+
+## 1115173371246578 - expert_authority - Salicylic Acid 2% Face Serum
+
+Square 1080x1080 background-only scene. A clean, minimal desk top in matte off-white with a soft white wall behind, seen at a slight eye-level angle. Soft natural window light from the left, even and diffused. Few props, kept at the far left edge and very understated: a closed plain notebook with a blank cover and a small sprig of fresh green tea leaves. Palette of off-white, white, soft mint and a touch of deep green; calm, clinical, trustworthy mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm and low-detail for copy. No product, no bottle, no dropper, no packaging, no box, no jar, no text, no letters, no logos, no people, no faces, no skin, no hands, no doctors, no lab coats, no badges or certificates. Empty space reserved for product and copy to be added later.
+
+## 1593356795737812 - product_hero - Light Fluid SPF 50 Sunscreen
+
+Square 1080x1080 background-only scene. Clean, flat, warm off-white seamless studio background with a very subtle soft gradient, brighter at the top-left. Soft, even natural daylight, with a faint soft floor shadow area at the lower right where an object will later stand. No props. Palette of off-white, white and a hint of cool grey; clean, clinical, precise mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% smooth, flat and low-detail for a designer-drawn label and copy. No product, no bottle, no tube, no packaging, no cream or drips, no text, no letters, no numbers, no lines or boxes, no logos, no people, no faces, no skin, no hands. Empty space reserved for product and copy to be added later.
+
+## 1602641281689513 - problem_solution - AHA PHA BHA 32% Face Peel
+
+Square 1080x1080 background-only scene. A smooth off-white stone surface against a plain wall washed in a very pale lavender-grey tone, seen at a low eye-level angle. Soft, diffused natural daylight from the left, calm and even. One minimal prop at the far left edge: a small folded plain white cotton towel. Palette of off-white, pale lavender, soft grey and a touch of deep plum in the shadows; calm, sensorial, modern but minimal. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% calm and low-detail for copy. No product, no bottle, no jar, no packaging, no texture swatch or swirl, no text, no letters, no logos, no people, no faces, no skin, no hands, no before/after or result imagery. Empty space reserved for product and copy to be added later.
+
+## 27546140265006255 - before_after - Vitamin C 10% Face Serum
+
+Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a very soft pale sky-blue gradient toward the top and a faint soft lemon-yellow glow near the lower right, soft natural daylight, clinical and calm. A smooth matte off-white surface runs across the bottom of the frame. On the left half, two empty rectangular frames stacked vertically, equal size, with thin light grey borders, completely blank and plain inside, nothing in them; the rest of the left 50% is calm and low-detail, reserved as empty space for copy. The right 45% of the frame stays clear and evenly lit, empty space reserved on the surface for a product photo to be placed later, with only a single small clear glass laboratory beaker softly out of focus at the far back edge. Few props, minimal. No product, no bottle, no packaging, no text, no letters, no numbers, no logos, no badges, no seals, no certificates, no people, no faces, no skin, no hands, no photos inside the frames.
+
+## 621835826921394 - testimonial_ugc - SPF 50 Sunscreen
+
+Square 1080x1080 background-only image for a minimal skincare ad. A soft, clear pale sky-blue backdrop with a gentle gradient to near-white at the bottom and a faint thin haze, airy and fresh, soft natural daylight. A plain off-white matte ledge runs along the bottom of the frame. The right 45% of the frame stays clear and evenly lit, with empty space reserved on the ledge for a product photo to be placed later. The left 50% stays calm and low-detail, only smooth pale sky, reserved as empty space for copy and a card overlay. Palette: pale sky blue, soft teal tint, off-white. No clouds with strong shapes, no sun flare, no props. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no cards, no stars, no badges, no people, no faces, no skin, no hands.

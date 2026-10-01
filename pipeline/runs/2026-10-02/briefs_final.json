@@ -51,15 +51,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -142,15 +143,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -220,11 +222,20 @@
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-18",
+        "span": "water-resistant",
+        "message": "Water resistance is a tested sun-protection claim; it is only acceptable with a water-resistance test on file and the tested duration stated, and neither appears on the ad or in the attached page facts (the cited ISO 24444 test measures SPF, not water resistance).",
+        "fix": "Attach the water-resistance test; if it exists, state the tested duration from that report next to the claim. Otherwise remove 'water-resistant' and keep 'in a lightweight fluid'.",
+        "layer": "model"
+      },
       {
         "severity": "fix",
         "rule_id": "CLM-19",
@@ -294,15 +305,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": []
   },
@@ -358,15 +370,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -429,20 +442,38 @@
     "product_handle": "salicylic-acid-lha-02-body-wash",
     "product_url": "https://beminimalist.co/products/salicylic-acid-lha-02-body-wash",
     "source_brand": "Chemist at Play",
-    "status": "approved_for_image_step",
+    "status": "flagged",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-02",
+        "span": "reduces body acne",
+        "message": "An unhedged claim to reduce acne sits on the cosmetic/drug line and needs a legal check; it is on the product page (F2) but no study for it is attached. If legal reads it as treating a condition it becomes a CLM-01 disease claim, and it is also unhedged efficacy (LNG-04).",
+        "fix": "Gently exfoliates and smoothens skin, formulated for acne-prone body skin, without compromising the skin barrier.",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-13",
+        "span": "Salicylic Acid ~58% vs LHA 6% penetration of the outer layer",
+        "message": "These penetration percentages are factual figures shown with no source on the creative; they come from ingredient literature on the product page (F14, F15), not from a test of this body wash.",
+        "fix": "Add a footnote citing the source of the 58% and 6% penetration figures, or remove the numbers and keep 'Salicylic Acid works deep; LHA exfoliates the outer layer'.",
+        "layer": "model"
+      }
+    ]
   },
   {
     "ad_type": "offer_promo",
@@ -500,9 +531,10 @@
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -563,15 +595,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -660,9 +693,10 @@
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -672,6 +706,14 @@
         "message": "SPF 56 is the lab-measured value from the product page; the labelled SPF is 50.",
         "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
         "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "UNLISTED",
+        "span": "acne safe",
+        "message": "'Acne safe' is a vague safety promise that implies the sunscreen won't cause breakouts for anyone; it is on the page (F8) but no non-comedogenicity or acne-related test is attached. Acceptable only if such a test is on file and named.",
+        "fix": "Formulated for acne-prone skin (or attach the non-comedogenicity test and name it in the footnote).",
+        "layer": "model"
       }
     ]
   },
@@ -733,11 +775,28 @@
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-18",
+        "span": "water-resistant",
+        "message": "Water resistance is a tested sun-protection claim that needs a water-resistance test on file and its tested duration stated; neither is on the ad or in the page facts (the cited ISO 24444 test measures SPF only). This sits alongside the 'Sweatproof' hit the rule layer already raised.",
+        "fix": "Attach the water-resistance test; if it exists, state the tested duration from that report. Otherwise remove 'water-resistant' and keep 'in a lightweight texture'.",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-13",
+        "span": "Meets the EU recommendation of SPF / UVA ratio (3:1)",
+        "message": "This is a factual compliance claim that depends on a UVA protection test, but the only test cited on the ad is the SPF test; the claim is on the page (F4) without a named source.",
+        "fix": "Cite the UVA test that shows the ratio in the footnote, or remove the line and keep 'SPF 50, PA++++'.",
+        "layer": "model"
+      },
       {
         "severity": "fix",
         "rule_id": "CLM-18",
@@ -807,15 +866,16 @@
     "status": "approved_for_image_step",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": []
   },
@@ -867,19 +927,37 @@
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
-    "status": "approved_for_image_step",
+    "status": "flagged",
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-24",
+        "span": "regulates sebum production",
+        "message": "Claiming an ingredient changes how the skin produces sebum is a structure/function claim, which legal needs to review as a possible drug claim.",
+        "fix": "Zinc: helps balance excess oil",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-04",
+        "span": "evens skin tone",
+        "message": "This is an unhedged outcome verb; the brand normally scopes tone claims to appearance, and the line above already uses 'helps'.",
+        "fix": "helps even the look of skin tone",
+        "layer": "model"
+      }
+    ]
   }
 ]
