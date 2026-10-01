@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Made for All skin type",
+      "severity": "fix",
+      "why": "This promises suitability for every skin type, but the on-image text says 'suitable for dry/normal & sensitive skin'. The two contradict each other, and a universal suitability claim can't be substantiated (it's close to CLM-03's universality concern). 'type' should also be 'types'.",
+      "fix": "Options for different skin types"
+    },
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Science-backed formulas",
+      "severity": "fix",
+      "why": "'Science-backed' is an evidence claim and needs a study on file for the products in the bundle. Without one, it's unsubstantiated.",
+      "fix": "Remove it, or replace it with something factual: 'Formulas with the active and its percentage on the label'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "A 'Clinically Tested' badge needs a specific product study on file stating what was tested. Minimalist usually says the narrower 'patch tested under dermatological supervision'."
+    }
+  ],
+  "tone_read": "Mostly calm and practical, with no fear hooks, hype or emoji. 'Your skin isn't generic' is a friendly, personalised opener rather than agitation, and the product shot names the active.",
+  "language_read": "'5% Niacinamide' follows the pack format. The bullets are loose ('Made for All skin type', 'Science-backed formulas because every skin is unique') and less precise than the brand normally is, and the suitability statements contradict each other."
+}

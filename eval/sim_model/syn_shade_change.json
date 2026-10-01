@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-06",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Two shades brighter",
+      "severity": "block",
+      "why": "A shade change promises lighter skin, which is a fairness claim under ASCI's skin-lightening guidelines. It is also before/after framing (CLM-15) and an unsourced number (CLM-13).",
+      "fix": "Helps fade the look of dark spots for a more even-looking tone"
+    },
+    {
+      "rule_id": "CLM-06",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "for a lighter, even complexion",
+      "severity": "block",
+      "why": "'Lighter complexion' makes lighter skin the goal, which is exactly what the skin-lightening guidelines prohibit.",
+      "fix": "for a more even-looking tone"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The ad leads with a transformation promise rather than education. Framing lighter skin as the goal is reputationally toxic and is the opposite of Minimalist's no-fear, no-hype stance.",
+  "language_read": "'Alpha Arbutin 2%' is named with its concentration in the right format. The outcome language is unhedged and uses lightening vocabulary, where the brand uses 'even-looking tone' and 'the look of dark spots'."
+}

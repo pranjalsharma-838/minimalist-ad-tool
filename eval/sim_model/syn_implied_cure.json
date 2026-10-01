@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-03",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Clear skin for good",
+      "severity": "block",
+      "why": "\"For good\" promises a permanent result, which no cosmetic can guarantee and which goes against the brand's 'do what they claim' position. It also implies clearing acne (CLM-02).",
+      "fix": "For oily, acne-prone skin, with Salicylic Acid 2%."
+    },
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Breakouts? Not anymore.",
+      "severity": "fix",
+      "why": "This implies the product stops breakouts altogether, an acne-elimination claim on the cosmetic/drug line, and 'not anymore' reads as an absolute (CLM-03). Opening with 'Breakouts?' also implies the viewer has the condition (CLM-14) and agitates the problem (TON-01).",
+      "fix": "Salicylic Acid 2% for oily, acne-prone skin"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The problem-agitation opener and the 'clear skin for good' promise read like category acne copy, not Minimalist's calm, clinical voice. The active is named, but there is no mechanism or education about what Salicylic Acid does.",
+  "language_read": "The concentration is stated (Salicylic Acid 2%), though the brand usually leads with it as '2% Salicylic Acid'. Efficacy is completely unhedged: there is no 'helps' or 'appearance' scoping, and the outcome is framed as permanent."
+}

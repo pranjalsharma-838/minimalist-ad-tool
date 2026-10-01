@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "by next week",
+      "severity": "fix",
+      "why": "Promising a result within about a week is a time-bound claim. It needs a study of that duration, and the study qualifier has to be on the ad. Acceptable only if a study file supports the timeframe and its qualifier is added.",
+      "fix": "Remove the timeframe, e.g. 'Niacinamide 10% for oily skin', or attach the study and add its qualifier on the creative."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The headline is a vague emotional promise ('your skin will thank you') rather than Minimalist's educational, ingredient-first register. The primary text is plain and calm, but it says nothing about what Niacinamide does.",
+  "language_read": "The active and concentration are named correctly ('Niacinamide 10%'). The headline's outcome is unscoped and time-bound, where brand copy would hedge it to appearance, e.g. 'helps reduce the look of excess oil'."
+}

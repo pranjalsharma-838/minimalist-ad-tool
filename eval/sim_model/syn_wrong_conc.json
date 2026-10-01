@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-11",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Our strongest retinol yet",
+      "severity": "fix",
+      "why": "'Strongest' is a ranking claim that needs its basis stated, and here it depends on the concentration, which is itself in doubt. 'Yet' also implies a new launch (CLM-25). Acceptable if the range data supports it and the concentration is confirmed against the product page.",
+      "fix": "Remove it, or state the basis once the concentration is confirmed, e.g. 'Our highest-strength retinol' with the range comparison on file."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "As far as this tool knows, Minimalist's retinol serum is sold at 0.3%, not 1%. With no product page attached this can't be confirmed, so verify the labelled concentration before running."
+    }
+  ],
+  "tone_read": "The ad is short, calm and leads with the active and its strength, which is on-brand. 'Our strongest retinol yet' tips into hype and has no mechanism behind it.",
+  "language_read": "The concentration is written in the brand format, but the number itself needs checking against the product. 'For fine lines' is acceptably scoped as a use case rather than an unhedged outcome."
+}

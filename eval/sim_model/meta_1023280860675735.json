@@ -1,0 +1,41 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Say goodbye to breakouts and hello to clear, healthy skin",
+      "severity": "fix",
+      "why": "This is the rulebook's own example of an implied acne-elimination claim: it promises that breakouts end and skin clears. It's also a problem-agitation opener (TON-01).",
+      "fix": "Formulated for acne-prone and oily skin, with 2% Salicylic Acid to gently exfoliate."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Dermatouch Salicylic Acid 2% Face Wash",
+      "severity": "fix",
+      "why": "The ad is labelled brand-authored for Minimalist but names a Dermatouch product. Running it would misattribute the product, so confirm the brand and product before anything else.",
+      "fix": "Replace with the correct Minimalist product name and concentration, or route this ad out of the Minimalist review."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Say goodbye to' is a problem-agitation hook. Here it also carries an acne-elimination claim, raised as CLM-02."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Flawless complexion' is hype, and it also implies a perfect, absolute result, which a reviewer may treat as a CLM-03 concern. Replace with 'a calmer, clearer-looking complexion' or remove it."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "The copy is emoji-led (💪, 🌱, ✨), a competitor-category signature."
+    }
+  ],
+  "tone_read": "This reads as a generic category ad: an exclamatory 'Meet Your Match!', a 'Say goodbye to' hook, emoji punctuation and 'flawless'. That's the opposite of Minimalist's calm, clinical register.",
+  "language_read": "The active and concentration are named (Salicylic Acid 2%), which fits the pack format, and 'gently exfoliate and soothe' is a reasonable mechanism line. The outcome language ('clear, healthy skin', 'flawless complexion') is unhedged where the brand would say 'helps reduce the look of'."
+}

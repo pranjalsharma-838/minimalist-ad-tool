@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Now strengthen with Vitamin B5",
+      "severity": "fix",
+      "why": "The card reads as if Vitamin B5 is the new addition, but the primary text says B5 was already in the formula and Vitamin B12 is what's new. The ingredient story has to match across fields, and 'strengthen' is also a grammar slip.",
+      "fix": "Now with Vitamin B12"
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "The Gel Cleanser you loved",
+      "severity": "advisory",
+      "why": "Card 1 calls the original a gel cleanser, while card 2 describes a 'cream cleanser'. A reviewer will ask which format is correct, because a product-format mismatch misdescribes the product.",
+      "fix": "Use the format printed on the pack consistently on both cards (e.g. 'The Gentle Cleanser you loved')."
+    },
+    {
+      "rule_id": "CLM-25",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Meet the new",
+      "severity": "advisory",
+      "why": "The ad does say what's new (Vitamin B12 added), which meets the main 'new' requirement. 'New' can only be used for 12 months after launch, so confirm the launch date and retire the word after that.",
+      "fix": "Keep it while the launch is under 12 months old, then use 'Meet the B12 + Oat Extract 6.5% Gentle Cleanser'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'Oat Extract 6%' names the predecessor product the ad is comparing against, not the concentration of the advertised cleanser. It should still match that product's actual label."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "'OAT EXTRACT 06%' is the old product's name written with a leading zero, which the brand uses inconsistently and the rulebook doesn't enforce. It refers to the predecessor, not the new 6.5% formula."
+    }
+  ],
+  "tone_read": "Calm, declarative and ingredient-led, naming Oat Extract, Vitamin B5, Hyaluronic Acid and B12 with no fear hooks, hype words or emoji, so it sounds like Minimalist. 'Everything you loved. Thoughtfully evolved.' is a soft line but stays within the brand's register.",
+  "language_read": "Concentrations are stated (6% to 6.5%), but the on-image text writes '06%' while the primary text writes '6%', and it's unclear whether the 6.5% refers to Oat Extract alone. The card also mixes up which vitamin is new (B5 vs B12) and calls the product both gel and cream, so tighten these before review."
+}

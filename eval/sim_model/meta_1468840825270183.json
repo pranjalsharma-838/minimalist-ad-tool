@@ -1,0 +1,50 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Say goodbye to oiliness, acne breakouts, and uneven skin tone",
+      "severity": "fix",
+      "why": "'Say goodbye to... acne breakouts' implies the cleanser stops or eliminates acne, which sits on the cosmetic/drug line. Promising an end to 'uneven skin tone' is also an elimination claim (CLM-04), and the opener is a problem-agitation hook (TON-01).",
+      "fix": "A gentle cleanser for oily, acne-prone skin, with Salicylic Acid + LHA 02%."
+    },
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "the very first step to clear skin",
+      "severity": "fix",
+      "why": "'Clear skin' next to an acne cleanser implies acne clearing as the outcome. Scope it to what cleansing does.",
+      "fix": "the first step of a routine for oily, acne-prone skin"
+    },
+    {
+      "rule_id": "TON-05",
+      "dimension": "tone",
+      "field": "primary_text",
+      "span": "Shop the sale now on Zepto",
+      "severity": "advisory",
+      "why": "This pushes urgency with a sale but gives no dates or terms. If it's a genuine time-bound offer, state when it runs.",
+      "fix": "Available on Zepto, on sale until [end date]."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Say goodbye to' is a problem-agitation opener. Here it also carries an implied acne-elimination claim, raised as CLM-02."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "The copy carries several emoji (🛡️, ⚡, 🛒), which reads like a category ad rather than Minimalist."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Two exclamation marks in a short ad move it away from the calm, declarative brand voice."
+    }
+  ],
+  "tone_read": "The opener is competitor-style problem agitation ('Say goodbye to...') with emoji and exclamation marks, which isn't Minimalist's register. The middle sentence about Zinc and Oat Extract is closer to the brand's educational voice.",
+  "language_read": "The active and concentration are named (Salicylic Acid + LHA 02%), and the leading zero isn't enforced. The outcome language ('Say goodbye to', 'clear skin') is unhedged where the brand would scope to 'for acne-prone skin' or 'helps reduce the look of'."
+}

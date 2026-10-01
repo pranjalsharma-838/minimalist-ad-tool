@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-14",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Your breakout may be gone",
+      "severity": "fix",
+      "why": "The opener tells the viewer they had a breakout and now have a lingering dark spot. That asserts a personal skin condition, which Meta rejects or restricts. It also works as a problem-agitation hook (TON-01).",
+      "fix": "Dark spots left after breakouts can take time to fade."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "CureSkin dermatologist",
+      "severity": "fix",
+      "why": "The ad is labelled brand-authored for Minimalist but promotes a CureSkin dermatology service. Running it would misattribute the offer, so confirm the advertiser before review. If it does go out under Minimalist, the dermatologist endorsement would also need to be on file (CLM-09).",
+      "fix": "Route this ad out of the Minimalist review, or replace it with the correct Minimalist product and copy."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Personalized treatment plan' presents dark spots as something to be medically treated, which is a drug/treatment framing. A reviewer may accept it for a genuine dermatologist consultation service, but not for a cosmetic product ad."
+    }
+  ],
+  "tone_read": "It opens by agitating a lingering concern ('can stay much longer', 'Instead of waiting'), which Minimalist positions against. There's no product education at all.",
+  "language_read": "No active, concentration or mechanism is named, and the ad is about a service rather than a product. The vocabulary ('treatment plan', 'right care') is clinical-service language rather than Minimalist's hedged, ingredient-led copy."
+}

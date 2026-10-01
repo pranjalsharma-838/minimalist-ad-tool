@@ -1,0 +1,17 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'In 2 weeks' promises a result within a stated time, so it needs a study of that duration, with its qualifier shown on the ad."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Cuts oil by 97%' turns what is plausibly a perception figure ('97% subjects said skin felt less oily') into an efficacy measurement, with no qualifier. Restate it, e.g. '97% subjects said skin felt less oily after 2 weeks* (*consumer perception study)', if the study file supports that."
+    }
+  ],
+  "tone_read": "The headline is a punchy performance claim rather than Minimalist's calm, educational voice, and nothing in the ad explains how Salicylic Acid works. The primary text is just a product name.",
+  "language_read": "The active and concentration are named correctly ('Salicylic Acid 2%'). 'Cuts oil' is an unhedged outcome verb, where the brand would scope the claim to how skin looked or felt."
+}

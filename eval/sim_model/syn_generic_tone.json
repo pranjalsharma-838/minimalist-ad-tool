@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "TON-06",
+      "dimension": "tone",
+      "field": "headline",
+      "span": "Glow like never before",
+      "severity": "advisory",
+      "why": "The whole ad is mood words ('glow', 'radiance', 'shine') with no named active, concentration or mechanism, so it could belong to any skincare brand. 'Like never before' also leans into hype.",
+      "fix": "Lead with the product's active and its concentration and what it does, using only facts from the product page."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "This reads as generic category copy: aspirational mood lines with no education. The voice is calm, but it lacks Minimalist's ingredient-first substance.",
+  "language_read": "No active, concentration or product is named at all, which throws away the brand's signature. The outcome words are unhedged mood claims rather than scoped, appearance-based efficacy."
+}

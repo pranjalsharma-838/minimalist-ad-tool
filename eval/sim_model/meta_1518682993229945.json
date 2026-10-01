@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "sharing every single percentage",
+      "severity": "fix",
+      "why": "This promises that every percentage is disclosed. Minimalist states the concentration of its key actives, not of every ingredient, so the absolute wording may be literally untrue. Acceptable only if every ingredient percentage really is published.",
+      "fix": "sharing the exact percentage of every key active"
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Formulated completely in-house within our factory",
+      "severity": "advisory",
+      "why": "'Completely in-house' is a verifiable claim about manufacturing. It's acceptable only if every product the ad covers is formulated (and, if implied, made) in Minimalist's own facility.",
+      "fix": "Keep only if confirmed across the range; otherwise 'Formulated by our in-house team'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'Absolutely nothing to hide' is a statement about brand transparency, not a guaranteed or permanent skin result, so CLM-03 doesn't really apply. The concrete absolute to check is 'every single percentage', which is raised separately."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Clinically proven actives backed by real data' is an evidence claim that needs a specific study on file. It also borrows ingredient literature as product proof (CLM-23). Rephrase to 'actives at studied concentrations', or cite the product test."
+    }
+  ],
+  "tone_read": "Calm, declarative and on the brand's transparency pillar, with no hype, emoji or fear framing, so it sounds like Minimalist. It's a values ad with no product or ingredient named, which is acceptable for brand messaging but less educational than usual.",
+  "language_read": "No active or concentration is named, so the brand's number-led signature is absent. 'Science backed' and 'clinically proven' are stated without scope or source, where Minimalist's own copy specifies exactly what was tested."
+}

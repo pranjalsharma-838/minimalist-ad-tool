@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "backed by science",
+      "severity": "fix",
+      "why": "'Moisturizers backed by science' is an evidence claim about the moisturizers themselves. It needs a product-specific study on file, and the ad doesn't name one.",
+      "fix": "Remove it, or attach substantiation and name what was tested, e.g. 'Moisturizers with every active's percentage on the label'."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "sharing every single percentage",
+      "severity": "fix",
+      "why": "This promises that every percentage is disclosed. Minimalist states the concentration of its key actives, not of every ingredient, so the absolute wording may be literally untrue. Acceptable only if every ingredient percentage really is published.",
+      "fix": "sharing the exact percentage of every key active"
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Formulated completely in-house within our factory",
+      "severity": "advisory",
+      "why": "'Completely in-house' is a verifiable claim about manufacturing. It's acceptable only if every advertised moisturizer is formulated (and, if implied, made) in Minimalist's own facility.",
+      "fix": "Keep only if confirmed for every product in the ad; otherwise 'Formulated by our in-house team'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'Absolutely nothing to hide' is a transparency statement about the brand, not a promised or guaranteed skin result, so CLM-03 doesn't really apply. The concrete absolute that does need checking is 'every single percentage', which is raised separately."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Clinically proven actives backed by real data' needs a specific study on file. It also borrows ingredient-level evidence as if it proved these moisturizers work (CLM-23). Name the product test, or rephrase to 'actives at studied concentrations'."
+    }
+  ],
+  "tone_read": "Calm and on-message about transparency, with no fear hooks, emoji or exclamation marks, so it sounds like Minimalist's brand voice. But the headline promises moisturizers and the body never names an ingredient or product, so it reads as a generic values ad.",
+  "language_read": "No concentrations, actives or products are named, so the brand's signature number-led language is missing. The evidence wording ('science backed', 'clinically proven', 'real data') is unhedged and unsourced, where Minimalist normally states exactly what was tested."
+}

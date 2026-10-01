@@ -1,0 +1,506 @@
+[
+  {
+    "id": "meta_1694736281737007",
+    "label": "fix",
+    "issues": [
+      { "phrase": "60% of skin is water.", "level": "fix", "concern": "Objective factual stat with no source on file (ASCI-1.1, CCPA-12)." },
+      { "phrase": "Because real skin health starts from within", "level": "advisory", "concern": "Vague wellness framing implying drinking water improves skin health; keep generic (ASCI-1.4)." },
+      { "phrase": "Hydrate timely for healthy skin!", "level": "advisory", "concern": "Health-style instruction, exclamation; off house tone (brand_corpus 5)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Offer terms are clear; the only must-fix is sourcing the 60% water stat."
+  },
+  {
+    "id": "meta_2422634991565984",
+    "label": "fix",
+    "issues": [
+      { "phrase": "clinically proven Glow Boosting Routine", "level": "fix", "concern": "Clinically proven claim on a 3-product routine with no source/date in the ad (ASCI-1.2, CCPA-4(1)(b), Q8)." },
+      { "phrase": "Tired of dull, uneven skin?", "level": "fix", "concern": "Negative question about the viewer's appearance (META-HW-INFERIOR / META-PA); contradicts anti-fear-mongering stance (brand_corpus 6)." },
+      { "phrase": "Limited Time offer on kits!", "level": "fix", "concern": "Urgency with no stated end date; false urgency risk (ASCI-G-DARK, CCPA-DP)." },
+      { "phrase": "Dermatologically tested.", "level": "advisory", "concern": "Needs a test report on file (Q6)." },
+      { "phrase": "Maximum results.", "level": "advisory", "concern": "Hype phrasing off house tone (brand_corpus 4.1)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Product facts are fine but the routine-level clinically proven claim, appearance question and open-ended urgency all need fixing."
+  },
+  {
+    "id": "meta_1381967473644284",
+    "label": "fix",
+    "issues": [
+      { "phrase": "helping inhibit melanin production", "level": "fix", "concern": "Structure/function melanin claim; open legal question for India and a drug claim in the US (Q2, Q3, DMR-2, FDA-DEF); prefer 'fades the look of dark spots'." },
+      { "phrase": "Targets pigmentation at the source", "level": "advisory", "concern": "On-image subline (approx. transcription) restates the mechanism claim; align with legal outcome on Q3." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Otherwise well-hedged educational copy; route the melanin-inhibition mechanism line to legal."
+  },
+  {
+    "id": "meta_988080157427683",
+    "label": "fix",
+    "issues": [
+      { "phrase": "get a freebie of your choice", "level": "fix", "concern": "Contradicts the actual mechanic (lowest-priced item free); free claim must make the extent of commitment clear (ASCI-1.5(a), CCPA-7, ASCI-1.4)." },
+      { "phrase": "get the lowest priced item for free", "level": "advisory", "concern": "This is the real condition; it should drive the headline. Add an end date." },
+      { "phrase": "Science-backed skincare that fits your budget.", "level": "advisory", "concern": "Science-backed carries weight under CCPA-4; fine as brand line but keep consistent." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Headline promises a free choice while the body says the cheapest item is free; align them."
+  },
+  {
+    "id": "meta_1521890822672768",
+    "label": "block",
+    "issues": [
+      { "phrase": "In-vivo tested for guaranteed UV safety", "level": "block", "concern": "Guarantee plus safety absolute; false guarantee is a misleading ad under CPA-2(28)(ii) and GADS-UNREL." },
+      { "phrase": "Bestselling Sunscreen For Summer", "level": "fix", "concern": "Leadership claim with no named data source/date (ASCI-G-AWARD, ASCI-RPT-BPC, Q9)." },
+      { "phrase": "Absolutely zero white cast", "level": "fix", "concern": "Absolute claim across all skin tones; needs substantiation or softening (ASCI-1.1, ASCI-1.5)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Remove the guarantee before anything else; the in-vivo test supports an SPF value, not guaranteed safety."
+  },
+  {
+    "id": "meta_3043932412484720",
+    "label": "pass",
+    "issues": [
+      { "phrase": "Helps prevent free radical damage for healthy, glowing skin", "level": "advisory", "concern": "Antioxidant benefit is ingredient-level; keep hedged or hold product data (ASCI-RPT-BPC, Q5)." },
+      { "phrase": "Skincare that does more.", "level": "advisory", "concern": "Vague comparative tagline; minor tone note." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Hedged, ingredient-and-texture copy in house style; fine for sign-off."
+  },
+  {
+    "id": "meta_2010383689596000",
+    "label": "fix",
+    "issues": [
+      { "phrase": "86% pure Vitamin C", "level": "fix", "concern": "Ambiguous next to a 10% serum: 86% is the vitamin C content of the ethyl ascorbic acid raw material (brand_corpus 3.3, S9), not the product; misleads by ambiguity (ASCI-1.4)." },
+      { "phrase": "Targets UV damage and uneven tone", "level": "fix", "concern": "Implies the serum repairs or protects against UV damage; not substantiated and may be read as sun protection (ASCI-1.1, ASCI-1.4)." },
+      { "phrase": "Skincare that works.", "level": "advisory", "concern": "Tagline puffery; minor." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Clarify that 86% describes the derivative, not the formula, and drop or substantiate the UV-damage line."
+  },
+  {
+    "id": "meta_1019338834142845",
+    "label": "fix",
+    "issues": [
+      { "phrase": "barrier repair", "level": "fix", "concern": "Repair/structure verb is an open legal question for cosmetics (Q2, DCA-COS-DEF); keep 'supports' wording or get legal sign-off." },
+      { "phrase": "to smooth and repair", "level": "advisory", "concern": "Same repair-verb question (Q2)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Clean moisturizer copy; only the barrier-repair verb needs legal routing."
+  },
+  {
+    "id": "meta_1344914601128719",
+    "label": "pass",
+    "issues": [
+      { "phrase": "#Ad", "level": "advisory", "concern": "Disclosure appears right after the one-line caption and the ad runs as a partnership; better to open with 'Ad |' (ASCI-G-INF)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Casual, claim-light creator post with visible disclosure."
+  },
+  {
+    "id": "meta_4485020475094041",
+    "label": "fix",
+    "issues": [
+      { "phrase": "#Ad #beminimalist #minimalistcreators #cleanser #travelskincare", "level": "fix", "concern": "Disclosure only at the end of a long caption, inside the hashtag group, below the fold (ASCI-G-INF, CCPA-14)." },
+      { "phrase": "it can do wonders!", "level": "advisory", "concern": "Exaggerated efficacy for acne-prone skin from a non-qualified creator; keep to personal experience (ASCI-G-INF-HEALTH, Q6)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Move the Ad label to the start of the caption; claims are acceptable in creator voice."
+  },
+  {
+    "id": "meta_1835247881214561",
+    "label": "fix",
+    "issues": [
+      { "phrase": "#ad #minimalistcreators #indianskincare #beminimalist #simpleskincare", "level": "fix", "concern": "Disclosure buried at the end of the caption in a hashtag group (ASCI-G-INF, CCPA-14)." },
+      { "phrase": "Comment FREE for the offer", "level": "advisory", "concern": "Opening 'FREE' hook; the buy-any-2 condition does appear later in the caption (CCPA-7)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Copy is fine; disclosure needs to be upfront."
+  },
+  {
+    "id": "meta_2047762822837459",
+    "label": "pass",
+    "issues": [
+      { "phrase": "This is PR", "level": "advisory", "concern": "Early, plain disclosure, but 'PR' is not a listed ASCI label; prefer 'Ad' or 'Free gift' upfront (ASCI-G-INF)." },
+      { "phrase": "No white cast", "level": "advisory", "concern": "Creator opinion matching the brand's white-cast-free badge (brand_corpus 3.1); fine." }
+    ],
+    "confidence": "low",
+    "reviewer_note": "Disclosure is visible in line two and claims are modest; tidy the label wording."
+  },
+  {
+    "id": "meta_667678903000767",
+    "label": "block",
+    "issues": [
+      { "phrase": "No Side Effects", "level": "block", "concern": "Safety absolute; false/misleading (COS-R36, CPA-2(28), ASCI-1.1)." },
+      { "phrase": "No Harmful Chemicals", "level": "fix", "concern": "Chemical-free style claim the brand explicitly rejects (brand_corpus 6, S3); implies others are harmful (COS-R36, EU-655-5)." },
+      { "phrase": "visible glow in just 7 days", "level": "fix", "concern": "Time-bound result without qualifier (META-HW-CLAIMS, ASCI-RPT-HEAT, ASCI-1.5)." },
+      { "phrase": "Start seeing results from the 1st week!", "level": "fix", "concern": "Time-bound promise without substantiation (META-HW-CLAIMS)." },
+      { "phrase": "Trusted by 100,000+ Women Across India", "level": "fix", "concern": "Unsubstantiated popularity count (ASCI-1.1, CCPA-DP false popularity)." },
+      { "phrase": "Removes Tanning", "level": "fix", "concern": "Absolute tan-removal claim in ASCI's current enforcement focus (ASCI-RPT-HEAT, ASCI-1.5)." },
+      { "phrase": "Struggling with dull skin, dark spots, or uneven tone?", "level": "fix", "concern": "Negative appearance question aimed at the viewer (META-PA, META-HW-INFERIOR)." },
+      { "phrase": "Bridal Super Powerful Cream", "level": "fix", "concern": "Bridal + brighten framing carries a fairness connotation (ASCI-G-FAIR, Q3)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Stacked absolute safety, time-bound and fairness-adjacent claims; not publishable."
+  },
+  {
+    "id": "meta_1739037801557913",
+    "label": "fix",
+    "issues": [
+      { "phrase": "clinically proven to reduce pigmentation, dark spots, and tanning in just 4weeks", "level": "fix", "concern": "Clinically proven and time-bound with no source, date or n in the ad (ASCI-1.2, META-HW-CLAIMS, Q8)." },
+      { "phrase": "Struggling with dark spots, acne marks, or uneven skin tone?", "level": "fix", "concern": "Personal-attribute / negative appearance question (META-PA, META-HW-INFERIOR)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Needs the study cited in-ad and a non-'you' opener."
+  },
+  {
+    "id": "meta_1339515484419819",
+    "label": "block",
+    "issues": [
+      { "phrase": "treat effectively!", "level": "block", "concern": "Treatment claim for acne positions the cosmetic as a drug (DCA-DRUG-DEF, CDSCO-PN-2026)." },
+      { "phrase": "kills 4X more acne-causing bacteria than neem", "level": "fix", "concern": "Antimicrobial, multiplier comparative with no stated basis (ASCI-4.1, ASCI-RPT-BPC)." },
+      { "phrase": "clearing active breakouts", "level": "fix", "concern": "Arguably acne mitigation; open legal question (Q1)." },
+      { "phrase": "Anti-Acne Face Wash", "level": "advisory", "concern": "Anti-acne naming sits in the Q1 grey zone." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Drug-style treat-and-kill-bacteria positioning; would not run under Minimalist."
+  },
+  {
+    "id": "meta_1627289452325257",
+    "label": "block",
+    "issues": [
+      { "phrase": "growth guaranteed", "level": "block", "concern": "Guaranteed result (CPA-2(28)(ii), GADS-UNREL) on a hair-loss product needing special care (ASCI-1.5(d))." },
+      { "phrase": "Put a stop to hairfall once and for all", "level": "block", "concern": "Permanent-cure promise for hair fall (ASCI-1.5, ASCI-1.5(d), META-HW-CLAIMS)." },
+      { "phrase": "See the change in just 28 days", "level": "fix", "concern": "Time-bound result without qualifier (META-HW-CLAIMS)." },
+      { "phrase": "Rebalances the hair growth cycle", "level": "fix", "concern": "Structure/function claim (Q2, DMR-2, FDA-DEF)." },
+      { "phrase": "Redefine Your Hair Growth!", "level": "fix", "concern": "Hair-growth claim needs substantiation and is a drug claim in the US (ASCI-1.5(d), FDA-DEF)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Guarantee and once-and-for-all claims on hair fall are hard stops."
+  },
+  {
+    "id": "meta_1097891172803254",
+    "label": "pass",
+    "issues": [
+      { "phrase": "Brighten, hydrate & glow every day!", "level": "advisory", "concern": "Emoji- and exclamation-heavy register is off Minimalist house tone (brand_corpus 5); claims themselves are standard cosmetic." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Ordinary hedged brightening claims; tone rewrite only."
+  },
+  {
+    "id": "meta_924256144009084",
+    "label": "pass",
+    "issues": [
+      { "phrase": "You’ll stop using your old sunscreen", "level": "advisory", "concern": "Playful hyperbole (ASCI-1.6); avoid any reading as a denigrating comparison (ASCI-4.1)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Obvious playful hook with no factual claim."
+  },
+  {
+    "id": "meta_8722721711110279",
+    "label": "fix",
+    "issues": [
+      { "phrase": "to remove dark spots", "level": "fix", "concern": "Absolute removal claim; use fades/reduces the look of (ASCI-1.5, COS-R36)." },
+      { "phrase": "Glutathione", "level": "advisory", "concern": "Ingredient widely marketed for skin whitening; keep framing on spots/even tone (ASCI-G-FAIR, META-HW-WHITEN, Q3)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Soften remove to fade and keep away from lightening framing."
+  },
+  {
+    "id": "meta_2196301691128293",
+    "label": "fix",
+    "issues": [
+      { "phrase": "100% pure, stable Ethyl Ascorbic Acid", "level": "fix", "concern": "Raw-material purity can be read as product concentration; misleading by ambiguity (ASCI-1.4)." },
+      { "phrase": "Deeply penetrates for visible results", "level": "fix", "concern": "Penetration/efficacy claim needs product data (ASCI-1.1, ASCI-RPT-BPC)." },
+      { "phrase": "Backed by Science", "level": "advisory", "concern": "Science-backed carries weight under CCPA-4(1)(b); keep tied to real data." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "State the actual concentration and back or drop the penetration claim."
+  },
+  {
+    "id": "meta_1673367467228372",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Now strengthen with Vitamin B5", "level": "fix", "concern": "On-image text names B5 as the new addition, but the copy says B5 was already there and B12 is new; inconsistent product fact (ASCI-1.4)." },
+      { "phrase": "The Gel Cleanser you loved", "level": "fix", "concern": "Card 1 says gel, card 2 says cream cleanser while copy says same formula; confirm the format fact (ASCI-1.4)." },
+      { "phrase": "Same gentle, low-foaming formula you trust", "level": "advisory", "concern": "Same formula conflicts with an evolved formula; reword." },
+      { "phrase": "Meet the new", "level": "advisory", "concern": "New claim specifies what changed (good); usable only for 12 months from launch (ASCI-G-NEW)." }
+    ],
+    "confidence": "low",
+    "reviewer_note": "Copy is fine, but the carousel text contradicts it on what is new and on gel vs cream; on-image text was only partly legible."
+  },
+  {
+    "id": "meta_1546118047021775",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Clinically proven actives backed by real data.", "level": "fix", "concern": "Ingredient-level clinical proof presented as brand/product proof with no source (ASCI-1.2, ASCI-RPT-BPC, CCPA-4(1)(f), Q5)." },
+      { "phrase": "We hide nothing, sharing every single percentage.", "level": "fix", "concern": "Literal absolute not true: titles often show a combined total and some SKUs carry no percentage (brand_corpus 2.1, 2.2) (ASCI-1.1)." },
+      { "phrase": "Formulated completely in-house within our factory.", "level": "advisory", "concern": "Confirm manufacturing fact; site says in-house laboratories (brand_corpus 6)." },
+      { "phrase": "Moisturizers backed by science", "level": "advisory", "concern": "Headline unrelated to the body; science-backed needs support (CCPA-4)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "On-brand transparency message, but the absolutes and clinically proven line need tightening."
+  },
+  {
+    "id": "meta_1518682993229945",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Clinically proven actives backed by real data.", "level": "fix", "concern": "Ingredient-level clinical proof presented as product proof with no source (ASCI-1.2, ASCI-RPT-BPC, CCPA-4(1)(f), Q5)." },
+      { "phrase": "We hide nothing, sharing every single percentage.", "level": "fix", "concern": "Literal absolute not true for combined-total and no-percentage SKUs (brand_corpus 2.1, 2.2) (ASCI-1.1)." },
+      { "phrase": "Formulated completely in-house within our factory.", "level": "advisory", "concern": "Confirm manufacturing fact (brand_corpus 6)." },
+      { "phrase": "Transparent. Hide Nothing.", "level": "advisory", "concern": "Absolute; acceptable as brand positioning only if body claims are tightened." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Same body as the sister ad; same fixes."
+  },
+  {
+    "id": "meta_1468840825270183",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Say goodbye to oiliness, acne breakouts, and uneven skin tone!", "level": "fix", "concern": "Elimination-style acne claim sits in the open acne line (Q1) and overpromises (ASCI-1.5)." },
+      { "phrase": "Acne Control Gel Cleanser", "level": "advisory", "concern": "Acne-control naming is in the Q1 grey zone." },
+      { "phrase": "delivered to your doorstep in minutes", "level": "advisory", "concern": "Delivery-time claim depends on Zepto coverage; qualify." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Reframe the say-goodbye line to an acne-prone-skin descriptor and route to legal."
+  },
+  {
+    "id": "meta_1700335027907222",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Clinically Tested", "level": "fix", "concern": "On-image badge with no source, date or what was tested (ASCI-1.2, Q8)." },
+      { "phrase": "Barrier Repair Serum", "level": "advisory", "concern": "Repair verb in product name; Q2." },
+      { "phrase": "Made for All skin type.", "level": "advisory", "concern": "Sits beside an on-image suitability line limited to dry/normal & sensitive skin; also grammar." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Badge needs a reference; the rest is tone and consistency."
+  },
+  {
+    "id": "meta_1422362619946108",
+    "label": "pass",
+    "issues": [
+      { "phrase": "#Ad", "level": "advisory", "concern": "Disclosure follows a two-line caption and the ad runs as a partnership; better upfront (ASCI-G-INF)." },
+      { "phrase": "still flawless", "level": "advisory", "concern": "Meme-style hyperbole in creator voice (ASCI-1.6)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Short humorous creator post with visible disclosure and no product claims."
+  },
+  {
+    "id": "meta_1023280860675735",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Say goodbye to breakouts", "level": "fix", "concern": "Elimination-style acne claim (Q1, ASCI-1.5)." },
+      { "phrase": "your key to a flawless complexion", "level": "fix", "concern": "Exaggerated promise most users will not get (ASCI-1.5); off brand vocabulary (brand_corpus 4.1)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Soften to acne-prone-skin benefits and drop flawless."
+  },
+  {
+    "id": "meta_839479359204204",
+    "label": "block",
+    "issues": [
+      { "phrase": "Get visibly lighter skin INSTANTLY!", "level": "block", "concern": "Skin-lightening claim (ASCI-G-FAIR, META-HW-WHITEN) plus instant transformation (ASCI-RPT-HEAT)." },
+      { "phrase": "fades dark spots in 10 mins", "level": "fix", "concern": "Instant time-bound result (ASCI-RPT-HEAT, META-HW-CLAIMS, ASCI-1.5)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Lighter-skin promise is a fairness claim; not publishable."
+  },
+  {
+    "id": "meta_1593858758866525",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Your breakout may be gone", "level": "fix", "concern": "Asserts the viewer's skin condition (META-PA)." },
+      { "phrase": "personalized treatment plan from a CureSkin dermatologist", "level": "fix", "concern": "Treatment positioning and dermatologist reference; CDSCO-PN-2026 and the open endorsement question (Q6)." }
+    ],
+    "confidence": "low",
+    "reviewer_note": "Mild copy, but the you-plus-condition opener and treatment/dermatologist framing need review."
+  },
+  {
+    "id": "meta_1358962896316996",
+    "label": "fix",
+    "issues": [
+      { "phrase": "1.6x better brightening than a standard Vitamin C serum.", "level": "fix", "concern": "Multiplier comparative with no stated basis (ASCI-4.1, ASCI-RPT-BPC, ASCI-G-DISC)." },
+      { "phrase": "Most serums work only on the top layer of the skin.", "level": "fix", "concern": "Unsubstantiated generalisation that denigrates competitors (ASCI-4.1, EU-655-5)." },
+      { "phrase": "Co-created with Dr. Nirupama Parwanda", "level": "fix", "concern": "Named doctor reference needs written consent and endorsement review (ASCI-1.3, Q6)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Comparative and doctor claims all need substantiation and paperwork."
+  },
+  {
+    "id": "meta_1368951565453816",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Dark & pigmented lips? Not anymore!", "level": "fix", "concern": "Negative appearance question plus implied permanent result (META-HW-INFERIOR, ASCI-1.5)." },
+      { "phrase": "Powered by SPF 50", "level": "advisory", "concern": "Confirm in-vivo SPF report on file for the lip balm (BIS-SPF, Q4)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Reframe the opener; product claims are otherwise ordinary."
+  },
+  {
+    "id": "meta_588820217346650",
+    "label": "block",
+    "issues": [
+      { "phrase": "Treats Acne Super-Effectively", "level": "block", "concern": "Explicit treats-acne drug claim on a cosmetic (DCA-DRUG-DEF, CDSCO-PN-2026)." },
+      { "phrase": "Rapid acne relief", "level": "block", "concern": "Relief of a disorder is mitigation/treatment language (DCA-DRUG-DEF)." },
+      { "phrase": "Get acne-free skin", "level": "fix", "concern": "Elimination promise (ASCI-1.5, Q1)." },
+      { "phrase": "Minimizes acne scars", "level": "fix", "concern": "Scar reduction is a structure claim needing substantiation (Q2, ASCI-1.1)." },
+      { "phrase": "Clinically Proven Results", "level": "fix", "concern": "No source or date (ASCI-1.2, Q8)." },
+      { "phrase": "No Nasties", "level": "fix", "concern": "Implies legal ingredients are harmful; contradicts brand anti-fear stance (brand_corpus 6, EU-655-5, COS-R36)." },
+      { "phrase": "Uncompromised Efficacy", "level": "advisory", "concern": "Puffery." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Headline treats-acne claim is on the drug side of the Q1 line."
+  },
+  {
+    "id": "meta_621835826921394",
+    "label": "fix",
+    "issues": [
+      { "phrase": "99% agreed that skin felt hydrated immediately", "level": "fix", "concern": "Stat with no n, source or date (ASCI-1.1, ASCI-1.2)." },
+      { "phrase": "80 min water resistant", "level": "fix", "concern": "Water-resistance claim needs a named test method; open question (Q4)." },
+      { "phrase": "Repairs & boosts skin barrier", "level": "fix", "concern": "Repair/structure claim (Q2, DCA-COS-DEF)." },
+      { "phrase": "Clinically Proven", "level": "fix", "concern": "No source or date (ASCI-1.2, Q8)." },
+      { "phrase": "No Nasties", "level": "fix", "concern": "Denigrates legally used ingredients; against brand anti-fear stance (brand_corpus 6, EU-655-5)." },
+      { "phrase": "New Launch Alert", "level": "advisory", "concern": "New claim valid 12 months from launch (ASCI-G-NEW)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Several unsupported proof claims; fixable with sources and softer wording."
+  },
+  {
+    "id": "syn_implied_cure",
+    "label": "block",
+    "issues": [
+      { "phrase": "Clear skin for good", "level": "block", "concern": "Implied permanent cure of acne (DCA-DRUG-DEF, META-HW-CLAIMS eliminate, ASCI-1.5)." },
+      { "phrase": "Breakouts? Not anymore.", "level": "fix", "concern": "Implies breakouts are eliminated (Q1, ASCI-1.5)." },
+      { "phrase": "One step.", "level": "advisory", "concern": "Oversimplifies the result." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "For good turns a cleanser benefit into a cure promise."
+  },
+  {
+    "id": "syn_implied_time",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Your skin will thank you by next week", "level": "fix", "concern": "Implied time-bound result with no qualifier (META-HW-CLAIMS, ASCI-1.6 borderline example)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Remove the timeframe or back it with data."
+  },
+  {
+    "id": "syn_stat_strengthened",
+    "label": "block",
+    "issues": [
+      { "phrase": "Cuts oil by 97% in 2 weeks", "level": "block", "concern": "Misstates the study on file (97% of subjects said skin felt less oily, brand_corpus 3.2 S5) as a 97% oil reduction; false product claim (CPA-2(28), COS-R36, ASCI-1.1)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Turns a perception stat into a measured efficacy figure the data does not support."
+  },
+  {
+    "id": "syn_stat_no_qualifier",
+    "label": "fix",
+    "issues": [
+      { "phrase": "93% saw a reduction in active acne", "level": "fix", "concern": "Stat without duration, n, source or date (ASCI-1.2, ASCI-G-DISC); acne wording also Q1." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Real study stat (brand_corpus 3.2 S5) but needs its qualifiers in the ad."
+  },
+  {
+    "id": "syn_wrong_conc",
+    "label": "block",
+    "issues": [
+      { "phrase": "Retinol 1%", "level": "block", "concern": "Wrong product fact: catalogue retinoid strengths are sub-1% (0.1%, 0.3%) per brand_corpus 2.2; false description (CPA-2(28)(i))." },
+      { "phrase": "Our strongest retinol yet.", "level": "fix", "concern": "Superlative needs support and inherits the wrong concentration." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Concentration does not match the catalogue."
+  },
+  {
+    "id": "syn_doctor_implied",
+    "label": "fix",
+    "issues": [
+      { "phrase": "The serum skin doctors reach for", "level": "fix", "concern": "Implied expert recommendation with no evidence (ASCI-RPT-BPC, ASCI-1.1, Q6)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Needs survey data on file or a rewrite."
+  },
+  {
+    "id": "syn_shade_change",
+    "label": "block",
+    "issues": [
+      { "phrase": "Two shades brighter", "level": "block", "concern": "Skin-shade change is a fairness claim (ASCI-G-FAIR, META-HW-WHITEN)." },
+      { "phrase": "for a lighter, even complexion", "level": "block", "concern": "Lightening framing for a depigmentation serum (ASCI-G-FAIR, META-HW-WHITEN)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Fairness positioning; reframe around dark spots and even tone."
+  },
+  {
+    "id": "syn_ingredient_as_product",
+    "label": "fix",
+    "issues": [
+      { "phrase": "Niacinamide is clinically proven to shrink pores", "level": "fix", "concern": "Ingredient clinical claim with no source; shrink pores is a structure claim (ASCI-1.2, Q2)." },
+      { "phrase": "That's why our 10% serum works.", "level": "fix", "concern": "Ingredient efficacy presented as product efficacy (ASCI-RPT-BPC, CCPA-4(1)(f), EU-655-2/3, Q5)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Use formulated-with wording or cite a finished-product study."
+  },
+  {
+    "id": "syn_spf_cancer",
+    "label": "block",
+    "issues": [
+      { "phrase": "helps prevent skin cancer", "level": "block", "concern": "Cancer is a DMR Schedule disease (DMR-3, DMR-SCHED); also META-HW-CLAIMS." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Hard stop even with helps; use UVA/UVB protection wording."
+  },
+  {
+    "id": "syn_creator_undisclosed",
+    "label": "block",
+    "issues": [
+      { "phrase": "Been using this cleanser for a month and my skin has never been calmer. Link in bio!", "level": "block", "concern": "Paid creator content with no disclosure at all (ASCI-G-INF, CCPA-14, CCPA-DP disguised ad)." }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Copy is harmless but missing disclosure makes it a disguised ad."
+  },
+  {
+    "id": "syn_clean_niacinamide",
+    "label": "pass",
+    "issues": [],
+    "confidence": "high",
+    "reviewer_note": "Hedged look-of wording, supplier and patch-test footnote match the PDP (brand_corpus 3.2, 3.3)."
+  },
+  {
+    "id": "syn_clean_spf",
+    "label": "pass",
+    "issues": [],
+    "confidence": "high",
+    "reviewer_note": "SPF value backed in-ad by the ISO 24444 in-vivo result, with reapplication guidance (brand_corpus 3.3, 3.6)."
+  },
+  {
+    "id": "syn_clean_offer",
+    "label": "pass",
+    "issues": [],
+    "confidence": "high",
+    "reviewer_note": "Free mechanic and end date are clear (CCPA-7)."
+  },
+  {
+    "id": "syn_fp_bait",
+    "label": "pass",
+    "issues": [],
+    "confidence": "high",
+    "reviewer_note": "Treatment is part of the real product name (brand_corpus 4.1), not a claim; free-from lines match PDP badges."
+  },
+  {
+    "id": "syn_clean_education",
+    "label": "pass",
+    "issues": [],
+    "confidence": "high",
+    "reviewer_note": "Mechanism education in house style, matching the PDP (brand_corpus 5, S5)."
+  },
+  {
+    "id": "syn_generic_tone",
+    "label": "pass",
+    "issues": [
+      { "phrase": "Glow like never before", "level": "advisory", "concern": "Generic hype; brand avoids fluff (brand_corpus 6, S3)." },
+      { "phrase": "Because you deserve to shine every single day.", "level": "advisory", "concern": "Off-brand emotional filler with no product or ingredient (brand_corpus 5)." }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "No legal issue; reads unlike Minimalist and needs a tone rewrite."
+  }
+]

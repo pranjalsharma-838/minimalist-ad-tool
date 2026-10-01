@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Helps prevent skin cancer' is a disease-prevention claim on a cosmetic, and cancer is on the DMR Act Schedule. Even with 'helps', it can't run. Replace it with the protection spec, e.g. 'Broad Spectrum SPF 50, PA++++'."
+    }
+  ],
+  "tone_read": "The primary text is calm and spec-led, which fits Minimalist. The headline uses a medical fear lever the brand positions itself against.",
+  "language_read": "The SPF and PA rating are stated precisely and consistently ('SPF 50', 'PA++++'). Apart from the disease claim, the wording is accurate and unhyped."
+}

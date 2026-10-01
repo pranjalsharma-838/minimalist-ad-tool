@@ -1,0 +1,78 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-08",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "99% agreed that skin felt hydrated immediately",
+      "severity": "fix",
+      "why": "This perception stat has no qualifier on the creative: no study type, n or who 'agreed'. 'Immediately' is also a time-bound result that needs the study duration shown (CLM-07). Acceptable if the study file supports it and the qualifier is added.",
+      "fix": "99% subjects agreed that skin felt hydrated immediately* (*consumer perception study, n=[from study file])"
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Repairs & boosts skin barrier",
+      "severity": "fix",
+      "why": "Claiming the product repairs and boosts the skin barrier describes changing a skin function. It's unhedged and needs substantiation; legal should review the structure/function wording.",
+      "fix": "Formulated to support the skin barrier"
+    },
+    {
+      "rule_id": "CLM-18",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "80 min water resistant",
+      "severity": "advisory",
+      "why": "A timed water-resistance claim is the acceptable format (not 'waterproof'), but it needs a water-resistance test on file for 80 minutes.",
+      "fix": "Keep only with the test on file, written as 'Water resistant (80 minutes)'."
+    },
+    {
+      "rule_id": "LNG-03",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "With the goodness of blueberries",
+      "severity": "advisory",
+      "why": "'Goodness of' natural framing sells on naturalness rather than a named active, which runs against the brand's stated position.",
+      "fix": "Name the blueberry-derived ingredient and its role, e.g. 'With blueberry extract'."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Why Dot & Key?",
+      "severity": "fix",
+      "why": "The ad is labelled brand-authored for Minimalist but promotes Dot & Key. Running it would misattribute the product, so confirm the advertiser before review.",
+      "fix": "Route this ad out of the Minimalist review, or replace the brand references with the correct Minimalist ones."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'No Nasties' is clean-is-safe framing that implies other ingredients are harmful. It's a safety absolute."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Clinically Proven' gives no indication of what was proven. It needs a specific product study on file."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'Dermatologically Tested' needs the test on file. Use the narrower 'patch tested under dermatological supervision' if that's what was done."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'New Launch' is fine for 12 months after launch. Here it's clear the whole product is new."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Emoji bullets (🌞, 🫐, ✅) carry the whole post, a competitor-category signature."
+    }
+  ],
+  "tone_read": "Emoji-bulleted 'New Launch Alert' copy with a stacked 'Why Dot & Key?' trust list reads like a category ad, not Minimalist's calm, educational voice. There's no explanation of any ingredient or mechanism.",
+  "language_read": "SPF 50+ and PA++++ are stated in standard format, but no active or concentration is named. The barrier claim is unhedged, and 'goodness of blueberries' is natural framing the brand avoids."
+}

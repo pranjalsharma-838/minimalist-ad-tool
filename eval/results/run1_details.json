@@ -1,0 +1,1329 @@
+{
+  "rules_only": [
+    {
+      "id": "meta_1694736281737007",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2422634991565984",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 2,
+      "missed_phrases": [
+        "[fix] Limited Time offer on kits! — Urgency with no stated end date; false urgency risk (ASCI-G-DARK, CCPA-DP)."
+      ],
+      "extra_flags": [
+        "[block] CLM-01 \"treat\" (rule)",
+        "[block] CLM-01 \"Treat\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1381967473644284",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_988080157427683",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] get a freebie of your choice — Contradicts the actual mechanic (lowest-priced item free); free claim must make the extent of commitment clear (ASCI-1.5(a), CCPA-7, ASCI-1.4)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1521890822672768",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 3,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_3043932412484720",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2010383689596000",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] 86% pure Vitamin C — Ambiguous next to a 10% serum: 86% is the vitamin C content of the ethyl ascorbic acid raw material (brand_corpus 3.3, S9), not the product; misleads by ambiguity (ASCI-1.4).",
+        "[fix] Targets UV damage and uneven tone — Implies the serum repairs or protects against UV damage; not substantiated and may be read as sun protection (ASCI-1.1, ASCI-1.4)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1019338834142845",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] barrier repair — Repair/structure verb is an open legal question for cosmetics (Q2, DCA-COS-DEF); keep 'supports' wording or get legal sign-off."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1344914601128719",
+      "split": "tuning",
+      "advertiser": "her.vintage.eyes with Minimalistinc",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_4485020475094041",
+      "split": "tuning",
+      "advertiser": "Maptonowhere with Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1835247881214561",
+      "split": "tuning",
+      "advertiser": "saanvigolecha with Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2047762822837459",
+      "split": "tuning",
+      "advertiser": "pixelplaykhushi with Minimalistinc",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CRE-01 \"#ad\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_667678903000767",
+      "split": "tuning",
+      "advertiser": "Heaven Magic Beauty",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 8,
+      "phrases_caught": 7,
+      "missed_phrases": [
+        "[fix] Bridal Super Powerful Cream — Bridal + brighten framing carries a fairness connotation (ASCI-G-FAIR, Q3)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1739037801557913",
+      "split": "tuning",
+      "advertiser": "Deconstruct Skincare",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1339515484419819",
+      "split": "tuning",
+      "advertiser": "The Derma Co.",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 3,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] TON-01 \"Say no to\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1627289452325257",
+      "split": "tuning",
+      "advertiser": "Pilgrim",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 5,
+      "phrases_caught": 5,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CLM-03 \"fall finished\" (rule)",
+        "[fix] CLM-24 \"Hair Growth\" (rule)",
+        "[fix] CLM-02 \"Tackles hairfall\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1097891172803254",
+      "split": "tuning",
+      "advertiser": "Pilgrim",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_924256144009084",
+      "split": "tuning",
+      "advertiser": "Mamaearth",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] TON-01 \"Warning\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_8722721711110279",
+      "split": "tuning",
+      "advertiser": "Kozicare - Skin & Body Care",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] TON-01 \"Say goodbye to\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2196301691128293",
+      "split": "tuning",
+      "advertiser": "Chemist At Play",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] 100% pure, stable Ethyl Ascorbic Acid — Raw-material purity can be read as product concentration; misleading by ambiguity (ASCI-1.4).",
+        "[fix] Deeply penetrates for visible results — Penetration/efficacy claim needs product data (ASCI-1.1, ASCI-RPT-BPC)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1673367467228372",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] Now strengthen with Vitamin B5 — On-image text names B5 as the new addition, but the copy says B5 was already there and B12 is new; inconsistent product fact (ASCI-1.4).",
+        "[fix] The Gel Cleanser you loved — Card 1 says gel, card 2 says cream cleanser while copy says same formula; confirm the format fact (ASCI-1.4)."
+      ],
+      "extra_flags": [
+        "[fix] CLM-20 \"Oat Extract 6%\" (rule)",
+        "[fix] CLM-20 \"OAT EXTRACT 06%\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1546118047021775",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] We hide nothing, sharing every single percentage. — Literal absolute not true: titles often show a combined total and some SKUs carry no percentage (brand_corpus 2.1, 2.2) (ASCI-1.1)."
+      ],
+      "extra_flags": [
+        "[block] CLM-03 \"absolutely nothing\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1518682993229945",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] We hide nothing, sharing every single percentage. — Literal absolute not true for combined-total and no-percentage SKUs (brand_corpus 2.1, 2.2) (ASCI-1.1)."
+      ],
+      "extra_flags": [
+        "[block] CLM-03 \"absolutely nothing\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1468840825270183",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1700335027907222",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1422362619946108",
+      "split": "holdout",
+      "advertiser": "Spicy candy with Minimalistinc",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1023280860675735",
+      "split": "holdout",
+      "advertiser": "Dermatouch",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] your key to a flawless complexion — Exaggerated promise most users will not get (ASCI-1.5); off brand vocabulary (brand_corpus 4.1)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_839479359204204",
+      "split": "holdout",
+      "advertiser": "Sanfe India",
+      "label": "block",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CLM-07 \"Instant\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1593858758866525",
+      "split": "holdout",
+      "advertiser": "Cureskin",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] Your breakout may be gone — Asserts the viewer's skin condition (META-PA)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1358962896316996",
+      "split": "holdout",
+      "advertiser": "Deconstruct Skincare",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 3,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] Most serums work only on the top layer of the skin. — Unsubstantiated generalisation that denigrates competitors (ASCI-4.1, EU-655-5).",
+        "[fix] Co-created with Dr. Nirupama Parwanda — Named doctor reference needs written consent and endorsement review (ASCI-1.3, Q6)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1368951565453816",
+      "split": "holdout",
+      "advertiser": "The Derma Co.",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] Dark & pigmented lips? Not anymore! — Negative appearance question plus implied permanent result (META-HW-INFERIOR, ASCI-1.5)."
+      ],
+      "extra_flags": [
+        "[fix] CLM-20 \"1% Kojic\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_588820217346650",
+      "split": "holdout",
+      "advertiser": "Dot & Key",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 6,
+      "phrases_caught": 4,
+      "missed_phrases": [
+        "[block] Rapid acne relief — Relief of a disorder is mitigation/treatment language (DCA-DRUG-DEF).",
+        "[fix] Minimizes acne scars — Scar reduction is a structure claim needing substantiation (Q2, ASCI-1.1)."
+      ],
+      "extra_flags": [
+        "[fix] CLM-09 \"Dermatologically Tested\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_621835826921394",
+      "split": "holdout",
+      "advertiser": "Dot & Key",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 5,
+      "phrases_caught": 2,
+      "missed_phrases": [
+        "[fix] 99% agreed that skin felt hydrated immediately — Stat with no n, source or date (ASCI-1.1, ASCI-1.2).",
+        "[fix] 80 min water resistant — Water-resistance claim needs a named test method; open question (Q4).",
+        "[fix] Repairs & boosts skin barrier — Repair/structure claim (Q2, DCA-COS-DEF)."
+      ],
+      "extra_flags": [
+        "[fix] CLM-09 \"Dermatologically Tested\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_implied_cure",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "pass",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[block] Clear skin for good — Implied permanent cure of acne (DCA-DRUG-DEF, META-HW-CLAIMS eliminate, ASCI-1.5).",
+        "[fix] Breakouts? Not anymore. — Implies breakouts are eliminated (Q1, ASCI-1.5)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_implied_time",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] Your skin will thank you by next week — Implied time-bound result with no qualifier (META-HW-CLAIMS, ASCI-1.6 borderline example)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_stat_strengthened",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_stat_no_qualifier",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] 93% saw a reduction in active acne — Stat without duration, n, source or date (ASCI-1.2, ASCI-G-DISC); acne wording also Q1."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_wrong_conc",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] Our strongest retinol yet. — Superlative needs support and inherits the wrong concentration."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_doctor_implied",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "pass",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] The serum skin doctors reach for — Implied expert recommendation with no evidence (ASCI-RPT-BPC, ASCI-1.1, Q6)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_shade_change",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "pass",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[block] Two shades brighter — Skin-shade change is a fairness claim (ASCI-G-FAIR, META-HW-WHITEN).",
+        "[block] for a lighter, even complexion — Lightening framing for a depigmentation serum (ASCI-G-FAIR, META-HW-WHITEN)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_ingredient_as_product",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] That's why our 10% serum works. — Ingredient efficacy presented as product efficacy (ASCI-RPT-BPC, CCPA-4(1)(f), EU-655-2/3, Q5)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_spf_cancer",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_creator_undisclosed",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[block] Been using this cleanser for a month and my skin has never been calmer. Link in bio! — Paid creator content with no disclosure at all (ASCI-G-INF, CCPA-14, CCPA-DP disguised ad)."
+      ],
+      "extra_flags": [
+        "[block] CRE-01 \"\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_niacinamide",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_spf",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_offer",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_fp_bait",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_education",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_generic_tone",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    }
+  ],
+  "rules_plus_model": [
+    {
+      "id": "meta_1694736281737007",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2422634991565984",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 2,
+      "missed_phrases": [
+        "[fix] Limited Time offer on kits! — Urgency with no stated end date; false urgency risk (ASCI-G-DARK, CCPA-DP)."
+      ],
+      "extra_flags": [
+        "[block] CLM-01 \"treat\" (rule)",
+        "[block] CLM-01 \"Treat\" (rule)",
+        "[fix] UNLISTED \"Earn Cashback!\" (model)",
+        "[fix] CLM-18 \"to prevent sun damage\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1381967473644284",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_988080157427683",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1521890822672768",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 3,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_3043932412484720",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2010383689596000",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] 86% pure Vitamin C — Ambiguous next to a 10% serum: 86% is the vitamin C content of the ethyl ascorbic acid raw material (brand_corpus 3.3, S9), not the product; misleads by ambiguity (ASCI-1.4)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 1
+    },
+    {
+      "id": "meta_1019338834142845",
+      "split": "tuning",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1344914601128719",
+      "split": "tuning",
+      "advertiser": "her.vintage.eyes with Minimalistinc",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_4485020475094041",
+      "split": "tuning",
+      "advertiser": "Maptonowhere with Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1835247881214561",
+      "split": "tuning",
+      "advertiser": "saanvigolecha with Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_2047762822837459",
+      "split": "tuning",
+      "advertiser": "pixelplaykhushi with Minimalistinc",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CRE-01 \"#ad\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_667678903000767",
+      "split": "tuning",
+      "advertiser": "Heaven Magic Beauty",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 8,
+      "phrases_caught": 8,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1739037801557913",
+      "split": "tuning",
+      "advertiser": "Deconstruct Skincare",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] UNLISTED \"Deconstruct\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1339515484419819",
+      "split": "tuning",
+      "advertiser": "The Derma Co.",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 3,
+      "phrases_caught": 3,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] TON-01 \"Say no to\" (rule)",
+        "[fix] CLM-02 \"Say no to acne & acne marks\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1627289452325257",
+      "split": "tuning",
+      "advertiser": "Pilgrim",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 5,
+      "phrases_caught": 5,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CLM-03 \"fall finished\" (rule)",
+        "[fix] UNLISTED \"Pilgrim’s Advanced Hair Growth Serum\" (model)",
+        "[fix] CLM-24 \"Hair Growth\" (rule)",
+        "[fix] CLM-02 \"Tackles hairfall\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1097891172803254",
+      "split": "tuning",
+      "advertiser": "Pilgrim",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 1
+    },
+    {
+      "id": "meta_924256144009084",
+      "split": "tuning",
+      "advertiser": "Mamaearth",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] TON-01 \"Warning\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_8722721711110279",
+      "split": "tuning",
+      "advertiser": "Kozicare - Skin & Body Care",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CLM-03 \"Say goodbye to dark spots\" (model)",
+        "[fix] TON-01 \"Say goodbye to\" (rule)"
+      ],
+      "dropped_model_findings": 1
+    },
+    {
+      "id": "meta_2196301691128293",
+      "split": "tuning",
+      "advertiser": "Chemist At Play",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 0,
+      "missed_phrases": [
+        "[fix] 100% pure, stable Ethyl Ascorbic Acid — Raw-material purity can be read as product concentration; misleading by ambiguity (ASCI-1.4).",
+        "[fix] Deeply penetrates for visible results — Penetration/efficacy claim needs product data (ASCI-1.1, ASCI-RPT-BPC)."
+      ],
+      "extra_flags": [],
+      "dropped_model_findings": 1
+    },
+    {
+      "id": "meta_1673367467228372",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] The Gel Cleanser you loved — Card 1 says gel, card 2 says cream cleanser while copy says same formula; confirm the format fact (ASCI-1.4)."
+      ],
+      "extra_flags": [
+        "[fix] CLM-20 \"Oat Extract 6%\" (rule)",
+        "[fix] CLM-20 \"OAT EXTRACT 06%\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1546118047021775",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CLM-03 \"absolutely nothing\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1518682993229945",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CLM-03 \"absolutely nothing\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1468840825270183",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CLM-02 \"the very first step to clear skin\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1700335027907222",
+      "split": "holdout",
+      "advertiser": "Minimalistinc",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CLM-09 \"Science-backed formulas\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1422362619946108",
+      "split": "holdout",
+      "advertiser": "Spicy candy with Minimalistinc",
+      "label": "pass",
+      "tool": "fix",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1023280860675735",
+      "split": "holdout",
+      "advertiser": "Dermatouch",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 1,
+      "missed_phrases": [
+        "[fix] your key to a flawless complexion — Exaggerated promise most users will not get (ASCI-1.5); off brand vocabulary (brand_corpus 4.1)."
+      ],
+      "extra_flags": [
+        "[fix] UNLISTED \"Dermatouch Salicylic Acid 2% Face Wash\" (model)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_839479359204204",
+      "split": "holdout",
+      "advertiser": "Sanfe India",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CLM-07 \"Instant\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1593858758866525",
+      "split": "holdout",
+      "advertiser": "Cureskin",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1358962896316996",
+      "split": "holdout",
+      "advertiser": "Deconstruct Skincare",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 3,
+      "phrases_caught": 3,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_1368951565453816",
+      "split": "holdout",
+      "advertiser": "The Derma Co.",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] CLM-20 \"1% Kojic\" (rule)"
+      ],
+      "dropped_model_findings": 1
+    },
+    {
+      "id": "meta_588820217346650",
+      "split": "holdout",
+      "advertiser": "Dot & Key",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 6,
+      "phrases_caught": 6,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[fix] UNLISTED \"Why Dot & Key?\" (model)",
+        "[fix] CLM-09 \"Dermatologically Tested\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "meta_621835826921394",
+      "split": "holdout",
+      "advertiser": "Dot & Key",
+      "label": "fix",
+      "tool": "block",
+      "phrases_total": 5,
+      "phrases_caught": 4,
+      "missed_phrases": [
+        "[fix] 80 min water resistant — Water-resistance claim needs a named test method; open question (Q4)."
+      ],
+      "extra_flags": [
+        "[fix] UNLISTED \"Why Dot & Key?\" (model)",
+        "[fix] CLM-09 \"Dermatologically Tested\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_implied_cure",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_implied_time",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_stat_strengthened",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_stat_no_qualifier",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_wrong_conc",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_doctor_implied",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_shade_change",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_ingredient_as_product",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "fix",
+      "tool": "fix",
+      "phrases_total": 2,
+      "phrases_caught": 2,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_spf_cancer",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_creator_undisclosed",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "block",
+      "tool": "block",
+      "phrases_total": 1,
+      "phrases_caught": 1,
+      "missed_phrases": [],
+      "extra_flags": [
+        "[block] CRE-01 \"\" (rule)"
+      ],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_niacinamide",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_spf",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_offer",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_fp_bait",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_clean_education",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    },
+    {
+      "id": "syn_generic_tone",
+      "split": "synthetic",
+      "advertiser": "synthetic",
+      "label": "pass",
+      "tool": "pass",
+      "phrases_total": 0,
+      "phrases_caught": 0,
+      "missed_phrases": [],
+      "extra_flags": [],
+      "dropped_model_findings": 0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "The serum skin doctors reach for",
+      "severity": "fix",
+      "why": "This implies dermatologist endorsement or recommendation, which needs a specific endorsement on file. 'The serum' also hints at a market-leading position (CLM-11). Acceptable only if real endorsement data is attached and stated.",
+      "fix": "Remove it, or attach the endorsement evidence. If the product was patch tested, the narrower accurate line is 'Patch tested under the supervision of a Dermatologist'."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The headline borrows authority instead of educating, which is not how Minimalist sells. The primary text is calm and product-led, but it doesn't explain what Niacinamide does.",
+  "language_read": "The active and concentration are named correctly and in format ('Niacinamide 10%'). There are no efficacy or 'natural' framing issues; the language problem is the implied endorsement."
+}

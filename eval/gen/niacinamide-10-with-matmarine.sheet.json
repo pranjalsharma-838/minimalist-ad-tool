@@ -1,0 +1,137 @@
+{
+  "url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "title": "Niacinamide 10% Face Serum",
+  "actives": [
+    {
+      "name": "Niacinamide",
+      "pct": "10%"
+    }
+  ],
+  "price": 237,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia10New.png?v=1721398127",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia10Image2.png?v=1721398568",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia_10_Image_3_1.png?v=1721379817",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia10Image4.png?v=1721398568",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia10Image5.png?v=1721398568",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nia10_10ml_Listing_Image.jpg?v=1758619432",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/NiaSerum_ListingImage.png?v=1760691517"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Niacinamide 10% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "For reducing sebum & pores, and even skin tone"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine. Niacinamide reduces the sebum level of the skin, improves the barrier & evens our skin tone. Matmarine is a perfect biotechnological ingredient to reduce excess sebum, shine, pores & spots."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"I've been using it for past 3-4 months. I'm on my 2nd bottle. It's an amazing product. I had uneven skin tone, acne scar marks and now it's almost gone. I love this product. -Charu S.\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Unique blend of highly effective ingredients - Niacinamide, Matmarine, Zinc and Acetyl Glucosamine"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Pure 10% Niacinamide is clinically proven to promote protein synthesis, reduce melanin concentration & improve skin complexion in 2 weeks"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Matmarine is one of the biotechnological extract derive from a marine microorganism, helps regulate oiliness regardless of skin type and reduces sebum and appearance of pores, support hydration"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Lightweight serum coupled with Zinc that balances sebum activity and reduces inflammation, leaving smooth textured skin with no sticky residue"
+    },
+    {
+      "id": "F9",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with best ingredients sourced from leading global suppliers. Our Niacinamide comes from Lonza, Switzerland and Matmarine is sourced from Lipotec USA, USA"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Acne Marks, Acne Prone & Oily Skin"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 16+ years of age"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Pregnancy/Lactation: Safe"
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply 2-3 drops after cleansing & toning. Let the serum absorb fully into the skin before moving on to the next step of your routine."
+    },
+    {
+      "id": "F14",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F16",
+      "section": "Niacinamide",
+      "kind": "ingredient_note",
+      "text": "A form of vitamin B3, Niacinamide is a superstar ingredient that repairs skin, reduces occurrence of acne, and fades blemishes. This formula uses Niacinamide in a high concentration of 10%"
+    },
+    {
+      "id": "F17",
+      "section": "Matmarine",
+      "kind": "ingredient_note",
+      "text": "Matmarine is a perfect biotechnological ingredient to reduce excess sebum, shine, pores & spots."
+    },
+    {
+      "id": "F18",
+      "section": "Zinc",
+      "kind": "ingredient_note",
+      "text": "It regulates sebum production and has anti-bacterial properties as well, making it highly suitable for oily / acne-prone skin"
+    },
+    {
+      "id": "F19",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Niacinamide, Dimethyl Isosorbide, Ethoxydiglycol, Propanediol, Zinc PCA, Pentylene Glycol, Glycerin, Pseudoalteromonas Ferment Extract, Zinc Glycinate, Acetyl Glucosamine, Allantoin, Sodium Hyaluronate, Hydroxyethylcellulose, Phenoxyethanol, Xanthan Gum, Lecithin, Sclerotium Gum, Pullulan, Sodium Lactate, PEG/PPG-17/6 copolymer, Ethylhexylglycerin, Lactic Acid"
+    }
+  ],
+  "source": "page"
+}

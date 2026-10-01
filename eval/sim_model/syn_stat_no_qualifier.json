@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-08",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "93% saw a reduction in active acne",
+      "severity": "fix",
+      "why": "The stat has no qualifier on the creative: it doesn't say who was studied, whether this was self-reported perception or a clinical measure, how long the study ran, or n. 'Reduction in active acne' also sits on the acne-treatment line (CLM-02). Acceptable only if the study file supports this exact wording and its qualifier is shown.",
+      "fix": "Attach the study and restate it in its own terms with the qualifier visible, e.g. '93% subjects noticed fewer visible blemishes* (*consumer perception study; duration and n as per study file)'. Otherwise remove the stat."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The ad is calm and leads with the active, which is on-brand. But it relies on one bare stat with no mechanism or explanation of what Salicylic Acid does.",
+  "language_read": "'Salicylic Acid 2%' is stated with its concentration and written in the right format. The efficacy line is unhedged ('reduction in active acne'), where brand copy would scope it to the appearance of blemishes and attach a study qualifier."
+}

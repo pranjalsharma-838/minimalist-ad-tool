@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-23",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "That's why our 10% serum works.",
+      "severity": "fix",
+      "why": "The ad uses the ingredient's clinical literature as proof that this product works, which is the 'ingredient efficacy as product efficacy' pattern ASCI calls out. Only a test of this product can support a product claim.",
+      "fix": "Remove the inference, or attach a study of this product and cite it with its qualifier. A safe alternative is 'Niacinamide 10% Face Serum, formulated to help reduce the look of pores'."
+    },
+    {
+      "rule_id": "LNG-04",
+      "dimension": "language",
+      "field": "headline",
+      "span": "shrink pores",
+      "severity": "advisory",
+      "why": "'Shrink pores' is an unhedged outcome. Brand copy scopes it to appearance ('reducing the look of pores').",
+      "fix": "reduce the look of pores"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Clinically proven' is an evidence claim with no study cited. Here it refers to the ingredient, not this product, which makes it worse (see the CLM-23 finding)."
+    }
+  ],
+  "tone_read": "It is calm and ingredient-led, which fits Minimalist's education-first voice. But the logic leans on borrowed authority instead of explaining the mechanism.",
+  "language_read": "Niacinamide is named and the 10% is stated, but the concentration is split from the active across two fields. The efficacy verb 'shrink' is unhedged where the brand would say 'reduce the look of'."
+}

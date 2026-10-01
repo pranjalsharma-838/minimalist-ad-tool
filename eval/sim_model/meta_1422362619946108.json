@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CRE-01",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "#Ad",
+      "severity": "fix",
+      "why": "A disclosure is present, but it sits at the end of the caption, likely below the 'See more' cut-off. ASCI asks for paid-partnership disclosure to be upfront and hard to miss. Acceptable if Meta's 'Paid partnership' label is also switched on.",
+      "fix": "Move '#Ad' to the start of the first line (e.g. '#Ad Boys: no face wash, still flawless. How?'), and turn on the Paid partnership label."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "This is a creator's own playful voice ('saviour', 'still flawless'), so it isn't held to Minimalist's brand tone. It makes no disease, acne-elimination or time-bound claim about the product.",
+  "language_read": "The product is named as 'Minimalist Salicylic Acid Cleanser' without its concentration, which is acceptable in creator voice but loses the brand's signature number. No natural, chemical-free or unhedged efficacy wording appears."
+}

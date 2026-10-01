@@ -1,0 +1,65 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-01",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Rapid acne relief",
+      "severity": "block",
+      "why": "'Acne relief' is treatment language: it presents the products as treating a condition. 'Rapid' adds an unsubstantiated time-bound promise (CLM-07).",
+      "fix": "Formulated for acne-prone skin"
+    },
+    {
+      "rule_id": "CLM-04",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Minimizes acne scars",
+      "severity": "fix",
+      "why": "This claims a cosmetic reduces scarring, which overstates what it can do and edges toward a treatment claim. Scope it to appearance.",
+      "fix": "Helps reduce the look of acne marks"
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Why Dot & Key?",
+      "severity": "fix",
+      "why": "The ad is labelled brand-authored for Minimalist but promotes Dot & Key. Running it would misattribute the products, so confirm the advertiser before review.",
+      "fix": "Route this ad out of the Minimalist review, or replace the brand and product references with the correct Minimalist ones."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Treats Acne' is an explicit drug claim on a cosmetic. 'Super-Effectively' adds an unsubstantiated superlative."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Get acne-free skin' promises an end to acne, an elimination claim on the cosmetic/drug line. It's also an absolute result (CLM-03)."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'No Nasties' is clean-is-safe framing that implies other ingredients are harmful. It's a safety absolute the brand's philosophy rejects."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'Clinically Proven Results' needs a specific product study on file, with what was measured stated on the creative."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "'Dermatologically Tested' is an endorsement-style claim that needs the test on file. Use the narrower 'patch tested under dermatological supervision' if that's what was done."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "Checkmark emoji bullets (✅, ✔️) throughout are a competitor-category signature."
+    }
+  ],
+  "tone_read": "This is a category-style ad: checkmark-emoji bullets, a 'Treats Acne Super-Effectively' headline and claims stacked without explanation. It's the opposite of Minimalist's calm, educational voice.",
+  "language_read": "CICA is named without any concentration, efficacy is unhedged throughout ('Minimizes', 'Rapid acne relief', 'Uncompromised Efficacy'), and 'real CICA leaves' plus 'No Nasties' lean on natural/clean framing the brand avoids."
+}

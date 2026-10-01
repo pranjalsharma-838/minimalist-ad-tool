@@ -1,0 +1,51 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-06",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Get visibly lighter skin",
+      "severity": "block",
+      "why": "This is an explicit skin-lightening claim: it sets lighter skin as the goal, which breaches ASCI's skin-lightening guidelines. Paired with 'Perfect for underarms, neck, and body', it frames naturally darker areas as a problem to be lightened.",
+      "fix": "Remove the lightening framing entirely, e.g. 'Helps fade the look of dark spots for a more even-looking tone'."
+    },
+    {
+      "rule_id": "TON-06",
+      "dimension": "tone",
+      "field": "primary_text",
+      "span": "Our Instant Spotlite Mask",
+      "severity": "advisory",
+      "why": "The ad never names an active, concentration or mechanism. It could belong to any skincare brand.",
+      "fix": "Name the hero active and its percentage as printed on the pack, and say what it does."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'INSTANTLY' promises an immediate result and needs a study of that duration with its qualifier on the creative. Here it also intensifies a lightening claim (CLM-06)."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'fades dark spots in 10 mins' is a specific time-bound result with no study qualifier. 'Fades' is also unhedged; scope it to 'helps fade the look of', with the study shown."
+    },
+    {
+      "index": 2,
+      "assessment": "likely_false_positive",
+      "why": "'Instant' here is part of the product name 'Instant Spotlite Mask', not a separate claim. That said, the name reinforces the instant-result promise, and legal may want to review the name itself."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "Repeated 🤩 plus ⬇️ make the copy emoji-led, which isn't Minimalist's register."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Three exclamation marks in four short lines is far from the calm, declarative voice."
+    }
+  ],
+  "tone_read": "This is high-pressure category copy: 'Don't stress!', all-caps 'INSTANTLY', emoji and a 'Tap to get yours now!' push. It reads nothing like Minimalist's calm, education-first voice.",
+  "language_read": "No active or concentration is named, the efficacy is unhedged ('fades dark spots'), and the core promise uses lightening vocabulary rather than the brand's 'even-looking tone' language. The headline claim must go before any language polish matters."
+}

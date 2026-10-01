@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Most serums work only on the top layer of the skin",
+      "severity": "fix",
+      "why": "This is an unsourced comparison that disparages other serums as a category. It needs a like-for-like basis, or it should go.",
+      "fix": "Remove it, or replace it with a statement about this product only: 'Liposomal encapsulation is designed to improve how the Vitamin C is delivered.'"
+    },
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Co-created with Dr. Nirupama Parwanda",
+      "severity": "fix",
+      "why": "Naming a doctor as co-creator is an endorsement claim. It needs a documented collaboration on file, and the doctor's role should be stated accurately.",
+      "fix": "Keep only with the agreement on file, and state the role as documented (e.g. 'Formulated in collaboration with Dr. Nirupama Parwanda')."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'1.6x better brightening than a standard Vitamin C serum' compares against an unnamed benchmark with no study shown. It needs the comparator, the test method and a qualifier on the creative (also CLM-08)."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Improved' (and 'upgraded') does say what changed (the delivery). It's still only usable for 12 months after the reformulation launched."
+    }
+  ],
+  "tone_read": "The voice is calm and educational, explaining a delivery mechanism rather than agitating a concern, which fits Minimalist. The comparative jabs at other serums push it toward category-style one-upmanship.",
+  "language_read": "The concentration is stated correctly (10%), but the product is called 'Liposomal Vitamin C Serum' in the headline and 'Brightening Vitamin C Serum' in the body. Use one name, and ideally name the Vitamin C derivative as the pack does."
+}

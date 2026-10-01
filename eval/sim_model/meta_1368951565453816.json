@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-06",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Dark & pigmented lips? Not anymore!",
+      "severity": "block",
+      "why": "This frames dark lips as a problem to be eliminated, which falls under ASCI's skin-lightening concern, and 'Not anymore' is also an absolute result promise (CLM-03). The question form asserts the viewer's condition (CLM-14).",
+      "fix": "A lip balm with 1% Kojic Acid, formulated to hydrate and help even the look of lip tone."
+    },
+    {
+      "rule_id": "CLM-19",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "SPF 50",
+      "severity": "fix",
+      "why": "SPF 50 is high for a lip balm, and no product page is attached to confirm it. Acceptable only if the pack is labelled SPF 50 exactly.",
+      "fix": "Confirm against the pack label and match it exactly."
+    },
+    {
+      "rule_id": "CLM-18",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "shields your pout from sun damage",
+      "severity": "advisory",
+      "why": "'Shields from sun damage' reads as complete protection, which overstates what an SPF does.",
+      "fix": "helps protect your lips from the sun"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "With no product page attached, the 1% Kojic Acid concentration can't be verified. Check it against the label before approval."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Two exclamation marks in a short ad ('Not anymore!', 'Shop now!') move it away from the calm brand voice."
+    }
+  ],
+  "tone_read": "The opener is a problem-agitation hook ('Dark & pigmented lips? Not anymore!') of the kind Minimalist positions against. The rest is reasonably plain.",
+  "language_read": "The active and concentration are named in pack format ('1% Kojic Acid'), but 'brighten your lips' is unhedged and, next to 'dark lips', reads as lightening. Use 'help even the look of'."
+}

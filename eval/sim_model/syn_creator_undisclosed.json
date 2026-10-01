@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-21",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "my skin has never been calmer",
+      "severity": "fix",
+      "why": "One person's result is being used as the ad's product claim. It must be genuine and representative, and it must not read as a typical outcome.",
+      "fix": "Keep it clearly as personal experience, e.g. 'I've been using this cleanser for a month and I like how my skin feels', and add the paid-partnership disclosure."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "This is a paid creator ad with no visible '#ad' or 'Paid partnership' disclosure anywhere in the copy, which ASCI's influencer guidelines require upfront."
+    }
+  ],
+  "tone_read": "This is in the creator's own voice, so the casual tone and exclamation mark aren't held to Minimalist's brand register. The policy issues are the missing disclosure and the testimonial-as-result.",
+  "language_read": "No active, concentration or product name is given, which is acceptable for creator voice. There are no 'natural' or chemical-free framing problems."
+}
