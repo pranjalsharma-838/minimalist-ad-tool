@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minimalist Ad Desk</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Ad Desk <span class="sub">internal prototype</span></div>
+    <div id="status" class="status">checking…</div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="generate" role="tab">Generate from product URL</button>
+    <button class="tab" data-tab="score" role="tab">Score any ad</button>
+  </nav>
+
+  <main>
+    <!-- GENERATE -->
+    <section id="tab-generate" class="panel">
+      <form id="extract-form" class="row">
+        <input id="url" type="url" placeholder="https://beminimalist.co/products/niacinamide-10-with-matmarine" required />
+        <button type="submit">Fetch product</button>
+        <button type="button" id="manual-toggle" class="ghost">Enter manually</button>
+      </form>
+      <form id="manual-form" class="manual hidden">
+        <p class="hint">Fallback if the page can't be fetched. Manually entered facts are treated as unverified.</p>
+        <label>Product name (as on pack)<input name="title" placeholder="Niacinamide 10% Face Serum" required /></label>
+        <label>Tagline<input name="tagline" /></label>
+        <label>Claims, one per line (copy from the product page — not from reviews)<textarea name="claims" rows="5"></textarea></label>
+        <label>Product image URL (Shopify CDN)<input name="imageUrl" /></label>
+        <button type="submit">Use these facts</button>
+      </form>
+      <div id="extract-msg" class="msg"></div>
+
+      <details id="facts" class="facts hidden">
+        <summary>Product facts the generator may use</summary>
+        <div id="facts-body"></div>
+      </details>
+
+      <div id="gen-controls" class="row hidden">
+        <label class="inline">Copy mode
+          <select id="mode">
+            <option value="model">Model-written, cited to facts</option>
+            <option value="verbatim">Verbatim from page (no model)</option>
+          </select>
+        </label>
+        <button id="generate">Generate ad</button>
+      </div>
+
+      <div id="gen-result" class="result hidden">
+        <div class="left">
+          <div id="preview" class="preview"></div>
+          <div class="exports">
+            <button id="dl-png">Download PNG (1080×1080)</button>
+            <button id="dl-ticket" class="ghost">Download review ticket</button>
+            <p id="export-note" class="hint"></p>
+          </div>
+          <details class="edit" open>
+            <summary>Edit copy and re-check</summary>
+            <label>Headline<input id="e-headline" /></label>
+            <label>Subhead<input id="e-subhead" /></label>
+            <label>Proof points (one per line, max 3)<textarea id="e-proofs" rows="3"></textarea></label>
+            <label>Footnote<textarea id="e-footnote" rows="2"></textarea></label>
+            <label>CTA<select id="e-cta"><option>Shop now</option><option>Learn more</option><option>See ingredients</option></select></label>
+            <button id="recheck">Re-check</button>
+          </details>
+          <div id="gen-log" class="log"></div>
+        </div>
+        <div class="right" id="gen-report"></div>
+      </div>
+    </section>
+
+    <!-- SCORE -->
+    <section id="tab-score" class="panel hidden">
+      <form id="score-form" class="score-form">
+        <p class="hint">Paste any ad — ours, an agency's, a creator's. Every field is optional except that something must be filled.</p>
+        <label class="inline">Ad type
+          <select name="ad_type">
+            <option value="brand">Brand-authored</option>
+            <option value="creator">Creator / paid partnership</option>
+          </select>
+        </label>
+        <label>Headline<input name="headline" /></label>
+        <label>Primary text<textarea name="primary_text" rows="6"></textarea></label>
+        <label>On-image text<textarea name="on_image_text" rows="3"></textarea></label>
+        <label>Footnote / small print<input name="footnote" /></label>
+        <label>CTA<input name="cta" /></label>
+        <label>Product URL (optional — checks claims against that product's page)<input name="product_url" type="url" /></label>
+        <div class="row">
+          <button type="submit">Score ad</button>
+          <label class="file">or upload an image ad<input id="image" type="file" accept="image/png,image/jpeg,image/webp" /></label>
+        </div>
+      </form>
+      <div id="score-msg" class="msg"></div>
+      <div id="score-report"></div>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -62,6 +62,21 @@ async function handleApi(req, res, url) {
     const { generateAd } = await lazy("./lib/generate.js");
     return send(res, 200, await generateAd(body.sheet, { mode: body.mode }));
   }
+  if (url.pathname === "/api/rescore") {
+    // Marketer edited the copy: re-render spec, re-check layout, re-score against the same product page.
+    const { adFromCopy, specFromCopy } = await lazy("./lib/generate.js");
+    const { scoreAd } = await lazy("./lib/score.js");
+    const { layoutProblems } = await lazy("./public/render.js");
+    const spec = specFromCopy(body.copy, body.sheet);
+    const report = await scoreAd(adFromCopy(body.copy, body.sheet), { sheet: body.sheet });
+    const layout_problems = layoutProblems(spec);
+    if (layout_problems.length) {
+      report.findings.unshift({ rule_id: "LAYOUT", dimension: "language", severity: "block", title: "Copy doesn't fit the layout", field: "headline", start: 0, end: 0, span: "", message: layout_problems.join(" "), fix: "Shorten the copy.", sources: [], confidence: "layout check", layer: "rule" });
+      const { verdictFor } = await lazy("./lib/score.js");
+      report.verdict = verdictFor(report.findings, report.coverage);
+    }
+    return send(res, 200, { spec, report, layout_problems });
+  }
   if (url.pathname === "/api/score") {
     const { scoreAd, scoreImageAd } = await lazy("./lib/score.js");
     const result = body.image ? await scoreImageAd(body.image, body.mediaType) : await scoreAd(body.ad, { sheet: body.sheet });
