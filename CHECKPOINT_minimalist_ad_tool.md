@@ -1,38 +1,36 @@
-# CHECKPOINT: Minimalist Ad Desk (paused 2026-10-02)
+# CHECKPOINT: Minimalist Ad Desk (updated 2026-10-03)
 
-Repo: `Desktop\minimalist-ad-tool` (git, last commit "Format run gate…"). Test brand: Minimalist, standing in for the target brand BPC. Run the app with `node server.js`; tests with `npm test` (35 passing). Git binary: `%LOCALAPPDATA%\Programs\Git\cmd`.
+Architecture agreed with the user: `docs/ARCHITECTURE.md` (brand → winners → trends → archetype skill → brief writer ⇄ scorer retry loop → image generation; asset library feeds archetype + compose). Decisions:
+- winner = 30+ days running;
+- formats are never removed (risk levels Low/Medium/High/Severe instead);
+- the best brief is always kept;
+- AI people/results get the "AI-GENERATED — ILLUSTRATIVE" mark;
+- images come from ChatGPT via the browser; the user logs in.
 
-## Where it stopped
+## Done
 
-**Run `pipeline/runs/2026-10-02b`** (format-aware run, 12 briefs across 8 layouts):
-- **Done:** stages 1–5 (rules only):
-  - 8 briefs approved for the image step;
-  - 2 flagged, both real: SPF 56 used as a claim on 4416615341943591; "sweatproof" on 4500111383646459;
-  - 2 blocked, both real: anti-bacterial drug claims on 9868853523169382 and 1115173371246578.
-- **Was running when paused:** the stand-in AI judge for the 12 briefs. It was stopped and wrote 0 files.
+- **Brand context:** agent `minimalist-brand-context`; website pack built (catalog, 294-claim matrix).
+- **Asset library:** 118 gallery images; 20 cut-outs (13 clean, 7 white packs unusable by colour, marked). Agent definition `minimalist-asset-library`.
+- **Archetype selection:** `lib/archetype.js` + `scripts/select_archetypes.js` + skill `ad-archetype-selection`.
+- **Risk levels:** `lib/risk.js`; image prompt check refuses only "draw the product".
+- **Retry loop:** `pipeline/05b_retry.js prepare|finalize`, max 3 rounds, best version kept.
+- **Image prompt director:** prompt `prompts/image_prompt_director.md` (with the user's draft + 8 agreed changes), `config/brand_visual_minimalist.json`, `config/layout_zones.json`. Not yet wired into the pipeline.
+- **Keys:** `.env` loader and OpenAI image API module ready, waiting for the user to add `.env` with ANTHROPIC_API_KEY and OPENAI_API_KEY (never paste keys in chat).
 
-## Resume steps
+## Running in the background (as of this update)
 
-1. Re-run the stand-in judge. Inputs are `judge_prompts/system.md` + `<id>.user.md`, with schema `eval/rendered/schema.json`; outputs go to `judge/<id>.json`. Then run `node pipeline/05_compliance.js 2026-10-02b`.
-2. Run `python pipeline/06_deck.py 2026-10-02b`.
-3. Image step for the approved briefs. The user logs in to ChatGPT themselves; never type a password.
-   - Open new chats with the in-app "New chat" button, not chatgpt.com (opening the site directly gives "ChatGPT Work: couldn't load your account"; Reload fixes it).
-   - Target the message box with `.ProseMirror-focused[aria-label="Ask ChatGPT"]`.
-   - Capture every "Generated image" on the page, then run `node pipeline/07_save_image.js <run> <id>`. It deduplicates against images already saved, because old chats stay on the page.
-4. Run `node pipeline/08_compose.js 2026-10-02b`. Copy `finals/*.svg` to `public/dev-gen/`, screenshot each at 1080×1080 to `finals/<id>.png`, and check every final by eye.
-5. Then: re-run the eval (`node eval/run.js`) and do the full step-by-step recheck. The user asked for a detailed write-up of every problem: the problem, the proposed solution, the approach taken, and the goal.
+- Collectors: Minimalist on Amazon.in, Flipkart, Instagram → `brand_packs/minimalist/raw/`.
+- Deep Meta Ad Library (10 brands) → `research/competitor_ads_deep/`.
+- Google Ads Transparency → `research/competitor_ads_google/`.
+- Asset labelling → `brand_packs/minimalist/assets/index.json`.
+- Retry round 1 for 4 briefs in run `pipeline/runs/2026-10-02b`. Then re-run `node pipeline/05_compliance.js 2026-10-02b` and `05b_retry.js prepare` (≤3 rounds), then `finalize`.
 
-## Run 1 (`pipeline/runs/2026-10-02`): complete
+## Next
 
-- 6 backgrounds made.
-- 5 finals composed (hero layout, real pack shots in a white frame).
-- The before/after is held for real photos.
-
-## Open items for the user
-
-- Change both passwords pasted in chat, and remove them from the transcript before sharing it.
-- Clear Git with IT.
-- Get an Anthropic API key (the AI layer is a stand-in for now).
-- Add US rules before the target brand uses this for real.
-- Legal sign-off on the rulebook and the 12 open legal questions.
-- Real cut-out pack shots, so products blend into backgrounds.
+1. When the Amazon collector finishes: the Amazon best-seller competitor search (`research/competitor_search_plan.json`) → `research/competitor_map.md`.
+2. Rebuild the brand pack (`scripts/build_brand_pack.js`) + house style from Instagram.
+3. Winner agent: tag winners at template level (48 types), 30+ days.
+4. Wire the image prompt director between the brief and image generation.
+5. The 9 new layouts.
+6. Trend agent.
+7. Image step via ChatGPT for the approved briefs; compose; check each final by eye.
