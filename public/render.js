@@ -58,20 +58,31 @@ const FOOT_PX = 26;
 // Text is laid out at scale 1, then shrunk in steps until the column fits above the bottom band.
 // If it still doesn't fit at the minimum scale, the overflow is reported (layoutProblems) — the
 // first render test (v1) showed proof points running into the CTA, and that must never export.
+// spec.layout picks the format (research/ad_format_library.md): hero (default), actives, journey, stat,
+// callouts, spec, range, offer, before_after. All share the same chrome: wordmark, CTA band, 26px
+// footnote, internal-test mark — so the legal furniture is identical whichever format is used.
+const LAYOUTS = { hero: (spec, s) => layout(spec, s) };
+
+function pick(spec) {
+  return LAYOUTS[spec.layout || "hero"] || LAYOUTS.hero;
+}
+
 export function renderAdSvg(spec) {
+  const fn = pick(spec);
   for (let s = 1; s >= 0.7; s -= 0.05) {
-    const out = layout(spec, s);
+    const out = fn(spec, s);
     if (out.bottom <= BAND_Y - 24) return out.svg;
   }
-  return layout(spec, 0.7).svg;
+  return fn(spec, 0.7).svg;
 }
 
 export function measure(spec) {
+  const fn = pick(spec);
   for (let s = 1; s >= 0.7; s -= 0.05) {
-    const out = layout(spec, s);
+    const out = fn(spec, s);
     if (out.bottom <= BAND_Y - 24) return { fits: true, scale: +s.toFixed(2), bottom: out.bottom };
   }
-  return { fits: false, scale: 0.7, bottom: layout(spec, 0.7).bottom };
+  return { fits: false, scale: 0.7, bottom: fn(spec, 0.7).bottom };
 }
 
 function layout(spec, s) {
@@ -94,6 +105,13 @@ function layout(spec, s) {
   // Product photo: right side, aspect preserved, never cropped or retouched. No frame: the
   // Shopify pack shots carry their own studio background (v1 showed a white card clashing with it).
   if (spec.imageHref) {
+    // Over a generated background the pack shot's own studio backdrop shows as a pasted rectangle.
+    // Tried mix-blend-mode:multiply (2026-10-02): it greyed the white tube — that changes how the real
+    // product looks, so it was reverted. Until a cut-out (transparent) pack shot is supplied, the photo
+    // sits in a deliberate white frame so it reads as a product card, not a paste error.
+    if (spec.backgroundHref) {
+      parts.push(`<rect x="578" y="98" width="454" height="684" rx="10" fill="#FFFFFF"/>`);
+    }
     parts.push(
       `<image href="${esc(spec.imageHref)}" x="590" y="110" width="430" height="660" preserveAspectRatio="xMidYMid meet"/>`
     );
@@ -176,6 +194,216 @@ function layout(spec, s) {
   return { svg, bottom };
 }
 
+// ---------------- format library layouts ----------------
+
+const PAD = 72;
+const T = (lines, x, y, size, lh, attrs) => textBlock(lines, x, y, size, lh, `font-family="${FONT}" ${attrs}`);
+
+// Background, panels (left column or full width) and wordmark.
+function chromeStart(spec, panel) {
+  const { w, h } = SIZE;
+  const parts = [`<rect width="${w}" height="${h}" fill="${C.bg}"/>`];
+  if (spec.backgroundHref) {
+    parts.push(`<image href="${esc(spec.backgroundHref)}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`);
+    const pw = panel === "full" ? w - 80 : 540;
+    parts.push(`<rect x="40" y="40" width="${pw}" height="${BAND_Y - 40}" rx="8" fill="${C.bg}" fill-opacity="0.9"/>`);
+    parts.push(`<rect x="40" y="${BAND_Y + 8}" width="${w - 80}" height="${h - BAND_Y - 32}" rx="8" fill="${C.bg}" fill-opacity="0.92"/>`);
+  }
+  parts.push(`<text x="${PAD}" y="${PAD + 18}" font-family="${FONT}" font-size="26" font-weight="700" letter-spacing="1" fill="${C.ink}">Minimalist</text>`);
+  return parts;
+}
+
+// CTA band, product name, footnote, test mark -> svg.
+function chromeEnd(spec, parts, bottom) {
+  const { w, h } = SIZE;
+  parts.push(`<line x1="${PAD}" y1="${BAND_Y}" x2="${w - PAD}" y2="${BAND_Y}" stroke="${C.rule}" stroke-width="2"/>`);
+  if (spec.cta) {
+    parts.push(`<rect x="${PAD}" y="${BAND_Y + 32}" width="260" height="68" rx="34" fill="${C.ink}"/>`);
+    parts.push(`<text x="${PAD + 130}" y="${BAND_Y + 76}" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`);
+  }
+  if (spec.productName) parts.push(T(wrap(spec.productName, 22, 560), 372, BAND_Y + 74, 22, 28, `fill="${C.muted}"`));
+  if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
+  if (spec.testMark) parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
+  return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`, bottom };
+}
+
+// A real pack shot, aspect kept, framed when it sits on a generated background.
+function pack(spec, href, x, y, w, h) {
+  if (!href) return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="none" stroke="${C.rule}" stroke-dasharray="6 6"/>`;
+  const frame = spec.backgroundHref ? `<rect x="${x - 10}" y="${y - 10}" width="${w + 20}" height="${h + 20}" rx="10" fill="#FFFFFF"/>` : "";
+  return `${frame}<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`;
+}
+
+function headlineBlock(parts, text, x, y, maxW, s, size = 44) {
+  const hs = Math.round(size * s), hl = Math.round(size * 1.18 * s);
+  const lines = wrap(text, hs, maxW, 0.58);
+  parts.push(T(lines, x, y + hs, hs, hl, `font-weight="600" fill="${C.ink}"`));
+  return y + hs + (lines.length - 1) * hl;
+}
+
+// Ingredient explainer -> each active with its %, name and one cited line on what it does.
+LAYOUTS.actives = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 42) + Math.round(24 * s);
+  for (const a of (spec.actives || []).slice(0, 3)) {
+    const lines = wrap(a.line, Math.round(22 * s), 470);
+    const ch = Math.round(70 * s) + lines.length * Math.round(28 * s);
+    parts.push(`<rect x="${PAD}" y="${y}" width="490" height="${ch}" rx="8" fill="${C.card}" fill-opacity="0.85"/>`);
+    parts.push(`<text x="${PAD + 18}" y="${y + Math.round(48 * s)}" font-family="${FONT}" font-size="${Math.round(44 * s)}" font-weight="300" fill="${C.ink}">${esc(a.pct || "")}</text>`);
+    parts.push(`<text x="${PAD + 18 + (a.pct ? Math.round((a.pct.length * 26 + 20) * s) : 0)}" y="${y + Math.round(44 * s)}" font-family="${FONT}" font-size="${Math.round(26 * s)}" font-weight="600" fill="${C.ink}">${esc(a.name)}</text>`);
+    parts.push(T(lines, PAD + 18, y + Math.round(80 * s), Math.round(22 * s), Math.round(28 * s), `fill="${C.muted}"`));
+    y += ch + Math.round(14 * s);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
+// Routine / product journey -> 2–3 steps, each a real pack shot of one of our products.
+LAYOUTS.journey = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  let y = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(26 * s);
+  const steps = (spec.steps || []).slice(0, 3);
+  const n = Math.max(1, steps.length), gap = 28, colW = Math.floor((w - 2 * PAD - (n - 1) * gap) / n);
+  let bottom = y;
+  steps.forEach((st, i) => {
+    const x = PAD + i * (colW + gap);
+    // Labels wrap inside their column (first render: "STEP 2 · TREAT THE LOOK OF OIL" ran into step 3).
+    const lab = wrap((st.label || `STEP ${i + 1}`).toUpperCase(), 18, colW, 0.66).slice(0, 2);
+    parts.push(T(lab, x, y + 18, 18, 22, `font-weight="700" letter-spacing="1.2" fill="${C.muted}"`));
+    const top = y + 18 + lab.length * 22;
+    const imgH = Math.round(290 * s);
+    parts.push(pack(spec, st.imageHref, x, top, colW, imgH));
+    let ty = top + imgH + Math.round(34 * s);
+    const nm = wrap(st.productName || "", Math.round(21 * s), colW, 0.56);
+    parts.push(T(nm, x, ty, Math.round(21 * s), Math.round(26 * s), `font-weight="600" fill="${C.ink}"`));
+    ty += nm.length * Math.round(26 * s) + Math.round(4 * s);
+    const ln = wrap(st.line, Math.round(20 * s), colW);
+    parts.push(T(ln, x, ty, Math.round(20 * s), Math.round(26 * s), `fill="${C.muted}"`));
+    bottom = Math.max(bottom, ty + (ln.length - 1) * Math.round(26 * s));
+    if (i < n - 1) parts.push(`<text x="${x + colW + gap / 2}" y="${y + 36 + imgH / 2}" text-anchor="middle" font-family="${FONT}" font-size="28" fill="${C.muted}">→</text>`);
+  });
+  return chromeEnd(spec, parts, bottom);
+};
+
+// Testimonial -> consumer-study stat card (a review is not a claim; a qualified study stat is).
+LAYOUTS.stat = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 38) + Math.round(30 * s);
+  const st = spec.stat || {};
+  const vs = Math.round(150 * s);
+  parts.push(`<text x="${PAD - 6}" y="${y + vs}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-4" fill="${C.ink}">${esc(st.value || "")}</text>`);
+  y += vs + Math.round(16 * s);
+  const ls = wrap(st.label, Math.round(28 * s), 490);
+  parts.push(T(ls, PAD, y + Math.round(28 * s), Math.round(28 * s), Math.round(36 * s), `fill="${C.ink}"`));
+  y += Math.round(28 * s) + (ls.length - 1) * Math.round(36 * s);
+  if (spec.subhead) {
+    const sub = wrap(spec.subhead, Math.round(23 * s), 490);
+    parts.push(T(sub, PAD, y + Math.round(44 * s), Math.round(23 * s), Math.round(30 * s), `fill="${C.muted}"`));
+    y += Math.round(44 * s) + (sub.length - 1) * Math.round(30 * s);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
+// Problem/solution or authority -> labelled callouts pointing at the product (no skin imagery).
+LAYOUTS.callouts = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(30 * s);
+  const px0 = 400, pw = 280, ph = Math.min(470, BAND_Y - 40 - y0);
+  parts.push(pack(spec, spec.imageHref, px0, y0, pw, ph));
+  const slots = [[PAD, y0 + 40, "L"], [PAD, y0 + ph * 0.55, "L"], [px0 + pw + 40, y0 + 40, "R"], [px0 + pw + 40, y0 + ph * 0.55, "R"]];
+  let bottom = y0 + ph;
+  (spec.callouts || []).slice(0, 4).forEach((c, i) => {
+    const [x, y, side] = slots[i];
+    const lines = wrap(c.text, Math.round(22 * s), 250);
+    parts.push(T(lines, x, y + 22, Math.round(22 * s), Math.round(28 * s), `font-weight="500" fill="${C.ink}"`));
+    const ly = y + 12;
+    parts.push(side === "L"
+      ? `<line x1="${x + 262}" y1="${ly}" x2="${px0 - 6}" y2="${ly + 30}" stroke="${C.ink}" stroke-width="1.5"/><circle cx="${px0 - 6}" cy="${ly + 30}" r="4" fill="${C.ink}"/>`
+      : `<line x1="${x - 12}" y1="${ly}" x2="${px0 + pw + 6}" y2="${ly + 30}" stroke="${C.ink}" stroke-width="1.5"/><circle cx="${px0 + pw + 6}" cy="${ly + 30}" r="4" fill="${C.ink}"/>`);
+    bottom = Math.max(bottom, y + 22 + (lines.length - 1) * 28);
+  });
+  return chromeEnd(spec, parts, bottom);
+};
+
+// Comparison -> spec sheet of OUR tested facts (no rival comparison without like-for-like data).
+LAYOUTS.spec = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 40) + Math.round(26 * s);
+  for (const r of (spec.specs || []).slice(0, 5)) {
+    parts.push(`<line x1="${PAD}" y1="${y}" x2="${PAD + 490}" y2="${y}" stroke="${C.rule}" stroke-width="1.5"/>`);
+    parts.push(`<text x="${PAD}" y="${y + Math.round(30 * s)}" font-family="${FONT}" font-size="${Math.round(17 * s)}" font-weight="700" letter-spacing="1.2" fill="${C.muted}">${esc((r.label || "").toUpperCase())}</text>`);
+    const v = wrap(r.value, Math.round(24 * s), 490);
+    parts.push(T(v, PAD, y + Math.round(62 * s), Math.round(24 * s), Math.round(30 * s), `fill="${C.ink}"`));
+    y += Math.round(78 * s) + (v.length - 1) * Math.round(30 * s);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
+// Range guide -> 2–4 of our products, each labelled (skin type / use).
+LAYOUTS.range = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const y = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(30 * s);
+  const items = (spec.range || []).slice(0, 4);
+  const n = Math.max(1, items.length), gap = 24, colW = Math.floor((w - 2 * PAD - (n - 1) * gap) / n);
+  let bottom = y;
+  items.forEach((it, i) => {
+    const x = PAD + i * (colW + gap), imgH = Math.round(340 * s);
+    parts.push(pack(spec, it.imageHref, x, y, colW, imgH));
+    const lb = wrap(it.label, Math.round(22 * s), colW, 0.56);
+    parts.push(T(lb, x, y + imgH + Math.round(38 * s), Math.round(22 * s), Math.round(28 * s), `font-weight="600" fill="${C.ink}"`));
+    const nm = wrap(it.productName || "", Math.round(18 * s), colW);
+    const ny = y + imgH + Math.round(38 * s) + lb.length * Math.round(28 * s);
+    parts.push(T(nm, x, ny, Math.round(18 * s), Math.round(23 * s), `fill="${C.muted}"`));
+    bottom = Math.max(bottom, ny + (nm.length - 1) * Math.round(23 * s));
+  });
+  return chromeEnd(spec, parts, bottom);
+};
+
+// Offer -> offer line with its condition directly underneath, same block (CCPA 7 / ASCI 1.5(a)).
+LAYOUTS.offer = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  const o = spec.offer || {};
+  let y = headlineBlock(parts, o.line || spec.headline, PAD, 150, 490, s, 58) + Math.round(26 * s);
+  const cond = wrap(o.condition, Math.round(28 * s), 490);
+  parts.push(T(cond, PAD, y + Math.round(28 * s), Math.round(28 * s), Math.round(36 * s), `font-weight="500" fill="${C.ink}"`));
+  y += Math.round(28 * s) + (cond.length - 1) * Math.round(36 * s);
+  if (o.valid_till) {
+    parts.push(T([`Valid till ${o.valid_till}`], PAD, y + Math.round(40 * s), Math.round(22 * s), 28, `fill="${C.muted}"`));
+    y += Math.round(40 * s);
+  }
+  if (spec.subhead) {
+    const sub = wrap(spec.subhead, Math.round(23 * s), 490);
+    parts.push(T(sub, PAD, y + Math.round(48 * s), Math.round(23 * s), Math.round(30 * s), `fill="${C.muted}"`));
+    y += Math.round(48 * s) + (sub.length - 1) * Math.round(30 * s);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
+// Before/after -> two frames that only ever hold REAL, unretouched study photos (never generated).
+LAYOUTS.before_after = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 640, 200, 360, 560));
+  let y = headlineBlock(parts, spec.headline, PAD, 130, 500, s, 36) + Math.round(24 * s);
+  const fh = Math.round(250 * s);
+  ["BEFORE", "AFTER"].forEach((lab, i) => {
+    const photo = (spec.photos || [])[i];
+    if (photo) parts.push(`<image href="${esc(photo)}" x="${PAD}" y="${y}" width="500" height="${fh}" preserveAspectRatio="xMidYMid slice"/>`);
+    else {
+      parts.push(`<rect x="${PAD}" y="${y}" width="500" height="${fh}" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/>`);
+      parts.push(`<text x="${PAD + 250}" y="${y + fh / 2 + 8}" text-anchor="middle" font-family="${FONT}" font-size="20" font-weight="700" fill="#B42318">REAL STUDY PHOTO REQUIRED</text>`);
+    }
+    parts.push(`<text x="${PAD + 12}" y="${y + 30}" font-family="${FONT}" font-size="18" font-weight="700" fill="${C.ink}">${lab}</text>`);
+    y += fh + Math.round(16 * s);
+  });
+  return chromeEnd(spec, parts, y);
+};
+
 // Overflow check used by the generator: returns problems instead of silently clipping text.
 export function layoutProblems(spec) {
   const problems = [];
@@ -190,5 +418,13 @@ export function layoutProblems(spec) {
   (spec.proofPoints || []).forEach((p, i) => lim(`Proof point ${i + 1}`, p, 70));
   lim("Footnote", spec.footnote, 200);
   if ((spec.proofPoints || []).length > 3) problems.push("More than 3 proof points");
+  (spec.actives || []).forEach((a, i) => lim(`Active ${i + 1} line`, a.line, 90));
+  (spec.steps || []).forEach((st, i) => lim(`Step ${i + 1} line`, st.line, 70));
+  (spec.callouts || []).forEach((c, i) => lim(`Callout ${i + 1}`, c.text, 60));
+  (spec.specs || []).forEach((r, i) => lim(`Spec ${i + 1}`, r.value, 70));
+  (spec.range || []).forEach((r, i) => lim(`Range label ${i + 1}`, r.label, 40));
+  if (spec.layout === "offer" && spec.offer && !String(spec.offer.condition || "").trim()) problems.push("Offer has no condition: 'free' / discount terms must sit with the offer (CCPA 7).");
+  if (spec.layout === "before_after" && !(spec.photos || []).length) problems.push("Before/after has no real study photos attached — export stays blocked.");
+  if (["journey", "range"].includes(spec.layout) && (spec.steps || spec.range || []).some((x) => !x.imageHref && !x.imageSrc)) problems.push("A product in the journey/range has no pack shot.");
   return problems;
 }

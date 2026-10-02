@@ -15,6 +15,12 @@ fs.mkdirSync(path.join(runDir, "finals"), { recursive: true });
 
 const dataUrl = (buf, type) => `data:${type};base64,${buf.toString("base64")}`;
 for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
+  // Before/after (real-photography) briefs need a designer layout with the real study photos in the
+  // frames; the standard layout's copy panel would cover the frames (seen on the 2026-10-02 run).
+  if (b.needs_real_photography) {
+    console.log(`${b.source_ad_id}: background ready; NOT composed — waiting for real, unretouched study photos (${b.photography_needed.slice(0, 90)}…)`);
+    continue;
+  }
   const bg = ["png", "jpg", "jpeg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.${e}`)).find((p) => fs.existsSync(p));
   if (!bg) {
     console.log(`${b.source_ad_id}: no background yet (image step not done) — skipped`);
