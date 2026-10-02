@@ -1,0 +1,33 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "4416615341943591",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Moisturiser-meets-sunscreen: SPF 50, PA++++",
+  "subhead": "A light texture that spreads easily for a natural, moisturised, non-shiny look, with Vitamins B, E & F.",
+  "proof_points": [
+    "4 UV filters for UVA & UVB protection",
+    "SPF 56.6 obtained in independent in-vivo testing",
+    "Photostable, acne safe, no white cast"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "SPF tested in-vivo to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F3", "F2"],
+    "subhead": ["F3"],
+    "proof_points": [["F5"], ["F16", "F18"], ["F8"]],
+    "footnote": ["F14", "F15", "F18"]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines, the words before the colon in the brand's darker weight, 'SPF 50, PA++++' on the second line. Subhead beneath in regular weight. Left 50%, below the subhead: the three proof points as three stacked highlight bars (soft pale-lilac and pale-yellow fills alternating behind the text), each with a thin callout line running right toward the product, echoing the source's colour-coded highlight bars and callout lines. Right 45%: real product photo of the SPF 50 Sunscreen tube on the low plinth; the pack hero 'SPF 50' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-left. Footnote in small type along the bottom edge, full width.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Light grey to off-white seamless studio backdrop, a faint pale lilac tint toward the upper right and a very soft pale yellow glow near the lower right, soft natural daylight from the upper left, gentle diffuse shadows, clean and techy but calm. On the right side, a low rectangular matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy and highlight bars. No other props. Palette: light grey, off-white, pale lilac, pale yellow, soft grey shadow. No product, no tube, no bottle, no carton, no packaging, no text, no letters, no numbers, no logos, no lines or arrows, no badges, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the clean product-hero structure on a light grey field, the format-first hook (here Minimalist's own 'moisturiser-meets-sunscreen' description from F3), colour-coded highlight bars with callout lines pointing at the pack, the light grey / lilac / yellow palette (softened) and the Shop now CTA. Replaced: all copy with Minimalist facts: 4 UV filters, the in-vivo SPF 56.6 result, photostable / acne safe / no white cast. Dropped: the 'India's 1st' first-to-market claim, because it is unsourced and no such claim is in the facts. Dropped: the dual-chamber pack feature and the carton beside the tube, because they don't apply to this product. The SPF test reference sits in the footnote so the 56.6 figure is traceable."
+}

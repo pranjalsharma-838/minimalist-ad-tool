@@ -36,11 +36,13 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   const img = checkImagePrompt(brief.image_prompt);
 
   // Save the exact judge prompt so a stand-in can produce judge/<id>.json when there's no API key.
-  const jp = buildJudgePrompt(ad, runRules(ad, { sheet }), { sheet });
+  const shownForJudge = [...(brief.steps || []), ...(brief.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheet);
+  const jp = buildJudgePrompt(ad, runRules(ad, { sheet, extraSheets: shownForJudge }), { sheet });
   fs.writeFileSync(path.join(runDir, "judge_prompts", `${brief.source_ad_id}.user.md`), jp.user);
   if (!fs.existsSync(path.join(runDir, "judge_prompts", "system.md"))) fs.writeFileSync(path.join(runDir, "judge_prompts", "system.md"), jp.system);
   const injected = path.join(runDir, "judge", `${brief.source_ad_id}.json`);
-  const ctx = { sheet };
+  const shownHandles = [...(brief.steps || []), ...(brief.range || [])].map((x) => x.product_handle).filter((h) => h && h !== m.product_handle && sheets[h]);
+  const ctx = { sheet, extraSheets: [...new Set(shownHandles)].map((h) => sheets[h]) };
   if (!judgeAvailable() && fs.existsSync(injected)) Object.assign(ctx, { injectModelData: JSON.parse(fs.readFileSync(injected, "utf8")), injectModelName: "stand-in (same prompt)" });
   const report = await scoreAd(ad, ctx);
 

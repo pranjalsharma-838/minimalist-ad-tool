@@ -35,6 +35,23 @@ test("testimonials can't be cited, in any layout", () => {
   assert.ok(checkBrief(s, sheets, "nia").some((p) => /testimonial/.test(p)));
 });
 
+test("format run fixes: ingredient codes aren't numbers; drug wording via 'against bacteria' is caught", async () => {
+  const sheetsX = { nia: { ...nia, facts: [...nia.facts, { id: "F20", kind: "ingredient_note", text: "Oligopeptide helps with oily skin" }] } };
+  const b = { layout: "callouts", headline: "x", citations: { headline: ["F1"] }, callouts: [{ text: "Oligopeptide-10 for oily skin", cites: ["F20"] }] };
+  assert.deepEqual(checkBrief(b, sheetsX, "nia"), []);
+  const { runRules } = await import("../lib/rules.js");
+  const r = runRules({ ad_type: "brand", headline: "", primary_text: "Oligopeptide-10: active against acne-causing bacteria", on_image_text: "", footnote: "", cta: "" });
+  assert.ok(r.some((f) => f.rule_id === "CLM-01"));
+});
+
+test("range with several SPFs isn't an SPF mismatch", async () => {
+  const { runRules } = await import("../lib/rules.js");
+  const s50 = { actives: [{ name: "SPF", pct: "50" }], facts: [] }, s60 = { actives: [{ name: "SPF", pct: "60" }], facts: [] };
+  const ad = { ad_type: "brand", headline: "", primary_text: "", on_image_text: "SPF 50 Sunscreen\nSPF 60 Sunscreen", footnote: "", cta: "" };
+  assert.ok(runRules(ad, { sheet: s50 }).some((f) => f.rule_id === "CLM-19"), "without the second product shown, SPF 60 is a mismatch");
+  assert.ok(!runRules(ad, { sheet: s50, extraSheets: [s60] }).some((f) => f.rule_id === "CLM-19"));
+});
+
 test("offer layout needs its condition", () => {
   const o = { layout: "offer", headline: "", offer: { line: "Get the 3rd free", condition: "" } };
   assert.ok(checkBrief(o, sheets, "nia").some((p) => /condition/.test(p)));

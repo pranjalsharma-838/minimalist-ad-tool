@@ -1,0 +1,32 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "source_ad_id": "1732129464862042",
+  "product_title": "Salicylic Acid + LHA 2% Body Wash",
+  "headline": "2% Salicylic Acid + LHA, for face and body",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {"label": "Step 1 · Face cleanse", "product_handle": "salicylic-lha-2-cleanser", "line": "BHA + LHA cleanse pores and reduce sebum without drying skin", "cites": ["salicylic-lha-2-cleanser:F3"]},
+    {"label": "Step 2 · Body wash", "product_handle": "salicylic-acid-lha-02-body-wash", "line": "Multi-level exfoliation for soft, bump-free skin", "cites": ["F3", "F6"]}
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Use both AM & PM, every day: lather on wet skin, massage gently, rinse off thoroughly. Body wash patch tested under the supervision of a dermatologist.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "salicylic-lha-2-cleanser:F1"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F11", "F12", "F13", "salicylic-lha-2-cleanser:F13", "salicylic-lha-2-cleanser:F14"]
+  },
+  "layout_description": "Square 1080x1080. Headline centred across the top band in bold near-black, with '2% Salicylic Acid + LHA' on the first line and 'for face and body' on the second in a soft orange accent. Two real pack shots stand side by side across the middle 80% of the frame: the Salicylic Acid + LHA 2% Cleanser on the left and the Body Wash (main product, slightly larger) on the right, with a little water-droplet sheen allowed only on the packs' own photography. Under each pack, its step label in small caps and the one-line step copy beneath it. Footnote in small grey text centred along the bottom. 'Shop now' as a small dark outlined button bottom-right.",
+  "image_prompt": "Square 1080x1080 background-only scene. A clean, bright bathroom shower wall of matte off-white square tiles with a very soft lilac tint and fine pale-grey grout, front-on, with a narrow matte off-white ledge running along the lower third. A few soft, out-of-focus water droplets on the tiles near the extreme left and right edges only, suggesting a shower without a visible stream. Soft, even, diffused daylight, fresh and clean mood; palette of off-white, pale lilac and a small hint of warm orange only in a faint reflected light. Keep the middle 80% of the frame completely clear, flat and evenly lit for two products placed side by side on the ledge, and keep the top band calm and low-detail for the headline. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no tube, no running water stream. Empty space reserved for the product photos and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the face + body duo routine under one single-minded message, the in-shower context (rebuilt as a lilac-tinted tile wall with droplets), the white/lilac/orange palette, and a shop-now CTA. Our duo shares one active system (2% Salicylic Acid + LHA) across face cleanser and body wash, which keeps the message single-minded. Dropped: the 'No.1' ranking (no source); the tan-fading result claim (not in either product's facts; the steps describe cleansing and exfoliation instead); the wet hands holding the packs (hands and skin are not generated; real pack shots are placed on a ledge instead). No third step was added, to stay true to the source's two-product duo."
+}

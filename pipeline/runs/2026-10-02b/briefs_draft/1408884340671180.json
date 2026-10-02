@@ -1,0 +1,33 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "1408884340671180",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Choose your SPF. Each one is tested in vivo.",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {"product_handle": "light-fluid-spf-50-sunscreen", "label": "SPF 50 · water-resistant, shine-free", "cites": ["F2", "F3"]},
+    {"product_handle": "multi-vitamin-spf-50", "label": "SPF 50 · moisturiser-meets-sunscreen", "cites": ["multi-vitamin-spf-50:F2", "multi-vitamin-spf-50:F3"]},
+    {"product_handle": "spf-60-silymarin", "label": "SPF 60 · with antioxidant Silymarin", "cites": ["spf-60-silymarin:F2", "spf-60-silymarin:F5"]}
+  ],
+  "offer": null,
+  "footnote": "SPF of each sunscreen confirmed by in-vivo testing to ISO 24444:2019 in independent third-party labs. Apply at least 15 minutes before sun exposure; reapply with continued sun exposure.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F12", "multi-vitamin-spf-50:F14", "spf-60-silymarin:F13"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F12", "F16", "F18", "multi-vitamin-spf-50:F13", "multi-vitamin-spf-50:F14", "spf-60-silymarin:F11", "spf-60-silymarin:F13"]
+  },
+  "layout_description": "Square 1080x1080. Headline centred across the top band in deep cobalt-navy, one or two lines. Three real pack shots (Light Fluid SPF 50 as the main product in the centre, SPF 50 Sunscreen left, SPF 60 Sunscreen right) stand in a row across the middle 80% of the frame on the tabletop, evenly spaced. Each pack has a small rectangular label tag above or angled beside it carrying its range label in navy on white. Footnote in small grey text centred along the bottom. 'Shop now' as a small navy outlined button bottom-centre, below the footnote line or at bottom-right.",
+  "image_prompt": "Square 1080x1080 background-only scene. Top-down-to-three-quarter view of a warm off-white linen surface in soft morning sunlight, with gentle, diffused sun streaks and a faint soft-edged leaf shadow only along the very top and bottom edges. A single pair of light-framed sunglasses lies folded at the extreme bottom-left corner as the only prop. Warm, summery but minimal mood; palette of off-white, pale sand and a hint of soft sunny yellow in the light, with muted cobalt only as a faint cool tone in shadows. Keep the middle 80% of the frame completely clear, flat and evenly lit for three products placed side by side, and keep the top band calm and low-detail for the headline. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no tube. Empty space reserved for the product photos and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the range-picker 'choose yours' framing, several sunscreens shown together in one frame each with its own short label, a sunny lifestyle mood (toned down to warm off-white light and one sunglasses prop), and a shop-now CTA. Labels use each product's own SPF number and a cited texture or ingredient fact instead of the source's cooling/brightening/hydrating/oil-control menu. Dropped: the '100% new-gen UV filters' badge (a technology claim with no matching fact); the beach basket and patterned rug (too busy for the copy and pack areas); a fourth variant (only three sunscreens are in the input). Proof is moved to the footnote: each SPF is in-vivo tested to ISO 24444:2019 by independent labs, which is in all three fact sheets."
+}

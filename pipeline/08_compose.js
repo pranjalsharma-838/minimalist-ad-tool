@@ -41,7 +41,8 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
   spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
   fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), renderAdSvg(spec));
   const layoutIssues = layoutProblems(spec);
-  const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], rulesOnly: true });
+  const extraSheets = [...(b.steps || []), ...(b.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheets[main]);
+  const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });
   const exportable = !layoutIssues.length && report.verdict.code !== "BLOCKED";
   summary.push({ id: b.source_ad_id, layout: spec.layout, exportable, layoutIssues, recheck: report.verdict.code });
   console.log(`${b.source_ad_id} [${spec.layout}]: composed · re-check ${report.verdict.code}${layoutIssues.length ? " · NOT EXPORTABLE: " + layoutIssues.join("; ") : ""}`);

@@ -15,6 +15,7 @@
         "\\btreat(s|ed|ing|ment|ments)?\\s+(for\\s+|of\\s+|your\\s+|the\\s+|stubborn\\s+|active\\s+|cystic\\s+)*(acne|pimples|breakouts|eczema|psoriasis|rosacea|dermatitis|melasma|infections?|conditions?|diseases?|disorders?|scars|hyperpigmentation|pigmentation|hair\\s?loss|dandruff)\\b",
         "\\b(eczema|psoriasis|rosacea|dermatitis|melasma|vitiligo|alopecia|diaper rash|fungal|infections?)\\b",
         "\\b(anti-?bacterial|anti-?microbial|anti-?fungal|antiseptic|kills?\\s+([\\w-]+\\s+){0,4}(bacteria|germs|microbes))\\b",
+        "\\b(against|fights?|fighting|targets?|targeting|combats?|reduces?)\\s+([\\w-]+\\s+){0,3}(bacteria|germs|microbes)\\b",
         "\\b(skin\\s+)?cancer\\b",
         "\\btumou?rs?\\b",
         "\\b(leucoderma|leprosy|lupus)\\b"

@@ -1,0 +1,33 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "27209515258657747",
+  "product_title": "Multi-Peptides 10% Face Serum",
+  "headline": "",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "[Offer price ₹___] instead of [MRP ₹___]",
+    "condition": "[Applicable pack size / minimum order, if any]",
+    "valid_till": "[DD Mon YYYY]"
+  },
+  "footnote": "",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": []
+  },
+  "layout_description": "Square 1080x1080. Left 50%: the offer block. offer.line set large in two lines as a price anchor: the MRP placeholder shown smaller and struck through, the offer price placeholder shown large beneath it. offer.condition in small regular type under the price, then 'Valid till' + offer.valid_till in small type (a plain end date, no countdown, no starburst badge). Right 45%: real product photo of the Multi-Peptides 10% Face Serum bottle standing upright on the low plinth; the pack hero '10% Multi-Peptides' comes from the product photo itself. Bottom-left corner: a plain diagonal strip in muted rose carrying the CTA 'Shop now', echoing the source's on-image Shop Now strip. All offer text is marketer-entered and must be checked against the live offer before export.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare offer ad. Off-white seamless studio backdrop with a soft, muted rose-pink wash rising from the lower left, soft natural daylight from the upper left, gentle diffuse shadows, calm and clinical. Across the bottom-left corner, a plain, flat diagonal band of slightly deeper muted rose, empty, reserved for a CTA strip. On the right side, a low round matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy. No other props. Palette: off-white, muted rose, warm white, soft grey shadow. No product, no bottle, no jar, no packaging, no gel or cream texture, no text, no letters, no numbers, no price tags, no logos, no badges, no starbursts, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the offer-first structure, the price-anchor mechanism (struck-through MRP beside a larger offer price), the on-image diagonal 'Shop now' strip, and the pink mood (softened to muted rose on off-white). All offer terms are placeholders in [square brackets] for the marketer to fill; no real price, discount or offer is invented, and none comes from the product page. Dropped: the countdown ('ends in hours') and starburst timer badge, because countdown urgency is a dark pattern under ASCI's guideline and the brand avoids urgency; a plain end date replaces it. Dropped: the playful benefit question promising young, bouncy skin at half the price, because it implies an anti-ageing result and states a discount that isn't verified. Dropped: the 'clearance' framing and all of the competitor's wording. Dropped: the spilling-gel texture shot, because the background image can't show product or texture; the real pack photo is placed instead. No product claims are printed, so no fact citations are needed; headline and subhead are left empty because the offer layout uses only the offer block."
+}

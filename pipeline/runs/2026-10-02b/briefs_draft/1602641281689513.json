@@ -1,0 +1,34 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "1602641281689513",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "A weekend facial peel: 25% AHA, 5% PHA, 2% BHA",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {"text": "25% AHA dissolves dead cells in the upper skin layer", "cites": ["F18"]},
+    {"text": "5% PHA exfoliates and doubles as a humectant", "cites": ["F19"]},
+    {"text": "2% BHA unclogs pores, flushing out debris & oil", "cites": ["F3", "F20"]},
+    {"text": "For dullness, hyperpigmentation & wrinkles", "cites": ["F9"]}
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Leave on for 10 minutes only, then rinse. PM use: start once every 2 weeks, building to once a week. Skip serums that night. Sunscreen is a must. For 20+ years.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F2", "F3"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F11", "F12", "F10"]
+  },
+  "layout_description": "Square 1080x1080. Headline top-left in near-black with the three percentages set in a muted lavender-purple, two lines. Real product photo (peel bottle, upright) in the right 45% of the frame, vertically centred, with a soft shadow. Four callout labels stack down the left half, each joined to the bottle by a thin lavender leader line ending in a small dot; the first three lead with the acid percentage in bold, the fourth (concerns) is set in a lighter weight as a closing label. Footnote in small grey text along the bottom-left. 'Shop now' as a small dark outlined button bottom-right under the product.",
+  "image_prompt": "Square 1080x1080 background-only scene. A calm off-white surface with a very soft lavender tint, meeting a pale lilac-grey wall, lit by soft, diffused natural daylight from the upper right with gentle, low-contrast shadows. A single folded white cotton face towel rests at the far bottom-left corner as the only prop. Modern, calm, sensorial but minimal mood; palette of off-white, pale lavender and soft grey, with a hint of deeper purple only in the faintest shadows. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% smooth and low-detail for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no jar, no product texture or swatch. Empty space reserved for the product photo and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the problem-to-product link (dullness named in a concern callout, from the product's own 'ideal for' facts), the short-session ritual idea (rebuilt as a usage fact in the footnote: leave on 10 minutes only, PM, from once every 2 weeks), the purple/lavender sensorial palette (softened to lavender-tinted off-white), and a shop-now CTA. Headline leads with ingredients and concentrations instead of a time-bound fix. Dropped: the '10-minute fix' result framing and the 'de-tans & brightens' claim (time-bound and tan results aren't in our facts; 10 minutes is a usage instruction, not a result, so it stays in the footnote); the monsoon seasonal hook (no fact supports it); the model wearing the mask and the finger-scoop panel (skin and hands are not generated, and real application photography isn't needed for this format); the texture swirl panel (the image model must not render product)."
+}

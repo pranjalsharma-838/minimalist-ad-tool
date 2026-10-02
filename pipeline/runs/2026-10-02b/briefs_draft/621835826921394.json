@@ -1,0 +1,33 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "621835826921394",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Dry or oily skin: a moisturised, non-shiny SPF 50",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "56.6",
+    "label": "SPF value obtained",
+    "cites": ["F16"]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Data based on in-vivo tests to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F10", "F3", "F2"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F18", "F14", "F15"]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines. Left 50%, below the headline: a clean white rounded card (in the place of the source's review card) holding the stat: '56.6' set very large, with 'SPF value obtained' beneath it in regular weight. No stars, no date, no name, no 'verified' badge. Right 45%: real product photo of the SPF 50 Sunscreen tube standing on the low plinth against the pale sky; the pack hero 'SPF 50' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-left. Footnote with the test qualifier in small type along the bottom edge, full width.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. A soft, airy gradient from pale sky blue at the top to off-white at the bottom, with a few very faint, out-of-focus pale clouds high in the frame, soft natural daylight, gentle diffuse shadows, fresh and calm. On the right side, a low round matte off-white plinth on a plain off-white surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy and a stat card. No other props. Palette: pale sky blue, soft teal hint, off-white, white. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no cards, no stars, no badges, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the skin-type hook (here dry and oily skin, from the product's own suitability list), a single proof card beside the product, the sky-blue sun-use backdrop and the Shop now CTA. Replaced: the customer review card with Minimalist's independent in-vivo test result (SPF value obtained: 56.6), with the lab, standard and study number as the qualifier in the footnote. The product page has no consumer-study percentage, so the lab-test figure is used as the stat. Dropped: the review quote, stars, date, name and 'verified' badge, because customer reviews can't be used as claims (CCPA 13) and the product's own testimonial is not citable. Dropped: the 'best sunscreen' superlative and the 'skip moisturiser' usage suggestion, which the facts don't support. Dropped: the hand holding the tube, because the image model never generates hands or skin; the real pack photo is placed on a plinth instead."
+}

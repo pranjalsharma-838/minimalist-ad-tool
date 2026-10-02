@@ -1,0 +1,33 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "source_ad_id": "9868853523169382",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "10% Niacinamide + Matmarine for sebum, pores and tone",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [
+    {"pct": "10%", "name": "Niacinamide", "line": "A form of vitamin B3 that reduces sebum, improves the barrier and evens skin tone", "cites": ["F3", "F16"]},
+    {"pct": "", "name": "Matmarine", "line": "Marine biotech extract that helps regulate oiliness and reduce the look of pores", "cites": ["F7"]},
+    {"pct": "", "name": "Zinc", "line": "Regulates sebum production and has anti-bacterial properties", "cites": ["F18"]}
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Niacinamide from Lonza, Switzerland; Matmarine from Lipotec USA. Patch tested under the supervision of a Dermatologist.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F2", "F3"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F9", "F15"]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines. Left 50%, below the headline: three stacked ingredient tag cards (white rounded cards with a thin blush-pink left accent bar), one per active, matching the source's three ingredient-to-benefit cards: the concentration (where printed) and ingredient name in bold on the first line, the one-line description in regular weight beneath. Cards step slightly toward the product so they read as pointing at it. Right 45%: real product photo of the Niacinamide 10% Face Serum bottle upright on the low plinth; the pack hero '10% Niacinamide' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-left. Footnote in small type along the bottom edge, full width. No 'NEW' bubble.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a soft, pale blush-pink gradient rising from the bottom, soft natural daylight from the upper left, gentle diffuse shadows, calm and clinical with a light, fresh feel. On the right side, a low round matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy and ingredient cards. No fruit and no other props. Palette: off-white, pale blush pink, warm white, soft grey shadow. No product, no bottle, no dropper, no packaging, no text, no letters, no numbers, no logos, no cards, no badges, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the ingredient-explainer structure (product hero with three ingredient-to-benefit tag cards, one named ingredient and one plain benefit each), the idea of one serum covering several needs, the pink palette (softened to pale blush on off-white) and the Shop now CTA. Replaced: the cards now carry Minimalist's own actives from the facts: Niacinamide 10%, Matmarine and Zinc, each line describing what the ingredient does, not a product result. Dropped: the 'NEW' launch bubble, as nothing in the facts says the product is new. Dropped: the strawberry pile, because the formula has no strawberry and fruit props suggest a natural angle the brand avoids. Dropped: the generic 'Clinically Proven' badge; only dermatologist-supervised patch testing is stated, in the footnote. The 2-week clinical complexion claim (F6) is left out to avoid a time-bound result line. Hedges kept: Matmarine 'helps regulate' oiliness and the 'look of' pores, as in F7."
+}

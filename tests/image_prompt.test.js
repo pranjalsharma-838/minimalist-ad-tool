@@ -28,6 +28,12 @@ test("reserving space for the real pack shot is not an ask to draw one (first ga
   assert.equal(checkImagePrompt("A plinth with a product on it, empty space left. No text.").blocked, true);
 });
 
+test("reserving space for the headline is not an ask for text (format run)", () => {
+  const p = "Plain off-white wall; keep the top band calm and low-detail for the headline. Empty space in the middle. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.";
+  assert.equal(checkImagePrompt(p).blocked, false, JSON.stringify(checkImagePrompt(p).findings));
+  assert.equal(checkImagePrompt("A wall with the headline 'Glow' painted on it. Empty space. No product.").blocked, true);
+});
+
 test("negation directly before the noun is respected", () => {
   assert.equal(checkImagePrompt("A marble surface without a bottle, soft light. Empty space on the right. No text, no product.").blocked, false);
 });
