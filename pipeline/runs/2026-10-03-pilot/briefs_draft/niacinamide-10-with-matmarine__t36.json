@@ -7,7 +7,7 @@
     "headline":  "10% Niacinamide serum for oily, acne-prone skin",
     "subhead":  "With Matmarine and Zinc. Use AM \u0026 PM, every day.",
     "proof_points":  [
-                         "MRP Rs. 237"
+                         "30ml: Rs. 539, MRP Rs. 599"
                      ],
     "actives":  [
 
@@ -26,11 +26,14 @@
 
               ],
     "offer":  {
-                  "line":  "[OFFER TERMS — from marketer]",
-                  "condition":  "[OFFER CONDITIONS — from marketer]",
-                  "valid_till":  "[OFFER END DATE — from marketer]"
+                  "line":  "Buy 2, Get 3rd Free",
+                  "condition":  "The 3rd product is free when you buy 2. T\u0026C apply.",
+                  "valid_till":  "",
+                  "cites":  [
+                                "OFFER3"
+                            ]
               },
-    "footnote":  "Evaluated for safety through patch testing. MRP from the product page, captured 2026-10-02. Offer terms and dates to be supplied by the marketer.",
+    "footnote":  "Offers as on beminimalist.co, 2026-10-02. T\u0026C apply. 3rd product free on buying 2. Price shown for 30ml.",
     "cta":  "Shop now",
     "citations":  {
                       "headline":  [
@@ -43,17 +46,17 @@
                                   ],
                       "proof_points":  [
                                            [
-                                               "PRICE"
+                                               "PRICE1"
                                            ]
                                        ],
                       "footnote":  [
-                                       "F15",
-                                       "PRICE"
+                                       "OFFER3",
+                                       "PRICE1"
                                    ]
                   },
-    "layout_description":  "Square 1080x1080. Offer line as the large headline block top-left (marketer fills the bracketed terms), offer condition directly beneath it in readable size, valid-till date under that. Product headline and subhead below on the left. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. MRP (Rs. 237, cited PRICE) shown as a small line under the subhead.",
+    "layout_description":  "Square 1080x1080. Offer line \u0027Buy 2, Get 3rd Free\u0027 as the large block top-left, with its condition directly beneath in readable size. Product headline and subhead below on the left. Price line: sale price Rs. 539 in bold with \u0027MRP Rs. 599\u0027 beside it struck through, size (30ml) in small type. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No end date or countdown (none shown on site).",
     "image_prompt":  "Square 1080x1080 background plate only. A minimal studio set of three low, smooth geometric blocks in off-white and pale cool grey, arranged on the right side at different heights, against a seamless off-white backdrop. Soft natural light from the left with gentle soft shadows, clinical and uncluttered, a restrained neutral take on a colourful promo set. Keep the right 45% of the frame as clear, evenly lit empty space on top of the blocks, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography":  false,
     "photography_needed":  "",
-    "adaptation_notes":  "Kept: the offer-promo structure (big offer line, product on display blocks, Shop now CTA). Dropped: the bundle price, discount code and \u0027buy any 3\u0027 mechanic (offer terms aren\u0027t on our pages, so [placeholders] for the marketer), urgency (\u0027limited time\u0027, \u0027hurry\u0027), emoji, the youthful-skin promise and the multi-product set. Shows the real page MRP (Rs. 237, fact PRICE, captured 2026-10-02); offer terms stay as marketer placeholders."
+    "adaptation_notes":  "Kept: the competitor\u0027s offer-led structure (big offer line, product on display blocks, Shop now CTA). Offer quoted exactly from the live sitewide banner OFFER3 (beminimalist.co, captured 2026-10-02); price is the main size from PRICE1, sale price with MRP struck through. Dropped: the competitor\u0027s bundle price and discount code, all urgency (\u0027limited time\u0027, \u0027hurry\u0027; no end date shown on site), emoji, the youthful-skin promise. Other live offers (OFFER1/2/4) not used, to keep one clear offer; OFFER2 \u0027Freebies\u0027 has no stated condition on the capture."
 }
