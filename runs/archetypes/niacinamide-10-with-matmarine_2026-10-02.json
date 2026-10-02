@@ -1,0 +1,1394 @@
+{
+  "request": {
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product": "Niacinamide 10% Face Serum",
+    "audience": "oily-skin women 20-30",
+    "placement": "feed 1:1",
+    "objective": "sales"
+  },
+  "inputs": {
+    "winners_30d": 57,
+    "winner_sources": [
+      "research/competitor_ads"
+    ],
+    "trend_file": false,
+    "assets": 0
+  },
+  "shortlist": [
+    {
+      "id": 38,
+      "name": "Bundle / kit image",
+      "family": "Commercial",
+      "layout": "range",
+      "source": "PACK",
+      "score": 0.85,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot only.",
+      "ai_label_required": false,
+      "why": "20 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Texture shot",
+      "family": "Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:product-detail",
+      "score": 0.82,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Generated texture/macro of the product misrepresents the formula; use a real macro photo.",
+      "ai_label_required": false,
+      "why": "18 competitor ads 30+ days in this format (8 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [
+        "Real texture photos would lower the risk (none in the asset library for this SKU)."
+      ],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 227d · 1957996591744819"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Bathroom / vanity scene",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.82,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "19 competitor ads 30+ days in this format (9 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Chemist at Play · 182d · 1732129464862042",
+        "Foxtale · 155d · 1475983576999549"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Product-in-hand",
+      "family": "Human + Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:people",
+      "score": 0.805,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "AI-generated person/hands: must be labelled as synthetic (ASCI SGC); real photo strongly preferred.",
+      "ai_label_required": true,
+      "why": "19 competitor ads 30+ days in this format (6 in this category); no trend file yet; product page has the facts it needs; Human + Product fits a sales objective moderately",
+      "suggestions": [
+        "Real in hand photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549"
+      ]
+    }
+  ],
+  "full_ranking": [
+    {
+      "id": 38,
+      "name": "Bundle / kit image",
+      "family": "Commercial",
+      "layout": "range",
+      "source": "PACK",
+      "score": 0.85,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot only.",
+      "ai_label_required": false,
+      "why": "20 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Texture shot",
+      "family": "Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:product-detail",
+      "score": 0.82,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Generated texture/macro of the product misrepresents the formula; use a real macro photo.",
+      "ai_label_required": false,
+      "why": "18 competitor ads 30+ days in this format (8 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [
+        "Real texture photos would lower the risk (none in the asset library for this SKU)."
+      ],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 227d · 1957996591744819"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Bathroom / vanity scene",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.82,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "19 competitor ads 30+ days in this format (9 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Chemist at Play · 182d · 1732129464862042",
+        "Foxtale · 155d · 1475983576999549"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Product-in-hand",
+      "family": "Human + Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:people",
+      "score": 0.805,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "AI-generated person/hands: must be labelled as synthetic (ASCI SGC); real photo strongly preferred.",
+      "ai_label_required": true,
+      "why": "19 competitor ads 30+ days in this format (6 in this category); no trend file yet; product page has the facts it needs; Human + Product fits a sales objective moderately",
+      "suggestions": [
+        "Real in hand photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Text-led creative",
+      "family": "Native social",
+      "layout": "hero",
+      "source": "LAYOUT",
+      "score": 0.775,
+      "parts": {
+        "winners": 1,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "17 competitor ads 30+ days in this format (7 in this category); no trend file yet; product page has the facts it needs; Native social fits a sales objective weakly",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Clean product hero",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Product + benefit badges",
+      "family": "Product",
+      "layout": "badges",
+      "source": "PACK+BG",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Premium editorial product shot",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Lifestyle product shot",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Product feature close-up",
+      "family": "Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:product-detail",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Generated texture/macro of the product misrepresents the formula; use a real macro photo.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [
+        "Real macro photos would lower the risk (none in the asset library for this SKU)."
+      ],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Shelfie / aesthetic shot",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Packaging / what's inside",
+      "family": "Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:product-detail",
+      "score": 0.715,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Generated texture/macro of the product misrepresents the formula; use a real macro photo.",
+      "ai_label_required": false,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [
+        "Real unboxing photos would lower the risk (none in the asset library for this SKU)."
+      ],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Aspirational lifestyle",
+      "family": "Result",
+      "layout": "hero",
+      "source": "REAL PHOTO:result",
+      "score": 0.685,
+      "parts": {
+        "winners": 0.77,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "13 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Result fits a sales objective moderately",
+      "suggestions": [
+        "Real lifestyle person photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Dot & Key · 234d · 2736630640023211",
+        "Foxtale · 155d · 1475983576999549",
+        "Deconstruct · 142d · 4416615341943591"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Problem → solution → result",
+      "family": "Transformation",
+      "layout": "journey",
+      "source": "REAL PHOTO:result",
+      "score": 0.655,
+      "parts": {
+        "winners": 0.67,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "10 competitor ads 30+ days in this format (5 in this category); no trend file yet; product page has the facts it needs; Transformation fits a sales objective moderately",
+      "suggestions": [
+        "Real result photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Foxtale · 112d · 1602641281689513",
+        "Chemist at Play · 74d · 27546140265006255",
+        "Re'equil · 66d · 1386072156792745"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Price comparison",
+      "family": "Commercial",
+      "layout": "new",
+      "source": "MARKETER",
+      "score": 0.655,
+      "parts": {
+        "winners": 0.57,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Needs numbers/terms a marketer must supply and source (offer, sales count, prices).",
+      "ai_label_required": false,
+      "why": "15 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer.",
+        "Offer terms / numbers must come from the marketer with a source and date."
+      ],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Offer creative",
+      "family": "Commercial",
+      "layout": "offer",
+      "source": "MARKETER",
+      "score": 0.64,
+      "parts": {
+        "winners": 0.53,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Needs numbers/terms a marketer must supply and source (offer, sales count, prices).",
+      "ai_label_required": false,
+      "why": "14 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [
+        "Offer terms / numbers must come from the marketer with a source and date."
+      ],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Scale / quantity image",
+      "family": "Commercial",
+      "layout": "range",
+      "source": "PACK",
+      "score": 0.64,
+      "parts": {
+        "winners": 0.53,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot only.",
+      "ai_label_required": false,
+      "why": "14 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Seasonal creative",
+      "family": "Commercial",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.64,
+      "parts": {
+        "winners": 0.53,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "14 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Product-in-use",
+      "family": "Human + Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:people",
+      "score": 0.565,
+      "parts": {
+        "winners": 0.47,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "AI-generated person/hands: must be labelled as synthetic (ASCI SGC); real photo strongly preferred.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (4 in this category); no trend file yet; product page has the facts it needs; Human + Product fits a sales objective moderately",
+      "suggestions": [
+        "Real application photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Chemist at Play · 182d · 1732129464862042",
+        "Foxtale · 105d · 2605728093198832",
+        "Dot & Key · 70d · 1606881954486073"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Application macro",
+      "family": "Human + Product",
+      "layout": "hero",
+      "source": "REAL PHOTO:people",
+      "score": 0.565,
+      "parts": {
+        "winners": 0.47,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "AI-generated person/hands: must be labelled as synthetic (ASCI SGC); real photo strongly preferred.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (4 in this category); no trend file yet; product page has the facts it needs; Human + Product fits a sales objective moderately",
+      "suggestions": [
+        "Real application photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Chemist at Play · 182d · 1732129464862042",
+        "Foxtale · 105d · 2605728093198832",
+        "Dot & Key · 70d · 1606881954486073"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Occasion / context image",
+      "family": "Native social",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.565,
+      "parts": {
+        "winners": 0.53,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "14 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Native social fits a sales objective weakly",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 303d · 1393861285783656",
+        "Chemist at Play · 302d · 921995183584607",
+        "Chemist at Play · 211d · 903477385835263"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Product + ingredients",
+      "family": "Product",
+      "layout": "actives",
+      "source": "PACK+BG",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.37,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "5 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Foxtale · 227d · 1957996591744819",
+        "Re'equil · 66d · 1593356795737812"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ingredient flat lay",
+      "family": "Product",
+      "layout": "hero",
+      "source": "PACK+BG",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.37,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.8
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot composited on a generated background.",
+      "ai_label_required": false,
+      "why": "5 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Product fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Foxtale · 227d · 1957996591744819",
+        "Re'equil · 66d · 1593356795737812"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Before / after",
+      "family": "Transformation",
+      "layout": "before_after",
+      "source": "REAL PHOTO:result",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.4,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Transformation fits a sales objective moderately",
+      "suggestions": [
+        "Real before after photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Chemist at Play · 74d · 27546140265006255",
+        "Re'equil · 66d · 3961263437511522",
+        "Foxtale · 52d · 1380221640890732"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Split-screen transformation",
+      "family": "Transformation",
+      "layout": "new",
+      "source": "REAL PHOTO:result",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.4,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Transformation fits a sales objective moderately",
+      "suggestions": [
+        "Real before after photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Chemist at Play · 74d · 27546140265006255",
+        "Re'equil · 66d · 3961263437511522",
+        "Foxtale · 52d · 1380221640890732"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Progress / timeline",
+      "family": "Transformation",
+      "layout": "new",
+      "source": "REAL PHOTO:result",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.4,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.7
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Transformation fits a sales objective moderately",
+      "suggestions": [
+        "Real timeline photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Chemist at Play · 74d · 27546140265006255",
+        "Re'equil · 66d · 3961263437511522",
+        "Foxtale · 52d · 1380221640890732"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "How-to / steps",
+      "family": "Education",
+      "layout": "journey",
+      "source": "LAYOUT",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.47,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "6 competitor ads 30+ days in this format (4 in this category); no trend file yet; product page has the facts it needs; Education fits a sales objective weakly",
+      "suggestions": [],
+      "example_winners": [
+        "Chemist at Play · 182d · 1732129464862042",
+        "Foxtale · 105d · 2605728093198832",
+        "Dot & Key · 70d · 1606881954486073"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Stat-led creative",
+      "family": "Proof",
+      "layout": "stat",
+      "source": "LAYOUT",
+      "score": 0.535,
+      "parts": {
+        "winners": 0.33,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.9
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "8 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Proof fits a sales objective well",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Re'equil · 66d · 1039318678808682"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Result / beauty shot",
+      "family": "Result",
+      "layout": "hero",
+      "source": "REAL PHOTO:result",
+      "score": 0.52,
+      "parts": {
+        "winners": 0.4,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Result fits a sales objective moderately",
+      "suggestions": [
+        "Real result photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Chemist at Play · 74d · 27546140265006255",
+        "Re'equil · 66d · 3961263437511522",
+        "Foxtale · 52d · 1380221640890732"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Clinical / science visual",
+      "family": "Education",
+      "layout": "spec",
+      "source": "LAYOUT",
+      "score": 0.52,
+      "parts": {
+        "winners": 0.43,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "7 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Education fits a sales objective weakly",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Foxtale · 227d · 1957996591744819",
+        "Re'equil · 66d · 1039318678808682"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Review creative",
+      "family": "Proof",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.505,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.9
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "6 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Proof fits a sales objective well",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Deconstruct · 50d · 1619243416440363"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Testimonial creative",
+      "family": "Proof",
+      "layout": "new",
+      "source": "REAL PHOTO:endorser",
+      "score": 0.505,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.9
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "Expert/creator/customer must be real and consenting; AI version is a fabricated endorsement.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Proof fits a sales objective well",
+      "suggestions": [
+        "Real customer photo photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Deconstruct · 50d · 1619243416440363"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Infographic",
+      "family": "Education",
+      "layout": "actives",
+      "source": "LAYOUT",
+      "score": 0.49,
+      "parts": {
+        "winners": 0.37,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "5 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Education fits a sales objective weakly",
+      "suggestions": [],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Foxtale · 227d · 1957996591744819",
+        "Re'equil · 66d · 1593356795737812"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Conceptual creative",
+      "family": "Education",
+      "layout": "new",
+      "source": "REAL PHOTO:result",
+      "score": 0.49,
+      "parts": {
+        "winners": 0.37,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "5 competitor ads 30+ days in this format (3 in this category); no trend file yet; product page has the facts it needs; Education fits a sales objective weakly",
+      "suggestions": [
+        "Real concept art photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Dot & Key · 508d · 9868853523169382",
+        "Foxtale · 227d · 1957996591744819",
+        "Re'equil · 66d · 1593356795737812"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Problem macro",
+      "family": "Problem",
+      "layout": "callouts",
+      "source": "REAL PHOTO:result",
+      "score": 0.46,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "severe",
+      "risk_label": "Severe",
+      "risk_note": "AI-generated skin/result/before-after: banned by ASCI's synthetic-content guideline even when labelled, and misleading under ASCI 1.4. Internal test only — replace with real, unretouched study photos before any publication.",
+      "ai_label_required": true,
+      "why": "4 competitor ads 30+ days in this format (2 in this category); no trend file yet; product page has the facts it needs; Problem fits a sales objective moderately",
+      "suggestions": [
+        "Real skin problem photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark."
+      ],
+      "example_winners": [
+        "Foxtale · 112d · 1602641281689513",
+        "Re'equil · 66d · 1386072156792745",
+        "Deconstruct · 53d · 1739037801557913"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Problem → product",
+      "family": "Problem",
+      "layout": "callouts",
+      "source": "LAYOUT",
+      "score": 0.46,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "4 competitor ads 30+ days in this format (2 in this category); no trend file yet; product page has the facts it needs; Problem fits a sales objective moderately",
+      "suggestions": [],
+      "example_winners": [
+        "Foxtale · 112d · 1602641281689513",
+        "Re'equil · 66d · 1386072156792745",
+        "Deconstruct · 53d · 1739037801557913"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "UGC screenshot style",
+      "family": "Native social",
+      "layout": "new",
+      "source": "REAL PHOTO:endorser",
+      "score": 0.445,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "Expert/creator/customer must be real and consenting; AI version is a fabricated endorsement.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Native social fits a sales objective weakly",
+      "suggestions": [
+        "Real creator content photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Deconstruct · 50d · 1619243416440363"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Creator selfie",
+      "family": "Native social",
+      "layout": "new",
+      "source": "REAL PHOTO:endorser",
+      "score": 0.445,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "Expert/creator/customer must be real and consenting; AI version is a fabricated endorsement.",
+      "ai_label_required": true,
+      "why": "6 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page has the facts it needs; Native social fits a sales objective weakly",
+      "suggestions": [
+        "Real creator content photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Deconstruct · 50d · 1619243416440363"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Press / authority creative",
+      "family": "Proof",
+      "layout": "new",
+      "source": "MARKETER",
+      "score": 0.415,
+      "parts": {
+        "winners": 0.07,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.9
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Needs numbers/terms a marketer must supply and source (offer, sales count, prices).",
+      "ai_label_required": false,
+      "why": "2 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Proof fits a sales objective well",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer.",
+        "Offer terms / numbers must come from the marketer with a source and date."
+      ],
+      "example_winners": [
+        "Re'equil · 66d · 1039318678808682",
+        "Plum · 37d · 1115173371246578"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Founder / expert portrait",
+      "family": "Proof",
+      "layout": "new",
+      "source": "REAL PHOTO:endorser",
+      "score": 0.415,
+      "parts": {
+        "winners": 0.07,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.9
+      },
+      "risk": "high",
+      "risk_label": "High",
+      "risk_note": "Expert/creator/customer must be real and consenting; AI version is a fabricated endorsement.",
+      "ai_label_required": true,
+      "why": "2 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Proof fits a sales objective well",
+      "suggestions": [
+        "Real expert photo photos would lower the risk (none in the asset library for this SKU).",
+        "Any AI-generated person/skin/result must carry the visible \"AI-GENERATED — ILLUSTRATIVE\" mark.",
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Re'equil · 66d · 1039318678808682",
+        "Plum · 37d · 1115173371246578"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "SKU / shade creative",
+      "family": "Commercial",
+      "layout": "range",
+      "source": "PACK",
+      "score": 0.4,
+      "parts": {
+        "winners": 0,
+        "trends": 0,
+        "facts": 1,
+        "objective": 1
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Real pack shot only.",
+      "ai_label_required": false,
+      "why": "0 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Commercial fits a sales objective well",
+      "suggestions": [],
+      "example_winners": []
+    },
+    {
+      "id": 17,
+      "name": "Comparison image",
+      "family": "Comparison",
+      "layout": "spec",
+      "source": "LAYOUT",
+      "score": 0.355,
+      "parts": {
+        "winners": 0.03,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "1 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Comparison fits a sales objective moderately",
+      "suggestions": [],
+      "example_winners": [
+        "Deconstruct · 129d · 4500111383646459"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Old way / new way",
+      "family": "Comparison",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.355,
+      "parts": {
+        "winners": 0.03,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "1 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Comparison fits a sales objective moderately",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Deconstruct · 129d · 4500111383646459"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "This vs that",
+      "family": "Comparison",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.355,
+      "parts": {
+        "winners": 0.03,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.6
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "1 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Comparison fits a sales objective moderately",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": [
+        "Deconstruct · 129d · 4500111383646459"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Question-led creative",
+      "family": "Problem",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.335,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 0.5,
+        "objective": 0.6
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "4 competitor ads 30+ days in this format (2 in this category); no trend file yet; product page lacks: faq; Problem fits a sales objective moderately",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer.",
+        "Missing facts (faq): the brief must leave those slots as [placeholders] — no invention."
+      ],
+      "example_winners": [
+        "Foxtale · 112d · 1602641281689513",
+        "Re'equil · 66d · 1386072156792745",
+        "Deconstruct · 53d · 1739037801557913"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Meme / native social",
+      "family": "Native social",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.325,
+      "parts": {
+        "winners": 0,
+        "trends": 0,
+        "facts": 1,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "0 competitor ads 30+ days in this format; no trend file yet; product page has the facts it needs; Native social fits a sales objective weakly",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer."
+      ],
+      "example_winners": []
+    },
+    {
+      "id": 28,
+      "name": "Social-proof creative",
+      "family": "Proof",
+      "layout": "new",
+      "source": "MARKETER",
+      "score": 0.255,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 0,
+        "objective": 0.9
+      },
+      "risk": "medium",
+      "risk_label": "Medium",
+      "risk_note": "Needs numbers/terms a marketer must supply and source (offer, sales count, prices).",
+      "ai_label_required": false,
+      "why": "6 competitor ads 30+ days in this format (1 in this category); no trend file yet; product page lacks: rating; Proof fits a sales objective well",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer.",
+        "Missing facts (rating): the brief must leave those slots as [placeholders] — no invention.",
+        "Offer terms / numbers must come from the marketer with a source and date."
+      ],
+      "example_winners": [
+        "Dot & Key · 610d · 621835826921394",
+        "Conscious Chemist · 71d · 1390426132931304",
+        "Deconstruct · 50d · 1619243416440363"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Comment / FAQ creative",
+      "family": "Native social",
+      "layout": "new",
+      "source": "LAYOUT",
+      "score": 0.195,
+      "parts": {
+        "winners": 0.27,
+        "trends": 0,
+        "facts": 0,
+        "objective": 0.5
+      },
+      "risk": "low",
+      "risk_label": "Low",
+      "risk_note": "Type and graphics with the real pack shot.",
+      "ai_label_required": false,
+      "why": "4 competitor ads 30+ days in this format (2 in this category); no trend file yet; product page lacks: faq; Native social fits a sales objective weakly",
+      "suggestions": [
+        "Renderer layout not built yet: the brief will describe the layout for a designer.",
+        "Missing facts (faq): the brief must leave those slots as [placeholders] — no invention."
+      ],
+      "example_winners": [
+        "Foxtale · 112d · 1602641281689513",
+        "Re'equil · 66d · 1386072156792745",
+        "Deconstruct · 53d · 1739037801557913"
+      ]
+    }
+  ]
+}
