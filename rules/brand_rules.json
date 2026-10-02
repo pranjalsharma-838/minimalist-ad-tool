@@ -1054,6 +1054,74 @@
         "BRAND-§3.3"
       ],
       "confidence": "brand observed"
+    },
+    {
+      "id": "OFR-01",
+      "dimension": "policy",
+      "title": "Price / discount on the ad doesn't match a captured price or offer",
+      "severity": "block",
+      "computed": "offer_mismatch",
+      "rationale": "Every price, '% off', 'save Rs. X' or 'upto X%' on the ad must be the figure the live page shows (scripts/collect_offers.js capture). An invented or rounded-up discount is a misleading price claim.",
+      "message": "Price or discount isn't on the captured product page / sitewide offers.",
+      "fix": "Use the exact price/discount from the captured offer facts (PRICE*/OFFER*), or a [placeholder] for the marketer.",
+      "sources": [
+        "CCPA-12",
+        "ASCI-1.1",
+        "CPA-2(28)"
+      ],
+      "confidence": "deterministic check against the dated offer capture"
+    },
+    {
+      "id": "OFR-02",
+      "dimension": "policy",
+      "title": "Superlative price claim",
+      "severity": "fix",
+      "rationale": "'Lowest price ever', 'best price', 'cheapest' are objectively checkable comparisons that need substantiation with source and date.",
+      "patterns": [
+        "\\b(lowest|best|cheapest)\\s+price(s)?(\\s+ever)?\\b",
+        "\\bnever\\s+before\\b",
+        "\\bcheapest\\b",
+        "\\bunbeatable\\s+(price|deal|offer)\\b"
+      ],
+      "message": "Superlative price claim needs substantiation.",
+      "fix": "State the actual price and discount instead ('Rs. 359, 10% below MRP').",
+      "judge_hint": "Price superlatives and 'never before' claims.",
+      "sources": [
+        "CCPA-12",
+        "ASCI-1.1"
+      ],
+      "confidence": "VERIFIED source; pattern-level"
+    },
+    {
+      "id": "OFR-03",
+      "dimension": "policy",
+      "title": "Urgency or scarcity without a real end date or stock limit",
+      "severity": "fix",
+      "computed": "false_urgency",
+      "rationale": "'Today only', 'ends tonight', 'last chance', 'hurry', 'limited stock' imply urgency/scarcity; without a shown end date or stock figure it is a false-urgency dark pattern / bait risk.",
+      "message": "Urgency/scarcity wording without a captured end date or stock limit.",
+      "fix": "Remove the urgency, or state the real end date shown on the site ('Offer till 15 Oct').",
+      "sources": [
+        "CCPA-DP",
+        "CCPA-5"
+      ],
+      "confidence": "VERIFIED source; computed against captured expiry"
+    },
+    {
+      "id": "OFR-04",
+      "dimension": "policy",
+      "title": "Offer shown without terms reference",
+      "severity": "fix",
+      "computed": "offer_terms_missing",
+      "rationale": "An offer (discount %, buy-X-get-Y, free gift, coupon code) needs its conditions available; 'free' must not hide a required purchase. A 'T&C apply' / conditions line in the footnote is the minimum.",
+      "message": "Offer shown with no terms line.",
+      "fix": "Add to the footnote: 'Offer as on beminimalist.co on <date>. T&C apply.' and state the condition for any 'free' item (e.g. 'on buying 2').",
+      "sources": [
+        "CCPA-7",
+        "CCPA-11",
+        "ASCI-G-DISC"
+      ],
+      "confidence": "VERIFIED source; computed"
     }
   ]
 }

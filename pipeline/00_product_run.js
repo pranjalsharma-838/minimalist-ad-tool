@@ -20,7 +20,34 @@ async function sheetFor(h) {
     fs.writeFileSync(f, JSON.stringify(await extractFromUrl(`https://beminimalist.co/products/${h}`), null, 2));
     await new Promise((r) => setTimeout(r, 1000));
   }
-  return JSON.parse(fs.readFileSync(f, "utf8"));
+  const s = JSON.parse(fs.readFileSync(f, "utf8"));
+  // Audit fix (pilot 2026-10-03): prices and live offers become citable facts (the gate checks citations
+  // against sheet.facts). Source = latest scripts/collect_offers.js capture. sheet.price alone was the
+  // smallest size's SALE price, not the MRP, so it is no longer used.
+  s.facts = s.facts.filter((x) => !["price", "offer"].includes(x.kind));
+  const of = fs.readdirSync("brand_packs/minimalist/raw").filter((x) => /^offers_.*\.json$/.test(x)).sort().pop();
+  if (of) {
+    const o = JSON.parse(fs.readFileSync(`brand_packs/minimalist/raw/${of}`, "utf8"));
+    const day = o.captured_at.slice(0, 10), p = o.products[h];
+    (p?.website?.variants || []).forEach((v, i) => s.facts.push({ id: `PRICE${i + 1}`, kind: "price", section: "price (website)", text: `${v.name}: Rs. ${v.price}${v.mrp ? ` (MRP Rs. ${v.mrp}; ${v.pct_off_computed}% below MRP, both prices shown on the page)` : " (no MRP shown)"} — beminimalist.co, captured ${day}` }));
+    if (p?.amazon_in?.price) s.facts.push({ id: "PRICE_AMZ", kind: "price", section: "price (Amazon.in)", text: `Amazon.in: Rs. ${p.amazon_in.price}${p.amazon_in.pct_off_shown ? ` (${p.amazon_in.pct_off_shown}% off as shown)` : ""}${p.amazon_in.coupon ? `; ${p.amazon_in.coupon}` : ""} — search result, captured ${day} (verify it is the brand's own listing)` });
+    o.sitewide.forEach((x, i) => s.facts.push({ id: `OFFER${i + 1}`, kind: "offer", section: "sitewide offer (website banner)", text: `"${x.text}" — beminimalist.co homepage, captured ${day}${x.expiry ? `, ${x.expiry}` : ", no end date shown"}; terms: ${x.terms_page || "site"}` }));
+  }
+  // Real reviews (user decision 2026-10-03), verbatim + attributed. Extra screen here: star rating alone is not
+  // enough (a 5-star "it got worse, can't see any difference" passed the capture filter) — negative/mixed
+  // wording, very short reviews and price complaints are not offered.
+  s.facts = s.facts.filter((x) => !["review", "rating"].includes(x.kind));
+  const rf = fs.readdirSync("brand_packs/minimalist/raw").filter((x) => /^reviews_.*\.json$/.test(x)).sort().pop();
+  const rp = rf && JSON.parse(fs.readFileSync(`brand_packs/minimalist/raw/${rf}`, "utf8")).products[h];
+  if (rp?.reviews) {
+    const day = rf.slice(8, 18);
+    if (rp.average) s.facts.push({ id: "RATING", kind: "rating", section: "reviews (Yotpo, website)", text: `${rp.average} out of 5 stars from ${rp.total_reviews.toLocaleString("en-IN")} reviews on beminimalist.co, captured ${day}` });
+    const NEG = /\b(complain|worst|worse|bad|waste|disappoint|no (difference|result|change)|can'?t see|not (working|work|good|effective|see|satisf|happy|suit)|didn'?t|doesn'?t|breakout|broke out|irritat|allerg|rash|burn|itch|sting|pimples? (are )?coming|expensive|costly|affordable|refund|fake|duplicate|but\b|problem|issue|lekin|lykin|par\b|nahi|nhi)/i;
+    rp.reviews.filter((r) => r.usable && r.verified && !NEG.test(r.text) && r.text.split(/\s+/).length >= 8).slice(0, 6)
+      .forEach((r, i) => s.facts.push({ id: `REV${i + 1}`, kind: "review", section: "customer review (verbatim; quote exactly, no edits beyond trimming with …)", text: `"${r.text}" — ${r.name}, verified buyer, ${r.stars}★, ${r.date} (beminimalist.co, captured ${day})` }));
+  }
+  fs.writeFileSync(f, JSON.stringify(s, null, 2));
+  return s;
 }
 const factLines = (s, prefix = "") => s.facts.filter((f) => !["inci", "faq", "testimonial"].includes(f.kind) || f.kind === "faq").map((f) => `${prefix}${f.id} [${f.kind}] (${f.section}) ${f.text}`).join("\n");
 

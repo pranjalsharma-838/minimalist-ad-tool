@@ -1,0 +1,87 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "range",
+  "source_ad_id": "multi-vitamin-spf-50__t38",
+  "product_title": "SPF 50 Sunscreen",
+  "main_theme": "",
+  "headline": "Cleanse, treat, then finish with SPF 50",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Cleanser for oily, acne-prone skin",
+      "cites": [
+        "salicylic-lha-2-cleanser:F10"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "Serum for sebum, pores & even tone",
+      "cites": [
+        "niacinamide-10-with-matmarine:F2"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "Daily broad spectrum SPF 50, PA++++",
+      "cites": [
+        "F2",
+        "F21"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "Apply sunscreen last, after serums and moisturisers, at least 15 minutes before sun exposure.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F20"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Headline across the top band. Three real pack shots stand in a row across the middle 80% of the frame in routine order (cleanser, serum, sunscreen), the sunscreen slightly forward as the hero. A short label sits under each pack. CTA bottom-left, footnote along the bottom edge.",
+  "image_prompt": "Square 1080x1080 background plate only. A long, low off-white shelf-like surface running across the frame against a seamless pale warm-grey wall, lit by soft, even natural daylight from the front-left with very soft shadows. Clinical, minimal and uncluttered, palette of off-white, pale grey and a hint of warm sand, no props in the centre. Keep the middle 80% of the frame as clear, evenly lit empty space along the surface, reserved for three photos composited later. Keep the top band calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the competitor's bundle/kit structure (several of the brand's own packs shown together on display surfaces, one Shop now CTA). Rebuilt as an honest range guide (cleanser, serum, sunscreen in routine order) using only companion products provided. Dropped: the 'buy any 3 @ price' bundle offer and discount code (no bundle or offer exists on our pages; would need marketer terms), urgency and emoji, the youthful-skin promise and the colourful acrylic set. Routine order cites F20 (apply after serums and moisturisers).",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Chemist at Play",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-26",
+      "span": "treat",
+      "message": "'Treat' / 'treatment' positions a cosmetic as a treatment.",
+      "fix": "Use a cosmetic verb: 'target', 'care for', 'help with the look of'. For routine steps, use 'Serum' or 'Step 2' instead of 'Treat'.",
+      "layer": "rule"
+    }
+  ]
+}

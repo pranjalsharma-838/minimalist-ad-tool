@@ -1,0 +1,34 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "source_ad_id": "niacinamide-10-with-matmarine__t3",
+  "product_title": "Niacinamide 10% Face Serum",
+  "main_theme": "",
+  "headline": "Inside: Niacinamide, Matmarine and Zinc",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [
+    { "pct": "10%", "name": "Niacinamide", "line": "Vitamin B3 that reduces sebum, improves the barrier and evens skin tone", "cites": ["F3", "F16"] },
+    { "pct": "", "name": "Matmarine", "line": "Biotechnological ingredient to reduce excess sebum, shine, pores and spots", "cites": ["F17"] },
+    { "pct": "", "name": "Zinc", "line": "Regulates sebum production; suited to oily, acne-prone skin", "cites": ["F18"] }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Also contains Acetyl Glucosamine. Evaluated for safety through patch testing.",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": ["F5"],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": ["F5", "F15"]
+  },
+  "layout_description": "Square 1080x1080. Headline top-left. Three active rows stacked down the left half: concentration (where printed) in large type, ingredient name, then a one-line role, separated by thin rules (the competitor's ingredient-to-benefit tag cards, rebuilt calmly). Real pack shot on the right 45%, standing on the surface. CTA bottom-left; footnote along the bottom edge.",
+  "image_prompt": "Square 1080x1080 background plate only. A smooth off-white surface against a seamless pale blush-grey wall, soft natural daylight from the upper right, with one small smooth pale stone resting near the lower right corner and a soft gradient shadow. Palette of off-white, very pale blush and soft grey, a muted nod to a pink set in a clinical, minimal style. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the ingredient-explainer structure (pack plus three ingredient-to-benefit rows) and a soft pink mood, muted to Minimalist's palette. Replaced the competitor's actives with our own from F3, F16-F18; only Niacinamide has a printed concentration, so the other two rows leave pct blank. Dropped: fruit props and drip (scent/'natural' story), the 'NEW' bubble, 'Brightens skin' framing (our page says evens skin tone), 'Clinically Proven', 'Dermatologically Tested', 'No Nasties', and emoji."
+}

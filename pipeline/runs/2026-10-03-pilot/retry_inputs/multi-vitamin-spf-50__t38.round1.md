@@ -1,8 +1,82 @@
-# Brief input — multi-vitamin-spf-50__t36
-source_ad_id: multi-vitamin-spf-50__t36
-Format (from the archetype skill): #36 Offer creative · family Commercial · layout "offer" (if "new", use the closest built layout and describe the intended design in layout_description) · image source MARKETER
-Why chosen: 18 competitor ads 30+ days in this format (9 in this category); trend signal 0.89; product page has the facts it needs; already picked for 1 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
-Risk: Medium — Needs numbers/terms a marketer must supply and source (offer, sales count, prices). · Offer terms / numbers must come from the marketer with a source and date.
+# Retry round 1 of 3 — brief multi-vitamin-spf-50__t38
+
+Rewrite the brief so that every flag below is resolved. These are HARD constraints:
+- A flagged claim must be REMOVED or REPLACED with a different cited fact. Never reword it to keep the same meaning (e.g. 'anti-bacterial' -> 'fights bacteria' is not a fix).
+- Keep the layout and everything that wasn't flagged unchanged.
+- Every line still cites its facts; numbers must be in the cited facts.
+
+## Flags from the scorer
+- [fix] CLM-26 "treat": 'Treat' / 'treatment' positions a cosmetic as a treatment. Suggested: Use a cosmetic verb: 'target', 'care for', 'help with the look of'. For routine steps, use 'Serum' or 'Step 2' instead of 'Treat'.
+
+## Current brief (JSON)
+```json
+{
+  "ad_type": "offer_promo",
+  "layout": "range",
+  "source_ad_id": "multi-vitamin-spf-50__t38",
+  "product_title": "SPF 50 Sunscreen",
+  "main_theme": "",
+  "headline": "Cleanse, treat, then finish with SPF 50",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Cleanser for oily, acne-prone skin",
+      "cites": [
+        "salicylic-lha-2-cleanser:F10"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "Serum for sebum, pores & even tone",
+      "cites": [
+        "niacinamide-10-with-matmarine:F2"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "Daily broad spectrum SPF 50, PA++++",
+      "cites": [
+        "F2",
+        "F21"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "Apply sunscreen last, after serums and moisturisers, at least 15 minutes before sun exposure.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F20"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Headline across the top band. Three real pack shots stand in a row across the middle 80% of the frame in routine order (cleanser, serum, sunscreen), the sunscreen slightly forward as the hero. A short label sits under each pack. CTA bottom-left, footnote along the bottom edge.",
+  "image_prompt": "Square 1080x1080 background plate only. A long, low off-white shelf-like surface running across the frame against a seamless pale warm-grey wall, lit by soft, even natural daylight from the front-left with very soft shadows. Clinical, minimal and uncluttered, palette of off-white, pale grey and a hint of warm sand, no props in the centre. Keep the middle 80% of the frame as clear, evenly lit empty space along the surface, reserved for three photos composited later. Keep the top band calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the competitor's bundle/kit structure (several of the brand's own packs shown together on display surfaces, one Shop now CTA). Rebuilt as an honest range guide (cleanser, serum, sunscreen in routine order) using only companion products provided. Dropped: the 'buy any 3 @ price' bundle offer and discount code (no bundle or offer exists on our pages; would need marketer terms), urgency and emoji, the youthful-skin promise and the colourful acrylic set. Routine order cites F20 (apply after serums and moisturisers).",
+  "product_handle": "multi-vitamin-spf-50"
+}
+```
+
+## Original input (facts you may cite)
+# Brief input — multi-vitamin-spf-50__t38
+source_ad_id: multi-vitamin-spf-50__t38
+Format (from the archetype skill): #38 Bundle / kit image · family Commercial · layout "range" (if "new", use the closest built layout and describe the intended design in layout_description) · image source PACK
+Why chosen: 17 competitor ads 30+ days in this format (8 in this category); trend signal 0.70; product page has the facts it needs; already picked for 1 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
+Risk: Low — Real asset available in the library (brand_packs/minimalist/assets/raw/multi-vitamin-spf-50/01.jpg).
 
 ## Reference competitor ad for this format (structure only, never its wording)
 Chemist at Play · 303 days · offer_promo
@@ -43,21 +117,7 @@ F24 [ingredient_note] (Uvinul T 150) A highly effective UVB filter with exceptio
 F26 [faq] (Does this sunscreen leave a white cast?) No. It does not leave any white cast or unwanted residue behind, after application.
 F27 [faq] (Is it safe for all skin types?) Yes. This is a light-weight sunscreen suitable for all skin types.
 F28 [faq] (Can pregnant or lactating women use this sunscreen?) No. This sunscreen uses Octocrylene as one of the filters and while it's a safe, photostable filter, we recommend avoiding sunscreens formulated with this filter during pregnancy or the lactation period.
-PRICE1 [price] (price (website)) 50g: Rs. 359 (MRP Rs. 399; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
-PRICE2 [price] (price (website)) 100g: Rs. 629 (MRP Rs. 699; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
-PRICE3 [price] (price (website)) 30g: Rs. 224 (MRP Rs. 249.1; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
-PRICE_AMZ [price] (price (Amazon.in)) Amazon.in: Rs. 628 (16% off as shown); Save 10% with coupon — search result, captured 2026-10-02 (verify it is the brand's own listing)
-OFFER1 [offer] (sitewide offer (website banner)) "Build Your Own Bundle — Save an additional up to 15% off" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1
-OFFER2 [offer] (sitewide offer (website banner)) "Upto 33% OFF + Freebies" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
-OFFER3 [offer] (sitewide offer (website banner)) "Buy 2, Get 3rd Free" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
-OFFER4 [offer] (sitewide offer (website banner)) "Get Additional Free Gifts on orders above ₹1199" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1
-RATING [rating] (reviews (Yotpo, website)) 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
-REV1 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "It was an amazing product. It was an amazing product especially for oily skin no white casting and protecting the skin very good and also my skin has started reducing dark spots as well as pigmentation" — Anusha J., verified buyer, 5★, 2025-12-17 (beminimalist.co, captured 2026-10-02)
-REV2 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "Sunscreen actually works.. It works for me with combination skin type, without white shade and its oil free. Also, sweat resistance so last longer." — Parth, verified buyer, 5★, 2025-10-09 (beminimalist.co, captured 2026-10-02)
-REV3 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "Good. I like it's working on my skin" — Sneha C., verified buyer, 4★, 2025-12-18 (beminimalist.co, captured 2026-10-02)
-REV4 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "Matte finish. like the matte finish and how it blends with my skin tone" — Pushkar V., verified buyer, 4★, 2025-07-15 (beminimalist.co, captured 2026-10-02)
-REV5 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "Super cool. This product was really helpful in our sunny climate helps to reduce sun tan" — Adhila P., verified buyer, 5★, 2024-05-09 (beminimalist.co, captured 2026-10-02)
-REV6 [review] (customer review (verbatim; quote exactly, no edits beyond trimming with …)) "Value for money. Great product and great results." — Reena R., verified buyer, 5★, 2025-12-14 (beminimalist.co, captured 2026-10-02)
+PRICE [price] (price) MRP Rs. 224 (product page, captured 2026-10-02)
 
 ## Companion product: Salicylic Acid + LHA 2% Cleanser (handle "salicylic-lha-2-cleanser"; cite as "salicylic-lha-2-cleanser:F<n>"; journey/range layouts only)
 salicylic-lha-2-cleanser:F1 [name] (Product name) Salicylic Acid + LHA 2% Cleanser

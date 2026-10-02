@@ -9,7 +9,9 @@
       "phrases_total": 1,
       "phrases_caught": 1,
       "missed_phrases": [],
-      "extra_flags": [],
+      "extra_flags": [
+        "[fix] OFR-04 \"FREE Bottle on\" (rule)"
+      ],
       "dropped_model_findings": 0
     },
     {
@@ -19,10 +21,8 @@
       "label": "fix",
       "tool": "fix",
       "phrases_total": 3,
-      "phrases_caught": 2,
-      "missed_phrases": [
-        "[fix] Limited Time offer on kits! — Urgency with no stated end date; false urgency risk (ASCI-G-DARK, CCPA-DP)."
-      ],
+      "phrases_caught": 3,
+      "missed_phrases": [],
       "extra_flags": [
         "[fix] CLM-26 \"treat\" (rule)",
         "[fix] CLM-26 \"Treat\" (rule)"
@@ -46,12 +46,10 @@
       "split": "tuning",
       "advertiser": "Minimalistinc",
       "label": "fix",
-      "tool": "pass",
+      "tool": "fix",
       "phrases_total": 1,
-      "phrases_caught": 0,
-      "missed_phrases": [
-        "[fix] get a freebie of your choice — Contradicts the actual mechanic (lowest-priced item free); free claim must make the extent of commitment clear (ASCI-1.5(a), CCPA-7, ASCI-1.4)."
-      ],
+      "phrases_caught": 1,
+      "missed_phrases": [],
       "extra_flags": [],
       "dropped_model_findings": 0
     },
@@ -616,11 +614,13 @@
       "split": "synthetic",
       "advertiser": "synthetic",
       "label": "pass",
-      "tool": "pass",
+      "tool": "fix",
       "phrases_total": 0,
       "phrases_caught": 0,
       "missed_phrases": [],
-      "extra_flags": [],
+      "extra_flags": [
+        "[fix] CLM-19 \"SPF value obtained: 56\" (rule)"
+      ],
       "dropped_model_findings": 0
     },
     {
@@ -664,7 +664,7 @@
       "split": "synthetic",
       "advertiser": "synthetic",
       "label": "pass",
-      "tool": "pass",
+      "tool": "fix",
       "phrases_total": 0,
       "phrases_caught": 0,
       "missed_phrases": [],
@@ -682,7 +682,9 @@
       "phrases_total": 1,
       "phrases_caught": 1,
       "missed_phrases": [],
-      "extra_flags": [],
+      "extra_flags": [
+        "[fix] OFR-04 \"FREE Bottle on\" (rule)"
+      ],
       "dropped_model_findings": 0
     },
     {
@@ -692,10 +694,8 @@
       "label": "fix",
       "tool": "fix",
       "phrases_total": 3,
-      "phrases_caught": 2,
-      "missed_phrases": [
-        "[fix] Limited Time offer on kits! — Urgency with no stated end date; false urgency risk (ASCI-G-DARK, CCPA-DP)."
-      ],
+      "phrases_caught": 3,
+      "missed_phrases": [],
       "extra_flags": [
         "[fix] UNLISTED \"Earn Cashback!\" (model)",
         "[fix] CLM-26 \"treat\" (rule)",
@@ -1262,11 +1262,13 @@
       "split": "synthetic",
       "advertiser": "synthetic",
       "label": "pass",
-      "tool": "pass",
+      "tool": "fix",
       "phrases_total": 0,
       "phrases_caught": 0,
       "missed_phrases": [],
-      "extra_flags": [],
+      "extra_flags": [
+        "[fix] CLM-19 \"SPF value obtained: 56\" (rule)"
+      ],
       "dropped_model_findings": 0
     },
     {
@@ -1310,7 +1312,7 @@
       "split": "synthetic",
       "advertiser": "synthetic",
       "label": "pass",
-      "tool": "pass",
+      "tool": "fix",
       "phrases_total": 0,
       "phrases_caught": 0,
       "missed_phrases": [],

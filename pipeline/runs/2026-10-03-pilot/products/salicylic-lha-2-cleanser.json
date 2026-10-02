@@ -179,6 +179,90 @@
       "section": "Is the product pregnancy safe?",
       "kind": "faq",
       "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    },
+    {
+      "id": "PRICE1",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "100ml: Rs. 269 (MRP Rs. 299; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE2",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "250ml: Rs. 539 (MRP Rs. 599; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE_AMZ",
+      "kind": "price",
+      "section": "price (Amazon.in)",
+      "text": "Amazon.in: Rs. 275 (8% off as shown) — search result, captured 2026-10-02 (verify it is the brand's own listing)"
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "RATING",
+      "kind": "rating",
+      "section": "reviews (Yotpo, website)",
+      "text": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "REV1",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Salicylic Acid + LHA 2% Cleanser. This cleanser works really well for daily use, especially if you have oily or acne-prone skin. You only need a very small amount as it foams up nicely, which makes it last longer. It gives a deep clean and helps with oil control without making the skin feel dry or tight after washing. Post-wash, the skin feels fresh, clean, and balanced. Overall, a gentle yet effective cleanser that does a great job at cleansing pores and controlling excess oil without stripping the skin.\" — Shruti J., verified buyer, 5★, 2026-04-17 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV2",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"good product. Works well to reduce sebum and blackheads. Worth trying.\" — Anjani .., verified buyer, 5★, 2025-02-23 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV3",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"I love minimalist Brand. I like the products\" — Abhi A., verified buyer, 5★, 2025-05-20 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV4",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"After using it for 4 months. It works well on my skin and I recommend it for those who have oily skin. Also, make sure to apply moisturizer after using it for maximum results. Otherwise, this cleanser can make your skin more oily or just use it once a day.\" — Paresh P., verified buyer, 5★, 2026-06-20 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV5",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Superb. . . It cleanses amazingly. . . My. Superb. . . It cleanses amazingly. . . My skin feels fresh after use for many hours. . . The product acts directly on my acne. . I use minimalist serum and moisturizer afterwards. . keep providing such product. . . I hv bcm a fan. Thank u\" — Kan, verified buyer, 5★, 2026-04-09 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV6",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Worthy. Works very well for my acne .\" — Rashi .., verified buyer, 5★, 2025-12-16 (beminimalist.co, captured 2026-10-02)"
     }
   ],
   "source": "page"

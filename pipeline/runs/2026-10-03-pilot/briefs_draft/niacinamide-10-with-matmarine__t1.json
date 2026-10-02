@@ -1,0 +1,34 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "niacinamide-10-with-matmarine__t1",
+  "product_title": "Niacinamide 10% Face Serum",
+  "main_theme": "",
+  "headline": "Niacinamide 10% for sebum, pores and even tone",
+  "subhead": "With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no sticky residue.",
+  "proof_points": [
+    "Matmarine helps regulate oiliness and the appearance of pores",
+    "Zinc balances sebum activity",
+    "For daily use, AM & PM"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Evaluated for safety through patch testing. Suitable for 16+ years of age.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": ["F1", "F2"],
+    "subhead": ["F5", "F8"],
+    "proof_points": [["F7"], ["F8"], ["F14"]],
+    "footnote": ["F15", "F11"]
+  },
+  "layout_description": "Square 1080x1080. Hero line '10% Niacinamide' and headline top-left. Subhead below. Three short proof points stacked down the left half with thin check-style line markers (the competitor's tick list, rebuilt calmly). Real pack shot (library 01.png) on the right 45%, standing on the surface. CTA bottom-left; footnote along the bottom edge.",
+  "image_prompt": "Square 1080x1080 background plate only. A clean off-white studio surface meeting a soft matte wall, soft natural daylight from the upper left, a single soft diagonal window-light shadow and a faint cool reflection, giving a fresh, bright, open-air mood in Minimalist's restrained style. Palette of off-white, pale grey and a hint of soft aqua. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the product-hero structure (one benefit headline, short tick-list of benefits, pack as hero) and the bright open mood, rebuilt as a calm studio. Dropped: the lifestyle model and oversized bottle (no people/skin), the 'In-Vivo Tested' sticker (no in-vivo test on this product's page), 'Dermatologically Tested' / 'Non-Comedogenic' (not on page), the time-bound '2 weeks' clinical claim in F6 (kept out to avoid a time-bound result promise), emoji and the question hook."
+}

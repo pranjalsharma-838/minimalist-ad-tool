@@ -1,0 +1,56 @@
+Ad type: brand-authored
+
+The ad, field by field:
+
+<headline>
+Broad spectrum SPF 50, PA++++ for every day
+</headline>
+<on_image_text>
+Light texture that spreads easily, with no white cast.
+MRP Rs. 224
+[OFFER TERMS — from marketer]
+[OFFER CONDITIONS — from marketer]
+Valid till [OFFER END DATE — from marketer]
+SPF 50 Sunscreen
+</on_image_text>
+<footnote>
+Labelled SPF 50, confirmed by an independent lab. MRP from the product page, captured 2026-10-02. Offer terms and dates to be supplied by the marketer.
+</footnote>
+<cta>
+Shop now
+</cta>
+
+Rule-layer hits already found (review each in rule_hit_review, by index):
+(none)
+
+Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
+F1 [name] SPF 50 Sunscreen
+F2 [claim] Broad Spectrum SPF 50, PA++++
+F3 [claim] A light weight, moisturiser-meets-sunscreen. This broad spectrum SPF 50 with PA++++ rating, has a very light texture that spreads easily & disappears leaving behind a natural, moisturised, non-shiny look. Loaded with Vitamins B, E & F that help repair skin and minimise damage caused by UV exposure.
+F4 [testimonial] "This is the best sunscreen I've come across to. It suits my skin well no whitecast no sticky feeling absorbs quickly." -tanisha v.
+F5 [claim] This sunscreen is formulated with 4 very effective UV-filters, namely, Uvinul T 150, Avobenzone, Octocrylene and Titanium Dioxide to provide protection from UVA & UVB
+F6 [claim] Boosted with Vitamin B3, B5, E and F that not only repairs skin after sun exposure, but also soothes, nourishes and hydrates skin
+F7 [claim] Thoroughly tested by an independent lab and confirmed SPF of 50 was obtained
+F8 [claim] It is a Photostable & Acne safe sunscreen that does not leave any white cast on application. Also, it spreads easily like a lightweight moisturiser and does not leave behind unwated residue or heavy feeling
+F9 [claim] The primary filters are sourced from BASF, Germany and Royal DSM, Netherlands
+F10 [suitability] Skin type: Dry/Normal, Sensitive, Oily/Combination, Acne-Prone
+F11 [suitability] Concerns: Sun protection, UV exposure / damage
+F12 [suitability] Suitable for: 16+ years of age
+F13 [study] This sunscreen is tested in an independent third party lab to confirm the level of protection it provides. Below is the lab report and the data points
+F14 [study] Test type: IN-VIVO Evaluation of sun protection by International Standards - ISO 24444:2019
+F15 [study] Study Number: MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV
+F16 [study] SPF value obtained: 56.6
+F17 [study] PA rating: ++++
+F18 [study] (Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab)
+F19 [study] Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist.
+F20 [usage] Apply on cleansed face after all your serums and moisturisers. Apply generously & evenly on your face and neck. Apply sunscreen at least 15 minutes before sun exposure. For added protection, reapply in case of continued sun exposure, swimming, perspiring or towel drying.
+F21 [usage] When to use: AM. Everyday.
+F22 [ingredient_note] The most popular UVA filter across the world and provides proper UVA protection
+F23 [ingredient_note] Protects the skin primarily from the UVB. Octocrylene is a very photostable filter and it further stabilizes Avobenzone
+F24 [ingredient_note] A highly effective UVB filter with exceptionally high absorptivity
+F26 [faq] No. It does not leave any white cast or unwanted residue behind, after application.
+F27 [faq] Yes. This is a light-weight sunscreen suitable for all skin types.
+F28 [faq] No. This sunscreen uses Octocrylene as one of the filters and while it's a safe, photostable filter, we recommend avoiding sunscreens formulated with this filter during pregnancy or the lactation period.
+PRICE [price] MRP Rs. 224 (product page, captured 2026-10-02)
+
+Report findings the rule layer missed, review its hits, and give the tone and language reads.

@@ -1,0 +1,83 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "hero",
+  "source_ad_id": "multi-vitamin-spf-50__t4",
+  "product_title": "SPF 50 Sunscreen",
+  "main_theme": "",
+  "headline": "Four UV filters behind a broad spectrum SPF 50",
+  "subhead": "Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin.",
+  "proof_points": [
+    "Avobenzone for UVA protection",
+    "Octocrylene for UVB, and it further stabilises Avobenzone",
+    "Uvinul T 150, a highly effective UVB filter"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50, PA++++. In-vivo test (ISO 24444:2019) by an independent lab obtained SPF 56.6.",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F2",
+      "F5"
+    ],
+    "subhead": [
+      "F6"
+    ],
+    "proof_points": [
+      [
+        "F22"
+      ],
+      [
+        "F23"
+      ],
+      [
+        "F5",
+        "F24"
+      ]
+    ],
+    "footnote": [
+      "F2",
+      "F14",
+      "F16"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Hero line 'SPF 50' and headline top-left. Subhead below it. Three ingredient-to-role proof points stacked down the left half, each with a thin line marker (the competitor's ingredient tag cards, rebuilt as calm text rows). Real pack shot on the right 45%, lying at a slight angle on the flat-lay surface. CTA bottom-left; footnote along the bottom edge.",
+  "image_prompt": "Square 1080x1080 background plate only, top-down flat lay. A smooth off-white surface with a subtle fine-grain paper texture, lit by soft natural daylight from the top-left, with two or three small smooth pale stone pebbles and a thin sliver of soft sunlight near the lower edge. Palette of off-white, pale sand and soft warm grey, clinical and minimal. Keep the right 45% of the frame as clear, evenly lit empty space, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the ingredient flat-lay structure (pack on a styled surface with ingredient-to-benefit tags beside it). Replaced the competitor's actives with our four UV filters and vitamins from F5, F6, F22-F24. Dropped: the fruit props (they suggest a scent/'natural' story Minimalist avoids; replaced with neutral pebbles), the 'NEW' launch bubble (not a new launch), 'Clinically Proven', 'Dermatologically Tested' and 'No Nasties' (not on our page as claims / fluff), and emoji. Lab SPF 56.6 kept only in the footnote; labelled SPF 50 is the claim. Override: the archetype skill picked layout 'hero' for this ingredient_explainer reference; kept 'hero' as instructed.",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF 56",
+      "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

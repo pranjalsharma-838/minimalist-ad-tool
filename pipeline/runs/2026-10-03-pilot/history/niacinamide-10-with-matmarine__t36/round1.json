@@ -1,0 +1,62 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "niacinamide-10-with-matmarine__t36",
+  "product_title": "Niacinamide 10% Face Serum",
+  "main_theme": "",
+  "headline": "10% Niacinamide serum for oily, acne-prone skin",
+  "subhead": "With Matmarine and Zinc. Use AM & PM, every day.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "[OFFER TERMS — from marketer]",
+    "condition": "[OFFER CONDITIONS — from marketer]",
+    "valid_till": "[OFFER END DATE — from marketer]"
+  },
+  "footnote": "Evaluated for safety through patch testing. Offer terms, price and dates to be supplied and sourced by the marketer.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F1",
+      "F10"
+    ],
+    "subhead": [
+      "F5",
+      "F14"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "F15"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Offer line as the large headline block top-left (marketer fills the bracketed terms), offer condition directly beneath it in readable size, valid-till date under that. Product headline and subhead below on the left. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No price shown until the marketer supplies a sourced one.",
+  "image_prompt": "Square 1080x1080 background plate only. A minimal studio set of three low, smooth geometric blocks in off-white and pale cool grey, arranged on the right side at different heights, against a seamless off-white backdrop. Soft natural light from the left with gentle soft shadows, clinical and uncluttered, a restrained neutral take on a colourful promo set. Keep the right 45% of the frame as clear, evenly lit empty space on top of the blocks, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the offer-promo structure (big offer line, product on display blocks, Shop now CTA). Dropped: the bundle price, discount code and 'buy any 3' mechanic (offer terms aren't on our pages, so [placeholders] for the marketer), urgency ('limited time', 'hurry'), emoji, the youthful-skin promise and the multi-product set. The brief input did not include the page price, so no price is printed.",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": []
+}

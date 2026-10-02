@@ -39,9 +39,18 @@ test("brand-safe lines pass the policy rules", () => {
     "Use sunscreen during the day for best results",
     "The product has been evaluated for safety through patch testing under the supervision of a Dermatologist.",
   ]) {
-    const policy = runRules({ ad_type: "brand", primary_text: line, headline: "", on_image_text: "", footnote: "", cta: "" }).filter((f) => f.dimension === "policy");
+    const policy = runRules({ ad_type: "brand", primary_text: line, headline: "", on_image_text: "", footnote: "", cta: "" }).filter((f) => f.dimension === "policy" && f.severity !== "advisory");
     assert.deepEqual(policy.map((f) => f.rule_id), [], line);
   }
+});
+
+test("offer / discount figures checked against the dated offer capture", () => {
+  const sheet = { actives: [{ name: "Niacinamide", pct: "10" }], facts: [{ id: "PRICE1", kind: "price", text: "30ml: Rs. 539 (MRP Rs. 599; 10% below MRP)" }, { id: "OFFER1", kind: "offer", text: '"Upto 33% OFF + Freebies" no end date shown' }] };
+  const ids = (ad) => runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "", cta: "", footnote: "", ...ad }, { sheet }).filter((f) => f.rule_id.startsWith("OFR") && f.severity !== "advisory").map((f) => f.rule_id);
+  assert.deepEqual(ids({ headline: "Rs. 539, 10% below MRP", on_image_text: "Upto 33% OFF + Freebies", footnote: "T&C apply." }), []);
+  assert.deepEqual(ids({ headline: "Flat 40% off today only" }).sort(), ["OFR-01", "OFR-03", "OFR-04"]);
+  assert.deepEqual(ids({ headline: "Now Rs. 499 — lowest price ever", footnote: "T&C apply" }).sort(), ["OFR-01", "OFR-02"]);
+  assert.deepEqual(ids({ headline: "[OFFER TERMS — from marketer]", footnote: "T&C apply" }), []);
 });
 
 test("concentration checked against the catalog and the attached product", () => {

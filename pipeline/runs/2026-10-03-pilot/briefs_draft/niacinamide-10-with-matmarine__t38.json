@@ -1,0 +1,74 @@
+{
+    "ad_type":  "offer_promo",
+    "layout":  "range",
+    "source_ad_id":  "niacinamide-10-with-matmarine__t38",
+    "product_title":  "Niacinamide 10% Face Serum",
+    "main_theme":  "",
+    "headline":  "Cleanser, 10% Niacinamide serum, then SPF",
+    "subhead":  "",
+    "proof_points":  [
+
+                     ],
+    "actives":  [
+
+                ],
+    "steps":  [
+
+              ],
+    "stat":  null,
+    "callouts":  [
+
+                 ],
+    "specs":  [
+
+              ],
+    "range":  [
+                  {
+                      "product_handle":  "salicylic-lha-2-cleanser",
+                      "label":  "Cleanser for oily, acne-prone skin",
+                      "cites":  [
+                                    "salicylic-lha-2-cleanser:F10"
+                                ]
+                  },
+                  {
+                      "product_handle":  "niacinamide-10-with-matmarine",
+                      "label":  "10% Niacinamide for sebum \u0026 pores",
+                      "cites":  [
+                                    "F2",
+                                    "F16"
+                                ]
+                  },
+                  {
+                      "product_handle":  "multi-vitamin-spf-50",
+                      "label":  "Broad spectrum SPF 50, PA++++",
+                      "cites":  [
+                                    "multi-vitamin-spf-50:F2"
+                                ]
+                  }
+              ],
+    "offer":  null,
+    "footnote":  "Serum: apply 2-3 drops after cleansing \u0026 toning, AM \u0026 PM.",
+    "cta":  "Shop now",
+    "citations":  {
+                      "headline":  [
+                                       "F13",
+                                       "F16",
+                                       "multi-vitamin-spf-50:F2"
+                                   ],
+                      "subhead":  [
+
+                                  ],
+                      "proof_points":  [
+
+                                       ],
+                      "footnote":  [
+                                       "F13",
+                                       "F14"
+                                   ]
+                  },
+    "layout_description":  "Square 1080x1080. Headline across the top band. Three real pack shots stand in a row across the middle 80% of the frame in routine order (cleanser, serum, sunscreen), the serum slightly forward as the hero. A short label sits under each pack. CTA bottom-left, footnote along the bottom edge.",
+    "image_prompt":  "Square 1080x1080 background plate only. A long, low off-white shelf-like surface running across the frame against a seamless pale cool-grey wall, lit by soft, even natural daylight from the front-right with very soft shadows. Clinical, minimal and uncluttered, palette of off-white, pale grey and a hint of soft aqua, no props in the centre. Keep the middle 80% of the frame as clear, evenly lit empty space along the surface, reserved for three photos composited later. Keep the top band calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography":  false,
+    "photography_needed":  "",
+    "adaptation_notes":  "Kept: the bundle/kit structure (several of the brand\u0027s own packs shown together, one Shop now CTA), rebuilt as an honest range guide in routine order using only the companion products provided. Dropped: the \u0027buy any 3 @ price\u0027 bundle offer and code (no bundle exists on our pages), urgency, emoji, the youthful-skin promise and the colourful acrylic set. Routine order cites F13 (serum after cleansing \u0026 toning). Retry 1: removed \"treat\" from the headline (CLM-26); the middle step is now named by product type (serum)."
+}
