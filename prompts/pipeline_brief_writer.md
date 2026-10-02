@@ -49,6 +49,10 @@ Pick the layout that rebuilds the competitor's format honestly (research/ad_form
 
 Citations for the main product are plain ids ("F3"). For a companion product, prefix its handle ("salicylic-lha-2-cleanser:F13"). Each step or range item must use a product_handle that is either the main product or a listed companion.
 
+## Lab results (house rule)
+
+Lab or test results (e.g. "SPF value obtained: 56", study numbers) go in the **footnote**. The product's **labelled** value (SPF 50) is always the claim. Only when lab results are the brief's **main theme** (a lab-sheet or spec ad about testing) may a clearly labelled lab row appear in the body, and the labelled value must also appear. Set `main_theme: "lab_results"` in that case.
+
 ## Fields
 
 ad_type, layout, source_ad_id, product_title, headline, subhead, proof_points[], actives[], steps[], stat, callouts[], specs[], range[], offer, footnote, cta, citations {headline[], subhead[], proof_points[[]], footnote[]}, layout_description (where each element sits, for a designer), image_prompt, needs_real_photography (true/false), photography_needed ("" if none), adaptation_notes (what was kept from the source structure, what was dropped and why). Leave fields the chosen layout doesn't use as empty arrays, null or "".

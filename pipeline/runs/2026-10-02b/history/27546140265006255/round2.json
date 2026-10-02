@@ -1,0 +1,75 @@
+{
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "source_ad_id": "27546140265006255",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "10% Vitamin C (Ethyl Ascorbic Acid) for dark spots",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Consumer study: 90% subjects said their dark spots faded after 8 weeks.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F1",
+      "F5",
+      "F3",
+      "F21"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F18"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines. Left 50%, below the headline: two empty photo frames stacked vertically, the upper one labelled 'Before' and the lower one 'After' in small caps, to hold real, unretouched study photos only; export stays blocked until those photos are attached. Right 45%: real product photo of the Vitamin C 10% Face Serum bottle upright on the low plinth; the pack hero '10% Vitamin C' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-right under the product. Footnote in small type along the bottom edge, full width. No credential strip at the top.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a very pale sky-blue gradient toward the top, soft natural daylight from the upper left, gentle diffuse shadows, calm and clinical. In the left half, two clearly empty rectangular photo frames stacked vertically, with thin light-grey borders and plain off-white insides, completely blank, reserved for photos added later; the area above them stays plain for a headline. On the right side, a low round matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm and low-detail apart from the two blank frames. No other props. Palette: off-white, pale sky blue, cool white, soft grey shadow. No product, no bottle, no packaging, no lab glassware, no text, no letters, no numbers, no logos, no badges, no seals, no people, no faces, no skin, no hands, no before/after or result imagery.",
+  "needs_real_photography": true,
+  "photography_needed": "Two real, unretouched photos of the same subject's dark-spot area (a skin crop such as the cheek, not a full face unless consent covers it), from the Minimalist consumer study behind F18: one at baseline before use and one after 8 weeks of using Vitamin C 10% Face Serum as directed. Same lighting, angle, distance, camera and white balance in both. No retouching, filters, makeup or AI editing. Needs the subject's written consent for advertising use, and the study reference and photo dates kept on file. Until both photos are attached, the frames stay empty and export stays blocked.",
+  "adaptation_notes": "Kept: the before/after split (two stacked frames on the left, product on the right), the dark-spot hook, the sky-blue clinical mood (softened to pale blue on off-white) and the Shop now CTA. Replaced: the competitor's 7-day promise with Minimalist's own consumer-study perception stat (90% subjects said dark spots faded after 8 weeks), kept as a perception stat and placed in the footnote; the headline leads with the active and its concentration. Dropped: the 'Dermat Recommended. Clinically Certified.' credential strip, because no endorsement or certification is on the product page. Dropped: the 7-day time-bound result, because the facts don't support it. Dropped: the lab glassware props, to keep the scene minimal and avoid implied lab endorsement. The before/after photos must be real study photos; under ASCI's 2026 synthetic-content guideline the image model never generates results, so needs_real_photography is true.",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "ai_label_required": true,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-08",
+      "span": "90% subjects",
+      "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+      "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 8 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

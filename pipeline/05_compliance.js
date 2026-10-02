@@ -43,7 +43,9 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   if (!fs.existsSync(path.join(runDir, "judge_prompts", "system.md"))) fs.writeFileSync(path.join(runDir, "judge_prompts", "system.md"), jp.system);
   const injected = path.join(runDir, "judge", `${brief.source_ad_id}.json`);
   const shownHandles = [...(brief.steps || []), ...(brief.range || [])].map((x) => x.product_handle).filter((h) => h && h !== m.product_handle && sheets[h]);
-  const ctx = { sheet, extraSheets: [...new Set(shownHandles)].map((h) => sheets[h]) };
+  // Lab results as the main theme: brief says so, or a spec layout whose headline is about testing.
+  const labTheme = brief.main_theme === "lab_results" || ((brief.layout === "spec" || brief.layout === "stat") && /\b(lab|test(ed|ing)?|in-?vivo|ISO|clinical results)\b/i.test(`${brief.headline} ${brief.subhead || ""}`));
+  const ctx = { sheet, extraSheets: [...new Set(shownHandles)].map((h) => sheets[h]), labTheme, fullText: [ad.headline, ad.primary_text, ad.on_image_text, ad.footnote].join("\n") };
   if (!judgeAvailable() && fs.existsSync(injected)) Object.assign(ctx, { injectModelData: JSON.parse(fs.readFileSync(injected, "utf8")), injectModelName: "stand-in (same prompt)" });
   const report = await scoreAd(ad, ctx);
 

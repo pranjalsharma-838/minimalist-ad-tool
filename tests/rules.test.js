@@ -105,6 +105,10 @@ test("generator stand-in test: measured SPF and '-free' attributes", () => {
   const run = (field) => runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "", footnote: "", cta: "", [field]: "SPF 56 obtained in vivo" }, { sheet }).find((f) => f.rule_id === "CLM-19");
   assert.equal(run("footnote").severity, "advisory");
   assert.equal(run("on_image_text").severity, "fix");
+  const row = runRules({ ad_type: "brand", headline: "", primary_text: "", on_image_text: "SPF obtained: 56, in-vivo", footnote: "", cta: "" }, { sheet }).find((f) => f.rule_id === "CLM-19");
+  assert.equal(row?.severity, "fix", "'SPF obtained: 56' outside the footnote is a fix (house rule: 56 only in footnote)");
+  const lab = runRules({ ad_type: "brand", headline: "SPF 50: the lab sheet", primary_text: "", on_image_text: "SPF obtained: 56, in-vivo", footnote: "", cta: "" }, { sheet, labTheme: true, fullText: "SPF 50: the lab sheet\nSPF obtained: 56" }).filter((f) => f.rule_id === "CLM-19" && /56/.test(f.span));
+  assert.ok(lab.every((f) => f.severity === "advisory"), "lab-themed brief may show the measured value when SPF 50 is also stated");
   const wrong = runRules({ ad_type: "brand", headline: "SPF 70 protection", primary_text: "", on_image_text: "", footnote: "", cta: "" }, { sheet }).find((f) => f.rule_id === "CLM-19");
   assert.equal(wrong.severity, "block", "an SPF that's neither labelled nor measured is still a block");
 });

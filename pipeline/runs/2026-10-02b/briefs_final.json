@@ -129,9 +129,7 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    ]
   },
   {
     "ad_type": "expert_authority",
@@ -230,9 +228,7 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    ]
   },
   {
     "ad_type": "other",
@@ -318,9 +314,7 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   },
   {
     "ad_type": "product_hero",
@@ -415,9 +409,16 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-19",
+        "span": "SPF: 56",
+        "message": "SPF 56 is the lab-measured value; the labelled SPF is 50. House rule: claim SPF 50, keep the measured value in the footnote only.",
+        "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+        "layer": "rule"
+      }
+    ]
   },
   {
     "ad_type": "problem_solution",
@@ -499,9 +500,7 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   },
   {
     "ad_type": "routine_regimen",
@@ -577,9 +576,7 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   },
   {
     "ad_type": "offer_promo",
@@ -632,9 +629,7 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   },
   {
     "ad_type": "before_after",
@@ -709,9 +704,7 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    ]
   },
   {
     "ad_type": "product_hero",
@@ -784,9 +777,16 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-19",
+        "span": "SPF value obtained: 56",
+        "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+        "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+        "layer": "rule"
+      }
+    ]
   },
   {
     "ad_type": "comparison",
@@ -867,15 +867,15 @@
     "product_handle": "light-fluid-spf-50-sunscreen",
     "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
     "source_brand": "Deconstruct",
-    "status": "approved_for_image_step",
-    "risk_level": "low",
+    "status": "needs_retry",
+    "risk_level": "medium",
     "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
     },
     "coverage": {
       "rules": true,
@@ -883,9 +883,16 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-19",
+        "span": "SPF obtained: 56",
+        "message": "SPF 56 is the lab-measured value; the labelled SPF is 50. House rule: claim SPF 50, keep the measured value in the footnote only.",
+        "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+        "layer": "rule"
+      }
+    ]
   },
   {
     "ad_type": "testimonial_ugc",
@@ -948,9 +955,7 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   },
   {
     "ad_type": "ingredient_explainer",
@@ -1033,8 +1038,6 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [],
-    "rounds_tried": 2,
-    "kept_because": "passed"
+    "findings": []
   }
 ]
