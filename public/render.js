@@ -223,6 +223,8 @@ function chromeEnd(spec, parts, bottom) {
   }
   if (spec.productName) parts.push(T(wrap(spec.productName, 22, 560), 372, BAND_Y + 74, 22, 28, `fill="${C.muted}"`));
   if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
+  // Visible AI label whenever generated people/skin/results are in the creative (user decision 2026-10-03).
+  if (spec.aiLabel) parts.push(`<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`);
   if (spec.testMark) parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`, bottom };
 }
@@ -403,6 +405,158 @@ LAYOUTS.before_after = (spec, s) => {
   });
   return chromeEnd(spec, parts, y);
 };
+
+// ---------------- 9 layouts added 2026-10-03 (no new photography needed) ----------------
+
+const pill = (x, y, text, s) => {
+  const fs_ = Math.round(22 * s), w = Math.min(440, Math.round(text.length * fs_ * 0.56) + 44);
+  return `<rect x="${x}" y="${y}" width="${w}" height="${Math.round(52 * s)}" rx="${Math.round(26 * s)}" fill="#FFFFFF" stroke="${C.ink}" stroke-width="1.5"/>` +
+    `<text x="${x + 22}" y="${y + Math.round(34 * s)}" font-family="${FONT}" font-size="${fs_}" font-weight="500" fill="${C.ink}">${esc(text)}</text>`;
+};
+
+// #2 Product + benefit badges: pack centred, 3–4 pills around it.
+LAYOUTS.badges = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(24 * s);
+  parts.push(pack(spec, spec.imageHref, 360, y0, 360, BAND_Y - 40 - y0));
+  const pos = [[PAD, y0 + 30], [PAD, y0 + 230], [740, y0 + 30], [740, y0 + 230]];
+  (spec.badges || []).slice(0, 4).forEach((b, i) => parts.push(pill(pos[i][0], pos[i][1], b.text, s)));
+  return chromeEnd(spec, parts, BAND_Y - 40);
+};
+
+function twoColumns(spec, s, left, right, rightHasPack) {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(30 * s);
+  const colW = (w - 2 * PAD - 40) / 2;
+  let bottom = y0;
+  [[left, PAD, false], [right, PAD + colW + 40, rightHasPack]].forEach(([col, x, hasPack]) => {
+    parts.push(`<rect x="${x}" y="${y0}" width="${colW}" height="${BAND_Y - 40 - y0}" rx="10" fill="${hasPack ? "#FFFFFF" : C.bg}" stroke="${C.rule}" stroke-width="1.5"/>`);
+    parts.push(`<text x="${x + 24}" y="${y0 + 44}" font-family="${FONT}" font-size="${Math.round(24 * s)}" font-weight="700" fill="${hasPack ? C.ink : C.muted}">${esc((col?.title || "").toUpperCase())}</text>`);
+    let y = y0 + 70;
+    for (const it of (col?.items || []).slice(0, 4)) {
+      const ln = wrap(it, Math.round(22 * s), colW - 60);
+      parts.push(`<text x="${x + 24}" y="${y + 22}" font-family="${FONT}" font-size="22" fill="${hasPack ? C.ink : C.muted}">${hasPack ? "✓" : "–"}</text>`);
+      parts.push(T(ln, x + 52, y + 22, Math.round(22 * s), Math.round(28 * s), `fill="${hasPack ? C.ink : C.muted}"`));
+      y += ln.length * Math.round(28 * s) + Math.round(14 * s);
+    }
+    if (hasPack) parts.push(pack(spec, spec.imageHref, x + colW / 2 - 90, Math.max(y + 10, BAND_Y - 300), 180, Math.min(250, BAND_Y - 50 - Math.max(y + 10, BAND_Y - 300))));
+    bottom = Math.max(bottom, y);
+  });
+  return chromeEnd(spec, parts, Math.min(bottom, BAND_Y - 40));
+}
+
+// #18 Old way / new way (the old way is a routine or habit, never another brand).
+LAYOUTS.oldnew = (spec, s) => twoColumns(spec, s, spec.old, spec.new, true);
+// #19 This vs that (two approaches, e.g. scrub vs acid exfoliant).
+LAYOUTS.thisvsthat = (spec, s) => twoColumns(spec, s, (spec.columns || [])[0], (spec.columns || [])[1], true);
+
+// #26 Review card: one genuine review (source + date required), small pack shot.
+LAYOUTS.review = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 640, 200, 360, 540));
+  const r = spec.review || {};
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 500, s, 34) + Math.round(30 * s);
+  parts.push(`<rect x="${PAD}" y="${y}" width="510" height="${Math.round(330 * s)}" rx="12" fill="#FFFFFF" stroke="${C.rule}"/>`);
+  parts.push(`<text x="${PAD + 28}" y="${y + 52}" font-family="${FONT}" font-size="30" fill="${C.ink}">${"★".repeat(Math.max(0, Math.min(5, r.stars || 5)))}</text>`);
+  const q = wrap(`“${r.quote || ""}”`, Math.round(26 * s), 450);
+  parts.push(T(q.slice(0, 5), PAD + 28, y + 100, Math.round(26 * s), Math.round(34 * s), `fill="${C.ink}"`));
+  parts.push(T([r.source || "[review source + date]"], PAD + 28, y + Math.round(300 * s), 18, 22, `fill="${C.muted}"`));
+  return chromeEnd(spec, parts, y + Math.round(330 * s));
+};
+
+// #28 Social proof: one big sourced number.
+LAYOUTS.socialproof = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  const p = spec.proof || {};
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 34) + Math.round(24 * s);
+  const vs = Math.round(130 * s);
+  parts.push(`<text x="${PAD - 4}" y="${y + vs}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-3" fill="${C.ink}">${esc(p.value || "")}</text>`);
+  y += vs + Math.round(20 * s);
+  const l = wrap(p.label, Math.round(28 * s), 490);
+  parts.push(T(l, PAD, y + 28, Math.round(28 * s), Math.round(36 * s), `fill="${C.ink}"`));
+  y += 28 + (l.length - 1) * 36;
+  parts.push(T([p.source || "[source + date]"], PAD, y + 44, 18, 22, `fill="${C.muted}"`));
+  return chromeEnd(spec, parts, y + 44);
+};
+
+function qa(spec, s, q, a, bubble) {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 640, 200, 360, 540));
+  let y = 140;
+  const ql = wrap(q, Math.round(bubble ? 30 : 46 * s), bubble ? 440 : 500, 0.58);
+  if (bubble) {
+    const h = ql.length * 40 + 40;
+    parts.push(`<rect x="${PAD}" y="${y}" width="500" height="${h}" rx="22" fill="#FFFFFF" stroke="${C.rule}"/>`);
+    parts.push(T(ql, PAD + 28, y + 50, 30, 40, `font-weight="600" fill="${C.ink}"`));
+    y += h + 30;
+  } else {
+    const hs = Math.round(46 * s);
+    parts.push(T(ql, PAD, y + hs, hs, Math.round(54 * s), `font-weight="700" fill="${C.ink}"`));
+    y += hs + (ql.length - 1) * Math.round(54 * s) + 40;
+  }
+  const al = wrap(a, Math.round(25 * s), 500);
+  parts.push(T(al, PAD, y + 25, Math.round(25 * s), Math.round(33 * s), `fill="${C.ink}"`));
+  return chromeEnd(spec, parts, y + al.length * Math.round(33 * s));
+}
+// #32 Comment / FAQ: question bubble answered from the product page's own FAQ.
+LAYOUTS.faq = (spec, s) => qa(spec, s, spec.faq?.question || "", spec.faq?.answer || "", true);
+// #35 Question-led: big neutral question (never "do YOU have…").
+LAYOUTS.question = (spec, s) => qa(spec, s, spec.question || spec.headline || "", spec.answer || spec.subhead || "", false);
+
+// #33 Native social: big casual headline, small pack, plain feel (still labelled as an ad by the platform).
+LAYOUTS.native = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const hs = Math.round(58 * s);
+  const hl = wrap(spec.headline, hs, w - 2 * PAD, 0.55);
+  parts.push(T(hl.slice(0, 4), PAD, 170 + hs, hs, Math.round(68 * s), `font-weight="800" fill="${C.ink}"`));
+  let y = 170 + hs + (Math.min(4, hl.length) - 1) * Math.round(68 * s) + 30;
+  if (spec.subhead) {
+    const sl = wrap(spec.subhead, Math.round(26 * s), 560);
+    parts.push(T(sl, PAD, y + 26, Math.round(26 * s), Math.round(34 * s), `fill="${C.muted}"`));
+    y += sl.length * Math.round(34 * s);
+  }
+  parts.push(pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
+  return chromeEnd(spec, parts, y);
+};
+
+// #37 Price comparison: every price with its source and date (marketer-supplied, shown as [placeholders] if absent).
+LAYOUTS.pricecompare = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 38) + Math.round(30 * s);
+  for (const p of (spec.prices || []).slice(0, 3)) {
+    parts.push(`<line x1="${PAD}" y1="${y}" x2="${PAD + 490}" y2="${y}" stroke="${C.rule}" stroke-width="1.5"/>`);
+    parts.push(`<text x="${PAD}" y="${y + 40}" font-family="${FONT}" font-size="${Math.round(24 * s)}" fill="${C.ink}">${esc(p.label)}</text>`);
+    parts.push(`<text x="${PAD + 490}" y="${y + 40}" text-anchor="end" font-family="${FONT}" font-size="${Math.round(30 * s)}" font-weight="700" fill="${C.ink}">${esc(p.value)}</text>`);
+    parts.push(T([p.note || ""], PAD, y + 66, 17, 20, `fill="${C.muted}"`));
+    y += Math.round(86 * s);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
+// #14 Progress / timeline: 3–4 frames (real study photos, or AI-generated with the mark + Severe risk).
+LAYOUTS.timeline = (spec, s) => {
+  const { w } = SIZE;
+  const parts = chromeStart(spec, "full");
+  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 38) + Math.round(26 * s);
+  const frames = (spec.frames || []).slice(0, 4);
+  const n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - (n - 1) * gap) / n), fh = Math.min(fw * 1.25, BAND_Y - 90 - y0);
+  frames.forEach((f, i) => {
+    const x = PAD + i * (fw + gap);
+    if (f.imageHref) parts.push(`<image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice"/>`);
+    else parts.push(`<rect x="${x}" y="${y0}" width="${fw}" height="${fh}" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/><text x="${x + fw / 2}" y="${y0 + fh / 2}" text-anchor="middle" font-family="${FONT}" font-size="16" font-weight="700" fill="#B42318">PHOTO REQUIRED</text>`);
+    parts.push(`<rect x="${x}" y="${y0 + fh - 40}" width="${fw}" height="40" fill="${C.ink}" fill-opacity="0.75"/><text x="${x + fw / 2}" y="${y0 + fh - 13}" text-anchor="middle" font-family="${FONT}" font-size="20" font-weight="700" fill="#FFFFFF">${esc(f.label || "")}</text>`);
+  });
+  parts.push(pack(spec, spec.imageHref, w - PAD - 130, BAND_Y - 190, 120, 170));
+  return chromeEnd(spec, parts, y0 + fh);
+};
+
+// #13 Split-screen: one image, divided, labelled sides (same rules as timeline).
+LAYOUTS.splitscreen = (spec, s) => LAYOUTS.timeline({ ...spec, frames: (spec.frames || []).slice(0, 2) }, s);
 
 // Overflow check used by the generator: returns problems instead of silently clipping text.
 export function layoutProblems(spec) {

@@ -47,6 +47,21 @@ Pick the layout that rebuilds the competitor's format honestly (research/ad_form
 | offer_promo | `offer` | offer {line, condition, valid_till}. Offer terms are not on product pages: write them as placeholders in [square brackets] for the marketer to fill, e.g. "Buy any [2], get [the 3rd] free". Never invent a real offer |
 | before_after | `before_after` | headline, footnote; set needs_real_photography = true |
 
+Layouts added 2026-10-03 (used when the input names one of these formats):
+
+| layout | fill these fields |
+|---|---|
+| `badges` | headline + badges: 3–4 × {text ≤ 28, cites[]} (verifiable attributes: "Fragrance free", "pH 5.5–6.5", the concentration) |
+| `oldnew` | headline + old {title, items[] ≤ 3}, new {title, items[] ≤ 3, cites[]}. The "old way" is a habit or routine, never another brand |
+| `thisvsthat` | headline + columns: 2 × {title, items[] ≤ 3, cites[]}: two approaches, never two brands |
+| `review` | headline + review {stars, quote, source}. Only a genuine review: put "[verified review + date from the listing]" placeholders if none is supplied. Never invent a review |
+| `socialproof` | headline + proof {value, label, source}. Only listing data with its source and date (e.g. rating and review count from the product page), else placeholders |
+| `faq` | faq {question, answer, cites[]}, taken from the product page's own FAQ facts ([faq] facts ARE citable here, and only here) |
+| `question` | question (neutral, never "do you have…?"), answer, question_cites[] |
+| `native` | headline (casual, text-heavy), subhead; claims still cited |
+| `pricecompare` | headline + prices: 2–3 × {label, value, note: source + date}. Values are marketer data: use [placeholders] |
+| `timeline` / `splitscreen` | headline + frames: 2–4 × {label e.g. "Day 0", "Week 4"}; set needs_real_photography true and ai_label_required true; the footnote states the study the timeline reflects |
+
 Citations for the main product are plain ids ("F3"). For a companion product, prefix its handle ("salicylic-lha-2-cleanser:F13"). Each step or range item must use a product_handle that is either the main product or a listed companion.
 
 ## Lab results (house rule)
