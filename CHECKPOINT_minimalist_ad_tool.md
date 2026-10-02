@@ -1,36 +1,36 @@
-# CHECKPOINT: Minimalist Ad Desk (updated 2026-10-03)
+# CHECKPOINT: Minimalist Ad Desk (updated 2026-10-03, later)
 
-Architecture agreed with the user: `docs/ARCHITECTURE.md` (brand → winners → trends → archetype skill → brief writer ⇄ scorer retry loop → image generation; asset library feeds archetype + compose). Decisions:
+Architecture agreed with the user: `docs/ARCHITECTURE.md`. Step-by-step run order: `pipeline/RUNBOOK.md`. Decisions:
 - winner = 30+ days running;
 - formats are never removed (risk levels Low/Medium/High/Severe instead);
 - the best brief is always kept;
 - AI people/results get the "AI-GENERATED — ILLUSTRATIVE" mark;
-- images come from ChatGPT via the browser; the user logs in.
+- SPF 50 is the claim; lab figures go in the footnote unless lab results are the main theme;
+- images come from ChatGPT via the browser; the user logs in (never type the passwords).
 
 ## Done
+- **Brand context** agent + pack; **asset library** (118 images, 13 usable cut-outs).
+- **Archetype skill**, now with:
+  - template-level winners;
+  - product-fit (a generic template scores 0.6 on facts);
+  - variety penalty across products.
+- **Risk levels**, **retry loop** (proven), **image prompt director** prompt + configs.
+- **Winner agent DONE:** `research/winners.json` + `.md`, 74 ads, 57 winners. Offer creative is the top format with 13 winners.
+- **Trend file v1 DONE:** `scripts/build_trends.js` → `research/trends.json` + `.md`. The score was fixed: v1 was flat at 0.5 because momentum and longevity are near-complements.
+- **20 layouts** in `public/render.js`. The 11 new ones are not yet checked by eye.
+- **New scripts:**
+  - `pipeline/06c_prompts.js`: re-checks the director's prompts and writes `chatgpt_prompts.md`;
+  - `pipeline/09_library.js`: saves to `ad_library/` with a per-ad `.md` description.
 
-- **Brand context:** agent `minimalist-brand-context`; website pack built (catalog, 294-claim matrix).
-- **Asset library:** 118 gallery images; 20 cut-outs (13 clean, 7 white packs unusable by colour, marked). Agent definition `minimalist-asset-library`.
-- **Archetype selection:** `lib/archetype.js` + `scripts/select_archetypes.js` + skill `ad-archetype-selection`.
-- **Risk levels:** `lib/risk.js`; image prompt check refuses only "draw the product".
-- **Retry loop:** `pipeline/05b_retry.js prepare|finalize`, max 3 rounds, best version kept.
-- **Image prompt director:** prompt `prompts/image_prompt_director.md` (with the user's draft + 8 agreed changes), `config/brand_visual_minimalist.json`, `config/layout_zones.json`. Not yet wired into the pipeline.
-- **Keys:** `.env` loader and OpenAI image API module ready, waiting for the user to add `.env` with ANTHROPIC_API_KEY and OPENAI_API_KEY (never paste keys in chat).
+## Pilot (in progress): run `2026-10-03-pilot`
+- **Products:** niacinamide-10-with-matmarine and multi-vitamin-spf-50, 4 formats each. That gives 6 distinct formats: 36 offer, 38 bundle, 3 ingredients, 1 hero, 2 badges, 4 flat lay.
+- **Status:** brief writer agent dispatched (step 2). Next: gate → retry → judge stand-in → finalize → director → 06c → ChatGPT backgrounds → compose → eye-check → 09 library.
 
-## Running in the background (as of this update)
+## After the pilot
+- Audit findings → fixes.
+- Scale to the top 7 products (top20.json order) × 4–5 formats.
+- Final write-up (problem / proposed solution / approach / goal for every problem).
+- Update README, DECISIONS and ARCHITECTURE; add eval/README.md.
 
-- Collectors: Minimalist on Amazon.in, Flipkart, Instagram → `brand_packs/minimalist/raw/`.
-- Deep Meta Ad Library (10 brands) → `research/competitor_ads_deep/`.
-- Google Ads Transparency → `research/competitor_ads_google/`.
-- Asset labelling → `brand_packs/minimalist/assets/index.json`.
-- Retry round 1 for 4 briefs in run `pipeline/runs/2026-10-02b`. Then re-run `node pipeline/05_compliance.js 2026-10-02b` and `05b_retry.js prepare` (≤3 rounds), then `finalize`.
-
-## Next
-
-1. When the Amazon collector finishes: the Amazon best-seller competitor search (`research/competitor_search_plan.json`) → `research/competitor_map.md`.
-2. Rebuild the brand pack (`scripts/build_brand_pack.js`) + house style from Instagram.
-3. Winner agent: tag winners at template level (48 types), 30+ days.
-4. Wire the image prompt director between the brief and image generation.
-5. The 9 new layouts.
-6. Trend agent.
-7. Image step via ChatGPT for the approved briefs; compose; check each final by eye.
+## Deferred (conserving tokens)
+Amazon best-seller competitor search, Flipkart, Instagram, Amazon 11–20, deep Meta, Google Ads Transparency, global trend sources.

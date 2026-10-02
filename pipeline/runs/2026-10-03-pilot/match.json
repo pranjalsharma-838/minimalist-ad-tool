@@ -1,0 +1,90 @@
+[
+  {
+    "id": "niacinamide-10-with-matmarine__t38",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t1",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 1,
+    "template_name": "Clean product hero",
+    "risk": "low",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "multi-vitamin-spf-50__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "multi-vitamin-spf-50__t38",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "multi-vitamin-spf-50__t2",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill"
+  },
+  {
+    "id": "multi-vitamin-spf-50__t4",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill"
+  }
+]

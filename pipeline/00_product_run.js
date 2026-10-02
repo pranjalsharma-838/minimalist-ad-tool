@@ -25,9 +25,11 @@ async function sheetFor(h) {
 const factLines = (s, prefix = "") => s.facts.filter((f) => !["inci", "faq", "testimonial"].includes(f.kind) || f.kind === "faq").map((f) => `${prefix}${f.id} [${f.kind}] (${f.section}) ${f.text}`).join("\n");
 
 const match = [];
+const used = {};
 for (const h of handles) {
   const sheet = await sheetFor(h);
-  const pick = rankArchetypes({ product_handle: h, sheet, objective: "sales", top: Number(per) });
+  const pick = rankArchetypes({ product_handle: h, sheet, objective: "sales", top: Number(per), used });
+  for (const r of pick.shortlist) used[r.id] = (used[r.id] || 0) + 1;
   for (const r of pick.shortlist) {
     const t = TEMPLATES.find((x) => x.id === r.id);
     const id = `${h}__t${r.id}`;
