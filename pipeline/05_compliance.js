@@ -14,6 +14,7 @@ import { checkImagePrompt } from "../lib/image_prompt_check.js";
 import { scoreAd } from "../lib/score.js";
 import { judgeAvailable, buildJudgePrompt } from "../lib/judge.js";
 import { runRules } from "../lib/rules.js";
+import { briefRisk, worst as worstRisk } from "../lib/risk.js";
 
 const date = process.argv[2];
 const runDir = path.join("pipeline", "runs", date);
@@ -46,27 +47,33 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   if (!judgeAvailable() && fs.existsSync(injected)) Object.assign(ctx, { injectModelData: JSON.parse(fs.readFileSync(injected, "utf8")), injectModelName: "stand-in (same prompt)" });
   const report = await scoreAd(ad, ctx);
 
-  const hard = [
-    ...copyProblems.map((p) => `copy: ${p}`),
-    ...layout.map((p) => `layout: ${p}`),
-    ...img.findings.map((x) => `image prompt [${x.id}]: "${x.span}" — ${x.why}`),
-    ...img.missing.map((x) => `image prompt incomplete: ${x}`),
-  ];
+  // Risk-level model (user decision 2026-10-03): briefs are never dropped. Fixable problems (copy
+  // citations, layout fit) go back through the retry loop (pipeline/05b_retry.js); everything else is a
+  // risk level shown to the marketer. Only an image prompt asking to DRAW the product is refused.
+  const fixable = [...copyProblems.map((p) => `copy: ${p}`), ...layout.map((p) => `layout: ${p}`), ...img.missing.map((x) => `image prompt incomplete: ${x}`)];
+  const warnings = img.findings.filter((x) => x.id !== "product").map((x) => `image prompt [${x.id}, ${x.level}]: "${x.span}" — ${x.why}`);
+  const refused = img.findings.filter((x) => x.id === "product").map((x) => `image prompt REFUSED: "${x.span}" — ${x.why}`);
+  const hard = [...refused, ...fixable];
   const v = report.verdict.code;
-  const status = hard.length || v === "BLOCKED" ? "blocked" : v === "NEEDS_CHANGES" ? "flagged" : "approved_for_image_step";
+  const copyRisk = briefRisk(v, report.findings);
+  const risk = worstRisk(copyRisk, img.risk, brief.needs_real_photography ? "severe" : "low");
+  const status = refused.length ? "refused_image_prompt" : fixable.length || v !== "READY_FOR_REVIEW" && v !== "LIMITED_CHECK" ? "needs_retry" : "approved_for_image_step";
   out.push({
     ...brief,
     product_handle: m.product_handle,
     product_url: sheet.url,
     source_brand: m.brand,
     status,
+    risk_level: risk,
+    ai_label_required: img.ai_label_required || Boolean(brief.needs_real_photography),
+    warnings,
     hard_failures: hard,
     verdict: report.verdict,
     coverage: report.coverage,
     findings: report.findings.map((x) => ({ severity: x.severity, rule_id: x.rule_id, span: x.span, message: x.message, fix: x.fix, layer: x.layer, note: x.note })),
   });
-  console.log(`${brief.source_ad_id.padEnd(22)} ${(brief.layout || "hero").padEnd(12)} ${status.padEnd(24)} ${report.coverage.model ? "rules+model" : "rules only"}  ${hard.length ? hard[0] : report.findings.filter((x) => x.severity !== "advisory").map((x) => x.rule_id).join(",")}`);
+  console.log(`${brief.source_ad_id.padEnd(22)} ${(brief.layout || "hero").padEnd(12)} ${status.padEnd(24)} risk ${risk.padEnd(7)} ${report.coverage.model ? "rules+model" : "rules only"}  ${hard.length ? hard[0] : report.findings.filter((x) => x.severity !== "advisory").map((x) => x.rule_id).join(",")}`);
 }
 fs.writeFileSync(path.join(runDir, "briefs_final.json"), JSON.stringify(out, null, 2));
 const n = (s) => out.filter((b) => b.status === s).length;
-console.log(`\n${out.length} briefs: ${n("approved_for_image_step")} to image step, ${n("flagged")} flagged (fix first), ${n("blocked")} blocked`);
+console.log(`\n${out.length} briefs: ${n("approved_for_image_step")} to image step, ${n("needs_retry")} need a retry round, ${n("refused_image_prompt")} image prompt refused (asks to draw the product)`);

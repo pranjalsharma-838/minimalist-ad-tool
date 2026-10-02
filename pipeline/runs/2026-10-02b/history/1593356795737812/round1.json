@@ -1,0 +1,95 @@
+{
+  "ad_type": "product_hero",
+  "layout": "spec",
+  "source_ad_id": "1593356795737812",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Light Fluid SPF 50: the lab sheet",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Measured SPF",
+      "value": "56 in vivo (ISO 24444:2019); labelled SPF 50",
+      "cites": [
+        "F7",
+        "F12",
+        "F14",
+        "F2"
+      ]
+    },
+    {
+      "label": "PA rating",
+      "value": "PA++++",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "label": "UV filters",
+      "value": "Tinosorb M, Uvinul A Plus, OMC",
+      "cites": [
+        "F4"
+      ]
+    },
+    {
+      "label": "SPF / UVA ratio",
+      "value": "Meets EU recommendation (3:1)",
+      "cites": [
+        "F4"
+      ]
+    },
+    {
+      "label": "Finish & wear",
+      "value": "Water-resistant, shine-free, no white cast",
+      "cites": [
+        "F3"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab. Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP. Apply 15 minutes before sun exposure.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F1",
+      "F11"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F13",
+      "F16",
+      "F18"
+    ]
+  },
+  "layout_description": "Square 1080x1080. A thin royal-blue outlined rectangle occupies the left ~55% of the frame as a spec panel. Inside it: headline at the top in heavy navy, a thick blue rule beneath, then five spec rows, each with the label in regular weight at left and the value in bold, separated by thin blue hairlines; a second thick rule sits after the third row to group protection specs above and finish below. Real product photo (tube, upright) sits in the right 45%, overlapping the panel's right border slightly, with a soft contact shadow. Footnote in small grey text below the panel, bottom-left. 'Shop now' as a small navy outlined button bottom-right under the product.",
+  "image_prompt": "Square 1080x1080 background-only scene. Pure, bright off-white seamless studio background with a very subtle cool tint, flat and even, with only a faint soft floor shadow at the lower right where an object will later stand. Soft, diffused overhead daylight, almost shadowless. Clean, clinical, precise mood; palette of white and off-white with a barely perceptible cool blue cast. No props. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% perfectly flat and low-detail for the spec panel and copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no tube, no cream or drip, no numbers, no lines or boxes. Empty space reserved for the product photo and copy to be added later.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Layout override: the competitor is tagged product_hero, but its whole structure is a 'facts label' of measured specs, so the spec layout rebuilds it more honestly than a hero with proof points. Kept: the scannable label-and-value rows, the blue outlined panel with the pack overlapping it, the white/royal-blue/navy clinical palette, a shop-now CTA. Every row is our own lab-tested or formula fact, with the study source in the footnote, which the source lacked. The measured value (SPF 56) is shown next to the labelled SPF 50 so the two never appear to conflict. Dropped: 'greasy shine 0%', 'hydration level 100%', 'oil content 0%' and '80 mins water resistance' (no such numbers in our facts; water resistance is kept only as the unquantified fact); the 'serving size' food-label parody line and the 'facts' headline wording (too close to the source); the cream-drip effect (the image model must not render product).",
+  "product_handle": "light-fluid-spf-50-sunscreen",
+  "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": []
+}

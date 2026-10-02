@@ -11,15 +11,21 @@ test("a background-only prompt with explicit exclusions passes", () => {
   assert.equal(r.ok, true);
 });
 
-test("asking for the product, text, skin, results or endorsements is blocked", () => {
+test("drawing the product is refused; text, skin, results, endorsements carry high/severe risk", () => {
   for (const bad of [
     "A minimalist serum bottle with a dropper on a marble surface. Empty space on the left. No text.",
-    "Clean background with the headline 'Niacinamide 10%' in bold. No product.",
-    "A woman with glowing skin smiling in soft light. No text, no product. Empty space right.",
-    "Before/after split layout with two faces. No text, no product, empty space.",
-    "A dermatologist in a lab coat holding a clipboard. No text, no product, empty space.",
     "No text, but show the serum bottle in the centre with empty space around it.",
-  ]) assert.equal(checkImagePrompt(bad).blocked, true, bad);
+  ]) assert.equal(checkImagePrompt(bad).refused, true, bad);
+  for (const [bad, level] of [
+    ["Clean background with the headline 'Niacinamide 10%' in bold. No product.", "high"],
+    ["A woman with glowing skin smiling in soft light. No text, no product. Empty space right.", "severe"],
+    ["Before/after split layout with two faces. No text, no product, empty space.", "severe"],
+    ["A dermatologist in a lab coat holding a clipboard. No text, no product, empty space.", "high"],
+  ]) {
+    const r = checkImagePrompt(bad);
+    assert.equal(r.refused, false, bad);
+    assert.equal(r.risk, level, bad);
+  }
 });
 
 test("reserving space for the real pack shot is not an ask to draw one (first gate run)", () => {
@@ -31,11 +37,23 @@ test("reserving space for the real pack shot is not an ask to draw one (first ga
 test("reserving space for the headline is not an ask for text (format run)", () => {
   const p = "Plain off-white wall; keep the top band calm and low-detail for the headline. Empty space in the middle. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.";
   assert.equal(checkImagePrompt(p).blocked, false, JSON.stringify(checkImagePrompt(p).findings));
-  assert.equal(checkImagePrompt("A wall with the headline 'Glow' painted on it. Empty space. No product.").blocked, true);
+  assert.equal(checkImagePrompt("A wall with the headline 'Glow' painted on it. Empty space. No product.").risk, "high");
 });
 
 test("negation directly before the noun is respected", () => {
   assert.equal(checkImagePrompt("A marble surface without a bottle, soft light. Empty space on the right. No text, no product.").blocked, false);
+});
+
+test("risk levels: only the product is refused; people/results get a level and the AI label", () => {
+  const person = checkImagePrompt("A woman's hands holding nothing over a stone basin, soft light. Empty space right. No text, no product.");
+  assert.equal(person.refused, false);
+  assert.equal(person.risk, "high");
+  assert.equal(person.ai_label_required, true);
+  const ba = checkImagePrompt("Before/after split of a cheek area, studio light. Empty space right. No text, no product.");
+  assert.equal(ba.refused, false);
+  assert.equal(ba.risk, "severe");
+  const prod = checkImagePrompt("A serum bottle with a dropper on marble. Empty space left. No text.");
+  assert.equal(prod.refused, true);
 });
 
 test("prompts missing the exclusions are not ok even if nothing is asked for", () => {

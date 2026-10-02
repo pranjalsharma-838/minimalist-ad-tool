@@ -1,0 +1,114 @@
+{
+  "ad_type": "comparison",
+  "layout": "spec",
+  "source_ad_id": "4500111383646459",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "Sweatproof protection, fast-absorbing feel",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "SPF obtained",
+      "value": "56, in-vivo to ISO 24444:2019 by an independent lab",
+      "cites": [
+        "F14",
+        "F12",
+        "F16"
+      ]
+    },
+    {
+      "label": "UVA protection",
+      "value": "PA++++; meets EU SPF/UVA ratio recommendation (3:1)",
+      "cites": [
+        "F4",
+        "F15"
+      ]
+    },
+    {
+      "label": "UV filters",
+      "value": "Tinosorb M, Uvinul A Plus and OMC",
+      "cites": [
+        "F3",
+        "F4"
+      ]
+    },
+    {
+      "label": "Finish",
+      "value": "Natural, hydrated, shine-free, no white cast",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "label": "Wear",
+      "value": "Water-resistant and sweatproof",
+      "cites": [
+        "F3",
+        "F4"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "footnote": "SPF tested in-vivo to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F4"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F12",
+      "F13",
+      "F16"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Top-left: headline in two lines, split at the comma so the two benefits read as a pair, echoing the source's two-column header without any 'v/s'. Left 50%, below the headline: a five-row spec table, label in small caps on the left of each row and the value in regular weight on the right, separated by thin hairlines, sitting on the faint graph-paper grid. Right 45%: real product photo of the Light Fluid SPF 50 Sunscreen tube, slightly tilted, on the grey plinth; the pack hero 'SPF 50' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-left. Footnote in small type along the bottom edge, full width. No black banner strip, no 'Why choose?' line.",
+  "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white backdrop with a very faint, fine, low-contrast light-grey graph-paper grid, soft natural daylight from the upper left, gentle diffuse shadows, clean and editorial but calm. On the right side, a low matte light-grey plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm and low-detail, only the faint grid, reserved as empty space for copy and a spec table. No other props. Palette: off-white, light grey, a small touch of muted mustard in the plinth's shadow edge, soft charcoal. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no banners, no badges, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the trade-off-resolved hook (two benefits shoppers usually trade off, held by one product), the editorial graph-paper backdrop, the tilted tube on a grey plinth, the clean white / grey / mustard / black palette (softened) and the Shop now CTA. Rebuilt as a spec card of Minimalist's own tested facts: in-vivo SPF 56 to ISO 24444:2019, PA++++ and the EU SPF/UVA ratio, named UV filters, finish, and water and sweat resistance. Dropped: the 'European v/s Korean sunscreens' face-off and 'Why choose? Get both' line, because comparing against other brands or whole categories without like-for-like data isn't allowed (ASCI 4.1). Dropped: the 'India's 1st' first-to-market claim (unsourced). Dropped: blue-light protection, because it is only described for one filter in an ingredient note, not as a product benefit. Also left out: the 'dermatologist-approved' and 'US FDA-approved labs' phrasing, to avoid implied endorsement. No competitor wording reused.",
+  "product_handle": "light-fluid-spf-50-sunscreen",
+  "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+  "source_brand": "Deconstruct",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-18",
+      "span": "sweatproof",
+      "message": "Sunscreens can't claim to block everything or be waterproof. Use the tested, specific claim.",
+      "fix": "Use SPF/PA as tested ('Broad spectrum SPF 50, PA++++') and 'water-resistant' only if tested, plus the reapplication advice.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-18",
+      "span": "Sweatproof",
+      "message": "Sunscreens can't claim to block everything or be waterproof. Use the tested, specific claim.",
+      "fix": "Use SPF/PA as tested ('Broad spectrum SPF 50, PA++++') and 'water-resistant' only if tested, plus the reapplication advice.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F4). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}
