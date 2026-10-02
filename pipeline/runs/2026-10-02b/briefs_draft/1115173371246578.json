@@ -11,7 +11,7 @@
   "stat": null,
   "callouts": [
     {"text": "Penetrates the pore lining to scoop out sebum", "cites": ["F4"]},
-    {"text": "Oligopeptide-10: active against acne-causing bacteria", "cites": ["F20"]},
+    {"text": "RonaCare Salicylic Acid Extra Pure, from Merck, Germany", "cites": ["F8"]},
     {"text": "EGCG from green tea helps soothe inflamed skin", "cites": ["F21"]},
     {"text": "97% subjects said skin felt less oily all day at 2 weeks*", "cites": ["F17"]}
   ],
@@ -30,5 +30,5 @@
   "image_prompt": "Square 1080x1080 background-only scene. A clean, calm editorial desk setting reduced to essentials: a matte off-white tabletop meeting a soft mint-tinted off-white wall, with a single small sprig of green tea leaves resting at the far left edge, slightly out of focus. Soft, even natural window light from the left, low contrast, very gentle shadows. Palette of off-white, soft mint and a touch of deep green; clinical, calm, trustworthy mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% smooth and low-detail apart from the small leaf sprig at the extreme edge. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no lab coats, no badges, no certificates. Empty space reserved for the product photo and copy to be added later.",
   "needs_real_photography": false,
   "photography_needed": "",
-  "adaptation_notes": "Kept: a skin-type callout aimed at oily skin, an editorial and quiet product presence, the clean white/green/mint clinical palette, and a shop-now CTA. The expert's on-camera 'advice' is rebuilt as calm ingredient callouts pointing at the pack, plus one consumer-study stat with its qualifier in the footnote. Dropped: the doctor on camera and the named-doctor badge (an expert endorsement needs a real, consenting expert; none is in the facts); the 'your moisturizer might be the problem' problem-first hook (a fear-style hook, and the claim isn't in our facts); video format (rebuilt as a static). Note: the match is low; the competitor sells a moisturizer and this is a serum, so the copy speaks to oily skin rather than to moisturizers."
+  "adaptation_notes": "Kept: a skin-type callout aimed at oily skin, an editorial and quiet product presence, the clean white/green/mint clinical palette, and a shop-now CTA. The expert's on-camera 'advice' is rebuilt as calm ingredient callouts pointing at the pack, plus one consumer-study stat with its qualifier in the footnote. Dropped: the doctor on camera and the named-doctor badge (an expert endorsement needs a real, consenting expert; none is in the facts); the 'your moisturizer might be the problem' problem-first hook (a fear-style hook, and the claim isn't in our facts); video format (rebuilt as a static); the Oligopeptide-10 callout (a drug-style claim a cosmetic ad can't make), replaced with the salicylic acid sourcing fact (F8). Note: the match is low; the competitor sells a moisturizer and this is a serum, so the copy speaks to oily skin rather than to moisturizers."
 }

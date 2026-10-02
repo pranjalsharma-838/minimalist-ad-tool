@@ -129,7 +129,9 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "expert_authority",
@@ -150,9 +152,9 @@
         ]
       },
       {
-        "text": "Oligopeptide-10: active against acne-causing bacteria",
+        "text": "RonaCare Salicylic Acid Extra Pure, from Merck, Germany",
         "cites": [
-          "F20"
+          "F8"
         ]
       },
       {
@@ -190,19 +192,19 @@
     "image_prompt": "Square 1080x1080 background-only scene. A clean, calm editorial desk setting reduced to essentials: a matte off-white tabletop meeting a soft mint-tinted off-white wall, with a single small sprig of green tea leaves resting at the far left edge, slightly out of focus. Soft, even natural window light from the left, low contrast, very gentle shadows. Palette of off-white, soft mint and a touch of deep green; clinical, calm, trustworthy mood. Keep the right 45% of the frame completely clear and evenly lit, and keep the left 50% smooth and low-detail apart from the small leaf sprig at the extreme edge. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands; also no lab coats, no badges, no certificates. Empty space reserved for the product photo and copy to be added later.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: a skin-type callout aimed at oily skin, an editorial and quiet product presence, the clean white/green/mint clinical palette, and a shop-now CTA. The expert's on-camera 'advice' is rebuilt as calm ingredient callouts pointing at the pack, plus one consumer-study stat with its qualifier in the footnote. Dropped: the doctor on camera and the named-doctor badge (an expert endorsement needs a real, consenting expert; none is in the facts); the 'your moisturizer might be the problem' problem-first hook (a fear-style hook, and the claim isn't in our facts); video format (rebuilt as a static). Note: the match is low; the competitor sells a moisturizer and this is a serum, so the copy speaks to oily skin rather than to moisturizers.",
+    "adaptation_notes": "Kept: a skin-type callout aimed at oily skin, an editorial and quiet product presence, the clean white/green/mint clinical palette, and a shop-now CTA. The expert's on-camera 'advice' is rebuilt as calm ingredient callouts pointing at the pack, plus one consumer-study stat with its qualifier in the footnote. Dropped: the doctor on camera and the named-doctor badge (an expert endorsement needs a real, consenting expert; none is in the facts); the 'your moisturizer might be the problem' problem-first hook (a fear-style hook, and the claim isn't in our facts); video format (rebuilt as a static); the Oligopeptide-10 callout (a drug-style claim a cosmetic ad can't make), replaced with the salicylic acid sourcing fact (F8). Note: the match is low; the competitor sells a moisturizer and this is a serum, so the copy speaks to oily skin rather than to moisturizers.",
     "product_handle": "salicylic-acid-2",
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Plum",
-    "status": "needs_retry",
-    "risk_level": "severe",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
     "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "BLOCKED",
-      "label": "Do not publish",
-      "detail": "At least one finding would put the ad at legal or brand risk. Export is disabled until it is fixed."
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
     },
     "coverage": {
       "rules": true,
@@ -212,11 +214,11 @@
     },
     "findings": [
       {
-        "severity": "block",
-        "rule_id": "CLM-01",
-        "span": "against acne-causing bacteria",
-        "message": "Treat / cure / heal / disease / anti-bacterial wording makes this a drug claim, which a cosmetic ad can't make.",
-        "fix": "Describe the cosmetic, appearance-level effect instead (e.g. 'helps reduce the look of blemishes', 'soothes the feel of dryness'). Name the ingredient and concentration rather than the condition.",
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Salicylic Acid",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
         "layer": "rule"
       },
       {
@@ -228,7 +230,9 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "other",
@@ -314,7 +318,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -409,7 +415,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "problem_solution",
@@ -491,7 +499,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "routine_regimen",
@@ -567,7 +577,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "offer_promo",
@@ -620,7 +632,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
@@ -695,7 +709,9 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -706,7 +722,7 @@
     "subhead": "A light texture that spreads easily for a natural, moisturised, non-shiny look, with Vitamins B, E & F.",
     "proof_points": [
       "4 UV filters for UVA & UVB protection",
-      "SPF 56.6 obtained in independent in-vivo testing",
+      "Independent lab testing confirmed SPF 50",
       "Photostable, acne safe, no white cast"
     ],
     "actives": [],
@@ -716,7 +732,7 @@
     "specs": [],
     "range": [],
     "offer": null,
-    "footnote": "SPF tested in-vivo to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV.",
+    "footnote": "SPF tested in-vivo to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV. SPF value obtained: 56.6.",
     "cta": "Shop now",
     "citations": {
       "headline": [
@@ -731,8 +747,7 @@
           "F5"
         ],
         [
-          "F16",
-          "F18"
+          "F7"
         ],
         [
           "F8"
@@ -741,6 +756,7 @@
       "footnote": [
         "F14",
         "F15",
+        "F16",
         "F18"
       ]
     },
@@ -748,19 +764,19 @@
     "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Light grey to off-white seamless studio backdrop, a faint pale lilac tint toward the upper right and a very soft pale yellow glow near the lower right, soft natural daylight from the upper left, gentle diffuse shadows, clean and techy but calm. On the right side, a low rectangular matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy and highlight bars. No other props. Palette: light grey, off-white, pale lilac, pale yellow, soft grey shadow. No product, no tube, no bottle, no carton, no packaging, no text, no letters, no numbers, no logos, no lines or arrows, no badges, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the clean product-hero structure on a light grey field, the format-first hook (here Minimalist's own 'moisturiser-meets-sunscreen' description from F3), colour-coded highlight bars with callout lines pointing at the pack, the light grey / lilac / yellow palette (softened) and the Shop now CTA. Replaced: all copy with Minimalist facts: 4 UV filters, the in-vivo SPF 56.6 result, photostable / acne safe / no white cast. Dropped: the 'India's 1st' first-to-market claim, because it is unsourced and no such claim is in the facts. Dropped: the dual-chamber pack feature and the carton beside the tube, because they don't apply to this product. The SPF test reference sits in the footnote so the 56.6 figure is traceable.",
+    "adaptation_notes": "Kept: the clean product-hero structure on a light grey field, the format-first hook (here Minimalist's own 'moisturiser-meets-sunscreen' description from F3), colour-coded highlight bars with callout lines pointing at the pack, the light grey / lilac / yellow palette (softened) and the Shop now CTA. Replaced: all copy with Minimalist facts: 4 UV filters, the independent-lab SPF 50 confirmation (F7), photostable / acne safe / no white cast. Dropped: the 'India's 1st' first-to-market claim, because it is unsourced and no such claim is in the facts. Dropped: the dual-chamber pack feature and the carton beside the tube, because they don't apply to this product. The ad claims only the labelled SPF 50; the lab-measured 56.6 value appears only in the footnote as the test result, with the test standard and study number.",
     "product_handle": "multi-vitamin-spf-50",
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Deconstruct",
-    "status": "needs_retry",
-    "risk_level": "medium",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
     "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "NEEDS_CHANGES",
-      "label": "Fix before review",
-      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
     },
     "coverage": {
       "rules": true,
@@ -768,23 +784,16 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [
-      {
-        "severity": "fix",
-        "rule_id": "CLM-19",
-        "span": "SPF 56",
-        "message": "SPF 56 is the lab-measured value from the product page; the labelled SPF is 50.",
-        "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
-        "layer": "rule"
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "comparison",
     "layout": "spec",
     "source_ad_id": "4500111383646459",
     "product_title": "Light Fluid SPF 50 Sunscreen",
-    "headline": "Sweatproof protection, fast-absorbing feel",
+    "headline": "Broad spectrum SPF 50, fast-absorbing feel",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -826,10 +835,10 @@
       },
       {
         "label": "Wear",
-        "value": "Water-resistant and sweatproof",
+        "value": "Water-resistant; reapply after swimming, perspiring or towel drying",
         "cites": [
           "F3",
-          "F4"
+          "F18"
         ]
       }
     ],
@@ -839,6 +848,7 @@
     "cta": "Shop now",
     "citations": {
       "headline": [
+        "F2",
         "F4"
       ],
       "subhead": [],
@@ -853,19 +863,19 @@
     "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white backdrop with a very faint, fine, low-contrast light-grey graph-paper grid, soft natural daylight from the upper left, gentle diffuse shadows, clean and editorial but calm. On the right side, a low matte light-grey plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm and low-detail, only the faint grid, reserved as empty space for copy and a spec table. No other props. Palette: off-white, light grey, a small touch of muted mustard in the plinth's shadow edge, soft charcoal. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no banners, no badges, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the trade-off-resolved hook (two benefits shoppers usually trade off, held by one product), the editorial graph-paper backdrop, the tilted tube on a grey plinth, the clean white / grey / mustard / black palette (softened) and the Shop now CTA. Rebuilt as a spec card of Minimalist's own tested facts: in-vivo SPF 56 to ISO 24444:2019, PA++++ and the EU SPF/UVA ratio, named UV filters, finish, and water and sweat resistance. Dropped: the 'European v/s Korean sunscreens' face-off and 'Why choose? Get both' line, because comparing against other brands or whole categories without like-for-like data isn't allowed (ASCI 4.1). Dropped: the 'India's 1st' first-to-market claim (unsourced). Dropped: blue-light protection, because it is only described for one filter in an ingredient note, not as a product benefit. Also left out: the 'dermatologist-approved' and 'US FDA-approved labs' phrasing, to avoid implied endorsement. No competitor wording reused.",
+    "adaptation_notes": "Kept: the trade-off-resolved hook (two benefits shoppers usually trade off, held by one product), the editorial graph-paper backdrop, the tilted tube on a grey plinth, the clean white / grey / mustard / black palette (softened) and the Shop now CTA. Rebuilt as a spec card of Minimalist's own tested facts: in-vivo SPF 56 to ISO 24444:2019, PA++++ and the EU SPF/UVA ratio, named UV filters, finish, and water resistance with the reapplication advice. Dropped: the sweat-resistance wording from F4 (sunscreens can only claim tested, specific protection), replaced in the headline by the labelled broad-spectrum SPF 50 (F2). Dropped: the 'European v/s Korean sunscreens' face-off and 'Why choose? Get both' line, because comparing against other brands or whole categories without like-for-like data isn't allowed (ASCI 4.1). Dropped: the 'India's 1st' first-to-market claim (unsourced). Dropped: blue-light protection, because it is only described for one filter in an ingredient note, not as a product benefit. Also left out: the 'dermatologist-approved' and 'US FDA-approved labs' phrasing, to avoid implied endorsement. No competitor wording reused.",
     "product_handle": "light-fluid-spf-50-sunscreen",
     "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
     "source_brand": "Deconstruct",
-    "status": "needs_retry",
-    "risk_level": "medium",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
     "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "NEEDS_CHANGES",
-      "label": "Fix before review",
-      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
     },
     "coverage": {
       "rules": true,
@@ -873,25 +883,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [
-      {
-        "severity": "fix",
-        "rule_id": "CLM-18",
-        "span": "sweatproof",
-        "message": "Sunscreens can't claim to block everything or be waterproof. Use the tested, specific claim.",
-        "fix": "Use SPF/PA as tested ('Broad spectrum SPF 50, PA++++') and 'water-resistant' only if tested, plus the reapplication advice.",
-        "layer": "rule"
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-18",
-        "span": "Sweatproof",
-        "message": "Sunscreens can't claim to block everything or be waterproof. Use the tested, specific claim.",
-        "fix": "Use SPF/PA as tested ('Broad spectrum SPF 50, PA++++') and 'water-resistant' only if tested, plus the reapplication advice.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F4). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "testimonial_ugc",
@@ -954,7 +948,9 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "ingredient_explainer",
@@ -985,9 +981,10 @@
       {
         "pct": "",
         "name": "Zinc",
-        "line": "Regulates sebum production and has anti-bacterial properties",
+        "line": "Regulates sebum production, in a lightweight serum with no sticky residue",
         "cites": [
-          "F18"
+          "F18",
+          "F8"
         ]
       }
     ],
@@ -1016,19 +1013,19 @@
     "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white seamless studio backdrop with a soft, pale blush-pink gradient rising from the bottom, soft natural daylight from the upper left, gentle diffuse shadows, calm and clinical with a light, fresh feel. On the right side, a low round matte off-white plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm, plain and low-detail, reserved as empty space for copy and ingredient cards. No fruit and no other props. Palette: off-white, pale blush pink, warm white, soft grey shadow. No product, no bottle, no dropper, no packaging, no text, no letters, no numbers, no logos, no cards, no badges, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the ingredient-explainer structure (product hero with three ingredient-to-benefit tag cards, one named ingredient and one plain benefit each), the idea of one serum covering several needs, the pink palette (softened to pale blush on off-white) and the Shop now CTA. Replaced: the cards now carry Minimalist's own actives from the facts: Niacinamide 10%, Matmarine and Zinc, each line describing what the ingredient does, not a product result. Dropped: the 'NEW' launch bubble, as nothing in the facts says the product is new. Dropped: the strawberry pile, because the formula has no strawberry and fruit props suggest a natural angle the brand avoids. Dropped: the generic 'Clinically Proven' badge; only dermatologist-supervised patch testing is stated, in the footnote. The 2-week clinical complexion claim (F6) is left out to avoid a time-bound result line. Hedges kept: Matmarine 'helps regulate' oiliness and the 'look of' pores, as in F7.",
+    "adaptation_notes": "Kept: the ingredient-explainer structure (product hero with three ingredient-to-benefit tag cards, one named ingredient and one plain benefit each), the idea of one serum covering several needs, the pink palette (softened to pale blush on off-white) and the Shop now CTA. Replaced: the cards now carry Minimalist's own actives from the facts: Niacinamide 10%, Matmarine and Zinc, each line describing what the ingredient does, not a product result. Dropped: the 'NEW' launch bubble, as nothing in the facts says the product is new. Dropped: the strawberry pile, because the formula has no strawberry and fruit props suggest a natural angle the brand avoids. Dropped: the generic 'Clinically Proven' badge; only dermatologist-supervised patch testing is stated, in the footnote. The 2-week clinical complexion claim (F6) is left out to avoid a time-bound result line. The second half of Zinc's note (F18) is left out as a drug-style claim; its card pairs sebum regulation with the lightweight, non-sticky texture (F8). Hedges kept: Matmarine 'helps regulate' oiliness and the 'look of' pores, as in F7.",
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
-    "status": "needs_retry",
-    "risk_level": "severe",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
     "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "BLOCKED",
-      "label": "Do not publish",
-      "detail": "At least one finding would put the ad at legal or brand risk. Export is disabled until it is fixed."
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
     },
     "coverage": {
       "rules": true,
@@ -1036,15 +1033,8 @@
       "model_error": null,
       "rules_version": "0.3"
     },
-    "findings": [
-      {
-        "severity": "block",
-        "rule_id": "CLM-01",
-        "span": "anti-bacterial",
-        "message": "Treat / cure / heal / disease / anti-bacterial wording makes this a drug claim, which a cosmetic ad can't make.",
-        "fix": "Describe the cosmetic, appearance-level effect instead (e.g. 'helps reduce the look of blemishes', 'soothes the feel of dryness'). Name the ingredient and concentration rather than the condition.",
-        "layer": "rule"
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   }
 ]
