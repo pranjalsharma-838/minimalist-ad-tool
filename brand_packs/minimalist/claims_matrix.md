@@ -8,7 +8,7 @@ Every brand-authored claim/study/ingredient line on the top-20 product pages (20
 - **USABLE AS PUBLISHED** — no rule hits; still cite it as the page states it.
 - Customer testimonials are never claims and are excluded.
 
-**Totals:** USABLE AS PUBLISHED 244 · DO NOT USE 13 · SUBSTANTIATED ON PAGE 19 · NEEDS SUBSTANTIATION 18
+**Totals:** USABLE AS PUBLISHED 241 · DO NOT USE 13 · SUBSTANTIATED ON PAGE 19 · NEEDS SUBSTANTIATION 21
 
 **Limit:** this classification is the RULE layer only. Implied claims — e.g. ingredient literature presented as product results (CLM-23), unhedged efficacy — are judged by the model layer and are NOT reflected here. "USABLE AS PUBLISHED" means "no rule hit", not "cleared".
 
@@ -46,7 +46,7 @@ Every brand-authored claim/study/ingredient line on the top-20 product pages (20
 | F13 | Clinical Results | This sunscreen is tested in an independent third party lab to confirm the level of protection it provides. Below is the lab report and the data points | **SUBSTANTIATED ON PAGE** | test method stated |
 | F14 | Clinical Results | Test type: IN-VIVO Evaluation of sun protection by International Standards - ISO 24444:2019 | **SUBSTANTIATED ON PAGE** | test method stated |
 | F15 | Clinical Results | Study Number: MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV | **SUBSTANTIATED ON PAGE** | test method stated |
-| F16 | Clinical Results | SPF value obtained: 56.6 | **USABLE AS PUBLISHED** |  |
+| F16 | Clinical Results | SPF value obtained: 56.6 | **NEEDS SUBSTANTIATION** | CLM-19 "SPF value obtained: 56" |
 | F17 | Clinical Results | PA rating: ++++ | **USABLE AS PUBLISHED** |  |
 | F18 | Clinical Results | (Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab) | **SUBSTANTIATED ON PAGE** | test method stated |
 | F19 | Clinical Results | Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist. | **USABLE AS PUBLISHED** |  |
@@ -295,7 +295,7 @@ Every brand-authored claim/study/ingredient line on the top-20 product pages (20
 | F11 | Clinical Results | This sunscreen is tested in an independent third party lab to confirm the level of protection it provides. Below is the lab report and the data points | **SUBSTANTIATED ON PAGE** | test method stated |
 | F12 | Clinical Results | Test type: IN-VIVO Evaluation of sun protection by International Standards - ISO 24444:2019 | **SUBSTANTIATED ON PAGE** | test method stated |
 | F13 | Clinical Results | Study Number: MS24.SPF.A1764.UPPL.ISO24444.ST10.REP | **SUBSTANTIATED ON PAGE** | test method stated |
-| F14 | Clinical Results | SPF value obtained : 56 | **USABLE AS PUBLISHED** |  |
+| F14 | Clinical Results | SPF value obtained : 56 | **NEEDS SUBSTANTIATION** | CLM-19 "SPF value obtained : 56" |
 | F15 | Clinical Results | PA rating: ++++ | **USABLE AS PUBLISHED** |  |
 | F16 | Clinical Results | (Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab) | **SUBSTANTIATED ON PAGE** | test method stated |
 | F17 | Clinical Results | Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist. | **USABLE AS PUBLISHED** |  |
@@ -365,7 +365,7 @@ Every brand-authored claim/study/ingredient line on the top-20 product pages (20
 | F12 | Clinical Results | Test type : IN-VIVO EVALUATION OF SUN PROTECTION & UVA PROTECTION BY | **SUBSTANTIATED ON PAGE** | test method stated |
 | F13 | Clinical Results | INTERNATIONAL STANDARD – ISO 24444:2019 & ISO 24442:2022 respectively. | **SUBSTANTIATED ON PAGE** | test method stated |
 | F14 | Clinical Results | Study Numbers : MS25.SPF.A2899.UPPL.ISO24444.ST10.REP & MS25.UVA.A2899.UPPL.ISO24442.10.REP | **SUBSTANTIATED ON PAGE** | test method stated |
-| F15 | Clinical Results | SPF value obtained : 66.6 | **USABLE AS PUBLISHED** |  |
+| F15 | Clinical Results | SPF value obtained : 66.6 | **NEEDS SUBSTANTIATION** | CLM-19 "SPF value obtained : 66" |
 | F16 | Clinical Results | PA rating : ++++ | **USABLE AS PUBLISHED** |  |
 | F17 | Clinical Results | (Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab) | **SUBSTANTIATED ON PAGE** | test method stated |
 | F18 | Clinical Results | Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist. | **USABLE AS PUBLISHED** |  |
