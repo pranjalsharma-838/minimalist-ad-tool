@@ -1,0 +1,140 @@
+{
+  "url": "https://beminimalist.co/products/retinol-0-3-q10",
+  "title": "Retinol 0.3% Face Serum",
+  "actives": [
+    {
+      "name": "Retinol",
+      "pct": "0.3%"
+    }
+  ],
+  "price": 237,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Reti3New.png?v=1721398129",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Retinol_03_2.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Retinol_03_3.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Retinol_03_4.png?v=1724763872"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Retinol 0.3% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Powerful Anti-aging Serum for Fine Lines & Wrinkles"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A highly stable & powerful anti-aging face serum packed with Retinol and antioxidant Coenzyme Q10. This water-free serum keeps Retinol stable & also nourishes skin."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Contains 0.3% pure Retinol in water-free formulation. Retinol is proven to fade fine lines & wrinkles, even skin tone and smoothen skin"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Packed with potent antioxidants. Coenzyme Q10 is an outstanding radical scavenger and visibly reduces wrinkle depth. It is coupled with Tocopherol (Vitamin E), another antioxidant, that nourishes & repairs skin"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosted with 1% pure Bakuchiol Oil which in some studies has shown to have similar benefits as Retinol without any irritation. This combination makes it a powerful anti-aging serum"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Retinol is an unstable molecule and it oxidizes in presence of water or light. This product is water-free and uses Squalane as based ingredient. Also this serum comes in a UV Protective bottle, which makes this a highly stable retinol"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "All ingredients are sourced from top quality suppliers. Retinol from BASF, Germany and Coenzyme Q10 from Selco, Germany"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Dry/Normal, Sensitive, Oily, Combination, Acne-Prone"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Fine Lines, Wrinkles & Loss of Elasticity"
+    },
+    {
+      "id": "F12",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on cleansed face after your water based serums, and before moisturizer. Use of sunscreen is highly recommended while using this product."
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Start with every alternate day and after 2 weeks of usage, use it everyday."
+    },
+    {
+      "id": "F14",
+      "section": "Retinol",
+      "kind": "ingredient_note",
+      "text": "Retinol is the most efficacious form of vitamin A. It is the most effective substance for the care of aging and UV-damaged skin because it increases enzyme activity, and normalizes keratinisation, which improves and normalizes the cell renewal process"
+    },
+    {
+      "id": "F15",
+      "section": "Coenzyme Q10",
+      "kind": "ingredient_note",
+      "text": "A potent antioxidant, Coenzyme Q10, is a radical scavenger and it protects skin cells against active oxygen structures, resulting in reduction of wrinkle depth"
+    },
+    {
+      "id": "F16",
+      "section": "Bakuchiol Oil",
+      "kind": "ingredient_note",
+      "text": "A powerful anti-aging ingredient. Some studies have shown that Bakuchiol Oil has similarities to Retinol in how it affect cell pathways. The duo of Retinol & Bakuchiol Oil, makes this a very powerful anti-aging serum"
+    },
+    {
+      "id": "F17",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Caprylic/Capric Triglyceride, Isododecane, Squalane, Coco-Caprylate/Caprate, Triheptanoin, Tocopheryl Acetate, Bakuchiol, Retinol, Polysorbate 20, Ubiquinone (Coenzyme Q10), BHT"
+    },
+    {
+      "id": "F18",
+      "section": "Can this product cause purging or breakout?",
+      "kind": "faq",
+      "text": "Depending on your skin, it can take time adjusting to Retinol. In the first 2-3 weeks of use, your cell turnover increases, causing your pores to purge. These effects are completely natural and will dissipate in 3-4 weeks. If you are new to Retinol based products, start slow by using the product 2-3 times a week and then slowly increase the usage to daily."
+    },
+    {
+      "id": "F19",
+      "section": "What is the recommended age, and who can use this product?",
+      "kind": "faq",
+      "text": "Except for pregnant or breastfeeding women and those under 18 years of age, anyone can begin using retinol in their mid-’20s. People with hypersensitive skin should perform a patch test first, and only if it’s tolerable, they should use it on the face. If it’s not acceptable, discontinue usage."
+    },
+    {
+      "id": "F20",
+      "section": "Can Retinol be used for treating acne as well?",
+      "kind": "faq",
+      "text": "As Retinol improves cell turnover rate, it is very effective against acne. In fact, Retinol is a clinically proven anti-acne active and has shown great efficacy against acne. You can use this serum along with our Salicylic Acid Serum for potent acne treatment."
+    }
+  ],
+  "source": "page"
+}

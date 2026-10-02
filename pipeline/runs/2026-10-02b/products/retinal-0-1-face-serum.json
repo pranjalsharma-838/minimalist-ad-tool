@@ -1,0 +1,156 @@
+{
+  "url": "https://beminimalist.co/products/retinal-0-1-face-serum",
+  "title": "Retinal 0.1% Face Serum",
+  "actives": [
+    {
+      "name": "Retinal",
+      "pct": "0.1%"
+    }
+  ],
+  "price": 719,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/DomesticMain.png?v=1729750815",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/DomesticTexture.png?v=1729750814"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Retinal 0.1% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Mid-Strength Retinal to visibly reduce signs of aging"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A lightweight anti-aging serum formulated with Retinal, Oleyl Adapalenate, Bakuchiol, and Squalane to combat the visible signs of aging. Retinal, one of the most efficacious form of Vitamin-A, helps fight fine line, wrinkles, and uneven skin tone while improving elasticity and texture. By encouraging cell turnover, this serum promotes a more youthful, radiant complexion."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Retinal (0.1%): A powerful yet gentle form of Vitamin A, It is known for its superior efficacy in reducing fine lines, wrinkles, and uneven skin tone. It promotes cell turnover, revealing a more youthful, radiant complexion. As per a clinical study it improves photoaging by 95%."
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Oleyl Adapalenate: Adapinoid is the only third generation retinoid for cosmetic use. This novel active is a precursor of adapalene which is proven to increase collagen, reduce photoaging, balance skin tone, soothe inflammation, reduce pores, and clear acne-prone skin."
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Bakuchiol: Bakuchiol reduces inflammation by significantly decreasing PGE2 level, IL-6 and MIF protein level."
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Squalane: A very lightweight moisturising agent that naturally seals moisture and significantly reduces trans-epidermal water loss in cases wherein the skin barrier is disrupted. Non-sticky and non-comedogenic."
+    },
+    {
+      "id": "F8",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: All skin types"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Fine lines, Wrinkles, Inflammation"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Oleyl Adapalenate at 0.5% concentration has shown significant results:"
+    },
+    {
+      "id": "F12",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "2.3 times more potent than retinol in reduction of wrinkle severity"
+    },
+    {
+      "id": "F13",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "9.6 times more effective to reduce redness"
+    },
+    {
+      "id": "F14",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "74.7 times more effective to reduce TEWL,"
+    },
+    {
+      "id": "F15",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Not only shows result but also it is better tolerable than 0.5% retinol."
+    },
+    {
+      "id": "F16",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on cleansed face after your water-based serums, and before moisturiser. Use of sunscreen is highly recommended the next day of using this product."
+    },
+    {
+      "id": "F17",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Use in PM routine only. Start with every alternate day and after 2 weeks of"
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "usage, use it everyday."
+    },
+    {
+      "id": "F19",
+      "section": "Retinal",
+      "kind": "ingredient_note",
+      "text": "A powerful form of Vitamin A, it is known for its superior efficacy in reducing fine lines, wrinkles, and uneven skin tone. It helps boost collagen & improve cell turnover, to reveal a more youthful, radiant complexion."
+    },
+    {
+      "id": "F20",
+      "section": "Oleyl Adapalenate",
+      "kind": "ingredient_note",
+      "text": "A powerful 3rd-generation retinoid that helps boost collagen reduces photoaging, evens tone, soothes inflammation, minimizes pores, and clears acne."
+    },
+    {
+      "id": "F21",
+      "section": "Bakuchiol",
+      "kind": "ingredient_note",
+      "text": "Bakuchiol effectively reduces inflammation by significantly decreasing PGE2, IL-6, and MIF protein levels. This natural compound offers a gentle yet powerful solution for soothing irritated skin."
+    },
+    {
+      "id": "F22",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Caprylic/Capric Triglyceride, Isododecane, Squalane, Coco-Caprylate/Caprate, Triheptanoin, Tocopheryl Acetate, Oleyl Adapalenate, Bakuchiol, Retinal"
+    },
+    {
+      "id": "F23",
+      "section": "When should I start using Retinal Serum?",
+      "kind": "faq",
+      "text": "Ideally, begin using Retinal in your late 20s to prevent early signs of aging. If you already have fine lines or wrinkles, it can still be beneficial for corrective care."
+    }
+  ],
+  "source": "page"
+}

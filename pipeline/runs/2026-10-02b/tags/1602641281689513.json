@@ -1,0 +1,24 @@
+{
+  "ad_type": "problem_solution",
+  "hook_angle": "time-bound fix for a seasonal problem",
+  "headline_text": "The 10-minute fix for monsoon dullness!",
+  "visual_layout": "three-panel collage: texture swirl with jar, finger scooping from open jar, smiling woman wearing the mask; headline top right",
+  "claim_type": "time-bound result",
+  "proof_device": "none (model wearing product as demonstration)",
+  "cta_style": "shop now",
+  "color_palette": "purple, lavender, white, black; bold, sensorial, modern",
+  "persona": "female face wearing mask, hand scooping product",
+  "text_density": "low",
+  "risk_notes": "'10-minute' result and 'de-tans' are performance claims needing support; the model shot shows application, not a result, so it reuses safely",
+  "why_it_works": "Ties a specific season to a specific problem and a short time, which makes the ad feel timely and the fix effortless. Texture, scoop and on-face panels walk the viewer through the product experience in one image.",
+  "advertised_product": {
+    "name": "foxtale The Stunner Skin Radiance Mask",
+    "actives": [
+      {"name": "Brazilian Purple Clay", "pct": ""},
+      {"name": "Kaolin Clay", "pct": ""},
+      {"name": "Lactic Acid", "pct": ""}
+    ],
+    "format": "other",
+    "concerns": ["dullness", "tan", "blackheads", "pores"]
+  }
+}

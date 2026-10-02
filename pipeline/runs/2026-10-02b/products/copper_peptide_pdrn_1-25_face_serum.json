@@ -1,0 +1,151 @@
+{
+  "url": "https://beminimalist.co/products/copper_peptide_pdrn_1-25_face_serum",
+  "title": "Copper Peptide + PDRN 1.25% Face Serum",
+  "actives": [
+    {
+      "name": "Copper Peptide + PDRN",
+      "pct": "1.25%"
+    }
+  ],
+  "price": 629,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/CopyofArtboard1_2.jpg?v=1757069577",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/2_0fa1120e-b5f1-4569-8c1f-e641479c316f.png?v=1757074113",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/3_ed8679b2-5a52-4e53-9f4c-e87050bbaf89.png?v=1757074113",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/4_7f98b3b2-81dc-426e-89b1-6a7060891ada.png?v=1757074112",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/5_df109dfb-4293-4156-8cbf-478a38c353d4.png?v=1757074113",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/6_c9f084f0-c067-4ba3-84ae-628064d50018.png?v=1757074112",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/7_82a0a155-4157-4011-b476-b8cc62593da8.png?v=1757074112",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/8_2444d87b-eea5-44e1-9aca-82ae2d32e1bd.png?v=1757074113",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/1_e74f218a-a7d5-4620-865e-13006ee88d50.png?v=1757074114"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Copper Peptide + PDRN 1.25% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Key to preventive aging in your 20’s"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "An advanced anti-aging serum enriched Sodium DNA (PDRN). Further amplified with multi-molecular Hyaluronic Acid, and Niacinamide. Together, they restore firmness, boost elasticity, deeply hydrate, and help prevent early signs of aging, even in sensitive skin."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Experience the power of our advanced Peptide and Sodium DNA technology for unparalleled skin regeneration."
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "This unique formula is enriched with clinically proven active ingredients like Sodium DNA (PDRN), which work synergistically to visibly enhance skin firmness, boost elasticity, and promote overall skin rejuvenation."
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Further amplified with multi-molecular Hyaluronic Acid for deep, long-lasting hydration and Niacinamide to strengthen your skin's natural barrier, this solution provides a comprehensive approach to anti-aging."
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "It's a rejuvenating, collagen-boosting serum that restores youthfulness, leading to visibly firmer and younger-looking skin."
+    },
+    {
+      "id": "F8",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: All skin types"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Wrinkles, Fine Lines, Dehydrated skin, Damaged barrier"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Pregnancy/Lactation: Unsafe"
+    },
+    {
+      "id": "F12",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Sodium DNA improves skin elasticity by 24.3%."
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Increase hydration by 18.6% and reduce TEWL by 22.6%."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Helps improve skin barrier integrity."
+    },
+    {
+      "id": "F15",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Use AM & PM Everyday."
+    },
+    {
+      "id": "F16",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply 2-3 drops after cleansing & toning. Let the serum absorb fully into the skin before moving on to the next step of your routine. Use sunscreen during the day for best results."
+    },
+    {
+      "id": "F17",
+      "section": "Bis (Tripeptide-1) Copper Acetate",
+      "kind": "ingredient_note",
+      "text": "A powerful peptide-copper complex that signals the skin to produce more collagen and elastin, (the essential proteins responsible for firmness and elasticity), actively preventing the onset of fine lines and loss of skin integrity."
+    },
+    {
+      "id": "F18",
+      "section": "PDRN - Sodium DNA",
+      "kind": "ingredient_note",
+      "text": "A clinically tested ingredient derived from marine sources, PDRN works at a cellular level to stimulate repair and renewal. Helps skin cells to recover, regenerate and function optimally. By enhancing the skin’s natural repair pathways, it helps restore vitality, improve elasticity. With consistent use, it helps boost skin’s resilience."
+    },
+    {
+      "id": "F19",
+      "section": "Hyaluronic acid",
+      "kind": "ingredient_note",
+      "text": "Provides deep and multi-layer hydration, instantly plumps skin and improves skin suppleness."
+    },
+    {
+      "id": "F20",
+      "section": "Niacinamide",
+      "kind": "ingredient_note",
+      "text": "Helps strengthen the skin’s natural barrier and enhances skin’s resilience. Also, helps even skin tone."
+    },
+    {
+      "id": "F21",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Aqua, Niacinamide, Dimethyl Isosorbide, Ethoxydiglycol, Bis (Tripeptide-1) Copper Acetate, Propanediol, Sodium Hyaluronate, Sodium DNA, Hydrolyzed Sodium Hyaluronate, Pentylene Glycol, Phenoxyethanol, Ethylhexylglycerin"
+    }
+  ],
+  "source": "page"
+}

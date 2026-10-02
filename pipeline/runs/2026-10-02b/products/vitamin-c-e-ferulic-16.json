@@ -1,0 +1,185 @@
+{
+  "url": "https://beminimalist.co/products/vitamin-c-e-ferulic-16",
+  "title": "Vitamin C + E + Ferulic 16% Face Serum",
+  "actives": [
+    {
+      "name": "Vitamin C + E + Ferulic",
+      "pct": "16%"
+    }
+  ],
+  "price": 332,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vit16New.png?v=1721398127",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_C_E_02.png?v=1726489863",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_C_E_03.png?v=1726489864",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_C_E_04.png?v=1726489864",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_C_E_05.png?v=1726489864",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vitamin_C_E_06.png?v=1726489861",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Vit_C_E_Ferulic_Serum_10ml.png?v=1783339547"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Vitamin C + E + Ferulic 16% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Brightens & protects skin"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A skin-brightening daily serum with stable Vitamin C at 15% and antioxidants (Vitamin E & Ferulic Acid) at 1% combined."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"Visibly gives me brighter and more even skin tone and helps to accelerate the fading of scars. -Meenakshi P.\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Made with stabilized Vitamin C derivative \"Ethyl Ascorbic Acid\" (EAA) that has 86% pure Vitamin C content. This serum delivers EAA in high concentration of 15%"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "1% blend of 2 potent antioxidants - Vitamin E & Ferulic Acid. Together they not only stabilize the formula, but also improve efficacy of Vitamin C"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Contains Fullerenes (C60), a new generation antioxidant (the scientists who discovered Fullerenes were awarded Nobel Prize). It is several times more potent than Vitamin C and has strong, long lasting and stable anti-oxidative activity"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "The combination of actives not only brighten the skin, but also scavenge free radicals to reduce redness, skin damage and make skin healthy overall"
+    },
+    {
+      "id": "F9",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with ET-VC, high purity Ethyl Ascorbic Acid, from Corum Inc, Taiwan"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: All skin types"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns : Spots, Uneven Tone & Dull Skin"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "After cleansing and toning your face, take 2-3 drops of Vitamin C serum on your fingertips with the dropper. Apply it on the face by gently tapping it on the skin. With a circular motion, evenly spread the serum and allow your skin to absorb it."
+    },
+    {
+      "id": "F14",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "A potent everyday serum with stabilised Vitamin C and new age antioxidant Fullerenes to brighten skin and make it healthy & even looking"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "94% subjects agreed significant improvement in skin glow & reduction in dullness"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects agreed skin felt more even looking after 6 weeks"
+    },
+    {
+      "id": "F18",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects agreed reduction in spots after 8 weeks"
+    },
+    {
+      "id": "F19",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F20",
+      "section": "Vitamin C (Ethyl Ascorbic Acid)",
+      "kind": "ingredient_note",
+      "text": "Proven antioxidant that visibly brightens dull skin and fades dark spots"
+    },
+    {
+      "id": "F21",
+      "section": "Fullerenes (Carbon 60 or C60)",
+      "kind": "ingredient_note",
+      "text": "New-age molecule with strong antioxidant properties to address several skin issues like dullness, UV damage, and aging"
+    },
+    {
+      "id": "F22",
+      "section": "Ferulic Acid",
+      "kind": "ingredient_note",
+      "text": "Potent antioxidant that reverses signs of sun damage (UV exposure), and makes skin look even & healthier overall"
+    },
+    {
+      "id": "F23",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, 3-O-Ethyl Ascorbic Acid, Propanediol, Ethoxydiglycol, 1,2-Hexanediol, Butylene Glycol, Dimethyl Isosorbide, Argan Oil Glycereth-8 Esters, Sodium Hyaluronate, Panthenol, Ferulic Acid, Phenoxyethanol, Sodium Gluconate, Fullerenes, Tocopheryl Acetate, Pentylene Glycol, Citric Acid, Sodium Citrate, Ethylhexylglycerin, PVP, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F24",
+      "section": "Which skin types is this suitable for?",
+      "kind": "faq",
+      "text": "This serum is suitable for all skin types. Vitamin C is a known antioxidant and has several skin benefits. This is an everyday serum that can be easily incorporated in your daily skincare routine"
+    },
+    {
+      "id": "F25",
+      "section": "Can this product be used for men & women both?",
+      "kind": "faq",
+      "text": "Yes. This face cleanser works equally well for both men and women."
+    },
+    {
+      "id": "F26",
+      "section": "What is the recommended age for using this serum?",
+      "kind": "faq",
+      "text": "Anyone over 18 years of age can use this product."
+    },
+    {
+      "id": "F27",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    }
+  ],
+  "source": "page"
+}

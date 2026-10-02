@@ -1,0 +1,20 @@
+{
+  "ad_type": "expert_authority",
+  "hook_angle": "problem-first callout to a skin type (oily skin, wrong moisturizer)",
+  "headline_text": "Oily skin people - your moisturizer might be the problem.",
+  "visual_layout": "video thumbnail: doctor in lab coat at a desk speaking to camera, product box and jar at bottom right",
+  "claim_type": "expert advice / credential",
+  "proof_device": "derm/expert on camera (named doctor badge)",
+  "cta_style": "shop now",
+  "color_palette": "white, dark green, soft mint; clinical, calm, trustworthy",
+  "persona": "female doctor in white coat",
+  "text_density": "low",
+  "risk_notes": "relies on a doctor endorsement on camera; video format, so tagged from the thumbnail only and the headline is taken from primary text (no on-image headline); product name on the box is not legible in the thumbnail, name taken from visual notes",
+  "why_it_works": "A doctor's sceptical expression plus a 'you might be doing it wrong' line creates curiosity and positions the product as the expert-approved fix. The product sits quietly in frame so the advice feels editorial, not salesy.",
+  "advertised_product": {
+    "name": "Plum SebaClear",
+    "actives": [],
+    "format": "moisturizer",
+    "concerns": ["oily skin"]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ad_type": "product_hero",
+  "hook_angle": "audience callout (first-time retinol users) with reassurance",
+  "headline_text": "Trusted by first-time Retinol users",
+  "visual_layout": "upright tube centred on soft grey with a cream dollop below and three callout lines to percentage-result stats",
+  "claim_type": "clinical percentage stat (time-bound, 90 days)",
+  "proof_device": "disclosed study stat footnoted 'Based on Dermatological Assessment'",
+  "cta_style": "shop now",
+  "color_palette": "soft grey, white, navy, burgundy; calm, clinical, premium",
+  "persona": "product only",
+  "text_density": "medium",
+  "risk_notes": "relies on result percentages (-50% pores, +100% smoother, -88% fine lines) footnoted only to a generic 'Dermatological Assessment' with no study size or source; 'without purging or irritation' is an absolute tolerance claim",
+  "why_it_works": "Names a hesitant audience and removes their main fear (irritation) in the subhead, then backs it with three big numbers placed around the pack so the eye moves product to proof. Calm grey styling makes an active ingredient feel safe.",
+  "advertised_product": {
+    "name": "Re'equil Retinol 0.1% Night Cream",
+    "actives": [
+      {"name": "Encapsulated Retinol", "pct": "0.1%"},
+      {"name": "Bidens Pilosa Extract", "pct": ""}
+    ],
+    "format": "moisturizer",
+    "concerns": ["fine lines", "pores", "texture"]
+  }
+}

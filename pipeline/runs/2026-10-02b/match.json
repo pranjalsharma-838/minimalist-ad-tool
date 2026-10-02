@@ -1,0 +1,761 @@
+[
+  {
+    "id": "4500111383646459",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "competitor_product": {
+      "name": "de construct Lightweight Gel Sunscreen Broad Spectrum Protection",
+      "actives": [
+        {
+          "name": "SPF",
+          "pct": "SPF 50 PA++++"
+        }
+      ],
+      "format": "sunscreen",
+      "concerns": [
+        "sun protection",
+        "greasiness",
+        "sweat",
+        "blue light"
+      ]
+    },
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "light-fluid-spf-50-sunscreen",
+        "title": "Light Fluid SPF 50 Sunscreen",
+        "score": 11.8,
+        "why": [
+          "active sunscreen +6",
+          "texture match +1.5",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #15 +0.3"
+        ]
+      },
+      {
+        "handle": "multi-vitamin-spf-50",
+        "title": "SPF 50 Sunscreen",
+        "score": 10.95,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #2 +0.95"
+        ]
+      },
+      {
+        "handle": "spf-60-silymarin",
+        "title": "SPF 60 Sunscreen",
+        "score": 10.15,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #18 +0.15"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1408884340671180",
+    "brand": "Foxtale",
+    "ad_type": "other",
+    "competitor_product": {
+      "name": "foxtale Cool Shade Oil Control Water Gel Sunscreen",
+      "actives": [
+        {
+          "name": "SPF",
+          "pct": "SPF 50 PA++++"
+        }
+      ],
+      "format": "sunscreen",
+      "concerns": [
+        "sun protection",
+        "oiliness",
+        "tanning"
+      ]
+    },
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "light-fluid-spf-50-sunscreen",
+        "title": "Light Fluid SPF 50 Sunscreen",
+        "score": 11.8,
+        "why": [
+          "active sunscreen +6",
+          "texture match +1.5",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #15 +0.3"
+        ]
+      },
+      {
+        "handle": "multi-vitamin-spf-50",
+        "title": "SPF 50 Sunscreen",
+        "score": 10.95,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #2 +0.95"
+        ]
+      },
+      {
+        "handle": "spf-60-silymarin",
+        "title": "SPF 60 Sunscreen",
+        "score": 10.15,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #18 +0.15"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1039318678808682",
+    "brand": "Re'equil",
+    "ad_type": "product_hero",
+    "competitor_product": {
+      "name": "Re'equil Retinol 0.1% Night Cream",
+      "actives": [
+        {
+          "name": "Encapsulated Retinol",
+          "pct": "0.1%"
+        },
+        {
+          "name": "Bidens Pilosa Extract",
+          "pct": ""
+        }
+      ],
+      "format": "moisturizer",
+      "concerns": [
+        "fine lines",
+        "pores",
+        "texture"
+      ]
+    },
+    "product_handle": "retinoid-2",
+    "product_title": "Granactive Retinoid 2% Face Cream",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "retinoid-2",
+        "title": "Granactive Retinoid 2% Face Cream",
+        "score": 12,
+        "why": [
+          "active retinoid +6",
+          "same function (cream) +2",
+          "format moisturizer +3",
+          "concern fine lines +1"
+        ]
+      },
+      {
+        "handle": "retinal-0-1-face-serum",
+        "title": "Retinal 0.1% Face Serum",
+        "score": 8,
+        "why": [
+          "active retinoid +6",
+          "same 0.1% +1",
+          "concern fine lines +1"
+        ]
+      },
+      {
+        "handle": "retinol-0-3-q10",
+        "title": "Retinol 0.3% Face Serum",
+        "score": 7.4,
+        "why": [
+          "active retinoid +6",
+          "concern fine lines +1",
+          "top seller #13 +0.4"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "9868853523169382",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "competitor_product": {
+      "name": "Dot & Key Strawberry Bright 10% Niacinamide Face Serum",
+      "actives": [
+        {
+          "name": "Niacinamide",
+          "pct": "10%"
+        },
+        {
+          "name": "Vitamin B12",
+          "pct": ""
+        },
+        {
+          "name": "Hyaluronic",
+          "pct": ""
+        }
+      ],
+      "format": "serum",
+      "concerns": [
+        "dullness",
+        "dark spots",
+        "dehydration"
+      ]
+    },
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "niacinamide-10-with-matmarine",
+        "title": "Niacinamide 10% Face Serum",
+        "score": 12.85,
+        "why": [
+          "active niacinamide +6",
+          "same 10% +1",
+          "same function (serum) +2",
+          "format serum +3",
+          "top seller #4 +0.85"
+        ]
+      },
+      {
+        "handle": "niacinamide-5-hyaluronic-acid-1",
+        "title": "Niacinamide 5% Face Serum",
+        "score": 12.1,
+        "why": [
+          "active niacinamide +6",
+          "close % +0.5",
+          "same function (serum) +2",
+          "format serum +3",
+          "top seller #9 +0.6"
+        ]
+      },
+      {
+        "handle": "2-hyaluronic-acid",
+        "title": "Hyaluronic + PGA 2% Face Serum",
+        "score": 11.25,
+        "why": [
+          "active hyaluronic +6",
+          "same function (serum) +2",
+          "format serum +3",
+          "top seller #16 +0.25"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "621835826921394",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "competitor_product": {
+      "name": "Dot & Key Blueberry Hydrate Barrier Repair Sunscreen",
+      "actives": [
+        {
+          "name": "SPF",
+          "pct": "SPF 50+ PA++++"
+        },
+        {
+          "name": "Hyaluronic",
+          "pct": ""
+        },
+        {
+          "name": "5 Ceramides",
+          "pct": ""
+        }
+      ],
+      "format": "sunscreen",
+      "concerns": [
+        "sun protection",
+        "dryness",
+        "skin barrier"
+      ]
+    },
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "multi-vitamin-spf-50",
+        "title": "SPF 50 Sunscreen",
+        "score": 10.95,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #2 +0.95"
+        ]
+      },
+      {
+        "handle": "light-fluid-spf-50-sunscreen",
+        "title": "Light Fluid SPF 50 Sunscreen",
+        "score": 10.3,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #15 +0.3"
+        ]
+      },
+      {
+        "handle": "spf-60-silymarin",
+        "title": "SPF 60 Sunscreen",
+        "score": 10.15,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #18 +0.15"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1732129464862042",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "competitor_product": {
+      "name": "Chemist at Play Daily Exfoliating Body Wash",
+      "actives": [
+        {
+          "name": "Lactic Acid",
+          "pct": "4%"
+        },
+        {
+          "name": "Salicylic Acid",
+          "pct": ""
+        },
+        {
+          "name": "Vitamin E",
+          "pct": ""
+        },
+        {
+          "name": "Zemea",
+          "pct": ""
+        }
+      ],
+      "format": "body",
+      "concerns": [
+        "tan",
+        "dullness",
+        "rough texture"
+      ]
+    },
+    "product_handle": "salicylic-acid-lha-02-body-wash",
+    "product_title": "Salicylic Acid + LHA 2% Body Wash",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "salicylic-acid-lha-02-body-wash",
+        "title": "Salicylic Acid + LHA 2% Body Wash",
+        "score": 11,
+        "why": [
+          "active salicylic +6",
+          "same function (wash) +2",
+          "format body +3"
+        ]
+      },
+      {
+        "handle": "nonapeptide-aha-06-underarm-roll-on",
+        "title": "Nonapeptide + AHA 6% Underarm Roll-On",
+        "score": 9.5,
+        "why": [
+          "active aha +6",
+          "close % +0.5",
+          "format body +3"
+        ]
+      },
+      {
+        "handle": "kojic-mandelic-body-lotion",
+        "title": "Kojic + Mandelic 2.5% Body Lotion",
+        "score": 9.5,
+        "why": [
+          "active aha +6",
+          "close % +0.5",
+          "format body +3"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1602641281689513",
+    "brand": "Foxtale",
+    "ad_type": "problem_solution",
+    "competitor_product": {
+      "name": "foxtale The Stunner Skin Radiance Mask",
+      "actives": [
+        {
+          "name": "Brazilian Purple Clay",
+          "pct": ""
+        },
+        {
+          "name": "Kaolin Clay",
+          "pct": ""
+        },
+        {
+          "name": "Lactic Acid",
+          "pct": ""
+        }
+      ],
+      "format": "other",
+      "concerns": [
+        "dullness",
+        "tan",
+        "blackheads",
+        "pores"
+      ]
+    },
+    "product_handle": "aha-25-pha-5-bha-2",
+    "product_title": "AHA PHA BHA 32% Face Peel",
+    "match_method": "similarity",
+    "match_confidence": "medium",
+    "candidates": [
+      {
+        "handle": "aha-25-pha-5-bha-2",
+        "title": "AHA PHA BHA 32% Face Peel",
+        "score": 7.05,
+        "why": [
+          "active aha +6",
+          "concern dullness +1",
+          "top seller #20 +0.05"
+        ]
+      },
+      {
+        "handle": "aha-bha-10",
+        "title": "AHA BHA 10% Face Exfoliator",
+        "score": 7,
+        "why": [
+          "active aha +6",
+          "concern dullness +1"
+        ]
+      },
+      {
+        "handle": "alpha-lipoic-glycolic-07-cleanser",
+        "title": "Alpha Lipoic + Glycolic 7% Cleanser",
+        "score": 7,
+        "why": [
+          "active aha +6",
+          "concern dullness +1"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "27546140265006255",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "competitor_product": {
+      "name": "Chemist at Play Brightening Face Serum",
+      "actives": [
+        {
+          "name": "Vitamin C",
+          "pct": "10%"
+        },
+        {
+          "name": "Glucosamine",
+          "pct": "2%"
+        },
+        {
+          "name": "Ceramides",
+          "pct": ""
+        }
+      ],
+      "format": "serum",
+      "concerns": [
+        "dark spots",
+        "pigmentation",
+        "dullness",
+        "uneven tone"
+      ]
+    },
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+        "title": "Vitamin C 10% Face Serum",
+        "score": 12.8,
+        "why": [
+          "active vitamin_c +6",
+          "same 10% +1",
+          "same function (serum) +2",
+          "format serum +3",
+          "top seller #5 +0.8"
+        ]
+      },
+      {
+        "handle": "vitamin-c-e-ferulic-16",
+        "title": "Vitamin C + E + Ferulic 16% Face Serum",
+        "score": 12.05,
+        "why": [
+          "active vitamin_c +6",
+          "close % +0.5",
+          "same function (serum) +2",
+          "format serum +3",
+          "top seller #10 +0.55"
+        ]
+      },
+      {
+        "handle": "alpha-arbutin-2",
+        "title": "Alpha Arbutin 2% Face Serum",
+        "score": 7.7,
+        "why": [
+          "same function (serum) +2",
+          "format serum +3",
+          "concern dark spots, pigmentation +2",
+          "top seller #7 +0.7"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "4416615341943591",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "competitor_product": {
+      "name": "de construct 2-in-1 Formula Moisturizer with SPF",
+      "actives": [
+        {
+          "name": "NMF",
+          "pct": "3%"
+        },
+        {
+          "name": "SPF",
+          "pct": "SPF 50 PA++++"
+        }
+      ],
+      "format": "moisturizer",
+      "concerns": [
+        "hydration",
+        "sun protection",
+        "oiliness"
+      ]
+    },
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "multi-vitamin-spf-50",
+        "title": "SPF 50 Sunscreen",
+        "score": 8.95,
+        "why": [
+          "active sunscreen +6",
+          "format adjacent +1",
+          "concern sun protection +1",
+          "top seller #2 +0.95"
+        ]
+      },
+      {
+        "handle": "light-fluid-spf-50-sunscreen",
+        "title": "Light Fluid SPF 50 Sunscreen",
+        "score": 8.3,
+        "why": [
+          "active sunscreen +6",
+          "format adjacent +1",
+          "concern sun protection +1",
+          "top seller #15 +0.3"
+        ]
+      },
+      {
+        "handle": "spf-60-silymarin",
+        "title": "SPF 60 Sunscreen",
+        "score": 8.15,
+        "why": [
+          "active sunscreen +6",
+          "format adjacent +1",
+          "concern sun protection +1",
+          "top seller #18 +0.15"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "27209515258657747",
+    "brand": "Conscious Chemist",
+    "ad_type": "offer_promo",
+    "competitor_product": {
+      "name": "Conscious Chemist Lift Me Up Collagen Jelly Cream",
+      "actives": [
+        {
+          "name": "Multi-Peptide",
+          "pct": ""
+        }
+      ],
+      "format": "moisturizer",
+      "concerns": [
+        "firmness",
+        "hydration",
+        "ageing"
+      ]
+    },
+    "product_handle": "multi-peptide-serum-7-matrixyl-3000-3-bio-placenta",
+    "product_title": "Multi-Peptides 10% Face Serum",
+    "match_method": "similarity",
+    "match_confidence": "medium",
+    "candidates": [
+      {
+        "handle": "multi-peptide-serum-7-matrixyl-3000-3-bio-placenta",
+        "title": "Multi-Peptides 10% Face Serum",
+        "score": 6,
+        "why": [
+          "active peptide +6"
+        ]
+      },
+      {
+        "handle": "copper_peptide_pdrn_1-25_face_serum",
+        "title": "Copper Peptide + PDRN 1.25% Face Serum",
+        "score": 6,
+        "why": [
+          "active peptide +6"
+        ]
+      },
+      {
+        "handle": "retinoid-2",
+        "title": "Granactive Retinoid 2% Face Cream",
+        "score": 5,
+        "why": [
+          "same function (cream) +2",
+          "format moisturizer +3"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1115173371246578",
+    "brand": "Plum",
+    "ad_type": "expert_authority",
+    "competitor_product": {
+      "name": "Plum SebaClear",
+      "actives": [],
+      "format": "moisturizer",
+      "concerns": [
+        "oily skin"
+      ]
+    },
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "match_method": "fallback: concern route \"acne / oil / pores\" (similarity too weak)",
+    "match_confidence": "low",
+    "candidates": [
+      {
+        "handle": "vitamin-b5-10-moisturizer",
+        "title": "Vitamin B5 10% Moisturizer",
+        "score": 3.9,
+        "why": [
+          "format moisturizer +3",
+          "top seller #3 +0.9"
+        ]
+      },
+      {
+        "handle": "marula-05-moisturizer",
+        "title": "Marula Oil 5% Face Moisturizer",
+        "score": 3.65,
+        "why": [
+          "format moisturizer +3",
+          "top seller #8 +0.65"
+        ]
+      },
+      {
+        "handle": "retinoid-2",
+        "title": "Granactive Retinoid 2% Face Cream",
+        "score": 3,
+        "why": [
+          "format moisturizer +3"
+        ]
+      }
+    ],
+    "refusal": null
+  },
+  {
+    "id": "1593356795737812",
+    "brand": "Re'equil",
+    "ad_type": "product_hero",
+    "competitor_product": {
+      "name": "Re'equil Oil-Free Aquagel Sunscreen",
+      "actives": [
+        {
+          "name": "SPF",
+          "pct": "SPF 50+ PA++++"
+        },
+        {
+          "name": "Hyaluronic Acid",
+          "pct": ""
+        },
+        {
+          "name": "L-Carnosine",
+          "pct": ""
+        }
+      ],
+      "format": "sunscreen",
+      "concerns": [
+        "sun protection",
+        "oiliness",
+        "dehydration",
+        "white cast"
+      ]
+    },
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "match_method": "similarity",
+    "match_confidence": "high",
+    "candidates": [
+      {
+        "handle": "light-fluid-spf-50-sunscreen",
+        "title": "Light Fluid SPF 50 Sunscreen",
+        "score": 11.8,
+        "why": [
+          "active sunscreen +6",
+          "texture match +1.5",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #15 +0.3"
+        ]
+      },
+      {
+        "handle": "multi-vitamin-spf-50",
+        "title": "SPF 50 Sunscreen",
+        "score": 10.95,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #2 +0.95"
+        ]
+      },
+      {
+        "handle": "spf-60-silymarin",
+        "title": "SPF 60 Sunscreen",
+        "score": 10.15,
+        "why": [
+          "active sunscreen +6",
+          "format sunscreen +3",
+          "concern sun protection +1",
+          "top seller #18 +0.15"
+        ]
+      }
+    ],
+    "refusal": null
+  }
+]

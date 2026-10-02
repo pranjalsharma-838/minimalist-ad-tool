@@ -4,6 +4,27 @@
 // Usage: node pipeline/04_prepare_briefs.js <YYYY-MM-DD>
 import fs from "node:fs";
 import path from "node:path";
+import { extractFromUrl } from "../lib/extract.js";
+import { matchProduct } from "../lib/similarity.js";
+
+// Companion products for multi-product formats (journey / range): the closest cleanser, serum and
+// sunscreen for the ad's concern, excluding the main product. Facts are fetched live and saved.
+async function companions(comp, mainHandle, runDir) {
+  const out = [];
+  for (const format of ["cleanser", "serum", "sunscreen"]) {
+    const m = matchProduct({ ...comp, format, name: `${comp.name || ""} ${format}` });
+    const cand = m.candidates.map((c) => c.handle).find((h) => h !== mainHandle && !out.includes(h));
+    if (cand) out.push(cand);
+  }
+  for (const h of out) {
+    const f = path.join(runDir, "products", `${h}.json`);
+    if (!fs.existsSync(f)) {
+      fs.writeFileSync(f, JSON.stringify(await extractFromUrl(`https://beminimalist.co/products/${h}`), null, 2));
+      await new Promise((r) => setTimeout(r, 1000));
+    }
+  }
+  return out;
+}
 
 const date = process.argv[2];
 const runDir = path.join("pipeline", "runs", date);
@@ -35,10 +56,18 @@ for (const m of matches) {
     `On-image text: ${ad.on_image_text || ""}`,
     `CTA: ${ad.cta || ""}`,
     "",
-    `## Product facts: ${sheet.title} (cite by id; [testimonial], [faq], [inci] are not citable for claims)`,
+    `## Product facts: ${sheet.title} (main product, handle "${m.product_handle}"; cite by id; [testimonial], [faq], [inci] are not citable for claims)`,
     `Hero shown by the layout (from the pack title, not written by you): ${sheet.actives.map((a) => a.name === "SPF" ? `SPF ${a.pct}` : `${a.pct} ${a.name}`).join(", ") || "(none)"}`,
     facts,
-  ].join("\n");
-  fs.writeFileSync(path.join(runDir, "brief_inputs", `${m.id}.md`), md);
+  ];
+  // Companion products, for journey / range layouts only (cite as "<handle>:F<n>").
+  const comps = await companions(m.competitor_product || {}, m.product_handle, runDir);
+  for (const h of comps) {
+    const cs = JSON.parse(fs.readFileSync(path.join(runDir, "products", `${h}.json`), "utf8"));
+    md.push("", `## Companion product: ${cs.title} (handle "${h}"; cite as "${h}:F<n>"; use only in journey or range layouts)`);
+    md.push(...cs.facts.filter((f) => !["inci", "faq", "testimonial"].includes(f.kind)).slice(0, 14).map((f) => `${h}:${f.id} [${f.kind}] (${f.section}) ${f.text}`));
+  }
+  const text = md.join("\n");
+  fs.writeFileSync(path.join(runDir, "brief_inputs", `${m.id}.md`), text);
 }
 console.log(`wrote ${matches.length} brief inputs to ${path.join(runDir, "brief_inputs")}`);

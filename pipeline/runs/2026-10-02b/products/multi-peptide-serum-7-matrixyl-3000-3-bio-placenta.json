@@ -1,0 +1,177 @@
+{
+  "url": "https://beminimalist.co/products/multi-peptide-serum-7-matrixyl-3000-3-bio-placenta",
+  "title": "Multi-Peptides 10% Face Serum",
+  "actives": [
+    {
+      "name": "Multi-Peptides",
+      "pct": "10%"
+    }
+  ],
+  "price": 629,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/MultiNew.png?v=1721398128",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Multi_Peptide_2.png?v=1722951304",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Multi_Peptide_3.png?v=1722951304",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Multi_Peptide_4.png?v=1723444094",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Multi_Peptide_6.png?v=1723035716"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Multi-Peptides 10% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "For Firmer, Younger Looking Skin"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A rejuvenating, collagen boosting serum boosted with peptides that restore youthfulness, resulting in younger, firmer-looking skin."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"I have been using the serum since 1 month and observed a difference in my skin texture and pore refinement. Will definitely purchase again! -Shubhangini T.\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "A Multi-Peptide serum with a power of 7% Matrixyl 3000, a combo of 2 potent peptides that's clinically proven to smoothen wrinkles & increase elasticity"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "3% Bio-Placenta that acts similar to human placenta with 5 peptides that promote cell growth and thus reduce aging"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "A hydrating lightweight serum that is proven to boost skin moisturization by 83% instantly and reduce wrinkles under eye by 46% and crow’s feet by 21% in 4 weeks"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "It contains premium quality of Matrixyl 3000 by Croda, UK and Bio-placenta by Labio, Korea, leading global suppliers of skincare ingredients"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Dry/Normal, Sensitive, Oily/Combination, Acne-Prone"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Skin Sagging, Fine Line & Wrinkles"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Pregnancy/Lactation: Safe"
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Matrixyl 3000 is a proven anti-aging peptide blend and it promotes wrinkle smoothing and improves tone and elasticity."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects agree fine lines are visibly smoothened in 8 weeks"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agree crow's feet (fine lines around the corners of eyes) are significantly reduced in 6 weeks"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agree skin feels hydrated & more elastic after application"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "After cleansing and toning your face, take 2-3 drops of the serum on your fingertips with the dropper. Apply it on the face by gently tapping it on the skin. Do not layer immediately before/after antioxidants like Retinol, or Vitamin C."
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Everyday."
+    },
+    {
+      "id": "F20",
+      "section": "Matrixyl 3000",
+      "kind": "ingredient_note",
+      "text": "It supports the activation of the cutaneous repair process, and in particular at the level of the fragile and UV-damage prone papillary dermis, thus is suitable and effective anti-aging serum for all skin types"
+    },
+    {
+      "id": "F21",
+      "section": "Bio-Placenta",
+      "kind": "ingredient_note",
+      "text": "Helps in synthesizing various growth factors (very similar to human Placenta). The combination of five growth factors and other essential factors in Bio-placenta can have synergistic effects on the skin and helps in skin rejuvenation and cell revitalization. It also stimulates cell growth and promotes biosynthesis of collagen"
+    },
+    {
+      "id": "F22",
+      "section": "Hyaluronic Acid",
+      "kind": "ingredient_note",
+      "text": "Hydrates skin and smoothens fine lines & wrinkles"
+    },
+    {
+      "id": "F23",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Glycerin, Butylene Glycol, Palmitoyl Tripeptide-1, Palmitoyl Tetrapeptide-7, Acetyl Glutamine, sh-Oligopeptide-1, sh-Oligopeptide-2, sh-Polypeptide-1, sh-Polypeptide-9, sh-Polypeptide-11, Pentylene Glycol, Bacillus/Folic Acid Ferment Filtrate Extract, Sodium Hyaluronate, Lecithin, Caprylyl Glycol, Carbomer, Polysorbate 20, Pullulan, Hydroxyethylcellulose, Xanthan Gum, PEG/PPG-17/6 Copolymer, Sclerotium Gum, Phenoxyethanol, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F24",
+      "section": "How long does it take for peptides to work?",
+      "kind": "faq",
+      "text": "After you begin to use peptides you can be sure to notice a visible improvement on your skin within a few weeks. However, it may take 3-6 months of regular use for Multi-peptide serum to show its full beneficial effect."
+    },
+    {
+      "id": "F25",
+      "section": "Do peptides have any side effects? Can we use it for the long term?",
+      "kind": "faq",
+      "text": "Unlike other active skincare ingredients, peptides are usually safe to be used on all types of skin and are readily accepted by the skin’s natural metabolism. It does not show any serious side effects and has been found to be neutral on the skin. However, whenever you incorporate a new activity in your regimen, you should always patch test 48 hours before beginning to use the product."
+    },
+    {
+      "id": "F26",
+      "section": "Is this serum safe to use every day?",
+      "kind": "faq",
+      "text": "Yes. This serum is formulated with high-quality peptides that are absolutely safe to use. Peptides are building blocks of proteins and are naturally synthesized by our body. But as we age, their production reduces, hence the need for topical application arises."
+    }
+  ],
+  "source": "page"
+}

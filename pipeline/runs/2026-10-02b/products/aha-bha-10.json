@@ -1,0 +1,183 @@
+{
+  "url": "https://beminimalist.co/products/aha-bha-10",
+  "title": "AHA BHA 10% Face Exfoliator",
+  "actives": [
+    {
+      "name": "AHA BHA",
+      "pct": "10%"
+    }
+  ],
+  "price": 539,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/products/aha-bha-10-1200--1min-1645781661616.png?v=1647004182",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/AHA_BHA_2.png?v=1723035837",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/AHA_BHA_3.png?v=1722949209",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/AHA_BHA_4.png?v=1722949209",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/AHA_BHA_6.png?v=1722949209"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "AHA BHA 10% Face Exfoliator"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Exfoliator for Younger and Glowing Skin"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A skin-regenerating daily serum with 10% blend of AHAs (Alpha Hydroxy Acids) and BHAs (Beta Hydroxy Acids) that mildly exfoliates without drying the skin to reveal clear, radiant, and hydrated skin."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"Loved the product, really helped me with my acne and made my skin glow\" - Khushboo P."
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "This formula uses a balanced composition of AHAs (Glycolic Acid & Lactic Acid) along with BHA (Salicylic Acid) to stimulate exfoliation of the skin and stimulate cell renewal in the skin’s epidermis and dermis layers"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "A gentle, lightweight multi-level exfoliating solution that easily sinks into the skin and removes dead skin cells without drying the skin"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Hyaluronic Acid keeps skin hydrated and makes it look soft, plump and healthy"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with high quality ingredients sourced from leading suppliers like Chemours (USA), Merck (Germany), and Corbion (Netherlands)"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin Type: Dry/Normal, Oily/Combination, Acne-Prone"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Dullness, Roughness & Uneven Texture"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 20+ years of age"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "pH : 3.4 - 4.0"
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "AHAs (Lactic & Glycolic Acid) exfoliate dead skin cells from the skin's surface, while BHA unclogs pores and dissolves dead skin cells revealing fresh skin underneath."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "88% subjects felt skin was retextured and refined in 4 weeks"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "88% subjects saw reduction in pigmentation in 4 weeks"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects said skin felt soft & glowing skin in 8 weeks"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply 3-4 drops. Avoid contact with eyes. It should not be used on sensitive or compromised skin."
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. If you are new to direct acids, start with alternate days & gradually increase the frequency to once per day."
+    },
+    {
+      "id": "F20",
+      "section": "Lactic Acid",
+      "kind": "ingredient_note",
+      "text": "One of the mildest acids, Lactic Acid gently exfoliates the skin by penetrating the surface to break down and absorb dead skin cells"
+    },
+    {
+      "id": "F21",
+      "section": "Glycolic Acid",
+      "kind": "ingredient_note",
+      "text": "Most potent in the AHA family with the smallest molecular weight. Goes deep and exfoliates from within, revealing a fresh looking skin"
+    },
+    {
+      "id": "F22",
+      "section": "Salicylic Acid",
+      "kind": "ingredient_note",
+      "text": "BHA (Salicylic acid) unclog pores by breaking bonds formed by dead cells and flushing out skin debris & oils"
+    },
+    {
+      "id": "F23",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Aqua, Methylpropanediol, Lactic Acid, Dimethyl Isosorbide, Glycolic Acid, Ethoxydiglycol, Mandelic Acid, Sodium Hydroxide, 3-O-Ethyl Ascorbic Acid, Glycerin, Sodium Hyaluronate, Salicylic Acid, Pentylene Glycol, Phenoxyethanol, Pullulan, Ethylhexylglycerin, PEG/PPG-17/6 Copolymer, Xanthan Gum, Hydroxyethylcellulose, Sclerotium Gum, Curcuma Longa (Turmeric) Root Extract, Lecithin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F24",
+      "section": "Is Lactic acid good for skin?",
+      "kind": "faq",
+      "text": "When used in the right concentration, Lactic Acid provides ample benefits like even skin tone, improved texture, faded dark spots, banishes wrinkles, all of which result in brighter, smoother, and younger-looking skin. Lactic acid is clinically proven to boost collagen and promote the natural cell turnover process, revealing a glowing baby soft skin."
+    },
+    {
+      "id": "F25",
+      "section": "What is the recommended age for starting to use this exfoliator?",
+      "kind": "faq",
+      "text": "AHAs and BHAs are safe for teens and above when used in lower concentration. Teens with acne and other skin issues can use this exfoliator frequently. It is highly recommended for both males and females after their 20s when the natural defence of skin weakens and needs extra protection."
+    },
+    {
+      "id": "F26",
+      "section": "Does this product cause purging or breakouts?",
+      "kind": "faq",
+      "text": "Any active ingredient that promotes cell turnover can cause purging in certain people with sensitive skin. It is an entirely natural and normal response to active ingredients. Face acids (AHAs / BHAs) help the natural cell renewal process and hence can cause purging, which shall subside in 3-4 weeks. With all direct acids, a patch test is recommended."
+    },
+    {
+      "id": "F27",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    }
+  ],
+  "source": "page"
+}

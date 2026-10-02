@@ -1,0 +1,23 @@
+{
+  "ad_type": "product_hero",
+  "hook_angle": "category-first innovation callout",
+  "headline_text": "INDIA'S 1ST 2-IN-1 MOISTURIZER + SUNSCREEN",
+  "visual_layout": "clean product hero on solid light grey: tube beside carton with highlight bars and callout lines to features",
+  "claim_type": "product innovation / format novelty (dual-chamber pack)",
+  "proof_device": "none",
+  "cta_style": "shop now",
+  "color_palette": "light grey, white, lilac, yellow, black; minimal, clean, techy",
+  "persona": "product only",
+  "text_density": "medium",
+  "risk_notes": "relies on an unsourced 'India's 1st' claim; the ad's copy (glycolic acid toner) does not match the pictured product, so the tag follows the image",
+  "why_it_works": "Uses colour-coded highlight bars to make a two-in-one idea readable in a second, and callout lines turn the pack itself into the explainer. Minimal background keeps all attention on the novel format.",
+  "advertised_product": {
+    "name": "de construct 2-in-1 Formula Moisturizer with SPF",
+    "actives": [
+      {"name": "NMF", "pct": "3%"},
+      {"name": "SPF", "pct": "SPF 50 PA++++"}
+    ],
+    "format": "moisturizer",
+    "concerns": ["hydration", "sun protection", "oiliness"]
+  }
+}

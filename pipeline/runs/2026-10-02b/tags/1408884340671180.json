@@ -1,0 +1,22 @@
+{
+  "ad_type": "other",
+  "hook_angle": "range-picker / 'find your match' choice framing",
+  "headline_text": "THE SMARTER WAY TO FACE THE SUN",
+  "visual_layout": "sunlit top-down lifestyle flat-lay of four tubes in a beach basket, each tagged with a benefit label, plus a 'PICK YOUR SUNSCREEN' strip and a badge",
+  "claim_type": "benefit-per-variant menu (cooling, brightening, hydrating, oil-controlling) with a technology badge",
+  "proof_device": "none beyond '100% NEW-GEN UV FILTERS' badge",
+  "cta_style": "shop now",
+  "color_palette": "sunny yellow, cobalt blue, tan/brown, accent pink and orange; warm, summery, playful",
+  "persona": "product only (lifestyle props: basket, sunglasses, scarf)",
+  "text_density": "medium",
+  "risk_notes": "'100% new-gen UV filters' is a technology claim that needs backing; otherwise structure is easy to reuse",
+  "why_it_works": "Turns a range into a quick self-selection game, so every skin type sees 'their' product in one frame. The lifestyle flat-lay sets a beach/summer context that makes sunscreen feel aspirational rather than clinical.",
+  "advertised_product": {
+    "name": "foxtale Cool Shade Oil Control Water Gel Sunscreen",
+    "actives": [
+      {"name": "SPF", "pct": "SPF 50 PA++++"}
+    ],
+    "format": "sunscreen",
+    "concerns": ["sun protection", "oiliness", "tanning"]
+  }
+}
