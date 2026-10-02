@@ -11,7 +11,7 @@
   "stat": null,
   "callouts": [],
   "specs": [
-    {"label": "SPF obtained", "value": "56, in-vivo to ISO 24444:2019 by an independent lab", "cites": ["F14", "F12", "F16"]},
+    {"label": "SPF", "value": "50, broad spectrum", "cites": ["F2"]},
     {"label": "UVA protection", "value": "PA++++; meets EU SPF/UVA ratio recommendation (3:1)", "cites": ["F4", "F15"]},
     {"label": "UV filters", "value": "Tinosorb M, Uvinul A Plus and OMC", "cites": ["F3", "F4"]},
     {"label": "Finish", "value": "Natural, hydrated, shine-free, no white cast", "cites": ["F3"]},
@@ -19,17 +19,18 @@
   ],
   "range": [],
   "offer": null,
-  "footnote": "SPF tested in-vivo to ISO 24444:2019 by Advanced Science Laboratories, an independent third-party lab. Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP.",
+  "footnote": "Test result: SPF 56 obtained in-vivo (ISO 24444:2019) by Advanced Science Laboratories, an independent third-party lab. Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP.",
   "cta": "Shop now",
   "citations": {
     "headline": ["F2", "F4"],
     "subhead": [],
     "proof_points": [],
-    "footnote": ["F12", "F13", "F16"]
+    "footnote": ["F14", "F12", "F13", "F16"]
   },
   "layout_description": "Square 1080x1080. Top-left: headline in two lines, split at the comma so the two benefits read as a pair, echoing the source's two-column header without any 'v/s'. Left 50%, below the headline: a five-row spec table, label in small caps on the left of each row and the value in regular weight on the right, separated by thin hairlines, sitting on the faint graph-paper grid. Right 45%: real product photo of the Light Fluid SPF 50 Sunscreen tube, slightly tilted, on the grey plinth; the pack hero 'SPF 50' comes from the product photo itself. CTA 'Shop now' as a small pill button bottom-left. Footnote in small type along the bottom edge, full width. No black banner strip, no 'Why choose?' line.",
   "image_prompt": "Square 1080x1080 background-only image for a minimal skincare ad. Off-white backdrop with a very faint, fine, low-contrast light-grey graph-paper grid, soft natural daylight from the upper left, gentle diffuse shadows, clean and editorial but calm. On the right side, a low matte light-grey plinth on a plain surface; this right 45% of the frame stays clear and evenly lit, with empty space on the plinth reserved for a product photo added later. The left 50% stays calm and low-detail, only the faint grid, reserved as empty space for copy and a spec table. No other props. Palette: off-white, light grey, a small touch of muted mustard in the plinth's shadow edge, soft charcoal. No product, no tube, no bottle, no packaging, no text, no letters, no numbers, no logos, no banners, no badges, no people, no faces, no skin, no hands.",
   "needs_real_photography": false,
   "photography_needed": "",
-  "adaptation_notes": "Kept: the trade-off-resolved hook (two benefits shoppers usually trade off, held by one product), the editorial graph-paper backdrop, the tilted tube on a grey plinth, the clean white / grey / mustard / black palette (softened) and the Shop now CTA. Rebuilt as a spec card of Minimalist's own tested facts: in-vivo SPF 56 to ISO 24444:2019, PA++++ and the EU SPF/UVA ratio, named UV filters, finish, and water resistance with the reapplication advice. Dropped: the sweat-resistance wording from F4 (sunscreens can only claim tested, specific protection), replaced in the headline by the labelled broad-spectrum SPF 50 (F2). Dropped: the 'European v/s Korean sunscreens' face-off and 'Why choose? Get both' line, because comparing against other brands or whole categories without like-for-like data isn't allowed (ASCI 4.1). Dropped: the 'India's 1st' first-to-market claim (unsourced). Dropped: blue-light protection, because it is only described for one filter in an ingredient note, not as a product benefit. Also left out: the 'dermatologist-approved' and 'US FDA-approved labs' phrasing, to avoid implied endorsement. No competitor wording reused."
+  "adaptation_notes": "Kept: the trade-off-resolved hook (two benefits shoppers usually trade off, held by one product), the editorial graph-paper backdrop, the tilted tube on a grey plinth, the clean white / grey / mustard / black palette (softened) and the Shop now CTA. Rebuilt as a spec card of Minimalist's own facts: the labelled broad-spectrum SPF 50 (the in-vivo SPF 56 to ISO 24444:2019 sits in the footnote as the test result only, per the lab-results house rule), PA++++ and the EU SPF/UVA ratio, named UV filters, finish, and water resistance with the reapplication advice. Dropped: the sweat-resistance wording from F4 (sunscreens can only claim tested, specific protection), replaced in the headline by the labelled broad-spectrum SPF 50 (F2). Dropped: the 'European v/s Korean sunscreens' face-off and 'Why choose? Get both' line, because comparing against other brands or whole categories without like-for-like data isn't allowed (ASCI 4.1). Dropped: the 'India's 1st' first-to-market claim (unsourced). Dropped: blue-light protection, because it is only described for one filter in an ingredient note, not as a product benefit. Also left out: the 'dermatologist-approved' and 'US FDA-approved labs' phrasing, to avoid implied endorsement. No competitor wording reused.",
+  "product_handle": "light-fluid-spf-50-sunscreen"
 }
