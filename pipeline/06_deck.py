@@ -56,7 +56,7 @@ order = {"approved_for_image_step": 0, "flagged": 1, "blocked": 2}
 for b in sorted(briefs, key=lambda b: order[b["status"]]):
     s = prs.slides.add_slide(blank)
     label, col = STATUS[b["status"]]
-    box(s, 0.5, 0.3, 9.5, 0.6, [f"{b['ad_type'].replace('_', ' ').title()} - {b['product_title']}"], size=24, bold_first=True)
+    box(s, 0.5, 0.3, 9.5, 0.6, [f"{(b.get('layout') or 'hero').replace('_', ' ').title()} ({b['ad_type'].replace('_', ' ')}) - {b['product_title']}"], size=22, bold_first=True)
     box(s, 10.0, 0.35, 3.0, 0.5, [label], size=14, bold_first=True, color=col)
 
     src = pool.get(b["source_ad_id"], {})
@@ -69,12 +69,25 @@ for b in sorted(briefs, key=lambda b: order[b["status"]]):
         f"Kept/dropped: {b.get('adaptation_notes', '')}",
     ], size=11, color=RGBColor(0x66, 0x66, 0x66))
 
+    fmt = b.get("layout") or "hero"
+    body = [f"- {p}" for p in b.get("proof_points") or []]
+    body += [f"- {a.get('pct', '')} {a.get('name', '')}: {a.get('line', '')}".replace("-  ", "- ") for a in b.get("actives") or []]
+    body += [f"- {s.get('label', '')}: {s.get('line', '')} [{s.get('product_handle', '')}]" for s in b.get("steps") or []]
+    if b.get("stat"):
+        body.append(f"- STAT {b['stat'].get('value', '')} {b['stat'].get('label', '')}")
+    body += [f"- {c.get('text', '')}" for c in b.get("callouts") or []]
+    body += [f"- {r.get('label', '')}: {r.get('value', '')}" for r in b.get("specs") or []]
+    body += [f"- {r.get('label', '')} [{r.get('product_handle', '')}]" for r in b.get("range") or []]
+    if b.get("offer"):
+        o = b["offer"]
+        body.append(f"- OFFER {o.get('line', '')} | {o.get('condition', '')} | till {o.get('valid_till', '')} (marketer to confirm)")
     lines = [
-        f"Headline: {b['headline']}",
-        f"Subhead: {b['subhead']}",
-        *[f"- {p}" for p in b.get("proof_points", [])],
+        f"Format: {fmt}",
+        f"Headline: {b.get('headline', '')}",
+        *([f"Subhead: {b['subhead']}"] if b.get("subhead") else []),
+        *body,
         f"Footnote: {b.get('footnote', '')}",
-        f"CTA: {b['cta']}",
+        f"CTA: {b.get('cta', '')}",
         "",
         f"Layout: {b.get('layout_description', '')}",
     ]

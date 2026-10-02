@@ -8,7 +8,7 @@
 // Reads briefs_draft/<id>.json + products/. Writes briefs_final.json. Never rewrites a brief.
 import fs from "node:fs";
 import path from "node:path";
-import { checkCopy, adFromCopy, specFromCopy } from "../lib/generate.js";
+import { checkBrief, adFromBrief, specFromBrief } from "../lib/brief_check.js";
 import { layoutProblems } from "../public/render.js";
 import { checkImagePrompt } from "../lib/image_prompt_check.js";
 import { scoreAd } from "../lib/score.js";
@@ -25,12 +25,14 @@ const out = [];
 for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   const brief = JSON.parse(fs.readFileSync(path.join(draftDir, f), "utf8"));
   const m = match.get(brief.source_ad_id);
-  const sheet = JSON.parse(fs.readFileSync(path.join(runDir, "products", `${m.product_handle}.json`), "utf8"));
-  const copy = { headline: brief.headline, subhead: brief.subhead, proof_points: brief.proof_points || [], footnote: brief.footnote || "", cta: brief.cta, citations: brief.citations };
-  const ad = adFromCopy(copy, sheet);
+  // All product sheets in the run (main + companions), keyed by handle, for cross-product citations.
+  const sheets = Object.fromEntries(fs.readdirSync(path.join(runDir, "products")).map((f) => [f.replace(/\.json$/, ""), JSON.parse(fs.readFileSync(path.join(runDir, "products", f), "utf8"))]));
+  const sheet = sheets[m.product_handle];
+  const ad = adFromBrief(brief, sheets, m.product_handle);
 
-  const copyProblems = checkCopy(copy, sheet);
-  const layout = layoutProblems(specFromCopy(copy, sheet));
+  const copyProblems = checkBrief(brief, sheets, m.product_handle);
+  // Missing real photos is expected at this stage for before/after: it blocks EXPORT (stage 8), not the brief.
+  const layout = layoutProblems({ ...specFromBrief(brief, sheets, m.product_handle), imageHref: "x" }).filter((p) => !/no real study photos/i.test(p));
   const img = checkImagePrompt(brief.image_prompt);
 
   // Save the exact judge prompt so a stand-in can produce judge/<id>.json when there's no API key.
@@ -61,7 +63,7 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
     coverage: report.coverage,
     findings: report.findings.map((x) => ({ severity: x.severity, rule_id: x.rule_id, span: x.span, message: x.message, fix: x.fix, layer: x.layer, note: x.note })),
   });
-  console.log(`${brief.source_ad_id.padEnd(22)} ${status.padEnd(24)} ${report.coverage.model ? "rules+model" : "rules only"}  ${hard.length ? hard[0] : report.findings.filter((x) => x.severity !== "advisory").map((x) => x.rule_id).join(",")}`);
+  console.log(`${brief.source_ad_id.padEnd(22)} ${(brief.layout || "hero").padEnd(12)} ${status.padEnd(24)} ${report.coverage.model ? "rules+model" : "rules only"}  ${hard.length ? hard[0] : report.findings.filter((x) => x.severity !== "advisory").map((x) => x.rule_id).join(",")}`);
 }
 fs.writeFileSync(path.join(runDir, "briefs_final.json"), JSON.stringify(out, null, 2));
 const n = (s) => out.filter((b) => b.status === s).length;
