@@ -36,6 +36,7 @@ test("brand-safe lines pass the policy rules", () => {
     "A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine.",
     "Fragrance free. Non-comedogenic. pH: 5.5 - 6.5",
     "Buy any 2 products and get a freebie of your choice",
+    "3rd product free on buying 2.", // pilot 2026-10-03: "buying" wasn't recognised as the condition
     "Use sunscreen during the day for best results",
     "The product has been evaluated for safety through patch testing under the supervision of a Dermatologist.",
   ]) {

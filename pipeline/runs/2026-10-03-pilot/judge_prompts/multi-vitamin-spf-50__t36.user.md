@@ -20,7 +20,7 @@ Shop now
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. CLM-16 in footnote: "free"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] SPF 50 Sunscreen

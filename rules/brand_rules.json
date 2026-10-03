@@ -525,7 +525,7 @@
         "(?<!(fragrance|sulfate|sulphate|paraben|alcohol|oil|cruelty|silicone|cast|gluten|soap|essential oil|residue|sugar|toxin|chemical|nasties|acne|tension|hassle|stress|worry|comment|type|dm|reply)[- ])(?<![\\w]-)\\bfree\\b(?![- ]?(from|of)\\b)(?![- ](shipping|delivery|radicals?))"
       ],
       "unless_same_sentence": [
-        "\\b(buy|purchase|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"
+        "\\b(buy|buying|bought|purchas\\w*|order|orders|above|when you|with any|on (a )?purchase|cart|coupon|min(imum)?)\\b"
       ],
       "message": "The condition for the free item has to be in the same line or clearly next to it.",
       "fix": "Put the condition right next to 'free': 'Free bottle when you buy any 2 products'.",
