@@ -14,8 +14,8 @@ const rows = [];
 for (const b of briefs) {
   // One description per creative; the 4:5 / 9:16 PNGs are copied alongside and listed under "Placements".
   const all = fs.existsSync(path.join(runDir, "finals")) ? fs.readdirSync(path.join(runDir, "finals")).filter((f) => f.startsWith(b.source_ad_id + ".") || f.startsWith(b.source_ad_id + "_v")) : [];
-  const pngs = all.filter((f) => /\.png$/.test(f) && !/\.(4x5|9x16)\.png$/.test(f));
-  const extra = all.filter((f) => /\.(4x5|9x16)\.png$/.test(f));
+  const pngs = all.filter((f) => /\.png$/.test(f) && !/\.(4x5|9x16|[a-z]{2})\.png$/.test(f));
+  const extra = all.filter((f) => /\.(4x5|9x16|[a-z]{2})\.png$/.test(f)); // placements + language versions
   if (!pngs.length) continue;
   const m = match.get(b.source_ad_id) || {};
   const dest = path.join("ad_library", b.product_handle, slug(m.template_name || b.layout));

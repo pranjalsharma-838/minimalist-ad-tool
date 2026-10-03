@@ -64,6 +64,21 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
     const S = 1000, x0 = 40, y0 = (H - S) / 2;
     fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${tag}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="${H}" viewBox="0 0 1080 ${H}"><defs><filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="40"/></filter><filter id="card" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.22"/></filter><clipPath id="r"><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28"/></clipPath></defs><rect width="1080" height="${H}" fill="#EDEAE4"/><image href="${spec.backgroundHref}" x="-120" y="-120" width="1320" height="${H + 240}" preserveAspectRatio="xMidYMid slice" filter="url(#soft)"/><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28" fill="#fff" filter="url(#card)"/><image href="data:image/svg+xml;base64,${sq64}" x="${x0}" y="${y0}" width="${S}" height="${S}" clip-path="url(#r)"/></svg>`);
   }
+  // Language versions (add-on g): compose only versions whose 05c check passed. Each English line on the ad is
+  // swapped for its translated line wherever it appears in the brief (same order as adFromBrief); strings that
+  // aren't a whole line (product names, computed hero line) stay as they are — Latin script by design.
+  const checks = fs.existsSync(path.join(runDir, "translations", "check_summary.json")) ? JSON.parse(fs.readFileSync(path.join(runDir, "translations", "check_summary.json"), "utf8")) : [];
+  for (const c of checks.filter((x) => x.id === b.source_ad_id && x.verdict === "pass")) {
+    const tr = JSON.parse(fs.readFileSync(path.join(runDir, "translations", `${c.id}.${c.lang}.json`), "utf8")).lines;
+    const enAd = adFromBrief(b, sheets, main), map = new Map();
+    for (const f of ["headline", "footnote", "cta", "primary_text"]) if (enAd[f] && tr[f]?.text) map.set(enAd[f].trim(), tr[f].text.trim());
+    const enLines = (enAd.on_image_text || "").split("\n"), trLines = (tr.on_image_text?.text || "").split("\n");
+    if (enLines.length === trLines.length) enLines.forEach((l, i) => map.set(l.trim(), trLines[i].trim()));
+    const swap = (v) => (typeof v === "string" ? map.get(v.trim()) ?? v : Array.isArray(v) ? v.map(swap) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, swap(x)])) : v);
+    const lspec = { ...swap({ ...spec, imageHref: undefined, backgroundHref: undefined, cutoutHrefs: undefined, steps: undefined, range: undefined }), imageHref: spec.imageHref, backgroundHref: spec.backgroundHref, cutoutHrefs: spec.cutoutHrefs, shadowDx: spec.shadowDx, steps: spec.steps.map((s) => ({ ...swap(s), imageHref: s.imageHref })), range: spec.range.map((s) => ({ ...swap(s), imageHref: s.imageHref })) };
+    fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${c.lang}.svg`), renderAdSvg(lspec));
+    console.log(`  + ${c.lang} version composed${enLines.length !== trLines.length ? " (WARNING: on-image line count differs; only whole-field swaps applied)" : ""}`);
+  }
   const layoutIssues = layoutProblems(spec);
   const extraSheets = [...(b.steps || []), ...(b.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheets[main]);
   const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });
