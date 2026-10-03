@@ -29,10 +29,15 @@ User reviews on 2026-10-04:
   - diagram regenerated.
 - **Transcript:** the exporter dropped 40 mid-task user messages (queued_command attachments); fixed in `1ffd766`. Grammar corrections added (104 total); START_HERE +5 agent mistakes, +4 pushbacks.
 - **Commits:** `ab5f8f2` (code), `1ffd766` (transcript fix), then outputs + docs.
-- **Next:**
-  1. rebuild the clean GitHub copy (remove `Desktop\minimalist-ad-tool-github` first, in a separate command), then fast-export → `sanitize_stream.mjs` → fast-import, verify 0 client names / 0 emails, push (the user approves GCM);
-  2. DeepSeek follow-up (tab 1; read only its new reply);
-  3. memory.
+- **GitHub (2026-10-04):**
+  - clean history rebuilt (deterministic: the published part reproduces as `64c6419`); 3 new commits `b247867`, `967dc48`, `c8831fe` fast-forwarded into `Desktop\minimalist-ad-tool-github`, remote origin set;
+  - scanned 3.8 GB: 0 client names, 0 internal emails;
+  - **push not done:** this shell can't show the GitHub sign-in. The user runs from their own terminal (stays under GitHub's 2 GB per-push limit):
+    `git push origin 27089c2:refs/heads/main`
+    `git push origin 64c6419:refs/heads/main`
+    `git push -u origin main`
+- **DeepSeek:** follow-up sent 2026-10-04 (tab 1, chat "Assignment Review Request"); read only its new reply.
+- **Memory:** project + 2 feedback files updated/added (statics only; minimal design, models Severe).
 
 ## FINAL STATE 2026-10-03 ~23:45 (superseded by the 2026-10-04 section above)
 - **External review (DeepSeek, "Shortlist") applied to the essentials:**
