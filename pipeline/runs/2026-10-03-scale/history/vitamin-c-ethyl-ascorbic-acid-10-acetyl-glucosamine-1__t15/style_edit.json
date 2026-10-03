@@ -1,0 +1,103 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "Morning or night: 2-3 drops after cleansing & toning",
+  "subhead": "Press in with a circular motion and let skin absorb it.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "text": "1% Acetyl Glucosamine for skin moisturization",
+      "cites": [
+        "F6"
+      ]
+    },
+    {
+      "text": "PHA gently removes dead skin cells for a glow",
+      "cites": [
+        "F7"
+      ]
+    },
+    {
+      "text": "Formulated in Centella Water to soothe",
+      "cites": [
+        "F8"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F14",
+      "F15"
+    ],
+    "subhead": [
+      "F14"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Real pack shot centred right; four short callout labels connected by thin lines to the pack, two above and two below. Headline top-left, subhead beneath. Footnote bottom, CTA bottom-right.",
+  "image_prompt": "Empty background scene only: a soft off-white surface with a gentle warm sunrise glow along the top edge and a faint pale-yellow tint, very low contrast. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: central pack with wired callout labels (Deconstruct), four-label arrangement (Re'equil), ingredient-to-benefit pairing (The Derma Co, reworded). Dropped: skin-concern thumbnails and named problems (fear framing and unsupported 'solves'), best-seller strip, '2 problems 2 actives'. Callouts name ingredients and what the page says they do.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "four-label callout arrangement around the pack"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "callout lines wired to a central pack"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "ingredient-to-benefit pairing text"
+    }
+  ],
+  "angle": "situation",
+  "hook_type": "situation",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

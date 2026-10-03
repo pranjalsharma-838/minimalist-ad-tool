@@ -13,16 +13,23 @@
 | Placements | 1:1 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15.png · 4:5 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15.4x5.png · 9:16 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |
 
 ## Copy on the creative
 - Headline: Morning or night: 2-3 drops after cleansing & toning
-- Subhead: Press in with a circular motion and let skin absorb it.
-- Footnote: 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
-- CTA: See ingredients
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Ethyl Ascorbic Acid, 86% pure Vitamin C content. Press in with a circular motion and let skin absorb it. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02 PHA gently removes dead skin cells for a glow Formulated in Centella Water to soothe
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- callouts.0.text: "Ethyl Ascorbic Acid, 86% pure Vitamin C content" → "Ethyl Ascorbic Acid" ("86% pure Vitamin C content" next to a 10% serum reads as the serum's strength (flagged as misleading by ambiguity by the independent eval reviewer, ASCI 1.4); the full line moves to the caption)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +40,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of a soft off-white #F4F2EE surface with a faint pale-yellow #F5EFD8 tint fading downward from the top edge, evoking early morning light, very low contrast. Lighting: soft daylight from the upper left at 5600K at 5000K, no hard shadows. Background: matte, smooth gradient, no objects. Style: spec sheet evenness, single light source. The top band, about 20% of the height, is intentionally empty, calm and low-detail for headline copy added later. The whole middle area, from 21% to 66% of the height and across 92% of the width, is intentionally empty, an evenly lit open area reserved for a photo and side notes placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

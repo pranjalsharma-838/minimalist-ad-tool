@@ -29,7 +29,7 @@ const get = (b, p) => p.split(".").reduce((o, k) => o?.[k], b);
 const set = (b, p, v) => { const ks = p.split("."); const last = ks.pop(); ks.reduce((o, k) => (o[k] ??= {}), b)[last] = v; };
 const ruleIds = (b, h) => new Set(runRules(adFromBrief(b, sheets, h), { sheet: sheets[h] }).filter((f) => f.severity !== "advisory").map((f) => f.rule_id));
 
-let applied = 0, refused = 0;
+let applied = 0, refused = 0, done = 0;
 for (const [id, e] of Object.entries(edits)) {
   const i = briefs.findIndex((b) => b.source_ad_id === id);
   if (i < 0) { console.log(`${id}: not in briefs_final — skipped`); continue; }
@@ -37,6 +37,8 @@ for (const [id, e] of Object.entries(edits)) {
   for (const [field, to] of Object.entries(e).filter(([k]) => k !== "why")) {
     const from = get(orig, field);
     if (typeof from !== "string") { why.push(`${field}: no such line`); continue; }
+    if (from === to) { log.done = true; continue; } // already applied on an earlier run of this script
+
     // Offer lines and footnotes may only be cut from their own words; other lines from anything the brief prints.
     const pool = new Set(toks(/^offer\.|^footnote$/.test(field) ? from : `${printed(orig)} ${sheets[h]?.title || ""}`));
     const extra = toks(to).filter((t) => !pool.has(t));
@@ -50,6 +52,7 @@ for (const [id, e] of Object.entries(edits)) {
   const rb = ruleIds(orig, h), newRules = [...ruleIds(b, h)].filter((r) => !rb.has(r));
   if (newRules.length) why.push(`new rule hit(s): ${newRules.join(", ")}`);
   const st = styleIssues(b);
+  if (!why.length && !log.length && log.done) { done++; continue; }
   if (why.length || !log.length) { refused++; console.log(`${id}: REFUSED — ${why.join(" · ") || "nothing to apply"}`); continue; }
   fs.mkdirSync(path.join(dir, "history", id), { recursive: true });
   fs.writeFileSync(path.join(dir, "history", id, "style_edit.json"), JSON.stringify(orig, null, 2));
@@ -59,4 +62,4 @@ for (const [id, e] of Object.entries(edits)) {
   console.log(`${id}: ${log.map((l) => `${l.field} "${l.from}" → "${l.to}"`).join("; ")} · ${st.within ? "within budget" : "STILL OVER: " + st.issues.join("; ")}`);
 }
 fs.writeFileSync(path.join(dir, "briefs_final.json"), JSON.stringify(briefs, null, 2));
-console.log(`${run}: ${applied} applied, ${refused} refused`);
+console.log(`${run}: ${applied} applied, ${refused} refused, ${done} already applied`);

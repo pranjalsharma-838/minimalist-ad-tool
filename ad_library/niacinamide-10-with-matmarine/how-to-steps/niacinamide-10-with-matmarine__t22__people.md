@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 niacinamide-10-with-matmarine__t22.png · 4:5 niacinamide-10-with-matmarine__t22.4x5.png · 9:16 niacinamide-10-with-matmarine__t22.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Cleanse. 2-3 drops. Let it absorb: AM & PM.
 
-- Footnote: AI illustrations of a routine, not results. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+- Footnote: AI illustrations of a routine, not results.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white tiled wall above a narrow stone vanity shelf, soft window light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+- AI frames prompt (a model: Severe): The same Indian woman in her mid 30s with deep-brown skin, her morning routine at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair tied up in a soft cloth band, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft window light from the upper left. Panel 1: she rinses her face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: her fingertips are pressed lightly against her cheek, as if pressing in a few drops, her other hand resting on the basin edge. Panel 3: both hands rest on the edge of the basin as she waits a moment, looking calmly towards the mirror. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life deep-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

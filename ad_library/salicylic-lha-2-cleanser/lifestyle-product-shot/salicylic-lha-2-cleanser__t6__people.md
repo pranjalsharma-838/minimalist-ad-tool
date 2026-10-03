@@ -12,20 +12,24 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-lha-2-cleanser__t6.png · 4:5 salicylic-lha-2-cleanser__t6.4x5.png · 9:16 salicylic-lha-2-cleanser__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
 | Run | 2026-10-03-people |
 
 ## Copy on the creative
-- Headline: Back from a run: a light lather on a wet face
-- Subhead: Pour into wet hands, rub into a light lather, massage in and rinse thoroughly.
-- BHA + LHA combined in 2% concentration
-- 2 very mild sulfate-free surfactants
-- Suitable for 15+ years of age
-- Footnote: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+- Headline: Back from a run: a light lather
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Back from a run: a light lather on a wet face. Pour into wet hands, rub into a light lather, massage in and rinse thoroughly. BHA + LHA combined in 2% concentration 2 very mild sulfate-free surfactants Suitable for 15+ years of age 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "Back from a run: a light lather on a wet face" → "Back from a run: a light lather" (headline 11 > 8 words; keeps the situation)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +37,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white hallway wall in soft morning daylight from the upper left, a pale wooden bench edge along the lower left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian man in his early 30s with deep-brown skin, back home after a morning run: he stands just inside the front door of a modest apartment, catching his breath, wearing a plain running t-shirt and shorts darkened with sweat, a small cotton towel over one shoulder, running shoes on the doormat behind him, a calm, satisfied expression. Soft morning daylight from the upper left through the open doorway, an off-white hallway wall, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

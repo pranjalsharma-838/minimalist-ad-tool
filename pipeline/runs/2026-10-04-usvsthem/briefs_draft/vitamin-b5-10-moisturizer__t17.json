@@ -1,0 +1,67 @@
+{
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t17",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "hook_type": "contrast",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column v/s comparison with one pack as the hero"
+    }
+  ],
+  "ai_label_required": false,
+  "headline": "10% Vitamin B5, stated up front",
+  "compare": {
+    "us": "Vitamin B5 10% Moisturizer",
+    "them": "Label without the %",
+    "cites": [
+      "F1"
+    ],
+    "rows": [
+      {
+        "label": "Strength of the active",
+        "us": "10%",
+        "them": "Not stated",
+        "cites": [
+          "F1"
+        ]
+      }
+    ]
+  },
+  "footnote": "Compared with a label that names the active but not its strength.",
+  "caption": "Vitamin B5 (Panthenol) at 10%, a very high concentration, for deep, oil-free moisturization. The strength is printed on the pack.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "headline": [
+      "F1"
+    ],
+    "caption": [
+      "F5",
+      "F1"
+    ],
+    "footnote": [
+      "F1"
+    ]
+  },
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The product page names no comparison for this product, so this is the TRANSPARENCY version of Us vs Them: what this pack states (the active's strength, F1) vs a label type that doesn't state it. 'Them' is a label type, never a brand; nothing says others hide anything. Dropped from the reference: 'India's 1st' (superlative, CLM-11), the claims list and the graph-paper look (house style is white). Risk High (comparison by implication): a reviewer confirms the basis before use."
+}

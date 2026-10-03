@@ -13,19 +13,20 @@
 | Placements | 1:1 multi-vitamin-spf-50__t4.png · 4:5 multi-vitamin-spf-50__t4.4x5.png · 9:16 multi-vitamin-spf-50__t4.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |
 
 ## Copy on the creative
 - Headline: Heading out? SPF 50, applied 15 minutes before
-- Subhead: Broad Spectrum SPF 50, PA++++, in a light moisturiser-meets-sunscreen texture.
-- Reapply with continued sun exposure, swimming or perspiring
-- 4 UV filters for UVA & UVB protection
-- Apply AM, every day
-- Footnote: 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Broad Spectrum SPF 50, PA++++, in a light moisturiser-meets-sunscreen texture. Reapply with continued sun exposure, swimming or perspiring 4 UV filters for UVA & UVB protection Apply AM, every day 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -36,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a top-down view of a pale blue #E5E9EA surface fading to off-white #F4F2EE, with a few small clear water droplets scattered only near the bottom edge. Lighting: bright soft daylight from the upper left at 5600K, droplet shadows falling to the lower right. Background: smooth matte surface, shallow depth. Style: spec sheet, flat and even. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

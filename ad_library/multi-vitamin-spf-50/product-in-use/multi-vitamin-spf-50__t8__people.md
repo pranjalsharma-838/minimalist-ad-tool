@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 multi-vitamin-spf-50__t8.png · 4:5 multi-vitamin-spf-50__t8.4x5.png · 9:16 multi-vitamin-spf-50__t8.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Apply generously and evenly on face and neck
-- Subhead: Use on a cleansed face, after your serums and moisturisers.
-- AM, every day
-- Reapply with continued sun exposure
-- Broad Spectrum SPF 50, PA++++
-- Footnote: 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Use on a cleansed face, after your serums and moisturisers. AM, every day Reapply with continued sun exposure Broad Spectrum SPF 50, PA++++ 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white balcony wall in bright, soft morning sunlight from the upper left, a faint pale-blue sky gradient along the top edge and one small leafy plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her late 20s with deep-brown skin, standing on a sunny apartment balcony in the morning just before stepping out, making a slow, even smoothing gesture across her cheek with her fingertips (nothing visible on her fingers or skin), her other hand relaxed at her side. She wears a light cotton kurta top and small stud earrings with her hair in a loose braid; behind her a painted balcony railing, a pot of tulsi and a softly out-of-focus neighbouring building. Bright, soft morning sunlight from the upper left, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

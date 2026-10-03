@@ -1,0 +1,27 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "vs Label without the %",
+      "severity": "fix",
+      "why": "The 'Them' is a hypothetical label, not a real product, and with 'Not stated' and 'Hide Nothing.' it implies brands that don't print a % are concealing something or selling a weaker serum, with no basis shown. The product's other key ingredients (Matmarine, Zinc, Acetyl Glucosamine) carry no strength in the ad or the product-page lines, so the comparison invites the same charge back.",
+      "fix": "Make it non-comparative: 'Niacinamide 10% Face Serum: the active and its strength, on the pack.' If the vs layout stays, get reviewer sign-off that 'Not stated' next to 'Hide Nothing.' doesn't imply other brands conceal anything."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "The header row compares the product with other brands' labels that omit the %, an implied comparison with 'regular' products."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'10% vs Not stated' is the comparative row."
+    }
+  ],
+  "tone_read": "Short, calm and concentration-led, with no hype, emoji or fear, which fits Minimalist's voice. But it says nothing about what Niacinamide does, and the 'vs Label without the %' / 'Hide Nothing.' pairing reads as a jab at other brands rather than the brand's usual education.",
+  "language_read": "The active and strength are exact and on-format ('Niacinamide 10%'), matching the pack name. 'Strength of the active' (singular) glosses over Matmarine, Zinc and Acetyl Glucosamine, which the page lists as key ingredients and the ad never mentions."
+}

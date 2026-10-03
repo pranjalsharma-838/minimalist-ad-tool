@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6.png · 4:5 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6.4x5.png · 9:16 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Before the metro: 2-3 drops after cleansing
-- Subhead: Tap on gently, then spread in a circular motion. AM & PM, every day.
-- Ethyl Ascorbic Acid, 86% pure Vitamin C content
-- Contains 1% Acetyl Glucosamine
-- Suitable for 16+ years of age
-- Footnote: 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Tap on gently, then spread in a circular motion. AM & PM, every day. Ethyl Ascorbic Acid, 86% pure Vitamin C content Contains 1% Acetyl Glucosamine Suitable for 16+ years of age 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a pale grey-white wall in soft cool morning daylight from the upper left with a faint warm-grey gradient towards the lower right, nothing else in frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her early 30s with light-brown skin, on a morning metro commute: she stands in a modern metro coach holding the overhead handrail with one hand, a plain canvas tote on her shoulder, wearing a simple cotton shirt and straight trousers with her hair tied back, looking calmly through the window as the station slides past, softly out-of-focus fellow commuters behind her. Soft daylight from the window at the upper left mixing with cool coach lighting, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and no signage, route maps or phone screens. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

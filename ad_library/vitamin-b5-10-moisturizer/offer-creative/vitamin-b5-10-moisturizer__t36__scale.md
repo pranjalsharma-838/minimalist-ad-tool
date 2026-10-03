@@ -13,16 +13,23 @@
 | Placements | 1:1 vitamin-b5-10-moisturizer__t36.png · 4:5 vitamin-b5-10-moisturizer__t36.4x5.png · 9:16 vitamin-b5-10-moisturizer__t36.9x16.png |
 | Language versions | none |
 | Risk level | **medium** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Fix before review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |
 
 ## Copy on the creative
-- Headline: 4.1 out of 5 stars from 899 reviews
-- Subhead: 50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02
-- Footnote: Offers as on beminimalist.co on 2026-10-02. T&C apply. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+- Offer: Buy 2, Get 3rd Free · The 3rd product is free when you buy 2. T&C apply.
+
+
+- Footnote: T&C apply.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+"Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free". 4.1 out of 5 stars from 899 reviews 50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02 Offers as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- offer.line: ""Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free"" → "Buy 2, Get 3rd Free" (two offers in one title (10 words); one offer per ad, the other moves to the caption)
 
 ## Facts cited (from the product page)
 ```json
@@ -34,8 +41,9 @@
 
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of a soft off-white #F4F2EE backdrop with two low flat colour blocks in pale blue-green #DCE6E4 along the bottom edge and a gentle condensation texture visible only near the bottom. Evokes a humid day. Lighting: even light from the upper left at 5600K, soft shadows falling to the lower right. Background: matte, low saturation. Style: spec sheet geometry, restrained. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

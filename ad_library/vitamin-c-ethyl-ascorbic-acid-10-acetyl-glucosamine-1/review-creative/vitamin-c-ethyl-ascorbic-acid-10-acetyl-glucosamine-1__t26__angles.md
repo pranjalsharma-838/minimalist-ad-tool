@@ -13,16 +13,23 @@
 | Placements | 1:1 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26.png · 4:5 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26.4x5.png · 9:16 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-angles |
 
 ## Copy on the creative
-- Headline: What customers say about Vitamin C 10% Face Serum
+- Headline: What customers say
 
-- Footnote: 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+What customers say about Vitamin C 10% Face Serum. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "What customers say about Vitamin C 10% Face Serum" → "What customers say" (quote + headline 24 > 20 words)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +40,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Empty background scene only: a pale warm-grey plaster wall with soft daylight from the upper left and a faint shadow from a window frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

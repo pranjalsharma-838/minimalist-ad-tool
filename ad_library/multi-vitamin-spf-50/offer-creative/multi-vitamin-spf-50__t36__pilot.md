@@ -13,17 +13,20 @@
 | Placements | 1:1 multi-vitamin-spf-50__t36.png · 4:5 multi-vitamin-spf-50__t36.4x5.png · 9:16 multi-vitamin-spf-50__t36.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 3 |
 | Run | 2026-10-03-pilot |
 
 ## Copy on the creative
-- Headline: Broad spectrum SPF 50, PA++++ for every day
-- Subhead: Light texture that spreads easily, with a natural, non-shiny look.
-- 50g: Rs. 359, MRP Rs. 399
-- Footnote: Offers as on beminimalist.co, 2026-10-02. T&C apply. 3rd product free on buying 2. Price shown for 50g.
-- CTA: Shop now
+- Offer: Buy 2, Get 3rd Free · The 3rd product is free when you buy 2. T&C apply.
+
+
+- Footnote: T&C apply. 3rd product free on buying 2.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Broad spectrum SPF 50, PA++++ for every day Light texture that spreads easily, with a natural, non-shiny look. 50g: Rs. 359, MRP Rs. 399 Offers as on beminimalist.co, 2026-10-02. Price shown for 50g.
 
 ## Facts cited (from the product page)
 ```json
@@ -34,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a seamless off-white #F4F2EE studio backdrop with three low smooth matte geometric blocks in off-white #F4F2EE and pale warm grey #E5E9EA, arranged at the far right edge at three different heights, each lower than 15% of the frame height, camera straight-on at table height. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The flat top of the highest block sits near the middle of the right zone as an empty open surface. Lighting: single soft key light from the upper left at 5600K, soft-edged shadows falling to the lower right of each block. Background: seamless off-white sweep, matte plaster-like blocks, very gentle gradient to pale grey at the lower edge. Style: clinical editorial, spec-sheet geometry, restrained neutral palette. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Brief said light from the left; set to upper-left to match the pack shot. Kept blocks neutral off-white/grey, no promo colour.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

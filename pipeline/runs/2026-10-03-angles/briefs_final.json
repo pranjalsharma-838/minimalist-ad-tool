@@ -4,7 +4,7 @@
     "layout": "timeline",
     "source_ad_id": "alpha-arbutin-2__t14",
     "product_title": "Alpha Arbutin 2% Face Serum",
-    "headline": "AM & PM routine: 2-3 drops of 2% Alpha Arbutin",
+    "headline": "AM & PM: 2-3 drops of 2% Alpha Arbutin",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -90,7 +90,9 @@
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -106,14 +108,23 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "AM & PM routine: 2-3 drops of 2% Alpha Arbutin.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "AM & PM routine: 2-3 drops of 2% Alpha Arbutin",
+        "to": "AM & PM: 2-3 drops of 2% Alpha Arbutin",
+        "why": "headline 9 > 8 words; dropped \"routine\""
+      }
+    ]
   },
   {
     "ad_type": "problem_solution",
     "layout": "callouts",
     "source_ad_id": "alpha-arbutin-2__t15",
     "product_title": "Alpha Arbutin 2% Face Serum",
-    "headline": "Questions on irritation? Our notes on Alpha Arbutin 2%",
+    "headline": "Our notes on Alpha Arbutin 2%",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -206,7 +217,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Questions on irritation? Our notes on Alpha Arbutin 2%.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Questions on irritation? Our notes on Alpha Arbutin 2%",
+        "to": "Our notes on Alpha Arbutin 2%",
+        "why": "headline 9 > 8 words; kept the calm half, the question moves to the caption"
+      }
+    ]
   },
   {
     "ad_type": "routine_regimen",
@@ -380,8 +400,10 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -490,7 +512,9 @@
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -513,7 +537,7 @@
     "layout": "review",
     "source_ad_id": "multi-vitamin-spf-50__t26",
     "product_title": "SPF 50 Sunscreen",
-    "headline": "What customers say about SPF 50 Sunscreen",
+    "headline": "What customers say",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -595,14 +619,23 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "What customers say about SPF 50 Sunscreen.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "What customers say about SPF 50 Sunscreen",
+        "to": "What customers say",
+        "why": "quote + headline 21 > 20 words; the pack names the product"
+      }
+    ]
   },
   {
     "ad_type": "before_after",
     "layout": "timeline",
     "source_ad_id": "niacinamide-10-with-matmarine__t14",
     "product_title": "Niacinamide 10% Face Serum",
-    "headline": "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide",
+    "headline": "AM & PM: 2-3 drops of 10% Niacinamide",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -687,7 +720,9 @@
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -703,7 +738,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide",
+        "to": "AM & PM: 2-3 drops of 10% Niacinamide",
+        "why": "headline 9 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "product_hero",
@@ -773,8 +817,10 @@
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1064,8 +1110,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1098,7 +1146,7 @@
     "layout": "timeline",
     "source_ad_id": "salicylic-lha-2-cleanser__t14",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "AM & PM routine: a 2% Salicylic Acid + LHA cleanser",
+    "headline": "AM & PM: a 2% Salicylic Acid + LHA cleanser",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -1183,7 +1231,9 @@
     "source_brand": "Chemist at Play",
     "status": "kept_with_warnings",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "NEEDS_CHANGES",
@@ -1208,7 +1258,16 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)",
+    "caption": "AM & PM routine: a 2% Salicylic Acid + LHA cleanser.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "AM & PM routine: a 2% Salicylic Acid + LHA cleanser",
+        "to": "AM & PM: a 2% Salicylic Acid + LHA cleanser",
+        "why": "headline 9 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "routine_regimen",
@@ -1318,7 +1377,7 @@
     "layout": "hero",
     "source_ad_id": "salicylic-lha-2-cleanser__t8",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "Morning wash: a light lather on a wet face",
+    "headline": "Morning wash: a light lather",
     "subhead": "Pour an appropriate quantity into wet hands, rub into a light lather, massage into face; rinse thoroughly.",
     "proof_points": [
       "AM & PM, every day",
@@ -1382,8 +1441,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1399,7 +1460,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Morning wash: a light lather on a wet face.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Morning wash: a light lather on a wet face",
+        "to": "Morning wash: a light lather",
+        "why": "headline 9 > 8 words; keeps the situation"
+      }
+    ]
   },
   {
     "ad_type": "product_hero",
@@ -1470,8 +1540,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1579,7 +1651,9 @@
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1793,7 +1867,7 @@
     "layout": "hero",
     "source_ad_id": "vitamin-b5-10-moisturizer__t8",
     "product_title": "Vitamin B5 10% Moisturizer",
-    "headline": "Last step of the routine: massage in until fully absorbed",
+    "headline": "Last step of the routine",
     "subhead": "Use after cleansing, toning and your serums, AM & PM, on face and neck.",
     "proof_points": [
       "10% Vitamin B5 (Panthenol) for oil-free moisturization",
@@ -1857,8 +1931,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1874,14 +1950,23 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Last step of the routine: massage in until fully absorbed.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Last step of the routine: massage in until fully absorbed",
+        "to": "Last step of the routine",
+        "why": "headline 10 > 8 words; keeps the routine angle"
+      }
+    ]
   },
   {
     "ad_type": "before_after",
     "layout": "timeline",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "AM & PM routine: 2-3 drops of 10% Vitamin C",
+    "headline": "AM & PM: 2-3 drops of 10% Vitamin C",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -1966,7 +2051,9 @@
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1982,14 +2069,23 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "AM & PM routine: 2-3 drops of 10% Vitamin C.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "AM & PM routine: 2-3 drops of 10% Vitamin C",
+        "to": "AM & PM: 2-3 drops of 10% Vitamin C",
+        "why": "headline 9 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "testimonial_ugc",
     "layout": "review",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "What customers say about Vitamin C 10% Face Serum",
+    "headline": "What customers say",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -2071,7 +2167,16 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "What customers say about Vitamin C 10% Face Serum.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "What customers say about Vitamin C 10% Face Serum",
+        "to": "What customers say",
+        "why": "quote + headline 24 > 20 words"
+      }
+    ]
   },
   {
     "ad_type": "ingredient_explainer",
@@ -2201,8 +2306,8 @@
     "specs": [],
     "range": [],
     "offer": {
-      "line": "Build Your Own Bundle — Save an additional up to 15% off",
-      "condition": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+      "line": "Build Your Own Bundle: up to 15% off",
+      "condition": "On beminimalist.co. T&C apply.",
       "valid_till": "",
       "cites": [
         "OFFER1"
@@ -2275,6 +2380,21 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off.",
+    "style_edits": [
+      {
+        "field": "offer.line",
+        "from": "Build Your Own Bundle — Save an additional up to 15% off",
+        "to": "Build Your Own Bundle: up to 15% off",
+        "why": "offer title 11 > 8 words; the full offer text and condition move to the caption"
+      },
+      {
+        "field": "offer.condition",
+        "from": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+        "to": "On beminimalist.co. T&C apply.",
+        "why": "offer title 11 > 8 words; the full offer text and condition move to the caption"
+      }
+    ]
   }
 ]

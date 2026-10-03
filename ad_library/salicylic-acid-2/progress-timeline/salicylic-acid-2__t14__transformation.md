@@ -20,9 +20,16 @@
 
 ## Copy on the creative
 - Headline: Your 4-week routine with 2% Salicylic Acid
-- Subhead: Apply 2-3 drops after cleansing & toning, in the PM.
-- Footnote: Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.
-- CTA: Learn more
+
+
+- Footnote: Consumer studies: 97% subjects felt less oily after 2 weeks; 90% noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results. Apply 2-3 drops after cleansing & toning, in the PM.
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- footnote: "Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results." → "Consumer studies: 97% subjects felt less oily after 2 weeks; 90% noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results." (footnote ran to 3 lines and the creative draws 2 (the AI note was being cut); same words, shorter)
 
 ## Facts cited (from the product page)
 ```json
@@ -30,6 +37,7 @@
 ```
 
 ## Remaining findings / warnings
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
 - [fix] CLM-08 "97% subjects": Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.
 - [fix] CLM-07 "after 2 weeks": Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.
 - [fix] CLM-08 "90% subjects": Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.
@@ -37,8 +45,9 @@
 
 
 ## Image
-- Background prompt: Background only: off-white tabletop and matte wall, soft light from the upper left. Keep the top 30% calm and empty for the headline copy and an empty clear space at the lower right for a product photo placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 - Real photography needed: Real, consented progress photos from the brand's own 4-week consumer study (same person, same light, Day 1 / Week 2 / Week 4) to replace the AI frames before any use.
 

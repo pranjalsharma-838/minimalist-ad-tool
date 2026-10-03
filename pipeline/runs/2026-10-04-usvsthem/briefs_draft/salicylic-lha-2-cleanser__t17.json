@@ -1,0 +1,76 @@
+{
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "source_ad_id": "salicylic-lha-2-cleanser__t17",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "hook_type": "contrast",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column v/s comparison with one pack as the hero"
+    }
+  ],
+  "ai_label_required": false,
+  "headline": "Two acids, multi-level cleansing",
+  "compare": {
+    "us": "BHA + LHA (this cleanser)",
+    "them": "Salicylic Acid alone",
+    "cites": [
+      "F3",
+      "F6"
+    ],
+    "rows": [
+      {
+        "label": "Acids",
+        "us": "BHA + LHA",
+        "them": "BHA",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "label": "Stays on the outer layer",
+        "us": "Yes (LHA)",
+        "them": "No",
+        "cites": [
+          "F6"
+        ]
+      }
+    ]
+  },
+  "footnote": "Per the product page: LHA, unlike Salicylic Acid, stays on the skin's outer layer for gentle exfoliation.",
+  "caption": "This daily cleanser combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration. LHA stays on the outer layer of skin and provides gentle exfoliation, and the combination provides multi-level cleansing.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "headline": [
+      "F6"
+    ],
+    "caption": [
+      "F3",
+      "F6"
+    ],
+    "footnote": [
+      "F6"
+    ]
+  },
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a two-row table, this cleanser vs salicylic acid alone: 'Acids' BHA + LHA vs BHA, 'Stays on the outer layer' Yes (LHA) vs No. Footnote states the basis; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header ('get both') and one pack as the hero. 'Them' is the ingredient used alone, which the page itself contrasts (F6: LHA, unlike Salicylic Acid, stays on the outer layer). Not a brand. 'Acne fighting' (F3) is not used (CLM-02). Risk High: comparison by format; a reviewer confirms."
+}

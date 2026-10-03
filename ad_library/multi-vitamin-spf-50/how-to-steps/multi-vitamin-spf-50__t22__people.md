@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 multi-vitamin-spf-50__t22.png · 4:5 multi-vitamin-spf-50__t22.4x5.png · 9:16 multi-vitamin-spf-50__t22.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Morning routine: cleanse, moisturise, then SPF 50
 
-- Footnote: AI illustrations, not results. Apply at least 15 minutes before sun exposure; reapply in case of continued sun exposure. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+- Footnote: AI illustrations, not results. Apply at least 15 minutes before sun exposure; reapply in case of continued sun exposure.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a pale off-white tiled bathroom wall above a narrow white shelf, soft morning daylight from a frosted window at the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+- AI frames prompt (a model: Severe): The same Indian man in his mid 20s with light-brown skin, his morning routine before work at his home bathroom basin, in all three panels wearing the same plain white cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning daylight from a frosted window at the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: both palms smooth lightly over his cheeks and jaw in slow strokes, nothing visible on his hands. Panel 3: his fingertips spread evenly across his cheeks and forehead and then down his neck, his gaze calm and ready for the day ahead. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

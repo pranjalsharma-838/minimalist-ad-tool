@@ -1,0 +1,90 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t8",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "Last step of the routine: massage in until fully absorbed",
+  "subhead": "Use after cleansing, toning and your serums, AM & PM, on face and neck.",
+  "proof_points": [
+    "10% Vitamin B5 (Panthenol) for oil-free moisturization",
+    "Boosted with Hyaluronic Acid & Betaine for multi-level hydration",
+    "Suitable for 16+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F13"
+    ],
+    "subhead": [
+      "F13",
+      "F14"
+    ],
+    "proof_points": [
+      [
+        "F5"
+      ],
+      [
+        "F7"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a bright off-white bathroom shelf wall with soft morning light from the upper left, a folded cream towel at the lower-left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: situation. The moment is the last step of the routine: F13 says to use it after cleansing, toning and all serums, and F14 gives AM & PM. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and skin-repair, barrier and irritation wording (F2/F15/F18), plus the pregnancy line (F12). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "situation",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "in-use moment as the visual cue"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "headline that names one use moment"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "A woman in her mid-30s with a light-brown skin tone seated at a vanity by a window in the morning, wearing a plain white robe with a hairband holding her hair back, massaging a small amount of white cream into her cheek and jaw with her fingertips; soft daylight from the upper left, off-white wall with a faint warm-grey gradient, a plain folded towel on the surface beside her, shallow depth of field, calm expression, natural unretouched skin, nothing implying a result, framed so she sits slightly left of centre with calm space to her right. No jar, tub, tube, bottle or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "vitamin-b5-10-moisturizer",
+  "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [
+    "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+  ],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

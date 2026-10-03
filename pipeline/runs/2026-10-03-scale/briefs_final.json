@@ -216,15 +216,10 @@
     },
     "layout_description": "Designer layout (format not built): left half is a real portrait slot of a consenting expert or customer at a desk or window, framed as a talking-head thumbnail with a name bar beneath it using [placeholders]. Right 45%: real pack shot. Headline top-left, rating badge (value, label, source) as a rounded chip overlapping the portrait corner. Footnote bottom. Marked AI-GENERATED - ILLUSTRATIVE if any synthetic person is used.",
     "image_prompt": "Empty background scene only: a calm indoor corner with an off-white wall, a simple wooden desk edge and soft window light, nothing on the desk. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
-    "needs_real_photography": true,
-    "photography_needed": "A real, consenting expert or customer portrait (named, role verified, written consent on file) in a plain desk or window setting. No AI-generated endorser, no skin close-ups, no result imagery.",
-    "adaptation_notes": "Kept: talking-head portrait slot (Plum), rating-and-count badge (Conscious Chemist), verified-attribution line (Dot & Key). Dropped: any named doctor or lab coat, any quote or endorsement text, review card (no consenting expert supplied), 'selling out' line. Situation: evening routine from F19/F20 only; no result implied.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Kept: talking-head portrait slot (Plum), rating-and-count badge (Conscious Chemist), verified-attribution line (Dot & Key). Dropped: any named doctor or lab coat, any quote or endorsement text, review card (no consenting expert supplied), 'selling out' line. Situation: evening routine from F19/F20 only; no result implied. Re-sourced 2026-10-04 (statics only, user rule): the expert-portrait element came only from a Plum video, so the AI portrait was removed (image kept on file as .unused-portrait-video-sourced.png); the ad is now a rating card with the pack, using the static sources only. No model is used, so the model rule no longer makes it Severe. Copy unchanged.",
     "blend_sources": [
-      {
-        "id": "1115173371246578",
-        "brand": "Plum",
-        "took": "expert talking-head portrait framing (placeholder only)"
-      },
       {
         "id": "621835826921394",
         "brand": "Dot & Key",
@@ -247,8 +242,8 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Plum",
     "status": "approved_for_image_step",
-    "risk_level": "severe",
-    "ai_label_required": true,
+    "risk_level": "low",
+    "ai_label_required": false,
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -274,7 +269,9 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "resourced_statics_only": true,
+    "person_prompt": ""
   },
   {
     "ad_type": "product_hero",
@@ -346,7 +343,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -462,8 +461,8 @@
     "specs": [],
     "range": [],
     "offer": {
-      "line": "Build Your Own Bundle — Save an additional up to 15% off",
-      "condition": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+      "line": "Build Your Own Bundle: up to 15% off",
+      "condition": "On beminimalist.co. T&C apply.",
       "valid_till": ""
     },
     "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
@@ -529,7 +528,22 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off.",
+    "style_edits": [
+      {
+        "field": "offer.line",
+        "from": "Build Your Own Bundle — Save an additional up to 15% off",
+        "to": "Build Your Own Bundle: up to 15% off",
+        "why": "offer title 11 > 8 words"
+      },
+      {
+        "field": "offer.condition",
+        "from": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+        "to": "On beminimalist.co. T&C apply.",
+        "why": "offer title 11 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "other",
@@ -784,7 +798,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -808,7 +824,7 @@
     "source_ad_id": "niacinamide-10-with-matmarine__t25",
     "product_title": "Niacinamide 10% Face Serum",
     "headline": "10% Niacinamide: what pure Vitamin B3 does",
-    "subhead": "Paired with Matmarine, which supports hydration.",
+    "subhead": "",
     "proof_points": [],
     "actives": [],
     "steps": [],
@@ -884,7 +900,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Paired with Matmarine, which supports hydration.",
+    "style_edits": [
+      {
+        "field": "subhead",
+        "from": "Paired with Matmarine, which supports hydration.",
+        "to": "",
+        "why": "22 > 20 words; the Matmarine line moves to the caption"
+      }
+    ]
   },
   {
     "ad_type": "ingredient_explainer",
@@ -1146,7 +1171,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1208,13 +1235,8 @@
     "image_prompt": "Empty background scene only: a softly blurred bedside table scene in warm off-white tones with a lamp glow in the far corner, very low detail. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
     "photography_needed": "A real creator's own screenshot or thumbnail (named, consenting, handle verified) showing the night routine steps, framed on the routine not on skin results.",
-    "adaptation_notes": "Kept: native video-thumbnail framing (Plum) and a casual confession-style caption box (Conscious Chemist). Dropped: unboxing 'X sent me' hook (no invented partner), makeup-industry claims, emoji. Routine is PM, alternate-day start, from F12/F13 only; no result implied.",
+    "adaptation_notes": "Kept: native video-thumbnail framing (Plum) and a casual confession-style caption box (Conscious Chemist). Dropped: unboxing 'X sent me' hook (no invented partner), makeup-industry claims, emoji. Routine is PM, alternate-day start, from F12/F13 only; no result implied. Re-sourced 2026-10-04 (statics only, user rule): the Plum video reference (video-thumbnail framing) was removed; that element is dropped and the static Conscious Chemist creator selfie (1390426132931304, 71d) supports the UGC look. Copy unchanged.",
     "blend_sources": [
-      {
-        "id": "1518480183631080",
-        "brand": "Plum",
-        "took": "native video thumbnail framing"
-      },
       {
         "id": "1390426132931304",
         "brand": "Conscious Chemist",
@@ -1229,7 +1251,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1263,7 +1287,8 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "resourced_statics_only": true
   },
   {
     "ad_type": "other",
@@ -1299,13 +1324,8 @@
     "image_prompt": "Empty background scene only: a quiet off-white bathroom shelf corner in soft morning light with a pale grey tile edge, nothing on the shelf. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
     "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims.",
-    "adaptation_notes": "Kept: creator talking-head slot with finger-raise framing (Plum) and an insider-style caption box (Conscious Chemist). Dropped: makeup-industry confession, 'oily skin changed behaviour' question (implies a result), emoji. Rating verbatim; no review quoted because none supports the headline cleanly.",
+    "adaptation_notes": "Kept: creator talking-head slot with finger-raise framing (Plum) and an insider-style caption box (Conscious Chemist). Dropped: makeup-industry confession, 'oily skin changed behaviour' question (implies a result), emoji. Rating verbatim; no review quoted because none supports the headline cleanly. Re-sourced 2026-10-04 (statics only, user rule): the Plum video reference was removed; the creator-selfie framing is supported by the static Conscious Chemist creator selfie (1390426132931304, 71d), already a source. Copy unchanged.",
     "blend_sources": [
-      {
-        "id": "1415802417140754",
-        "brand": "Plum",
-        "took": "creator talking-head frame with a caption pill"
-      },
       {
         "id": "1390426132931304",
         "brand": "Conscious Chemist",
@@ -1320,7 +1340,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1353,7 +1375,8 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "resourced_statics_only": true
   },
   {
     "ad_type": "product_hero",
@@ -1451,7 +1474,7 @@
     "layout": "hero",
     "source_ad_id": "salicylic-lha-2-cleanser__t1",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "2% Salicylic Acid + LHA in a daily face cleanser",
+    "headline": "A daily face cleanser",
     "subhead": "BHA + LHA give deep cleansing, pore decongestion and a less oily look without drying out the skin.",
     "proof_points": [
       "2 mild sulfate-free surfactants, no stripping of skin lipids",
@@ -1536,7 +1559,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "2% Salicylic Acid + LHA in a daily face cleanser.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "2% Salicylic Acid + LHA in a daily face cleanser",
+        "to": "A daily face cleanser",
+        "why": "headline 9 > 8 words; the product name line under the title carries 2% Salicylic Acid + LHA"
+      }
+    ]
   },
   {
     "ad_type": "product_hero",
@@ -1943,7 +1975,7 @@
     "specs": [],
     "range": [],
     "offer": {
-      "line": "\"Upto 33% OFF + Freebies\" and \"Buy 2, Get 3rd Free\"",
+      "line": "Buy 2, Get 3rd Free",
       "condition": "The 3rd product is free when you buy 2. T&C apply.",
       "valid_till": ""
     },
@@ -2018,7 +2050,16 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)",
+    "caption": "\"Upto 33% OFF + Freebies\" and \"Buy 2, Get 3rd Free\".",
+    "style_edits": [
+      {
+        "field": "offer.line",
+        "from": "\"Upto 33% OFF + Freebies\" and \"Buy 2, Get 3rd Free\"",
+        "to": "Buy 2, Get 3rd Free",
+        "why": "two offers in one title (10 words); one offer per ad, the other moves to the caption"
+      }
+    ]
   },
   {
     "ad_type": "other",
@@ -2209,7 +2250,9 @@
     "status": "approved_for_image_step",
     "risk_level": "severe",
     "ai_label_required": true,
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -2232,7 +2275,7 @@
     "layout": "hero",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "10% Vitamin C, boosted with PHA suited to sensitive skin",
+    "headline": "10% Vitamin C, boosted with PHA",
     "subhead": "Also contains 1% Acetyl Glucosamine for skin moisturization.",
     "proof_points": [
       "Ethyl Ascorbic Acid with 86% pure Vitamin C content",
@@ -2317,7 +2360,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "10% Vitamin C, boosted with PHA suited to sensitive skin.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "10% Vitamin C, boosted with PHA suited to sensitive skin",
+        "to": "10% Vitamin C, boosted with PHA",
+        "why": "headline 10 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "problem_solution",
@@ -2332,7 +2384,7 @@
     "stat": null,
     "callouts": [
       {
-        "text": "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+        "text": "Ethyl Ascorbic Acid",
         "cites": [
           "F5"
         ]
@@ -2420,14 +2472,23 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Ethyl Ascorbic Acid, 86% pure Vitamin C content.",
+    "style_edits": [
+      {
+        "field": "callouts.0.text",
+        "from": "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+        "to": "Ethyl Ascorbic Acid",
+        "why": "\"86% pure Vitamin C content\" next to a 10% serum reads as the serum's strength (flagged as misleading by ambiguity by the independent eval reviewer, ASCI 1.4); the full line moves to the caption"
+      }
+    ]
   },
   {
     "ad_type": "testimonial_ugc",
     "layout": "socialproof",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "Tap in 2-3 drops, spread evenly, let skin absorb",
+    "headline": "Tap in 2-3 drops",
     "subhead": "Ethyl Ascorbic Acid formulated in Centella Water, for AM and PM use.",
     "proof_points": [],
     "actives": [],
@@ -2504,7 +2565,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Tap in 2-3 drops, spread evenly, let skin absorb.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Tap in 2-3 drops, spread evenly, let skin absorb",
+        "to": "Tap in 2-3 drops",
+        "why": "headline 9 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "other",

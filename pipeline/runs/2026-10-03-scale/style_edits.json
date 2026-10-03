@@ -1,0 +1,31 @@
+{
+    "multi-vitamin-spf-50__t36":  {
+                                      "offer.line":  "Build Your Own Bundle: up to 15% off",
+                                      "offer.condition":  "On beminimalist.co. T\u0026C apply.",
+                                      "why":  "offer title 11 \u003e 8 words"
+                                  },
+    "niacinamide-10-with-matmarine__t25":  {
+                                               "subhead":  "",
+                                               "why":  "22 \u003e 20 words; the Matmarine line moves to the caption"
+                                           },
+    "salicylic-lha-2-cleanser__t1":  {
+                                         "headline":  "A daily face cleanser",
+                                         "why":  "headline 9 \u003e 8 words; the product name line under the title carries 2% Salicylic Acid + LHA"
+                                     },
+    "vitamin-b5-10-moisturizer__t36":  {
+                                           "offer.line":  "Buy 2, Get 3rd Free",
+                                           "why":  "two offers in one title (10 words); one offer per ad, the other moves to the caption"
+                                       },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1":  {
+                                                                      "headline":  "10% Vitamin C, boosted with PHA",
+                                                                      "why":  "headline 10 \u003e 8 words"
+                                                                  },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28":  {
+                                                                       "headline":  "Tap in 2-3 drops",
+                                                                       "why":  "headline 9 \u003e 8 words"
+                                                                   },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15":  {
+                                                                       "callouts.0.text":  "Ethyl Ascorbic Acid",
+                                                                       "why":  "\"86% pure Vitamin C content\" next to a 10% serum reads as the serum\u0027s strength (flagged as misleading by ambiguity by the independent eval reviewer, ASCI 1.4); the full line moves to the caption"
+                                                                   }
+}

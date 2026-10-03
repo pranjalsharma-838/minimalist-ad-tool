@@ -1,6 +1,40 @@
 # CHECKPOINT: Minimalist Ad Desk
 
-## FINAL STATE 2026-10-03 ~23:45 (latest; supersedes the sections below)
+## 2026-10-04 STYLE OVERHAUL (latest; supersedes the sections below)
+User reviews on 2026-10-04:
+- **"are we making sure brand tone and style is followed"** → added `scripts/style_check.js`. On-image text budget: ≤ 20 words (30 for lists), headline ≤ 8 words (study-quote headlines exempt), footnote ≤ 2 lines.
+- **"show me minimalist top runners"** → gallery at `research/minimalist_top_ads/index.html`.
+- **"us vs them is missing, hide nothing tg is missing"** →
+  - new layout `usvsthem` (template #17, claim risk High) and run `2026-10-04-usvsthem` (7 ads);
+  - the independent judge flagged all 7: 1 block (Alpha Arbutin: "melanin reduction" reads as skin lightening) and 6 fix. All kept with warnings;
+  - CLM-12 extended (vs / unlike X / higher than); eval unchanged (88%);
+  - "Hide Nothing." sign-off drawn under the wordmark (`SIGN_OFF` in `render.js`, scored in `adFromBrief`).
+- **"from meta we were supposed to scrape statics and not videos, for competitor as well as ours"** →
+  - video ads are ignored in `archetype.js`, `00_product_run.js` and `build_trends.js` (6 Plum video winners);
+  - Minimalist's own reference re-scraped: 8 statics / 11 images (52–98 days); 10 video covers moved to `excluded_video_covers/`; style guide rewritten from statics. Finding: the statics show hands only, no faces;
+  - 3 scale briefs re-sourced (t30, t31 keep their creator image; t44 portrait dropped, now low risk).
+- **"much cleaner than ours … whenever models are used the risk is severe, keep those … design should be minimalistic"** →
+  - renderer redesigned: white canvas (or the pack photo's studio grey `#E5E9EA` for white packs without a cut-out, `assets/studio_bg.json`); no scene backgrounds or panels; big pack; title + product name + one grey line; quiet underlined "Shop now →"; small lockup with "Hide Nothing.";
+  - `leanBrief` moves actives lines, prices, offer subheads and long subheads to the caption;
+  - `scripts/apply_style_edits.js` + `prompts/style_editor.md`: cuts only, code-validated. 21 edits applied, 0 refused → **88/88 within budget**;
+  - any model is Severe: `05_compliance` floor, `risk.js` people/endorser, compose, `scripts/apply_model_risk.js` (27 raised).
+- **Bug fixed:** footnotes past 2 lines were silently cut; `layoutProblems` now flags them.
+- **Tests:** 47/47 (new `tests/minimal_style.test.js`).
+- **Done (2026-10-04, ~02:30 IST):**
+  - all 6 runs re-rendered;
+  - eye-checked (fixes: white frame/grey boxes, comparison bases kept on the creative, Vitamin C "86% pure" callout cut);
+  - library 88 ads / 268 PNGs, 48 not exportable (gallery reads compose summaries), 40 with AI models, all Severe;
+  - `research/style_compare.png` (statics vs ours);
+  - docs updated (SUBMISSION, DECISIONS, ARCHITECTURE, RUNBOOK, FAILURE_MODES, README);
+  - diagram regenerated.
+- **Transcript:** the exporter dropped 40 mid-task user messages (queued_command attachments); fixed in `1ffd766`. Grammar corrections added (104 total); START_HERE +5 agent mistakes, +4 pushbacks.
+- **Commits:** `ab5f8f2` (code), `1ffd766` (transcript fix), then outputs + docs.
+- **Next:**
+  1. rebuild the clean GitHub copy (remove `Desktop\minimalist-ad-tool-github` first, in a separate command), then fast-export → `sanitize_stream.mjs` → fast-import, verify 0 client names / 0 emails, push (the user approves GCM);
+  2. DeepSeek follow-up (tab 1; read only its new reply);
+  3. memory.
+
+## FINAL STATE 2026-10-03 ~23:45 (superseded by the 2026-10-04 section above)
 - **External review (DeepSeek, "Shortlist") applied to the essentials:**
   - eval provenance plus an OOD set (frozen: 81% recall, 0 missed blocks);
   - catalog checks scoped to Minimalist's own ads;

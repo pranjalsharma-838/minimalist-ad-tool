@@ -13,19 +13,23 @@
 | Placements | 1:1 multi-vitamin-spf-50__t4.png · 4:5 multi-vitamin-spf-50__t4.4x5.png · 9:16 multi-vitamin-spf-50__t4.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 3 |
 | Run | 2026-10-03-pilot |
 
 ## Copy on the creative
-- Headline: Four UV filters behind a broad spectrum SPF 50
-- Subhead: Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin.
-- Avobenzone for UVA protection
-- Octocrylene for UVB, and it further stabilises Avobenzone
-- Uvinul T 150, a highly effective UVB filter
+- Headline: Four UV filters, broad spectrum SPF 50
+
+
 - Footnote: Labelled SPF 50, PA++++. In-vivo test (ISO 24444:2019) by an independent lab obtained SPF 56.6.
-- CTA: See ingredients
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Four UV filters behind a broad spectrum SPF 50. Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin. Avobenzone for UVA protection Octocrylene for UVB, and it further stabilises Avobenzone Uvinul T 150, a highly effective UVB filter
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "Four UV filters behind a broad spectrum SPF 50" → "Four UV filters, broad spectrum SPF 50" (headline 9 > 8 words; the minimal hero has no big SPF line, so SPF 50 stays in the title)
 
 ## Facts cited (from the product page)
 ```json
@@ -36,8 +40,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a top-down flat lay on a smooth off-white #F4F2EE surface with a subtle fine-grain paper texture. Two small smooth pale stone pebbles in warm grey #E5E9EA rest near the lower-left corner, each under 5% of the frame width. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: soft daylight from the upper left at 5600K, shadows of the pebbles falling to the lower right, otherwise even. Background: matte off-white #F4F2EE paper, pale sand #E8E1D3 only as a faint tonal drift near the bottom edge. Style: spec sheet, flat and even, minimal. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Dropped the sliver of sunlight (it would put a bright patch in the pack-shot zone). Pebbles kept in the lower-left corner.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

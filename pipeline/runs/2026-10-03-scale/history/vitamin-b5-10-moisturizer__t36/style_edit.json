@@ -1,0 +1,92 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t36",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "4.1 out of 5 stars from 899 reviews",
+  "subhead": "50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "\"Upto 33% OFF + Freebies\" and \"Buy 2, Get 3rd Free\"",
+    "condition": "The 3rd product is free when you buy 2. T&C apply.",
+    "valid_till": ""
+  },
+  "footnote": "Offers as on beminimalist.co on 2026-10-02. T&C apply. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [
+      "PRICE1"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "OFFER2",
+      "OFFER3",
+      "RATING"
+    ]
+  },
+  "layout_description": "Offer sticker top-right with its condition beneath. Rating headline top-left on a bar, price line with MRP struck through beside it. Real pack shot right. Diagonal CTA strip at the bottom, footnote beneath.",
+  "image_prompt": "Empty background scene only: a soft off-white backdrop with pale blue-green colour blocks and a gentle condensation texture, even light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: sticker lockup (Chemist at Play), struck MRP vs price pair and CTA strip (Conscious Chemist), kicker-over-headline arrangement with rating as the kicker (Foxtale). Dropped: promo code, countdown, three-SKU stack. Offer quoted exactly; end date and eligibility are placeholders.",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "sticker lockup for the offer"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "struck MRP vs price pair and diagonal CTA strip"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "kicker line above the bold headline"
+    }
+  ],
+  "angle": "offer_value",
+  "hook_type": "offer",
+  "product_handle": "vitamin-b5-10-moisturizer",
+  "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+  "source_brand": "Chemist at Play",
+  "status": "kept_with_warnings",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-16",
+      "span": "Upto 33% OFF + Freebies",
+      "message": "\"Freebies\" is offered without its purchase condition in the creative, and the up-to-33% figure is a sitewide banner not tied to this product (listed 10% below MRP); the terms link covers only the Buy 2 Get 3rd offer.",
+      "fix": "Buy 2, Get 3rd Free (T&C apply), or state the freebie condition and which products qualify.",
+      "layer": "model"
+    }
+  ],
+  "rounds_tried": 2,
+  "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+}

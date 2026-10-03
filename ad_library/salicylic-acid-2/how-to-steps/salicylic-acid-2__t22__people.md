@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-acid-2__t22.png · 4:5 salicylic-acid-2__t22.4x5.png · 9:16 salicylic-acid-2__t22.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Night routine: cleanse, 2-3 drops, let it absorb
 
-- Footnote: AI illustrations of a routine, not results. Start with every alternate day. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+- Footnote: AI illustrations of a routine, not results.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Start with every alternate day. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a pale warm-grey painted wall above a narrow stone shelf, soft warm lamp light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+- AI frames prompt (a model: Severe): The same Indian man in his early 20s with medium-brown skin, his night routine at a small washbasin, in all three panels wearing the same plain grey cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same plain wall and the same soft warm lamp light from the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: his fingertips are pressed lightly against his cheek, as if pressing in a few drops, his other hand resting on the basin edge. Panel 3: both hands rest on the edge of the basin as he waits a moment, looking calmly towards the mirror. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life medium-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

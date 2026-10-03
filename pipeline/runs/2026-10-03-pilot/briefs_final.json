@@ -256,7 +256,7 @@
     "source_ad_id": "multi-vitamin-spf-50__t4",
     "product_title": "SPF 50 Sunscreen",
     "main_theme": "",
-    "headline": "Four UV filters behind a broad spectrum SPF 50",
+    "headline": "Four UV filters, broad spectrum SPF 50",
     "subhead": "Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin.",
     "proof_points": [
       "Avobenzone for UVA protection",
@@ -334,7 +334,16 @@
       }
     ],
     "rounds_tried": 3,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Four UV filters behind a broad spectrum SPF 50.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Four UV filters behind a broad spectrum SPF 50",
+        "to": "Four UV filters, broad spectrum SPF 50",
+        "why": "headline 9 > 8 words; the minimal hero has no big SPF line, so SPF 50 stays in the title"
+      }
+    ]
   },
   {
     "ad_type": "product_hero",

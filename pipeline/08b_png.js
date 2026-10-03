@@ -13,7 +13,9 @@ if (!browser) throw new Error("No Edge/Chrome/Chromium found for headless render
 let n = 0;
 // SQUARE_ONLY=1 renders just the 1:1 creatives (a quick eye-check pass before the 4:5 / 9:16 and language versions).
 const squareOnly = process.env.SQUARE_ONLY === "1";
-for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg") && (!squareOnly || f.split(".").length === 2))) {
+// ONLY=<ad id> re-renders one ad (all its sizes and languages) after a single-brief change.
+const only = process.env.ONLY || "";
+for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg") && (!squareOnly || f.split(".").length === 2) && (!only || f.startsWith(`${only}.`)))) {
   const svg = path.join(dir, f), png = svg.replace(/\.svg$/, ".png");
   const head = fs.readFileSync(svg, "utf8").slice(0, 300);
   const w = Number((head.match(/width="(\d+)"/) || [, 1080])[1]), h = Number((head.match(/height="(\d+)"/) || [, 1080])[1]);

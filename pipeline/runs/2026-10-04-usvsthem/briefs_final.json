@@ -1,0 +1,952 @@
+[
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "alpha-arbutin-2__t17",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "Melanin reduction, side by side",
+    "compare": {
+      "us": "Minimalist Alpha Arbutin 2%",
+      "them": "Benchmark Alpha Arbutin 2% serum",
+      "cites": [
+        "F12"
+      ],
+      "rows": [
+        {
+          "label": "Alpha Arbutin strength",
+          "us": "2%",
+          "them": "2%",
+          "cites": [
+            "F12"
+          ]
+        },
+        {
+          "label": "Melanin reduction (lab test)",
+          "us": "70%",
+          "them": "56%",
+          "cites": [
+            "F13"
+          ]
+        }
+      ]
+    },
+    "footnote": "In-vitro lab test on a skin-identical model vs an international brand's Alpha Arbutin 2% serum.",
+    "caption": "Minimalist ran an in-vitro (lab) test on a skin-identical model, comparing this serum with an Alpha Arbutin 2% serum from an international brand that offers active-based products. The benchmark reduced melanin by 56%; Minimalist Alpha Arbutin 2% reduced melanin concentration by 70%.",
+    "main_theme": "lab_results",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F13"
+      ],
+      "caption": [
+        "F12",
+        "F13"
+      ],
+      "footnote": [
+        "F12"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a two-row table, ours vs the benchmark: 'Alpha Arbutin strength' 2% vs 2% (like for like), 'Melanin reduction (lab test)' 70% vs 56%. Footnote states the test; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. Replaced its European-vs-Korean contrast with the page's own published comparison: an in-vitro test vs a benchmark Alpha Arbutin 2% serum (F12, F13). The strength row shows the comparison is like for like (ASCI Chapter IV). The page's derived '25% more reduction' is not used: the two raw results are shown with the method. Dropped 'India's 1st' (superlative) and the claims list. CLM-12 (comparison) is expected for this format; the basis is in the footnote. Risk High: a reviewer confirms the test report is on file.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "BLOCKED",
+      "label": "Do not publish",
+      "detail": "At least one finding would put the ad at legal or brand risk. Export is disabled until it is fixed."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "block",
+        "rule_id": "CLM-06",
+        "span": "Melanin reduction",
+        "message": "The ad's lead benefit is cutting melanin, the skin's own pigment, and nowhere does it tie that to dark spots or uneven patches; with the test run on a dark-skin ('Black skin') tissue model, '70% melanin reduction' reads as making skin lighter. It is also a melanin structure/function claim (CLM-24), so the same wording in the primary text and the on-image row needs the same change.",
+        "fix": "Lead with the concern, not the pigment, e.g. 'For dark spots: two serums, tested side by side in a lab', and relabel the matching 'melanin' lines in the body and table as a lab skin-model result rather than a change in the viewer's skin. Have legal confirm the final wording.",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "benchmark",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "Benchmark",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "multi-vitamin-spf-50__t17",
+    "product_title": "SPF 50 Sunscreen",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "SPF 50, and the lab report",
+    "compare": {
+      "us": "SPF 50 Sunscreen (ours)",
+      "them": "Label with the SPF only",
+      "cites": [
+        "F2",
+        "F13"
+      ],
+      "rows": [
+        {
+          "label": "SPF on the pack",
+          "us": "SPF 50",
+          "them": "SPF 50",
+          "cites": [
+            "F2"
+          ]
+        },
+        {
+          "label": "In-vivo SPF, lab report",
+          "us": "56.6",
+          "them": "Not shown",
+          "cites": [
+            "F13",
+            "F16"
+          ]
+        }
+      ]
+    },
+    "footnote": "In-vivo test, ISO 24444:2019, by an independent third-party lab. Report on the product page.",
+    "caption": "Broad spectrum SPF 50, PA++++. Tested in an independent third-party lab (in-vivo, ISO 24444:2019): SPF value obtained 56.6, PA rating ++++. The lab report and its data points are on the product page.",
+    "main_theme": "lab_results",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F2",
+        "F13"
+      ],
+      "caption": [
+        "F2",
+        "F13",
+        "F14",
+        "F16",
+        "F17"
+      ],
+      "footnote": [
+        "F14",
+        "F18"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real tube large on the left; on the right a two-row table, ours vs a label with the SPF only: 'SPF on the pack' SPF 50 vs SPF 50 (like for like), 'In-vivo SPF, lab report' 56.6 vs Not shown. Footnote states the test; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The page names no rival, so this is the TRANSPARENCY version: the labelled SPF 50 (the claim, shown in both columns) plus the published in-vivo lab result (F13, F16) vs a label type that shows the SPF only. Lab results are the main theme (house rule): the labelled value stays the claim and appears first. 'Them' is a label type, never a brand. Risk High: comparison by implication; a reviewer confirms.",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-09",
+        "span": "SPF value obtained 56.6, PA rating ++++",
+        "message": "ISO 24444:2019 is the in-vivo method for SPF only; a PA rating comes from a separate UVA test (such as ISO 24442 or ISO 24443), so this line credits PA++++ to a test that doesn't measure it. Acceptable if the lab report on file includes a UVA test, in which case cite that method for the PA rating.",
+        "fix": "Separate the two results, e.g. 'In-vivo SPF test (ISO 24444:2019): SPF 50 confirmed. PA++++ per [the UVA test named in the report].' If the report has no UVA test, attach substantiation for PA++++ before this runs.",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-19",
+        "span": "SPF value obtained 56",
+        "message": "SPF 56 is the lab-measured value; the labelled SPF is 50. House rule: claim SPF 50, keep the measured value in the footnote only.",
+        "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "UNLISTED",
+        "span": "Report on the product page.",
+        "message": "It repeats the sentence before it ('The lab report and its data points are on the product page.'), so the copy reads unedited.",
+        "fix": "Delete 'Report on the product page.'",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "niacinamide-10-with-matmarine__t17",
+    "product_title": "Niacinamide 10% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "The strength is on the pack",
+    "compare": {
+      "us": "Niacinamide 10% Face Serum",
+      "them": "Label without the %",
+      "cites": [
+        "F1"
+      ],
+      "rows": [
+        {
+          "label": "Strength of the active",
+          "us": "10%",
+          "them": "Not stated",
+          "cites": [
+            "F1"
+          ]
+        }
+      ]
+    },
+    "footnote": "Compared with a label that names the active but not its strength.",
+    "caption": "Niacinamide 10% Face Serum names its active and its strength, 10%, right on the pack.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F1"
+      ],
+      "caption": [
+        "F1"
+      ],
+      "footnote": [
+        "F1"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The product page names no comparison for this product, so this is the TRANSPARENCY version of Us vs Them: what this pack states (the active's strength, F1) vs a label type that doesn't state it. 'Them' is a label type, never a brand; nothing says others hide anything. Dropped from the reference: 'India's 1st' (superlative, CLM-11), the claims list and the graph-paper look (house style is white). Risk High (comparison by implication): a reviewer confirms the basis before use.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "salicylic-acid-2__t17",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "What the label tells you",
+    "compare": {
+      "us": "Salicylic Acid 2% Face Serum",
+      "them": "Label without the %",
+      "cites": [
+        "F1"
+      ],
+      "rows": [
+        {
+          "label": "Strength of the active",
+          "us": "2%",
+          "them": "Not stated",
+          "cites": [
+            "F1"
+          ]
+        }
+      ]
+    },
+    "footnote": "Compared with a label that names the active but not its strength.",
+    "caption": "A daily gentle exfoliant with 2% salicylic acid. The strength is printed on the pack: Salicylic Acid 2% Face Serum.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F1"
+      ],
+      "caption": [
+        "F3",
+        "F1"
+      ],
+      "footnote": [
+        "F1"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The product page names no comparison for this product, so this is the TRANSPARENCY version of Us vs Them: what this pack states (the active's strength, F1) vs a label type that doesn't state it. 'Them' is a label type, never a brand; nothing says others hide anything. Dropped from the reference: 'India's 1st' (superlative, CLM-11), the claims list and the graph-paper look (house style is white). Risk High (comparison by implication): a reviewer confirms the basis before use.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "salicylic-lha-2-cleanser__t17",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "Two acids, multi-level cleansing",
+    "compare": {
+      "us": "BHA + LHA (this cleanser)",
+      "them": "Salicylic Acid alone",
+      "cites": [
+        "F3",
+        "F6"
+      ],
+      "rows": [
+        {
+          "label": "Acids",
+          "us": "BHA + LHA",
+          "them": "BHA",
+          "cites": [
+            "F3"
+          ]
+        },
+        {
+          "label": "Stays on the outer layer",
+          "us": "Yes (LHA)",
+          "them": "No",
+          "cites": [
+            "F6"
+          ]
+        }
+      ]
+    },
+    "footnote": "Per the product page: LHA, unlike Salicylic Acid, stays on the skin's outer layer for gentle exfoliation.",
+    "caption": "This daily cleanser combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration. LHA stays on the outer layer of skin and provides gentle exfoliation, and the combination provides multi-level cleansing.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F6"
+      ],
+      "caption": [
+        "F3",
+        "F6"
+      ],
+      "footnote": [
+        "F6"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a two-row table, this cleanser vs salicylic acid alone: 'Acids' BHA + LHA vs BHA, 'Stays on the outer layer' Yes (LHA) vs No. Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header ('get both') and one pack as the hero. 'Them' is the ingredient used alone, which the page itself contrasts (F6: LHA, unlike Salicylic Acid, stays on the outer layer). Not a brand. 'Acne fighting' (F3) is not used (CLM-02). Risk High: comparison by format; a reviewer confirms.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "unlike Salicylic",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Salicylic Acid",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "UNLISTED",
+        "span": "Per the product page:",
+        "message": "An internal sourcing note has leaked into consumer copy, and the sentence it introduces repeats the one before it.",
+        "fix": "Delete the last sentence ('Per the product page: LHA, unlike Salicylic Acid, stays on the skin's outer layer for gentle exfoliation.').",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Salicylic Acid",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t17",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "10% Vitamin B5, stated up front",
+    "compare": {
+      "us": "Vitamin B5 10% Moisturizer",
+      "them": "Label without the %",
+      "cites": [
+        "F1"
+      ],
+      "rows": [
+        {
+          "label": "Strength of the active",
+          "us": "10%",
+          "them": "Not stated",
+          "cites": [
+            "F1"
+          ]
+        }
+      ]
+    },
+    "footnote": "Compared with a label that names the active but not its strength.",
+    "caption": "Vitamin B5 (Panthenol) at 10%, a very high concentration, for deep, oil-free moisturization. The strength is printed on the pack.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F1"
+      ],
+      "caption": [
+        "F5",
+        "F1"
+      ],
+      "footnote": [
+        "F1"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The product page names no comparison for this product, so this is the TRANSPARENCY version of Us vs Them: what this pack states (the active's strength, F1) vs a label type that doesn't state it. 'Them' is a label type, never a brand; nothing says others hide anything. Dropped from the reference: 'India's 1st' (superlative, CLM-11), the claims list and the graph-paper look (house style is white). Risk High (comparison by implication): a reviewer confirms the basis before use.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-11",
+        "span": "a very high concentration",
+        "message": "'Very high' compares this moisturizer with the rest of the market without saying against what, and inside a vs ad it reads as 'higher than theirs'. Acceptable if the basis (typical Panthenol use levels) is on file and stated; otherwise let the 10% speak for itself.",
+        "fix": "'Vitamin B5 (Panthenol) at 10%, for deep, oil-free moisturization.'",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin B5",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t17",
+    "product_title": "Vitamin C 10% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "hook_type": "contrast",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column v/s comparison with one pack as the hero"
+      }
+    ],
+    "ai_label_required": false,
+    "headline": "Vitamin C content, compared",
+    "compare": {
+      "us": "Ethyl Ascorbic Acid (the form used)",
+      "them": "Other vitamin C derivatives",
+      "cites": [
+        "F5"
+      ],
+      "rows": [
+        {
+          "label": "Vitamin C in the ingredient",
+          "us": "86%",
+          "them": "40-50%",
+          "cites": [
+            "F5"
+          ]
+        }
+      ]
+    },
+    "footnote": "86% and 40-50% are the vitamin C content of each ingredient form (product page), not the serum's strength (10%).",
+    "caption": "Made with the stabilised vitamin C derivative Ethyl Ascorbic Acid, which has 86% pure vitamin C content, higher than the 40-50% content in other vitamin C derivatives. At a pH of ~4.0 it is highly stable. The serum's strength is 10%, as on the pack.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "headline": [
+        "F5"
+      ],
+      "caption": [
+        "F5"
+      ],
+      "footnote": [
+        "F5"
+      ]
+    },
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table, Ethyl Ascorbic Acid vs other vitamin C derivatives: 'Vitamin C in the ingredient' 86% vs 40-50%; the footnote says these are ingredient figures, not the serum's 10% strength (an independent eval reviewer flagged '86% pure vitamin C' as ambiguous next to a 10% serum). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. 'Them' is the page's own comparison (F5): other vitamin C derivatives, an ingredient form, not a brand. Minimalist's Amazon gallery runs a similar table ('vs Other Vitamin C Serums'). Dropped 'India's 1st' and the claims list. CLM-12 expected; basis in the footnote. Risk High: a reviewer confirms the content figures are substantiated.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "higher than",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "UNLISTED",
+        "span": "The serum's strength is 10%, as on the pack.",
+        "message": "In an ad about vitamin C content, it never says whether the 10% is vitamin C or Ethyl Ascorbic Acid, and by the ad's own 86% figure a 10% Ethyl Ascorbic Acid serum holds less than 10% vitamin C. Minimalist's position is that the number on the ad is the number in the bottle, so this one has to be unambiguous.",
+        "fix": "Say what the 10% is, in the pack's wording, e.g. 'The serum contains Ethyl Ascorbic Acid at 10%, as on the pack.' (confirm against the pack).",
+        "layer": "model"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "UNLISTED",
+        "span": "(product page)",
+        "message": "An internal sourcing note in consumer copy; the clarification around it is useful but reads like a draft note.",
+        "fix": "Drop '(product page)' and move the clarification to a footnote, e.g. '86% is the vitamin C content of the ingredient, not the serum's strength.'",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  }
+]

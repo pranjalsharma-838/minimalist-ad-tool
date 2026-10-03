@@ -1,0 +1,65 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "86% vs 40-50%",
+      "severity": "fix",
+      "why": "'Other vitamin C derivatives' is a broad, unnamed group and the 40-50% figure is unsourced (CLM-13); by the same molecular-weight maths common derivatives fall well outside that range (some far lower, several above 50%, sodium ascorbate above 86%), so the comparison isn't accurate or like-for-like. A molecule's vitamin C share is also not evidence the serum delivers more vitamin C to skin, so the table implies a performance edge it doesn't show.",
+      "fix": "Name the specific derivatives compared and source the figures, or drop the comparison and keep the fact: 'Made with Ethyl Ascorbic Acid, a stabilised vitamin C derivative with 86% pure vitamin C content.'"
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "The serum's strength is 10%, as on the pack.",
+      "severity": "fix",
+      "why": "In an ad about vitamin C content, it never says whether the 10% is vitamin C or Ethyl Ascorbic Acid, and by the ad's own 86% figure a 10% Ethyl Ascorbic Acid serum holds less than 10% vitamin C. Minimalist's position is that the number on the ad is the number in the bottle, so this one has to be unambiguous.",
+      "fix": "Say what the 10% is, in the pack's wording, e.g. 'The serum contains Ethyl Ascorbic Acid at 10%, as on the pack.' (confirm against the pack)."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "(product page)",
+      "severity": "advisory",
+      "why": "An internal sourcing note in consumer copy; the clarification around it is useful but reads like a draft note.",
+      "fix": "Drop '(product page)' and move the clarification to a footnote, e.g. '86% is the vitamin C content of the ingredient, not the serum's strength.'"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "The headline names Vitamin C without the 10%, and in an ad full of percentages that makes 86% easy to misread as the serum's strength."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'higher than the 40-50% content in other vitamin C derivatives' is a comparative claim against other ingredient forms (see finding)."
+    },
+    {
+      "index": 2,
+      "assessment": "likely_false_positive",
+      "why": "Here 'vitamin C' describes the ingredient class (a vitamin C derivative), not the hero active stated without its strength; the 10% appears later in the same text."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "The header row compares Ethyl Ascorbic Acid with other derivatives."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "'86% vs 40-50%' is the comparative payload."
+    },
+    {
+      "index": 5,
+      "assessment": "likely_false_positive",
+      "why": "'Other vitamin C derivatives' names the generic comparator; the product line 'Vitamin C 10% Face Serum' carries the strength."
+    }
+  ],
+  "tone_read": "Calm, technical and ingredient-led: naming the exact derivative, its vitamin C share and its pH is classic Minimalist education, with no hype, emoji or fear. But the primary text is crowded with clarifications and a '(product page)' note, so it reads like an internal brief rather than brand copy.",
+  "language_read": "The form is named precisely (Ethyl Ascorbic Acid) and '86% pure vitamin C content' matches the page's precise wording. But the headline gives Vitamin C no strength and the ad never says what the 10% refers to, the one number an ad about vitamin C content most needs to get exact."
+}

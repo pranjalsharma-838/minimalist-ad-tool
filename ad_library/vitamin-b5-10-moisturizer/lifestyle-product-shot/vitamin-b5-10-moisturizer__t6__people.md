@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 vitamin-b5-10-moisturizer__t6.png · 4:5 vitamin-b5-10-moisturizer__t6.4x5.png · 9:16 vitamin-b5-10-moisturizer__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Working from home: lightweight and oil-free
-- Subhead: Use after cleansing, toning and your serums. AM & PM, every day.
-- Formulated for oily / combination skin
-- With Hyaluronic Acid & Betaine
-- Suitable for 16+ years of age
-- Footnote: 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Use after cleansing, toning and your serums. AM & PM, every day. Formulated for oily / combination skin With Hyaluronic Acid & Betaine Suitable for 16+ years of age 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a bright off-white wall beside a window with the edge of a sheer white curtain at the far left, soft daylight from the upper left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her early 40s with medium-brown skin, working from home by a window: she sits at a small wooden desk in a bright corner of her living room with a laptop open (its screen turned away from the camera), a plain ceramic cup, a potted money plant on the windowsill and sheer white curtains moving slightly beside her. She wears a soft cotton kurta in a muted colour with her dark hair, a few natural grey strands at the temples, clipped up, pausing to look out of the window with a calm, thoughtful expression. Soft daylight from the window at the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

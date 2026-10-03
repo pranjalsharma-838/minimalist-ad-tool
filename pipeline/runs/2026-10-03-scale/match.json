@@ -368,8 +368,7 @@
     "match_method": "archetype skill",
     "angle": "social_proof",
     "blend_refs": [
-      "Conscious Chemist 1390426132931304 (71d)",
-      "Plum 1415802417140754 (37d)"
+      "Conscious Chemist 1390426132931304 (71d)"
     ]
   },
   {
@@ -384,7 +383,6 @@
     "match_method": "archetype skill",
     "angle": "routine",
     "blend_refs": [
-      "Plum 1518480183631080 (37d)",
       "Conscious Chemist 1390426132931304 (71d)"
     ]
   },
@@ -413,14 +411,14 @@
     "product_title": "Alpha Arbutin 2% Face Serum",
     "template_id": 44,
     "template_name": "Founder / expert portrait",
-    "risk": "high",
+    "risk": "low",
     "match_method": "archetype skill",
     "angle": "situation",
     "blend_refs": [
-      "Plum 1115173371246578 (37d)",
       "Dot & Key 621835826921394 (610d)",
       "Conscious Chemist 991199233902436 (100d)"
-    ]
+    ],
+    "resourced": "statics only 2026-10-04: portrait dropped (video-only evidence)"
   },
   {
     "id": "alpha-arbutin-2__t36",

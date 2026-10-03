@@ -1,0 +1,66 @@
+{
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t17",
+  "product_title": "Vitamin C 10% Face Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "hook_type": "contrast",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column v/s comparison with one pack as the hero"
+    }
+  ],
+  "ai_label_required": false,
+  "headline": "Vitamin C content, compared",
+  "compare": {
+    "us": "Ethyl Ascorbic Acid (the form used)",
+    "them": "Other vitamin C derivatives",
+    "cites": [
+      "F5"
+    ],
+    "rows": [
+      {
+        "label": "Vitamin C in the ingredient",
+        "us": "86%",
+        "them": "40-50%",
+        "cites": [
+          "F5"
+        ]
+      }
+    ]
+  },
+  "footnote": "86% and 40-50% are the vitamin C content of each ingredient form (product page), not the serum's strength (10%).",
+  "caption": "Made with the stabilised vitamin C derivative Ethyl Ascorbic Acid, which has 86% pure vitamin C content, higher than the 40-50% content in other vitamin C derivatives. At a pH of ~4.0 it is highly stable. The serum's strength is 10%, as on the pack.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "headline": [
+      "F5"
+    ],
+    "caption": [
+      "F5"
+    ],
+    "footnote": [
+      "F5"
+    ]
+  },
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table, Ethyl Ascorbic Acid vs other vitamin C derivatives: 'Vitamin C in the ingredient' 86% vs 40-50%; the footnote says these are ingredient figures, not the serum's 10% strength (an independent eval reviewer flagged '86% pure vitamin C' as ambiguous next to a 10% serum). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. 'Them' is the page's own comparison (F5): other vitamin C derivatives, an ingredient form, not a brand. Minimalist's Amazon gallery runs a similar table ('vs Other Vitamin C Serums'). Dropped 'India's 1st' and the claims list. CLM-12 expected; basis in the footnote. Risk High: a reviewer confirms the content figures are substantiated."
+}

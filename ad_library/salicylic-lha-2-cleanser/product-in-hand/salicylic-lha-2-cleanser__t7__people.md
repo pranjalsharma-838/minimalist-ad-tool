@@ -12,20 +12,24 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-lha-2-cleanser__t7.png · 4:5 salicylic-lha-2-cleanser__t7.4x5.png · 9:16 salicylic-lha-2-cleanser__t7.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
 | Run | 2026-10-03-people |
 
 ## Copy on the creative
-- Headline: Pour into wet hands and rub into a light lather
-- Subhead: Massage into your face, then rinse thoroughly. AM & PM, every day.
-- High purity grade Salicylic Acid
-- BHA + LHA combined in 2% concentration
-- Suitable for 15+ years of age
-- Footnote: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+- Headline: Rub into a light lather
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Pour into wet hands and rub into a light lather. Massage into your face, then rinse thoroughly. AM & PM, every day. High purity grade Salicylic Acid BHA + LHA combined in 2% concentration Suitable for 15+ years of age 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "Pour into wet hands and rub into a light lather" → "Rub into a light lather" (headline 10 > 8 words)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +37,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: an off-white tiled bathroom wall with soft daylight from a frosted window at the upper left and a narrow stone basin ledge along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her late 20s with light-brown skin, standing at a bathroom basin in the morning, framed from the waist up in a plain cotton top with her hair clipped back. One hand is held out open in front of her at chest height, palm up, completely empty and relaxed, as if about to receive something, while the other hand rests on the edge of the basin; she looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left, an off-white tiled wall behind her, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and nothing in her hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

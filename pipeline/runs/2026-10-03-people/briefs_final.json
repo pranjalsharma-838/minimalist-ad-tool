@@ -88,8 +88,10 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -181,8 +183,10 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -274,8 +278,10 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -386,8 +392,10 @@
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -480,8 +488,10 @@
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -567,8 +577,10 @@
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -675,8 +687,10 @@
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -768,8 +782,10 @@
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -855,8 +871,10 @@
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -964,8 +982,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1058,8 +1078,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1146,8 +1168,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1254,8 +1278,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1278,7 +1304,7 @@
     "layout": "hero",
     "source_ad_id": "salicylic-lha-2-cleanser__t6",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "Back from a run: a light lather on a wet face",
+    "headline": "Back from a run: a light lather",
     "subhead": "Pour into wet hands, rub into a light lather, massage in and rinse thoroughly.",
     "proof_points": [
       "BHA + LHA combined in 2% concentration",
@@ -1346,8 +1372,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1363,14 +1391,23 @@
     },
     "findings": [],
     "rounds_tried": 1,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Back from a run: a light lather on a wet face.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Back from a run: a light lather on a wet face",
+        "to": "Back from a run: a light lather",
+        "why": "headline 11 > 8 words; keeps the situation"
+      }
+    ]
   },
   {
     "ad_type": "product_hero",
     "layout": "hero",
     "source_ad_id": "salicylic-lha-2-cleanser__t7",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "Pour into wet hands and rub into a light lather",
+    "headline": "Rub into a light lather",
     "subhead": "Massage into your face, then rinse thoroughly. AM & PM, every day.",
     "proof_points": [
       "High purity grade Salicylic Acid",
@@ -1439,8 +1476,10 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1465,7 +1504,16 @@
       }
     ],
     "rounds_tried": 1,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Pour into wet hands and rub into a light lather.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Pour into wet hands and rub into a light lather",
+        "to": "Rub into a light lather",
+        "why": "headline 10 > 8 words"
+      }
+    ]
   },
   {
     "ad_type": "routine_regimen",
@@ -1556,8 +1604,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1649,8 +1699,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1737,8 +1789,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Chemist at Play",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1845,8 +1899,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1939,8 +1995,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -1963,7 +2021,7 @@
     "layout": "hero",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "Take 2-3 drops on your fingertips with the dropper",
+    "headline": "2-3 drops on your fingertips",
     "subhead": "Tap gently onto the skin, then spread evenly in a circular motion.",
     "proof_points": [
       "AM & PM, every day",
@@ -2026,8 +2084,10 @@
     "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "source_brand": "Foxtale",
     "status": "approved_for_image_step",
-    "risk_level": "high",
-    "warnings": [],
+    "risk_level": "severe",
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "READY_FOR_REVIEW",
@@ -2043,6 +2103,15 @@
     },
     "findings": [],
     "rounds_tried": 1,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "Take 2-3 drops on your fingertips with the dropper.",
+    "style_edits": [
+      {
+        "field": "headline",
+        "from": "Take 2-3 drops on your fingertips with the dropper",
+        "to": "2-3 drops on your fingertips",
+        "why": "headline 9 > 8 words"
+      }
+    ]
   }
 ]

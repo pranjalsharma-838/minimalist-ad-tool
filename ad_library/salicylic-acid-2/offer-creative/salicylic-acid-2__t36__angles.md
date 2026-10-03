@@ -13,17 +13,20 @@
 | Placements | 1:1 salicylic-acid-2__t36.png · 4:5 salicylic-acid-2__t36.4x5.png · 9:16 salicylic-acid-2__t36.9x16.png |
 | Language versions | none |
 | Risk level | **medium** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-angles |
 
 ## Copy on the creative
-- Headline: 2% Salicylic Acid, a daily gentle exfoliant
-- Subhead: Apply 2-3 drops after cleansing & toning, in the PM.
-- 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02
-- Footnote: Offer as on beminimalist.co on 2026-10-02. T&C apply. Third item free on buying 2. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+- Offer: Buy 2, Get 3rd Free · The 3rd product is free when you buy 2. T&C apply.
+
+
+- Footnote: T&C apply. Third item free on buying 2.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+2% Salicylic Acid, a daily gentle exfoliant Apply 2-3 drops after cleansing & toning, in the PM. 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -34,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white studio sweep with two low pale stone blocks at the far left edge and a faint blush-grey tone at the base. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

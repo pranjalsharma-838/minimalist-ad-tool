@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 niacinamide-10-with-matmarine__t6.png · 4:5 niacinamide-10-with-matmarine__t6.4x5.png · 9:16 niacinamide-10-with-matmarine__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Workday routine: 2-3 drops, AM & PM
-- Subhead: Apply after cleansing & toning. Let it absorb fully before the next step.
-- Niacinamide from Lonza, Switzerland
-- With Matmarine, Zinc & Acetyl Glucosamine
-- Suitable for 16+ years of age
-- Footnote: 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Apply after cleansing & toning. Let it absorb fully before the next step. Niacinamide from Lonza, Switzerland With Matmarine, Zinc & Acetyl Glucosamine Suitable for 16+ years of age 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white office wall with a pale oak desk edge across the lower third, soft overcast daylight from the upper left, and one small green desk plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her late 20s with medium-brown skin, in the middle of a busy workday in a Gurugram office: she sits at a desk by a floor-to-ceiling window with the hazy glass towers of the city softly out of focus behind her, a laptop open with its screen turned away from the camera, a plain ceramic mug and a blank notebook beside it. She wears a pastel cotton shirt with her hair in a neat low ponytail and a thin silver bracelet, pausing mid-task with her chin resting lightly on one hand, a focused but relaxed expression. Soft overcast daylight from the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, light makeup at most, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

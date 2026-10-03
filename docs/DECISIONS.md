@@ -19,10 +19,11 @@
 
 ## 2. How the ads are made
 
-- **The product is never AI-drawn.** The image model makes backgrounds and, for people formats, AI-generated people (balanced Indian women and men), always shown with a visible AI mark. Code composites the real pack shot, large, in front.
+- **The look is the brand's own, the concepts are new.** House style comes from Minimalist's top-running *static* ads (52–98 days; videos excluded): a white canvas, the real pack as the hero, 0–15 words on the image, details in the caption, the "Hide Nothing." sign-off. A style check holds every ad to that budget; a style editor may only cut words, never add them.
+- **The product is never AI-drawn.** Code composites the real pack shot. AI-generated people appear only in people formats, always with a visible AI mark, and **any model makes the ad Severe**: kept for review, never exported until real, consented photos replace it.
 - **Every claim traces to a source:** page facts, offers captured live (dated, "T&C apply"), or verbatim verified reviews.
-- **Blend, don't copy.** Each concept takes one element from each of 3 competitor winners (ads running 30+ days); angles are balanced so every product gets every angle.
-- **Formats are never removed; they're risk-rated.** Severe formats (before/after, transformation journey) are not exportable until real study photos exist.
+- **Blend, don't copy.** Each concept takes one element from each of 3 competitor winners (static ads running 30+ days); angles are balanced so every product gets every angle.
+- **Formats are never removed; they're risk-rated.** Severe formats (before/after, transformation journey, anything with a model) are not exportable. Comparisons (Us vs Them) are High: "them" must be something the brand's page itself names, with the basis on the creative.
 - **Retry loop, max 3 rounds.** A flagged claim is removed or replaced, never reworded; the best *judged* version is kept.
 
 ## 3. Scope: why so broad, and what I'd ship if only one thing could

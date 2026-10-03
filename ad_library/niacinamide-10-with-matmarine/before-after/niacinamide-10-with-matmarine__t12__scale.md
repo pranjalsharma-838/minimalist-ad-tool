@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: A lightweight serum with no sticky residue
 - Subhead: 10% Niacinamide with Matmarine, Zinc and Acetyl Glucosamine.
-- Footnote: 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of a low smooth pale-grey #E5E9EA stone plinth at the very bottom-left corner and the folded edge of a plain off-white #F4F2EE cotton towel at the very bottom-right corner, against a seamless off-white wall. Lighting: soft diffused light from the upper left at 5600K, shadows falling to the lower right. Background: matte seamless wall, subtle plaster texture. Style: bathroom shelf restraint, uncluttered. The top-left band is intentionally empty for headline copy added later. The whole upper 70% of the frame is intentionally empty, an evenly lit open area reserved for photos placed later; any props sit only along the bottom edge. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 - Real photography needed: Real, unretouched before and after photos from a documented study on this exact product, with the study details, duration and consent on file. No timed result is stated until then.
 

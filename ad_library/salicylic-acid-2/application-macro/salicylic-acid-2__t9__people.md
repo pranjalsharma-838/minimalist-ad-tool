@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-acid-2__t9.png · 4:5 salicylic-acid-2__t9.4x5.png · 9:16 salicylic-acid-2__t9.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: PM step: 2-3 drops, then let it absorb
-- Subhead: Apply after cleansing & toning. Let the serum absorb fully before the next step.
-- Use in the PM
-- Start with every alternate day
-- Suitable for 18+ years of age
-- Footnote: 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Apply after cleansing & toning. Let the serum absorb fully before the next step. Use in the PM Start with every alternate day Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white tiled wall with soft light from the upper left and a narrow stone ledge along the bottom edge, nothing else in frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): Close, softly lit crop of an Indian woman in her early 20s with medium-brown skin, framed from just below her eyes to her chin, the fingertips of one hand pressed lightly against her cheek as if pressing in a few drops (nothing visible on her fingers or skin) while her other hand rests empty near her collarbone. She stands at a bathroom basin in the evening, wearing a plain cotton top with her hair clipped back; soft warm light from the upper left, an off-white tiled wall softly out of focus behind her, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin texture with visible pores and ordinary variation in tone, true to life, no makeup, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

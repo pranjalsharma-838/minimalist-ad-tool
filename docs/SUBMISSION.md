@@ -38,14 +38,14 @@ The tool errs toward over-flagging, not under-flagging. On unseen brands the mai
 | What | Where |
 |---|---|
 | App: URL → page facts → copy where every line cites a fact → 1080×1080 ad with the **real pack shot**, pre-screened, exported with a review ticket | `npm start` → http://localhost:5173 |
-| Brand facts (catalog, claims matrix, house style), 118 real photos, 13 clean cut-outs | `brand_packs/minimalist/` |
+| Brand facts (catalog, claims matrix, house style from the brand's own top-running statics), 118 real photos, 13 clean cut-outs | `brand_packs/minimalist/` |
 
 ## 3. Deliverables
 
 | Deliverable | Where |
 |---|---|
 | Working app (Node only, no installs; Windows/macOS/Linux) | `README.md` |
-| Commit history (~90 commits, about 22 of them fixes to agent mistakes) | `git log` |
+| Commit history (~95 commits, about 23 of them fixes to agent mistakes) | `git log` |
 | Transcript, opening with an index of where things went wrong and how each was caught | `docs/TRANSCRIPT.md` |
 | Prompts as files, including a reusable prompt to build this pipeline for any brand | `prompts/` (start with `00_build_this_pipeline.md`) |
 | One-page decision doc (standard, scope defence, least-sure decision, brief critique) | `docs/DECISIONS.md` |
@@ -55,23 +55,28 @@ The tool errs toward over-flagging, not under-flagging. On unseen brands the mai
 ## 4. Built on top: modules, each removable without touching the standard
 
 - **Ad library pipeline:**
-  - competitor winners (30+ days) tagged to 48 formats;
+  - competitor winners (static ads running 30+ days; video ads are not evidence) tagged to 48 formats;
   - format selection (no format removed; risk levels);
   - briefs blending 3 winners with balanced angles (incl. situation-first);
   - live offers and real reviews captured by script;
-  - background-only image prompts;
   - real pack shot composited with a shadow, in 1:1, 4:5 and 9:16;
-  - AI-generated people (balanced Indian women and men, 20s–40s, everyday Indian settings) with the real pack shot large in front, and a clear action CTA ("Shop now →", product · beminimalist.co).
-- **Output:** `ad_library/` holds **81 unique ads and 247 PNGs**, each with a description file. Open `ad_library/index.html` for the gallery, which filters by product, risk and "AI-generated people".
-  - **Coverage:** every one of the 7 products has every angle (situation-first, concern solved, ingredient science, social proof, routine, texture, offer, transformation journey), plus a people pack each (lifestyle, human usage, routine journey).
-  - **People:** 41 ads feature AI people or skin. All carry the AI-GENERATED mark.
-  - **Not exportable:** 14 ads (Severe formats such as before/after and transformation journeys, and one offer whose freebie terms the site doesn't state).
+  - AI-generated people (balanced Indian women and men) only where a format needs a person.
+- **House style from the brand's own top-running static ads** (8 ads, 52–98 days; videos excluded):
+  - white canvas, the real pack as the hero;
+  - a short title, the product name and one grey line;
+  - a quiet "Shop now →" and the "Hide Nothing." sign-off.
+  - **Text budget:** a style check holds every ad to the brand's statics (median 15 words on the image; **88/88 within budget**). Details go to the caption, which is compliance-checked too.
+  - **Side by side:** `research/style_compare.png` shows the brand's statics next to one of our ads per layout.
+- **Output:** `ad_library/` holds **88 unique ads and 268 PNGs**, each with a description file (creative copy, caption, facts, risk). Open `ad_library/index.html` for the gallery, which filters by product, risk and "AI people".
+  - **Coverage:** every one of the 7 products has every angle (situation-first, concern solved, ingredient science, social proof, routine, texture, offer, transformation journey). Each product also has a people pack (lifestyle, human usage, routine journey) and an **Us vs Them** comparison.
+  - **Models are Severe:** 40 ads use an AI model (person, hands or skin frames). Each is rated Severe and carries the AI-GENERATED mark.
+  - **Comparisons:** the 7 Us vs Them ads compare only against something the brand's page itself names. The independent judge flagged all 7 (1 block: "melanin reduction" reads as skin lightening), so they stay High/Severe until a reviewer signs off the proof.
+  - **Not exportable:** 48 ads: every model and Severe ad, the comparisons, and ads kept with open warnings.
   - Every image was checked by eye on contact sheets.
 - **Also built:** Hindi/regional versions with their own checks, an own-results ledger feeding format choice, and a regulatory watch (ASCI AI-content rule, CDSCO).
-
 ## Other known limits
 
 - Flipkart reviews aren't parsed and Nykaa blocks scripts, so customer language comes from the website and Amazon only.
 - The AI judge is inconsistent across runs on some page wording ("reduces sebum"), so human review stays mandatory.
-- Severe formats need real consented study photos before any use.
+- Severe formats, including anything with an AI model, need real, consented photos (and study backing for any result) before any use.
 - The rules are India-first; a US market needs a US rule set (FTC/FDA, TikTok Shop, Amazon).

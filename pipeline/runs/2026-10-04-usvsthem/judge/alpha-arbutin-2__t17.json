@@ -1,0 +1,65 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-06",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Melanin reduction",
+      "severity": "block",
+      "why": "The ad's lead benefit is cutting melanin, the skin's own pigment, and nowhere does it tie that to dark spots or uneven patches; with the test run on a dark-skin ('Black skin') tissue model, '70% melanin reduction' reads as making skin lighter. It is also a melanin structure/function claim (CLM-24), so the same wording in the primary text and the on-image row needs the same change.",
+      "fix": "Lead with the concern, not the pigment, e.g. 'For dark spots: two serums, tested side by side in a lab', and relabel the matching 'melanin' lines in the body and table as a lab skin-model result rather than a change in the viewer's skin. Have legal confirm the final wording."
+    },
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Alpha Arbutin strength: 2% vs 2%",
+      "severity": "fix",
+      "why": "This row tells viewers the test was like-for-like, but the product page says Minimalist's serum also contains Butylresorcinol, a second depigmenting active the page calls more potent than Kojic Acid, so the 70% vs 56% gap is a whole-formula result, not better Alpha Arbutin. Under a 'Hide Nothing.' sign-off, leaving the second active out is exactly what a rival or reviewer would point to.",
+      "fix": "Show the formulas as they are, e.g. 'Ours: Alpha Arbutin 2% with Butylresorcinol | Benchmark: an Alpha Arbutin 2% serum', or drop the strength row."
+    },
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "70% vs 56%",
+      "severity": "fix",
+      "why": "This is a single in-vitro result on a 3D tissue model, not a result on people, and the footnote's 'skin-identical model' makes it sound stronger than the page's 'Melanoderma skin 3D model' (CLM-08). The benchmark is described closely enough that viewers may identify the rival, so the comparison is acceptable only if the report is on file and the benchmark's current formula is the one tested (the report number points to a 2021 study).",
+      "fix": "Keep the figures only with a plain qualifier, e.g. footnote: 'In-vitro test on a 3D pigmented skin tissue model (not on people) by an independent lab, vs an international brand's Alpha Arbutin 2% serum.' Replace 'skin-identical model' in the primary text too, and confirm the benchmark formula is still current."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'The benchmark' is another brand's serum, so this is a direct product comparison that must be like-for-like and substantiated."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "The header row sets Minimalist's serum against the rival benchmark serum."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "The '2% vs 2%' row is part of the comparison and implies equal formulas, which the product page contradicts (see finding)."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "The '70% vs 56%' row is the comparative efficacy claim itself."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "'Benchmark' names the rival product being compared."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "The footnote is the comparison's qualifier, so it is rightly part of the comparative claim; it should stay, reworded per the finding."
+    }
+  ],
+  "tone_read": "Calm, declarative and study-led, with no hype, emoji or fear, which is the register Minimalist uses when it shows its data. But leading with 'Melanin reduction' puts a pigment figure ahead of the concern it addresses, and 'Hide Nothing.' sits awkwardly beside an anonymised benchmark and an unmentioned second active.",
+  "language_read": "The concentration is exact and on-format ('Alpha Arbutin 2%'), matching the pack name, and the active is named precisely. The efficacy wording is unhedged and unscoped ('reduced melanin concentration by 70%'), with none of the 'visibly', 'appearance' or dark-spot framing the brand normally uses."
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "salicylic-acid-2__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t30",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 30,
+    "template_name": "UGC screenshot style",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t44",
+    "brand": "Dot & Key",
+    "ad_type": "expert_authority",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 44,
+    "template_name": "Founder / expert portrait",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)",
+      "Re'equil 1039318678808682 (66d)"
+    ]
+  }
+]

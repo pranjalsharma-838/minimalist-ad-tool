@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 niacinamide-10-with-matmarine__t9.png · 4:5 niacinamide-10-with-matmarine__t9.4x5.png · 9:16 niacinamide-10-with-matmarine__t9.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Lightweight serum, no sticky residue
-- Subhead: Apply 2-3 drops after cleansing & toning; let it absorb fully before the next step.
-- Niacinamide, Matmarine, Zinc and Acetyl Glucosamine
-- AM & PM, every day
-- Suitable for 16+ years of age
-- Footnote: 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Apply 2-3 drops after cleansing & toning; let it absorb fully before the next step. Niacinamide, Matmarine, Zinc and Acetyl Glucosamine AM & PM, every day Suitable for 16+ years of age 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a pale grey-green matte tiled wall above a narrow stone counter edge, soft daylight from the upper left, minimal and uncluttered. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): Macro-style close-up of a man in his early 30s with a light-brown skin tone and short stubble, shown from the nose to the jaw in a bright bathroom in the morning; two fingertips are pressing a few clear, lightweight drops into his cheek and spreading them downward with a light touch while his other hand is out of frame; soft daylight from the upper left, plain pale grey-green tile behind, shallow depth of field, relaxed expression, natural skin texture with visible pores, no retouching, nothing implying a result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

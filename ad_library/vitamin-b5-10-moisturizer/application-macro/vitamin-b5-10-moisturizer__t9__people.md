@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 vitamin-b5-10-moisturizer__t9.png · 4:5 vitamin-b5-10-moisturizer__t9.4x5.png · 9:16 vitamin-b5-10-moisturizer__t9.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Massage into face and neck until absorbed
-- Subhead: Use after cleansing, toning and applying all serums. AM & PM, every day.
-- D-Panthenol USP from BASF, Germany
-- Lightweight, oil-free moisturizer
-- Suitable for 16+ years of age
-- Footnote: 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Use after cleansing, toning and applying all serums. AM & PM, every day. D-Panthenol USP from BASF, Germany Lightweight, oil-free moisturizer Suitable for 16+ years of age 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white tiled wall with soft morning daylight from the upper left and a narrow pale stone shelf along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

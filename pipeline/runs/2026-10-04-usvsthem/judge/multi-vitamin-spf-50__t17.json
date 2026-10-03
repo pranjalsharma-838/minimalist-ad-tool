@@ -1,0 +1,64 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "SPF 50 Sunscreen (ours) vs Label with the SPF only",
+      "severity": "fix",
+      "why": "This sets Minimalist's product page against other brands' labels: by the ad's own account our pack also shows just 'SPF 50' and the report lives online, so it isn't like-for-like. Paired with 'Hide Nothing.', it implies sunscreens labelled with the SPF alone are untested or concealing results, which the ad can't substantiate.",
+      "fix": "Drop the comparison and say it plainly: 'SPF 50, PA++++ on the pack. The full in-vivo lab report is on the product page.'"
+    },
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "56.6 vs Not shown",
+      "severity": "fix",
+      "why": "Under 'SPF 50 vs SPF 50', this row suggests ours protects more than other SPF 50 sunscreens, but their test values are unknown, not lower. It also puts an SPF figure other than the labelled 50 on the image, which a reviewer may also read against CLM-19.",
+      "fix": "Present the test as confirming the label, as the product page does: 'SPF 50, confirmed by an independent in-vivo test (ISO 24444:2019)'."
+    },
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "SPF value obtained 56.6, PA rating ++++",
+      "severity": "fix",
+      "why": "ISO 24444:2019 is the in-vivo method for SPF only; a PA rating comes from a separate UVA test (such as ISO 24442 or ISO 24443), so this line credits PA++++ to a test that doesn't measure it. Acceptable if the lab report on file includes a UVA test, in which case cite that method for the PA rating.",
+      "fix": "Separate the two results, e.g. 'In-vivo SPF test (ISO 24444:2019): SPF 50 confirmed. PA++++ per [the UVA test named in the report].' If the report has no UVA test, attach substantiation for PA++++ before this runs."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "Report on the product page.",
+      "severity": "advisory",
+      "why": "It repeats the sentence before it ('The lab report and its data points are on the product page.'), so the copy reads unedited.",
+      "fix": "Delete 'Report on the product page.'"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "The ad's labelled SPF is 50, matching the product; 56.6 is the in-vivo test value from the page's lab report (F16), presented as a test result, not as the product's SPF. The real risk is how 56.6 is used in the on-image comparison row, raised as a CLM-12 finding."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "The header row compares the product with other brands' SPF-only labels."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'SPF 50 vs SPF 50' is part of that comparison."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'56.6 vs Not shown' is the comparative payload and implies better protection (see finding)."
+    }
+  ],
+  "tone_read": "Calm, factual and evidence-first: naming the test standard and pointing to the report is how Minimalist likes to back a claim, with no hype, emoji or fear. The 'vs Label with the SPF only' table and 'Hide Nothing.' add an implied dig at other brands, and the doubled 'Report on the product page.' reads unedited.",
+  "language_read": "SPF and PA are stated exactly as on the pack ('Broad spectrum SPF 50, PA++++') and the test method is named precisely. The weak spot is precision used as a selling number: '56.6' sits beside the labelled 50, and the PA rating is credited to an SPF-only method."
+}

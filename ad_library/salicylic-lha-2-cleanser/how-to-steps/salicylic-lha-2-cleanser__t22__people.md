@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-lha-2-cleanser__t22.png · 4:5 salicylic-lha-2-cleanser__t22.4x5.png · 9:16 salicylic-lha-2-cleanser__t22.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Morning wash: wet, lather, massage, rinse
 
-- Footnote: AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+- Footnote: AI illustrations of a routine, not results.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a bright off-white tiled wall above a narrow stone basin ledge, soft morning daylight from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+- AI frames prompt (a model: Severe): The same Indian woman in her early 20s with medium-brown skin, washing up in the morning at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair clipped back, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning daylight from the upper left. Panel 1: she splashes water onto her face with cupped hands, eyes closed. Panel 2: she rubs her wet palms together over the basin, nothing visible on her hands. Panel 3: her fingertips move in small circles across her cheeks, then she rinses with cupped hands under the tap. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life medium-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

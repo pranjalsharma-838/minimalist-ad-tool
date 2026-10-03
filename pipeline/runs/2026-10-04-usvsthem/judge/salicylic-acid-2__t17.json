@@ -1,0 +1,27 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "vs Label without the %",
+      "severity": "fix",
+      "why": "The 'Them' is a hypothetical label, not a real product, and with 'Not stated' and 'Hide Nothing.' it implies salicylic acid products that don't print a % are concealing something or weaker, with no basis shown. The formula's other actives (Oligopeptide-10, EGCG, White Horehound Extract) carry no strength in the ad or the product-page lines, so the comparison invites the same charge back.",
+      "fix": "Make it non-comparative: 'Salicylic Acid 2% Face Serum: the active and its strength, on the pack.' If the vs layout stays, get reviewer sign-off that 'Not stated' next to 'Hide Nothing.' doesn't imply other brands conceal anything."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "The header row compares the product with other brands' labels that omit the %, an implied comparison with 'regular' products."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'2% vs Not stated' is the comparative row."
+    }
+  ],
+  "tone_read": "Calm, factual and strength-led, with a plain mechanism ('gentle exfoliant') and no hype, emoji or fear, so it reads like Minimalist. The comparison device and 'Hide Nothing.' add an implied dig at other labels that the brand's educational voice doesn't need.",
+  "language_read": "The concentration is exact and on-format ('2% salicylic acid', 'Salicylic Acid 2% Face Serum'), matching the pack name. 'Strength of the active' (singular) skips the formula's other actives, which the product page names without strengths."
+}

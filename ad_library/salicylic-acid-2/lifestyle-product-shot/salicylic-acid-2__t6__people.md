@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-acid-2__t6.png · 4:5 salicylic-acid-2__t6.4x5.png · 9:16 salicylic-acid-2__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Evening in: 2-3 drops after cleansing & toning
-- Subhead: A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily.
-- Recommended for combination/oily skin
-- Salicylic Acid from Merck, Germany
-- Suitable for 18+ years of age
-- Footnote: 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily. Recommended for combination/oily skin Salicylic Acid from Merck, Germany Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a plain off-white painted wall with a pale wooden desk edge along the lower left, soft warm lamp light from the upper left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian man around 21 with light-brown skin, spending an evening in a small college hostel room: he sits cross-legged on a single bed with a plain cotton bedsheet, a study desk behind him with a closed laptop and a neat stack of plain notebooks, a clothes rack with a few shirts and a small barred window showing the evening dusk. He wears a plain grey cotton t-shirt and relaxed track pants, looking up with an easy, relaxed expression as if a friend has just walked in. Warm lamp light from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

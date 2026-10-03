@@ -1,0 +1,43 @@
+{
+    "alpha-arbutin-2__t14":  {
+                                 "headline":  "AM \u0026 PM: 2-3 drops of 2% Alpha Arbutin",
+                                 "why":  "headline 9 \u003e 8 words; dropped \"routine\""
+                             },
+    "alpha-arbutin-2__t15":  {
+                                 "headline":  "Our notes on Alpha Arbutin 2%",
+                                 "why":  "headline 9 \u003e 8 words; kept the calm half, the question moves to the caption"
+                             },
+    "multi-vitamin-spf-50__t26":  {
+                                      "headline":  "What customers say",
+                                      "why":  "quote + headline 21 \u003e 20 words; the pack names the product"
+                                  },
+    "niacinamide-10-with-matmarine__t14":  {
+                                               "headline":  "AM \u0026 PM: 2-3 drops of 10% Niacinamide",
+                                               "why":  "headline 9 \u003e 8 words"
+                                           },
+    "salicylic-lha-2-cleanser__t14":  {
+                                          "headline":  "AM \u0026 PM: a 2% Salicylic Acid + LHA cleanser",
+                                          "why":  "headline 9 \u003e 8 words"
+                                      },
+    "salicylic-lha-2-cleanser__t8":  {
+                                         "headline":  "Morning wash: a light lather",
+                                         "why":  "headline 9 \u003e 8 words; keeps the situation"
+                                     },
+    "vitamin-b5-10-moisturizer__t8":  {
+                                          "headline":  "Last step of the routine",
+                                          "why":  "headline 10 \u003e 8 words; keeps the routine angle"
+                                      },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14":  {
+                                                                       "headline":  "AM \u0026 PM: 2-3 drops of 10% Vitamin C",
+                                                                       "why":  "headline 9 \u003e 8 words"
+                                                                   },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26":  {
+                                                                       "headline":  "What customers say",
+                                                                       "why":  "quote + headline 24 \u003e 20 words"
+                                                                   },
+    "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36":  {
+                                                                       "offer.line":  "Build Your Own Bundle: up to 15% off",
+                                                                       "offer.condition":  "On beminimalist.co. T\u0026C apply.",
+                                                                       "why":  "offer title 11 \u003e 8 words; the full offer text and condition move to the caption"
+                                                                   }
+}

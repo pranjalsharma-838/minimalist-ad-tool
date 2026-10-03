@@ -30,7 +30,7 @@ It has three parts:
 **Run:**
 ```bash
 npm start          # the app: http://localhost:5173 (PORT=xxxx to change)
-npm test           # 40 unit/regression tests
+npm test           # 47 unit/regression tests
 npm run eval       # the scorer evaluation (see eval/README.md)
 ```
 
@@ -49,10 +49,12 @@ Each step and its check is in `pipeline/RUNBOOK.md`. In short:
 2. **Pick formats:** `node pipeline/00_product_run.js <run> 4 <product-handle> …`. The archetype skill ranks all 48 formats on competitor winners, trends, page facts and our own results. It never removes a format; it gives each a risk level. Every concept blends 3 winning competitor ads, and the angles are balanced across the run.
 3. **Write briefs** with the brief-writer prompt (`prompts/pipeline_brief_writer.md`). Every line cites a fact.
 4. **Compliance:** `node pipeline/05_compliance.js <run>` runs 43 rules plus the AI judge. `05b_retry.js` runs up to 3 retry rounds and always keeps the best judged version.
+   **Style fit:** `node scripts/style_check.js` holds every ad to the text budget of Minimalist's own top-running static ads (0–15 words on the image, details in the caption). Flagged lines are cut (`prompts/style_editor.md` → `scripts/apply_style_edits.js`, which refuses any new word).
+   **Models are Severe:** any AI person, hands or skin frames makes an ad Severe. It's kept for review, never exported.
 5. **Language versions** (optional): `prompts/translator.md`, then `05c_translate_check.js` (back-translation, numbers lock, risky words, same-language disclaimer).
-6. **Image prompts:** `06b_director_inputs.js`, then the director prompt, then the `06c_prompts.js` re-check. Prompts are background only; the product is never AI-drawn.
-7. **Backgrounds:** ChatGPT (you log in, the browser pastes the prompts) or the OpenAI API. Save them to `pipeline/runs/<run>/backgrounds/<id>.png`.
-8. **Compose:** `08_compose.js <run>` (real cut-out with shadow, 1:1 + 4:5 + 9:16, language versions), then `08b_png.js <run>`.
+6. **Image prompts (optional):** `06b_director_inputs.js`, then the director prompt, then the `06c_prompts.js` re-check. The minimal house look draws no scene backgrounds, so this step only matters if scenes come back. The product is never AI-drawn.
+7. **People and frames (only for formats that need them):** ChatGPT (you log in, the browser pastes the prompts) or the OpenAI API. Save them to `pipeline/runs/<run>/backgrounds/<id>.person.png` or `<id>.frames.png`.
+8. **Compose:** `08_compose.js <run>` (minimal house layout: white canvas, real cut-out with shadow, title + one grey line, quiet CTA, "Hide Nothing." sign-off; 1:1 + 4:5 + 9:16, language versions), then `08b_png.js <run>`.
 9. **Library:** `09_library.js <run>` writes `ad_library/<product>/<format>/` with a description per ad.
 10. **Learn:** add live results to `results/ledger.csv`, then run `node scripts/results_ingest.js`; formats that work for us rise in ranking.
 

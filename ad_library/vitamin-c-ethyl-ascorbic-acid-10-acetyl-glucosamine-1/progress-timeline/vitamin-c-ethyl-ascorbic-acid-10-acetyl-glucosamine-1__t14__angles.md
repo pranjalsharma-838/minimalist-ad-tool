@@ -19,10 +19,17 @@
 | Run | 2026-10-03-angles |
 
 ## Copy on the creative
-- Headline: AM & PM routine: 2-3 drops of 10% Vitamin C
+- Headline: AM & PM: 2-3 drops of 10% Vitamin C
 
-- Footnote: Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: Frames are AI illustrations of a routine, not results.
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+AM & PM routine: 2-3 drops of 10% Vitamin C. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "AM & PM routine: 2-3 drops of 10% Vitamin C" → "AM & PM: 2-3 drops of 10% Vitamin C" (headline 9 > 8 words)
 
 ## Facts cited (from the product page)
 ```json
@@ -30,11 +37,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: an off-white seamless paper backdrop with a faint warm-peach-grey gradient at very low saturation and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+- AI frames prompt (a model: Severe): Three side-by-side portrait panels of the same adult's cheek and temple area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. The skin looks consistently healthy in all three panels and any small natural marks stay exactly the same in every panel; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light, so the panels look like one routine continuing rather than a change. No marks added or removed, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 - Real photography needed: Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.
 

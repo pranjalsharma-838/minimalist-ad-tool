@@ -30,6 +30,11 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-03 15:56 | Compliance re-computed risk and dropped the AI flag: AI-people ads came out "low, no AI label" | The writer agent noticed the mismatch | Risk can only go up: the format's own risk and the AI flag are floors | 05183a0 |
 | 10-03 16:03 | Catalog checks fired on *other brands'* products (5/12 over-blocks on the unseen-brand test) | Out-of-distribution eval, scored once | Catalog checks scoped to Minimalist's own ads; post-fix re-run reported separately | 506adce |
 | 10-03 20:39 | On creator/UGC ads the product inset covered the person's face | Contact-sheet eye-check | Person card + product beside it on that layout | 4cb0d6d |
+| 10-04 00:25 | The rule layer missed comparisons worded "unlike salicylic acid" / "higher than other derivatives" | Rules-only gate on the Us vs Them run | CLM-12 extended ("vs", "unlike X", "higher than"); eval re-run, unchanged | ab5f8f2 |
+| 10-04 00:50 | Two creatives lost the end of their footnote, one an AI-illustration note: the creative drew 2 lines but the overflow check allowed 3 | The new style check | Check matches what's drawn; footnote shortened with its own words | ab5f8f2 |
+| 10-04 01:20 | On the new white canvas, white packs showed in grey boxes / white frames, and overlapped person photos | Contact-sheet eye-check | Canvas takes the pack photo's studio grey; no frame; pack beside the photo when it has no cut-out | ab5f8f2 |
+| 10-04 01:35 | The caption split moved two Us vs Them ads' basis-of-comparison lines off the creative | Contact-sheet eye-check | Comparison bases, "results may vary" and perception qualifiers always stay on the creative | ab5f8f2 |
+| 10-04 01:45 | The transcript export had silently dropped 40 messages the user typed mid-task (since 10-01) | Preparing grammar corrections for the newest messages | Mid-task messages exported and marked; corrections added | 1ffd766 |
 
 **The human pushed back, and the build changed**
 
@@ -43,8 +48,12 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-03 | External review: "is 92% a generalisation test or a self-consistency check?" | Unseen-brand, unseen-channel eval set, labelled blind and scored once (eval/README.md) |
 | 10-03 15:20 | "A lot of them are missing human images… one for each product… the different angles" | AI people filled in for every placeholder; every product × every angle (23 new ads) |
 | 10-03 19:45 | "Clear product and CTA is missing… human usage, journey and lifestyle are very limited… Indian audience, male and female" | Larger product + action CTA on every ad; a people pack (lifestyle, usage, routine journey) per product with balanced Indian casting; existing AI people recast |
+| 10-03 18:12 | "The images are a bit too text-heavy; fetch Minimalist's long-running ads and compare" | Style guide from the brand's own top runners; details moved to the caption |
+| 10-03 18:37 | "Us vs them is missing; the Hide Nothing tg is missing" | Us vs Them format (7 ads; the judge flagged all 7, so they stay High/Severe); "Hide Nothing." sign-off on every ad |
+| 10-03 18:54 | "From Meta we were supposed to scrape statics and not videos, for competitors as well as ours" | Video ads ignored as evidence in code; the brand reference re-scraped as 8 statics; 3 briefs re-sourced |
+| 10-03 19:04 | "Much cleaner than what we are building… whenever models are used the risk is severe… the design should be minimalistic" | Minimal house design on every ad (median 15 words on the image); any model makes an ad Severe (kept, never exported) |
 
-About 22 of the ~90 commits are fixes to something the agent got wrong; the rest add features or docs.
+About 23 of the ~95 commits are fixes to something the agent got wrong (a few more sit inside feature commits and are listed in their messages); the rest add features or docs.
 
 ---
 
@@ -3646,3 +3655,31 @@ While that renders, I'm preparing the transcript update. That means listing the 
 ### Assistant · 2026-10-03 19:31
 
 Writing the disclosed grammar-only corrections for the 40 newly included messages. I'm also removing the client's name from the corrections file itself.
+
+### Assistant · 2026-10-03 19:33
+
+91 commits so far, and about 580 changed files waiting (mostly re-rendered images). I'll commit in 3 groups once rendering finishes. Meanwhile, adding the new steps to the README.
+
+### Assistant · 2026-10-03 19:34
+
+Angles is rendering. Meanwhile, committing the code changes as one commit, since the code is final unless the eye-check finds more.
+
+### Assistant · 2026-10-03 19:35
+
+The commit didn't go through: PowerShell split the message into separate words. Nothing was committed. Retrying with the message saved to a file.
+
+### Assistant · 2026-10-03 19:35
+
+Code is committed (ab5f8f2). Rendering is on the last two runs. Next commit: the transcript-export fix on its own, so its hash can go in the transcript's "start here" index.
+
+### Assistant · 2026-10-03 19:35
+
+Now adding today's rows to the transcript's "start here" index, with those commit hashes:
+
+### Assistant · 2026-10-03 19:38
+
+The library is rebuilt: 88 ads, 41 of them not exportable (models, Severe formats, or open warnings). Checking the side-by-side against Minimalist's statics.
+
+### Assistant · 2026-10-03 19:40
+
+The gallery now agrees with the composer: 48 not exportable. Updating the submission doc's ad-library section with the final numbers and the new house style.

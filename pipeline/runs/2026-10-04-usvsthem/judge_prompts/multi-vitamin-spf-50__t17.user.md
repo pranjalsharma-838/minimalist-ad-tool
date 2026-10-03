@@ -1,0 +1,75 @@
+Ad type: brand-authored
+
+The ad, field by field:
+
+<headline>
+SPF 50, and the lab report
+</headline>
+<primary_text>
+Broad spectrum SPF 50, PA++++. Tested in an independent third-party lab (in-vivo, ISO 24444:2019): SPF value obtained 56.6, PA rating ++++. The lab report and its data points are on the product page. Report on the product page.
+</primary_text>
+<on_image_text>
+SPF 50 Sunscreen (ours) vs Label with the SPF only
+SPF on the pack: SPF 50 vs SPF 50
+In-vivo SPF, lab report: 56.6 vs Not shown
+SPF 50 Sunscreen
+Hide Nothing.
+</on_image_text>
+<footnote>
+In-vivo test, ISO 24444:2019, by an independent third-party lab.
+</footnote>
+<cta>
+Shop now
+</cta>
+
+Rule-layer hits already found (review each in rule_hit_review, by index):
+0. CLM-19 in primary_text: "SPF value obtained 56"
+1. CLM-12 in on_image_text: "vs"
+2. CLM-12 in on_image_text: "vs"
+3. CLM-12 in on_image_text: "vs"
+
+Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
+F1 [name] SPF 50 Sunscreen
+F2 [claim] Broad Spectrum SPF 50, PA++++
+F3 [claim] A light weight, moisturiser-meets-sunscreen. This broad spectrum SPF 50 with PA++++ rating, has a very light texture that spreads easily & disappears leaving behind a natural, moisturised, non-shiny look. Loaded with Vitamins B, E & F that help repair skin and minimise damage caused by UV exposure.
+F4 [testimonial] "This is the best sunscreen I've come across to. It suits my skin well no whitecast no sticky feeling absorbs quickly." -tanisha v.
+F5 [claim] This sunscreen is formulated with 4 very effective UV-filters, namely, Uvinul T 150, Avobenzone, Octocrylene and Titanium Dioxide to provide protection from UVA & UVB
+F6 [claim] Boosted with Vitamin B3, B5, E and F that not only repairs skin after sun exposure, but also soothes, nourishes and hydrates skin
+F7 [claim] Thoroughly tested by an independent lab and confirmed SPF of 50 was obtained
+F8 [claim] It is a Photostable & Acne safe sunscreen that does not leave any white cast on application. Also, it spreads easily like a lightweight moisturiser and does not leave behind unwated residue or heavy feeling
+F9 [claim] The primary filters are sourced from BASF, Germany and Royal DSM, Netherlands
+F10 [suitability] Skin type: Dry/Normal, Sensitive, Oily/Combination, Acne-Prone
+F11 [suitability] Concerns: Sun protection, UV exposure / damage
+F12 [suitability] Suitable for: 16+ years of age
+F13 [study] This sunscreen is tested in an independent third party lab to confirm the level of protection it provides. Below is the lab report and the data points
+F14 [study] Test type: IN-VIVO Evaluation of sun protection by International Standards - ISO 24444:2019
+F15 [study] Study Number: MS22.SPF.A1015.UPPL.ISO24444.ST15.REP.REV
+F16 [study] SPF value obtained: 56.6
+F17 [study] PA rating: ++++
+F18 [study] (Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab)
+F19 [study] Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist.
+F20 [usage] Apply on cleansed face after all your serums and moisturisers. Apply generously & evenly on your face and neck. Apply sunscreen at least 15 minutes before sun exposure. For added protection, reapply in case of continued sun exposure, swimming, perspiring or towel drying.
+F21 [usage] When to use: AM. Everyday.
+F22 [ingredient_note] The most popular UVA filter across the world and provides proper UVA protection
+F23 [ingredient_note] Protects the skin primarily from the UVB. Octocrylene is a very photostable filter and it further stabilizes Avobenzone
+F24 [ingredient_note] A highly effective UVB filter with exceptionally high absorptivity
+F26 [faq] No. It does not leave any white cast or unwanted residue behind, after application.
+F27 [faq] Yes. This is a light-weight sunscreen suitable for all skin types.
+F28 [faq] No. This sunscreen uses Octocrylene as one of the filters and while it's a safe, photostable filter, we recommend avoiding sunscreens formulated with this filter during pregnancy or the lactation period.
+PRICE1 [price] 50g: Rs. 359 (MRP Rs. 399; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
+PRICE2 [price] 100g: Rs. 629 (MRP Rs. 699; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
+PRICE3 [price] 30g: Rs. 224 (MRP Rs. 249.1; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02
+PRICE_AMZ [price] Amazon.in: Rs. 628 (16% off as shown); Save 10% with coupon — search result, captured 2026-10-02 (verify it is the brand's own listing)
+OFFER1 [offer] "Build Your Own Bundle — Save an additional up to 15% off" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1
+OFFER2 [offer] "Upto 33% OFF + Freebies" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
+OFFER3 [offer] "Buy 2, Get 3rd Free" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
+OFFER4 [offer] "Get Additional Free Gifts on orders above ₹1199" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1
+RATING [rating] 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+REV1 [review] "It was an amazing product. It was an amazing product especially for oily skin no white casting and protecting the skin very good and also my skin has started reducing dark spots as well as pigmentation" — Anusha J., verified buyer, 5★, 2025-12-17 (beminimalist.co, captured 2026-10-02)
+REV2 [review] "Sunscreen actually works.. It works for me with combination skin type, without white shade and its oil free. Also, sweat resistance so last longer." — Parth, verified buyer, 5★, 2025-10-09 (beminimalist.co, captured 2026-10-02)
+REV3 [review] "Good. I like it's working on my skin" — Sneha C., verified buyer, 4★, 2025-12-18 (beminimalist.co, captured 2026-10-02)
+REV4 [review] "Matte finish. like the matte finish and how it blends with my skin tone" — Pushkar V., verified buyer, 4★, 2025-07-15 (beminimalist.co, captured 2026-10-02)
+REV5 [review] "Super cool. This product was really helpful in our sunny climate helps to reduce sun tan" — Adhila P., verified buyer, 5★, 2024-05-09 (beminimalist.co, captured 2026-10-02)
+REV6 [review] "Value for money. Great product and great results." — Reena R., verified buyer, 5★, 2025-12-14 (beminimalist.co, captured 2026-10-02)
+
+Report findings the rule layer missed, review its hits, and give the tone and language reads.

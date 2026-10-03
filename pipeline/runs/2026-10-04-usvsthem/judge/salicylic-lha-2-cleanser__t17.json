@@ -1,0 +1,56 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "BHA + LHA (this cleanser) vs Salicylic Acid alone",
+      "severity": "fix",
+      "why": "'Salicylic Acid alone' is undefined (a rival cleanser? the raw ingredient?), there's no footnote, and the table implies the two-acid cleanser works better with no head-to-head test behind it. The 'Stays on the outer layer: Yes vs No' row also turns an ingredient property into a deficit, though the page sells Salicylic Acid for reaching into pores, and for a rinse-off product the ad shows no product data that LHA stays on skin (CLM-23).",
+      "fix": "Explain the pairing without a rival: 'BHA + LHA, 2%. Salicylic Acid works inside the pore; LHA stays on the skin's outer layer for gentle exfoliation.' Drop the vs column and the Yes/No row."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "Per the product page:",
+      "severity": "advisory",
+      "why": "An internal sourcing note has leaked into consumer copy, and the sentence it introduces repeats the one before it.",
+      "fix": "Delete the last sentence ('Per the product page: LHA, unlike Salicylic Acid, stays on the skin's outer layer for gentle exfoliation.')."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'unlike Salicylic' compares the cleanser's LHA with salicylic acid alone; it comes from the page (F6), but in an ad it needs to be a fair, substantiated comparison."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "The same sentence states the 2% for the BHA + LHA pair, matching the pack name 'Salicylic Acid + LHA 2%'. It doesn't say how the 2% splits between the two acids, which a reviewer may still want in a 'Hide Nothing.' ad."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Header row of the comparison with 'Salicylic Acid alone'."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'BHA + LHA vs BHA' is part of the comparison."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "'Yes (LHA) vs No' is the comparative payload (see finding)."
+    },
+    {
+      "index": 5,
+      "assessment": "likely_false_positive",
+      "why": "Here 'Salicylic Acid' names the generic comparator, not the advertised active; the product line 'Salicylic Acid + LHA 2% Cleanser' carries the strength."
+    }
+  ],
+  "tone_read": "Calm and ingredient-led: naming both acids in full and saying what LHA does is classic Minimalist education, with no hype, emoji or fear. But the primary text repeats itself and ends on an internal-sounding 'Per the product page:', and the vs table sets up an unproven superiority rather than just explaining the pairing.",
+  "language_read": "The actives are named precisely (BHA + LHA, Salicylic Acid + Capryloyl Salicylic Acid) and '2%' matches the pack name. It doesn't say how that 2% splits between the two acids, which leaves a gap in an ad signed 'Hide Nothing.'."
+}

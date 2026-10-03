@@ -1,0 +1,83 @@
+{
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "source_ad_id": "multi-vitamin-spf-50__t17",
+  "product_title": "SPF 50 Sunscreen",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "hook_type": "contrast",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column v/s comparison with one pack as the hero"
+    }
+  ],
+  "ai_label_required": false,
+  "headline": "SPF 50, and the lab report",
+  "compare": {
+    "us": "SPF 50 Sunscreen (ours)",
+    "them": "Label with the SPF only",
+    "cites": [
+      "F2",
+      "F13"
+    ],
+    "rows": [
+      {
+        "label": "SPF on the pack",
+        "us": "SPF 50",
+        "them": "SPF 50",
+        "cites": [
+          "F2"
+        ]
+      },
+      {
+        "label": "In-vivo SPF, lab report",
+        "us": "56.6",
+        "them": "Not shown",
+        "cites": [
+          "F13",
+          "F16"
+        ]
+      }
+    ]
+  },
+  "footnote": "In-vivo test, ISO 24444:2019, by an independent third-party lab. Report on the product page.",
+  "caption": "Broad spectrum SPF 50, PA++++. Tested in an independent third-party lab (in-vivo, ISO 24444:2019): SPF value obtained 56.6, PA rating ++++. The lab report and its data points are on the product page.",
+  "main_theme": "lab_results",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "headline": [
+      "F2",
+      "F13"
+    ],
+    "caption": [
+      "F2",
+      "F13",
+      "F14",
+      "F16",
+      "F17"
+    ],
+    "footnote": [
+      "F14",
+      "F18"
+    ]
+  },
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real tube large on the left; on the right a two-row table, ours vs a label with the SPF only: 'SPF on the pack' SPF 50 vs SPF 50 (like for like), 'In-vivo SPF, lab report' 56.6 vs Not shown. Footnote states the test; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The page names no rival, so this is the TRANSPARENCY version: the labelled SPF 50 (the claim, shown in both columns) plus the published in-vivo lab result (F13, F16) vs a label type that shows the SPF only. Lab results are the main theme (house rule): the labelled value stays the claim and appears first. 'Them' is a label type, never a brand. Risk High: comparison by implication; a reviewer confirms."
+}

@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 alpha-arbutin-2__t6.png · 4:5 alpha-arbutin-2__t6.4x5.png · 9:16 alpha-arbutin-2__t6.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Evening wind-down: 2-3 drops after cleansing
-- Subhead: Apply after cleansing & toning. Use sunscreen during the day.
-- AM & PM, every day
-- Alpha Arbutin from Alfa Aesar, USA
-- Suitable for 18+ years of age
-- Footnote: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Apply after cleansing & toning. Use sunscreen during the day. AM & PM, every day Alpha Arbutin from Alfa Aesar, USA Suitable for 18+ years of age 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a calm off-white plaster wall in soft warm evening window light from the upper left, with a low pale-wood shelf edge along the lower left and one trailing green plant leaf at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian woman in her early 30s with medium-brown skin, winding down in the evening in her Bengaluru apartment: she sits curled into the corner of a sofa beside a tall window, a soft cotton throw over her knees, the blue-grey dusk and a few distant apartment lights outside, a leafy indoor plant and a cane side table with a plain steel tumbler beside her. She wears a simple pale cotton kurta with her dark hair loosely tied back, one hand resting relaxed in her lap, her expression calm and unhurried as she gazes out of the window. Warm lamp light from the upper left blends with the last of the daylight, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no heavy makeup or jewellery, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

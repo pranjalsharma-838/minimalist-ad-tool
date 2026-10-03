@@ -13,7 +13,7 @@
 | Placements | 1:1 niacinamide-10-with-matmarine__t3.png · 4:5 niacinamide-10-with-matmarine__t3.4x5.png · 9:16 niacinamide-10-with-matmarine__t3.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 3 |
 | Run | 2026-10-03-pilot |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Inside: Niacinamide, Matmarine and Zinc
 
-- Footnote: Also contains Acetyl Glucosamine. Evaluated for safety through patch testing.
-- CTA: See ingredients
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Also contains Acetyl Glucosamine. Evaluated for safety through patch testing. Zinc: Paired with Niacinamide; suited to oily, acne-prone skin 10% Niacinamide: Vitamin B3 for reducing sebum & pores, and even skin tone Matmarine: Biotechnological ingredient to reduce excess sebum, shine, pores and spots
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of a smooth off-white #F4F2EE surface against a seamless pale grey wall #E5E9EA with only a trace of warm tint, surface in the lower three quarters. One small smooth pale stone sits at the extreme lower-right corner, under 5% of the frame width. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: soft daylight from the upper left at 5600K, a gentle gradient shadow falling to the lower right. Background: matte seamless wall, fine plaster texture, soft depth. Style: clinical editorial, matte and uncluttered. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Brief said light from the upper right; overridden to upper-left because the real pack shot is lit from the upper left. Blush reduced to a trace to stay in the white/grey palette.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

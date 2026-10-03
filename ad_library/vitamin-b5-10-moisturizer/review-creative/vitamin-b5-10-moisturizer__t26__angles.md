@@ -13,7 +13,7 @@
 | Placements | 1:1 vitamin-b5-10-moisturizer__t26.png · 4:5 vitamin-b5-10-moisturizer__t26.4x5.png · 9:16 vitamin-b5-10-moisturizer__t26.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-angles |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: A verified buyer on Vitamin B5 10% Moisturizer
 
-- Footnote: 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Empty background scene only: a soft off-white linen-textured wall with gentle window light from the upper left and a faint warm-grey gradient. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

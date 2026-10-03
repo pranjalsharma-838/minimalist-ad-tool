@@ -1,0 +1,41 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "vs Label without the %",
+      "severity": "fix",
+      "why": "The 'Them' is a hypothetical label, not a real product, and with 'Not stated' and 'Hide Nothing.' it implies moisturizers that don't print a % are concealing something or weaker, with no basis shown. The page's other named ingredients (Hyaluronic Acid, Betaine, Zinc, Copper, Magnesium) carry no strength in the ad or the product-page lines, so the comparison invites the same charge back.",
+      "fix": "Make it non-comparative: 'Vitamin B5 10% Moisturizer: the active and its strength, on the pack.' If the vs layout stays, get reviewer sign-off that 'Not stated' next to 'Hide Nothing.' doesn't imply other brands conceal anything."
+    },
+    {
+      "rule_id": "CLM-11",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "a very high concentration",
+      "severity": "fix",
+      "why": "'Very high' compares this moisturizer with the rest of the market without saying against what, and inside a vs ad it reads as 'higher than theirs'. Acceptable if the basis (typical Panthenol use levels) is on file and stated; otherwise let the 10% speak for itself.",
+      "fix": "'Vitamin B5 (Panthenol) at 10%, for deep, oil-free moisturization.'"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'Vitamin B5 (Panthenol) at 10%' states the concentration in the same phrase."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "The header row compares the product with other brands' labels that omit the %."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'10% vs Not stated' is the comparative row."
+    }
+  ],
+  "tone_read": "Calm, concentration-first and ingredient-named, with no hype, emoji or fear, which suits Minimalist. The vs table and 'Hide Nothing.' add an implied jab at other brands, and 'a very high concentration' leans on emphasis where the brand usually lets the number speak.",
+  "language_read": "The strength is exact and on-format ('Vitamin B5 10%', 'Panthenol at 10%'), matching the pack name, and the active is named with its ingredient name (Panthenol). 'Strength of the active' (singular) ignores the Hyaluronic Acid, Betaine and minerals the page lists, which matters in an ad about disclosure."
+}

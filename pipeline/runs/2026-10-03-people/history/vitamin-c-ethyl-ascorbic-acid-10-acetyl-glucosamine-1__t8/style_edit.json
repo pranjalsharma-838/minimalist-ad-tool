@@ -1,0 +1,89 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "Take 2-3 drops on your fingertips with the dropper",
+  "subhead": "Tap gently onto the skin, then spread evenly in a circular motion.",
+  "proof_points": [
+    "AM & PM, every day",
+    "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+    "Suitable for 16+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [
+      "F14"
+    ],
+    "proof_points": [
+      [
+        "F15"
+      ],
+      [
+        "F5"
+      ],
+      [
+        "F12"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a bright off-white bedroom wall with a soft shaft of morning light from the upper left and the edge of a sheer curtain at the far left only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: human usage. Copy is the page's usage only: take 2-3 drops on the fingertips with the dropper, tap on gently, spread in a circular motion after cleansing and toning (F14), AM & PM (F15); proof lines F5 (Ethyl Ascorbic Acid, 86% pure Vitamin C content) and F12 (16+). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline, '#1 daily duo', de-tan/brighten promises, and the page's brightening, dark-spot, collagen, 'heal' and photo-ageing wording and study stats (F2, F3, F8, F16-F19, F21, F25). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "human_usage",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "usage told as a short sequence (what to do, in what order)"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "hands-on moment of use as the visual cue"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian man in his early 30s with medium-brown skin, in the morning light by a bedroom window, framed from the chest up in a plain cotton t-shirt, his fingertips held together just below his chin as if about to press a few drops onto his cheek (nothing visible on his fingertips), looking towards the mirror edge with a calm, focused expression. Soft warm morning light from the upper left, an off-white wall and a sheer curtain edge behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [
+    "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+  ],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [],
+  "rounds_tried": 1,
+  "kept_because": "passed"
+}

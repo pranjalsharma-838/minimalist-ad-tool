@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 salicylic-acid-2__t8.png · 4:5 salicylic-acid-2__t8.4x5.png · 9:16 salicylic-acid-2__t8.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: Evening wind-down: 2-3 drops after cleansing & toning
-- Subhead: PM use: start every alternate day, then after 2 weeks of usage, use it everyday.
-- RonaCare Salicylic Acid Extra Pure from Merck, Germany
-- Recommended for combination/oily skin
-- Suitable for 18+ years of age
-- Footnote: 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+PM use: start every alternate day, then after 2 weeks of usage, use it everyday. RonaCare Salicylic Acid Extra Pure from Merck, Germany Recommended for combination/oily skin Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a quiet evening bathroom wall in off-white tile, warm soft lamp light from the upper left, a faint shadow gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): A man in his late 20s with a medium-brown skin tone at a bathroom basin in the evening, wearing a plain grey t-shirt, damp hair pushed back after washing his face, a plain towel over one shoulder; he is pressing a few clear drops onto his cheek with his fingertips and looking into the mirror with a relaxed expression; warm soft lamp light from the upper left, off-white tiled wall behind, shallow depth of field, natural unretouched skin with visible pores and nothing implying a result, framed so he sits slightly left of centre with calm space to his right. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

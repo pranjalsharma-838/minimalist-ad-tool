@@ -13,7 +13,7 @@
 | Placements | 1:1 salicylic-lha-2-cleanser__t22.png · 4:5 salicylic-lha-2-cleanser__t22.4x5.png · 9:16 salicylic-lha-2-cleanser__t22.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-angles |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: Cleanser first: a simple three-step morning routine
 
-- Footnote: Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Step 1 · Cleanse: AM & PM: light lather on a wet face, then rinse Step 2 · Serum: 2-3 drops after cleansing & toning; let it absorb fully Step 3 · Sunscreen: Apply at least 15 minutes before sun exposure Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Empty background scene only: a pale grey stone shelf with a faint wet sheen, soft morning window light from the upper left and a plain wall behind. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

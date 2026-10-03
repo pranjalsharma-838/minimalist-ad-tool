@@ -1,0 +1,107 @@
+[
+  {
+    "id": "alpha-arbutin-2__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "comparison",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  }
+]

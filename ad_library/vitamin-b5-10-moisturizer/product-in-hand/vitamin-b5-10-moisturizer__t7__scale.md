@@ -20,11 +20,13 @@
 
 ## Copy on the creative
 - Headline: After cleansing, toning and serums: 10% Vitamin B5
-- Subhead: Massage into face and neck until fully absorbed, AM and PM.
-- Lightweight, oil-free; formulated for oily/combination skin
-- Boosted with Hyaluronic Acid & Betaine for multi-level hydration
-- Footnote: 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Massage into face and neck until fully absorbed, AM and PM. Lightweight, oil-free; formulated for oily/combination skin Boosted with Hyaluronic Acid & Betaine for multi-level hydration 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -32,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of an off-white #F4F2EE bathroom counter edge running along the bottom of the frame, the counter empty, against a pale grey #E5E9EA wall, evoking a morning bathroom counter with no steam. Lighting: soft daylight from the upper left at 5600K, shadows falling to the lower right. Background: matte counter, matte wall, shallow depth. Style: bathroom shelf restraint, uncluttered, single light source. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 - Real photography needed: Real photo of a consenting person's hand holding the actual pack, plain background, unretouched. No face, no application results.
 

@@ -37,18 +37,19 @@ parts.push(`<text x="60" y="108" font-family="${F}" font-size="19" fill="#555">T
 col(60, "1 · SOURCES");
 box("src_site", 60, 170, 300, 92, "source", "Brand website", ["product pages, prices, offers", "Yotpo reviews"]);
 box("src_amz", 60, 282, 300, 92, "source", "Amazon.in", ["best-seller competitors", "listings + reviews"]);
-box("src_meta", 60, 394, 300, 92, "source", "Meta Ad Library", ["74 competitor ads,", "10 Indian brands"]);
+box("src_meta", 60, 394, 300, 92, "source", "Meta Ad Library", ["74 competitor ads, 10 brands;", "statics only (videos ignored)"]);
 box("src_reg", 60, 506, 300, 92, "source", "Regulators", ["ASCI, CCPA, D&C Act,", "CDSCO notices"]);
 box("src_url", 60, 640, 300, 92, "source", "Product URL (request)", ["the one input a user gives", "(app) or a product list"]);
+box("src_own", 60, 752, 300, 112, "source", "Own top-running statics", ["8 static Meta ads, 52–98 days", "(videos excluded) → house look", "+ text budget (style guide)"]);
 box("src_results", 60, 1080, 300, 92, "source", "Our live ad results", ["Meta Ads Manager export", "→ results/ledger.csv"]);
 
 // Column 2 — data scripts + knowledge agents
 col(420, "2 · KNOWLEDGE (scripts + agents)");
 box("s_offers", 420, 170, 420, 92, "script", "Offers & prices", ["collect_offers.js · live MRP, sale price,", "sitewide offers, capture date"], "SCRIPT");
 box("s_reviews", 420, 282, 420, 92, "script", "Reviews & customer language", ["collect_reviews · marketplace_reviews ·", "mine_customer_language → concern map"], "SCRIPT");
-box("a_brand", 420, 394, 420, 114, "agent", "Brand-context agent", ["facts with ids · 294-claim matrix", "(do-not-use … usable) · house style ·", "channel differences"], "AGENT");
+box("a_brand", 420, 394, 420, 114, "agent", "Brand-context agent", ["facts with ids · 294-claim matrix ·", "house style + ad style from the", "brand's own top-running statics"], "AGENT");
 box("a_assets", 420, 528, 420, 92, "agent", "Asset-library agent", ["118 real photos labelled ·", "13 clean cut-outs of the pack"], "AGENT");
-box("a_winners", 420, 640, 420, 114, "agent", "Winner agent + trends", ["tags 74 ads to 48 formats · winner =", "running 30+ days (57) · build_trends.js", "winner share × breadth"], "AGENT");
+box("a_winners", 420, 640, 420, 114, "agent", "Winner agent + trends", ["tags 74 ads to 48 formats · winner =", "a static running 30+ days (51) ·", "build_trends.js: winner share × breadth"], "AGENT");
 box("s_reg", 420, 774, 420, 92, "script", "Regulatory watch", ["reg_watch.js · new ASCI / CDSCO items", "→ rules + sources (human reads)"], "SCRIPT");
 box("s_ledger", 420, 1080, 420, 92, "script", "Own-results scoring", ["results_ingest.js · ROAS / CTR by", "format, angle, hook (≥3,000 impr.)"], "SCRIPT");
 
@@ -59,21 +60,22 @@ box("s_input", 900, 690, 400, 136, "script", "Brief inputs", ["00_product_run.js
 
 // Column 4 — create + check loop
 col(1360, "4 · WRITE & CHECK");
-box("a_writer", 1360, 400, 420, 136, "agent", "Brief-writer agent", ["writes the ad brief; every line cites", "a fact id (page, offer, review)", "no invented numbers or claims"], "AGENT");
-box("c_scorer", 1360, 600, 420, 160, "check", "Scorer (Part B)", ["43 rules: claims, SPF, offers (CCPA),", "tone & brand language", "+ AI judge for implied claims", "verdict computed in code"], "CHECK");
+box("a_writer", 1360, 400, 420, 136, "agent", "Brief-writer agent", ["every line cites a fact id; on-image", "text budget (title + 1 line + tag);", "details go to the caption"], "AGENT");
+box("c_scorer", 1360, 600, 420, 160, "check", "Scorer (Part B)", ["43 rules + AI judge (image + caption)", "verdict computed in code", "eval: 90% holdout · 81% unseen", "brands, 0 missed blocks"], "CHECK");
 box("c_retry", 1360, 800, 420, 92, "check", "Retry loop ≤ 3 rounds", ["flag → remove or replace, never reword", "best JUDGED version always kept"], "CHECK");
 box("a_trans", 1360, 930, 420, 116, "agent", "Translator agent", ["Hindi · Tamil · Telugu · Bengali · Marathi", "+ language check: back-translation rules,", "numbers lock, same-language footnote"], "AGENT");
 
 // Column 5 — image
 col(1840, "5 · IMAGE");
-box("a_director", 1840, 400, 360, 136, "agent", "Image prompt director", ["background-only prompt per layout:", "empty zones, light from upper-left,", "brand palette"], "AGENT");
-box("c_prompt", 1840, 560, 360, 92, "check", "Prompt check", ["refuses any prompt that draws", "the product; AI-label rules"], "CHECK");
-box("x_gen", 1840, 676, 360, 92, "source", "ChatGPT / OpenAI image", ["generates the empty background", "(~50 s each)"]);
-box("s_compose", 1840, 800, 360, 160, "script", "Compose + re-check", ["real cut-out (asset library) + shadow ·", "copy · AI mark if needed ·", "1:1 · 4:5 · 9:16 · languages ·", "rules re-run · PNG (headless Edge)"], "SCRIPT");
+box("c_style", 1840, 400, 360, 118, "check", "Style check + editor", ["brand statics' text budget (0–15", "words); edits only cut, code-checked", "→ 88/88 ads within budget"], "CHECK");
+box("a_director", 1840, 538, 360, 116, "agent", "Image prompt director", ["optional: the minimal look draws", "no scene backgrounds; person /", "frames prompts come from the brief"], "AGENT");
+box("c_prompt", 1840, 674, 360, 92, "check", "Prompt check", ["refuses any prompt that draws", "the product; AI-label rules"], "CHECK");
+box("x_gen", 1840, 786, 360, 92, "source", "ChatGPT / OpenAI image", ["AI people & frames only: any", "model makes the ad SEVERE"]);
+box("s_compose", 1840, 898, 360, 170, "script", "Compose + re-check", ["minimal: white canvas, real pack", "large + shadow, title + 1 line,", "quiet CTA, \"Hide Nothing.\" · AI mark", "1:1 · 4:5 · 9:16 · rules re-run"], "SCRIPT");
 
 // Column 6 — outputs
 col(2260, "6 · OUTPUT");
-box("o_lib", 2260, 560, 300, 190, "output", "Ad library", ["PNG in 3 sizes + languages", "description per ad: copy, cited", "facts, risk level, blend sources,", "image prompt", "Severe → never exportable"]);
+box("o_lib", 2260, 560, 300, 190, "output", "Ad library", ["88 ads · 268 PNGs · gallery", "every product × every angle", "+ Us vs Them · description per ad", "(creative copy, caption, facts, risk)", "Severe / models → never exported"]);
 box("o_app", 2260, 790, 300, 150, "output", "The app", ["Part A: URL → finished ad", "Part B: score any ad", "(rules + AI judge)"]);
 box("o_review", 2260, 980, 300, 116, "output", "Human review", ["verdict at best: “Ready for", "human review” — never auto-", "approved"]);
 
@@ -82,6 +84,7 @@ arrow("src_site", "s_offers"); arrow("src_site", "s_reviews", { to: "l" }); arro
 arrow("src_site", "a_brand", { to: "l" }); arrow("src_amz", "a_assets", { to: "l" }); arrow("src_meta", "a_winners", { to: "l" });
 arrow("src_reg", "s_reg", { to: "l" }); arrow("src_results", "s_ledger");
 arrow("src_url", "a_brand", { to: "l", dash: true });
+arrow("src_own", "a_brand", { to: "l" });
 for (const n of ["a_brand", "a_assets", "a_winners"]) arrow(n, "k_arch");
 arrow("s_ledger", "k_arch", { to: "l", label: "learns" });
 arrow("k_arch", "s_input", { from: "b", to: "t" });
@@ -92,7 +95,8 @@ arrow("c_scorer", "c_retry", { from: "b", to: "t" });
 arrow("c_retry", "a_writer", { from: "l", to: "l", label: "fix", color: "#B42318" });
 arrow("s_reg", "c_scorer", { label: "rules" });
 arrow("c_retry", "a_trans", { from: "b", to: "t" });
-arrow("c_retry", "a_director", { label: "approved" });
+arrow("c_retry", "c_style", { label: "approved" });
+arrow("c_style", "a_director", { from: "b", to: "t" });
 arrow("a_director", "c_prompt", { from: "b", to: "t" });
 arrow("c_prompt", "x_gen", { from: "b", to: "t" });
 arrow("x_gen", "s_compose", { from: "b", to: "t" });

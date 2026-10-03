@@ -1,0 +1,76 @@
+{
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "source_ad_id": "alpha-arbutin-2__t17",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area low on the left. Square 1080x1080. Keep the left 40% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the right half as a calm empty area for a comparison table. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "hook_type": "contrast",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column v/s comparison with one pack as the hero"
+    }
+  ],
+  "ai_label_required": false,
+  "headline": "Melanin reduction, side by side",
+  "compare": {
+    "us": "Minimalist Alpha Arbutin 2%",
+    "them": "Benchmark Alpha Arbutin 2% serum",
+    "cites": [
+      "F12"
+    ],
+    "rows": [
+      {
+        "label": "Alpha Arbutin strength",
+        "us": "2%",
+        "them": "2%",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Melanin reduction (lab test)",
+        "us": "70%",
+        "them": "56%",
+        "cites": [
+          "F13"
+        ]
+      }
+    ]
+  },
+  "footnote": "In-vitro lab test on a skin-identical model vs an international brand's Alpha Arbutin 2% serum.",
+  "caption": "Minimalist ran an in-vitro (lab) test on a skin-identical model, comparing this serum with an Alpha Arbutin 2% serum from an international brand that offers active-based products. The benchmark reduced melanin by 56%; Minimalist Alpha Arbutin 2% reduced melanin concentration by 70%.",
+  "main_theme": "lab_results",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "headline": [
+      "F13"
+    ],
+    "caption": [
+      "F12",
+      "F13"
+    ],
+    "footnote": [
+      "F12"
+    ]
+  },
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a two-row table, ours vs the benchmark: 'Alpha Arbutin strength' 2% vs 2% (like for like), 'Melanin reduction (lab test)' 70% vs 56%. Footnote states the test; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. Replaced its European-vs-Korean contrast with the page's own published comparison: an in-vitro test vs a benchmark Alpha Arbutin 2% serum (F12, F13). The strength row shows the comparison is like for like (ASCI Chapter IV). The page's derived '25% more reduction' is not used: the two raw results are shown with the method. Dropped 'India's 1st' (superlative) and the claims list. CLM-12 (comparison) is expected for this format; the basis is in the footnote. Risk High: a reviewer confirms the test report is on file."
+}

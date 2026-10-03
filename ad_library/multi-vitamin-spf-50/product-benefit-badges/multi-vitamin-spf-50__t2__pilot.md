@@ -13,7 +13,7 @@
 | Placements | 1:1 multi-vitamin-spf-50__t2.png · 4:5 multi-vitamin-spf-50__t2.4x5.png · 9:16 multi-vitamin-spf-50__t2.9x16.png |
 | Language versions | hi, ta |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 3 |
 | Run | 2026-10-03-pilot |
@@ -21,8 +21,12 @@
 ## Copy on the creative
 - Headline: SPF 50, PA++++ with a light, moisturiser feel
 
+
 - Footnote: Labelled SPF 50. In-vivo test (ISO 24444:2019) by an independent third-party lab obtained SPF 56.6.
-- CTA: Shop now
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Spreads like a moisturiser Photostable & acne safe
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +37,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a straight-on view of a smooth off-white #F4F2EE studio tabletop meeting a matte plaster wall, with the tabletop filling the lower three quarters and the wall the top quarter. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: single soft window light from the upper left at 5600K, one faint diagonal leaf shadow falling across the far upper-left corner only, shadows falling toward the lower right. Background: off-white #F4F2EE plaster wall with a faint sand-pale #E8E1D3 tonal shift near the tabletop edge, matte, no gloss. Style: clinical editorial restraint, matte surfaces, generous negative space, one light source. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Brief draft asked for sky blue and a warm sunlight patch; kept palette to white/off-white/sand per brand_visual and used a single leaf shadow. Light kept upper-left to match the real pack shot.
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

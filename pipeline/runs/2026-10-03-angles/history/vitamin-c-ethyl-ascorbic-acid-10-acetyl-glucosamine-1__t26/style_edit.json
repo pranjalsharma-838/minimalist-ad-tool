@@ -1,0 +1,89 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "What customers say about Vitamin C 10% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote trimmed with …, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale warm-grey plaster wall with soft daylight from the upper left and a faint shadow from a window frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: social_proof. The review is REV3, a 5-star verified buyer, quoted verbatim and trimmed with … only (the original opens with a repeated title phrase and runs long); it is sensory only (lightweight, absorbs, not sticky) and makes no brightening, spot or result claim. REV2 and REV4 (spots and 'inner shine' results) and REV5 (a negative review) were skipped. Kept: dated verified review card (Dot & Key), 'what customers say' lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '4.8 by 15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+  "angle": "social_proof",
+  "hook_type": "social_proof",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified review card on a calm scene"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "'what customers say' lead-in headline"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line carried in the footer"
+    }
+  ],
+  "review": {
+    "stars": 5,
+    "quote": "…Loved the absorption, the serum feels lightweight and sinks into skin quickly without sticky feeling…",
+    "source": "Riddhi M., verified buyer, 5★, 2026-06-16"
+  },
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-21",
+      "span": "What customers say",
+      "message": "\"What customers say\" presents one 5-star review as what customers generally say, with no \"one person's experience\" qualifier, and the quote's texture claims (lightweight, absorbs quickly, not sticky) are not on the attached page facts. Confirm the review is verbatim, current and on file.",
+      "fix": "Change to \"What one verified buyer says about Vitamin C 10% Face Serum\", keep the quote verbatim with its attribution, and add \"Individual experience\".",
+      "layer": "model"
+    }
+  ],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

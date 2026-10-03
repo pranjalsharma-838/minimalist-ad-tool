@@ -12,20 +12,24 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8.png · 4:5 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8.4x5.png · 9:16 vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
 | Run | 2026-10-03-people |
 
 ## Copy on the creative
-- Headline: Take 2-3 drops on your fingertips with the dropper
-- Subhead: Tap gently onto the skin, then spread evenly in a circular motion.
-- AM & PM, every day
-- Ethyl Ascorbic Acid, 86% pure Vitamin C content
-- Suitable for 16+ years of age
-- Footnote: 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+- Headline: 2-3 drops on your fingertips
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Take 2-3 drops on your fingertips with the dropper. Tap gently onto the skin, then spread evenly in a circular motion. AM & PM, every day Ethyl Ascorbic Acid, 86% pure Vitamin C content Suitable for 16+ years of age 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "Take 2-3 drops on your fingertips with the dropper" → "2-3 drops on your fingertips" (headline 9 > 8 words)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +37,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a bright off-white bedroom wall with a soft shaft of morning light from the upper left and the edge of a sheer curtain at the far left only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian man in his early 30s with medium-brown skin, in the morning light by a bedroom window, framed from the chest up in a plain cotton t-shirt, his fingertips held together just below his chin as if about to press a few drops onto his cheek (nothing visible on his fingertips), looking towards the mirror edge with a calm, focused expression. Soft warm morning light from the upper left, an off-white wall and a sheer curtain edge behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

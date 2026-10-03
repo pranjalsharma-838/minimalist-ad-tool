@@ -12,7 +12,7 @@
 | Social proof | RATING (real, verbatim) |
 | Placements | 1:1 alpha-arbutin-2__t7.png · 4:5 alpha-arbutin-2__t7.4x5.png · 9:16 alpha-arbutin-2__t7.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 1 |
@@ -20,12 +20,13 @@
 
 ## Copy on the creative
 - Headline: One daily step: 2-3 drops, AM & PM
-- Subhead: Apply after cleansing & toning, then spread with a gentle circular motion.
-- Use sunscreen during the day
-- Suitable for 18+ years of age
-- Alpha Arbutin from Alfa Aesar, USA
-- Footnote: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Shop now
+
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Apply after cleansing & toning, then spread with a gentle circular motion. Use sunscreen during the day Suitable for 18+ years of age Alpha Arbutin from Alfa Aesar, USA 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
 
 ## Facts cited (from the product page)
 ```json
@@ -33,11 +34,13 @@
 ```
 
 ## Remaining findings / warnings
-- none above advisory
+- Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images.
+
 
 ## Image
-- Background prompt: Empty background scene only: a matte off-white tiled wall with soft morning daylight from a frosted window at the upper left, a narrow pale stone ledge along the bottom edge and one folded grey cotton towel at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+- AI person prompt (a model: Severe): An Indian man in his early 40s with deep-brown skin and a short, neatly kept greying beard, standing at a bathroom basin in the morning, framed from the waist up in a plain white cotton vest with a folded towel over one shoulder. His right hand is held out open at chest height, palm up, completely empty and relaxed, as if about to receive something, while his left hand rests on the edge of the basin; he looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left falls across an off-white tiled wall behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and the grey of his beard rendered true to life, nothing implying a skin result, and nothing in his hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

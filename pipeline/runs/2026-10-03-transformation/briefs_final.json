@@ -25,7 +25,7 @@
         "label": "Week 4: visible clarity"
       }
     ],
-    "footnote": "Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
+    "footnote": "Consumer studies: 97% subjects felt less oily after 2 weeks; 90% noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
     "cta": "Learn more",
     "citations": {
       "headline": [
@@ -77,7 +77,9 @@
     "source_brand": "",
     "status": "kept_with_warnings",
     "risk_level": "severe",
-    "warnings": [],
+    "warnings": [
+      "Model (AI person, hands or skin frames) used: Severe by default (user rule 2026-10-04). Kept for review; not exportable until real, consented photos replace the AI images."
+    ],
     "hard_failures": [],
     "verdict": {
       "code": "NEEDS_CHANGES",
@@ -125,6 +127,15 @@
       }
     ],
     "rounds_tried": 1,
-    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)",
+    "caption": "Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
+    "style_edits": [
+      {
+        "field": "footnote",
+        "from": "Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
+        "to": "Consumer studies: 97% subjects felt less oily after 2 weeks; 90% noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
+        "why": "footnote ran to 3 lines and the creative draws 2 (the AI note was being cut); same words, shorter"
+      }
+    ]
   }
 ]

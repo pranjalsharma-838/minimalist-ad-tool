@@ -13,16 +13,23 @@
 | Placements | 1:1 alpha-arbutin-2__t15.png · 4:5 alpha-arbutin-2__t15.4x5.png · 9:16 alpha-arbutin-2__t15.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
-| AI imagery | no — real pack shot on an AI background (no AI people) |
+| AI imagery | no — real pack shot on a plain canvas (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-angles |
 
 ## Copy on the creative
-- Headline: Questions on irritation? Our notes on Alpha Arbutin 2%
+- Headline: Our notes on Alpha Arbutin 2%
 
-- Footnote: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
-- CTA: Learn more
+
+- Footnote: —
+- CTA: Shop now · sign-off: Hide Nothing.
+
+## Caption (primary text; compliance-checked like the creative)
+Questions on irritation? Our notes on Alpha Arbutin 2%. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02 2-3 drops after cleansing & toning Use sunscreen during the day for best results
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- headline: "Questions on irritation? Our notes on Alpha Arbutin 2%" → "Our notes on Alpha Arbutin 2%" (headline 9 > 8 words; kept the calm half, the question moves to the caption)
 
 ## Facts cited (from the product page)
 ```json
@@ -33,8 +40,9 @@
 - none above advisory
 
 ## Image
-- Background prompt: Empty background scene only: a pale terrazzo tabletop seen from directly above, off-white with very faint grey flecks, even soft daylight and no shadows. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.
-- Director rationale: 
+- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).
+
+
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 

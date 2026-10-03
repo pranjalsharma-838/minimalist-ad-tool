@@ -10,6 +10,9 @@ const files = walk(ROOT).map((f) => f.replace(/\\/g, "/"));
 const mains = files.filter((f) => f.endsWith(".png") && path.basename(f).split(".").length === 2);
 const field = (md, label) => ((md.match(new RegExp(`\\| ${label} \\| ([^\\n]*?) \\|\\s*$`, "m")) || [])[1] || "").replace(/\*\*/g, "").trim();
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+// The compose step decides exportability (finals/summary.json: Severe, models, open warnings, layout issues); the gallery
+// reads that instead of guessing from the risk label (it counted 41, the creatives say 48).
+const SUMMARY = new Map(fs.readdirSync("pipeline/runs").flatMap((r) => { const f = path.join("pipeline/runs", r, "finals", "summary.json"); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")).map((x) => [`${x.id}__${r.replace(/^\d{4}-\d{2}-\d{2}-?/, "")}`, x]) : []; }));
 const ads = mains.map((png) => {
   const base = png.replace(/\.png$/, "");
   const mdFile = `${base}.md`;
@@ -22,7 +25,7 @@ const ads = mains.map((png) => {
     png: path.relative(ROOT, png).replace(/\\/g, "/"), md: path.relative(ROOT, mdFile).replace(/\\/g, "/"),
     title: (md.match(/^# (.*)$/m) || [, path.basename(base)])[1], product: field(md, "Product").replace(/\s*\(https?:[^)]*\)/, ""),
     format: field(md, "Format").replace(/ · layout.*$/, ""), angle: field(md, "Angle / hook"), risk, verdict, run,
-    exportable: risk !== "severe" && !/warning/i.test(verdict),
+    exportable: SUMMARY.get(path.basename(base))?.exportable ?? (risk !== "severe" && !/warning/i.test(verdict)),
     ai: /^yes/i.test(field(md, "AI imagery")),
     extras: extras.map((x) => ({ f: path.relative(ROOT, x.f).replace(/\\/g, "/"), tag: { "4x5": "4:5", "9x16": "9:16", hi: "Hindi", ta: "Tamil" }[x.tag] || x.tag })),
   };
