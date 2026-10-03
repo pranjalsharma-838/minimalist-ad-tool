@@ -3,3 +3,6 @@ node_modules/
 exports/
 eval/results/*.local.json
 public/dev-gen/
+
+# Video cover frames excluded from the style reference (statics only); the record is excluded_video_covers/index.json
+research/minimalist_top_ads/excluded_video_covers/*.jpg

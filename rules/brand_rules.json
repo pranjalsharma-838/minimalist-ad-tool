@@ -406,7 +406,9 @@
       "patterns": [
         "\\b\\d+(\\.\\d+)?\\s?(x|times)\\s+(more|better|stronger|faster|potent|effective)\\b",
         "\\b(more|better|stronger|faster)\\s+than\\s+(other|regular|ordinary|any|most|typical|leading)\\b",
-        "\\bunlike\\s+(other|most|regular)\\b",
+        "\\bunlike\\s+[\\w-]+",
+                "\\b(higher|lower|gentler|milder|better|stronger)\\s+than\\b",
+                "\\b(vs|v/s|versus)\\b\\.?",
         "\\bother brands\\b",
         "\\bcompetitors?\\b",
         "\\bbenchmark\\b"

@@ -62,7 +62,10 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   // Bug fix (angle run 2026-10-03): risk and the AI flag were recomputed from copy + image prompt only, so briefs
   // for AI-people formats came out "low, no AI label". Risk can only go UP: the format's own risk (match.json, from
   // the archetype skill) and the brief's AI flag are floors.
-  const risk = worstRisk(copyRisk, img.risk, brief.needs_real_photography ? "severe" : "low", m.risk || "low", brief.ai_label_required ? "high" : "low");
+  // User rule (2026-10-04): "whenever models are used in concepts we will say the risk is severe, but we will keep
+  // those as well" — any brief that puts a person or hands in the creative (person_prompt / frames_prompt) is Severe.
+  const usesModel = Boolean(String(brief.person_prompt || "").trim() || String(brief.frames_prompt || "").trim());
+  const risk = worstRisk(copyRisk, img.risk, brief.needs_real_photography || usesModel ? "severe" : "low", m.risk || "low", brief.ai_label_required ? "high" : "low");
   const status = refused.length ? "refused_image_prompt" : fixable.length || v !== "READY_FOR_REVIEW" && v !== "LIMITED_CHECK" ? "needs_retry" : "approved_for_image_step";
   out.push({
     ...brief,

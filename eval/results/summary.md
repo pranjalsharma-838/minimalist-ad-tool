@@ -1,6 +1,6 @@
 # Eval results
 
-Generated 2026-10-03T10:32:43.991Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
+Generated 2026-10-03T18:52:41.889Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
 Model layer: outputs in eval/sim_model/ were produced by Claude Code subagents given the exact rendered prompt (eval/rendered/), because no API key was available. They pass through the app's real validation code. This approximates, but is not, the production API path.
 How far each split generalises (see eval/README.md): tuning = read while writing the rules (optimistic); holdout = same Meta capture, hash-split and sealed until the rules were frozen (held out, but in-distribution); synthetic = adversarial edge cases written during the build (not independent of the builder); ood = brands never seen in the build + a different channel (Amazon.in listings), labelled blind and committed before scoring (the closest to 'ads you have not seen').
 

@@ -14,22 +14,19 @@ Scope: India, Meta, 10 brands, 74 ads, as of 2026-10-03. Signal = 0.6 x winner s
 | 3 | Product + ingredients | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
 | 4 | Ingredient flat lay | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
 | 5 | Premium editorial product shot | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
+| 7 | Product-in-hand | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
 | 8 | Product-in-use | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
 | 11 | Result / beauty shot | 1 | 1 | 1 | 1 | 0 |  | 0.65 |
 | 13 | Split-screen transformation | 4 | 4 | 0.75 | 0.75 | 0 |  | 0.65 |
 | 19 | This vs that | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
 | 24 | Clinical / science visual | 1 | 1 | 1 | 0 | 0 |  | 0.65 |
 | 25 | Stat-led creative | 1 | 1 | 1 | 0 | 0 |  | 0.65 |
-| 30 | UGC screenshot style | 2 | 1 | 1 | 1 | 0 |  | 0.65 |
+| 31 | Creator selfie | 1 | 1 | 1 | 0 | 0 |  | 0.65 |
 | 41 | Aspirational lifestyle | 1 | 1 | 1 | 0 | 1 |  | 0.65 |
-| 44 | Founder / expert portrait | 1 | 1 | 1 | 1 | 0 |  | 0.65 |
-| 46 | Scale / quantity image | 1 | 1 | 1 | 1 | 0 |  | 0.65 |
 | 48 | Seasonal creative | 1 | 1 | 1 | 1 | 0 |  | 0.65 |
 | 2 | Product + benefit badges | 4 | 3 | 0.75 | 0.5 | 0.5 |  | 0.6 |
 | 12 | Before / after | 5 | 4 | 0.6 | 0.8 | 0 |  | 0.56 |
 | 28 | Social-proof creative | 3 | 3 | 0.67 | 0.67 | 0.33 |  | 0.55 |
-| 31 | Creator selfie | 4 | 2 | 0.75 | 0.75 | 0 |  | 0.55 |
-| 7 | Product-in-hand | 2 | 2 | 0.5 | 0.5 | 0.5 |  | 0.4 |
 | 10 | Problem macro | 3 | 2 | 0 | 1 | 0 |  | 0.1 |
 | 9 | Application macro | 1 | 1 | 0 | 1 | 0 |  | 0.05 |
 | 34 | Text-led creative | 1 | 1 | 0 | 1 | 0 |  | 0.05 |

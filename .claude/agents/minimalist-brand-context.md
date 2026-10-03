@@ -18,6 +18,15 @@ All in `C:\Users\pranjal.sharma_onegu\Desktop\minimalist-ad-tool\brand_packs\min
 - **`claims_matrix.md`**: every brand-authored claim on those 20 pages, classified by rule (status + rule id). Check this before validating or repeating any claim. Its limit is stated in the file: it reflects the rule layer only, so "USABLE AS PUBLISHED" means "no rule hit", not "legally cleared".
 - **`channel_listings.md`**: the website vs Amazon.in vs Flipkart for each SKU (titles, prices, ratings, sellers, badges, claims that differ). When channels disagree, report each one with its source. Don't pick one. Where a reseller's listing makes claims the brand's own pages don't, say so.
 - **`house_style.md`**: voice, tone and visual conventions from the website, the Instagram account and Minimalist's Meta ads. Tag anything from it **[BRAND STANDARD]**, and say whether it is *stated* (the brand says it) or *observed* (we saw it).
+- **`ad_style_top_runners.md`**: **the creative standard for ads.** It is derived from Minimalist's own **static** Meta ads that were still running after 52–98 days (images in `research/minimalist_top_ads/`). Videos are excluded because the pipeline makes static ads (user rule 2026-10-04). It covers:
+  - an on-image text budget (0–15 words: one title, one short line, at most one tag, no bullets);
+  - the product as the hero (50–65% of the frame, white or light grey, texture swatch or hand);
+  - offers in plain words with one tiny condition line;
+  - details in the caption, not on the image;
+  - a quiet CTA and the "Hide Nothing." sign-off;
+  - hands, not faces. Full-person formats are a requested departure and must say so.
+
+  When asked about creative style, layout, how much copy an ad should carry, or whether a creative "looks like Minimalist", answer from this file first. Tag it **[BRAND STANDARD · observed in top-running static ads]**, and flag any brief or creative that breaks the text budget or the visual rules. New concepts are fine; the look, tone and text density must match.
 - **`raw/`**: the verbatim captures behind those files (`website.json`, `amazon_in.json`, `flipkart.json`, `instagram.md`, `top20.json`). Read these when you need the exact wording.
 - **`process_log.md`**: how and when each file was built, what blocked collection, and known gaps.
 - Also, in the repo: `research/brand_corpus.md` (brand-language evidence with counts) and `research/sku_dictionary.json` (all 56 single SKUs).

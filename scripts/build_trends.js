@@ -9,8 +9,9 @@
 import fs from "node:fs";
 
 const asOf = new Date("2026-10-03");
-const winners = JSON.parse(fs.readFileSync("research/winners.json", "utf8")).ads;
 const raw = new Map(fs.readdirSync("research/competitor_ads").filter((f) => f.endsWith(".json")).flatMap((f) => JSON.parse(fs.readFileSync(`research/competitor_ads/${f}`, "utf8"))).map((a) => [String(a.id), a]));
+// Statics only (user rule 2026-10-04): video ads don't count towards a static format's trend.
+const winners = JSON.parse(fs.readFileSync("research/winners.json", "utf8")).ads.filter((w) => raw.get(String(w.id))?.format !== "video");
 const templates = JSON.parse(fs.readFileSync("config/templates.json", "utf8")).templates;
 
 const by = {};

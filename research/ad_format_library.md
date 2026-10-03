@@ -27,6 +27,7 @@ The first table describes what competitors do. The second describes how each for
 | `stat` | testimonial_ugc | stat = {value, label}, qualifier in the footnote | Customer reviews used as claims (CCPA 13). A consumer-study stat with its qualifier replaces them |
 | `callouts` | problem_solution, expert_authority | callouts[] = {text}: concern or benefit labels pointing at the product | Skin close-ups (implied results; ASCI synthetic-content guideline). Doctors (need a real, consenting expert) |
 | `spec` | comparison | specs[] = {label, value}: our own tested facts | Comparison with other brands or "regular" products without like-for-like data (ASCI 4.1) |
+| `usvsthem` | comparison (Us vs Them, 2026-10-04) | compare {us, them, rows[] = {label, us, them}} + basis in the footnote | A named or recognisable brand, a rival's pack, "others hide / fake / harmful"; any row without a page fact behind both sides |
 | `range` | range guide | range[] = {product_handle, label} | Benefit tags our facts don't support |
 | `offer` | offer_promo | offer = {line, condition, valid_till}, entered by the marketer and marked unverified | Countdown / false urgency (ASCI dark-patterns guideline). "Free" without its condition (CCPA 7) |
 | `before_after` | before_after | headline + footnote; two photo frames | AI-generated or retouched results. The frames stay empty and export stays blocked until real study photos are attached |

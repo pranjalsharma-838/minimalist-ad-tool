@@ -32,7 +32,7 @@ The evidence of which types competitors actually run comes from `research/ad_for
 | 14 | Progress / timeline | Transformation | REAL PHOTO | As #12 plus timeframe claims (CLM-07) | ❌ new layout + real photo |
 | 15 | Problem → product | Problem | LAYOUT + PACK | As #10 | `callouts` ✅ |
 | 16 | Problem → solution → result | Transformation | REAL PHOTO for the result panel | Result panel = #11 | `journey` partial (no result panel) |
-| 17 | Comparison image | Comparison | LAYOUT + PACK | Comparative claims need like-for-like data, no disparagement (ASCI 4.1) | `spec` ✅ (own facts only) |
+| 17 | Comparison image (Us vs Them) | Comparison | LAYOUT + PACK | Comparative claims need like-for-like data, no disparagement (ASCI 4.1); claim risk High by default | `usvsthem` ✅ (them = a benchmark, ingredient form or ingredient-alone that the page names, or a label type; never a brand; basis in the footnote). `spec` for a sheet of own tested facts |
 | 18 | Old way / new way | Comparison | LAYOUT + PACK | As #17; "old way" must not be another brand | ❌ new layout |
 | 19 | This vs that | Comparison | LAYOUT + PACK | As #17 | ❌ new layout |
 | 20 | Product feature close-up | Product | REAL PHOTO (macro of the pack) | Low risk | ❌ needs macro pack photo |

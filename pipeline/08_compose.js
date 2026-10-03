@@ -16,6 +16,7 @@ const sheets = Object.fromEntries(fs.readdirSync(path.join(runDir, "products")).
 fs.mkdirSync(path.join(runDir, "finals"), { recursive: true });
 
 const ASSETS = JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/index.json", "utf8")).assets;
+const STUDIO = fs.existsSync("brand_packs/minimalist/assets/studio_bg.json") ? JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/studio_bg.json", "utf8")) : {};
 const dataUrl =(buf, type) => `data:${type};base64,${buf.toString("base64")}`;
 const cache = new Map();
 async function packShot(src) {
@@ -28,13 +29,12 @@ async function packShot(src) {
 }
 
 const summary = [];
+// Minimal house look (2026-10-04): every layout is the real pack on a plain canvas, like the brand's own static top
+// runners, so a generated background is optional (used only to fill the 4:5 / 9:16 surround when one exists). Ads with
+// a person or frames still need those AI images; without them the layout falls back to the pack alone.
 // kept_with_warnings briefs are composed for review too; they are never marked exportable (see below).
 for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warnings"].includes(b.status))) {
   const bg = ["png", "jpg", "jpeg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.${e}`)).find((p) => fs.existsSync(p));
-  if (!bg) {
-    console.log(`${b.source_ad_id}: no background yet (image step not done) — skipped`);
-    continue;
-  }
   const main = b.product_handle;
   const spec = specFromBrief(b, sheets, main);
   // Prefer a clean transparent cut-out from the asset library (real product, background removed) so the pack
@@ -50,6 +50,10 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   };
   spec.imageHref = cut(main) || (await packShot(spec.imageSrc));
   for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
+  // Minimal look (2026-10-04): white canvas. A pack without a clean cut-out (white packs on the grey sweep) would
+  // show as a grey box on white, so the canvas takes that photo's own studio grey (scripts/studio_bg.py) instead.
+  const noCut = [main, ...[...spec.steps, ...spec.range].map((s) => s.product_handle)].filter((h) => h && !ASSETS.some((x) => x.product_handle === h && x.cutout && fs.existsSync(x.cutout)));
+  spec.canvas = noCut.length ? STUDIO[noCut[0]] || "#E5E9EA" : "#FFFFFF";
   // Progress / split frames: backgrounds/<id>.frame<N>.png (N from 1). These are AI illustrations for the
   // transformation-journey format — the brief must carry ai_label_required so the AI mark is drawn.
   // Any AI-generated people/skin (frames, before/after photos, a person image) force the visible AI mark.
@@ -58,8 +62,7 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   if (spec.layout === "before_after") { const ph = [aiImg("frame1"), aiImg("frame2")].filter(Boolean); if (ph.length === 2) { spec.photos = ph; spec.aiLabel = true; } }
   const person = aiImg("person");
   if (person) { spec.personHref = person; spec.aiLabel = true; }
-  const ext = path.extname(bg).slice(1).replace("jpg", "jpeg");
-  spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
+  if (bg) spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${path.extname(bg).slice(1).replace("jpg", "jpeg")}`);
   const square = renderAdSvg(spec);
   fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), square);
   // Extra placements (open problem, 2026-10-03): 4:5 feed and 9:16 Stories/Reels. The approved 1:1 creative is
@@ -71,7 +74,7 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
     // Eye-check fix: a lightly blurred, differently scaled copy showed hard seams. Now: heavy blur + the square
     // inset as a card (1000px, rounded, soft shadow), so the edge reads as intentional, not as a seam.
     const S = 1000, x0 = 40, y0 = (H - S) / 2;
-    fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${tag}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="${H}" viewBox="0 0 1080 ${H}"><defs><filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="40"/></filter><filter id="card" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.22"/></filter><clipPath id="r"><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28"/></clipPath></defs><rect width="1080" height="${H}" fill="#EDEAE4"/><image href="${spec.backgroundHref}" x="-120" y="-120" width="1320" height="${H + 240}" preserveAspectRatio="xMidYMid slice" filter="url(#soft)"/><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28" fill="#fff" filter="url(#card)"/><image href="data:image/svg+xml;base64,${sq64}" x="${x0}" y="${y0}" width="${S}" height="${S}" clip-path="url(#r)"/></svg>`);
+    fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${tag}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="${H}" viewBox="0 0 1080 ${H}"><defs><filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="40"/></filter><filter id="card" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.22"/></filter><clipPath id="r"><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28"/></clipPath></defs><rect width="1080" height="${H}" fill="#EDEDED"/>${spec.backgroundHref ? `<image href="${spec.backgroundHref}" x="-120" y="-120" width="1320" height="${H + 240}" preserveAspectRatio="xMidYMid slice" filter="url(#soft)"/>` : ""}<rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28" fill="#fff" filter="url(#card)"/><image href="data:image/svg+xml;base64,${sq64}" x="${x0}" y="${y0}" width="${S}" height="${S}" clip-path="url(#r)"/></svg>`);
   }
   // Language versions (add-on g): compose only versions whose 05c check passed. Each English line on the ad is
   // swapped for its translated line wherever it appears in the brief (same order as adFromBrief); strings that
@@ -93,7 +96,8 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });
   // Severe-risk creatives (AI frames standing in for real results) are composed for review but never exportable.
   if (b.status === "kept_with_warnings") layoutIssues.push("Kept with warnings: open findings must be resolved by a reviewer");
-  if (b.risk_level === "severe") layoutIssues.push("Severe risk: needs real photos (people / skin / results) with consent and study backing before any use — not exportable");
+  // A model on the creative (AI person, hands or frames) is Severe whatever the brief says (user rule 2026-10-04).
+  if (b.risk_level === "severe" || spec.personHref || (spec.frames || []).some((f) => f.imageHref)) layoutIssues.push("Severe risk: a model (AI person, hands or skin frames) is used — needs real, consented photos (and study backing for any result) before any use — not exportable");
   const exportable = !layoutIssues.length && report.verdict.code !== "BLOCKED";
   summary.push({ id: b.source_ad_id, layout: spec.layout, exportable, layoutIssues, recheck: report.verdict.code });
   console.log(`${b.source_ad_id} [${spec.layout}]: composed · re-check ${report.verdict.code}${layoutIssues.length ? " · NOT EXPORTABLE: " + layoutIssues.join("; ") : ""}`);

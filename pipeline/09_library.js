@@ -1,9 +1,10 @@
 // Stage 10 — save finished ads into the ad library, each PNG with a description file.
 // Usage: node pipeline/09_library.js <run>
-// Reads finals/<id>.png (+ .svg), briefs_final.json, match.json, director/<id>.json.
+// Reads finals/<id>.png (+ .svg), briefs_final.json, match.json.
 // Writes ad_library/<product_handle>/<template-slug>/<id>.png + <id>.md and appends ad_library/INDEX.md.
 import fs from "node:fs";
 import path from "node:path";
+import { leanBrief, ctaFor } from "../lib/brief_check.js";
 
 const run = process.argv[2];
 const runDir = path.join("pipeline", "runs", run);
@@ -22,14 +23,13 @@ for (const b of briefs) {
   const m = match.get(b.source_ad_id) || {};
   const dest = path.join("ad_library", b.product_handle, slug(m.template_name || b.layout));
   fs.mkdirSync(dest, { recursive: true });
-  const dirJson = path.join(runDir, "director", `${b.source_ad_id}.json`);
-  const director = fs.existsSync(dirJson) ? JSON.parse(fs.readFileSync(dirJson, "utf8")) : null;
   for (const e of extra) fs.copyFileSync(path.join(runDir, "finals", e), path.join(dest, e.replace(b.source_ad_id, `${b.source_ad_id}__${tag}`)));
   for (const png of pngs) {
     const id = png.replace(/\.png$/, "");
     const outName = png.replace(b.source_ad_id, `${b.source_ad_id}__${tag}`);
     fs.copyFileSync(path.join(runDir, "finals", png), path.join(dest, outName));
     const v = Number((id.match(/_v(\d+)$/) || [, 1])[1]);
+    const L = leanBrief(b); // what the creative shows vs what moves to the caption (minimal house look, 2026-10-04)
     const lines = [
       `# ${b.product_title} — ${m.template_name || b.layout}${pngs.length > 1 ? ` (variant ${v})` : ""}`,
       "",
@@ -46,17 +46,21 @@ for (const b of briefs) {
       `| Language versions | ${fs.existsSync(path.join(runDir, "translations")) ? fs.readdirSync(path.join(runDir, "translations")).filter((f) => f.startsWith(b.source_ad_id + ".") && /\.[a-z]{2}\.json$/.test(f)).map((f) => f.slice(-7, -5)).join(", ") || "none" : "none"} |`,
       `| Risk level | **${b.risk_level}**${b.ai_label_required ? " · carries the AI-GENERATED — ILLUSTRATIVE mark" : ""} |`,
       // Read from the composed creative itself, so the description can't disagree with what the ad shows.
-      `| AI imagery | ${fs.existsSync(path.join(runDir, "finals", `${id}.svg`)) && fs.readFileSync(path.join(runDir, "finals", `${id}.svg`), "utf8").includes("AI-GENERATED") ? "yes — AI-generated people/skin, shown with the visible AI-GENERATED mark" : "no — real pack shot on an AI background (no AI people)"} |`,
+      `| AI imagery | ${fs.existsSync(path.join(runDir, "finals", `${id}.svg`)) && fs.readFileSync(path.join(runDir, "finals", `${id}.svg`), "utf8").includes("AI-GENERATED") ? "yes — AI-generated people/skin, shown with the visible AI-GENERATED mark" : "no — real pack shot on a plain canvas (no AI people)"} |`,
       `| Compliance verdict | ${b.verdict?.label || ""} (${b.coverage?.model ? "rules + AI judge" : "rules only"}) |`,
       `| Retry rounds | ${b.rounds_tried || 1} |`,
       `| Run | ${run} |`,
       "",
       "## Copy on the creative",
-      `- Headline: ${b.headline || ""}`,
-      b.subhead ? `- Subhead: ${b.subhead}` : "",
-      ...(b.proof_points || []).map((p) => `- ${p}`),
-      `- Footnote: ${b.footnote || ""}`,
-      `- CTA: ${b.cta || ""}`,
+      `- ${L.layout === "offer" && L.offer?.line ? `Offer: ${L.offer.line}${L.offer.condition ? ` · ${L.offer.condition}` : ""}` : `Headline: ${L.headline || ""}`}`,
+      L.subhead ? `- Subhead: ${L.subhead}` : "",
+      L.tag ? `- Tag: ${L.tag}` : "",
+      `- Footnote: ${L.footnote || "—"}`,
+      `- CTA: ${ctaFor(b)} · sign-off: Hide Nothing.`,
+      "",
+      "## Caption (primary text; compliance-checked like the creative)",
+      L.caption || "—",
+      ...(b.style_edits?.length ? ["", "## Style edits (cuts only; the replaced line moved to the caption)", ...b.style_edits.map((e) => `- ${e.field}: "${e.from}" → "${e.to}"${e.why ? ` (${e.why})` : ""}`)] : []),
       "",
       "## Facts cited (from the product page)",
       "```json", JSON.stringify(b.citations || {}, null, 0), "```",
@@ -66,8 +70,9 @@ for (const b of briefs) {
       (b.warnings || []).length || (b.findings || []).some((f) => f.severity !== "advisory") ? "" : "- none above advisory",
       "",
       "## Image",
-      `- Background prompt: ${director?.variants?.[v - 1]?.image_prompt || b.image_prompt || ""}`,
-      `- Director rationale: ${director?.rationale || ""}`,
+      "- Canvas: plain white or the pack photo's own studio grey (minimal house look; generated scene backgrounds are no longer drawn).",
+      b.person_prompt ? `- AI person prompt (a model: Severe): ${b.person_prompt}` : "",
+      b.frames_prompt ? `- AI frames prompt (a model: Severe): ${b.frames_prompt}` : "",
       "- Product: real pack shot from beminimalist.co, composited (never generated).",
       b.needs_real_photography ? `- Real photography needed: ${b.photography_needed}` : "",
       "",

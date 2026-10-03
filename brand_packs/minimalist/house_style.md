@@ -25,6 +25,19 @@ Built 2026-10-03 from:
 - **Brand infographics:** benefit callout cards, a "who is it for" card with dimensions, ingredient cards, stat cards [observed: 71 of 118 gallery images].
 - **People:** none in the brand's own gallery. Two real hand or application photos exist (Light Fluid SPF 50, B12 + Oat cleanser) [observed].
 
+## Ads on Meta: the creative standard (observed in top-running STATIC ads)
+
+Full detail is in `ad_style_top_runners.md`, built from Minimalist's 8 static ads still running after 52–98 days (11 images). Videos are excluded: we make statics (user rule 2026-10-04).
+- **Text:** 0–15 words on the image (one title, one short line, at most one small tag).
+- **Product:** the hero, large on white or light grey, often with a texture swatch or held in a hand.
+- **Offers:** in plain words as the title, with one tiny condition line.
+- **Where details go:** in the caption.
+- **CTA:** none on the image beyond a quiet "Shop now →".
+- **People:** hands only in the statics, never faces. Full-person formats are a requested departure (see rule 6 there).
+- **Sign-off:** "Hide Nothing." under the wordmark (Amazon brand slate; video end cards).
+
+New concepts are welcome; look, tone and text density must match.
+
 ## Channel conflicts to watch (Amazon.in vs website)
 
 The Amazon titles and bullets claim more than the website. Examples:

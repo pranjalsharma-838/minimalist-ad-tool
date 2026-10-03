@@ -2,6 +2,8 @@
 
 Built 2026-10-03. Winner = active and running 30+ days (Meta Ad Library, India). 74 ads classified, 57 winners. Counted by primary template only; secondary templates are in winners.json.
 
+**Statics only (user rule 2026-10-04):** we make static ads, so video ads are not evidence. 8 of the 74 ads are video, and 6 of those are winners (all Plum: templates 30, 31, 44, 46). The table below still lists them for the record, but the pipeline ignores them (`lib/archetype.js`, `pipeline/00_product_run.js`, `scripts/build_trends.js`). Carousels count as statics (static cards).
+
 | Template | Name | Family | Winners | All ads | Winner brands | Longest-running example |
 |---|---|---|---|---|---|---|
 | 36 | Offer creative | Commercial | 13 | 16 | Chemist at Play, Conscious Chemist, Deconstruct, Dot & Key, Dr. Sheth's, Foxtale | Chemist at Play 1393861285783656 (303d) |

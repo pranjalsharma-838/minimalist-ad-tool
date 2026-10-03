@@ -11,11 +11,13 @@
 export const SIZE = { w: 1080, h: 1080 };
 
 const C = {
-  bg: "#F4F2EE",
+  // White canvas (was warm #F4F2EE): the brand's top-running statics are white or very light grey with black type
+  // and one grey (ad_style_top_runners.md; user review 2026-10-04: "the design should be minimalistic").
+  bg: "#FFFFFF",
   ink: "#111111",
-  muted: "#5B5B5B",
-  rule: "#D6D2CB",
-  card: "#FFFFFF",
+  muted: "#6B6B6B",
+  rule: "#E3E3E3",
+  card: "#F6F6F6",
 };
 // 'Nirmala UI' (ships with Windows) + Noto fallbacks cover Devanagari, Tamil, Telugu, Bengali for language versions.
 const FONT = "'Helvetica Neue', Helvetica, Arial, 'Nirmala UI', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Bengali', sans-serif";
@@ -64,7 +66,7 @@ function textBlock(lines, x, y, size, lh, attrs) {
 }
 
 const BAND_Y = 820; // everything in the text column must end above this line
-const FOOT_PX = 26;
+const FOOT_PX = 22; // was 26, then 24: the statics carry one short qualifier line at most (2 lines max, never cut: layoutProblems)
 
 // spec: { hero: {pct, name}, headline, subhead, proofPoints[], footnote, cta, imageHref, productName }
 // Text is laid out at scale 1, then shrunk in steps until the column fits above the bottom band.
@@ -97,122 +99,59 @@ export function measure(spec) {
   return { fits: false, scale: 0.7, bottom: fn(spec, 0.7).bottom };
 }
 
+// Minimal house layout (user review 2026-10-04: "look at the style, it is much cleaner than what we are building … a
+// lot of visuals, a lot of text … the design should be minimalistic"). Matches Minimalist's own top-running statics:
+// white canvas, the real pack large on the right, one title + the product name + one small grey line beside it, at
+// most one tag. No generated scene, no panels, no big % number (the pack and the product name carry the strength),
+// no bullets: proof points belong in the caption (lib/brief_check.js leanBrief).
 function layout(spec, s) {
-  const { w, h } = SIZE;
-  const pad = 72;
-  const leftW = 500; // text column
-  const parts = [];
+  const { w } = SIZE;
+  const colW = 430;
   const px = (n) => Math.round(n * s);
-
-  parts.push(`<rect width="${w}" height="${h}" fill="${C.bg}"/>`);
-
-  // Optional generated BACKGROUND (scene only — lib/image_prompt_check.js forbids product, text, skin).
-  // A translucent panel keeps the copy legible whatever the scene looks like.
-  if (spec.backgroundHref) {
-    parts.push(`<image href="${esc(spec.backgroundHref)}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`);
-    parts.push(`<rect x="40" y="40" width="540" height="${BAND_Y - 40}" rx="8" fill="${C.bg}" fill-opacity="0.9"/>`);
-    parts.push(`<rect x="40" y="${BAND_Y + 8}" width="${w - 80}" height="${h - BAND_Y - 32}" rx="8" fill="${C.bg}" fill-opacity="0.92"/>`);
-  }
-
-  // Product photo: right side, aspect preserved, never cropped or retouched. No frame: the
-  // Shopify pack shots carry their own studio background (v1 showed a white card clashing with it).
-  if (spec.imageHref) {
-    // Over a generated background the pack shot's own studio backdrop shows as a pasted rectangle.
-    // Tried mix-blend-mode:multiply (2026-10-02): it greyed the white tube — that changes how the real
-    // product looks, so it was reverted. Until a cut-out (transparent) pack shot is supplied, the photo
-    // sits in a deliberate white frame so it reads as a product card, not a paste error.
-    // 2026-10-03: with a clean cut-out the bottle stands in the scene with a shadow (see pack()); with an AI person
-    // image the person fills the zone and the pack is an inset (see productVisual()).
-    parts.push(productVisual(spec, 590, 110, 430, 660));
-  }
-
-  // Wordmark (text, not the logo file).
-  parts.push(
-    `<text x="${pad}" y="${pad + 18}" font-family="${FONT}" font-size="26" font-weight="700" letter-spacing="1" fill="${C.ink}">Minimalist</text>`
-  );
-
-  let y = 150;
-  if (spec.hero && spec.hero.pct) {
-    const isSpf = /spf/i.test(spec.hero.name);
-    const big = isSpf ? `SPF ${spec.hero.pct}` : spec.hero.pct;
-    const bigPx = px(isSpf ? 104 : 132);
-    parts.push(
-      `<text x="${pad - 4}" y="${y + bigPx}" font-family="${FONT}" font-size="${bigPx}" font-weight="300" fill="${C.ink}" letter-spacing="-3">${esc(big)}</text>`
-    );
-    y += bigPx + px(14);
-    if (!isSpf) {
-      const nl = wrap(spec.hero.name, px(36), leftW);
-      parts.push(textBlock(nl, pad, y + px(36), px(36), px(42), `font-family="${FONT}" font-weight="500" fill="${C.ink}"`));
-      y += px(36) + (nl.length - 1) * px(42);
-    }
-    y += px(28);
-    parts.push(`<line x1="${pad}" y1="${y}" x2="${pad + 80}" y2="${y}" stroke="${C.ink}" stroke-width="3"/>`);
-    y += px(20);
-  }
-
-  const hs = px(40), hl = px(48);
-  // Bold glyphs are wider; 0.52 let "Reduces Acne, Blackheads" run into the photo (app test, Salicylic 2%).
-  const head = wrap(spec.headline, hs, leftW, 0.58);
-  parts.push(textBlock(head, pad, y + hs, hs, hl, `font-family="${FONT}" font-weight="600" fill="${C.ink}"`));
-  y += hs + (head.length - 1) * hl + px(10);
-
-  if (spec.subhead) {
-    const ss = px(25), sl = px(33);
-    const sub = wrap(spec.subhead, ss, leftW);
-    parts.push(textBlock(sub, pad, y + sl, ss, sl, `font-family="${FONT}" fill="${C.muted}"`));
-    y += sl * sub.length + px(6);
-  }
-
-  (spec.proofPoints || []).slice(0, 3).forEach((p) => {
-    const ps = px(23), pl = px(30);
-    const lines = wrap(p, ps, leftW - 28);
-    y += px(18);
-    parts.push(`<rect x="${pad}" y="${y + pl - ps + 2}" width="${px(10)}" height="${px(10)}" fill="${C.ink}"/>`);
-    parts.push(textBlock(lines, pad + 28, y + pl, ps, pl, `font-family="${FONT}" fill="${C.ink}"`));
-    y += lines.length * pl;
-  });
-  const bottom = y;
-
-  // Bottom band: CTA left, product name right of it, footnote across full width.
-  const bandY = BAND_Y;
-  parts.push(`<line x1="${pad}" y1="${bandY}" x2="${w - pad}" y2="${bandY}" stroke="${C.rule}" stroke-width="2"/>`);
-  parts.push(ctaBand(spec, pad, bandY));
-  // Footnote at 26px: ASCI's disclaimer guideline sets >= 26px lower-case text in a 1080 raster for
-  // video; applied here to static by analogy (research/regulatory_sources.md, ASCI-G-DISC).
-  if (spec.footnote) {
-    const fn = wrap(spec.footnote, FOOT_PX, w - 2 * pad, 0.5).slice(0, 3);
-    parts.push(textBlock(fn, pad, bandY + 140, FOOT_PX, 32, `font-family="${FONT}" fill="${C.muted}"`));
-  }
-
-  // Internal-test watermark (Minimalist is the test brand for this pipeline: never run these).
-  if (spec.testMark) {
-    parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
-  }
-  // Bug fix (eye-check 2026-10-03): this hero layout builds its own SVG and skipped the AI label that chromeEnd()
-  // draws, so hero ads with AI people (product-in-use, product-in-hand) showed no mark. Same label, same rule.
-  if (spec.aiLabel) parts.push(aiBadge(w));
-
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(spec)}${parts.join("")}</svg>`;
-  return { svg, bottom };
+  const parts = [`<rect width="${w}" height="${w}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD)];
+  if (spec.imageHref || spec.personHref) parts.push(productVisual(spec, 530, 120, 490, 680));
+  const title = spec.headline || spec.productName || "";
+  const hs = px(52), hl = px(60), head = wrap(title, hs, colW, 0.55).slice(0, 4);
+  const showName = spec.productName && !title.toLowerCase().includes(spec.productName.toLowerCase());
+  const ns = px(24), nl = px(30), name = showName ? wrap(spec.productName, ns, colW, 0.58) : [];
+  const ss = px(23), sl = px(31), sub = spec.subhead ? wrap(spec.subhead, ss, colW) : [];
+  const tagH = spec.tag ? 34 + px(24) : 0;
+  const height = tagH + hs + (head.length - 1) * hl + (name.length ? px(24) + name.length * nl : 0) + (sub.length ? px(16) + sub.length * sl : 0);
+  // The text stack is centred beside the pack, as in the brand's statics.
+  let y = Math.max(150, Math.round(450 - height / 2));
+  if (spec.tag) { parts.push(tagLabel(PAD, y, spec.tag)); y += tagH; }
+  parts.push(T(head, PAD, y + hs, hs, hl, `font-weight="500" fill="${C.ink}"`));
+  y += hs + (head.length - 1) * hl;
+  if (name.length) { y += px(24); parts.push(T(name, PAD, y + ns, ns, nl, `font-weight="600" fill="${C.ink}"`)); y += ns + (name.length - 1) * nl; }
+  if (sub.length) { y += px(16); parts.push(T(sub, PAD, y + ss, ss, sl, `fill="${C.muted}"`)); y += ss + (sub.length - 1) * sl; }
+  return chromeEnd(spec, parts, y);
 }
 
+// One small black label at most (top-running statics: "Clinically Tested", "Updated" — only a page-stated fact).
+function tagLabel(x, y, text) {
+  const tw = Math.round(vlen(text) * 18 * 0.62) + 28;
+  return `<rect x="${x}" y="${y}" width="${tw}" height="34" fill="${C.ink}"/><text x="${x + 14}" y="${y + 23}" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">${esc(text)}</text>`;
+}
 // ---------------- format library layouts ----------------
 
 const PAD = 72;
 const T = (lines, x, y, size, lh, attrs) => textBlock(lines, x, y, size, lh, `font-family="${FONT}" ${attrs}`);
 
-// Background, panels (left column or full width) and wordmark.
+// White canvas + wordmark. Minimal house look (user review 2026-10-04): generated scene backgrounds and the translucent
+// panels that kept copy legible over them are gone; the brand's statics are plain white with the real pack as the hero.
+// (A generated background is still accepted by the pipeline but no longer drawn.)
 function chromeStart(spec, panel) {
   const { w, h } = SIZE;
-  const parts = [`<rect width="${w}" height="${h}" fill="${C.bg}"/>`];
-  if (spec.backgroundHref) {
-    parts.push(`<image href="${esc(spec.backgroundHref)}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`);
-    const pw = panel === "full" ? w - 80 : 540;
-    parts.push(`<rect x="40" y="40" width="${pw}" height="${BAND_Y - 40}" rx="8" fill="${C.bg}" fill-opacity="0.9"/>`);
-    parts.push(`<rect x="40" y="${BAND_Y + 8}" width="${w - 80}" height="${h - BAND_Y - 32}" rx="8" fill="${C.bg}" fill-opacity="0.92"/>`);
-  }
-  parts.push(`<text x="${PAD}" y="${PAD + 18}" font-family="${FONT}" font-size="26" font-weight="700" letter-spacing="1" fill="${C.ink}">Minimalist</text>`);
-  return parts;
+  return [`<rect width="${w}" height="${h}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD)];
+}
+
+// Wordmark with the brand's sign-off underneath, as in its own lockup. User review (2026-10-04: "hide nothing tg is
+// missing"): "Hide Nothing." sits under the logo on the end card of Minimalist's two longest-running ads (121 days)
+// and on its Amazon gallery's brand slate. Drawn on every layout; adFromBrief scores it with the rest of the text.
+export const SIGN_OFF = "Hide Nothing.";
+function wordmark(x) {
+  return `<text x="${x}" y="${PAD + 10}" font-family="${FONT}" font-size="22" font-weight="700" letter-spacing="0.6" fill="${C.ink}">Minimalist</text>` +
+    `<text x="${x + 1}" y="${PAD + 30}" font-family="${FONT}" font-size="13" letter-spacing="0.4" fill="${C.muted}">${esc(SIGN_OFF)}</text>`;
 }
 
 // CTA band, shared by every layout. User review (2026-10-03): "clear CTA is missing" — the button was small and
@@ -225,23 +164,19 @@ function ctaText(spec) {
   return spec.layout === "offer" || spec.layout === "pricecompare" ? "Shop the offer" : "Shop now";
 }
 function ctaBand(spec, x0, bandY) {
-  const label = ctaText(spec);
-  const fsz = 28, bw = Math.min(420, Math.max(300, Math.round(vlen(label) * fsz * 0.6) + 80));
-  let out = `<rect x="${x0}" y="${bandY + 28}" width="${bw}" height="76" rx="38" fill="${C.ink}"/>` +
-    `<text x="${x0 + bw / 2}" y="${bandY + 76}" text-anchor="middle" font-family="${FONT}" font-size="${fsz}" font-weight="700" fill="#FFFFFF">${esc(label)} →</text>`;
-  const name = [spec.productName, "beminimalist.co"].filter(Boolean).join(" · ");
-  out += T(wrap(name, 22, 1080 - x0 - bw - 30 - 72), x0 + bw + 28, bandY + 62, 22, 28, `font-weight="600" fill="${C.ink}"`);
-  return out;
+  // House look: the statics carry no CTA (Facebook's button does). A user review asked for a visible one, so it is a
+  // single line of bold text with an arrow, underlined: clear, but not a button or a band.
+  const label = `${ctaText(spec)} →`, fsz = 22;
+  return `<text x="${x0}" y="${bandY + 58}" font-family="${FONT}" font-size="${fsz}" font-weight="700" fill="${C.ink}">${esc(label)}</text>` +
+    `<line x1="${x0}" y1="${bandY + 66}" x2="${x0 + Math.round(vlen(label) * fsz * 0.56)}" y2="${bandY + 66}" stroke="${C.ink}" stroke-width="1.5"/>`;
 }
-
-const aiBadge = (w) => `<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`;
+const aiBadge = (w) => `<rect x="${w - 316}" y="20" width="296" height="32" rx="4" fill="#B42318"/><text x="${w - 168}" y="41" text-anchor="middle" font-family="${FONT}" font-size="15" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`;
 
 // CTA band, product name, footnote, test mark -> svg.
 function chromeEnd(spec, parts, bottom) {
   const { w, h } = SIZE;
-  parts.push(`<line x1="${PAD}" y1="${BAND_Y}" x2="${w - PAD}" y2="${BAND_Y}" stroke="${C.rule}" stroke-width="2"/>`);
   parts.push(ctaBand(spec, PAD, BAND_Y));
-  if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
+  if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 2), PAD, BAND_Y + 118, FOOT_PX, 30, `fill="${C.muted}"`));
   // Visible AI label whenever generated people/skin/results are in the creative (user decision 2026-10-03).
   if (spec.aiLabel) parts.push(aiBadge(w));
   if (spec.testMark) parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
@@ -257,82 +192,88 @@ function chromeEnd(spec, parts, bottom) {
 function pack(spec, href, x, y, w, h) {
   if (!href) return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="none" stroke="${C.rule}" stroke-dasharray="6 6"/>`;
   const img = `<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"`;
-  if (spec.backgroundHref && (spec.cutoutHrefs || []).includes(href)) {
+  // On the white canvas a clean cut-out always gets its soft shadow, like the statics' studio shots.
+  if ((spec.cutoutHrefs || []).includes(href)) {
     const dx = spec.shadowDx ?? 12;
     return `<ellipse cx="${x + w / 2 + dx}" cy="${y + h - 4}" rx="${w * 0.32}" ry="${Math.max(8, h * 0.025)}" fill="#000" fill-opacity="0.28" filter="url(#contactBlur)"/>${img} filter="url(#packShadow)"/>`;
   }
-  const frame = spec.backgroundHref ? `<rect x="${x - 10}" y="${y - 10}" width="${w + 20}" height="${h + 20}" rx="10" fill="#FFFFFF"/>` : "";
-  return `${frame}${img}/>`;
+  // No frame (minimal look, eye-check 2026-10-04: a white frame boxed the white tubes on the grey canvas). A studio
+  // shot without a cut-out sits on a canvas of its own studio grey instead (08_compose.js, spec.canvas).
+  return `${img}/>`;
 }
 // The product zone. With an AI-generated person image (spec.personHref, angle-matrix fill 2026-10-03) the person is
 // the main visual — a rounded photo card filling the zone — and the REAL pack shot sits in front as an inset at the
 // lower left (the product is never part of the AI image). Without one, the zone holds the pack shot as before.
 function productVisual(spec, x, y, w, h) {
   if (!spec.personHref) return pack(spec, spec.imageHref, x, y, w, h);
-  const card = `<clipPath id="personClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18"/></clipPath>` +
-    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="#FFFFFF"/>` +
-    `<image href="${esc(spec.personHref)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`;
-  // User review (2026-10-03): "clear product is missing" — the inset was too small. The pack now takes ~half the
-  // zone's width and ~60% of its height, standing in front of the photo on a soft white plinth so it reads first.
-  const iw = Math.round(w * 0.5), ih = Math.round(h * 0.6);
-  const px = x + 14, py = y + h - ih - 14;
-  const plinth = `<rect x="${px - 6}" y="${py + ih * 0.12}" width="${iw + 12}" height="${ih * 0.88 + 6}" rx="16" fill="#FFFFFF" fill-opacity="0.82"/>`;
-  return card + plinth + pack(spec, spec.imageHref, px, py, iw, ih);
+  // Minimal look (2026-10-04): the person photo (an AI model: Severe risk, AI mark) is a plain rectangle on the right
+  // of the zone; the real pack stands in front of its lower-left corner, half on the white canvas, so the product
+  // still reads first ("clear product", review 2026-10-03). No card frame, no plinth.
+  // A pack without a clean cut-out carries its studio backdrop, which would show as a box over the photo (eye-check
+  // 2026-10-04, the white cleanser): then the photo narrows and the pack stands beside it on the canvas instead.
+  const isCut = (spec.cutoutHrefs || []).includes(spec.imageHref);
+  const cw = Math.round(w * (isCut ? 0.78 : 0.56)), cx = x + w - cw;
+  const photo = `<clipPath id="personClip"><rect x="${cx}" y="${y}" width="${cw}" height="${h}" rx="6"/></clipPath>` +
+    `<image href="${esc(spec.personHref)}" x="${cx}" y="${y}" width="${cw}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`;
+  const ih = Math.round(h * 0.62), iw = isCut ? Math.round(w * 0.48) : cx - 6 - (x - 16); // eye-check 2026-10-04: at 42% × 50% the pack read small
+  return photo + pack(spec, spec.imageHref, x - 16, y + h - ih, iw, ih);
 }
 const defs = (spec) => `<defs><filter id="packShadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="${spec.shadowDx ?? 12}" dy="14" stdDeviation="12" flood-color="#000" flood-opacity="0.22"/></filter><filter id="contactBlur" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="9"/></filter></defs>`;
 
 function headlineBlock(parts, text, x, y, maxW, s, size = 44) {
   const hs = Math.round(size * s), hl = Math.round(size * 1.18 * s);
-  const lines = wrap(text, hs, maxW, 0.58);
-  parts.push(T(lines, x, y + hs, hs, hl, `font-weight="600" fill="${C.ink}"`));
+  const lines = wrap(text, hs, maxW, 0.56);
+  parts.push(T(lines, x, y + hs, hs, hl, `font-weight="500" fill="${C.ink}"`));
   return y + hs + (lines.length - 1) * hl;
 }
 
-// Ingredient explainer -> each active with its %, name and one cited line on what it does.
+// Ingredient explainer -> each active as a big % and its name (minimal look 2026-10-04: what each one does moves to the
+// caption in leanBrief; a line is drawn only for callers that still pass one).
 LAYOUTS.actives = (spec, s) => {
   const parts = chromeStart(spec, "left");
-  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
-  let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 42) + Math.round(24 * s);
+  parts.push(pack(spec, spec.imageHref, 530, 120, 490, 680));
+  let y = headlineBlock(parts, spec.headline, PAD, 150, 430, s, 46) + Math.round(44 * s);
   for (const a of (spec.actives || []).slice(0, 3)) {
-    const lines = wrap(a.line, Math.round(22 * s), 470);
-    const ch = Math.round(70 * s) + lines.length * Math.round(28 * s);
-    parts.push(`<rect x="${PAD}" y="${y}" width="490" height="${ch}" rx="8" fill="${C.card}" fill-opacity="0.85"/>`);
-    parts.push(`<text x="${PAD + 18}" y="${y + Math.round(48 * s)}" font-family="${FONT}" font-size="${Math.round(44 * s)}" font-weight="300" fill="${C.ink}">${esc(a.pct || "")}</text>`);
-    parts.push(`<text x="${PAD + 18 + (a.pct ? Math.round((a.pct.length * 26 + 20) * s) : 0)}" y="${y + Math.round(44 * s)}" font-family="${FONT}" font-size="${Math.round(26 * s)}" font-weight="600" fill="${C.ink}">${esc(a.name)}</text>`);
-    parts.push(T(lines, PAD + 18, y + Math.round(80 * s), Math.round(22 * s), Math.round(28 * s), `fill="${C.muted}"`));
-    y += ch + Math.round(14 * s);
+    const ps = Math.round(60 * s), ns = Math.round(26 * s);
+    if (a.pct) parts.push(`<text x="${PAD - 2}" y="${y + ps}" font-family="${FONT}" font-size="${ps}" font-weight="300" letter-spacing="-1" fill="${C.ink}">${esc(a.pct)}</text>`);
+    const nx = PAD + (a.pct ? Math.round(vlen(a.pct) * ps * 0.62) + 16 : 0); // eye-check: 0.52 let "10%" touch the name
+    const nl = wrap(a.name, ns, 430 - (nx - PAD), 0.58).slice(0, 2);
+    parts.push(T(nl, nx, y + ps - 8 - (nl.length - 1) * Math.round(30 * s), ns, Math.round(30 * s), `font-weight="600" fill="${C.ink}"`));
+    y += ps + Math.round(12 * s);
+    if (a.line) { const ln = wrap(a.line, Math.round(21 * s), 430).slice(0, 2); parts.push(T(ln, PAD, y + Math.round(21 * s), Math.round(21 * s), Math.round(27 * s), `fill="${C.muted}"`)); y += Math.round(21 * s) + (ln.length - 1) * Math.round(27 * s); }
+    y += Math.round(30 * s);
   }
   return chromeEnd(spec, parts, y);
 };
 
-// Routine / product journey -> 2–3 steps, each a real pack shot of one of our products.
+// Routine / product journey -> 2–3 of our packs with numbered steps, as in the brand's "Glow Boosting Routine" static:
+// big title, pack, a black numbered circle, the step in capitals, the product name in grey. No arrows.
 LAYOUTS.journey = (spec, s) => {
   const { w } = SIZE;
   const parts = chromeStart(spec, "full");
-  let y = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(26 * s);
+  const y0 = headlineBlock(parts, spec.headline, PAD, 150, w - 2 * PAD, s, 48) + Math.round(44 * s);
   const steps = (spec.steps || []).slice(0, 3);
-  const n = Math.max(1, steps.length), gap = 28, colW = Math.floor((w - 2 * PAD - (n - 1) * gap) / n);
-  let bottom = y;
+  const n = Math.max(1, steps.length), gap = 36, colW = Math.floor((w - 2 * PAD - (n - 1) * gap) / n);
+  const imgH = Math.max(200, Math.min(Math.round(340 * s), BAND_Y - 190 - y0));
+  let bottom = y0;
   steps.forEach((st, i) => {
-    const x = PAD + i * (colW + gap);
-    // Labels wrap inside their column (first render: "STEP 2 · TREAT THE LOOK OF OIL" ran into step 3).
-    const lab = wrap((st.label || `STEP ${i + 1}`).toUpperCase(), 18, colW, 0.66).slice(0, 2);
-    parts.push(T(lab, x, y + 18, 18, 22, `font-weight="700" letter-spacing="1.2" fill="${C.muted}"`));
-    const top = y + 18 + lab.length * 22;
-    const imgH = Math.round(290 * s);
-    parts.push(pack(spec, st.imageHref, x, top, colW, imgH));
-    let ty = top + imgH + Math.round(34 * s);
-    const nm = wrap(st.productName || "", Math.round(21 * s), colW, 0.56);
-    parts.push(T(nm, x, ty, Math.round(21 * s), Math.round(26 * s), `font-weight="600" fill="${C.ink}"`));
-    ty += nm.length * Math.round(26 * s) + Math.round(4 * s);
-    const ln = wrap(st.line, Math.round(20 * s), colW);
-    parts.push(T(ln, x, ty, Math.round(20 * s), Math.round(26 * s), `fill="${C.muted}"`));
-    bottom = Math.max(bottom, ty + (ln.length - 1) * Math.round(26 * s));
-    if (i < n - 1) parts.push(`<text x="${x + colW + gap / 2}" y="${y + 36 + imgH / 2}" text-anchor="middle" font-family="${FONT}" font-size="28" fill="${C.muted}">→</text>`);
+    const x = PAD + i * (colW + gap), cx = Math.round(x + colW / 2);
+    parts.push(pack(spec, st.imageHref, x + 24, y0, colW - 48, imgH));
+    let ty = y0 + imgH + Math.round(36 * s);
+    parts.push(`<circle cx="${cx}" cy="${ty}" r="15" fill="${C.ink}"/><text x="${cx}" y="${ty + 6}" text-anchor="middle" font-family="${FONT}" font-size="16" font-weight="700" fill="#FFFFFF">${i + 1}</text>`);
+    ty += Math.round(44 * s);
+    // "Step 1 · Cleanse" -> "CLEANSE" (the number is in the circle). Labels wrap inside their column.
+    const lab = wrap(((st.label || "").replace(/^\s*step\s*\d+\s*[·:.\-–]?\s*/i, "") || `Step ${i + 1}`).toUpperCase(), 17, colW, 0.66).slice(0, 2);
+    parts.push(T(lab, cx, ty, 17, 21, `text-anchor="middle" font-weight="700" letter-spacing="1.2" fill="${C.ink}"`));
+    ty += (lab.length - 1) * 21 + 26;
+    const nm = wrap(st.productName || "", 17, colW, 0.56).slice(0, 2);
+    parts.push(T(nm, cx, ty, 17, 21, `text-anchor="middle" fill="${C.muted}"`));
+    ty += (nm.length - 1) * 21;
+    if (st.line) { const ln = wrap(st.line, 17, colW).slice(0, 2); parts.push(T(ln, cx, ty + 24, 17, 21, `text-anchor="middle" fill="${C.muted}"`)); ty += 24 + (ln.length - 1) * 21; }
+    bottom = Math.max(bottom, ty);
   });
   return chromeEnd(spec, parts, bottom);
 };
-
 // Testimonial -> consumer-study stat card (a review is not a claim; a qualified study stat is).
 LAYOUTS.stat = (spec, s) => {
   const parts = chromeStart(spec, "left");
@@ -412,40 +353,29 @@ LAYOUTS.range = (spec, s) => {
   return chromeEnd(spec, parts, bottom);
 };
 
-// Offer -> offer line with its condition directly underneath, same block (CCPA 7 / ASCI 1.5(a)).
+// Offer -> the offer in plain words as the title, its condition directly underneath in the same block (CCPA 7 /
+// ASCI 1.5(a)), as in the brand's statics ("Three products, At the cost of two" + one tiny condition line). Minimal
+// look 2026-10-04: no bold price line (prices go to the caption in leanBrief; the statics show none).
 LAYOUTS.offer = (spec, s) => {
   const parts = chromeStart(spec, "left");
-  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  parts.push(pack(spec, spec.imageHref, 530, 120, 490, 680));
   const o = spec.offer || {};
-  let y = headlineBlock(parts, o.line || spec.headline, PAD, 150, 490, s, 58) + Math.round(26 * s);
   // Eye-check fix (scale run): sourcing text and URLs belong in the footnote, not the offer block.
   const cleanCond = String(o.condition || "").replace(/Source:[^;]*;?\s*/i, "").replace(/terms:\s*\S+/i, "").replace(/https?:\/\/\S+/g, "").replace(/\s{2,}/g, " ").trim();
-  const cond = wrap(cleanCond, Math.round(28 * s), 490);
-  parts.push(T(cond, PAD, y + Math.round(28 * s), Math.round(28 * s), Math.round(36 * s), `font-weight="500" fill="${C.ink}"`));
-  y += Math.round(28 * s) + (cond.length - 1) * Math.round(36 * s);
-  if (o.valid_till && !/no end date/i.test(o.valid_till)) {
-    parts.push(T([`Valid till ${o.valid_till}`], PAD, y + Math.round(40 * s), Math.round(22 * s), 28, `fill="${C.muted}"`));
-    y += Math.round(40 * s);
-  }
-  // Eye-check fix (pilot): the price (sale price + MRP, in proof_points) wasn't drawn although the footnote
-  // referred to it. Price lines are shown bold, right under the offer and its condition.
-  for (const pp of (spec.proofPoints || []).filter((p) => /\b(Rs\.?|₹|MRP)\s?\d/i.test(p))) {
-    const pl = wrap(pp.replace(/,?\s*(beminimalist\.co|website)?,?\s*captured \d{4}-\d{2}-\d{2}/i, "").replace(/,\s*beminimalist\.co\s*$/i, "").trim(), Math.round(30 * s), 490);
-    parts.push(T(pl, PAD, y + Math.round(52 * s), Math.round(30 * s), Math.round(38 * s), `font-weight="700" fill="${C.ink}"`));
-    y += Math.round(52 * s) + (pl.length - 1) * Math.round(38 * s);
-  }
-  // A price written in the subhead (scale-run briefs) is shown as the same bold price line, sourcing trimmed.
-  const isPrice = /\b(Rs\.?|₹|MRP)\s?\d/i.test(spec.subhead || "");
-  if (spec.subhead) {
-    const txt = isPrice ? spec.subhead.replace(/,?\s*(beminimalist\.co|website)?,?\s*captured \d{4}-\d{2}-\d{2}/i, "").replace(/,\s*beminimalist\.co\s*$/i, "").trim() : spec.subhead;
-    const sz = isPrice ? 30 : 23, lh = isPrice ? 38 : 30;
-    const sub = wrap(txt, Math.round(sz * s), 490);
-    parts.push(T(sub, PAD, y + Math.round(48 * s), Math.round(sz * s), Math.round(lh * s), isPrice ? `font-weight="700" fill="${C.ink}"` : `fill="${C.muted}"`));
-    y += Math.round(48 * s) + (sub.length - 1) * Math.round(lh * s);
-  }
+  const hs = Math.round(52 * s), hl = Math.round(60 * s), cs = Math.round(21 * s), cl = Math.round(28 * s);
+  const head = wrap(o.line || spec.headline, hs, 430, 0.55).slice(0, 4);
+  const cond = wrap(cleanCond, cs, 430).slice(0, 3);
+  const valid = o.valid_till && !/no end date/i.test(o.valid_till) ? [`Valid till ${o.valid_till}`] : [];
+  const sub = spec.subhead ? wrap(spec.subhead, Math.round(23 * s), 430) : [];
+  const height = hs + (head.length - 1) * hl + (cond.length ? Math.round(22 * s) + cond.length * cl : 0) + valid.length * cl + (sub.length ? Math.round(18 * s) + sub.length * Math.round(31 * s) : 0);
+  let y = Math.max(150, Math.round(450 - height / 2));
+  parts.push(T(head, PAD, y + hs, hs, hl, `font-weight="500" fill="${C.ink}"`));
+  y += hs + (head.length - 1) * hl;
+  if (cond.length) { y += Math.round(22 * s); parts.push(T(cond, PAD, y + cs, cs, cl, `fill="${C.muted}"`)); y += cs + (cond.length - 1) * cl; }
+  if (valid.length) { parts.push(T(valid, PAD, y + cl, cs, cl, `fill="${C.muted}"`)); y += cl; }
+  if (sub.length) { y += Math.round(18 * s); parts.push(T(sub, PAD, y + Math.round(23 * s), Math.round(23 * s), Math.round(31 * s), `fill="${C.muted}"`)); y += Math.round(23 * s) + (sub.length - 1) * Math.round(31 * s); }
   return chromeEnd(spec, parts, y);
 };
-
 // Before/after -> two frames that only ever hold REAL, unretouched study photos (never generated).
 LAYOUTS.before_after = (spec, s) => {
   const parts = chromeStart(spec, "left");
@@ -480,20 +410,18 @@ const pill = (x, y, text, s, maxW = 440) => {
     while (Math.max(...lines.map(width)) > maxW && fs_ > 14) fs_--;
   }
   const lh = Math.round(fs_ * 1.25), hgt = Math.round(52 * s) + (lines.length - 1) * lh, w = Math.min(maxW, Math.max(...lines.map(width)));
-  return `<rect x="${x}" y="${y}" width="${w}" height="${hgt}" rx="${Math.min(Math.round(26 * s), hgt / 2)}" fill="#FFFFFF" stroke="${C.ink}" stroke-width="1.5"/>` +
+  return `<rect x="${x}" y="${y}" width="${w}" height="${hgt}" rx="${Math.min(Math.round(26 * s), hgt / 2)}" fill="none" stroke="${C.ink}" stroke-width="1.2"/>` +
     lines.map((l, i) => `<text x="${x + 22}" y="${y + Math.round(34 * s) + i * lh}" font-family="${FONT}" font-size="${fs_}" font-weight="500" fill="${C.ink}">${esc(l)}</text>`).join("");
 };
 
 // #2 Product + benefit badges: pack centred, 3–4 pills around it.
 LAYOUTS.badges = (spec, s) => {
-  const { w } = SIZE;
-  const parts = chromeStart(spec, "full");
-  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(24 * s);
-  parts.push(pack(spec, spec.imageHref, 360, y0, 360, BAND_Y - 40 - y0));
-  const pos = [[PAD, y0 + 30], [PAD, y0 + 230], [740, y0 + 30], [740, y0 + 230]];
-  // Left column ends before the pack frame (x 350); right column ends at the panel edge (x 1040).
-  (spec.badges || []).slice(0, 4).forEach((b, i) => parts.push(pill(pos[i][0], pos[i][1], b.text, s, i < 2 ? 350 - 12 - PAD : 1040 - 740 - 12)));
-  return chromeEnd(spec, parts, BAND_Y - 40);
+  // Minimal look (2026-10-04): title and the (≤ 2, leanBrief) badges stacked on the left, the pack large on the right.
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 530, 120, 490, 680));
+  let y = Math.max(150, headlineBlock(parts, spec.headline, PAD, 230, 430, s, 48) + Math.round(36 * s));
+  for (const b of (spec.badges || []).slice(0, 4)) { parts.push(pill(PAD, y, b.text, s, 430)); y += Math.round(52 * s) + Math.round(16 * s) + (vlen(b.text) * 22 * 0.56 + 44 > 430 ? 28 : 0); }
+  return chromeEnd(spec, parts, y);
 };
 
 function twoColumns(spec, s, left, right, rightHasPack) {
@@ -523,18 +451,60 @@ LAYOUTS.oldnew = (spec, s) => twoColumns(spec, s, spec.old, spec.new, true);
 // #19 This vs that (two approaches, e.g. scrub vs acid exfoliant).
 LAYOUTS.thisvsthat = (spec, s) => twoColumns(spec, s, (spec.columns || [])[0], (spec.columns || [])[1], true);
 
+// #17 Us vs Them (user review 2026-10-04: "us vs them is missing"). Minimalist's own Amazon gallery runs a comparison
+// table "vs Other Vitamin C Serums". Rules (prompts/pipeline_brief_writer.md): "them" is an unnamed benchmark,
+// ingredient or product type that the brand's own page names — never a named or recognisable brand, never a rival's
+// pack; each row cites the page fact behind both sides; the basis of the comparison is the footnote (ASCI Chapter IV).
+// House look: white canvas, the real pack as the hero on the left, ≤ 3 short rows on the right.
+LAYOUTS.usvsthem = (spec, s) => {
+  const { w, h } = SIZE;
+  const parts = [`<rect width="${w}" height="${h}" fill="${spec.canvas || "#FFFFFF"}"/>`, wordmark(PAD)];
+  const c = spec.compare || {};
+  let y0 = headlineBlock(parts, spec.headline, PAD, 140, w - 2 * PAD, s, 46);
+  if (spec.subhead) {
+    const sl = wrap(spec.subhead, Math.round(24 * s), w - 2 * PAD);
+    parts.push(T(sl, PAD, y0 + Math.round(40 * s), Math.round(24 * s), Math.round(32 * s), `fill="${C.muted}"`));
+    y0 += Math.round(40 * s) + (sl.length - 1) * Math.round(32 * s);
+  }
+  y0 += Math.round(50 * s);
+  // On white the cut-out gets its shadow too (pack() draws it only over a background).
+  parts.push(pack({ ...spec, backgroundHref: spec.backgroundHref || "white" }, spec.imageHref, PAD - 10, y0, 380, BAND_Y - 30 - y0));
+  const tx = 500, colW = Math.floor((w - PAD - tx) / 2);
+  const hs = Math.round(20 * s), hl = Math.round(25 * s);
+  // Up to 3 header lines (eye-check 2026-10-04: at 2, "Ethyl Ascorbic Acid (the form used)" lost its last word).
+  const hu = wrap(c.us || "", hs, colW - 20, 0.6).slice(0, 3), ht = wrap(c.them || "", hs, colW - 20, 0.6).slice(0, 3);
+  parts.push(T(hu, tx, y0 + hs, hs, hl, `font-weight="700" fill="${C.ink}"`), T(ht, tx + colW, y0 + hs, hs, hl, `font-weight="500" fill="${C.muted}"`));
+  let y = y0 + hs + (Math.max(hu.length, ht.length) - 1) * hl + Math.round(16 * s);
+  parts.push(`<line x1="${tx}" y1="${y}" x2="${tx + colW - 20}" y2="${y}" stroke="${C.ink}" stroke-width="3"/><line x1="${tx + colW}" y1="${y}" x2="${w - PAD}" y2="${y}" stroke="${C.rule}" stroke-width="3"/>`);
+  for (const r of (c.rows || []).slice(0, 3)) {
+    const ls = Math.round(16 * s), lab = wrap((r.label || "").toUpperCase(), ls, w - PAD - tx, 0.68).slice(0, 2);
+    parts.push(T(lab, tx, y + Math.round(36 * s), ls, Math.round(20 * s), `font-weight="700" letter-spacing="1.2" fill="${C.muted}"`));
+    y += Math.round(36 * s) + (lab.length - 1) * Math.round(20 * s) + Math.round(12 * s);
+    const val = (t, x, ink, wt) => {
+      const sz = Math.round((vlen(t) > 9 ? 28 : 44) * s), ln = wrap(t || "", sz, colW - 24, 0.56).slice(0, 2);
+      parts.push(T(ln, x, y + sz, sz, Math.round(sz * 1.15), `font-weight="${wt}" fill="${ink}"`));
+      return sz + (ln.length - 1) * Math.round(sz * 1.15);
+    };
+    y += Math.max(val(r.us, tx, C.ink, 600), val(r.them, tx + colW, C.muted, 300)) + Math.round(22 * s);
+    parts.push(`<line x1="${tx}" y1="${y}" x2="${w - PAD}" y2="${y}" stroke="${C.rule}" stroke-width="1.5"/>`);
+  }
+  return chromeEnd(spec, parts, y);
+};
+
 // #26 Review card: one genuine review (source + date required), small pack shot.
 LAYOUTS.review = (spec, s) => {
   const parts = chromeStart(spec, "left");
-  parts.push(pack(spec, spec.imageHref, 640, 200, 360, 540));
+  parts.push(pack(spec, spec.imageHref, 560, 160, 440, 620));
   const r = spec.review || {};
-  let y = headlineBlock(parts, spec.headline, PAD, 140, 500, s, 34) + Math.round(30 * s);
-  parts.push(`<rect x="${PAD}" y="${y}" width="510" height="${Math.round(330 * s)}" rx="12" fill="#FFFFFF" stroke="${C.rule}"/>`);
-  parts.push(`<text x="${PAD + 28}" y="${y + 52}" font-family="${FONT}" font-size="30" fill="${C.ink}">${"★".repeat(Math.max(0, Math.min(5, r.stars || 5)))}</text>`);
-  const q = wrap(`“${r.quote || ""}”`, Math.round(26 * s), 450);
-  parts.push(T(q.slice(0, 5), PAD + 28, y + 100, Math.round(26 * s), Math.round(34 * s), `fill="${C.ink}"`));
-  parts.push(T([r.source || "[review source + date]"], PAD + 28, y + Math.round(300 * s), 18, 22, `fill="${C.muted}"`));
-  return chromeEnd(spec, parts, y + Math.round(330 * s));
+  // Minimal look (2026-10-04): no card box; stars, the quote set large, the source in grey.
+  let y = headlineBlock(parts, spec.headline, PAD, 150, 440, s, 30) + Math.round(40 * s);
+  parts.push(`<text x="${PAD}" y="${y + 30}" font-family="${FONT}" font-size="30" letter-spacing="2" fill="${C.ink}">${"★".repeat(Math.max(0, Math.min(5, r.stars || 5)))}</text>`);
+  y += 30 + Math.round(30 * s);
+  const qs = Math.round(32 * s), ql = Math.round(42 * s), q = wrap(`“${r.quote || ""}”`, qs, 440, 0.52).slice(0, 6);
+  parts.push(T(q, PAD, y + qs, qs, ql, `font-weight="400" fill="${C.ink}"`));
+  y += qs + (q.length - 1) * ql + Math.round(30 * s);
+  parts.push(T(wrap(r.source || "[review source + date]", 18, 440).slice(0, 2), PAD, y + 18, 18, 23, `fill="${C.muted}"`));
+  return chromeEnd(spec, parts, y + 40);
 };
 
 // #28 Social proof: one big sourced number.
@@ -581,9 +551,9 @@ LAYOUTS.question = (spec, s) => qa(spec, s, spec.question || spec.headline || ""
 LAYOUTS.native = (spec, s) => {
   const { w } = SIZE;
   const parts = chromeStart(spec, "full");
-  const hs = Math.round(58 * s);
+  const hs = Math.round(54 * s);
   const hl = wrap(spec.headline, hs, w - 2 * PAD, 0.55);
-  parts.push(T(hl.slice(0, 4), PAD, 170 + hs, hs, Math.round(68 * s), `font-weight="800" fill="${C.ink}"`));
+  parts.push(T(hl.slice(0, 4), PAD, 170 + hs, hs, Math.round(64 * s), `font-weight="600" fill="${C.ink}"`));
   let y = 170 + hs + (Math.min(4, hl.length) - 1) * Math.round(68 * s) + 30;
   if (spec.subhead) {
     const sl = wrap(spec.subhead, Math.round(26 * s), 560);
@@ -594,8 +564,8 @@ LAYOUTS.native = (spec, s) => {
   // 2026-10-03: as an inset on this smaller card the pack covered the person's face).
   if (spec.personHref) {
     const cy = Math.max(y + 24, BAND_Y - 500), ch = BAND_Y - 30 - cy;
-    parts.push(`<clipPath id="personClip"><rect x="560" y="${cy}" width="448" height="${ch}" rx="18"/></clipPath><rect x="560" y="${cy}" width="448" height="${ch}" rx="18" fill="#FFFFFF"/><image href="${esc(spec.personHref)}" x="560" y="${cy}" width="448" height="${ch}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`);
-    parts.push(pack(spec, spec.imageHref, PAD + 40, Math.max(y + 24, BAND_Y - 330), 220, Math.min(300, BAND_Y - 30 - Math.max(y + 24, BAND_Y - 330))));
+    parts.push(`<clipPath id="personClip"><rect x="560" y="${cy}" width="448" height="${ch}" rx="6"/></clipPath><image href="${esc(spec.personHref)}" x="560" y="${cy}" width="448" height="${ch}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`);
+    parts.push(pack(spec, spec.imageHref, PAD + 10, Math.max(y + 24, BAND_Y - 420), 300, Math.min(390, BAND_Y - 30 - Math.max(y + 24, BAND_Y - 420))));
   } else parts.push(pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
   return chromeEnd(spec, parts, y);
 };
@@ -619,17 +589,20 @@ LAYOUTS.pricecompare = (spec, s) => {
 LAYOUTS.timeline = (spec, s) => {
   const { w } = SIZE;
   const parts = chromeStart(spec, "full");
-  const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 38) + Math.round(26 * s);
+  const y0 = headlineBlock(parts, spec.headline, PAD, 150, w - 2 * PAD, s, 40) + Math.round(36 * s);
   const frames = (spec.frames || []).slice(0, 4);
-  const n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - (n - 1) * gap) / n), fh = Math.min(fw * 1.25, BAND_Y - 90 - y0);
+  // The real pack gets its own column at the right, level with the frames (clear product; the AI mark owns the top right).
+  const packW = 190, n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - packW - 24 - (n - 1) * gap) / n), fh = Math.min(Math.round(fw * 1.3), BAND_Y - 110 - y0);
   frames.forEach((f, i) => {
     const x = PAD + i * (fw + gap);
-    if (f.imageHref) parts.push(`<image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice"/>`);
+    if (f.imageHref) parts.push(`<clipPath id="fr${i}"><rect x="${x}" y="${y0}" width="${fw}" height="${fh}" rx="6"/></clipPath><image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice" clip-path="url(#fr${i})"/>`);
     else parts.push(`<rect x="${x}" y="${y0}" width="${fw}" height="${fh}" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/><text x="${x + fw / 2}" y="${y0 + fh / 2}" text-anchor="middle" font-family="${FONT}" font-size="16" font-weight="700" fill="#B42318">PHOTO REQUIRED</text>`);
-    parts.push(`<rect x="${x}" y="${y0 + fh - 40}" width="${fw}" height="40" fill="${C.ink}" fill-opacity="0.75"/><text x="${x + fw / 2}" y="${y0 + fh - 13}" text-anchor="middle" font-family="${FONT}" font-size="20" font-weight="700" fill="#FFFFFF">${esc(f.label || "")}</text>`);
+    // Minimal look (2026-10-04): the label sits under the frame in small capitals, not on a dark bar over it.
+    parts.push(T(wrap(String(f.label || "").toUpperCase(), 16, fw, 0.66).slice(0, 2), x, y0 + fh + 30, 16, 20, `font-weight="700" letter-spacing="1.2" fill="${C.ink}"`));
   });
-  parts.push(pack(spec, spec.imageHref, w - PAD - 130, BAND_Y - 190, 120, 170));
-  return chromeEnd(spec, parts, y0 + fh);
+  const ph = Math.min(fh, 320);
+  parts.push(pack(spec, spec.imageHref, w - PAD - packW, y0 + fh - ph, packW, ph));
+  return chromeEnd(spec, parts, y0 + fh + 50);
 };
 
 // #13 Split-screen: one image, divided, labelled sides (same rules as timeline).
@@ -640,7 +613,9 @@ export function layoutProblems(spec) {
   const problems = [];
   const m = measure(spec);
   if (!m.fits) problems.push("Copy does not fit the 1080x1080 layout even at 70% text size — shorten it.");
-  if (spec.footnote && wrap(spec.footnote, FOOT_PX, SIZE.w - 144, 0.5).length > 3) problems.push("Footnote longer than 3 lines would be cut off.");
+  // Bug fix (2026-10-04): the creative draws 2 footnote lines, but this only warned past 3, so a 3-line qualifier lost
+  // its last line silently (two ads did). A qualifier that doesn't fit must be shortened, never cut.
+  if (spec.footnote && wrap(spec.footnote, FOOT_PX, SIZE.w - 144, 0.5).length > 2) problems.push("Footnote longer than 2 lines would be cut off.");
   const lim = (label, text, max) => {
     if (text && text.length > max) problems.push(`${label} is ${text.length} chars (max ${max})`);
   };
@@ -654,6 +629,7 @@ export function layoutProblems(spec) {
   (spec.callouts || []).forEach((c, i) => lim(`Callout ${i + 1}`, c.text, 60));
   (spec.specs || []).forEach((r, i) => lim(`Spec ${i + 1}`, r.value, 70));
   (spec.range || []).forEach((r, i) => lim(`Range label ${i + 1}`, r.label, 40));
+  (spec.compare?.rows || []).forEach((r, i) => { lim(`Row ${i + 1} label`, r.label, 40); lim(`Row ${i + 1} us`, r.us, 24); lim(`Row ${i + 1} them`, r.them, 24); });
   if (spec.layout === "offer" && spec.offer && !String(spec.offer.condition || "").trim()) problems.push("Offer has no condition: 'free' / discount terms must sit with the offer (CCPA 7).");
   if (spec.layout === "before_after" && !(spec.photos || []).length) problems.push("Before/after has no real study photos attached — export stays blocked.");
   if (["journey", "range"].includes(spec.layout) && (spec.steps || spec.range || []).some((x) => !x.imageHref && !x.imageSrc)) problems.push("A product in the journey/range has no pack shot.");

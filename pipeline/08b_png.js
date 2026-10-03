@@ -11,7 +11,9 @@ const dir = path.resolve("pipeline", "runs", run, "finals");
 const browser = [process.env.BROWSER, `${process.env["ProgramFiles(x86)"]}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Google\\Chrome\\Application\\chrome.exe`, "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge", "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser", "/usr/bin/microsoft-edge"].find((p) => p && fs.existsSync(p));
 if (!browser) throw new Error("No Edge/Chrome/Chromium found for headless rendering — set BROWSER=/path/to/browser.");
 let n = 0;
-for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg"))) {
+// SQUARE_ONLY=1 renders just the 1:1 creatives (a quick eye-check pass before the 4:5 / 9:16 and language versions).
+const squareOnly = process.env.SQUARE_ONLY === "1";
+for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg") && (!squareOnly || f.split(".").length === 2))) {
   const svg = path.join(dir, f), png = svg.replace(/\.svg$/, ".png");
   const head = fs.readFileSync(svg, "utf8").slice(0, 300);
   const w = Number((head.match(/width="(\d+)"/) || [, 1080])[1]), h = Number((head.match(/height="(\d+)"/) || [, 1080])[1]);

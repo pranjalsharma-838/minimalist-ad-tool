@@ -12,7 +12,8 @@ for (const d of ["products", "brief_inputs", "briefs_draft"]) fs.mkdirSync(path.
 const TEMPLATES = JSON.parse(fs.readFileSync("config/templates.json", "utf8")).templates;
 const COMPANIONS = ["salicylic-lha-2-cleanser", "niacinamide-10-with-matmarine", "multi-vitamin-spf-50"];
 const loadAds = () => fs.readdirSync("research/competitor_ads").filter((f) => f.endsWith(".json")).flatMap((f) => JSON.parse(fs.readFileSync(`research/competitor_ads/${f}`, "utf8")));
-const ads = loadAds();
+// Statics only (user rule 2026-10-04): video ads are never a reference or a blend source; carousels are static cards.
+const ads = loadAds().filter((a) => a.format !== "video");
 
 async function sheetFor(h) {
   const f = path.join(runDir, "products", `${h}.json`);
@@ -53,8 +54,8 @@ const factLines = (s, prefix = "") => s.facts.filter((f) => !["inci", "faq", "te
 
 // Add-on (a) 2026-10-03: blend, don't copy — each concept gets 3 proven competitor winners (30+ days, different
 // brands) for this format, and the writer takes one element from each (hook / layout / proof device).
-const WIN = JSON.parse(fs.readFileSync("research/winners.json", "utf8")).ads.filter((w) => w.winner);
 const rawById = new Map(ads.map((a) => [String(a.id), a]));
+const WIN = JSON.parse(fs.readFileSync("research/winners.json", "utf8")).ads.filter((w) => w.winner && rawById.has(String(w.id)));
 function blendRefs(t) {
   const prim = WIN.filter((w) => w.template_id === t.id), sec = WIN.filter((w) => (w.secondary_template_ids || []).includes(t.id));
   const fam = WIN.filter((w) => TEMPLATES.find((x) => x.id === w.template_id)?.family === t.family);
@@ -87,6 +88,9 @@ ANGLES.transformation = "Transformation journey (Progress / timeline): 3 progres
 ANGLES.lifestyle = "Lifestyle: an Indian person in a real, everyday Indian setting where the product fits their day (getting ready for work, a commute, after a run, an evening at home). The headline speaks to that moment; claims stay strictly to page facts. Nothing implies a skin result.";
 ANGLES.human_usage = "Human usage: show the product being used — fingertips applying it, holding it, mid-routine — by an Indian person. The copy explains how it's used, from the page's usage facts only.";
 ANGLES.routine_journey = "Routine journey: 3 frames of the SAME Indian person going through their routine in order (e.g. 'Step 1 · Cleanse', 'Step 2 · 2-3 drops', 'Step 3 · SPF in the morning'). Use layout \"timeline\" with those 3 frame labels from the page's usage facts. This shows a routine, NOT a result: no before/after, no time-to-result labels, no visible skin change. Set ai_label_required: true and put a one-paragraph description of the 3 frames in frames_prompt (same person, same light, the routine actions only; no product, bottle or packaging; no text).";
+// Us vs Them (user review 2026-10-04: "us vs them is missing"; Minimalist's own Amazon gallery has a "vs Other
+// Vitamin C Serums" table). Requested via PAIRS only.
+ANGLES.comparison = "Us vs Them (layout \"usvsthem\"): compare THIS product with a 'them' that the product page itself names — a benchmark product in a published test, another form of the ingredient, or the ingredient used alone. Every row cites the page fact behind both sides; the footnote states the basis (what was compared, how, source). If the page names no comparison, compare TRANSPARENCY instead: what this pack states (the active's strength, a published lab result) vs a label type that doesn't state it — 'them' is then a label type, never a brand, and the footnote says so. Never name or picture another brand, never say others hide, fake or harm, never use 'other brands' or 'competitors'. Lean: 1–3 rows, values of 1–3 words.";
 const PERSON_FORMAT = (t) => /REAL PHOTO:(people|endorser)/.test(t.source);
 const PERSON_NOTE = "This format shows a PERSON. The person image will be AI-generated and carry the visible AI-GENERATED — ILLUSTRATIVE mark: set ai_label_required: true. Describe the person scene in person_prompt (an adult in the moment the angle names — e.g. morning bathroom counter, commute in sun, fingertips applying a few drops — with NO product, bottle or packaging in their hands or in frame, no text, no brand names, no visible skin-result claims). The real pack shot is composited beside the person by code.";
 const PAIRS = process.env.PAIRS ? JSON.parse(fs.readFileSync(process.env.PAIRS, "utf8")) : null;
@@ -95,7 +99,7 @@ function pickAngle(t, sheet) {
   // formats were given (and counted as) a non-offer angle. Offer = the offer / price-comparison layouts.
   if (["offer", "pricecompare"].includes(t.layout)) return "offer_value";
   const has = (k) => sheet.facts.some((f) => f.kind === k);
-  const ok = Object.keys(ANGLES).filter((a) => !["transformation", "lifestyle", "human_usage", "routine_journey"].includes(a) && (a !== "social_proof" || has("rating") || has("review")));
+  const ok = Object.keys(ANGLES).filter((a) => !["transformation", "lifestyle", "human_usage", "routine_journey", "comparison"].includes(a) && (a !== "social_proof" || has("rating") || has("review")));
   const a = ok.sort((x, y) => angleUsed[x] - angleUsed[y])[0];
   angleUsed[a]++;
   return a;

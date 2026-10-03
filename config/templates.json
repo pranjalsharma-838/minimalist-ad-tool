@@ -231,14 +231,16 @@
     },
     {
       "id": 17,
-      "name": "Comparison image",
+      "name": "Comparison image (Us vs Them)",
       "family": "Comparison",
       "source": "LAYOUT",
       "asset_type": "pack_shot",
-      "layout": "spec",
+      "layout": "usvsthem",
       "needs": [
-        "study"
+        "claim"
       ],
+      "claim_risk": "high",
+      "claim_risk_note": "Comparative claim (ASCI Chapter IV): 'them' must be an unnamed benchmark, ingredient or product type the brand's page itself names, compared like-for-like with the basis on the creative; a reviewer confirms the proof is on file before use.",
       "competitor_types": [
         "comparison"
       ]
