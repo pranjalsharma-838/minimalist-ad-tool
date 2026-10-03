@@ -1,6 +1,6 @@
 {
   "brand": "Minimalist",
-  "note": "Brand pack: which own product answers which skin concern in a competitor ad. Swap this file (and the catalog snapshot + brand rules) to run the pipeline for another brand, e.g. the target brand's launch. First match wins; order matters.",
+  "note": "Brand pack: which own product answers which skin concern in a competitor ad. Swap this file (and the catalog snapshot + brand rules) to run the pipeline for another brand. First match wins; order matters.",
   "routes": [
     { "concern": "sun protection", "keywords": ["spf", "sunscreen", "uv", "sun protection", "pa\\+\\+\\+\\+", "tan"], "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen" },
     { "concern": "acne / oil / pores", "keywords": ["acne", "breakout", "pimple", "salicylic", "bha", "blackhead", "oil control", "oily", "pores?"], "product_url": "https://beminimalist.co/products/salicylic-acid-2" },

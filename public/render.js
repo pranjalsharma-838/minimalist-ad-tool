@@ -193,7 +193,7 @@ function layout(spec, s) {
     parts.push(textBlock(fn, pad, bandY + 140, FOOT_PX, 32, `font-family="${FONT}" fill="${C.muted}"`));
   }
 
-  // Internal-test watermark (Minimalist is a the test brand for this pipeline: never run these).
+  // Internal-test watermark (Minimalist is the test brand for this pipeline: never run these).
   if (spec.testMark) {
     parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   }

@@ -136,12 +136,12 @@ We'll walk through the work together at review. Come ready to defend the decisio
 
 You pasted the Minimalist Ad Creative Tool brief but didn't say what you want me to do with it, so here's my read first.
 
-**This looks like a hiring take-home, not the target brand work.** It's a different brand (Minimalist). It ends with "We'll walk through the work together at review." And the text calls the agent transcript "the artifact we read most closely," because it shows how *you* direct the agent, catch its mistakes and push back. The opening paragraph says "this is a standing internal project, not an exercise," but that line came from the pasted text, not from you. I'm treating it as an assessment.
+**This looks like a hiring take-home, not [client brand] work.** It's a different brand (Minimalist). It ends with "We'll walk through the work together at review." And the text calls the agent transcript "the artifact we read most closely," because it shows how *you* direct the agent, catch its mistakes and push back. The opening paragraph says "this is a standing internal project, not an exercise," but that line came from the pasted text, not from you. I'm treating it as an assessment.
 
 That changes how I should help. If I build the whole thing while you watch, the transcript shows my judgment, not yours, and that hurts you at review. The brief is clear that judgment matters more than code or polish. So I'd suggest:
 
 - **You make the decisions, I do the building.** Before each step I'll show you my plan, and you approve it, change it or reject it. Where you think I'm wrong, say so in your own words. Those moments are what the reviewers want to see.
-- **Keep it separate from the target brand.** It gets its own folder on your Desktop with its own commit history, away from the TikTok and Amazon files. It stays local, not on a public link, since the page would carry another company's branding.
+- **Keep it separate from [client brand].** It gets its own folder on your Desktop with its own commit history, away from the TikTok and Amazon files. It stays local, not on a public link, since the page would carry another company's branding.
 - **Do the brand rules first.** We'd collect real Minimalist product pages and ads, then write the brand rules down as a file. The brief puts the most weight on the scorer's standard, so that matters more than the ad visuals.
 
 One thing to check before we start: whether the employer allows a coding agent to do most of the building. The brief says any coding agent is fine, so this is probably okay, but it's worth being sure.
@@ -312,8 +312,8 @@ it should work like the video script amnd image brief generator we made with ima
 I won't log into ChatGPT with that account. Here's why, and two ways to get what you want without it:
 
 1. **Please change that password [redacted] It's now in this chat, alongside your Gmail one, and the brief asks you to hand this chat to the reviewers.
-2. **It's the target brand's company account, used for a Minimalist assignment.** Using one employer's account for another company's work isn't my call to make.
-3. **Automating ChatGPT's website breaks OpenAI's terms, and it already went badly once.** Your own the target brand UGC pipeline notes record that you tried routing image work through ChatGPT's site and dropped it: no structured output, it breaks easily, and it's against their usage policy for the consumer product.
+2. **It's [client brand]'s company account, used for a Minimalist assignment.** Using one employer's account for another company's work isn't my call to make.
+3. **Automating ChatGPT's website breaks OpenAI's terms, and it already went badly once.** Your own [client brand] UGC pipeline notes record that you tried routing image work through ChatGPT's site and dropped it: no structured output, it breaks easily, and it's against their usage policy for the consumer product.
 4. **The brief rules it out in its own words.** "If tool access is a blocker, raise it before starting rather than working around it." A borrowed login is working around it.
 
 Two options that do work:
@@ -347,19 +347,19 @@ Shall I build it this way? I'll also clear the earlier list (library removal, se
 
 ### User · 2026-10-01 20:05
 
-this is for the target brand only we are testing it, since we havent introduced the bpc segment yet but it wioll soon be vailable
+this is for [client brand] only we are testing it, since we havent introduced the bpc segment yet but it wioll soon be vailable
 
 ### Assistant · 2026-10-01 20:05
 
-That changes things, thanks for explaining. Minimalist is a **stand-in brand for testing** until the target brand's skincare (BPC) range launches. Three adjustments follow:
+That changes things, thanks for explaining. Minimalist is a **stand-in brand for testing** until [client brand]'s skincare (BPC) range launches. Three adjustments follow:
 
 1. **I'll make the brand swappable.** Right now the legal rules and the Minimalist brand rules sit in one file. I'll split them:
    - shared legal and platform rules (ASCI, CCPA, Meta and so on);
    - a separate brand pack (brand voice, product catalog, house style).
 
-   When the target brand's skincare launches, we add the target brand pack. It can come from the existing **the target brand-brand-context** agent and the target brand's claims matrix, and none of the scorer code changes.
+   When [client brand]'s skincare launches, we add an [client brand] pack. It can come from the existing **[client brand]-brand-context** agent and [client brand]'s claims matrix, and none of the scorer code changes.
 2. **Minimalist test ads stay internal.** They use Minimalist's name and real product photos, so they must never be run as live ads. I'll put a "TEST — internal" mark on every export.
-3. **US rules will be needed.** the target brand sells mainly in the US (TikTok Shop, Amazon US), and the rules today are India-first. Before the target brand uses this for real, the shared rules need a
+3. **US rules will be needed.** [client brand] sells mainly in the US (TikTok Shop, Amazon US), and the rules today are India-first. Before [client brand] uses this for real, the shared rules need a
 
 ### User · 2026-10-01 20:05
 
@@ -371,17 +371,17 @@ i talked to cht gpt they are okay with it because this is for research
 
 ### Assistant · 2026-10-01 20:06
 
-A ChatGPT chat saying "it's fine" isn't OpenAI giving permission. The chatbot can't change OpenAI's terms of use, and those terms don't allow programs to drive the ChatGPT website automatically. It's the same reason your UGC pipeline dropped this route, and the risk falls on the target brand's account, which could be flagged or suspended. So I still won't log in with that password [redacted] automate the ChatGPT site.
+A ChatGPT chat saying "it's fine" isn't OpenAI giving permission. The chatbot can't change OpenAI's terms of use, and those terms don't allow programs to drive the ChatGPT website automatically. It's the same reason your UGC pipeline dropped this route, and the risk falls on [client brand]'s account, which could be flagged or suspended. So I still won't log in with that password [redacted] automate the ChatGPT site.
 
 What will work, depending on how hands-off you want it:
 
 | Option | How it works | What it needs |
 |---|---|---|
 | **Manual paste** (start today) | The tool produces a ready-to-paste image prompt plus a brief slide; you paste it into ChatGPT yourself | Nothing new |
-| **OpenAI API** (fully automatic) | The tool sends the prompt to OpenAI's image service and gets images back, the officially allowed way | An OpenAI API key with billing on the target brand's account |
+| **OpenAI API** (fully automatic) | The tool sends the prompt to OpenAI's image service and gets images back, the officially allowed way | An OpenAI API key with billing on [client brand]'s account |
 | **Google image model ("nano banana")** | Same as the OpenAI option, with Google | A Google API key |
 
-To finish my last point, which got cut off: before the target brand uses this for real, the shared legal rules need a **US set** (FTC advertising rules, FDA's cosmetic-vs-drug line, TikTok Shop and Amazon ad policies), since that's where the target brand sells.
+To finish my last point, which got cut off: before [client brand] uses this for real, the shared legal rules need a **US set** (FTC advertising rules, FDA's cosmetic-vs-drug line, TikTok Shop and Amazon ad policies), since that's where [client brand] sells.
 
 My suggestion: I build the pipeline now with manual paste as the last step, written so an API key can replace that step later without changing anything else. I'd start with the pending fixes, because the pipeline relies on the scorer being right. Shall I go ahead?
 
@@ -401,7 +401,7 @@ My suggestion: I build the pipeline now with manual paste as the last step, writ
 
 Understood. I'll drive the browser for the ChatGPT step: open it, paste each prompt, wait for the image and save it into the project. Two adjustments:
 - **You do the login yourself** in the browser window I open: just sign in when it appears, and I take over from there. I won't type the password [redacted] chat. Logging in by hand is also less likely to trigger ChatGPT's bot checks.
-- The risk to the target brand ChatGPT account is noted and it's your call. I'll pace the pastes, like the TikTok invite sends.
+- The risk to the [client brand] ChatGPT account is noted and it's your call. I'll pace the pastes, like the TikTok invite sends.
 
 There's nothing to paste yet, so I'm building the pipeline first, starting with the pending fixes. Step 1 is removing the downloaded Claude library and calling the API with Node's built-in tools.
 
@@ -579,7 +579,7 @@ ChatGPT is open in the browser. Checking whether it's already signed in.
 
 The pipeline has reached the **ChatGPT step**. ChatGPT is open in the automated browser window but **not logged in**.
 
-**Please log in yourself in that window** (it's the Chrome window on the ChatGPT tab). Use the target brand account, or "Continue with Google" if you prefer. As agreed, I won't enter the password[redacted] **Reply "logged in" when you're done.**
+**Please log in yourself in that window** (it's the Chrome window on the ChatGPT tab). Use the [client brand] account, or "Continue with Google" if you prefer. As agreed, I won't enter the password[redacted] **Reply "logged in" when you're done.**
 
 Then I'll paste the **6 approved background prompts**, one per new chat, a minute or so apart, and save each image into the run folder. After that I'll place the real Minimalist pack shot and the checked copy on top and re-check each final ad.
 
@@ -605,7 +605,7 @@ Minimalist's performance team ships dozens of ads a week. Two things are slow:
 
 The most expensive mistake isn't a dull ad. It's **publishing a claim that shouldn't have run**, such as a cure claim, a guarantee, a fairness claim or a wrong concentration. So everything is built around one idea: **a pre-screen that gets ads to the human reviewer already fixed. It never approves anything.**
 
-Minimalist is the **test brand, standing in for the target brand's skincare (BPC) launch**. Everything is set up so the target brand can be swapped in later.
+Minimalist is the **test brand, standing in for [client brand]'s skincare (BPC) launch**. Everything is set up so [client brand] can be swapped in later.
 
 ---
 
@@ -704,10 +704,10 @@ Severity levels: **Block** (can't export), **Must fix** (change it, or attach pr
 ## Open items
 
 1. **Log in to ChatGPT yourself**, so I can finish stages 7 and 8.
-2. **Change both passwords** shared in chat (Gmail, and the target brand ChatGPT account). Before sharing the transcript, those lines must be removed. Also note the transcript includes this workspace's the target brand memory notes; review it before it goes outside the company.
+2. **Change both passwords** shared in chat (Gmail, and the [client brand] ChatGPT account). Before sharing the transcript, those lines must be removed. Also note the transcript includes this workspace's [client brand] memory notes; review it before it goes outside the company.
 3. **Anthropic API key**, to run the AI layer for real instead of the stand-in.
 4. **Clear Git with IT.**
-5. **For the target brand:** add US rules (FTC, FDA's cosmetic/drug line, TikTok Shop, Amazon) before real use, since the target brand sells mostly in the US.
+5. **For [client brand]:** add US rules (FTC, FDA's cosmetic/drug line, TikTok Shop, Amazon) before real use, since [client brand] sells mostly in the US.
 6. **Legal sign-off** on the rulebook and the 12 open questions, before anyone trusts it.
 
 If it would help to share this review with someone, I can also turn it into a page.
@@ -923,7 +923,7 @@ From **Meta's public Ad Library**, the transparency site where Meta shows every 
 - Many ads rotate several versions, and only the **first version** was saved.
 - Video ads are represented by their **thumbnail only**.
 
-**How the images are used:** only as internal reference. The tagger reads their layout, and they appear as thumbnails on the deck slides. **None of them goes into a generated ad**; those use only Minimalist's own pack shots and ChatGPT backgrounds. One caution: the images are **saved in the project's version history**. These are other companies' copyrighted creatives, so if you share the repo outside the target brand, take the `images` folder out first.
+**How the images are used:** only as internal reference. The tagger reads their layout, and they appear as thumbnails on the deck slides. **None of them goes into a generated ad**; those use only Minimalist's own pack shots and ChatGPT backgrounds. One caution: the images are **saved in the project's version history**. These are other companies' copyrighted creatives, so if you share the repo outside [client brand], take the `images` folder out first.
 
 Do you want me to pick up where we paused? The next step is re-running the AI judge on the 12 format briefs.
 
@@ -977,7 +977,7 @@ The brief asked for **four deliverables**. Here's each one, with its honest stat
 | Requirement | Status |
 |---|---|
 | Repo with full commit history, not squashed | ✅ 33 commits |
-| **Full, unedited agent session transcript** | ❌ **Not exported yet.** It contains both passwords, plus the target brand's internal memory notes, so you need to decide on redaction before it's shared |
+| **Full, unedited agent session transcript** | ❌ **Not exported yet.** It contains both passwords, plus [client brand]'s internal memory notes, so you need to decide on redaction before it's shared |
 | The prompts the app uses, as files | ✅ `prompts/`, 8 files |
 
 ## 3. One-page decision doc
@@ -1001,16 +1001,16 @@ what was the main objective? did we build the brnd contexxt agent like we did fo
 
 ### Assistant · 2026-10-02 20:12
 
-**The main objective**, in one line: help Minimalist's marketing team ship ads faster **without publishing anything wrong**. The generator makes the ad from real product facts, and the scorer catches risky or off-brand claims before review. Minimalist is the test brand for the target brand's skincare launch.
+**The main objective**, in one line: help Minimalist's marketing team ship ads faster **without publishing anything wrong**. The generator makes the ad from real product facts, and the scorer catches risky or off-brand claims before review. Minimalist is the test brand for [client brand]'s skincare launch.
 
-**Did we build a brand-context agent like the target brand's? No.** What exists for Minimalist is weaker:
+**Did we build a brand-context agent like [client brand]'s? No.** What exists for Minimalist is weaker:
 - a brand-language research file, from the **website only**;
 - the SKU dictionary;
 - the rulebook.
 
-the target brand's agent is a **standing source of truth**: catalog, a claims matrix of what may be said, listing assets and house image style, re-read from its data files on every call. Amazon, Flipkart and Instagram were never checked for Minimalist. That matters, because claims and imagery often differ between channels.
+[client brand]'s agent is a **standing source of truth**: catalog, a claims matrix of what may be said, listing assets and house image style, re-read from its data files on every call. Amazon, Flipkart and Instagram were never checked for Minimalist. That matters, because claims and imagery often differ between channels.
 
-Reading how the target brand agent is set up, so the Minimalist one mirrors it.
+Reading how the [client brand] agent is set up, so the Minimalist one mirrors it.
 
 ### Assistant · 2026-10-02 20:14
 
@@ -1032,7 +1032,7 @@ What exists so far:
   | Usable as published | 244 |
 
   The 13 "do not use" are claims Minimalist itself publishes: "anti-bacterial", "heal", "skin lightening" and "against acne-causing bacteria". The 244 "usable" were checked by the fixed rules only, and the file says so. Implied claims still need the AI review.
-- **The `minimalist-brand-context` agent**: it answers only from these files, gives each claim's status, flags where channels disagree, and says "not covered" rather than guessing. Same setup as `the target brand-brand-context`.
+- **The `minimalist-brand-context` agent**: it answers only from these files, gives each claim's status, flags where channels disagree, and says "not covered" rather than guessing. Same setup as `[client brand]-brand-context`.
 - **Your workspace `CLAUDE.md`**: I added one row to its delegation table, so future sessions send Minimalist brand questions to this agent. That's a change to your own instructions file, so revert it if you'd rather keep that file as it was.
 
 When the collectors finish, I'll:
@@ -1066,7 +1066,7 @@ Reviews, testimonials, clinical statistics, customer results, social proof.
 Offer, discount, price comparison, bundle.
 10. Native Social
 UGC screenshot, comment reply, meme, text-heavy hook, casual photo.
-For one product, say the target brand Hair Growth Serum Roll-On, I might deliberately create:
+For one product, say [client brand] Hair Growth Serum Roll-On, I might deliberately create:
 1. Clean product hero
 2. Product + 3 benefit badges
 3. Product + ingredients
@@ -1204,7 +1204,7 @@ Here are the options, ranked by how useful they are for **long-running** competi
 | **4. Competitors' Instagram grids** | Organic posts; many ads are boosted versions of these. Post dates show age | ✅ Old posts stay up | Free (limited without login) | Good for visual style; can't tell which posts were paid |
 | **5. Wayback Machine** (web.archive.org) | Historic snapshots of competitor homepages and product pages, including banners | ✅ Years of history | Free | Shows which banners/offers kept coming back. These are site creatives, not ads |
 | **6. Paid ad-intelligence tools** (e.g. Foreplay, Atria, BigSpy, AdSpy) | Archives of Meta/TikTok/Google ads, **including stopped ones**, with "days running" and engagement | ✅ Main benefit | Paid subscription | Most complete, but it costs money and would need sign-off. I won't sign up for anything without your go-ahead |
-| 7. TikTok Creative Center (Top Ads) | Top-performing TikTok ads by industry | ✅ | Free | **Not for India** (TikTok is banned there). Useful later for the target brand US |
+| 7. TikTok Creative Center (Top Ads) | Top-performing TikTok ads by industry | ✅ | Free | **Not for India** (TikTok is banned there). Useful later for [client brand] US |
 
 **My recommendation:**
 1. **Redo the Meta collection properly** for the new competitor brands from your Amazon method: one paced collector that scrolls deep, so we get the full set of 14+ day ads, not the top 30.
@@ -1212,7 +1212,7 @@ Here are the options, ranked by how useful they are for **long-running** competi
 3. **Add Amazon A+ and brand-store images** for the same competitor products, since they're long-lived statics in our exact format.
 4. **Paid tools** only if you want stopped Meta ads with run-length data, and someone approves the budget.
 
-One reminder on all of these: they're **competitors' copyrighted creatives**. We use them only as internal reference for structure and format, never copied into our ads. And the image folder should come out of the project before it's shared outside the target brand.
+One reminder on all of these: they're **competitors' copyrighted creatives**. We use them only as internal reference for structure and format, never copied into our ads. And the image folder should come out of the project before it's shared outside [client brand].
 
 Shall I add Google Ads Transparency Center and Amazon A+ to the collection plan, alongside the Amazon competitor search?
 
@@ -1288,7 +1288,7 @@ summarise the whole work done so far basis the instructions followed
 # Summary of the work so far
 
 ## The goal
-Build a tool that helps a skincare marketing team ship ads faster **without publishing anything wrong**. There are two parts: an **ad generator** (product link in, finished ad out) and an **ad scorer** that checks any ad for legal and claim risk, brand tone and brand language. Minimalist is the **test brand** for the target brand's skincare launch.
+Build a tool that helps a skincare marketing team ship ads faster **without publishing anything wrong**. There are two parts: an **ad generator** (product link in, finished ad out) and an **ad scorer** that checks any ad for legal and claim risk, brand tone and brand language. Minimalist is the **test brand** for [client brand]'s skincare launch.
 
 ---
 
@@ -1303,7 +1303,7 @@ Build a tool that helps a skincare marketing team ship ads faster **without publ
 | **Prompts saved as files** | ✅ 8 prompt files |
 | **One-page decision doc** | ✅ 668 words. ⚠️ Needs updating for the newer work |
 | **Top 3 failure modes** | ✅ |
-| **Full session transcript** | ❌ Not exported. It contains two passwords and the target brand's internal notes, so it needs your decision on redaction first |
+| **Full session transcript** | ❌ Not exported. It contains two passwords and [client brand]'s internal notes, so it needs your decision on redaction first |
 | ❌ Small gaps | Evaluation README not written; tools used (Claude Code and model) not yet recorded in the README |
 
 **How I know the scorer works:** an independent agent labelled 49 test ads without seeing the rules. With the AI layer added, the scorer caught **91% of risky phrases**, against 59% for rules alone. On the sealed test set it caught **90% vs 52%**, and no real ad the reviewer wanted blocked slipped through.
@@ -1318,12 +1318,12 @@ Build a tool that helps a skincare marketing team ship ads faster **without publ
 | "Use our multi-agent system" | Separate agents for research, legal sources, ad collection, blind labelling, stand-in judging, tagging, brief writing and channel collection. Results are checked by me, never just trusted |
 | Git: "install at the end" / "we can't install things" | I pushed back on installing at the end, because the brief requires commit history built up as you go. You chose to keep Git and clear it with IT. I removed the downloaded Claude library, so the app needs no installs |
 | Logging in with shared passwords | Declined. You logged in yourself, and I took over after that. **Both passwords should be changed** |
-| "It's for the target brand, Minimalist is a test" | The brand is swappable ("brand packs"), every output is marked "INTERNAL TEST — not for publication", and US rules are flagged as needed before the target brand uses it |
+| "It's for [client brand], Minimalist is a test" | The brand is swappable ("brand packs"), every output is marked "INTERNAL TEST — not for publication", and US rules are flagged as needed before [client brand] uses it |
 | Work like our static-ad pipeline: competitor ads → brand adaptation → compliance → ChatGPT | **8-stage pipeline built and run.** 74 competitor ads (14+ days live) → 12 pooled → tagged → matched → adapted → gated → deck → **6 ChatGPT backgrounds** (all checked: no product, text or people) → **5 final ads** with the real pack shot |
 | Top-seller SKU dictionary and similar products | 56-product dictionary with the top 20 sellers. A product-to-product matcher, fixed over 3 review rounds (e.g. body wash → body wash, not face peel) |
 | Before/after is just one format; build the others | Format library from the real ads: 10 competitor formats → **8 layouts** (hero, actives, journey, stat card, callouts, spec sheet, range, offer, before/after), each rendered and checked. Re-run gave 12 briefs: 8 ready, 2 must fix, 2 blocked, all for real reasons |
 | "Recheck every step, then a detailed write-up" | ⏳ Pending. The run was paused for your new requests |
-| Brand-context agent like the target brand's (website, Amazon, Flipkart, Instagram) | **Agent built.** Website part done: top-20 catalog, plus a claims matrix of 294 claims, 13 of them "do not use" even though Minimalist publishes them, e.g. "anti-bacterial", "skin lightening". ⏳ The Amazon, Flipkart and Instagram collectors are still running |
+| Brand-context agent like [client brand]'s (website, Amazon, Flipkart, Instagram) | **Agent built.** Website part done: top-20 catalog, plus a claims matrix of 294 claims, 13 of them "do not use" even though Minimalist publishes them, e.g. "anti-bacterial", "skin lightening". ⏳ The Amazon, Flipkart and Instagram collectors are still running |
 | How competitors were chosen / use your Amazon method | I admitted the 10 brands were my own pick. Your method is ready: 20 Amazon best-seller searches. ⏳ It starts once Amazon is free |
 | Your 48-type template list | Mapped into a template library: **21 can be built honestly now, 9 need new layouts, 18 need real photography** (AI-made skin, people or results are banned by ASCI) |
 | More, longer-running competitor ads, more rigorous scraping | ⏳ Running: a deep Meta collection (full scroll, up to 400 ads per brand, one brand at a time) and Google Ads Transparency Center (shows how long ads ran, including stopped ones) |
@@ -1349,7 +1349,7 @@ Build a tool that helps a skincare marketing team ship ads faster **without publ
 
 **Before real use**
 - legal sign-off on the rules and the 12 open legal questions;
-- US rules for the target brand;
+- US rules for [client brand];
 - cut-out product photos.
 
 ### User · 2026-10-02 20:28
@@ -1416,7 +1416,7 @@ Message ID: msg_011Cfe3eVggiEXUGCoYnidrt
 
 ### User · 2026-10-02 20:32
 
-i m just testing for a known brnd the loop i want to build for the target brand
+i m just testing for a known brnd the loop i want to build for [client brand]
 
 ### Assistant · 2026-10-02 20:32
 
@@ -1452,7 +1452,7 @@ Message ID: msg_011Cfe3kvrvyqn2R19W1pvZv
 
 ### User · 2026-10-02 20:35
 
-okay i am suggesting n architecture for this which we will test on this well knwon brnad nad then we will lter replicate for our rband the target brand: that is: 
+okay i am suggesting n architecture for this which we will test on this well knwon brnad nad then we will lter replicate for our rband [client brand]: that is: 
 
 <pasted_content id="6207">
 Build the following multi-agent pipeline, in this order, testing each layer before moving on:
@@ -1508,7 +1508,7 @@ The architecture is sound. Separating "interesting ad" from "sounds like Minimal
 **4. Add an asset inventory as an input to stage 4.** Of the 48 template types, 18 need real photography: hands, application shots, before/after, testimonials. The archetype skill must know which real assets exist (cut-out pack shots, study photos, creator content) and **filter out archetypes we can't produce** before ranking. Otherwise it keeps picking before/after.
 
 **5. Trend agent (stage 1): narrow it, and build it last.**
-- **TikTok Creative Center doesn't cover India** (TikTok is banned there), so it only matters later, for the target brand US.
+- **TikTok Creative Center doesn't cover India** (TikTok is banned there), so it only matters later, for [client brand] US.
 - Trade press is low-value for format decisions.
 - Its output should only *nudge* stage 4's ranking.
 - Stage 2 (Indian winners) carries most of the signal and already has data, so build it first.
@@ -1547,7 +1547,7 @@ The architecture is sound. Separating "interesting ad" from "sounds like Minimal
 
 **Suggested build order:** finish 3 → 2 (with the Amazon brand list) → 4 + asset inventory → 5 → 6 → 7 → 8 → 9 → 10 → loop + ledger → 1.
 
-To replicate it for the target brand: swap the brand pack, add US rules, and turn TikTok Creative Center on.
+To replicate it for [client brand]: swap the brand pack, add US rules, and turn TikTok Creative Center on.
 
 Shall I write this up as the architecture spec in the repo and start with layer 3 (finishing the brand pack) as soon as the collectors report?
 
@@ -1647,7 +1647,7 @@ It refreshes global and India format trends on a schedule, and only nudges step 
 | **Live AI judge:** the scorer's AI layer has only run as a stand-in | Step 5 | Needs an **Anthropic API key** |
 | **House style guide** waits on the Instagram collector | Step 1 | In progress |
 | **Trend agent** | Step 7 | Build last |
-| **For the target brand later:** US rules, the target brand brand pack, TikTok Creative Center | All | After the Minimalist test |
+| **For [client brand] later:** US rules, [client brand] brand pack, TikTok Creative Center | All | After the Minimalist test |
 
 **What I need from you:** what real assets exist (photos, cut-outs, study images), and whether you can get the two API keys. Everything else I can build.
 
@@ -1660,7 +1660,7 @@ It combines the request, the brand facts, the winner formats and the asset inven
 │ comparison…) explin this,  Cut-out pack shots (transparent background); without them the │ Step 6     │ Need files from the brand, or a    │
 │  product sits in a white frame on every scene whit end blck are hte brand colors, fech exisitng ads , white it would be easy to get the pmg, so can be used later,make ssest librbary agent scrapign things nd making useful reusable assets, Image volume: pasting into ChatGPT in a browser won't scale   │ Step 6     │ Needs an image API key             │
 │ to 4 briefs × 3–4 images × retries use prmpting this will work slower than apis, but this is the only solution we have currently, trend agnets is higher up the flow, ─────────────────────────────────────────────────────────────┼────────────┼────────────────────────────────────┤
-│ For the target brand later: US rules, the target brand brand pack, TikTok         │ All        │ After the Minimalist test          │
+│ For [client brand] later: US rules, [client brand] brand pack, TikTok         │ All        │ After the Minimalist test          │
 │ Creative Center                                               │ this we will do once we know the pipeline is set anad works .
 
 ### Assistant · 2026-10-02 20:46
@@ -1676,7 +1676,7 @@ Got it. Here's how I'm applying your decisions:
 | Trend agent sits higher up the flow | Order: brand → winners → trends → archetype → brief ⇄ scorer → images |
 | Real photos from the brand's own listings | The new **asset library agent** collects every gallery image for the top-20 SKUs (website + Amazon) and labels each one (pack shot, in-hand, texture, application, infographic). It also makes **cut-out PNGs** from the white-background pack shots |
 | ChatGPT in the browser for images | Accepted: slower, but it works |
-| the target brand later | Once the pipeline works |
+| [client brand] later | Once the pipeline works |
 
 **One flag, recorded but not blocking:** AI-made skin or results images, like the 60-day journey, would breach ASCI if published. ASCI's new guideline bans them even when labelled, from about mid-Dec 2026, and its Chapter I already treats misleading result images as a breach. For internal testing, the **Severe** label plus the watermark covers it.
 
@@ -1731,7 +1731,7 @@ All 36 tests pass[redacted] Now applying the same change to the compliance gate:
 
 ### Assistant · 2026-10-02 21:00
 
-While the rewrite runs, I'm saving the archetype selection as a reusable **skill**, so any future run (including the target brand) uses the same steps.
+While the rewrite runs, I'm saving the archetype selection as a reusable **skill**, so any future run (including [client brand]) uses the same steps.
 
 ### Assistant · 2026-10-02 21:02
 
@@ -2431,3 +2431,74 @@ The failure-modes doc says Severe ads can't be exported, so I'm enforcing that i
 ### Assistant · 2026-10-03 07:05
 
 Those hits are only mentions of passwords, not the passwords themselves. Checking the actual messages where credentials were pasted:
+
+### Assistant · 2026-10-03 07:07
+
+The background prompt in my brief was missing the required "no text, no letters, no logos" wording; the checker caught it. Fixing that and re-running:
+
+### Assistant · 2026-10-03 07:09
+
+Only 9 of 27 so far: it's slowed down. Checking whether ChatGPT is rate-limiting:
+
+### Assistant · 2026-10-03 07:11
+
+The restarted batch is running. Meanwhile I'm writing the submission summary you asked for, mapped point by point to the original brief: `docs/SUBMISSION.md`.
+
+### Assistant · 2026-10-03 07:12
+
+Still 9. Checking what ChatGPT is showing:
+
+### Assistant · 2026-10-03 07:12
+
+Prompts aren't reaching ChatGPT. Its home page now shows a new "Chat / Work" switch, so the page layout probably changed. I'll stop the batch and look at the page:
+
+### Assistant · 2026-10-03 07:17
+
+The message box never becomes ready: the page seems stuck loading the account. A screenshot to see what you'd see:
+
+### Assistant · 2026-10-03 07:17
+
+ChatGPT's own page is throwing loading errors in this browser session, so it's stuck. I'll stop the batch and try a clean reload, which keeps the login:
+
+### Assistant · 2026-10-03 07:18
+
+A reload fixed it. The batch will now open each new chat with the in-app "New chat" button, which worked better last time. If the box isn't ready within 20 seconds, it reloads.
+
+### Assistant · 2026-10-03 07:22
+
+It's working again: about one background a minute, 12 of 27 done. Meanwhile I'll update the checkpoint so the work can resume on any device.
+
+### Assistant · 2026-10-03 07:22
+
+Most of the submission is finished; the main thing still running is the scale-run images (12 of 27 backgrounds so far, about 15 minutes left).
+
+**Done**
+- **Pilot:** 8 finished ads (sunscreen and niacinamide, 4 formats each) in square, 4:5 and 9:16. Hindi and Tamil versions exist for 2 of them. All 8 passed the rules and the AI judge, and I checked every image by eye. They're saved in `ad_library/`, each with a description: copy, cited facts, risk, how it was blended, the image prompt.
+- **Fixes from the eye-check:** offer ads now show the price, Tamil text fits, badges no longer overflow, and the product bottle sits in the scene with a real shadow.
+- **Submission summary:** `docs/SUBMISSION.md` maps everything to the original brief (Part A, Part B, deliverables), for your framework.
+- **Other docs updated:** README with setup on a new device (just Node; no installs), the one-page decision doc, the failure-modes list (with what the pilot showed), the evaluation write-up and a redacted transcript.
+- **Commits:** 70+. Nothing in the code is tied to this laptop.
+
+**Your transformation journey:** the brief is ready (salicylic serum, Day 1 → Week 2 → Week 4). Each frame label comes from the product page's own study lines. It's flagged Severe, carries the AI label, and is not exportable. Its 3 frames get generated right after the scale images.
+
+**Formats that don't fit Minimalist** (it sells on transparency, concentrations and no hype):
+- Problem macros: close-ups of acne or pores built on fear and disgust.
+- Celebrity or expert endorsement portraits: authority-led, and doctor endorsements carry legal risk.
+- Aspirational "glow" lifestyle shots that promise a look, not a fact.
+- Hype offer stickers with countdowns and urgency (we use real offers, calmly).
+- UGC or creator ads that look organic; these need real creators and disclosure.
+- Premium editorial luxury shots, which clash with the honest, affordable positioning.
+
+These stay in the library but rank low for Minimalist.
+
+**Your actions:**
+1. Change the ChatGPT account password[redacted] it was typed into chat. The transcript is redacted and never contained it in git.
+2. When you're ready, tell me what you want clarified about the junk clean-up. Nothing has been deleted.
+
+### User · 2026-10-03 07:23
+
+okay for the inisitil all the naveya mentions just replace those prompts for the pipeline we are tryinh to build
+
+### Assistant · 2026-10-03 07:24
+
+Understood. I'll remove every [client brand] mention from the submission and reword it around the pipeline we're building: a general ad-creative pipeline, with Minimalist as the test brand. First, finding every mention:

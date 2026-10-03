@@ -22,7 +22,7 @@ The verdict is computed in code. The AI judge can add findings but never remove 
 ## 3. What was cut, and why
 
 - **Generated products, results or people presented as real.** See above.
-- **Per-market rules and video.** The rules are India-first. the target brand's US launch needs FTC/FDA and TikTok/Amazon rules before going live.
+- **Per-market rules and video.** The rules are India-first. Running it for a US market needs FTC/FDA and TikTok/Amazon rules first.
 - **Fully automatic image generation.** Without an OpenAI key, images come from ChatGPT in a browser the user logs into. One prompt per ad takes about 50 seconds.
 - **A pixel-level re-check of generated images.** Dropped by user decision; every final is checked by eye instead.
 

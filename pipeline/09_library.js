@@ -30,7 +30,7 @@ for (const b of briefs) {
     const lines = [
       `# ${b.product_title} — ${m.template_name || b.layout}${pngs.length > 1 ? ` (variant ${v})` : ""}`,
       "",
-      "**INTERNAL TEST — not for publication** (Minimalist is a the test brand for this pipeline).",
+      "**INTERNAL TEST — not for publication** (Minimalist is the test brand for this pipeline).",
       "",
       `| | |`, `|---|---|`,
       `| Product | ${b.product_title} (${b.product_url}) |`,

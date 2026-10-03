@@ -1,6 +1,6 @@
 # Niacinamide 10% Face Serum — Offer creative
 
-**INTERNAL TEST — not for publication** (Minimalist is a the test brand for this pipeline).
+**INTERNAL TEST — not for publication** (Minimalist is the test brand for this pipeline).
 
 | | |
 |---|---|

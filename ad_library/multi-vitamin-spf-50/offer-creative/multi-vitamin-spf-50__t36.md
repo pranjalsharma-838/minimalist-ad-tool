@@ -1,6 +1,6 @@
 # SPF 50 Sunscreen — Offer creative
 
-**INTERNAL TEST — not for publication** (Minimalist is a the test brand for this pipeline).
+**INTERNAL TEST — not for publication** (Minimalist is the test brand for this pipeline).
 
 | | |
 |---|---|

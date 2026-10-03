@@ -18,6 +18,9 @@ const redact = (t) => String(t)
   // password: redact a non-word token after [email], and any letters+symbol+digits token anywhere.
   .replace(/\[email\](\s+)(?!USE\b|and\b|or\b|for\b)(\S*[\d@#$%!&*]\S*)/g, "[email]$1[redacted]")
   .replace(/\b[A-Za-z]{3,}[@#$%!&*][0-9]{2,}\b/g, "[redacted]")
+  // The client brand behind the test is not named in the submission (user decision 2026-10-03); the name is
+  // stored encoded so it doesn't appear in the repo as plain text.
+  .replace(new RegExp(`\\b${Buffer.from("YW52ZXlh", "base64").toString()}(us)?\\b`, "gi"), "[client brand]")
   .replace(/\b(id|user(name)?|login)\s*[:=]\s*\S+\s+(and\s+)?(pw|password|pass)\s*[:=]?\s*\S+/gi, "[credentials redacted]")
   .replace(/\b[A-Za-z0-9+/]{40,}={0,2}\b/g, "[long-token]");
 const textOf = (c) => typeof c === "string" ? c : Array.isArray(c) ? c.filter((p) => p.type === "text").map((p) => p.text).join("\n") : "";

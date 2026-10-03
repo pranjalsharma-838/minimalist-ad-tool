@@ -46,7 +46,7 @@ def box(slide, x, y, w, h, lines, size=15, bold_first=False, color=None):
 s = prs.slides.add_slide(blank)
 box(s, 0.6, 2.4, 12, 1, [f"Static ad briefs - {date}"], size=32, bold_first=True)
 box(s, 0.6, 3.4, 12, 2, [
-    "Test brand: Minimalist (the test brand for this pipeline). INTERNAL TEST - not for publication.",
+    "Test brand: Minimalist (used to prove the pipeline). INTERNAL TEST - not for publication.",
     f"{len(briefs)} briefs from competitor Meta ads running 14+ days. Each keeps the source's structure, "
     "uses only the product page's own facts, and passed a compliance gate before the image step.",
     "The image model makes the BACKGROUND only. The real pack shot and the checked copy are placed by the tool.",

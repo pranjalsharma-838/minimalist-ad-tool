@@ -1,6 +1,6 @@
 # Competitor-adapted static ad brief pipeline
 
-Same stage discipline as earlier internal static-ad and UGC pipelines. Mechanical work is a plain script; judgement work is an agent step with its prompt in `prompts/`. **Test brand: Minimalist**, used to build and prove the pipeline. Every output carries an "INTERNAL TEST — not for publication" mark.
+One stage discipline throughout. Mechanical work is a plain script; judgement work is an agent step with its prompt in `prompts/`. **Test brand: Minimalist**, used to build and prove the pipeline. Every output carries an "INTERNAL TEST — not for publication" mark.
 
 | # | Stage | How | Output (in `pipeline/runs/<date>/`) |
 |---|---|---|---|
@@ -31,7 +31,7 @@ Same stage discipline as earlier internal static-ad and UGC pipelines. Mechanica
 - **"Running 14+ days" is a proxy for "working"**, because Meta doesn't publish spend or results for commercial ads. It also favours aggressive evergreen ads, which tilts the pool toward riskier claim styles (see `docs/FAILURE_MODES.md`).
 - **Plum ran no qualifying static ads**, so its entries are videos, represented by their thumbnail and text.
 
-## Swapping the brand (for the target brand's launch)
+## Swapping the brand
 
 Replace these four things:
 - `config/product_map.json` (concerns → products, the fallback);
@@ -39,4 +39,4 @@ Replace these four things:
 - the catalog snapshot (`research/products_snapshot_*.json`);
 - the brand-specific rules in `rules/brand_rules.json` (the TON-/LNG- rules and brand-derived rationale).
 
-The policy rules (CLM-, CRE-) are regulation-based and shared. **the target brand sells mostly in the US, so a US rule set (FTC, FDA cosmetic/drug line, TikTok Shop / Amazon ad policies) must be added before real use.**
+The policy rules (CLM-, CRE-) are regulation-based and shared. **For a brand selling mainly in the US, a US rule set (FTC, FDA cosmetic/drug line, TikTok Shop / Amazon ad policies) must be added before real use.**

@@ -28,7 +28,7 @@ A confident tool enforcing the wrong line fails two ways. It blocks good ads, an
 **What I'd do:**
 - *Before launch:* legal signs off the rulebook and resolves the 12 open questions. Rules are versioned, and every report shows the rules version and date. The catalog check reads the live Shopify feed instead of a snapshot.
 - *After launch:* a quarterly rule review, and a feed of ASCI and CDSCO updates.
-- *For the target brand switch:* the shared rules are India-first. the target brand sells mostly in the US, so a US rule set (FTC, FDA's cosmetic/drug line, TikTok Shop and Amazon policies) is a **before-launch** item.
+- *For a brand or market switch:* the shared rules are India-first. For a brand selling mainly in the US, a US rule set (FTC, FDA's cosmetic/drug line, TikTok Shop and Amazon policies) is a **before-launch** item.
 
 ## 3. Everyone learns to write for the scorer
 

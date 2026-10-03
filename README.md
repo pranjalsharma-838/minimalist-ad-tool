@@ -1,6 +1,6 @@
 # Minimalist Ad Desk (prototype)
 
-An ad creative tool for a beauty and personal-care brand. **Minimalist (beminimalist.co) is the test brand**, used to build and prove the pipeline; once proven, the same pipeline is pointed at the target brand. Nothing here is published, and every creative carries an "INTERNAL TEST" mark.
+An ad creative tool for a beauty and personal-care brand. **Minimalist (beminimalist.co) is the test brand**, used to build and prove the pipeline; swapping the brand pack points the same pipeline at any other brand. Nothing here is published, and every creative carries an "INTERNAL TEST" mark.
 
 It has three parts:
 

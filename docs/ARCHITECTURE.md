@@ -1,6 +1,6 @@
 # Pipeline architecture (agreed 2026-10-03, updated the same day after the pilot + add-ons)
 
-Test brand: Minimalist. It will be replicated for the target brand once the pipeline is proven. The step-by-step run order is `pipeline/RUNBOOK.md`.
+Test brand: Minimalist. Once proven, the pipeline runs for any brand by swapping the brand pack. The step-by-step run order is `pipeline/RUNBOOK.md`.
 
 ```
               ┌──────────── live data (scripts, no browser) ────────────┐
@@ -47,4 +47,4 @@ request ─► [1 Brand context] ─┴► [2 Winners] ─► [3 Trends] ─► 
 
 ## Explicitly out of scope (user decision)
 
-Voice-editor pass, pixel re-check, separate selection stage. the target brand replication (US rules, the target brand pack, TikTok Creative Center) comes after the Minimalist test works.
+Voice-editor pass, pixel re-check, separate selection stage. Other brands and markets (US rules, a new brand pack, TikTok Creative Center) come after the Minimalist test works.

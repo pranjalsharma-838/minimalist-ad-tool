@@ -1,6 +1,6 @@
 # Submission: Minimalist Ad Creative Tool
 
-Mapped point by point to the original brief, for evaluation. Minimalist is the test brand for the target brand's launch. Nothing is published; every creative carries an "INTERNAL TEST" mark.
+Mapped point by point to the original brief, for evaluation. Minimalist is the test brand used to build and prove the pipeline. Nothing is published; every creative carries an "INTERNAL TEST" mark.
 
 ## Part A: product URL → finished visual ad
 
@@ -52,4 +52,4 @@ Risk levels (formats never removed), a retry loop that keeps the best judged ver
   - Flipkart reviews aren't parsed and Nykaa blocks scripts, so customer language comes from the website + Amazon.
   - Minimalist's own Amazon listing match is sometimes the wrong listing.
 - **Severe formats** (before/after, transformation journey) need real consented study photos before any use.
-- **India-first rules:** the target brand's US launch needs a US rule set (FTC/FDA, TikTok Shop, Amazon) before going live.
+- **India-first rules:** Running the pipeline for a US brand or market needs a US rule set (FTC/FDA, TikTok Shop, Amazon) before going live.
