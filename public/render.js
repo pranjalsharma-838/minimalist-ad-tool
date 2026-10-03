@@ -416,10 +416,21 @@ LAYOUTS.before_after = (spec, s) => {
 
 // ---------------- 9 layouts added 2026-10-03 (no new photography needed) ----------------
 
-const pill = (x, y, text, s) => {
-  const fs_ = Math.round(22 * s), w = Math.min(440, Math.round(text.length * fs_ * 0.56) + 44);
-  return `<rect x="${x}" y="${y}" width="${w}" height="${Math.round(52 * s)}" rx="${Math.round(26 * s)}" fill="#FFFFFF" stroke="${C.ink}" stroke-width="1.5"/>` +
-    `<text x="${x + 22}" y="${y + Math.round(34 * s)}" font-family="${FONT}" font-size="${fs_}" font-weight="500" fill="${C.ink}">${esc(text)}</text>`;
+// Eye-check fix (2026-10-03): pills had no width cap, so long badges ran past the panel edge or over the pack.
+// Now capped at maxW; long text wraps to 2 lines, then the font shrinks until it fits.
+const pill = (x, y, text, s, maxW = 440) => {
+  let fs_ = Math.round(22 * s), lines = [text];
+  const width = (t) => Math.round(t.length * fs_ * 0.56) + 44;
+  if (width(text) > maxW) {
+    const words = text.split(/\s+/);
+    let best = null;
+    for (let k = 1; k < words.length; k++) { const a = words.slice(0, k).join(" "), b = words.slice(k).join(" "); const m = Math.max(a.length, b.length); if (!best || m < best.m) best = { a, b, m }; }
+    if (best) lines = [best.a, best.b];
+    while (Math.max(...lines.map(width)) > maxW && fs_ > 14) fs_--;
+  }
+  const lh = Math.round(fs_ * 1.25), hgt = Math.round(52 * s) + (lines.length - 1) * lh, w = Math.min(maxW, Math.max(...lines.map(width)));
+  return `<rect x="${x}" y="${y}" width="${w}" height="${hgt}" rx="${Math.min(Math.round(26 * s), hgt / 2)}" fill="#FFFFFF" stroke="${C.ink}" stroke-width="1.5"/>` +
+    lines.map((l, i) => `<text x="${x + 22}" y="${y + Math.round(34 * s) + i * lh}" font-family="${FONT}" font-size="${fs_}" font-weight="500" fill="${C.ink}">${esc(l)}</text>`).join("");
 };
 
 // #2 Product + benefit badges: pack centred, 3–4 pills around it.
@@ -429,7 +440,8 @@ LAYOUTS.badges = (spec, s) => {
   const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(24 * s);
   parts.push(pack(spec, spec.imageHref, 360, y0, 360, BAND_Y - 40 - y0));
   const pos = [[PAD, y0 + 30], [PAD, y0 + 230], [740, y0 + 30], [740, y0 + 230]];
-  (spec.badges || []).slice(0, 4).forEach((b, i) => parts.push(pill(pos[i][0], pos[i][1], b.text, s)));
+  // Left column ends before the pack frame (x 350); right column ends at the panel edge (x 1040).
+  (spec.badges || []).slice(0, 4).forEach((b, i) => parts.push(pill(pos[i][0], pos[i][1], b.text, s, i < 2 ? 350 - 12 - PAD : 1040 - 740 - 12)));
   return chromeEnd(spec, parts, BAND_Y - 40);
 };
 

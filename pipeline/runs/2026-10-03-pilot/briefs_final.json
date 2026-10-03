@@ -28,7 +28,7 @@
         ]
       },
       {
-        "text": "No white cast",
+        "text": "Spreads like a moisturiser",
         "cites": [
           "F8"
         ]
@@ -61,7 +61,7 @@
     "image_prompt": "Square 1080x1080 background plate only. A calm off-white studio surface meeting a soft matte plaster wall, lit by soft natural daylight from the upper left, with one faint diagonal leaf shadow and a gentle warm patch of sunlight that hints at a bright summer day. Palette of off-white, pale sand and a whisper of soft sky blue, very few props. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the competitor's product-hero-plus-benefit-checklist structure (one claim headline, a short row of verifiable benefit ticks, pack prominent) and its sunny mood, rebuilt as a calm daylight studio. Replaced every line with Minimalist page facts. Dropped: the lifestyle model hugging an oversized bottle (no people/skin allowed), the 'In-Vivo Tested' sticker on the main image (lab result moved to the footnote per house rule; labelled SPF 50 is the claim), 'Dermatologically Tested' and 'Non-Comedogenic' (not on our page as claims), the 2-in-1 hydration angle beyond what F3 states, emoji and the excited question hook.",
+    "adaptation_notes": "Kept: the competitor's product-hero-plus-benefit-checklist structure (one claim headline, a short row of verifiable benefit ticks, pack prominent) and its sunny mood, rebuilt as a calm daylight studio. Replaced every line with Minimalist page facts. Dropped: the lifestyle model hugging an oversized bottle (no people/skin allowed), the 'In-Vivo Tested' sticker on the main image (lab result moved to the footnote per house rule; labelled SPF 50 is the claim), 'Dermatologically Tested' and 'Non-Comedogenic' (not on our page as claims), the 2-in-1 hydration angle beyond what F3 states, emoji and the excited question hook. Retry 2: white-cast badge dropped (CLM-03; the stale judge span still matched the scoped wording) and replaced with F8 texture fact.",
     "product_handle": "multi-vitamin-spf-50",
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Dot & Key",
@@ -71,15 +71,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -101,8 +102,10 @@
     "product_title": "SPF 50 Sunscreen",
     "main_theme": "",
     "headline": "Broad spectrum SPF 50, PA++++ for every day",
-    "subhead": "Light texture that spreads easily, with no white cast.",
-    "proof_points": [],
+    "subhead": "Light texture that spreads easily, with a natural, non-shiny look.",
+    "proof_points": [
+      "50g: Rs. 359, MRP Rs. 399"
+    ],
     "actives": [],
     "steps": [],
     "stat": null,
@@ -110,11 +113,14 @@
     "specs": [],
     "range": [],
     "offer": {
-      "line": "[OFFER TERMS — from marketer]",
-      "condition": "[OFFER CONDITIONS — from marketer]",
-      "valid_till": "[OFFER END DATE — from marketer]"
+      "line": "Buy 2, Get 3rd Free",
+      "condition": "The 3rd product is free when you buy 2. T&C apply.",
+      "valid_till": "",
+      "cites": [
+        "OFFER3"
+      ]
     },
-    "footnote": "Labelled SPF 50, confirmed by an independent lab. Offer terms, price and dates to be supplied and sourced by the marketer.",
+    "footnote": "Offers as on beminimalist.co, 2026-10-02. T&C apply. 3rd product free on buying 2. Price shown for 50g.",
     "cta": "Shop now",
     "citations": {
       "headline": [
@@ -122,19 +128,23 @@
         "F21"
       ],
       "subhead": [
-        "F3",
-        "F8"
+        "F3"
       ],
-      "proof_points": [],
+      "proof_points": [
+        [
+          "PRICE1"
+        ]
+      ],
       "footnote": [
-        "F7"
+        "OFFER3",
+        "PRICE1"
       ]
     },
-    "layout_description": "Square 1080x1080. Offer line as the large headline block top-left (marketer fills the bracketed terms), with the offer condition directly beneath it in readable size and the valid-till date under that. Product headline and subhead below the offer on the left. Real pack shot on the right 45%, resting on the top of a low block. CTA bottom-left; footnote along the bottom edge. No price shown until the marketer supplies a sourced one.",
+    "layout_description": "Square 1080x1080. Offer line 'Buy 2, Get 3rd Free' as the large block top-left, with its condition directly beneath in readable size. Product headline and subhead below on the left. Price line: sale price Rs. 359 in bold with 'MRP Rs. 399' beside it struck through, size (50g) in small type. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No end date or countdown (none shown on site).",
     "image_prompt": "Square 1080x1080 background plate only. A minimal studio set of three low, smooth geometric blocks in off-white and pale warm grey, arranged on the right side at different heights, with a seamless off-white backdrop. Soft natural light from the left, gentle soft shadows, clinical and uncluttered, a quiet echo of a colourful promo set but in a restrained neutral palette. Keep the right 45% of the frame as clear, evenly lit empty space on top of the blocks, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the offer-promo structure (big offer line, product on display blocks, Shop now CTA). Dropped: the competitor's bundle price, discount code and 'buy any 3' mechanic (offer terms are not on our product page, so left as [placeholders] for the marketer), the 'limited time / hurry' urgency and emoji (house rule: no urgency), the youthful-skin promise, and the multi-product set (single SKU here). The brief input did not include the page price, so no price is printed; the marketer should add a sourced, dated price if the offer needs one.",
+    "adaptation_notes": "Kept: the competitor's offer-led structure (big offer line, product on display blocks, Shop now CTA). Offer quoted exactly from the live sitewide banner OFFER3 (beminimalist.co, captured 2026-10-02); price is the main size from PRICE1, sale price with MRP struck through. Dropped: the competitor's bundle price and discount code, all urgency ('limited time', 'hurry'; no end date shown on site), emoji, the youthful-skin promise. Other live offers (OFFER1/2/4) not used, to keep one clear offer; OFFER2 'Freebies' has no stated condition on the capture. Retry 2: white-cast claim dropped (CLM-03) and replaced with the F3 finish wording.",
     "product_handle": "multi-vitamin-spf-50",
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Chemist at Play",
@@ -144,15 +154,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [],
     "rounds_tried": 3,
@@ -301,15 +312,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -334,7 +346,7 @@
     "subhead": "With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no sticky residue.",
     "proof_points": [
       "Matmarine helps regulate oiliness and the appearance of pores",
-      "Zinc balances sebum activity",
+      "Zinc, suited to oily, acne-prone skin",
       "For daily use, AM & PM"
     ],
     "actives": [],
@@ -360,7 +372,7 @@
           "F7"
         ],
         [
-          "F8"
+          "F18"
         ],
         [
           "F14"
@@ -375,7 +387,7 @@
     "image_prompt": "Square 1080x1080 background plate only. A clean off-white studio surface meeting a soft matte wall, soft natural daylight from the upper left, a single soft diagonal window-light shadow and a faint cool reflection, giving a fresh, bright, open-air mood in Minimalist's restrained style. Palette of off-white, pale grey and a hint of soft aqua. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the product-hero structure (one benefit headline, short tick-list of benefits, pack as hero) and the bright open mood, rebuilt as a calm studio. Dropped: the lifestyle model and oversized bottle (no people/skin), the 'In-Vivo Tested' sticker (no in-vivo test on this product's page), 'Dermatologically Tested' / 'Non-Comedogenic' (not on page), the time-bound '2 weeks' clinical claim in F6 (kept out to avoid a time-bound result promise), emoji and the question hook.",
+    "adaptation_notes": "Kept: the product-hero structure (one benefit headline, short tick-list of benefits, pack as hero) and the bright open mood, rebuilt as a calm studio. Dropped: the lifestyle model and oversized bottle (no people/skin), the 'In-Vivo Tested' sticker (no in-vivo test on this product's page), 'Dermatologically Tested' / 'Non-Comedogenic' (not on page), the time-bound '2 weeks' clinical claim in F6 (kept out to avoid a time-bound result promise), emoji and the question hook. Retry 2: replaced the Zinc sebum-activity claim with the page suitability wording (CLM-24).",
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
@@ -385,15 +397,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [],
     "rounds_tried": 3,
@@ -412,9 +425,9 @@
       {
         "pct": "10%",
         "name": "Niacinamide",
-        "line": "Vitamin B3 that reduces sebum, improves the barrier and evens skin tone",
+        "line": "Vitamin B3 for reducing sebum & pores, and even skin tone",
         "cites": [
-          "F3",
+          "F2",
           "F16"
         ]
       },
@@ -429,8 +442,9 @@
       {
         "pct": "",
         "name": "Zinc",
-        "line": "Regulates sebum production; suited to oily, acne-prone skin",
+        "line": "Paired with Niacinamide; suited to oily, acne-prone skin",
         "cites": [
+          "F8",
           "F18"
         ]
       }
@@ -458,7 +472,7 @@
     "image_prompt": "Square 1080x1080 background plate only. A smooth off-white surface against a seamless pale blush-grey wall, soft natural daylight from the upper right, with one small smooth pale stone resting near the lower right corner and a soft gradient shadow. Palette of off-white, very pale blush and soft grey, a muted nod to a pink set in a clinical, minimal style. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the ingredient-explainer structure (pack plus three ingredient-to-benefit rows) and a soft pink mood, muted to Minimalist's palette. Replaced the competitor's actives with our own from F3, F16-F18; only Niacinamide has a printed concentration, so the other two rows leave pct blank. Dropped: fruit props and drip (scent/'natural' story), the 'NEW' bubble, 'Brightens skin' framing (our page says evens skin tone), 'Clinically Proven', 'Dermatologically Tested', 'No Nasties', and emoji.",
+    "adaptation_notes": "Kept: the ingredient-explainer structure (pack plus three ingredient-to-benefit rows) and a soft pink mood, muted to Minimalist's palette. Replaced the competitor's actives with our own from F3, F16-F18; only Niacinamide has a printed concentration, so the other two rows leave pct blank. Dropped: fruit props and drip (scent/'natural' story), the 'NEW' bubble, 'Brightens skin' framing (our page says evens skin tone), 'Clinically Proven', 'Dermatologically Tested', 'No Nasties', and emoji. Retry 2: removed the barrier claim and the Zinc sebum-production claim; replaced with the page tagline (F2) and suitability wording (F18) (CLM-24).",
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
@@ -468,15 +482,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -486,6 +501,14 @@
         "message": "Active named without its concentration.",
         "fix": "State it as on the pack: 'Niacinamide 10%'.",
         "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-04",
+        "span": "reduce excess sebum, shine, pores and spots",
+        "message": "Outcome verbs with no 'helps' or 'appearance' scoping.",
+        "fix": "helps reduce excess sebum, shine and the appearance of pores and spots",
+        "layer": "model"
       }
     ],
     "rounds_tried": 3,
@@ -499,7 +522,9 @@
     "main_theme": "",
     "headline": "10% Niacinamide serum for oily, acne-prone skin",
     "subhead": "With Matmarine and Zinc. Use AM & PM, every day.",
-    "proof_points": [],
+    "proof_points": [
+      "30ml: Rs. 539, MRP Rs. 599"
+    ],
     "actives": [],
     "steps": [],
     "stat": null,
@@ -507,11 +532,14 @@
     "specs": [],
     "range": [],
     "offer": {
-      "line": "[OFFER TERMS — from marketer]",
-      "condition": "[OFFER CONDITIONS — from marketer]",
-      "valid_till": "[OFFER END DATE — from marketer]"
+      "line": "Buy 2, Get 3rd Free",
+      "condition": "The 3rd product is free when you buy 2. T&C apply.",
+      "valid_till": "",
+      "cites": [
+        "OFFER3"
+      ]
     },
-    "footnote": "Evaluated for safety through patch testing. Offer terms, price and dates to be supplied and sourced by the marketer.",
+    "footnote": "Offers as on beminimalist.co, 2026-10-02. T&C apply. 3rd product free on buying 2. Price shown for 30ml.",
     "cta": "Shop now",
     "citations": {
       "headline": [
@@ -522,16 +550,21 @@
         "F5",
         "F14"
       ],
-      "proof_points": [],
+      "proof_points": [
+        [
+          "PRICE1"
+        ]
+      ],
       "footnote": [
-        "F15"
+        "OFFER3",
+        "PRICE1"
       ]
     },
-    "layout_description": "Square 1080x1080. Offer line as the large headline block top-left (marketer fills the bracketed terms), offer condition directly beneath it in readable size, valid-till date under that. Product headline and subhead below on the left. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No price shown until the marketer supplies a sourced one.",
+    "layout_description": "Square 1080x1080. Offer line 'Buy 2, Get 3rd Free' as the large block top-left, with its condition directly beneath in readable size. Product headline and subhead below on the left. Price line: sale price Rs. 539 in bold with 'MRP Rs. 599' beside it struck through, size (30ml) in small type. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No end date or countdown (none shown on site).",
     "image_prompt": "Square 1080x1080 background plate only. A minimal studio set of three low, smooth geometric blocks in off-white and pale cool grey, arranged on the right side at different heights, against a seamless off-white backdrop. Soft natural light from the left with gentle soft shadows, clinical and uncluttered, a restrained neutral take on a colourful promo set. Keep the right 45% of the frame as clear, evenly lit empty space on top of the blocks, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Kept: the offer-promo structure (big offer line, product on display blocks, Shop now CTA). Dropped: the bundle price, discount code and 'buy any 3' mechanic (offer terms aren't on our pages, so [placeholders] for the marketer), urgency ('limited time', 'hurry'), emoji, the youthful-skin promise and the multi-product set. The brief input did not include the page price, so no price is printed.",
+    "adaptation_notes": "Kept: the competitor's offer-led structure (big offer line, product on display blocks, Shop now CTA). Offer quoted exactly from the live sitewide banner OFFER3 (beminimalist.co, captured 2026-10-02); price is the main size from PRICE1, sale price with MRP struck through. Dropped: the competitor's bundle price and discount code, all urgency ('limited time', 'hurry'; no end date shown on site), emoji, the youthful-skin promise. Other live offers (OFFER1/2/4) not used, to keep one clear offer; OFFER2 'Freebies' has no stated condition on the capture.",
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Chemist at Play",
@@ -541,15 +574,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [],
     "rounds_tried": 3,

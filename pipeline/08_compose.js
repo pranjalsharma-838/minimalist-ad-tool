@@ -51,7 +51,19 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
   for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
   const ext = path.extname(bg).slice(1).replace("jpg", "jpeg");
   spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
-  fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), renderAdSvg(spec));
+  const square = renderAdSvg(spec);
+  fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), square);
+  // Extra placements (open problem, 2026-10-03): 4:5 feed and 9:16 Stories/Reels. The approved 1:1 creative is
+  // centred unchanged; the same generated background fills the taller canvas (softly blurred so the creative
+  // stays the focus). 9:16 leaves 420px (~22%) top and bottom — clear of Meta's Stories/Reels UI zones.
+  const sq64 = Buffer.from(typeof square === "string" ? square : square.svg).toString("base64");
+  for (const [tag, H] of [["4x5", 1350], ["9x16", 1920]]) {
+    const top = (H - 1080) / 2;
+    // Eye-check fix: a lightly blurred, differently scaled copy showed hard seams. Now: heavy blur + the square
+    // inset as a card (1000px, rounded, soft shadow), so the edge reads as intentional, not as a seam.
+    const S = 1000, x0 = 40, y0 = (H - S) / 2;
+    fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${tag}.svg`), `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="${H}" viewBox="0 0 1080 ${H}"><defs><filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="40"/></filter><filter id="card" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.22"/></filter><clipPath id="r"><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28"/></clipPath></defs><rect width="1080" height="${H}" fill="#EDEAE4"/><image href="${spec.backgroundHref}" x="-120" y="-120" width="1320" height="${H + 240}" preserveAspectRatio="xMidYMid slice" filter="url(#soft)"/><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28" fill="#fff" filter="url(#card)"/><image href="data:image/svg+xml;base64,${sq64}" x="${x0}" y="${y0}" width="${S}" height="${S}" clip-path="url(#r)"/></svg>`);
+  }
   const layoutIssues = layoutProblems(spec);
   const extraSheets = [...(b.steps || []), ...(b.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheets[main]);
   const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });

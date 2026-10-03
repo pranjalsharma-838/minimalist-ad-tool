@@ -64,9 +64,14 @@ if (mode === "prepare") {
   const best = [];
   for (const b of final) {
     const dir = path.join(runDir, "history", b.source_ad_id);
-    const versions = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /^round\d+\.json$/.test(f)).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"))) : [];
-    versions.push(b);
-    versions.sort((x, y) => cost(x) - cost(y));
+    const versions = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /^round\d+\.json$/.test(f)).map((f) => ({ ...JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")), _round: Number(f.match(/\d+/)[0]) })) : [];
+    versions.push({ ...b, _round: Infinity });
+    // Pilot audit fix (2026-10-03): a version scored by rules only looked "cleaner" than one the AI judge had
+    // read, so finalize brought back a line the judge had flagged ("Zinc balances sebum activity"). Versions
+    // are now compared only at equal checking depth: judged versions first, then cost, then newest wins ties.
+    const judged = (v) => (v.coverage?.model || v.findings?.some((f) => f.source === "model") ? 1 : 0);
+    versions.sort((x, y) => judged(y) - judged(x) || cost(x) - cost(y) || y._round - x._round);
+    for (const v of versions) delete v._round;
     const keep = versions[0];
     keep.rounds_tried = versions.length;
     keep.kept_because = keep.status === "approved_for_image_step" ? "passed" : "best of all rounds (kept with its warnings — best briefs are never dropped)";
