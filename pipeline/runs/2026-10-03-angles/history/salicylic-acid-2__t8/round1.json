@@ -1,0 +1,96 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-acid-2__t8",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Evening wind-down: 2-3 drops after cleansing & toning",
+  "subhead": "PM use: start every alternate day, then after 2 weeks of usage, use it everyday.",
+  "proof_points": [
+    "RonaCare Salicylic Acid Extra Pure from Merck, Germany",
+    "Recommended for combination/oily skin",
+    "Suitable for 18+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F12",
+      "F13"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [
+      [
+        "F8"
+      ],
+      [
+        "F9"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a quiet evening bathroom wall in off-white tile, warm soft lamp light from the upper left, a faint shadow gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: situation. The moment is the PM routine the page states (F12 after cleansing & toning, F13 'When to use: PM' and the alternate-day start), shown as an evening wind-down; no result is implied. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: '10-minute fix', de-tan and brightening promises, '#1 daily duo', and every acne, blackhead and oil outcome in F2/F3/F10. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "situation",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "in-use moment as the visual cue"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "headline that names one use moment"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "A man in his late 20s with a medium-brown skin tone at a bathroom basin in the evening, wearing a plain grey t-shirt, damp hair pushed back after washing his face, a plain towel over one shoulder; he is pressing a few clear drops onto his cheek with his fingertips and looking into the mirror with a relaxed expression; warm soft lamp light from the upper left, off-white tiled wall behind, shallow depth of field, natural unretouched skin with visible pores and nothing implying a result, framed so he sits slightly left of centre with calm space to his right. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 2 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

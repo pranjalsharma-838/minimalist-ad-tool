@@ -1,0 +1,102 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "source_ad_id": "alpha-arbutin-2__t22",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "Wash, then serum, then sunscreen: a morning routine",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 · Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "Light lather on a wet face, then rinse thoroughly",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "label": "Step 2 · Serum",
+      "product_handle": "alpha-arbutin-2",
+      "line": "2-3 drops after cleansing & toning, AM & PM",
+      "cites": [
+        "F19",
+        "F20"
+      ]
+    },
+    {
+      "label": "Step 3 · Sunscreen",
+      "product_handle": "multi-vitamin-spf-50",
+      "line": "Broad Spectrum SPF 50, PA++++; apply in the AM",
+      "cites": [
+        "multi-vitamin-spf-50:F2",
+        "multi-vitamin-spf-50:F21"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Alpha Arbutin 2% Face Serum: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F14",
+      "F20",
+      "multi-vitamin-spf-50:F21"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline across the top; three real pack shots in a row, each under a 'Step N · name' label with a one-line usage note below it, arrows between the packs (cleanser, Alpha Arbutin 2% serum, SPF 50 sunscreen); rating of the serum in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale stone bathroom shelf in soft morning window light from the upper left, with a folded off-white cotton cloth at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: routine. Order follows the page's own usage: cleanse (cleanser F13), serum after cleansing & toning (F19, F20), sunscreen on a cleansed face in the AM (SPF F2, F21; F19 also says to use sunscreen during the day). Companions used: cleanser and SPF 50 only. Kept: sequence headline naming each step (Foxtale), 'Step N' labels over each pack (Dot & Key), one usage line per numbered step (Pilgrim). Dropped: 'glow', 'treat' step name, concern headline, model, handwritten checklist, any pairing claim or kit saving. The rating shown is the serum's, named as such.",
+  "angle": "routine",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "headline that names each step in order"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "'Step N' labels above each pack"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "one usage line under each numbered step"
+    }
+  ],
+  "product_handle": "alpha-arbutin-2",
+  "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

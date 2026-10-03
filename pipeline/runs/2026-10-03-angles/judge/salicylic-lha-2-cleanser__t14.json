@@ -1,0 +1,42 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Week 4",
+      "severity": "fix",
+      "why": "The Day 1 / After 6 washes / Week 4 frames form a time-lapse of improvement set against the 6-wash and 4-week stats, and AI-generated frames are not representative, unretouched evidence (the \"not real results\" note sits only in the footnote). The headline repeats the same day-one-to-week-four timeline.",
+      "fix": "Relabel the frames as routine stages (e.g. \"Week 4 · in the routine\") with the AI-illustration note on the image itself, or replace them with real, unretouched study photos and their qualifier."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "As an on-image frame caption it presents the 6-wash result as a visual milestone with no qualifier beside it; the underlying stat is F16."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Matches F16 and is perception-worded (\"agreed\"); acceptable if the study file confirms the 6-wash window and the footnote labels it a consumer perception study."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Matches F18 (\"felt smoother & brighter after 4 weeks\"); same condition as the 6-wash window."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "Keeps \"agreed\", but \"significant reduction in skin oiliness\" can read as clinical significance; scope it as perception and add study type and n."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Matches F18 and is perception-worded (\"felt\"); it needs the study-type and n qualifier on the creative."
+    }
+  ],
+  "tone_read": "Calm and data-led, with no fear hook, hype or exclamation. The day-one-to-week-four timeline leans toward category \"transformation\" creative rather than Minimalist's education-first voice.",
+  "language_read": "\"2% Salicylic Acid + LHA\" and \"Salicylic Acid + LHA 2% Cleanser\" are in house format, and the stats keep \"subjects agreed\" wording. \"Significant reduction in skin oiliness\" is the page's phrase but reads stronger than the perception framing it sits in."
+}

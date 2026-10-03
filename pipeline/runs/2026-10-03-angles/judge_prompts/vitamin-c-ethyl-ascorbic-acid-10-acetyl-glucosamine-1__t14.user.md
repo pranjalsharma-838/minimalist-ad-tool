@@ -3,26 +3,23 @@ Ad type: brand-authored
 The ad, field by field:
 
 <headline>
-Day one, week four and week eight with 10% Vitamin C
+AM & PM routine: 2-3 drops of 10% Vitamin C
 </headline>
 <on_image_text>
-Day 1
-Week 4
-Week 8
+Day 1 · first use
+Week 2 · daily habit
+Week 4 · still in the routine
 Vitamin C 10% Face Serum
 </on_image_text>
 <footnote>
-93% subjects said skin felt healthier after 4 weeks of usage. 90% subjects said their dark spots faded after 8 weeks. Frames are AI illustrations, not real results.
+Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
 </footnote>
 <cta>
 Learn more
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. CLM-07 in footnote: "after 4 weeks"
-1. CLM-07 in footnote: "after 8 weeks"
-2. CLM-08 in footnote: "93% subjects"
-3. CLM-08 in footnote: "90% subjects"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] Vitamin C 10% Face Serum

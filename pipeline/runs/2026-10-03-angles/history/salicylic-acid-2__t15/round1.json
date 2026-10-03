@@ -1,0 +1,109 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "salicylic-acid-2__t15",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Irritation questions? Ease in with 2% Salicylic Acid",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "A daily gentle exfoliant with 2% salicylic acid",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "text": "Start every alternate day; after 2 weeks, use it every day",
+      "cites": [
+        "F13"
+      ]
+    },
+    {
+      "text": "Apply 2-3 drops after cleansing & toning",
+      "cites": [
+        "F12"
+      ]
+    },
+    {
+      "text": "Recommended for combination/oily skin",
+      "cites": [
+        "F9"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F3",
+      "F13"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (what it is, the start-slowly schedule, how to apply, skin type); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale stone surface seen from above with a faint blush-grey tint, even soft light, a few smooth grey pebbles at the extreme lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: irritation (customer words such as 'haven't experienced any irritation or redness'), answered by the page's own wording: 'a daily gentle exfoliant' (F3, quoted without the acne and flawless-skin wording) and the start-slowly schedule (F13: every alternate day, then everyday after 2 weeks). No 'will not irritate' promise is made. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), the active named with its strength in the first label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the acne, blackhead and oil outcomes in F2/F3/F10.",
+  "angle": "concern_solved",
+  "hook_type": "question",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern named first, product second"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "labels wired by thin lines to a centred pack"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "active named with its strength in a label"
+    }
+  ],
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 2 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

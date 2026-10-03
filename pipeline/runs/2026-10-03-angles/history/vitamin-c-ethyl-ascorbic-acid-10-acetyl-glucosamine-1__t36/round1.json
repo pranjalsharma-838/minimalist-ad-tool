@@ -1,0 +1,91 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "10% Vitamin C with Acetyl Glucosamine and PHA",
+  "subhead": "Take 2-3 drops after cleansing and toning, AM & PM.",
+  "proof_points": [
+    "30ml: Rs. 629 (MRP Rs. 699), beminimalist.co, captured 2026-10-02"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Build Your Own Bundle — Save an additional up to 15% off",
+    "condition": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+    "valid_till": "",
+    "cites": [
+      "OFFER1"
+    ]
+  },
+  "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F6",
+      "F7"
+    ],
+    "subhead": [
+      "F14",
+      "F15"
+    ],
+    "proof_points": [
+      [
+        "PRICE2"
+      ]
+    ],
+    "footnote": [
+      "OFFER1",
+      "RATING"
+    ]
+  },
+  "layout_description": "Offer line as the large block top-left with its condition directly beneath; the 30ml sale price with MRP in bold under it; usage line below; real pack shot on the right 45%; CTA bottom-left; footnote with the capture date, T&C and rating along the bottom. No end date or countdown (none shown on site).",
+  "image_prompt": "Empty background scene only: a matte off-white studio sweep with a faint warm-peach-grey tone at the base and two low pale stone blocks at the far left edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Offer quoted exactly from the live sitewide banner OFFER1 ('Build Your Own Bundle — Save an additional up to 15% off', beminimalist.co, captured 2026-10-02), with its condition beside it and 'T&C apply'; price is PRICE2 (30ml, sale price with MRP). No end date was captured, so no urgency wording and no valid-till. Kept: a single offer lockup as the whole message (Chemist at Play), bold offer line as the hook (Foxtale), sale price shown with the MRP (Conscious Chemist). Dropped: fixed bundle price and discount code, countdown, seasonal kicker, brightening and dark-spot claims. Other live offers (OFFER2, 3, 4) not used, to keep one clear offer.",
+  "angle": "offer_value",
+  "hook_type": "offer",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "single offer lockup as the whole message"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "sale price shown beside the MRP"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "bold offer line as the headline device"
+    }
+  ],
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

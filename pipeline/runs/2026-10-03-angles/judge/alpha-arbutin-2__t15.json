@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-05",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Dry/normal, sensitive, oily/combination, acne-prone skin",
+      "severity": "fix",
+      "why": "Under a headline about irritation, listing \"sensitive\" skin beside a patch-test line reads as a promise that the serum won't irritate sensitive skin. The page's own FAQ (F33) says people with extra sensitive skin should consult a dermatologist first, and the ad drops that caveat.",
+      "fix": "Keep the page's suitability wording and add its caveat: \"Dry/normal, sensitive, oily/combination, acne-prone skin. Extra-sensitive skin: consult a dermatologist first.\" Or keep the headline neutral so the line does not read as an irritation reassurance."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, practical and educational: it names a worry (irritation) but answers with usage steps, patch-test wording and sunscreen advice instead of agitating. The question-led opener is the one line a brand reviewer might soften.",
+  "language_read": "\"Alpha Arbutin 2%\" is in house format and the patch-test line uses the brand's narrower approved wording (\"under a Dermatologist's supervision\"). The suitability line is the page's own but omits the page's caution for extra-sensitive skin."
+}

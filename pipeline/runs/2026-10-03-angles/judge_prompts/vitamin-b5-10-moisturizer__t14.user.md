@@ -3,23 +3,23 @@ Ad type: brand-authored
 The ad, field by field:
 
 <headline>
-12 hours and two weeks with 10% Vitamin B5
+AM & PM routine: a 10% Vitamin B5 moisturizer
 </headline>
 <on_image_text>
-Day 1 · applied
-12 hours later
-Week 2 · daily use
+Day 1 · first use
+Week 2 · daily habit
+Week 4 · still in the routine
 Vitamin B5 10% Moisturizer
 </on_image_text>
 <footnote>
-93% subjects agreed skin remains moisturized for 12 hours after application. Frames are AI illustrations, not real results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
 </footnote>
 <cta>
 Learn more
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. CLM-08 in footnote: "93% subjects"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] Vitamin B5 10% Moisturizer

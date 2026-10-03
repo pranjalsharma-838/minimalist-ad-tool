@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "LNG-01",
+      "dimension": "language",
+      "field": "headline",
+      "span": "Acetyl Glucosamine",
+      "severity": "advisory",
+      "why": "The headline names Acetyl Glucosamine without its strength, although the page states 1% (F6) and the brand leads with strengths.",
+      "fix": "Write it with its strength, as the page does: \"10% Vitamin C with 1% Acetyl Glucosamine and PHA\"."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm and factual offer ad: price, MRP and the bundle offer are stated plainly with terms, and nothing is urgent or hyped.",
+  "language_read": "Price, MRP and \"Build Your Own Bundle — Save an additional up to 15% off\" match the 2026-10-02 capture, with the condition and \"T&C apply\" on the creative. The offer is shown dated and without urgency, which suits a capture that shows no end date."
+}

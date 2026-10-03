@@ -4,7 +4,7 @@
     "layout": "timeline",
     "source_ad_id": "alpha-arbutin-2__t14",
     "product_title": "Alpha Arbutin 2% Face Serum",
-    "headline": "An 8-week routine with 2% Alpha Arbutin",
+    "headline": "AM & PM routine: 2-3 drops of 2% Alpha Arbutin",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -14,42 +14,43 @@
     "specs": [],
     "range": [],
     "offer": null,
-    "footnote": "93% subjects said it reduced sun tanning after 4 weeks of use. 90% subjects noticed reduction in hyperpigmentation marks in 8 weeks. Frames are AI illustrations, not real results.",
+    "footnote": "Frames are AI illustrations of a routine, not results. Use sunscreen during the day for best results. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
     "cta": "Learn more",
     "citations": {
       "headline": [
-        "F22"
+        "F19",
+        "F20"
       ],
       "subhead": [],
       "proof_points": [],
       "footnote": [
-        "F24",
-        "F22"
+        "F19",
+        "RATING"
       ],
       "frames": [
         [
           "F19"
         ],
         [
-          "F24"
+          "F20"
         ],
         [
-          "F22"
+          "F20"
         ]
       ]
     },
-    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · still in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
     "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-grey gradient from top to bottom and a soft diagonal shadow from a window frame in the upper-left corner. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
-    "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F24, F22), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
-    "adaptation_notes": "Kept: three equal labelled progress frames (Chemist at Play, Re'equil), a footnote that carries the study qualifier (Chemist at Play) and a timeframe-led headline used as routine length, not a result (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F24, tanning perception) and Week 8 (F22, marks perception); Day 1 is the start. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades dark spots in 15 days' result headline, Dermat/clinically-certified badges, struck price, before/after wording, the benchmark comparison (F13) and melanin wording (F6, F26). Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full with the two study lines.",
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "Retry round 1 (judge CLM-15: the Day 1 / Week 4 / Week 8 frames beside the 4- and 8-week stats read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note, the page's sunscreen advice (F19) and the RATING. The headline's old '8-week' length is gone because it matched neither the labels nor a result on the ad. The 4- and 8-week perception stats (F24, F22) and the benchmark and melanin wording (F13, F6, F26) are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
     "angle": "transformation",
     "hook_type": "statement",
     "blend_sources": [
       {
         "id": "27546140265006255",
         "brand": "Chemist at Play",
-        "took": "footnote carrying the study qualifier under labelled frames"
+        "took": "qualifier footnote under labelled frames"
       },
       {
         "id": "3961263437511522",
@@ -59,31 +60,31 @@
       {
         "id": "1550169393471299",
         "brand": "Dr. Sheth's",
-        "took": "timeframe-led headline, used as routine length not a result"
+        "took": "strength-led headline that states the routine, not a result"
       }
     ],
     "frames": [
       {
-        "label": "Day 1",
+        "label": "Day 1 · first use",
         "cites": [
           "F19"
         ]
       },
       {
-        "label": "Week 4",
+        "label": "Week 2 · daily habit",
         "cites": [
-          "F24"
+          "F20"
         ]
       },
       {
-        "label": "Week 8",
+        "label": "Week 4 · still in the routine",
         "cites": [
-          "F22"
+          "F20"
         ]
       }
     ],
     "ai_label_required": true,
-    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and cheekbone area (a woman in her late 20s with medium-brown skin), identical framing, camera distance, soft diffuse daylight from the upper left and a plain off-white backdrop in every panel, natural skin texture and visible pores throughout. Panel 1 (Day 1) shows a few small, faint, uneven-toned dark marks on the cheek; panel 2 (Week 4) shows the same area with a slightly softer tan tone; panel 3 (Week 8) shows the same marks looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss, makeup or jewellery. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and cheekbone area (a woman in her late 20s with medium-brown skin), identical framing, camera distance, soft diffuse daylight from the upper left and a plain off-white backdrop in every panel, natural skin texture and visible pores throughout. The skin reads as consistently healthy in all three panels and any small natural marks stay exactly the same in every panel; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light and tone, so the panels look like one routine continuing rather than a change. No marks added or removed, no retouching gloss, makeup or jewellery. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
     "product_handle": "alpha-arbutin-2",
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Chemist at Play",
@@ -92,54 +93,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": [
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "93% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F24). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "after 4 weeks",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F24). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "90% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "in 8 weeks",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "problem_solution",
@@ -160,9 +127,9 @@
         ]
       },
       {
-        "text": "Dry/normal, sensitive, oily/combination, acne-prone skin",
+        "text": "Suitable for 18+ years of age",
         "cites": [
-          "F9"
+          "F11"
         ]
       },
       {
@@ -193,11 +160,11 @@
         "RATING"
       ]
     },
-    "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, skin types, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+    "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, age suitability, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
     "image_prompt": "Empty background scene only: a pale terrazzo tabletop seen from directly above, off-white with very faint grey flecks, even soft daylight and no shadows. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Concern: irritation (customer words such as 'no irritation or breakout', 'did not face any major skin sensitivity'), answered only by what the page states: the supervised patch-test note (F25), the skin types it lists (F9) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made, and the label only restates its own wording. The 'extra sensitive skin should consult a dermatologist' FAQ (F33) is not citable here, so no sensitive-skin promise is added. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
+    "adaptation_notes": "Retry round 1 (judge CLM-05): the skin-type list (F9) was dropped, not reworded. Under an irritation headline and beside the patch-test line, listing 'sensitive' skin reads as a promise that the serum will not irritate sensitive skin, and the page's own caution for extra-sensitive skin (F33, an FAQ) cannot be cited as a claim in this layout, so no skin-type wording remains; the slot now carries the page's age suitability (F11). Concern: irritation (customer words such as 'no irritation or breakout'), answered only by what the page states: the supervised patch-test note (F25) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
     "angle": "concern_solved",
     "hook_type": "question",
     "blend_sources": [
@@ -226,17 +193,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "routine_regimen",
@@ -327,17 +297,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -411,17 +384,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
@@ -517,17 +493,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "testimonial_ugc",
@@ -594,17 +573,29 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-21",
+        "span": "What customers say",
+        "message": "\"What customers say\" presents one 4-star review as what customers in general say, with no \"one person's experience\" qualifier. The review is also over a year old (2025-07-15), so confirm it is still current for this formulation and on file.",
+        "fix": "Change to \"What one verified buyer says about SPF 50 Sunscreen\", keep the quote verbatim with its attribution, and add \"Individual experience\".",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
@@ -699,17 +690,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -783,17 +777,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "problem_solution",
@@ -881,15 +878,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -901,7 +899,9 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "offer_promo",
@@ -980,17 +980,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -1065,15 +1068,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -1085,14 +1089,16 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
     "layout": "timeline",
     "source_ad_id": "salicylic-lha-2-cleanser__t14",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "headline": "Day one to week four with 2% Salicylic Acid + LHA",
+    "headline": "AM & PM routine: a 2% Salicylic Acid + LHA cleanser",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -1102,43 +1108,42 @@
     "specs": [],
     "range": [],
     "offer": null,
-    "footnote": "90% subjects agreed significant reduction in skin oiliness after 6 washes. 90% subjects agreed skin felt smoother & brighter after 4 weeks. Frames are AI illustrations, not real results.",
+    "footnote": "Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
     "cta": "Learn more",
     "citations": {
       "headline": [
-        "F18",
+        "F14",
         "F3"
       ],
       "subhead": [],
       "proof_points": [],
       "footnote": [
-        "F16",
-        "F18"
+        "RATING"
       ],
       "frames": [
+        [
+          "F13"
+        ],
         [
           "F14"
         ],
         [
-          "F16"
-        ],
-        [
-          "F18"
+          "F14"
         ]
       ]
     },
-    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / After 6 washes / Week 4), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · still in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
     "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint cool-grey gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
-    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, after 6 washes and at Week 4 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
-    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), footnote carrying the study qualifier (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: after 6 washes (F16, oiliness perception) and Week 4 (F18, smoother and brighter perception); Day 1 is the start. The 6-week acne-occurrence line (F17) is deliberately not used: it would put an acne claim on AI skin. Both stats stay perception stats with the qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "Retry round 1 (judge CLM-15: the Day 1 / After 6 washes / Week 4 frames beside the 6-wash and 4-week stats read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note and the RATING. The oiliness, smoother-and-brighter and acne-occurrence stats (F16, F18, F17) are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
     "angle": "transformation",
     "hook_type": "statement",
     "blend_sources": [
       {
         "id": "27546140265006255",
         "brand": "Chemist at Play",
-        "took": "study qualifier footnote under labelled frames"
+        "took": "qualifier footnote under labelled frames"
       },
       {
         "id": "3961263437511522",
@@ -1148,96 +1153,62 @@
       {
         "id": "1550169393471299",
         "brand": "Dr. Sheth's",
-        "took": "timeframe-led headline, used as routine length not a result"
+        "took": "strength-led headline that states the routine, not a result"
       }
     ],
     "frames": [
       {
-        "label": "Day 1",
+        "label": "Day 1 · first use",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Week 2 · daily habit",
         "cites": [
           "F14"
         ]
       },
       {
-        "label": "After 6 washes",
+        "label": "Week 4 · still in the routine",
         "cites": [
-          "F16"
-        ]
-      },
-      {
-        "label": "Week 4",
-        "cites": [
-          "F18"
+          "F14"
         ]
       }
     ],
     "ai_label_required": true,
-    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a man in his mid-20s with a medium-brown skin tone and normal-to-oily skin), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows a slight natural sheen; panel 2 (After 6 washes) shows the same area with a slightly less shiny look; panel 3 (Week 4) shows it looking slightly smoother and a touch brighter. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a man in his mid-20s with a medium-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. The skin looks consistently healthy and comfortable in all three panels; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light, so the panels look like one routine continuing rather than a change. No sheen or marks added or removed, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
     "product_handle": "salicylic-lha-2-cleanser",
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Chemist at Play",
-    "status": "approved_for_image_step",
+    "status": "kept_with_warnings",
     "risk_level": "severe",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "After 6 washes",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "90% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "after 6 washes",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "90% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "after 4 weeks",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+        "severity": "fix",
+        "rule_id": "CLM-15",
+        "span": "Week 4",
+        "message": "The Day 1 / After 6 washes / Week 4 frames form a time-lapse of improvement set against the 6-wash and 4-week stats, and AI-generated frames are not representative, unretouched evidence (the \"not real results\" note sits only in the footnote). The headline repeats the same day-one-to-week-four timeline.",
+        "fix": "Relabel the frames as routine stages (e.g. \"Week 4 · in the routine\") with the AI-illustration note on the image itself, or replace them with real, unretouched study photos and their qualifier.",
+        "layer": "model"
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
   },
   {
     "ad_type": "routine_regimen",
@@ -1327,17 +1298,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -1412,17 +1386,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -1497,24 +1474,27 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
     "layout": "timeline",
     "source_ad_id": "vitamin-b5-10-moisturizer__t14",
     "product_title": "Vitamin B5 10% Moisturizer",
-    "headline": "12 hours and two weeks with 10% Vitamin B5",
+    "headline": "AM & PM routine: a 10% Vitamin B5 moisturizer",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -1524,17 +1504,16 @@
     "specs": [],
     "range": [],
     "offer": null,
-    "footnote": "93% subjects agreed skin remains moisturized for 12 hours after application. Frames are AI illustrations, not real results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "footnote": "Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
     "cta": "Learn more",
     "citations": {
       "headline": [
-        "F16",
-        "F18"
+        "F14",
+        "F5"
       ],
       "subhead": [],
       "proof_points": [],
       "footnote": [
-        "F16",
         "RATING"
       ],
       "frames": [
@@ -1542,26 +1521,25 @@
           "F13"
         ],
         [
-          "F16"
+          "F14"
         ],
         [
-          "F14",
-          "F18"
+          "F14"
         ]
       ]
     },
-    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · applied / 12 hours later / Week 2 · daily use), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · still in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
     "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-cream gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
-    "photography_needed": "Real, consented, unretouched photos of the same person right after application, 12 hours later and at Week 2 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
-    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: 12 hours (F16, moisturized perception) and Week 2 (F18, a timeframe only, shown with the routine-stage words 'daily use' and no result wording); Day 1 is the start. The irritation outcome in F18 is deliberately not printed. The stat stays a perception stat with its qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording, barrier and skin-repair wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them.",
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "Retry round 1 (judge CLM-15: the Day 1 / 12 hours later / Week 2 frames beside the 12-hour stat (CLM-07: the headline's 'two weeks' had no stat or qualifier on the ad) read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note and the RATING. The 12-hour and 2-week perception stats (F16, F18) and the barrier and skin-repair wording are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
     "angle": "transformation",
     "hook_type": "statement",
     "blend_sources": [
       {
         "id": "27546140265006255",
         "brand": "Chemist at Play",
-        "took": "study qualifier footnote under labelled frames"
+        "took": "qualifier footnote under labelled frames"
       },
       {
         "id": "3961263437511522",
@@ -1571,32 +1549,31 @@
       {
         "id": "1550169393471299",
         "brand": "Dr. Sheth's",
-        "took": "timeframe-led headline, used as routine length not a result"
+        "took": "strength-led headline that states the routine, not a result"
       }
     ],
     "frames": [
       {
-        "label": "Day 1 · applied",
+        "label": "Day 1 · first use",
         "cites": [
           "F13"
         ]
       },
       {
-        "label": "12 hours later",
+        "label": "Week 2 · daily habit",
         "cites": [
-          "F16"
+          "F14"
         ]
       },
       {
-        "label": "Week 2 · daily use",
+        "label": "Week 4 · still in the routine",
         "cites": [
-          "F14",
-          "F18"
+          "F14"
         ]
       }
     ],
     "ai_label_required": true,
-    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1, applied) shows skin with a slightly dry-looking matte surface; panel 2 (12 hours later) shows the same area looking comfortably moisturized and not shiny; panel 3 (Week 2, daily use) shows the same comfortable, hydrated look continuing. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no jar, no tube, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. The skin looks consistently comfortable and healthy in all three panels; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light, so the panels look like one routine continuing rather than a change. Nothing added or removed from the skin, no retouching gloss. No product, no jar, no tube, no bottle, no packaging, no hands, no text, no letters, no logos.",
     "product_handle": "vitamin-b5-10-moisturizer",
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Chemist at Play",
@@ -1605,27 +1582,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": [
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "93% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "problem_solution",
@@ -1713,15 +1683,16 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
     "findings": [
       {
@@ -1733,7 +1704,9 @@
         "layer": "rule",
         "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
       }
-    ]
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "testimonial_ugc",
@@ -1766,7 +1739,7 @@
     "image_prompt": "Empty background scene only: a soft off-white linen-textured wall with gentle window light from the upper left and a faint warm-grey gradient. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": false,
     "photography_needed": "",
-    "adaptation_notes": "Angle: social_proof. The review is REV5, a 4-star verified buyer quoted verbatim in full with name, date and source; it speaks to 'non greasy' and 'keeps skin hydrated', which the page itself states (F3, F17), and makes no repair, barrier or result claim. REV3 (results and two-week wording), REV4 ('very gentle') and REV6 (sensitive-skin and calm wording) were skipped. Kept: dated verified review card on a calm scene (Dot & Key), customer-voice lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+    "adaptation_notes": "Retry round 1 (judge CLM-21): the phrase 'keeps skin hydrated for long time' was removed, not reworded. REV5 (a 4-star verified buyer) is now quoted only up to 'Good product. Non greasy and great base' (a contiguous excerpt trimmed with …), which is sensory and carries no duration or efficacy claim. REV3 (results and two-week wording), REV4 ('very gentle', 'long lasting') and REV6 (sensitive-skin and calm wording) were skipped. Kept: dated verified review card on a calm scene (Dot & Key), customer-voice lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
     "angle": "social_proof",
     "hook_type": "social_proof",
     "blend_sources": [
@@ -1788,7 +1761,7 @@
     ],
     "review": {
       "stars": 4,
-      "quote": "Good product. Non greasy and great base and keeps skin hydrated for long time. . My go to moisturiser!",
+      "quote": "Good product. Non greasy and great base…",
       "source": "Tahira P., verified buyer, 4★, 2026-06-21"
     },
     "product_handle": "vitamin-b5-10-moisturizer",
@@ -1800,17 +1773,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "product_hero",
@@ -1885,24 +1861,27 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "before_after",
     "layout": "timeline",
     "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14",
     "product_title": "Vitamin C 10% Face Serum",
-    "headline": "Day one, week four and week eight with 10% Vitamin C",
+    "headline": "AM & PM routine: 2-3 drops of 10% Vitamin C",
     "subhead": "",
     "proof_points": [],
     "actives": [],
@@ -1912,43 +1891,42 @@
     "specs": [],
     "range": [],
     "offer": null,
-    "footnote": "93% subjects said skin felt healthier after 4 weeks of usage. 90% subjects said their dark spots faded after 8 weeks. Frames are AI illustrations, not real results.",
+    "footnote": "Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
     "cta": "Learn more",
     "citations": {
       "headline": [
-        "F19",
-        "F18"
+        "F14",
+        "F15"
       ],
       "subhead": [],
       "proof_points": [],
       "footnote": [
-        "F19",
-        "F18"
+        "RATING"
       ],
       "frames": [
         [
           "F14"
         ],
         [
-          "F19"
+          "F15"
         ],
         [
-          "F18"
+          "F15"
         ]
       ]
     },
-    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · still in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
     "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-peach-grey gradient at very low saturation and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
     "needs_real_photography": true,
-    "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F19, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
-    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F19, skin-felt-healthier perception) and Week 8 (F18, dark-spot perception); Day 1 is the start. The Week 4 radiance line (F17) was not used: its 'improved' wording reads as a result claim next to AI skin. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades in 15 days' result headline, badges, struck price, before/after wording, the collagen and 'proven' wording in F16/F21. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "Retry round 1 (judge CLM-15: the Day 1 / Week 4 / Week 8 frames beside the 4- and 8-week stats, with the 8-week frame as the 'dark spots faded' end state read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note and the RATING. The skin-felt-healthier and dark-spots-faded stats (F19, F18) are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
     "angle": "transformation",
     "hook_type": "statement",
     "blend_sources": [
       {
         "id": "27546140265006255",
         "brand": "Chemist at Play",
-        "took": "study qualifier footnote under labelled frames"
+        "took": "qualifier footnote under labelled frames"
       },
       {
         "id": "3961263437511522",
@@ -1958,31 +1936,31 @@
       {
         "id": "1550169393471299",
         "brand": "Dr. Sheth's",
-        "took": "timeframe-led headline, used as routine length not a result"
+        "took": "strength-led headline that states the routine, not a result"
       }
     ],
     "frames": [
       {
-        "label": "Day 1",
+        "label": "Day 1 · first use",
         "cites": [
           "F14"
         ]
       },
       {
-        "label": "Week 4",
+        "label": "Week 2 · daily habit",
         "cites": [
-          "F19"
+          "F15"
         ]
       },
       {
-        "label": "Week 8",
+        "label": "Week 4 · still in the routine",
         "cites": [
-          "F18"
+          "F15"
         ]
       }
     ],
     "ai_label_required": true,
-    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and temple area (a woman in her early 30s with a light-brown skin tone and a few faint, small dark spots), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows the skin with a slightly tired look and the faint spots; panel 2 (Week 4) shows the same area looking slightly fresher and healthier; panel 3 (Week 8) shows the faint spots looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and temple area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. The skin looks consistently healthy in all three panels and any small natural marks stay exactly the same in every panel; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light, so the panels look like one routine continuing rather than a change. No marks added or removed, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
     "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "source_brand": "Chemist at Play",
@@ -1991,54 +1969,20 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": [
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "93% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "after 4 weeks",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-08",
-        "span": "90% subjects",
-        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
-        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "CLM-07",
-        "span": "after 8 weeks",
-        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
-        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
-        "layer": "rule",
-        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
-      }
-    ]
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "testimonial_ugc",
@@ -2105,17 +2049,29 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-21",
+        "span": "What customers say",
+        "message": "\"What customers say\" presents one 5-star review as what customers generally say, with no \"one person's experience\" qualifier, and the quote's texture claims (lightweight, absorbs quickly, not sticky) are not on the attached page facts. Confirm the review is verbatim, current and on file.",
+        "fix": "Change to \"What one verified buyer says about Vitamin C 10% Face Serum\", keep the quote verbatim with its attribution, and add \"Individual experience\".",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "ingredient_explainer",
@@ -2204,17 +2160,29 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-23",
+        "span": "suitable even for sensitive skin",
+        "message": "\"Suitable even for sensitive skin\" is attached to the PHA ingredient but reads as a promise for the product on sensitive skin; the page gives it only as an ingredient note (F7), and the product-level evidence is just the patch-test statement (F20).",
+        "fix": "Describe the ingredient only, as the page does (\"A hydroxy acid that exfoliates gently\", F23), or keep the line only if sensitive-skin evidence for the product is on file.",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   },
   {
     "ad_type": "offer_promo",
@@ -2294,16 +2262,19 @@
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "LIMITED_CHECK",
-      "label": "Ready for human review (limited check)",
-      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
     },
     "coverage": {
       "rules": true,
-      "model": false,
+      "model": true,
       "model_error": null,
-      "rules_version": "0.3"
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
     },
-    "findings": []
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
   }
 ]

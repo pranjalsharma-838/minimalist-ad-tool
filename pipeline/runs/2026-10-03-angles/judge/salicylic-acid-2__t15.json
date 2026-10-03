@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "\"After 2 weeks\" is the usage schedule (start every alternate day, move to daily after 2 weeks, F13), not a result promised within 2 weeks."
+    }
+  ],
+  "tone_read": "Calm and practical: it opens on a worry (irritation) but answers with a gradual-use schedule rather than agitating, which fits the education-first voice. \"Irritation questions?\" is the only line a brand reviewer might ask to soften.",
+  "language_read": "\"2% salicylic acid\" and \"Salicylic Acid 2% Face Serum\" use house format, and \"daily gentle exfoliant\" is the page's own wording (F3). \"Gentle\" is an unhedged mildness word that is on the page, so the reviewer only needs to confirm it is cleared."
+}

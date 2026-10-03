@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-23",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "suitable even for sensitive skin",
+      "severity": "advisory",
+      "why": "\"Suitable even for sensitive skin\" is attached to the PHA ingredient but reads as a promise for the product on sensitive skin; the page gives it only as an ingredient note (F7), and the product-level evidence is just the patch-test statement (F20).",
+      "fix": "Describe the ingredient only, as the page does (\"A hydroxy acid that exfoliates gently\", F23), or keep the line only if sensitive-skin evidence for the product is on file."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Educational and calm: it names each active, its strength and what it is, which is exactly Minimalist's ingredient-and-concentration-led voice. No fear, hype or result promises.",
+  "language_read": "Strengths are stated exactly (\"10%\", \"1%\", \"86% pure Vitamin C content\" as on the page), and the purity line follows the brand's precise-grade practice. The headline's \"10% Vitamin C\" is the brand's own naming for a 10% Ethyl Ascorbic Acid active, which the on-image line makes explicit."
+}

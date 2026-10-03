@@ -1,0 +1,37 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Week 8",
+      "severity": "fix",
+      "why": "The Day 1 / Week 4 / Week 8 frames, matched to the 4- and 8-week stats, form a before/after progression, and AI-generated frames are not representative, unretouched evidence (the \"not real results\" note sits only in the footnote). If the frames show skin getting lighter overall rather than dark spots fading, it also drifts toward CLM-06.",
+      "fix": "Relabel the frames as routine stages (e.g. \"Week 8 · in the routine\") with the AI-illustration note on the image itself, or replace them with real, unretouched study photos and their qualifier."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "This is the duration of perception stat F24 and the wording is perception (\"said\"), so it is resolvable, but the creative should name the study type next to the 4-week window."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Matches F22 (\"noticed reduction in hyperpigmentation marks in 8 weeks\"); acceptable if the study file confirms the 8-week duration and the footnote labels it a consumer perception study."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Keeps F24's self-reported wording (\"subjects said\") instead of restating it as efficacy, but no study type or n is shown on the creative."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "Matches F22 and keeps \"noticed\"; it needs the same study-type and n qualifier on the creative."
+    }
+  ],
+  "tone_read": "Calm and declarative: it leads with the 2% active and a routine length, with no fear hook, hype word or exclamation. The Day 1 / Week 4 / Week 8 device is closer to category \"transformation\" creative than to Minimalist's education-first style.",
+  "language_read": "Strength is in house format (\"2% Alpha Arbutin\", \"Alpha Arbutin 2% Face Serum\") and the stats keep \"subjects said/noticed\" wording. \"Reduced sun tanning\" and \"reduction in hyperpigmentation marks\" rely entirely on that perception framing rather than \"visibly/appearance\" scoping."
+}

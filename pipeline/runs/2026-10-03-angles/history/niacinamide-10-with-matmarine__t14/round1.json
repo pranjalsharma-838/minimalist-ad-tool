@@ -1,0 +1,106 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "niacinamide-10-with-matmarine__t14",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Frames are AI illustrations of a routine, not results. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ],
+    "frames": [
+      [
+        "F13"
+      ],
+      [
+        "F14"
+      ],
+      [
+        "F14"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a very faint sage-grey tint at the lower edge and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), with written consent and no result wording, to replace the AI frames. None exist for this SKU.",
+  "adaptation_notes": "The page's only timeframe (F6, 'improve skin complexion in 2 weeks') is an ingredient claim ('clinically proven', melanin wording), not a study of this serum, so it is not used; the Consumer Studies section only has the patch-test note (F15). Frames therefore carry routine-stage labels and no result wording; the headline states routine length and the page's usage (F13, F14). Kept: equal labelled frames in a row (Re'equil), timeframe-led headline as routine length (Dr. Sheth's), qualifier footnote (Chemist at Play) with the RATING. Dropped: timed-result headline, 'dermat recommended', struck price, any pore/sebum/melanin outcome. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
+  "angle": "transformation",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "qualifier footnote under labelled frames"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "equal frames read left to right"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "timeframe-led headline, as routine length"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Day 1 · first use",
+      "cites": [
+        "F13"
+      ]
+    },
+    {
+      "label": "Week 2 · daily habit",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "Week 4 · in the routine",
+      "cites": [
+        "F14"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a woman in her mid-20s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel. The skin looks consistently healthy with natural texture and visible pores in all three; any difference between panel 1 (Day 1), panel 2 (Week 2) and panel 3 (Week 4) is limited to very subtle, non-dramatic shifts in light and sheen. No marks removed, no dramatic change, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

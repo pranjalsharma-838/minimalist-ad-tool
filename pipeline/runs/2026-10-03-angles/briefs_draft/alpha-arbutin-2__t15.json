@@ -17,9 +17,9 @@
       ]
     },
     {
-      "text": "Dry/normal, sensitive, oily/combination, acne-prone skin",
+      "text": "Suitable for 18+ years of age",
       "cites": [
-        "F9"
+        "F11"
       ]
     },
     {
@@ -50,11 +50,11 @@
       "RATING"
     ]
   },
-  "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, skin types, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+  "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, age suitability, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
   "image_prompt": "Empty background scene only: a pale terrazzo tabletop seen from directly above, off-white with very faint grey flecks, even soft daylight and no shadows. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
   "needs_real_photography": false,
   "photography_needed": "",
-  "adaptation_notes": "Concern: irritation (customer words such as 'no irritation or breakout', 'did not face any major skin sensitivity'), answered only by what the page states: the supervised patch-test note (F25), the skin types it lists (F9) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made, and the label only restates its own wording. The 'extra sensitive skin should consult a dermatologist' FAQ (F33) is not citable here, so no sensitive-skin promise is added. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
+  "adaptation_notes": "Retry round 1 (judge CLM-05): the skin-type list (F9) was dropped, not reworded. Under an irritation headline and beside the patch-test line, listing 'sensitive' skin reads as a promise that the serum will not irritate sensitive skin, and the page's own caution for extra-sensitive skin (F33, an FAQ) cannot be cited as a claim in this layout, so no skin-type wording remains; the slot now carries the page's age suitability (F11). Concern: irritation (customer words such as 'no irritation or breakout'), answered only by what the page states: the supervised patch-test note (F25) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
   "angle": "concern_solved",
   "hook_type": "question",
   "blend_sources": [

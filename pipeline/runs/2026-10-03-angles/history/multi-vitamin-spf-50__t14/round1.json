@@ -1,0 +1,107 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "multi-vitamin-spf-50__t14",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Four weeks, one habit: SPF 50 every morning",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Frames are AI illustrations of a routine, not results. Reapply in case of continued sun exposure. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F2",
+      "F21"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F20",
+      "RATING"
+    ],
+    "frames": [
+      [
+        "F21"
+      ],
+      [
+        "F21"
+      ],
+      [
+        "F21"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale blue-grey to off-white gradient like an overcast morning sky, very low contrast, with soft diffuse light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented morning routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+  "adaptation_notes": "The page has no timed study (the only study is the SPF lab test, F13-F18), so frames carry routine-stage labels only (first use, daily habit, in the routine) and no result wording; the headline states a routine length, not an outcome. Kept: three equal labelled frames in a row (Re'equil), timeframe-led headline (Dr. Sheth's), footnote qualifier (Chemist at Play). Dropped: 'visible reduction in dark spots within 7 days', 'dermat recommended / clinically certified', any tan or UV-damage result, struck price. Footnote adds the page's reapplication instruction (F20) and the RATING. SPF 50 is the labelled value; the lab-measured value is not used. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
+  "angle": "transformation",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "footnote qualifier under labelled frames"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "equal frames read left to right"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "timeframe-led headline, as routine length"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Day 1 · first use",
+      "cites": [
+        "F21"
+      ]
+    },
+    {
+      "label": "Week 2 · daily habit",
+      "cites": [
+        "F21"
+      ]
+    },
+    {
+      "label": "Week 4 · in the routine",
+      "cites": [
+        "F21"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and jawline area (a man in his early 30s with a medium-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel. The skin reads as consistently healthy and even in all three panels, with natural texture and visible pores; the only differences between panel 1 (Day 1), panel 2 (Week 2) and panel 3 (Week 4) are very subtle shifts in light and tone, so the panels look like one routine continuing rather than a change. No sunburn, tan lines or marks, no dramatic difference, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

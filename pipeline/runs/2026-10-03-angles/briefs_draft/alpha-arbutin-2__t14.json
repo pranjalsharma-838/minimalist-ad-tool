@@ -3,7 +3,7 @@
   "layout": "timeline",
   "source_ad_id": "alpha-arbutin-2__t14",
   "product_title": "Alpha Arbutin 2% Face Serum",
-  "headline": "An 8-week routine with 2% Alpha Arbutin",
+  "headline": "AM & PM routine: 2-3 drops of 2% Alpha Arbutin",
   "subhead": "",
   "proof_points": [],
   "actives": [],
@@ -13,42 +13,43 @@
   "specs": [],
   "range": [],
   "offer": null,
-  "footnote": "93% subjects said it reduced sun tanning after 4 weeks of use. 90% subjects noticed reduction in hyperpigmentation marks in 8 weeks. Frames are AI illustrations, not real results.",
+  "footnote": "Frames are AI illustrations of a routine, not results. Use sunscreen during the day for best results. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
   "cta": "Learn more",
   "citations": {
     "headline": [
-      "F22"
+      "F19",
+      "F20"
     ],
     "subhead": [],
     "proof_points": [],
     "footnote": [
-      "F24",
-      "F22"
+      "F19",
+      "RATING"
     ],
     "frames": [
       [
         "F19"
       ],
       [
-        "F24"
+        "F20"
       ],
       [
-        "F22"
+        "F20"
       ]
     ]
   },
-  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · still in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
   "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-grey gradient from top to bottom and a soft diagonal shadow from a window frame in the upper-left corner. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
   "needs_real_photography": true,
-  "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F24, F22), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
-  "adaptation_notes": "Kept: three equal labelled progress frames (Chemist at Play, Re'equil), a footnote that carries the study qualifier (Chemist at Play) and a timeframe-led headline used as routine length, not a result (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F24, tanning perception) and Week 8 (F22, marks perception); Day 1 is the start. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades dark spots in 15 days' result headline, Dermat/clinically-certified badges, struck price, before/after wording, the benchmark comparison (F13) and melanin wording (F6, F26). Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full with the two study lines.",
+  "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+  "adaptation_notes": "Retry round 1 (judge CLM-15: the Day 1 / Week 4 / Week 8 frames beside the 4- and 8-week stats read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note, the page's sunscreen advice (F19) and the RATING. The headline's old '8-week' length is gone because it matched neither the labels nor a result on the ad. The 4- and 8-week perception stats (F24, F22) and the benchmark and melanin wording (F13, F6, F26) are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
   "angle": "transformation",
   "hook_type": "statement",
   "blend_sources": [
     {
       "id": "27546140265006255",
       "brand": "Chemist at Play",
-      "took": "footnote carrying the study qualifier under labelled frames"
+      "took": "qualifier footnote under labelled frames"
     },
     {
       "id": "3961263437511522",
@@ -58,29 +59,29 @@
     {
       "id": "1550169393471299",
       "brand": "Dr. Sheth's",
-      "took": "timeframe-led headline, used as routine length not a result"
+      "took": "strength-led headline that states the routine, not a result"
     }
   ],
   "frames": [
     {
-      "label": "Day 1",
+      "label": "Day 1 · first use",
       "cites": [
         "F19"
       ]
     },
     {
-      "label": "Week 4",
+      "label": "Week 2 · daily habit",
       "cites": [
-        "F24"
+        "F20"
       ]
     },
     {
-      "label": "Week 8",
+      "label": "Week 4 · still in the routine",
       "cites": [
-        "F22"
+        "F20"
       ]
     }
   ],
   "ai_label_required": true,
-  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and cheekbone area (a woman in her late 20s with medium-brown skin), identical framing, camera distance, soft diffuse daylight from the upper left and a plain off-white backdrop in every panel, natural skin texture and visible pores throughout. Panel 1 (Day 1) shows a few small, faint, uneven-toned dark marks on the cheek; panel 2 (Week 4) shows the same area with a slightly softer tan tone; panel 3 (Week 8) shows the same marks looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss, makeup or jewellery. No product, no bottle, no packaging, no hands, no text, no letters, no logos."
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and cheekbone area (a woman in her late 20s with medium-brown skin), identical framing, camera distance, soft diffuse daylight from the upper left and a plain off-white backdrop in every panel, natural skin texture and visible pores throughout. The skin reads as consistently healthy in all three panels and any small natural marks stay exactly the same in every panel; the only differences between panel 1 (Day 1 · first use), panel 2 (Week 2 · daily habit) and panel 3 (Week 4 · still in the routine) are very subtle, non-dramatic shifts in light and tone, so the panels look like one routine continuing rather than a change. No marks added or removed, no retouching gloss, makeup or jewellery. No product, no bottle, no packaging, no hands, no text, no letters, no logos."
 }

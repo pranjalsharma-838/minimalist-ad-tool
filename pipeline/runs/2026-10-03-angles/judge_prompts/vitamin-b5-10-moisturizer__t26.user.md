@@ -6,7 +6,7 @@ The ad, field by field:
 A verified buyer on Vitamin B5 10% Moisturizer
 </headline>
 <on_image_text>
-Good product. Non greasy and great base and keeps skin hydrated for long time. . My go to moisturiser!
+Good product. Non greasy and great base…
 Tahira P., verified buyer, 4★, 2026-06-21
 Vitamin B5 10% Moisturizer
 </on_image_text>

@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-21",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "What customers say",
+      "severity": "advisory",
+      "why": "\"What customers say\" presents one 4-star review as what customers in general say, with no \"one person's experience\" qualifier. The review is also over a year old (2025-07-15), so confirm it is still current for this formulation and on file.",
+      "fix": "Change to \"What one verified buyer says about SPF 50 Sunscreen\", keep the quote verbatim with its attribution, and add \"Individual experience\"."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm and low-key: one verified review with buyer, rating and date shown, and no brand hype or fear. The quote is about feel, not protection.",
+  "language_read": "The quote is verbatim from REV4, and its matte, blends-in direction is consistent with the page's non-shiny and no-white-cast wording (F3, F8). There is no SPF or protection claim on the creative, so the sun-protection rules do not come into play."
+}

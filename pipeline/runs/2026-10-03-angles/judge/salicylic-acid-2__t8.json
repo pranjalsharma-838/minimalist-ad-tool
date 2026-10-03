@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "\"After 2 weeks of usage\" is the dosing schedule from F13 (alternate days first, then daily), not a result promised within 2 weeks."
+    }
+  ],
+  "tone_read": "Calm evening-routine guidance with a named supplier grade; no fear, hype or result language.",
+  "language_read": "\"2% Salicylic Acid\" is in house format, and naming \"RonaCare Salicylic Acid Extra Pure from Merck, Germany\" follows the brand's precise-grade practice (F8) rather than a vague \"100% pure\". The dosing, skin-type and age lines are verbatim from the page."
+}

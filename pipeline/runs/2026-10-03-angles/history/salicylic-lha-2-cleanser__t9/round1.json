@@ -1,0 +1,86 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-lha-2-cleanser__t9",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "A light lather, then a hydrating after-feel",
+  "subhead": "Rub into a light lather in wet hands, massage into the face, then rinse thoroughly.",
+  "proof_points": [
+    "Panthenol (Vitamin B5) and Allantoin for a hydrating after-feel",
+    "2 mild sulfate-free surfactants (cleansers)",
+    "AM & PM, every day"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F13",
+      "F7"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [
+      [
+        "F7"
+      ],
+      [
+        "F8"
+      ],
+      [
+        "F14"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a calm off-white tile surface with a few faint beads of water along the lower edge, soft daylight from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: sensorial, from the page's usage and after-feel facts only: light lather (F13), hydrating after-feel (F7, quoted without the zinc/anti-bacterial wording), mild sulfate-free surfactants (F8). Kept: close hand-level application framing (Chemist at Play), in-use moment as the visual cue (Foxtale). Dropped: timed-fix headline, '#1 daily duo', sebum, acne-fighting and pore wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "sensorial",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "close hand-level framing of the lathering moment"
+    },
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "in-use moment as the visual cue"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "Close-up of a young woman in her early 20s with a wheatish skin tone, seen from the cheekbones to the chin at a bathroom basin in the morning; both wet hands are working a light white lather in small circles over her cheeks and jaw, a few water drops on her wrists; soft daylight from a frosted window at the upper left, plain off-white tiles behind, shallow depth of field, eyes closed, calm expression, natural unretouched skin, nothing implying a result. No product, bottle, pump, tube or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "salicylic-lha-2-cleanser",
+  "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

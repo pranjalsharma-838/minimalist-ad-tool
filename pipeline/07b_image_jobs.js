@@ -15,8 +15,14 @@ const briefs = JSON.parse(fs.readFileSync(path.join(dir, "briefs_final.json"), "
 const has = (f) => fs.existsSync(path.join(dir, "backgrounds", f));
 const EXCL = "Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names.";
 const PANELS = { timeline: 3, splitscreen: 2, before_after: 2 };
+// Casting overrides (user review 2026-10-03: cast Indian men and women): <run>/casting_overrides.json maps
+// id → { person?: "...", frames?: "..." } and replaces the brief's person_prompt / frames_prompt.
+const castFile = path.join(dir, "casting_overrides.json");
+const CAST = fs.existsSync(castFile) ? JSON.parse(fs.readFileSync(castFile, "utf8")) : {};
 const jobs = [];
-for (const b of briefs.filter((x) => ["approved_for_image_step", "kept_with_warnings"].includes(x.status))) {
+for (const b0 of briefs.filter((x) => ["approved_for_image_step", "kept_with_warnings"].includes(x.status))) {
+  const ov = CAST[b0.source_ad_id] || {};
+  const b = { ...b0, person_prompt: ov.person || b0.person_prompt, frames_prompt: ov.frames || b0.frames_prompt };
   const id = b.source_ad_id;
   const dj = path.join(dir, "director", `${id}.json`);
   if (!has(`${id}.png`) && fs.existsSync(dj)) {

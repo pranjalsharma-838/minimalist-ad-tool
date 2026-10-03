@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "12 hours later",
+      "severity": "fix",
+      "why": "The Day 1 / 12 hours later / Week 2 frames are an AI-generated time-lapse set beside the 12-hour stat; AI frames are not representative, unretouched evidence and the \"not real results\" note sits only in the footnote.",
+      "fix": "Replace the timeline with a product or texture visual and keep the 12-hour statement only as the footnoted perception finding, or use real, unretouched study images with their qualifier."
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "two weeks",
+      "severity": "fix",
+      "why": "The headline promises something at \"12 hours and two weeks\", but the only stat on the ad is the 12-hour one; the page's only 2-week stat (F18) is about reduced irritation and is not shown, so \"two weeks\" implies a result with no study or qualifier on the creative.",
+      "fix": "Drop \"two weeks\": \"12 hours with 10% Vitamin B5\", keeping the 12-hour perception statement in the footnote (or lead with \"10% Vitamin B5 (Panthenol) for oil-free moisturization\", as the page words it)."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "Matches F16 and keeps \"agreed\"; it needs study type and n on the creative, and the 12-hour duration is itself a time-bound claim the rule's pattern did not catch."
+    }
+  ],
+  "tone_read": "Calm and spec-led with no fear or hype, and the footnote is candid that the frames are illustrations. The timeline format and the vague \"two weeks\" lean toward category transformation creative.",
+  "language_read": "\"10% Vitamin B5\" is in house format and the 12-hour stat keeps the page's \"subjects agreed\" wording. \"Two weeks\" has no matching stat on the ad, so it reads as an unhedged outcome."
+}

@@ -1,0 +1,109 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t15",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "Greasy feel? Notes on a lightweight, oil-free moisturizer",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Lightweight, oil-free moisturizer",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "text": "10% Vitamin B5 (Panthenol) for oil-free moisturization",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "text": "Formulated especially for oily/combination skin",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "text": "Hydrated without the greasy feel*",
+      "cites": [
+        "F17"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "*97% subjects agreed skin remains hydrated throughout the day without the greasy feel. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F17",
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (lightweight and oil-free, 10% Vitamin B5, oily/combination skin, hydrated without the greasy feel); no skin close-ups; study qualifier and rating in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale cream-grey matte surface seen from above, even soft light, a single smooth stone at the extreme lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: sticky or greasy feel (customer words such as 'non greasy', 'without any oily feeling'), answered by the page's own facts: lightweight and oil-free (F3, F5), formulated for oily/combination skin (F3) and the consumer-study line on the greasy feel (F17). The study line stays a perception stat: the callout carries an asterisk and the full '97% subjects agreed' sentence with its qualifier sits in the footnote. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the 'repairs skin' and barrier wording (F2, F15).",
+  "angle": "concern_solved",
+  "hook_type": "question",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern named first, product second"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "labels wired by thin lines to a centred pack"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "one page detail paired with each label"
+    }
+  ],
+  "product_handle": "vitamin-b5-10-moisturizer",
+  "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-08",
+      "span": "97% subjects",
+      "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+      "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

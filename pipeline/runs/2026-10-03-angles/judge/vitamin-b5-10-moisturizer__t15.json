@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "Matches F17 and keeps \"agreed\", and the asterisk ties it to the on-image claim; still add the study type, n and the \"throughout the day\" basis beside it."
+    }
+  ],
+  "tone_read": "Educational and calm: it opens with a sensory worry (greasy feel) but answers with the active, its strength and who it is formulated for, rather than agitating. The question opener is mild and could be softened if a reviewer prefers.",
+  "language_read": "\"10% Vitamin B5 (Panthenol)\" is in house format and the benefit is scoped to feel and tied to a perception footnote by the asterisk. \"Oil-free\" and \"without the greasy feel\" are absolute-form wording taken from the page (F3, F17), so the footnote is what carries the qualifier."
+}

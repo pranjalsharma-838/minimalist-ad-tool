@@ -1,0 +1,87 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t26",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "A verified buyer on Vitamin B5 10% Moisturizer",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a soft off-white linen-textured wall with gentle window light from the upper left and a faint warm-grey gradient. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: social_proof. The review is REV5, a 4-star verified buyer quoted verbatim in full with name, date and source; it speaks to 'non greasy' and 'keeps skin hydrated', which the page itself states (F3, F17), and makes no repair, barrier or result claim. REV3 (results and two-week wording), REV4 ('very gentle') and REV6 (sensitive-skin and calm wording) were skipped. Kept: dated verified review card on a calm scene (Dot & Key), customer-voice lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+  "angle": "social_proof",
+  "hook_type": "social_proof",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified review card on a calm bright scene"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "customer-voice lead-in headline"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line carried in the footer"
+    }
+  ],
+  "review": {
+    "stars": 4,
+    "quote": "Good product. Non greasy and great base and keeps skin hydrated for long time. . My go to moisturiser!",
+    "source": "Tahira P., verified buyer, 4★, 2026-06-21"
+  },
+  "product_handle": "vitamin-b5-10-moisturizer",
+  "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+  "source_brand": "Dot & Key",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-21",
+      "span": "keeps skin hydrated for long time",
+      "message": "One customer's line that the moisturizer \"keeps skin hydrated for long time\" is used as the ad's product claim with no \"one person's experience\" qualifier, and the page backs hydration only as perception stats (F16, F17) that are not on the creative.",
+      "fix": "Acceptable if the review is verbatim, current and on file and the ad adds \"Individual experience; results vary\"; otherwise use a sensory-only review, or the footnoted 12-hour perception statement from F16 with its qualifier.",
+      "layer": "model"
+    }
+  ]
+}

@@ -176,17 +176,7 @@ function layout(spec, s) {
   // Bottom band: CTA left, product name right of it, footnote across full width.
   const bandY = BAND_Y;
   parts.push(`<line x1="${pad}" y1="${bandY}" x2="${w - pad}" y2="${bandY}" stroke="${C.rule}" stroke-width="2"/>`);
-  if (spec.cta) {
-    parts.push(`<rect x="${pad}" y="${bandY + 32}" width="260" height="68" rx="34" fill="${C.ink}"/>`);
-    parts.push(
-      `<text x="${pad + 130}" y="${bandY + 76}" text-anchor="middle" font-family="${FONT}" font-size="${Math.min(26, Math.floor(220 / Math.max(1, vlen(spec.cta) * 0.56)))}" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`
-    );
-  }
-  if (spec.productName) {
-    parts.push(
-      textBlock(wrap(spec.productName, 22, 560), 372, bandY + 74, 22, 28, `font-family="${FONT}" fill="${C.muted}"`)
-    );
-  }
+  parts.push(ctaBand(spec, pad, bandY));
   // Footnote at 26px: ASCI's disclaimer guideline sets >= 26px lower-case text in a 1080 raster for
   // video; applied here to static by analogy (research/regulatory_sources.md, ASCI-G-DISC).
   if (spec.footnote) {
@@ -225,17 +215,32 @@ function chromeStart(spec, panel) {
   return parts;
 }
 
+// CTA band, shared by every layout. User review (2026-10-03): "clear CTA is missing" — the button was small and
+// often said a vague "Learn more". Now a bigger, bolder button; vague CTAs become an action ("Shop now", or
+// "Shop the offer" on offer ads); the product name sits beside it with the shop domain so the next step is obvious.
+const VAGUE_CTA = /^(learn more|know more|see more|discover( more)?|find out more|read more|explore|see (the )?ingredients|view ingredients|how it works|learn how|see how|find yours)$/i;
+function ctaText(spec) {
+  const c = String(spec.cta || "").trim();
+  if (c && !VAGUE_CTA.test(c)) return c;
+  return spec.layout === "offer" || spec.layout === "pricecompare" ? "Shop the offer" : "Shop now";
+}
+function ctaBand(spec, x0, bandY) {
+  const label = ctaText(spec);
+  const fsz = 28, bw = Math.min(420, Math.max(300, Math.round(vlen(label) * fsz * 0.6) + 80));
+  let out = `<rect x="${x0}" y="${bandY + 28}" width="${bw}" height="76" rx="38" fill="${C.ink}"/>` +
+    `<text x="${x0 + bw / 2}" y="${bandY + 76}" text-anchor="middle" font-family="${FONT}" font-size="${fsz}" font-weight="700" fill="#FFFFFF">${esc(label)} →</text>`;
+  const name = [spec.productName, "beminimalist.co"].filter(Boolean).join(" · ");
+  out += T(wrap(name, 22, 1080 - x0 - bw - 30 - 72), x0 + bw + 28, bandY + 62, 22, 28, `font-weight="600" fill="${C.ink}"`);
+  return out;
+}
+
 const aiBadge = (w) => `<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`;
 
 // CTA band, product name, footnote, test mark -> svg.
 function chromeEnd(spec, parts, bottom) {
   const { w, h } = SIZE;
   parts.push(`<line x1="${PAD}" y1="${BAND_Y}" x2="${w - PAD}" y2="${BAND_Y}" stroke="${C.rule}" stroke-width="2"/>`);
-  if (spec.cta) {
-    parts.push(`<rect x="${PAD}" y="${BAND_Y + 32}" width="260" height="68" rx="34" fill="${C.ink}"/>`);
-    parts.push(`<text x="${PAD + 130}" y="${BAND_Y + 76}" text-anchor="middle" font-family="${FONT}" font-size="${Math.min(26, Math.floor(220 / Math.max(1, vlen(spec.cta) * 0.56)))}" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`);
-  }
-  if (spec.productName) parts.push(T(wrap(spec.productName, 22, 560), 372, BAND_Y + 74, 22, 28, `fill="${C.muted}"`));
+  parts.push(ctaBand(spec, PAD, BAND_Y));
   if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
   // Visible AI label whenever generated people/skin/results are in the creative (user decision 2026-10-03).
   if (spec.aiLabel) parts.push(aiBadge(w));
@@ -267,8 +272,12 @@ function productVisual(spec, x, y, w, h) {
   const card = `<clipPath id="personClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18"/></clipPath>` +
     `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="#FFFFFF"/>` +
     `<image href="${esc(spec.personHref)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`;
-  const iw = Math.round(w * 0.36), ih = Math.round(h * 0.42);
-  return card + pack(spec, spec.imageHref, x + 18, y + h - ih - 18, iw, ih);
+  // User review (2026-10-03): "clear product is missing" — the inset was too small. The pack now takes ~half the
+  // zone's width and ~60% of its height, standing in front of the photo on a soft white plinth so it reads first.
+  const iw = Math.round(w * 0.5), ih = Math.round(h * 0.6);
+  const px = x + 14, py = y + h - ih - 14;
+  const plinth = `<rect x="${px - 6}" y="${py + ih * 0.12}" width="${iw + 12}" height="${ih * 0.88 + 6}" rx="16" fill="#FFFFFF" fill-opacity="0.82"/>`;
+  return card + plinth + pack(spec, spec.imageHref, px, py, iw, ih);
 }
 const defs = (spec) => `<defs><filter id="packShadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="${spec.shadowDx ?? 12}" dy="14" stdDeviation="12" flood-color="#000" flood-opacity="0.22"/></filter><filter id="contactBlur" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="9"/></filter></defs>`;
 
@@ -425,10 +434,14 @@ LAYOUTS.offer = (spec, s) => {
     parts.push(T(pl, PAD, y + Math.round(52 * s), Math.round(30 * s), Math.round(38 * s), `font-weight="700" fill="${C.ink}"`));
     y += Math.round(52 * s) + (pl.length - 1) * Math.round(38 * s);
   }
+  // A price written in the subhead (scale-run briefs) is shown as the same bold price line, sourcing trimmed.
+  const isPrice = /\b(Rs\.?|₹|MRP)\s?\d/i.test(spec.subhead || "");
   if (spec.subhead) {
-    const sub = wrap(spec.subhead, Math.round(23 * s), 490);
-    parts.push(T(sub, PAD, y + Math.round(48 * s), Math.round(23 * s), Math.round(30 * s), `fill="${C.muted}"`));
-    y += Math.round(48 * s) + (sub.length - 1) * Math.round(30 * s);
+    const txt = isPrice ? spec.subhead.replace(/,?\s*(beminimalist\.co|website)?,?\s*captured \d{4}-\d{2}-\d{2}/i, "").replace(/,\s*beminimalist\.co\s*$/i, "").trim() : spec.subhead;
+    const sz = isPrice ? 30 : 23, lh = isPrice ? 38 : 30;
+    const sub = wrap(txt, Math.round(sz * s), 490);
+    parts.push(T(sub, PAD, y + Math.round(48 * s), Math.round(sz * s), Math.round(lh * s), isPrice ? `font-weight="700" fill="${C.ink}"` : `fill="${C.muted}"`));
+    y += Math.round(48 * s) + (sub.length - 1) * Math.round(lh * s);
   }
   return chromeEnd(spec, parts, y);
 };

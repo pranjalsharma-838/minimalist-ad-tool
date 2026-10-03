@@ -1,0 +1,152 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "Day one, week four and week eight with 10% Vitamin C",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "93% subjects said skin felt healthier after 4 weeks of usage. 90% subjects said their dark spots faded after 8 weeks. Frames are AI illustrations, not real results.",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F19",
+      "F18"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F19",
+      "F18"
+    ],
+    "frames": [
+      [
+        "F14"
+      ],
+      [
+        "F19"
+      ],
+      [
+        "F18"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-peach-grey gradient at very low saturation and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F19, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+  "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F19, skin-felt-healthier perception) and Week 8 (F18, dark-spot perception); Day 1 is the start. The Week 4 radiance line (F17) was not used: its 'improved' wording reads as a result claim next to AI skin. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades in 15 days' result headline, badges, struck price, before/after wording, the collagen and 'proven' wording in F16/F21. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+  "angle": "transformation",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "study qualifier footnote under labelled frames"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "left-to-right progression across equal frames"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "timeframe-led headline, used as routine length not a result"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Day 1",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "Week 4",
+      "cites": [
+        "F19"
+      ]
+    },
+    {
+      "label": "Week 8",
+      "cites": [
+        "F18"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and temple area (a woman in her early 30s with a light-brown skin tone and a few faint, small dark spots), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows the skin with a slightly tired look and the faint spots; panel 2 (Week 4) shows the same area looking slightly fresher and healthier; panel 3 (Week 8) shows the faint spots looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Chemist at Play",
+  "status": "needs_retry",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-15",
+      "span": "Week 8",
+      "message": "The Day 1 / Week 4 / Week 8 frames, matched to the 4- and 8-week stats, form a before/after progression, and AI-generated frames are not representative, unretouched evidence (the \"not real results\" note sits only in the footnote). The 8-week frame is the \"dark spots faded\" end state, and the headline repeats the timeline.",
+      "fix": "Relabel the frames as routine stages (e.g. \"Week 8 · in the routine\") with the AI-illustration note on the image itself, or replace them with real, unretouched study photos and their qualifier.",
+      "layer": "model"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-08",
+      "span": "93% subjects",
+      "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+      "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 4 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-08",
+      "span": "90% subjects",
+      "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+      "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 8 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

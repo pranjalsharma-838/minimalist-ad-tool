@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-21",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "What customers say",
+      "severity": "advisory",
+      "why": "\"What customers say\" presents one 5-star review as what customers generally say, with no \"one person's experience\" qualifier, and the quote's texture claims (lightweight, absorbs quickly, not sticky) are not on the attached page facts. Confirm the review is verbatim, current and on file.",
+      "fix": "Change to \"What one verified buyer says about Vitamin C 10% Face Serum\", keep the quote verbatim with its attribution, and add \"Individual experience\"."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm and low-key: the brand adds no hype of its own and lets one verified review speak, with buyer, rating and date shown. The review's sensory language stays in the customer's voice.",
+  "language_read": "The quote is a faithful excerpt of REV3 with ellipses marking the cuts, and the 4.1 rating from 2,013 reviews matches the capture. There is no brand efficacy wording on the creative beyond the product name."
+}

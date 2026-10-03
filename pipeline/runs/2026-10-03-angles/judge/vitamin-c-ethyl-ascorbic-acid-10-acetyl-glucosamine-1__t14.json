@@ -1,0 +1,37 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Week 8",
+      "severity": "fix",
+      "why": "The Day 1 / Week 4 / Week 8 frames, matched to the 4- and 8-week stats, form a before/after progression, and AI-generated frames are not representative, unretouched evidence (the \"not real results\" note sits only in the footnote). The 8-week frame is the \"dark spots faded\" end state, and the headline repeats the timeline.",
+      "fix": "Relabel the frames as routine stages (e.g. \"Week 8 · in the routine\") with the AI-illustration note on the image itself, or replace them with real, unretouched study photos and their qualifier."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "Matches F19 (\"felt healthier after 4 weeks of usage\") and is perception-worded; the creative should still name the study type with the window."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Matches F18 (\"said their dark spots faded after 8 weeks\"); acceptable if the study file confirms the 8-week duration."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Keeps \"said ... felt\" (F19), but \"healthier\" is vague and no study type or n is shown."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "F18 verbatim and perception-worded; it must stay as \"subjects said\" and never be restated as \"fades dark spots\", and it needs the study-type and n qualifier."
+    }
+  ],
+  "tone_read": "Calm and spec-led with no fear hook or hype, and the footnote is candid about the AI frames. The three-frame timeline is category-style transformation creative rather than Minimalist's education-first approach.",
+  "language_read": "\"10% Vitamin C\" and \"Vitamin C 10% Face Serum\" are in house format, and the stats keep \"subjects said\" perception wording. \"Dark spots faded\" and \"healthier\" are outcome words that rely entirely on that perception framing."
+}

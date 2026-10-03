@@ -7,7 +7,7 @@ Questions on irritation? Our notes on Alpha Arbutin 2%
 </headline>
 <on_image_text>
 Patch tested for safety under a Dermatologist's supervision
-Dry/normal, sensitive, oily/combination, acne-prone skin
+Suitable for 18+ years of age
 2-3 drops after cleansing & toning
 Use sunscreen during the day for best results
 Alpha Arbutin 2% Face Serum

@@ -1,0 +1,23 @@
+[
+  {"handle": "alpha-arbutin-2", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian woman in her early 30s, medium-brown skin, winding down in the evening in a Bengaluru apartment"},
+  {"handle": "alpha-arbutin-2", "angle": "human_usage", "template_id": 7, "person": true, "casting": "an Indian man in his early 40s, deep-brown skin, short greying beard, morning, holding nothing in an open hand (the pack is composited)"},
+  {"handle": "alpha-arbutin-2", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian woman in her mid 20s, light-brown skin, her evening routine at a home bathroom basin"},
+  {"handle": "multi-vitamin-spf-50", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian man in his early 30s, medium-brown skin, about to commute on a two-wheeler in Mumbai daylight, helmet in hand"},
+  {"handle": "multi-vitamin-spf-50", "angle": "human_usage", "template_id": 8, "person": true, "casting": "an Indian woman in her late 20s, deep-brown skin, smoothing a light lotion onto her cheek on a sunny balcony before stepping out"},
+  {"handle": "multi-vitamin-spf-50", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian man in his mid 20s, light-brown skin, his morning routine before work"},
+  {"handle": "niacinamide-10-with-matmarine", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian woman in her late 20s, medium-brown skin, a busy workday in a Gurugram office"},
+  {"handle": "niacinamide-10-with-matmarine", "angle": "human_usage", "template_id": 8, "person": true, "casting": "an Indian man in his mid 20s, medium-brown skin, pressing a few clear drops onto his face after a gym session"},
+  {"handle": "niacinamide-10-with-matmarine", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian woman in her mid 30s, deep-brown skin, her morning and evening routine"},
+  {"handle": "salicylic-acid-2", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian man around 21, light-brown skin, an evening in a college hostel room"},
+  {"handle": "salicylic-acid-2", "angle": "human_usage", "template_id": 9, "person": true, "casting": "an Indian woman in her early 20s, medium-brown skin, fingertips pressing a few clear drops onto her cheek"},
+  {"handle": "salicylic-acid-2", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian man in his early 20s, medium-brown skin, his night routine"},
+  {"handle": "salicylic-lha-2-cleanser", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian man in his early 30s, deep-brown skin, back home after a morning run"},
+  {"handle": "salicylic-lha-2-cleanser", "angle": "human_usage", "template_id": 7, "person": true, "casting": "an Indian woman in her late 20s, light-brown skin, at a bathroom basin, an open hand holding nothing (the pack is composited)"},
+  {"handle": "salicylic-lha-2-cleanser", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian woman in her early 20s, medium-brown skin, washing up in the morning"},
+  {"handle": "vitamin-b5-10-moisturizer", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian woman in her early 40s, medium-brown skin, working from home by a window"},
+  {"handle": "vitamin-b5-10-moisturizer", "angle": "human_usage", "template_id": 9, "person": true, "casting": "an Indian man in his mid 30s, deep-brown skin, massaging a light moisturiser into his face and neck"},
+  {"handle": "vitamin-b5-10-moisturizer", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian man in his early 30s, light-brown skin, his evening routine"},
+  {"handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1", "angle": "lifestyle", "template_id": 6, "person": true, "casting": "an Indian woman in her early 30s, light-brown skin, a morning metro commute"},
+  {"handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1", "angle": "human_usage", "template_id": 8, "person": true, "casting": "an Indian man in his early 30s, medium-brown skin, a few drops on his fingertips in the morning light"},
+  {"handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1", "angle": "routine_journey", "template_id": 22, "person": true, "casting": "an Indian woman in her late 20s, deep-brown skin, her morning routine"}
+]

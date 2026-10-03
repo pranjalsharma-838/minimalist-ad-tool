@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-21",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "keeps skin hydrated for long time",
+      "severity": "fix",
+      "why": "One customer's line that the moisturizer \"keeps skin hydrated for long time\" is used as the ad's product claim with no \"one person's experience\" qualifier, and the page backs hydration only as perception stats (F16, F17) that are not on the creative.",
+      "fix": "Acceptable if the review is verbatim, current and on file and the ad adds \"Individual experience; results vary\"; otherwise use a sensory-only review, or the footnoted 12-hour perception statement from F16 with its qualifier."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm and low-key: a verified-buyer quote with buyer, rating and date shown and no hype from the brand. The quote's enthusiasm (\"My go to moisturiser!\") is the customer's voice, not Minimalist's.",
+  "language_read": "The quote is reproduced verbatim from REV5, stray punctuation included, and the 4.1 rating from 899 reviews matches the capture. The brand itself makes no concentration or efficacy statement on the creative beyond the product name."
+}

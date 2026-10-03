@@ -1,0 +1,354 @@
+[
+  {
+    "id": "alpha-arbutin-2__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t7",
+    "brand": "Chemist at Play",
+    "ad_type": "product_hero",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 7,
+    "template_name": "Product-in-hand",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t7",
+    "brand": "Chemist at Play",
+    "ad_type": "product_hero",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 7,
+    "template_name": "Product-in-hand",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "lifestyle",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "human_usage",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine_journey",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  }
+]

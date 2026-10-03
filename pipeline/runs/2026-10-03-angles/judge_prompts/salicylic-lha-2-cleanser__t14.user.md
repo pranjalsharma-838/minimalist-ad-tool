@@ -3,27 +3,23 @@ Ad type: brand-authored
 The ad, field by field:
 
 <headline>
-Day one to week four with 2% Salicylic Acid + LHA
+AM & PM routine: a 2% Salicylic Acid + LHA cleanser
 </headline>
 <on_image_text>
-Day 1
-After 6 washes
-Week 4
+Day 1 · first use
+Week 2 · daily habit
+Week 4 · still in the routine
 Salicylic Acid + LHA 2% Cleanser
 </on_image_text>
 <footnote>
-90% subjects agreed significant reduction in skin oiliness after 6 washes. 90% subjects agreed skin felt smoother & brighter after 4 weeks. Frames are AI illustrations, not real results.
+Frames are AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
 </footnote>
 <cta>
 Learn more
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. CLM-07 in on_image_text: "After 6 washes"
-1. CLM-07 in footnote: "after 6 washes"
-2. CLM-07 in footnote: "after 4 weeks"
-3. CLM-08 in footnote: "90% subjects"
-4. CLM-08 in footnote: "90% subjects"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] Salicylic Acid + LHA 2% Cleanser

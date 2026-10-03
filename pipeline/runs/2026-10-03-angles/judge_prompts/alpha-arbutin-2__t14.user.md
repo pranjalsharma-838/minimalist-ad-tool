@@ -3,26 +3,23 @@ Ad type: brand-authored
 The ad, field by field:
 
 <headline>
-An 8-week routine with 2% Alpha Arbutin
+AM & PM routine: 2-3 drops of 2% Alpha Arbutin
 </headline>
 <on_image_text>
-Day 1
-Week 4
-Week 8
+Day 1 · first use
+Week 2 · daily habit
+Week 4 · still in the routine
 Alpha Arbutin 2% Face Serum
 </on_image_text>
 <footnote>
-93% subjects said it reduced sun tanning after 4 weeks of use. 90% subjects noticed reduction in hyperpigmentation marks in 8 weeks. Frames are AI illustrations, not real results.
+Frames are AI illustrations of a routine, not results. Use sunscreen during the day for best results. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
 </footnote>
 <cta>
 Learn more
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. CLM-07 in footnote: "after 4 weeks"
-1. CLM-07 in footnote: "in 8 weeks"
-2. CLM-08 in footnote: "93% subjects"
-3. CLM-08 in footnote: "90% subjects"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] Alpha Arbutin 2% Face Serum
