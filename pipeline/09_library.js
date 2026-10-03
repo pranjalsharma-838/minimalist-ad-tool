@@ -68,12 +68,14 @@ for (const b of briefs) {
       "",
       "## Adaptation notes",
       b.adaptation_notes || "",
-    ].filter((l) => l !== "");
+    ];
     fs.writeFileSync(path.join(dest, `${id}.md`), lines.join("\n") + "\n");
     rows.push(`| ${b.product_title} | ${m.template_name || b.layout} | ${b.risk_level} | [${png}](${path.join(b.product_handle, slug(m.template_name || b.layout), png).replace(/\\/g, "/")}) |`);
   }
 }
+// INDEX.md is rebuilt from the whole library on every run (appending duplicated rows on re-runs).
 const idx = "ad_library/INDEX.md";
-if (!fs.existsSync(idx)) fs.writeFileSync(idx, "# Ad library (internal test — Minimalist stand-in)\n\n| Product | Format | Risk | File |\n|---|---|---|---|\n");
-fs.appendFileSync(idx, rows.join("\n") + (rows.length ? "\n" : ""));
+const prev = fs.existsSync(idx) ? fs.readFileSync(idx, "utf8").split("\n").filter((l) => l.startsWith("| ") && !l.startsWith("| Product")) : [];
+const byFile = new Map([...prev, ...rows].map((r) => [r.match(/\[([^\]]+)\]/)?.[1], r]));
+fs.writeFileSync(idx, "# Ad library (internal test — Minimalist stand-in)\n\nEach ad has a description file (`<id>.md`) next to it: product, format, angle, blend sources, copy, cited facts, risk, AI label, image prompt. 4:5 / 9:16 and language versions sit alongside.\n\n| Product | Format | Risk | File |\n|---|---|---|---|\n" + [...byFile.values()].sort().join("\n") + "\n");
 console.log(`${rows.length} ads saved to ad_library/`);

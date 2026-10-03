@@ -19,7 +19,7 @@ None of these are bugs. Each is what happens when the tool does exactly what it 
 ## 2. The standard is wrong, or goes stale, and the tool enforces it confidently
 
 **What happens.** The rules are my derivation, not Minimalist legal's. 12 questions are open; for example, whether "acne" claims are acceptable on a cosmetic in India. The rules also age:
-- ASCI's synthetic-content guideline takes effect around Dec 2026;
+- ASCI's synthetic-content guideline takes effect around Dec 2026 (`scripts/reg_watch.js` now watches ASCI and CDSCO pages and lists new items);
 - CDSCO is issuing notices on cosmetic "treatment" claims;
 - new launches aren't in the 2 Oct 2026 catalog snapshot.
 
@@ -39,12 +39,20 @@ A confident tool enforcing the wrong line fails two ways. It blocks good ads, an
 **What I'd do:**
 - *Before launch:*
   - Keep the model layer's job as judging implied claims, not keywords.
-  - Cap automatic rewrites at one; no loop that rewrites until the scorer is happy.
+  - Cap automatic rewrites at 3 rounds (the agreed loop). A flagged claim may only be *removed or replaced by another cited fact*, never reworded, and the best judged version is kept. There's no open-ended "rewrite until the scorer is happy".
   - Keep the eval's adversarial set: implied cures, strengthened stats, euphemisms.
 - *After launch:*
   - Add every real rejection to that set, and re-run the eval on each rulebook change.
   - Compare the performance of tool-made ads against others. If tool-made ads lose, the standard is too timid and that should be fixed openly, not worked around.
 
 ---
+
+## Seen in the pilot (2026-10-03): evidence for the three modes above
+
+- **The judge is not consistent between runs (mode 1).** The same page wording, "reduces sebum & pores", was passed on the pilot's niacinamide t3 and flagged as a body-function claim on the scale run. An AI judge is a second opinion, not a standard. That's why human review stays mandatory and why every miss should become a rule.
+- **Checking depth matters (mode 1).** Finalize once brought back a version the AI judge had never read, because it looked "cleaner" on rules alone. It's fixed: versions are now compared only at equal checking depth. But it shows how a well-meant "keep the best" step can quietly undo a review.
+- **Live data goes stale (mode 2).** Offers and prices are captured on a date and printed in the footnote. Re-running `collect_offers.js` before every export is a process step, not something the tool enforces yet. One freebie offer had no terms on the site at all; that ad was kept "with warnings" rather than given made-up terms.
+- **Severe formats must not leak (mode 1).** Transformation-journey and before/after creatives carry the AI mark and a Severe risk, and are not exportable until real study photos replace the AI frames. The risk is someone cropping the mark off. The library description repeats the risk level so the warning travels with the file.
+- **Language versions (mode 3).** Translation drifts claims easily; the pilot caught "3rd" written as a word, which broke the numbers lock. Machine checks run on a back-translation, but a fluent reviewer must sign off every non-English version.
 
 Also considered, but not in the top three: a rival-ad pool that drifts toward the most aggressive competitors, because aggressive ads often run longest, which skews what gets adapted. The image model producing backgrounds that imply results through mood alone (spotless surfaces, "glow" lighting). A fetched product page that is itself non-compliant, so the generator repeats the brand's own risky line at scale (partly handled by not trusting product-page wording for block-level rules).

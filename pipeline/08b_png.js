@@ -7,8 +7,9 @@ import { execFileSync } from "node:child_process";
 
 const run = process.argv[2];
 const dir = path.resolve("pipeline", "runs", run, "finals");
-const browser = [`${process.env["ProgramFiles(x86)"]}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Google\\Chrome\\Application\\chrome.exe`].find((p) => fs.existsSync(p));
-if (!browser) throw new Error("No Edge/Chrome found for headless rendering.");
+// Windows, macOS and Linux locations; BROWSER env var overrides.
+const browser = [process.env.BROWSER, `${process.env["ProgramFiles(x86)"]}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Microsoft\\Edge\\Application\\msedge.exe`, `${process.env.ProgramFiles}\\Google\\Chrome\\Application\\chrome.exe`, "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge", "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser", "/usr/bin/microsoft-edge"].find((p) => p && fs.existsSync(p));
+if (!browser) throw new Error("No Edge/Chrome/Chromium found for headless rendering — set BROWSER=/path/to/browser.");
 let n = 0;
 for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg"))) {
   const svg = path.join(dir, f), png = svg.replace(/\.svg$/, ".png");
