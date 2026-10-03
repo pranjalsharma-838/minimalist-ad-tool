@@ -24,7 +24,7 @@ for (const b of briefs) {
     `## layout_zones (${layout})`, JSON.stringify({ ...zones.common, ...(zones[layout] || zones.hero) }),
     "", `## product_footprint`, `${b.product_title}: ${footprint}`,
     "", `## brand_visual`, JSON.stringify(visual),
-    "", `## brief`, `layout ${layout}; headline: ${b.headline}; layout_description: ${b.layout_description || ""}`,
+    "", `## brief`, `layout ${layout}; angle: ${b.angle || "—"}${b.angle === "situation" ? " (situation-first: the scene should evoke the moment named in the headline/copy — no people, no product)" : ""}; hook: ${b.hook_type || "—"}; headline: ${b.headline}; layout_description: ${b.layout_description || ""}`,
     `visual direction (writer's draft prompt, to be recompiled): ${b.image_prompt}`,
   ].join("\n");
   fs.writeFileSync(path.join(runDir, "director_inputs", `${b.source_ad_id}.md`), md);

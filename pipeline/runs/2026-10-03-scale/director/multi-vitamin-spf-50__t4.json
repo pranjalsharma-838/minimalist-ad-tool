@@ -1,0 +1,21 @@
+{
+  "id": "multi-vitamin-spf-50__t4",
+  "rationale": "Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Pale blue surface with water droplets low",
+      "image_prompt": "Create a photographic background image: a top-down view of a pale blue #E5E9EA surface fading to off-white #F4F2EE, with a few small clear water droplets scattered only near the bottom edge. Lighting: bright soft daylight from the upper left at 5600K, droplet shadows falling to the lower right. Background: smooth matte surface, shallow depth. Style: spec sheet, flat and even. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

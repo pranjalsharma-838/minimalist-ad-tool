@@ -1,0 +1,21 @@
+{
+  "id": "niacinamide-10-with-matmarine__t12",
+  "rationale": "Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Pale grey stone plinth, off-white towel edge",
+      "image_prompt": "Create a photographic background image: a straight-on view of a low smooth pale-grey #E5E9EA stone plinth at the very bottom-left corner and the folded edge of a plain off-white #F4F2EE cotton towel at the very bottom-right corner, against a seamless off-white wall. Lighting: soft diffused light from the upper left at 5600K, shadows falling to the lower right. Background: matte seamless wall, subtle plaster texture. Style: bathroom shelf restraint, uncluttered. The top-left band is intentionally empty for headline copy added later. The whole upper 70% of the frame is intentionally empty, an evenly lit open area reserved for photos placed later; any props sit only along the bottom edge. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

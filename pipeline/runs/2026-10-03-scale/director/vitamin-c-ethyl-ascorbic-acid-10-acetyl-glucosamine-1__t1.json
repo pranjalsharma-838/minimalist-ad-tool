@@ -1,0 +1,21 @@
+{
+  "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1",
+  "rationale": "Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "White backdrop with faint warm peach tint",
+      "image_prompt": "Create a photographic background image: a straight-on view of a soft white #FFFFFF seamless backdrop with a faint warm peach #F6E9E0 tint toward the bottom, and one single small smooth pale pebble along the bottom edge. Lighting: gentle even light from the upper left at 5600K at 5200K, shadows falling to the lower right. Background: matte seamless paper, very gentle gradient. Style: clinical editorial, single light source. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

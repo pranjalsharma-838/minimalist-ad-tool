@@ -1,0 +1,21 @@
+{
+  "id": "salicylic-acid-2__t13",
+  "rationale": "Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Off-white surface with faint vertical seam, two pale tones",
+      "image_prompt": "Create a photographic background image: a straight-on view of an off-white surface divided by one very faint vertical seam at the centre into two slightly different pale tones, #F4F2EE on the left and #ECEEEE on the right. Lighting: soft even light from the upper left at 5600K, no hard shadows. Background: matte, seamless, no objects. Style: spec sheet evenness. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

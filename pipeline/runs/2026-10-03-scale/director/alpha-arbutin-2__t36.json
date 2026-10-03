@@ -1,0 +1,21 @@
+{
+  "id": "alpha-arbutin-2__t36",
+  "rationale": "Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Off-white surface with muted sage and cream blocks",
+      "image_prompt": "Create a photographic background image: a smooth off-white #F4F2EE surface with two low flat matte blocks in muted sage #D8DDD0 and cream #EFEBE0 placed along the bottom edge only, camera straight-on. Lighting: gentle natural light from the upper left at 5600K, soft shadows falling to the lower right. Background: seamless off-white #F4F2EE sweep, matte, very gentle gradient. Style: spec sheet geometry, restrained, uncluttered. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}
