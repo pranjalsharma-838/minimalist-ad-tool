@@ -75,7 +75,8 @@ About 22 of the ~90 commits are fixes to something the agent got wrong; the rest
 const redact = (t) => String(t)
   .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "[email]")
   .replace(/\b(sk-ant-[\w-]{10,}|sk-[\w-]{16,}|AIza[\w-]{20,}|ghp_[\w]{20,})/g, "[key]")
-  .replace(/\b(password|passwd|pwd|pass ?code|passcode|pass|otp|pin)\b(\s*(is|:|=|-)?\s*(is|:|=)?\s*)(\S+)/gi, "$1$2[redacted]")
+  // "pass it to …", "pass on …" are verbs, not credentials (2026-10-04: "pass it to it" was shown as "pass [redacted]").
+  .replace(/\b(password|passwd|pwd|pass ?code|passcode|pass|otp|pin)\b(\s*(is|:|=|-)?\s*(is|:|=)?\s*)(?!(?:it|on|to|the|this|that|them|through|along|over)\b)(\S+)/gi, "$1$2[redacted]")
   // First export leaked a bare password typed right after an email address, and a "letters@digits" style
   // password: redact a non-word token after [email], and any letters+symbol+digits token anywhere.
   .replace(/\[email\](\s+)(?!USE\b|and\b|or\b|for\b)(\S*[\d@#$%!&*]\S*)/g, "[email]$1[redacted]")
@@ -92,6 +93,20 @@ for (const f of files) {
   for (const line of fs.readFileSync(f, "utf8").split("\n")) {
     if (!line.trim()) continue;
     let e; try { e = JSON.parse(line); } catch { continue; }
+    // Bug fix (2026-10-04): messages the user typed while a turn was running are logged as "queued_command"
+    // attachments, not user turns, so the export left out instructions such as "us vs them is missing". They are
+    // included now, marked as sent mid-task. Keys use "#q" and don't advance n, so earlier correction keys stay valid.
+    if (e.type === "attachment" && e.attachment?.type === "queued_command" && e.attachment?.origin?.kind === "human") {
+      const ts = e.attachment.timestamp || e.timestamp, key = `${ts}#q`;
+      let q = neutralise(String(e.attachment.prompt || "").trim());
+      if (!q) continue;
+      if (DUMP) DUMP.push({ key, text: redact(q) });
+      const c = CORR[key];
+      if (c && c.length <= Math.max(redact(q).length * 1.15, redact(q).length + 25)) q = c;
+      else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
+      out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", redact(q), "");
+      continue;
+    }
     const role = e.message?.role || e.type;
     if (!["user", "assistant"].includes(role) || e.isMeta || e.isCompactSummary) continue;
     let t = textOf(e.message?.content).trim();
