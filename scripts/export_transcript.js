@@ -50,6 +50,10 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-03 13:34 | Offer box showed raw "Source: … https://…" text; rating numbers overflowed | Contact-sheet eye-check | Sourcing moved to the footnote; value fits its box | b90930d |
 | 10-03 12:36 | First transcript export leaked a pasted password | Leak check run before commit (never committed) | Stronger redaction, verified 0 left | (pre-commit) |
 | 10-03 13:35 | Library files from two runs overwrote each other (same ad ids) | Index row count 32, not 36 | Run-tagged file names, library rebuilt | 69a1075 |
+| 10-03 15:56 | Hero-layout ads with AI people showed **no AI mark** (that layout built its own SVG) | Checking the SVGs after a contact sheet looked right at a glance | Mark drawn by every layout + regression test across all layouts | 05183a0 |
+| 10-03 15:56 | Compliance re-computed risk and dropped the AI flag: AI-people ads came out "low, no AI label" | The writer agent noticed the mismatch | Risk can only go up: the format's own risk and the AI flag are floors | 05183a0 |
+| 10-03 16:03 | Catalog checks fired on *other brands'* products (5/12 over-blocks on the unseen-brand test) | Out-of-distribution eval, scored once | Catalog checks scoped to Minimalist's own ads; post-fix re-run reported separately | 506adce |
+| 10-03 20:39 | On creator/UGC ads the product inset covered the person's face | Contact-sheet eye-check | Person card + product beside it on that layout | 4cb0d6d |
 
 **The human pushed back, and the build changed**
 
@@ -61,8 +65,10 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-02 | "pick more this is very less, more rigorous scraping" | Deeper competitor collection; 74 ads tagged to 48 formats |
 | 10-02 21:30 | "use script based scraping wherever possible" | Offers, reviews and competitor data moved from browser agents to scripts |
 | 10-03 | External review: "is 92% a generalisation test or a self-consistency check?" | Unseen-brand, unseen-channel eval set, labelled blind and scored once (eval/README.md) |
+| 10-03 15:20 | "A lot of them are missing human images… one for each product… the different angles" | AI people filled in for every placeholder; every product × every angle (23 new ads) |
+| 10-03 19:45 | "Clear product and CTA is missing… human usage, journey and lifestyle are very limited… Indian audience, male and female" | Larger product + action CTA on every ad; a people pack (lifestyle, usage, routine journey) per product with balanced Indian casting; existing AI people recast |
 
-About 20 of the ~80 commits are fixes to something the agent got wrong; the rest add features or docs.
+About 22 of the ~90 commits are fixes to something the agent got wrong; the rest add features or docs.
 
 ---
 `;

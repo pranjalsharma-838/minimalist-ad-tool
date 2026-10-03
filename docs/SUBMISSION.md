@@ -45,7 +45,7 @@ The tool errs toward over-flagging, not under-flagging. On unseen brands the mai
 | Deliverable | Where |
 |---|---|
 | Working app (Node only, no installs; Windows/macOS/Linux) | `README.md` |
-| Commit history (~80 commits, about 20 of them fixes to agent mistakes) | `git log` |
+| Commit history (~90 commits, about 22 of them fixes to agent mistakes) | `git log` |
 | Transcript, opening with an index of where things went wrong and how each was caught | `docs/TRANSCRIPT.md` |
 | Prompts as files, including a reusable prompt to build this pipeline for any brand | `prompts/` (start with `00_build_this_pipeline.md`) |
 | One-page decision doc (standard, scope defence, least-sure decision, brief critique) | `docs/DECISIONS.md` |
@@ -60,8 +60,13 @@ The tool errs toward over-flagging, not under-flagging. On unseen brands the mai
   - briefs blending 3 winners with balanced angles (incl. situation-first);
   - live offers and real reviews captured by script;
   - background-only image prompts;
-  - real pack shot composited with a shadow, in 1:1, 4:5 and 9:16.
-- **Output:** `ad_library/` holds **36 ads and 112 PNGs**, each with a description file: 8 pilot ads, 27 scale ads, plus a transformation-journey example rated Severe that carries the AI mark and isn't exportable. Every image was checked by eye.
+  - real pack shot composited with a shadow, in 1:1, 4:5 and 9:16;
+  - AI-generated people (balanced Indian women and men, 20s–40s, everyday Indian settings) with the real pack shot large in front, and a clear action CTA ("Shop now →", product · beminimalist.co).
+- **Output:** `ad_library/` holds **81 unique ads and 247 PNGs**, each with a description file. Open `ad_library/index.html` for the gallery, which filters by product, risk and "AI-generated people".
+  - **Coverage:** every one of the 7 products has every angle (situation-first, concern solved, ingredient science, social proof, routine, texture, offer, transformation journey), plus a people pack each (lifestyle, human usage, routine journey).
+  - **People:** 41 ads feature AI people or skin. All carry the AI-GENERATED mark.
+  - **Not exportable:** 14 ads (Severe formats such as before/after and transformation journeys, and one offer whose freebie terms the site doesn't state).
+  - Every image was checked by eye on contact sheets.
 - **Also built:** Hindi/regional versions with their own checks, an own-results ledger feeding format choice, and a regulatory watch (ASCI AI-content rule, CDSCO).
 
 ## Other known limits

@@ -38,7 +38,7 @@ request ─► [1 Brand context] ─┴► [2 Winners] ─► [3 Trends] ─► 
 - **Nothing is removed.** Every format is ranked. Formats that need assets we don't have are still made, with a risk level and the suggestion to use real photos.
 - **Risk levels:** Low / Medium / High / Severe (`lib/risk.js`).
 - AI-generated people, skin or results always get a visible **"AI-GENERATED — ILLUSTRATIVE"** mark.
-- **The product is never generated.** The real pack shot or its cut-out is composited by the tool.
+- **The product is never generated.** The real pack shot or its cut-out is composited by the tool, large and in front, including on ads with AI-generated people (balanced Indian women and men, always marked).
 - **Every claim traces to a source:** page facts, dated offer captures, verbatim reviews. Offers are quoted exactly with the capture date and "T&C apply". Reviews are quoted verbatim, verified buyers only, with negative/mixed wording filtered out.
 - **Blend, don't copy:** each concept takes one element from each of 3 winners. Angles are balanced across a run.
 - **SPF:** the labelled SPF 50 is the claim; lab results go in the footnote unless lab results are the brief's main theme.

@@ -26,6 +26,10 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-03 13:34 | Offer box showed raw "Source: … https://…" text; rating numbers overflowed | Contact-sheet eye-check | Sourcing moved to the footnote; value fits its box | b90930d |
 | 10-03 12:36 | First transcript export leaked a pasted password | Leak check run before commit (never committed) | Stronger redaction, verified 0 left | (pre-commit) |
 | 10-03 13:35 | Library files from two runs overwrote each other (same ad ids) | Index row count 32, not 36 | Run-tagged file names, library rebuilt | 69a1075 |
+| 10-03 15:56 | Hero-layout ads with AI people showed **no AI mark** (that layout built its own SVG) | Checking the SVGs after a contact sheet looked right at a glance | Mark drawn by every layout + regression test across all layouts | 05183a0 |
+| 10-03 15:56 | Compliance re-computed risk and dropped the AI flag: AI-people ads came out "low, no AI label" | The writer agent noticed the mismatch | Risk can only go up: the format's own risk and the AI flag are floors | 05183a0 |
+| 10-03 16:03 | Catalog checks fired on *other brands'* products (5/12 over-blocks on the unseen-brand test) | Out-of-distribution eval, scored once | Catalog checks scoped to Minimalist's own ads; post-fix re-run reported separately | 506adce |
+| 10-03 20:39 | On creator/UGC ads the product inset covered the person's face | Contact-sheet eye-check | Person card + product beside it on that layout | 4cb0d6d |
 
 **The human pushed back, and the build changed**
 
@@ -37,8 +41,10 @@ The parts that went badly are kept in full; this index points to them. Each fix 
 | 10-02 | "pick more this is very less, more rigorous scraping" | Deeper competitor collection; 74 ads tagged to 48 formats |
 | 10-02 21:30 | "use script based scraping wherever possible" | Offers, reviews and competitor data moved from browser agents to scripts |
 | 10-03 | External review: "is 92% a generalisation test or a self-consistency check?" | Unseen-brand, unseen-channel eval set, labelled blind and scored once (eval/README.md) |
+| 10-03 15:20 | "A lot of them are missing human images… one for each product… the different angles" | AI people filled in for every placeholder; every product × every angle (23 new ads) |
+| 10-03 19:45 | "Clear product and CTA is missing… human usage, journey and lifestyle are very limited… Indian audience, male and female" | Larger product + action CTA on every ad; a people pack (lifestyle, usage, routine journey) per product with balanced Indian casting; existing AI people recast |
 
-About 20 of the ~80 commits are fixes to something the agent got wrong; the rest add features or docs.
+About 22 of the ~90 commits are fixes to something the agent got wrong; the rest add features or docs.
 
 ---
 
@@ -2731,3 +2737,495 @@ The sanitiser works. One wording glitch, "the the target brand", gets an extra r
 ### Assistant · 2026-10-03 09:09
 
 Three things are now running in parallel: the blind labelling of the unseen-brand test, the grammar pass[redacted] and the history scan. While they finish, two decisions only you can make for the GitHub copy:
+
+### Assistant · 2026-10-03 09:25
+
+The labeller is still working. The history scan flagged **2 password-[redacted] strings** somewhere in the history, so I'll find exactly where, with the strings masked:
+
+### Assistant · 2026-10-03 09:25
+
+Here's where things stand: the DeepSeek fixes are in place, and the evaluation numbers and the GitHub copy are still in progress.
+
+**Done since DeepSeek's review** (the critique applied to the core only; every extra kept)
+- **Decision doc:**
+  - shows how the 43 rules split (32 policy/claims, 6 tone, 5 language) and why tone and language are soft by design;
+  - names the file and line where creator ads relax tone rules;
+  - adds a scope paragraph: "if only one thing shipped, it would be the scorer", with the order I'd cut the rest.
+- **Submission summary:** leads with the standard now. The top section says plainly that the AI judge hasn't run live, and how far the evaluation generalises. The 36-ad library comes last, as a module.
+- **Failure modes:** now include the "own page lowers severity → risky claim spreads at scale" risk DeepSeek praised.
+- **Build prompt:** `prompts/00_build_this_pipeline.md` is a clean, reusable prompt for getting this kind of pipeline for any brand. It replaces the client-framed opening.
+- **Transcript:**
+  - opens with a "start here" index: 16 moments where the agent was wrong and how each was caught (with commit IDs), plus 6 where your pushback changed the build;
+  - your 3 client-framed messages are marked neutral restatements;
+  - 48 of your 57 messages have spelling and grammar corrected, disclosed at the top; growth averages under 5% (punctuation and spelling), nothing added;
+  - it contains 0 client names, secrets or emails.
+- **Your GitHub choices:** private repo, commits under your GitHub no-reply email.
+
+**Still running**
+- **The blind labeller on the 12 unseen-brand ads.** It's taking a while because the copy is claim-heavy. When it finishes, I'll lock its labels in a commit, run the judge and scorer once, and fill the real numbers into the docs.
+- **History check:** the scan found the client name on about 150 lines of old file versions and in 1 commit message, your work email on all 78 commits, and **2 password-[redacted] strings**. I'm locating those two now, with the text masked, to see whether either is real.
+
+**Next on my side**
+1. Build the clean GitHub copy: same commits, order and dates, with neutral wording, no secrets and your no-reply email. Then re-scan it to confirm zero hits.
+2. Send the improved version back to DeepSeek.
+
+**Needed from you**
+1. **Your GitHub username** (for the no-reply email).
+2. **An empty private repository** on GitHub (name it as you like) and its link. I'll push to it, and a GitHub sign-in window will pop up for you.
+3. Please change the two passwords that were typed into chat earlier.
+
+### Assistant · 2026-10-03 09:30
+
+Part 1 of the review fixes is committed. Waiting on two background jobs:
+- **The blind labeller:** once its 12 labels land, I'll lock them in a commit, run the scorer once, and fill the numbers into the decision doc and summary.
+- **The trial history rebuild:** once it finishes, I'll check the copy has zero client names and zero work emails.
+
+The GitHub push still needs your GitHub username and an empty private repository from you.
+
+### Assistant · 2026-10-03 09:37
+
+The first full history scan hit its time limit before its last three checks: emails inside files, whether `.env` was ever committed, and mentions of earlier internal pipelines. I'll rerun just those three as faster targeted searches:
+
+### Assistant · 2026-10-03 09:37
+
+I've rerun the three history checks that timed out (emails inside files, whether `.env` was ever committed, and mentions of earlier pipelines) as faster searches in the background.
+
+Also still running in the background:
+- the blind labeller on the 12 unseen-brand ads;
+- the trial rebuild of a clean history copy.
+
+When each finishes I'll fold the result in: real evaluation numbers into the docs, scan results into the history clean-up, and a zero-hit check on the trial copy.
+
+The GitHub push still needs your GitHub username and an empty private repository.
+
+### Assistant · 2026-10-03 09:38
+
+The GitHub sign-in page is open in the automated browser, in the third tab. **Please sign in there**: email or "Continue with Google" both work, plus any verification step.
+
+Tell me when you're done, or I'll notice the next time I check. Meanwhile the blind labeller and the trial history rebuild keep running.
+
+### User · 2026-10-03 09:42
+
+You are in.
+
+### Assistant · 2026-10-03 09:42
+
+You're signed in as **pranjalsharma-838**. The commits will use your private no-reply address. Creating the private repository `minimalist-ad-tool`, after checking the name isn't already taken:
+
+### Assistant · 2026-10-03 09:43
+
+The new-repository page has changed: visibility is no longer a plain "Private" option. Looking at the form's controls:
+
+### Assistant · 2026-10-03 09:43
+
+Visibility is a dropdown currently set to "Public". Switching it to Private, confirming it took, then creating the repository:
+
+### Assistant · 2026-10-03 09:43
+
+The private repository is created (empty for now): **github.com/pranjalsharma-838/minimalist-ad-tool**. Checking on the trial history rebuild and the labeller:
+
+### Assistant · 2026-10-03 09:44
+
+You're signed in, and the private repository exists, still empty: **github.com/pranjalsharma-838/minimalist-ad-tool**. The trial history rebuild is almost done, 68 of 79 commits rewritten.
+
+**What happens next**
+1. **Check the trial copy:** zero client names, zero work emails, links intact.
+2. **Finish the review fixes on the main project:** this waits on the blind labeller, which is still on the 12 unseen-brand ads. Then I commit its labels, score once, and fill the real numbers into the docs.
+3. **Build the final clean copy:** same commits, order and dates, with neutral wording and your no-reply address (`…[email]`). A last commit adds a short README note explaining that the history was sanitised for confidentiality.
+4. **Push it to the private repository.** If Git shows a GitHub sign-in pop-up, please approve it.
+
+### User · 2026-10-03 09:48
+
+Perfect, let's review the final images; open them.
+
+### Assistant · 2026-10-03 09:48
+
+A gallery page is the easiest way to review all 36 ads at once. I'll generate one inside the ad library: every ad, its product, format, angle and risk level, whether it's exportable, and links to the 4:5, 9:16 and Hindi/Tamil versions. Then I'll open it in your normal browser.
+
+### Assistant · 2026-10-03 09:49
+
+The gallery is open in your default browser. I'll render a quick screenshot of it myself too, to confirm it displays correctly:
+
+### Assistant · 2026-10-03 09:49
+
+The review gallery is open in your browser: **all 36 ads on one page**. It's saved as `ad_library/index.html` and included in the project.
+
+**How to use it**
+- **Filter** by product (7 products) or by risk level (low, medium, high, severe) with the buttons at the top.
+- **Click an image** to see it full size. The links under each ad open its **4:5** and **9:16** versions, its **Hindi/Tamil** versions where they exist, and its **description**: copy, cited facts, risk, which competitor ads it blended, and the image prompt.
+
+**Worth a close look while you review**
+- **The 8 ads marked "not exportable"** (use the "severe" filter): the creator, founder/expert, product-in-use, before/after and split-screen formats, plus your transformation journey. They're there to show the format, with placeholders like "[Named expert … consent to be supplied]" until real photos exist.
+- **The offer ads**: "Buy 2, Get 3rd Free" and "Build Your Own Bundle". In the pilot ads the price is bold under the offer; in the scale ads it's smaller grey text. Tell me if you want them all bold.
+- **The niacinamide "Product + ingredients" ad** (pilot): "Vitamin B3 for reducing sebum & pores" passed one judge run and was flagged in another. It's the example of judge inconsistency in the failure-modes doc. I can soften the wording if you'd rather not show it.
+
+Tell me any ads you want changed or dropped, and I'll fix them before the final push.
+
+**Still running:** the blind labeller (12 unseen-brand ads) and the trial history rebuild (68 of 79 commits). Once both are done, I'll fill in the evaluation numbers, build the clean copy and push it to your private repository.
+
+### User · 2026-10-03 09:50
+
+I reviewed, but a lot of them are missing human images, and one even said the before/after is missing. Let's make all the images, one for each product we discussed.
+
+### Assistant · 2026-10-03 09:51
+
+Understood. Since we agreed AI people are fine when labelled, I'll fill in every missing human image. Each one is AI-generated with the visible "AI-GENERATED — ILLUSTRATIVE" mark and stays Severe / not exportable, as before. The product is never drawn: the real pack shot is still placed by the tool, beside or in front of the person.
+
+**The plan**
+1. **Fill the 7 ads that show a placeholder now:**
+   - **Alpha arbutin:** a founder/expert portrait and a product-in-use shot.
+   - **Niacinamide:** before/after skin frames.
+   - **Salicylic serum:** routine-step frames (cleanse, then drops), a UGC-style photo and a creator selfie.
+   - **Vitamin B5:** a product-in-hand shot.
+2. **One human ad for every product.** The cleanser, sunscreen and vitamin C have none yet, so each gets one new ad with a person: cleanser in use, sunscreen in hand outdoors, vitamin C applied by fingertip.
+
+First I need to see how those layouts draw photos today:
+
+### User · 2026-10-03 09:52
+
+I am talking about the different angles.
+
+### Assistant · 2026-10-03 09:53
+
+The map is mostly empty, which doesn't match what we built, so it's probably a field problem rather than missing ads. Checking:
+
+### Assistant · 2026-10-03 09:53
+
+The angles are all there; it was a counting quirk in my check (single matches weren't counted). Re-running the map correctly:
+
+### Assistant · 2026-10-03 09:54
+
+Two of the edits didn't match the file's current text. Reading the top of the file to place them correctly:
+
+### Assistant · 2026-10-03 09:55
+
+The input builder now supports the pairs mode. Writing the 23 gap cells and building their brief inputs into a new run, `2026-10-03-angles`:
+
+### Assistant · 2026-10-03 09:55
+
+The blind labeller didn't actually label anything. It hit a server timeout right at the start, which is why it seemed so slow. Relaunching it with the same instructions, unchanged:
+
+### Assistant · 2026-10-03 09:57
+
+Generating the 7 human images for the existing placeholder ads now in ChatGPT (on the ChatGPT tab), while the brief writer drafts the 23 new ads. First restarting the local prompt server:
+
+### Assistant · 2026-10-03 10:00
+
+The 7 placeholder images are generating in ChatGPT, and the frame-splitting script is ready. Two agents are running: the brief writer on the 23 new angle ads, and the blind labeller on the 12 unseen-brand ads.
+
+Next: split, compose and eye-check the 7 updated ads. Then the 23 new ads go through compliance (rules plus the AI judge), image prompts, about 35 images, composing and an eye-check, before everything lands in the gallery.
+
+### Assistant · 2026-10-03 10:08
+
+The blind labels are in: **3 block, 9 fix, 0 pass[redacted] The three blocks are an azelaic serum sold "for rosacea and cystic acne", "Clears & Prevents Pimples & Acne", and an explicit "Fairness" claim. Labels like these are what the honest test needs. Per protocol, **I'm committing them before the scorer sees these ads**:
+
+### Assistant · 2026-10-03 10:08
+
+Committed (`00fc3e5`). Next, the AI judge's view of those 12 ads, played by a stand-in agent under the same conditions as the original 49: the exact production prompt and schema.
+
+### Assistant · 2026-10-03 10:08
+
+While the judge stand-in works, checking the 7 human images:
+
+### Assistant · 2026-10-03 10:08
+
+2 of the 7 are done so far: the expert portrait and the product-in-use shot. The before/after skin frames are generating now. I'll split, compose and eye-check all 7 as soon as the batch finishes.
+
+### Assistant · 2026-10-03 10:15
+
+6 of the 7 human images are done. The **niacinamide before/after frames failed**: ChatGPT didn't produce them, probably because it declines before/after skin comparisons. I'll retry once with neutral wording later. Meanwhile, splitting the routine-step frames and composing the 6 updated ads:
+
+### Assistant · 2026-10-03 10:20
+
+A fix without a test can come back, so I'm adding one. Every layout rendered with the AI flag must show the mark; this test would have caught the bug.
+
+### Assistant · 2026-10-03 10:20
+
+The test failed only because the layout list isn't exported for tests to use. Exporting it and re-running:
+
+### Assistant · 2026-10-03 10:20
+
+All 41 tests pass[redacted] including the new one, which checks the AI mark on every layout. Recomposing the scale ads and confirming the mark now shows on the two hero ads:
+
+### Assistant · 2026-10-03 10:25
+
+The fix is in place. Re-running the compliance step on the 23 new ads to confirm the person and transformation ads now carry the right risk and AI flag:
+
+### Assistant · 2026-10-03 10:26
+
+While the judge reviews, I'll retry the niacinamide before/after frames in ChatGPT with neutral wording: two photos of the same cheek, one with a natural midday shine and one with a soft matte look.
+
+### Assistant · 2026-10-03 10:33
+
+The decision doc's evidence line is filled in. Now the evaluation table in the submission summary:
+
+### Assistant · 2026-10-03 10:34
+
+You've hit your session limit · resets 7:20pm (Asia/Kolkata)
+
+### Assistant · 2026-10-03 10:35
+
+You've hit your session limit · resets 7:20pm (Asia/Kolkata)
+
+### Assistant · 2026-10-03 10:36
+
+You've hit your session limit · resets 7:20pm (Asia/Kolkata)
+
+### Assistant · 2026-10-03 13:53
+
+The full history exports as a 986 MB stream. Disk space is ample, and the streaming rewrite keeps memory low. Rewriting it, then importing into a fresh repository folder, `minimalist-ad-tool-github`:
+
+### Assistant · 2026-10-03 14:03
+
+The rewrite is taking longer than ten minutes, so it's continuing in the background. Checking its progress:
+
+### Assistant · 2026-10-03 14:04
+
+Adding a quick pre-check too: only text that actually contains the client name or one of those email domains gets rewritten. Everything else passes straight through. Re-running:
+
+### Assistant · 2026-10-03 14:04
+
+A safety check misread the combined command, so I'll split it. The target folder shouldn't exist yet anyway:
+
+### Assistant · 2026-10-03 14:06
+
+History imported: **84 commits**, the same as the original. Now verifying the new repo: identities, dates, and zero client names or emails anywhere in the history.
+
+### Assistant · 2026-10-03 14:07
+
+The judge for the 23 angle briefs is still reading, with no verdicts written yet. Committing the before/after update meanwhile:
+
+### Assistant · 2026-10-03 14:07
+
+Picked up again after the usage-limit pause. The review fixes and the clean GitHub copy are done; the 23 new angle ads are still in progress.
+
+**Done**
+- **Missing people filled:** all 7 placeholder ads now show AI-generated people or skin, each with the visible AI-GENERATED mark and still not exportable. They are the expert portrait, product-in-use, before/after, routine steps, UGC photo, creator selfie and product-in-hand.
+- **Bug found and fixed:** two of those ads were missing the AI mark. A new test now checks the mark on every layout; all 41 tests pass[redacted]
+- **Risk labels fixed:** the compliance step was marking AI-person ads "low risk, no AI label". Risk can now only go up, so the 6 new person ads are High and the 6 transformation journeys Severe.
+- **The honest test on 12 unseen brands:** blind labels were committed before scoring, then scored once.
+  - Rules + AI judge caught **81% of flagged phrases, with no missed blocks**, against 90% on the holdout.
+  - It over-blocked 5 of 12 "fix" ads, mostly through a catalog check that compared other brands' products with Minimalist's catalog. That check now only runs on Minimalist's own ads; the post-fix re-run is reported separately because it's no longer a clean test.
+  - The numbers are in the evaluation write-up, the decision doc and the summary.
+- **Clean GitHub copy, dry run:** 84 commits with the original dates, all signed with your GitHub no-reply address, and **0 client names and 0 emails** anywhere in the history. It's not pushed yet; I'll regenerate it after the last commit.
+
+**In progress**
+1. The AI judge restarted on the 23 new angle briefs. It had been cut off by the usage limit.
+2. Then: compliance retries, background prompts, and about 35 images (backgrounds, people, transformation frames).
+3. Then composing, my eye-check, and adding the 23 ads to the gallery, which brings it to 59 ads.
+
+**Then the wrap-up:** re-export the transcript, regenerate the clean copy and push it to your private GitHub repository (approve the sign-in pop-up if one appears), and send the improved version back to DeepSeek.
+
+One system note: the local prompt server was shut down because memory was low. I've switched to reading prompts straight from files, so nothing needs restarting.
+
+### Assistant · 2026-10-03 14:10
+
+The judge passed 17 of the 23 briefs and sent 6 back, all fix-level with no blocks:
+- **4 transformation journeys:** time markers like "Week 8" read as promised results. That's inherent to the format, which is Severe and not exportable anyway.
+- **Alpha arbutin:** a skin-type list that includes "acne-prone".
+- **Vitamin B5 review ad:** "keeps skin hydrated for long time".
+
+One retry round, then the best versions are kept:
+
+### Assistant · 2026-10-03 14:11
+
+The job-list builder is ready. Waiting on the brief writer's 6 fixes, then:
+1. Keep the best versions.
+2. Write background prompts for the 23 ads.
+3. Generate about 35 images.
+4. Split frames, compose, eye-check, and add them to the library and gallery.
+
+### User · 2026-10-03 14:12
+
+I need to be able to see the AI-generated ads as well. Can I see the unique advertisements made so far?
+
+### Assistant · 2026-10-03 14:12
+
+You'll be able to. One catch first: the gallery you opened earlier was built **before** the AI people were added, so it still shows the old placeholders. I'll rebuild the library from the latest finals, and add an **"AI-generated people" filter and badge** to the gallery so those ads are easy to pick out. Then I'll reopen it.
+
+### Assistant · 2026-10-03 14:13
+
+Rebuilding the library from the latest finals. The library is generated output, so it's safe to recreate:
+
+### Assistant · 2026-10-03 14:13
+
+The refreshed gallery is open. Checking the AI-people count and screenshotting that view, to confirm you'll see the new images rather than placeholders:
+
+### Assistant · 2026-10-03 14:14
+
+The library and gallery update is committed. The 23 new angle ads are next: the brief writer is finishing its 6 fixes, then background prompts, image generation (with the AI people and transformation frames), composing and my eye-check before they join the gallery.
+
+### User · 2026-10-03 14:15
+
+I believe a clear product and CTA are missing. Moreover, the number of images with human usage and journeys is very limited, and lifestyle images are also very limited. We can use an Indian audience, male and female as well.
+
+### Assistant · 2026-10-03 14:16
+
+Clear, and all fair points:
+1. **Clear product and CTA:** in the AI-people ads the real pack shot is a small inset, and the button often says a vague "Learn more".
+2. **Too few people:** human-usage, journey and lifestyle images are scarce.
+3. **Casting:** Indian men and women should appear.
+
+**What I'll do (the earlier rules still hold: AI people carry the visible mark, the product is always the real pack shot)**
+- **Product and CTA, every ad:**
+  - In people ads, the real pack shot becomes a large, clearly lit product in front of the person, not a corner inset.
+  - The CTA button gets bigger and bolder.
+  - Vague "Learn more" becomes **"Shop now"** ("Shop the offer" on offer ads), with **beminimalist.co** shown beside the product name.
+- **A "people pack" for every product (3 new ads each, 21 in total):**
+  - **Lifestyle:** an Indian person in a real Indian setting (getting ready for work, commuting, after the gym, evening at home).
+  - **Human usage:** the product being used: application, in hand, in a routine moment.
+  - **Routine journey:** 3 frames of the same person going through their routine steps (cleanse → apply → finish). These show the routine only, with no "results", so they stay High risk, not Severe.
+- **Casting:** Indian women and men, balanced across products, with varied ages (20s to 40s) and skin tones, in everyday clothes and settings.
+- **Existing AI images:** I'll regenerate the current AI people with Indian models too, so the whole library is consistent.
+
+To save image-generation capacity, the new people ads reuse each product's existing studio background; only the people and frame images get generated, about 42 images in total.
+
+Starting with the product size and CTA, since that changes every ad:
+
+### Assistant · 2026-10-03 14:17
+
+The rendered button and the text the compliance re-check sees must match, so the CTA wording rule goes in the one place both read from:
+
+### Assistant · 2026-10-03 14:17
+
+All 41 tests pass[redacted] Re-rendering three ads to check the new look by eye: a person ad with an AI person, a plain product ad and an offer ad.
+
+### Assistant · 2026-10-03 14:21
+
+The new angles must only be used when explicitly requested, never picked by the automatic balancing, so I'm excluding all four from it:
+
+### Assistant · 2026-10-03 14:22
+
+Writing the 21 people-pack cells with their casting, into a new run, `2026-10-03-people`:
+
+### Assistant · 2026-10-03 14:26
+
+Batch 1 is generating (about 20 minutes). Meanwhile, committing the CTA/product changes, the people-pack setup and the casting files:
+
+### Assistant · 2026-10-03 14:28
+
+The commit is running in the background; the machine is slow under memory pressure. Two jobs are still in progress:
+- **People pack:** the brief writer is drafting the 21 ads.
+- **Image batch 1:** 20 AI images with Indian casting are generating in ChatGPT.
+
+Then I'll split the frames and compose. I'll show you a contact sheet of the new people ads before anything goes into the gallery.
+
+### Assistant · 2026-10-03 14:29
+
+The commit landed, and 4 of the 20 images are done. Spot-checking one now, so a casting problem gets caught early rather than after the whole batch:
+
+### Assistant · 2026-10-03 14:30
+
+Casting looks right: an Indian woman with deep-brown skin applying drops, the same Indian woman's skin across the three transformation frames, and the same Indian man outdoors on three mornings. The images are natural, with no lightening and the same person in every frame.
+
+The batch keeps running (4 of 20 done). When it finishes I'll split the frames, compose all affected ads, and show you a contact sheet. Meanwhile the brief writer is still on the 21 people-pack ads.
+
+### Assistant · 2026-10-03 14:38
+
+The people pack is drafted: **all 21 briefs pass [redacted] rules**, every one is High risk because of the AI people, and every CTA is "Shop now". Next is the independent AI judge on those 21, the same standard as every other ad:
+
+### Assistant · 2026-10-03 14:39
+
+While the judge works, I'll prepare the people pack's images: reusing each product's backgrounds, then listing the 21 person and frame images it needs, which will be batch 2.
+
+### Assistant · 2026-10-03 14:39
+
+Batch 2 is ready: 21 people images for the people pack, with backgrounds already in place. I'll start it the moment batch 1 finishes. The judge is reviewing the 21 people briefs in parallel.
+
+### Assistant · 2026-10-03 14:45
+
+The judge passed **all 21 people-pack briefs**, with no fixes needed. It raised two small usage notes worth acting on, since they affect how people would use the product:
+- The **sunscreen routine journey** doesn't mention reapplying.
+- The **salicylic serum lifestyle ad** says "daily" without the page's "start every alternate day".
+
+Asking the writer to patch both:
+
+### Assistant · 2026-10-03 14:45
+
+Batch 1 is at 14 of 20 images. The writer is patching the two usage lines. When batch 1 finishes, I'll start batch 2 (the 21 people-pack images) and compose the batch-1 ads in parallel.
+
+### Assistant · 2026-10-03 14:48
+
+Both patches are in: **all 21 people-pack ads are approved** by both the rules and the judge, with the usage lines corrected. Waiting for image batch 1 to finish (it was at 14 of 20) before starting batch 2.
+
+### Assistant · 2026-10-03 14:52
+
+**Batch 1 is complete: all 20 images generated.** Starting batch 2 (the 21 people-pack images) right away, and composing the batch-1 ads in parallel:
+
+### Assistant · 2026-10-03 15:05
+
+Fixed: the person now has a clear photo card of their own, with the product beside them. Checking on batch 2, the people-pack images:
+
+### Assistant · 2026-10-03 15:11
+
+The commit is slow because it's adding many large image files, so it's finishing in the background. Batch 2 (21 people-pack images) is generating. Once both are done:
+1. Compose the 21 people ads and eye-check them.
+2. Rebuild the gallery, bringing it to 80 unique ads.
+3. Re-export the transcript, build the clean GitHub copy and push it.
+4. Send the update to DeepSeek.
+
+### Assistant · 2026-10-03 15:11
+
+The git commit was stopped by the system because memory ran critically low. Per the system's rule I won't restart it on my own. First I'm checking whether it left the project in a clean state, and how memory looks now:
+
+### Assistant · 2026-10-03 15:11
+
+Good news: **nothing was lost.** The commit finished before the system stopped the shell. The latest commit ("Angle ads composed…") is in place and no lock file was left behind. Batch 2 is at 12 of 21 images.
+
+Memory is still tight, about **1.1 GB free of 15.6 GB**. The automated Chrome window (about 3.3 GB across its processes) and Edge account for much of it. If you have other heavy apps or browser windows open, closing them would help the rest of the run stay stable. Once batch 2 finishes, I'll compose the 21 people ads, eye-check them and refresh the gallery.
+
+### Assistant · 2026-10-03 15:23
+
+Batch 2 stopped at the browser tool's 30-minute limit for a single long call; the low memory made it slower. Images already saved are kept, so I'll rebuild the list with just the missing ones and run them in smaller chunks that finish well within the limit:
+
+### Assistant · 2026-10-03 15:23
+
+19 of 21 people images were saved before the stop, leaving 2. My count of the rebuilt list shows 1, which doesn't match, so I'm checking the list itself:
+
+### Assistant · 2026-10-03 15:25
+
+The last 2 images (vitamin C lifestyle and usage) are generating. Meanwhile I'm splitting the people pack's 7 routine-journey frame sets:
+
+### Assistant · 2026-10-03 15:25
+
+All 7 routine journeys are split into their 3 frames each. When the last two vitamin C images land, I'll compose the 21 people ads, eye-check them, and refresh the gallery.
+
+### Assistant · 2026-10-03 15:29
+
+One image didn't come through: the vitamin C lifestyle shot timed out waiting for the send button. Retrying just that one:
+
+### Assistant · 2026-10-03 15:32
+
+While the last image generates, I'm composing the people-pack ads that already have their images. The vitamin C lifestyle ad gets composed once its image arrives.
+
+### Assistant · 2026-10-03 15:32
+
+All 21 people-pack images are done, including the vitamin C metro-commute lifestyle shot. Recomposing so it's included, rendering, and building contact sheets for my eye-check:
+
+### Assistant · 2026-10-03 15:34
+
+You've hit your session limit · resets 12:20am (Asia/Kolkata)
+
+### User · 2026-10-03 17:56
+
+Resume.
+
+### User · 2026-10-03 17:57
+
+What part of the final submission needs work?
+
+### Assistant · 2026-10-03 18:00
+
+Committed. Step 2 is the docs catch-up. Your newer messages in the transcript also need the same disclosed grammar pass[redacted] finding which ones don't have corrections yet:
+
+### Assistant · 2026-10-03 18:01
+
+8 newer messages need the same spelling and grammar-only fix. They're short, so I'll correct them directly, using the same rule: fix errors, add nothing.
+
+### Assistant · 2026-10-03 18:01
+
+Next, the transcript's "start here" index gets today's later moments, with commit times taken from git:
+
+### Assistant · 2026-10-03 18:01
+
+One table edit missed because that row's time had already been corrected earlier. Retrying with the current text:
