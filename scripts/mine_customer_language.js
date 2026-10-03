@@ -19,7 +19,7 @@ const CONCERNS = {
   dryness: { rx: /dry(ness)?|tight(ness)?|flaky|stretch(y|es)/i, fix: /hydrat|moisturi[sz]|ceramide|hyaluronic|barrier|humectant/i },
   eye_sting_sweat: { rx: /eyes? (water|burn|sting)|sweat(ing|y)?|melts?|runs? (into|in) (the )?eyes/i, fix: /sweat[- ]resistant|water[- ]resistant|does not run|non[- ]greasy/i },
   slow_results: { rx: /no (results?|difference|change)|didn'?t (see|notice|work)|not working|no effect|waste/i, fix: null },
-  price_value: { rx: /expensive|costly|overpriced|price is high|mehenga|value for money|worth (the|it)/i, fix: /affordable|value|honest pricing|price/i },
+  price_value: { rx: /expensive|costly|overpriced|price is high|mehenga|value for money|worth (the|it)/i, fix: /affordable|value for money|honest(ly)? pric|pocket[- ]friendly/i },
   packaging: { rx: /leak|broken|dropper|pump (not|doesn'?t)|spill|packag(ing|e) (was |is )?(bad|poor|damaged)|seal/i, fix: /dropper|pump|airless|seal/i },
   texture: { rx: /texture|consistency|runny|watery|thick|spreads?/i, fix: /texture|spreads (easily|well)|light|gel|fluid|cream/i },
 };
