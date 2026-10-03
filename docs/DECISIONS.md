@@ -23,7 +23,7 @@
 - **The product is never AI-drawn.** Code composites the real pack shot. AI-generated people appear only in people formats, always with a visible AI mark, and **any model makes the ad Severe**: kept for review, never exported until real, consented photos replace it.
 - **Every claim traces to a source:** page facts, offers captured live (dated, "T&C apply"), or verbatim verified reviews.
 - **Blend, don't copy.** Each concept takes one element from each of 3 competitor winners (static ads running 30+ days); angles are balanced so every product gets every angle.
-- **Formats are never removed; they're risk-rated.** Severe formats (before/after, transformation journey, anything with a model) are not exportable. Comparisons (Us vs Them) are High: "them" must be something the brand's page itself names, with the basis on the creative.
+- **Formats are never removed; they're risk-rated.** Severe formats (before/after, transformation journey, anything with a model) are not exportable. Comparisons (Us vs Them) are High: "them" must be something the brand's page itself names, with the basis on the creative. **48 of 88 ads are not exportable by design:** the AI-model formats need real, consented photos, and the comparisons need a reviewer's sign-off on the proof before any spend. The count is the pre-screen working, not failing.
 - **Retry loop, max 3 rounds.** A flagged claim is removed or replaced, never reworded; the best *judged* version is kept.
 
 ## 3. Scope: why so broad, and what I'd ship if only one thing could

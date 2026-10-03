@@ -65,12 +65,15 @@ The tool errs toward over-flagging, not under-flagging. On unseen brands the mai
   - white canvas, the real pack as the hero;
   - a short title, the product name and one grey line;
   - a quiet "Shop now →" and the "Hide Nothing." sign-off.
-  - **Text budget:** a style check holds every ad to the brand's statics (median 15 words on the image; **88/88 within budget**). Details go to the caption, which is compliance-checked too.
+  - **Text budget:** a style check holds every ad to the brand's statics, and **88/88 are within budget**. Details go to the caption, which is compliance-checked too.
+    - **The ceiling is the statics' observed maximum, not a stricter choice:** 20 words on a single image (their routine card), 30 on list layouts (their carousel explainer cards).
+    - **15 words is the median of our 88 ads after editing,** not a rule.
   - **Side by side:** `research/style_compare.png` shows the brand's statics next to one of our ads per layout.
 - **Output:** `ad_library/` holds **88 unique ads and 268 PNGs**, each with a description file (creative copy, caption, facts, risk). Open `ad_library/index.html` for the gallery, which filters by product, risk and "AI people".
   - **Coverage:** every one of the 7 products has every angle (situation-first, concern solved, ingredient science, social proof, routine, texture, offer, transformation journey). Each product also has a people pack (lifestyle, human usage, routine journey) and an **Us vs Them** comparison.
   - **Models are Severe:** 40 ads use an AI model (person, hands or skin frames). Each is rated Severe and carries the AI-GENERATED mark.
   - **Comparisons:** the 7 Us vs Them ads compare only against something the brand's page itself names. The independent judge flagged all 7 (1 block: "melanin reduction" reads as skin lightening), so they stay High/Severe until a reviewer signs off the proof.
+  - **Open question for the brand team:** does Minimalist do comparison ads at all? Its philosophy rejects fear-based and exaggerated marketing, but not comparison as such, and its own Amazon gallery runs a "vs Other Vitamin C Serums" table. The judge's 6 "implied denigration" flags suggest only like-for-like, study-based comparisons fit the brand. If the answer is no, the format is dropped. Its machinery (rows citing a page fact for both sides, the basis on the creative) carries over to "old way / new way" habit comparisons.
   - **Not exportable:** 48 ads: every model and Severe ad, the comparisons, and ads kept with open warnings.
   - Every image was checked by eye on contact sheets.
 - **Also built:** Hindi/regional versions with their own checks, an own-results ledger feeding format choice, and a regulatory watch (ASCI AI-content rule, CDSCO).

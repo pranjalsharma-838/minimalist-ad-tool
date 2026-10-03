@@ -25,6 +25,8 @@ Source: Minimalist's **static** ads still active on 4 Oct 2026 after **52–98 d
 ## Rules for new ads (house style for Meta statics)
 
 1. **On-image text budget:** one title (2–6 words, usually product + % or one plain idea), one supporting line (≤ 8 words), optionally one tag (≤ 3 words, only a fact the page states). **No bullet lists on the image.**
+   - **The style check (`scripts/style_check.js`) uses the statics' observed maximum as its ceiling,** so it never tightens beyond the evidence: ≤ 20 words on single-image layouts (their routine card is about 20) and ≤ 30 on list/step layouts (their carousel explainer cards run about 30).
+   - **Headlines are ≤ 8 words** (exact study quotes exempt). Footnotes are ≤ 2 lines.
 2. **Everything else goes in the caption** (`caption` / primary text): how to use, extra benefits, rating, reviews, sourcing and dates. The caption is compliance-checked like the image.
 3. **Footnote only when the law needs it on the creative:** offer condition + "T&C apply", the SPF lab qualifier, a study qualifier for a stat shown on the image, the basis of a comparison, or "AI illustration" for AI-made results. Two lines at most.
 4. **The product fills 50–65% of the frame.** Use a texture swatch or a hand where it fits; white or very light grey backgrounds; soft daylight.

@@ -47,6 +47,11 @@
 
 The remaining over-severity comes mostly from acne wording. The regulatory file marks this as an open legal question; the reviewer used *fix*, and the rules plus judge used *block*.
 
+**How the headline numbers relate** (asked in external review, 2026-10-04):
+- **92% → 88%:** an earlier version of this file reported **92%** phrase recall. That covered the **49 cases** that existed then (tuning, holdout, synthetic: 72 of 78 phrases). Adding the **12 unseen-brand cases** (81%, 44 of 54) brings all **61 cases** to **88%** (116 of 132). The drop comes from a harder test set, not a weaker scorer.
+- **The 2026-10-04 rule change** (CLM-12 now also catches "vs", "unlike X", "higher than") changed no result on any split: same cases, same numbers.
+- **What counts as generalisation evidence:** the scorer catching all 7 of our own Us vs Them ads is a self-consistency check. The evidence that it generalises is the OOD split above: other brands, another channel, labelled blind, scored once.
+
 Full per-case output:
 - frozen: `results/summary_ood_frozen.md`, `results/details_ood_frozen.json`;
 - current: `results/summary.md`, `results/details.json`.
