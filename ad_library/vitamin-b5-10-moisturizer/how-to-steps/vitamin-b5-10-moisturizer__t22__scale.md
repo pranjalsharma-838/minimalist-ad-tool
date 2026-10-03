@@ -13,6 +13,7 @@
 | Placements | 1:1 vitamin-b5-10-moisturizer__t22.png · 4:5 vitamin-b5-10-moisturizer__t22.4x5.png · 9:16 vitamin-b5-10-moisturizer__t22.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
+| AI imagery | no — real pack shot on an AI background (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |

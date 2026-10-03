@@ -13,6 +13,7 @@
 | Placements | 1:1 salicylic-acid-2__t14.png · 4:5 salicylic-acid-2__t14.4x5.png · 9:16 salicylic-acid-2__t14.9x16.png |
 | Language versions | none |
 | Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Fix before review (rules only) |
 | Retry rounds | 1 |
 | Run | 2026-10-03-transformation |

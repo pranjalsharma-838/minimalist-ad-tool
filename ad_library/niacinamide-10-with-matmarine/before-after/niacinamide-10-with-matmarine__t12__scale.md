@@ -13,6 +13,7 @@
 | Placements | 1:1 niacinamide-10-with-matmarine__t12.png · 4:5 niacinamide-10-with-matmarine__t12.4x5.png · 9:16 niacinamide-10-with-matmarine__t12.9x16.png |
 | Language versions | none |
 | Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |

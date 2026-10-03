@@ -45,6 +45,8 @@ for (const b of briefs) {
       `| Placements | 1:1 ${id}.png${fs.existsSync(path.join(runDir, "finals", `${id}.4x5.png`)) ? ` · 4:5 ${id}.4x5.png · 9:16 ${id}.9x16.png` : ""} |`,
       `| Language versions | ${fs.existsSync(path.join(runDir, "translations")) ? fs.readdirSync(path.join(runDir, "translations")).filter((f) => f.startsWith(b.source_ad_id + ".") && /\.[a-z]{2}\.json$/.test(f)).map((f) => f.slice(-7, -5)).join(", ") || "none" : "none"} |`,
       `| Risk level | **${b.risk_level}**${b.ai_label_required ? " · carries the AI-GENERATED — ILLUSTRATIVE mark" : ""} |`,
+      // Read from the composed creative itself, so the description can't disagree with what the ad shows.
+      `| AI imagery | ${fs.existsSync(path.join(runDir, "finals", `${id}.svg`)) && fs.readFileSync(path.join(runDir, "finals", `${id}.svg`), "utf8").includes("AI-GENERATED") ? "yes — AI-generated people/skin, shown with the visible AI-GENERATED mark" : "no — real pack shot on an AI background (no AI people)"} |`,
       `| Compliance verdict | ${b.verdict?.label || ""} (${b.coverage?.model ? "rules + AI judge" : "rules only"}) |`,
       `| Retry rounds | ${b.rounds_tried || 1} |`,
       `| Run | ${run} |`,

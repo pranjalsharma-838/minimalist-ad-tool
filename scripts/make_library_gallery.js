@@ -23,14 +23,15 @@ const ads = mains.map((png) => {
     title: (md.match(/^# (.*)$/m) || [, path.basename(base)])[1], product: field(md, "Product").replace(/\s*\(https?:[^)]*\)/, ""),
     format: field(md, "Format").replace(/ · layout.*$/, ""), angle: field(md, "Angle / hook"), risk, verdict, run,
     exportable: risk !== "severe" && !/warning/i.test(verdict),
+    ai: /^yes/i.test(field(md, "AI imagery")),
     extras: extras.map((x) => ({ f: path.relative(ROOT, x.f).replace(/\\/g, "/"), tag: { "4x5": "4:5", "9x16": "9:16", hi: "Hindi", ta: "Tamil" }[x.tag] || x.tag })),
   };
 }).sort((a, b) => a.product.localeCompare(b.product) || a.format.localeCompare(b.format));
 const products = [...new Set(ads.map((a) => a.product))];
-const card = (a) => `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}">
+const card = (a) => `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}">
   <a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a>
   <div class="meta">
-    <div class="row"><span class="risk ${a.risk}">${a.risk}</span>${a.exportable ? '<span class="ok">exportable after review</span>' : '<span class="no">not exportable</span>'}<span class="run">${esc(a.run)}</span></div>
+    <div class="row"><span class="risk ${a.risk}">${a.risk}</span>${a.exportable ? '<span class="ok">exportable after review</span>' : '<span class="no">not exportable</span>'}${a.ai ? '<span class="aib">AI people</span>' : ""}<span class="run">${esc(a.run)}</span></div>
     <h3>${esc(a.format)}</h3>
     <p class="prod">${esc(a.product)}</p>
     ${a.angle && a.angle !== "— · hook: —" ? `<p class="angle">${esc(a.angle)}</p>` : ""}
@@ -52,18 +53,19 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:
 .links a{color:var(--ink)}.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12px}
 .risk{color:#fff;border-radius:6px;padding:1px 7px;text-transform:uppercase;font-weight:700;letter-spacing:.5px}
 .risk.low{background:var(--low)}.risk.medium{background:var(--medium)}.risk.high{background:var(--high)}.risk.severe{background:var(--severe)}
-.ok{color:var(--low)}.no{color:var(--severe);font-weight:700}.run{margin-left:auto;color:var(--muted)}
+.aib{background:#111;color:#fff;border-radius:6px;padding:1px 7px;font-weight:700}.ok{color:var(--low)}.no{color:var(--severe);font-weight:700}.run{margin-left:auto;color:var(--muted)}
 </style></head><body>
 <header><h1>Ad library review</h1><p>${ads.length} ads · internal test (Minimalist is the test brand) · every claim cites a source; the product is the real pack shot, never AI-drawn. Click an image for full size; 4:5 / 9:16 / language versions and each ad's description are linked under it.</p></header>
 <div class="filters" id="f"><button class="on" data-p="*">All products</button>${products.map((p) => `<button data-p="${esc(p)}">${esc(p)}</button>`).join("")}
-<span style="width:16px"></span><button class="on" data-r="*">All risk</button>${["low", "medium", "high", "severe"].map((r) => `<button data-r="${r}">${r}</button>`).join("")}</div>
+<span style="width:16px"></span><button class="on" data-r="*">All risk</button>${["low", "medium", "high", "severe"].map((r) => `<button data-r="${r}">${r}</button>`).join("")}<span style="width:16px"></span><button class="on" data-a="*">All imagery</button><button data-a="yes">AI-generated people (${ads.filter((a) => a.ai).length})</button><button data-a="no">No AI people</button></div>
 <main id="g">${ads.map(card).join("\n")}</main>
 <script>
-let P="*",R="*";const f=document.getElementById("f");
+let P="*",R="*",A="*";const f=document.getElementById("f");
 f.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
 if(b.dataset.p){P=b.dataset.p;f.querySelectorAll("[data-p]").forEach(x=>x.classList.toggle("on",x===b))}
 if(b.dataset.r){R=b.dataset.r;f.querySelectorAll("[data-r]").forEach(x=>x.classList.toggle("on",x===b))}
-document.querySelectorAll(".card").forEach(c=>{c.style.display=(P==="*"||c.dataset.product===P)&&(R==="*"||c.dataset.risk===R)?"":"none"})});
+if(b.dataset.a){A=b.dataset.a;f.querySelectorAll("[data-a]").forEach(x=>x.classList.toggle("on",x===b))}
+document.querySelectorAll(".card").forEach(c=>{c.style.display=(P==="*"||c.dataset.product===P)&&(R==="*"||c.dataset.risk===R)&&(A==="*"||c.dataset.ai===A)?"":"none"})});
 </script></body></html>`;
 fs.writeFileSync(path.join(ROOT, "index.html"), html);
 console.log(`${ads.length} ads → ad_library/index.html (${ads.filter((a) => !a.exportable).length} not exportable)`);

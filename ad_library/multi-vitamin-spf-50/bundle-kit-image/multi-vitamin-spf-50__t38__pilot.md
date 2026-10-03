@@ -13,6 +13,7 @@
 | Placements | 1:1 multi-vitamin-spf-50__t38.png · 4:5 multi-vitamin-spf-50__t38.4x5.png · 9:16 multi-vitamin-spf-50__t38.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
+| AI imagery | no — real pack shot on an AI background (no AI people) |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 3 |
 | Run | 2026-10-03-pilot |

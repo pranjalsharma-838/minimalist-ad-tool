@@ -13,6 +13,7 @@
 | Placements | 1:1 alpha-arbutin-2__t44.png · 4:5 alpha-arbutin-2__t44.4x5.png · 9:16 alpha-arbutin-2__t44.9x16.png |
 | Language versions | none |
 | Risk level | **severe** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (rules + AI judge) |
 | Retry rounds | 2 |
 | Run | 2026-10-03-scale |
