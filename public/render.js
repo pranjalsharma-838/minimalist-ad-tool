@@ -28,6 +28,17 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+// Visual length in "Latin character" units. Eye-check (Tamil pilot, 2026-10-03): Tamil/Telugu/Bengali glyph
+// clusters are wider than Latin letters, so counting code points overflowed headlines, pills and the CTA.
+export function vlen(text) {
+  let n = 0;
+  for (const ch of String(text || "")) {
+    const c = ch.codePointAt(0);
+    n += c >= 0x0b80 && c <= 0x0d7f ? 1.3 /* Tamil, Telugu, Kannada, Malayalam */ : c >= 0x0980 && c <= 0x09ff ? 1.15 /* Bengali */ : c >= 0x0900 && c <= 0x097f ? 1.0 : 1;
+  }
+  return n;
+}
+
 // Greedy wrap using an average glyph width; good enough for a sans at these sizes.
 export function wrap(text, fontPx, maxPx, avg = 0.52) {
   const maxChars = Math.max(4, Math.floor(maxPx / (fontPx * avg)));
@@ -36,7 +47,7 @@ export function wrap(text, fontPx, maxPx, avg = 0.52) {
   let cur = "";
   for (const w of words) {
     if (!cur) cur = w;
-    else if ((cur + " " + w).length <= maxChars) cur += " " + w;
+    else if (vlen(cur + " " + w) <= maxChars) cur += " " + w;
     else {
       lines.push(cur);
       cur = w;
@@ -167,7 +178,7 @@ function layout(spec, s) {
   if (spec.cta) {
     parts.push(`<rect x="${pad}" y="${bandY + 32}" width="260" height="68" rx="34" fill="${C.ink}"/>`);
     parts.push(
-      `<text x="${pad + 130}" y="${bandY + 76}" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`
+      `<text x="${pad + 130}" y="${bandY + 76}" text-anchor="middle" font-family="${FONT}" font-size="${Math.min(26, Math.floor(220 / Math.max(1, vlen(spec.cta) * 0.56)))}" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`
     );
   }
   if (spec.productName) {
@@ -216,7 +227,7 @@ function chromeEnd(spec, parts, bottom) {
   parts.push(`<line x1="${PAD}" y1="${BAND_Y}" x2="${w - PAD}" y2="${BAND_Y}" stroke="${C.rule}" stroke-width="2"/>`);
   if (spec.cta) {
     parts.push(`<rect x="${PAD}" y="${BAND_Y + 32}" width="260" height="68" rx="34" fill="${C.ink}"/>`);
-    parts.push(`<text x="${PAD + 130}" y="${BAND_Y + 76}" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`);
+    parts.push(`<text x="${PAD + 130}" y="${BAND_Y + 76}" text-anchor="middle" font-family="${FONT}" font-size="${Math.min(26, Math.floor(220 / Math.max(1, vlen(spec.cta) * 0.56)))}" font-weight="600" fill="#FFFFFF">${esc(spec.cta)}</text>`);
   }
   if (spec.productName) parts.push(T(wrap(spec.productName, 22, 560), 372, BAND_Y + 74, 22, 28, `fill="${C.muted}"`));
   if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
@@ -387,6 +398,13 @@ LAYOUTS.offer = (spec, s) => {
     parts.push(T([`Valid till ${o.valid_till}`], PAD, y + Math.round(40 * s), Math.round(22 * s), 28, `fill="${C.muted}"`));
     y += Math.round(40 * s);
   }
+  // Eye-check fix (pilot): the price (sale price + MRP, in proof_points) wasn't drawn although the footnote
+  // referred to it. Price lines are shown bold, right under the offer and its condition.
+  for (const pp of (spec.proofPoints || []).filter((p) => /\b(Rs\.?|₹|MRP)\s?\d/i.test(p))) {
+    const pl = wrap(pp, Math.round(30 * s), 490);
+    parts.push(T(pl, PAD, y + Math.round(52 * s), Math.round(30 * s), Math.round(38 * s), `font-weight="700" fill="${C.ink}"`));
+    y += Math.round(52 * s) + (pl.length - 1) * Math.round(38 * s);
+  }
   if (spec.subhead) {
     const sub = wrap(spec.subhead, Math.round(23 * s), 490);
     parts.push(T(sub, PAD, y + Math.round(48 * s), Math.round(23 * s), Math.round(30 * s), `fill="${C.muted}"`));
@@ -420,7 +438,7 @@ LAYOUTS.before_after = (spec, s) => {
 // Now capped at maxW; long text wraps to 2 lines, then the font shrinks until it fits.
 const pill = (x, y, text, s, maxW = 440) => {
   let fs_ = Math.round(22 * s), lines = [text];
-  const width = (t) => Math.round(t.length * fs_ * 0.56) + 44;
+  const width = (t) => Math.round(vlen(t) * fs_ * 0.56) + 44;
   if (width(text) > maxW) {
     const words = text.split(/\s+/);
     let best = null;
