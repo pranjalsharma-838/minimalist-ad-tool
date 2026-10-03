@@ -1,0 +1,44 @@
+[
+ {
+  "id": "alpha-arbutin-2__t44",
+  "kind": "person",
+  "out": "alpha-arbutin-2__t44.person.png",
+  "prompt": "Create a photorealistic photo: a portrait of a calm Indian woman in her early 40s with medium-brown skin, sitting by a window in a plain, softly lit room, simple light-coloured top, looking slightly off camera, natural unretouched skin, empty hands. No lab coat, stethoscope, badge or credentials. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1."
+ },
+ {
+  "id": "alpha-arbutin-2__t8",
+  "kind": "person",
+  "out": "alpha-arbutin-2__t8.person.png",
+  "prompt": "Create a photorealistic photo: a close-up of an Indian woman in her early 30s with deep-brown skin, her fingertips gently pressing a few clear drops onto her cheek, a softly blurred bathroom behind, soft daylight from the upper left, natural skin texture with visible pores. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1."
+ },
+ {
+  "id": "niacinamide-10-with-matmarine__t12",
+  "kind": "frames",
+  "out": "niacinamide-10-with-matmarine__t12.frames.png",
+  "prompt": "Create a photorealistic wide image made of two equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. Two close-ups of the same Indian man in his mid 20s with medium-brown skin, cheek area in frame, identical framing and soft daylight from the upper left. Left panel: photographed at midday with a natural dewy shine. Right panel: photographed in the morning with a soft matte look. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image."
+ },
+ {
+  "id": "salicylic-acid-2__t13",
+  "kind": "frames",
+  "out": "salicylic-acid-2__t13.frames.png",
+  "prompt": "Create a photorealistic wide image made of two equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. The same Indian woman in her early 20s with light-brown skin, in both panels. Left panel: splashing water onto her face at a bathroom basin, face partly visible. Right panel: a close-up of her fingertips gently pressing a few clear drops onto her cheek. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image."
+ },
+ {
+  "id": "salicylic-acid-2__t30",
+  "kind": "person",
+  "out": "salicylic-acid-2__t30.person.png",
+  "prompt": "Create a photorealistic photo: a casual, natural smartphone-style photo of an Indian man in his early 20s with medium-brown skin in a softly lit bathroom at night, gently patting his face dry with a small towel, relaxed expression, warm low evening light, no on-screen interface elements. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1."
+ },
+ {
+  "id": "salicylic-acid-2__t31",
+  "kind": "person",
+  "out": "salicylic-acid-2__t31.person.png",
+  "prompt": "Create a photorealistic photo: a natural front-camera selfie of a smiling Indian woman in her mid 20s with deep-brown skin in a softly lit room, casual top, natural unretouched skin with visible texture, light everyday makeup, holding nothing, no stickers or filters. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1."
+ },
+ {
+  "id": "vitamin-b5-10-moisturizer__t7",
+  "kind": "person",
+  "out": "vitamin-b5-10-moisturizer__t7.person.png",
+  "prompt": "Create a photorealistic photo: a close-up of the open hand of an Indian man in his early 30s with medium-brown skin, palm up and empty, held out toward the camera against a soft neutral off-white background, soft daylight from the upper left. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1."
+ }
+]

@@ -1,0 +1,86 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "timeline",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t22",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "Evening routine: serums, then the moisturizer",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations of a routine, not results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ],
+    "frames": [
+      [
+        "F13"
+      ],
+      [
+        "F13"
+      ],
+      [
+        "F13"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · Apply serums / Step 3 · Massage in), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a pale warm-grey wall above a narrow stone vanity shelf, soft warm lamp light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: use after cleansing, toning and applying all serums, then massage into face and neck (F13), AM & PM (F14). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and every repair, barrier and wound-healing line and study stat on the page. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+  "angle": "routine_journey",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "headline that names the routine steps in order"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "'Step N' labels sitting beside a person"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "numbered cards in a row, one action each"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Step 1 · Cleanse & tone",
+      "cites": [
+        "F13"
+      ]
+    },
+    {
+      "label": "Step 2 · Apply serums",
+      "cites": [
+        "F13"
+      ]
+    },
+    {
+      "label": "Step 3 · Massage in",
+      "cites": [
+        "F13"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "The same Indian man in his early 30s with light-brown skin, his evening routine at his home bathroom basin, in all three panels wearing the same plain white cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same plain wall and the same soft warm lamp light from the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: his fingertips are pressed lightly against his cheek, as if applying a few drops, his other hand resting on the basin edge. Panel 3: both hands massage his face and neck in slow upward strokes, nothing visible on his hands. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

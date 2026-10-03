@@ -1,0 +1,2048 @@
+[
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "alpha-arbutin-2__t22",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "Cleanse. 2-3 drops. Spread in gentle circles.",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. Use sunscreen during the day. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F19"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F19",
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F19"
+        ],
+        [
+          "F19"
+        ],
+        [
+          "F19"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · 2-3 drops / Step 3 · Gentle circles), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale warm-grey plaster wall above a narrow stone basin shelf, soft warm evening light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline, three frames of the same person). Frame labels come straight from the page's usage facts: after cleansing & toning, 2-3 drops, spread with gentle circular motion (F19); sunscreen in the day (F19) sits in the footnote because the frames show the evening. Kept: headline that names the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names ('Treat' reads as a treatment claim), concern-led headline, the happy-model result feel, swatches and the checklist. No before/after, no time-to-result labels, no visible skin change: the frames show a routine, not a result. The frames are AI-generated (High risk, labelled); real consented photos would lower the risk. Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse & tone",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Step 2 · 2-3 drops",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Step 3 · Gentle circles",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian woman in her mid 20s with light-brown skin, her evening routine at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair tied back, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft warm light from the upper left. Panel 1: she rinses her face with both cupped hands over the basin, eyes closed, then pats it dry with a plain white towel. Panel 2: her fingertips are pressed lightly against her cheek, as if pressing in a few drops, her other hand resting on the basin edge. Panel 3: both palms move across her cheeks in slow, gentle circles, her expression calm. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "alpha-arbutin-2__t6",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "Evening wind-down: 2-3 drops after cleansing",
+    "subhead": "Apply after cleansing & toning. Use sunscreen during the day.",
+    "proof_points": [
+      "AM & PM, every day",
+      "Alpha Arbutin from Alfa Aesar, USA",
+      "Suitable for 18+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F19",
+        "F20"
+      ],
+      "subhead": [
+        "F19"
+      ],
+      "proof_points": [
+        [
+          "F20"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a calm off-white plaster wall in soft warm evening window light from the upper left, with a low pale-wood shelf edge along the lower left and one trailing green plant leaf at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (evening at home). The moment is placed by F19 (after cleansing & toning, 2-3 drops, sunscreen in the day) and F20 (AM & PM), so the evening framing is within the page and nothing implies a skin result. Kept: short ingredient/fact lines under the headline (Dot & Key), a calm editorial scene with a minimal message (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'ONE serum for X' benefit headline and NEW bubble (no launch fact), 'India's 1st' leadership claim (no objective source), hydration/brightening tag cards, and the page's pigmentation, skin-lightening and benchmark-comparison wording (F2, F3, F5, F6, F13, F26, F27) and consumer-study stats (F22-F24). The person is AI-generated (High risk, labelled); a real, consented photo would lower the risk. Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her early 30s with medium-brown skin, winding down in the evening in her Bengaluru apartment: she sits curled into the corner of a sofa beside a tall window, a soft cotton throw over her knees, the blue-grey dusk and a few distant apartment lights outside, a leafy indoor plant and a cane side table with a plain steel tumbler beside her. She wears a simple pale cotton kurta with her dark hair loosely tied back, one hand resting relaxed in her lap, her expression calm and unhurried as she gazes out of the window. Warm lamp light from the upper left blends with the last of the daylight, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no heavy makeup or jewellery, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "alpha-arbutin-2__t7",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "One daily step: 2-3 drops, AM & PM",
+    "subhead": "Apply after cleansing & toning, then spread with a gentle circular motion.",
+    "proof_points": [
+      "Use sunscreen during the day",
+      "Suitable for 18+ years of age",
+      "Alpha Arbutin from Alfa Aesar, USA"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F19",
+        "F20"
+      ],
+      "subhead": [
+        "F19"
+      ],
+      "proof_points": [
+        [
+          "F19"
+        ],
+        [
+          "F11"
+        ],
+        [
+          "F8"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall with soft morning daylight from a frosted window at the upper left, a narrow pale stone ledge along the bottom edge and one folded grey cotton towel at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. The copy is the page's own usage: 2-3 drops after cleansing & toning, gentle circular motion and sunscreen in the day (F19), AM & PM (F20). Kept: open hand at the moment of use with a single-step headline (Chemist at Play), pack held in the hand against a plain bright backdrop, the pack composited in front of the photo by code (Dot & Key), usage told as short lines (Foxtale). Dropped: the '#1 daily duo' superlative, the dated 5-star review card (reviews only appear in review layouts), the timed-fix headline, any tan/pigmentation promise, and the page's skin-lightening, benchmark and stat wording. The person is AI-generated (High risk, labelled); real in-hand photos would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "open hand at the moment of use, headline naming one daily step"
+      },
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "pack held in the hand against a plain bright backdrop (pack composited in front of the photo)"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "how-to-use told as a short sequence of lines"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his early 40s with deep-brown skin and a short, neatly kept greying beard, standing at a bathroom basin in the morning, framed from the waist up in a plain white cotton vest with a folded towel over one shoulder. His right hand is held out open at chest height, palm up, completely empty and relaxed, as if about to receive something, while his left hand rests on the edge of the basin; he looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left falls across an off-white tiled wall behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and the grey of his beard rendered true to life, nothing implying a skin result, and nothing in his hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "multi-vitamin-spf-50__t22",
+    "product_title": "SPF 50 Sunscreen",
+    "headline": "Morning routine: cleanse, moisturise, then SPF 50",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations, not results. Apply at least 15 minutes before sun exposure; reapply in case of continued sun exposure. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F2",
+        "F20",
+        "F21"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F20",
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F20"
+        ],
+        [
+          "F20"
+        ],
+        [
+          "F2",
+          "F21"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse / Step 2 · Moisturise / Step 3 · SPF 50, every AM), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale off-white tiled bathroom wall above a narrow white shelf, soft morning daylight from a frosted window at the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come from the page's usage: on a cleansed face, after serums and moisturisers (F20), AM every day (F21), labelled SPF 50 (F2). The footnote carries the page's 'at least 15 minutes before sun exposure' and 'reapply in case of continued sun exposure' (F20), the latter added per the judge note. Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern headline, happy-model result feel, any claim of protection from sun damage or skin repair (F3, F6), the lab value (F16). No before/after, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse",
+        "cites": [
+          "F20"
+        ]
+      },
+      {
+        "label": "Step 2 · Moisturise",
+        "cites": [
+          "F20"
+        ]
+      },
+      {
+        "label": "Step 3 · SPF 50, every AM",
+        "cites": [
+          "F2",
+          "F21"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian man in his mid 20s with light-brown skin, his morning routine before work at his home bathroom basin, in all three panels wearing the same plain white cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning daylight from a frosted window at the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: both palms smooth lightly over his cheeks and jaw in slow strokes, nothing visible on his hands. Panel 3: his fingertips spread evenly across his cheeks and forehead and then down his neck, his gaze calm and ready for the day ahead. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "multi-vitamin-spf-50__t6",
+    "product_title": "SPF 50 Sunscreen",
+    "headline": "Before the ride: Broad Spectrum SPF 50, PA++++",
+    "subhead": "AM, every day: apply at least 15 minutes before sun exposure.",
+    "proof_points": [
+      "4 UV filters for UVA & UVB protection",
+      "Reapply with continued sun exposure",
+      "No visible white cast on application"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F2",
+        "F21"
+      ],
+      "subhead": [
+        "F20",
+        "F21"
+      ],
+      "proof_points": [
+        [
+          "F5"
+        ],
+        [
+          "F20"
+        ],
+        [
+          "F8"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large 'SPF 50' figure, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale sunlit off-white wall in bright, soft morning daylight from the upper left, with a faint warm-grey shadow gradient towards the lower right and a narrow strip of pale stone paving along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (a Mumbai two-wheeler commute). The moment fits the page: AM, every day (F21) and apply at least 15 minutes before sun exposure, reapply with continued sun exposure (F20). The labelled SPF 50 / PA++++ (F2) is the claim; the lab-measured value (F16) is deliberately not used (house rule: lab results only in the footnote, and only when needed). Kept: short fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 2-in-1 and dual-chamber features (not ours), moisturising/repair wording (F3, F6) and the pregnancy FAQ. The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his early 30s with medium-brown skin, about to commute on a two-wheeler through Mumbai in bright morning daylight: he stands beside a parked scooter on a quiet side street, a plain helmet held in one hand at his side, wearing a light cotton shirt with the sleeves rolled once and a small backpack on one shoulder, looking ahead with a relaxed, ready expression. Behind him a softly out-of-focus lane with a pastel apartment wall and the edge of a leafy tree, no signs or number plates visible. Strong but soft daylight from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no sunburn or tan lines, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "multi-vitamin-spf-50__t8",
+    "product_title": "SPF 50 Sunscreen",
+    "headline": "Apply generously and evenly on face and neck",
+    "subhead": "Use on a cleansed face, after your serums and moisturisers.",
+    "proof_points": [
+      "AM, every day",
+      "Reapply with continued sun exposure",
+      "Broad Spectrum SPF 50, PA++++"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F20"
+      ],
+      "subhead": [
+        "F20"
+      ],
+      "proof_points": [
+        [
+          "F21"
+        ],
+        [
+          "F20"
+        ],
+        [
+          "F2"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large 'SPF 50' figure, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white balcony wall in bright, soft morning sunlight from the upper left, a faint pale-blue sky gradient along the top edge and one small leafy plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. Copy is the page's usage only: apply generously and evenly on face and neck, on a cleansed face after serums and moisturisers (F20), AM every day (F21), reapply with continued sun exposure (F20), labelled SPF 50 / PA++++ (F2). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline ('in 10 minutes'), '#1 daily duo', de-tan/brighten promises, any 'protection' absolutes, and the measured lab value (F16). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "usage told as a short sequence (what to do, in what order)"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on moment of use as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her late 20s with deep-brown skin, standing on a sunny apartment balcony in the morning just before stepping out, making a slow, even smoothing gesture across her cheek with her fingertips (nothing visible on her fingers or skin), her other hand relaxed at her side. She wears a light cotton kurta top and small stud earrings with her hair in a loose braid; behind her a painted balcony railing, a pot of tulsi and a softly out-of-focus neighbouring building. Bright, soft morning sunlight from the upper left, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "niacinamide-10-with-matmarine__t22",
+    "product_title": "Niacinamide 10% Face Serum",
+    "headline": "Cleanse. 2-3 drops. Let it absorb: AM & PM.",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · 2-3 drops / Step 3 · Let it absorb), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall above a narrow stone vanity shelf, soft window light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: after cleansing & toning, 2-3 drops, let the serum absorb fully before the next step (F13), AM & PM (F14, in the headline). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and the page's sebum, pore, barrier, melanin and 'clinically proven' lines (F3, F6, F7, F8, F16-F18). No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse & tone",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 2 · 2-3 drops",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 3 · Let it absorb",
+        "cites": [
+          "F13"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian woman in her mid 30s with deep-brown skin, her morning routine at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair tied up in a soft cloth band, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft window light from the upper left. Panel 1: she rinses her face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: her fingertips are pressed lightly against her cheek, as if pressing in a few drops, her other hand resting on the basin edge. Panel 3: both hands rest on the edge of the basin as she waits a moment, looking calmly towards the mirror. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life deep-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "niacinamide-10-with-matmarine__t6",
+    "product_title": "Niacinamide 10% Face Serum",
+    "headline": "Workday routine: 2-3 drops, AM & PM",
+    "subhead": "Apply after cleansing & toning. Let it absorb fully before the next step.",
+    "proof_points": [
+      "Niacinamide from Lonza, Switzerland",
+      "With Matmarine, Zinc & Acetyl Glucosamine",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F9"
+        ],
+        [
+          "F5"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white office wall with a pale oak desk edge across the lower third, soft overcast daylight from the upper left, and one small green desk plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (a workday in a Gurugram office). The moment is carried by the page's own usage: 2-3 drops after cleansing & toning, absorb before the next step (F13), AM & PM (F14). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'Brightens'/'Reduces' benefit tags and the NEW bubble, 'India's 1st' claim, and every sebum, pore, barrier and melanin line on the page (F2, F3, F6, F7, F8, F16-F18), plus 'clinically proven' (F6) and the pregnancy line (F12). The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her late 20s with medium-brown skin, in the middle of a busy workday in a Gurugram office: she sits at a desk by a floor-to-ceiling window with the hazy glass towers of the city softly out of focus behind her, a laptop open with its screen turned away from the camera, a plain ceramic mug and a blank notebook beside it. She wears a pastel cotton shirt with her hair in a neat low ponytail and a thin silver bracelet, pausing mid-task with her chin resting lightly on one hand, a focused but relaxed expression. Soft overcast daylight from the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, light makeup at most, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "niacinamide-10-with-matmarine__t8",
+    "product_title": "Niacinamide 10% Face Serum",
+    "headline": "Apply 2-3 drops after cleansing & toning",
+    "subhead": "Let the serum absorb fully into the skin before the next step of your routine.",
+    "proof_points": [
+      "AM & PM, every day",
+      "Formulated with Niacinamide & Matmarine",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F14"
+        ],
+        [
+          "F3"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall above a narrow stone shelf, soft daylight from the upper left, one folded plain white towel at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. Copy is the page's usage only: 2-3 drops after cleansing & toning, let it absorb before the next step (F13), AM & PM (F14); the formulation line is the first sentence of F3. Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline, '#1 daily duo', de-tan/brighten promises, and the page's sebum, pore, barrier, melanin and 'clinically proven' wording (F3 second half, F6, F7, F8, F16-F18). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "usage told as a short sequence (what to do, in what order)"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on moment of use as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his mid 20s with medium-brown skin, just after a gym session, standing at a bright bathroom mirror, framed from the chest up in a plain sleeveless training vest with a small towel around his neck and his hair slightly damp. His fingertips are pressed lightly against his cheek as if pressing in a few drops (nothing visible on his fingers or face), his other hand holding the end of the towel, his expression calm. Soft daylight from the upper left, an off-white tiled wall behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "salicylic-acid-2__t22",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "Night routine: cleanse, 2-3 drops, let it absorb",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. Start with every alternate day. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F12",
+        "F13"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F13",
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F12"
+        ],
+        [
+          "F12"
+        ],
+        [
+          "F12"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · 2-3 drops / Step 3 · Let it absorb), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale warm-grey painted wall above a narrow stone shelf, soft warm lamp light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: after cleansing & toning, 2-3 drops, let the serum absorb fully before the next step (F12), PM and start with every alternate day (F13, in the headline and footnote; the 'after 2 weeks' clause is left out). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, every acne, blackhead, oil and anti-microbial claim and study stat on the page. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse & tone",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Step 2 · 2-3 drops",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Step 3 · Let it absorb",
+        "cites": [
+          "F12"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian man in his early 20s with medium-brown skin, his night routine at a small washbasin, in all three panels wearing the same plain grey cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same plain wall and the same soft warm lamp light from the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: his fingertips are pressed lightly against his cheek, as if pressing in a few drops, his other hand resting on the basin edge. Panel 3: both hands rest on the edge of the basin as he waits a moment, looking calmly towards the mirror. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life medium-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-acid-2__t6",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "Evening in: 2-3 drops after cleansing & toning",
+    "subhead": "A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily.",
+    "proof_points": [
+      "Recommended for combination/oily skin",
+      "Salicylic Acid from Merck, Germany",
+      "Suitable for 18+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F12",
+        "F13"
+      ],
+      "subhead": [
+        "F3",
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F9"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a plain off-white painted wall with a pale wooden desk edge along the lower left, soft warm lamp light from the upper left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (an evening in a college hostel room). The page supports the moment: PM use and 'start with every alternate day, then daily' (F13), 2-3 drops after cleansing & toning (F12), and the first half of F3 ('a gentle exfoliant with 2% salicylic acid'; 'daily' appears only together with the F13 start-up direction, per the judge note). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, every acne, blackhead and oil claim (F2, F3 second half, F4, F10, F15-F17, F19, F23), anti-microbial and 'clinically proven' wording (F5-F7, F20, F21) and the 4-week stats. The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man around 21 with light-brown skin, spending an evening in a small college hostel room: he sits cross-legged on a single bed with a plain cotton bedsheet, a study desk behind him with a closed laptop and a neat stack of plain notebooks, a clothes rack with a few shirts and a small barred window showing the evening dusk. He wears a plain grey cotton t-shirt and relaxed track pants, looking up with an easy, relaxed expression as if a friend has just walked in. Warm lamp light from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-acid-2__t9",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "PM step: 2-3 drops, then let it absorb",
+    "subhead": "Apply after cleansing & toning. Let the serum absorb fully before the next step.",
+    "proof_points": [
+      "Use in the PM",
+      "Start with every alternate day",
+      "Suitable for 18+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F12",
+        "F13"
+      ],
+      "subhead": [
+        "F12"
+      ],
+      "proof_points": [
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall with soft light from the upper left and a narrow stone ledge along the bottom edge, nothing else in frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage (application close-up). Copy is the page's usage only: 2-3 drops after cleansing & toning and absorb before the next step (F12), PM, and start with every alternate day (F13); the 'after 2 weeks' part of F13 is left out so no time-bound line appears. Kept: hands-on application moment as the visual cue (Chemist at Play), usage told as a short sequence (Foxtale). Dropped: the timed-fix headline, '#1 daily duo', and every acne, blackhead, oil and anti-microbial claim and study stat on the page (F2-F7, F10, F15-F17, F19-F21, F23, F24). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on moment of use as the visual cue"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "usage told as a short sequence (what to do, in what order)"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "Close, softly lit crop of an Indian woman in her early 20s with medium-brown skin, framed from just below her eyes to her chin, the fingertips of one hand pressed lightly against her cheek as if pressing in a few drops (nothing visible on her fingers or skin) while her other hand rests empty near her collarbone. She stands at a bathroom basin in the evening, wearing a plain cotton top with her hair clipped back; soft warm light from the upper left, an off-white tiled wall softly out of focus behind her, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin texture with visible pores and ordinary variation in tone, true to life, no makeup, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "salicylic-lha-2-cleanser__t22",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Morning wash: wet, lather, massage, rinse",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Wet your face / Step 2 · Light lather / Step 3 · Massage & rinse), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a bright off-white tiled wall above a narrow stone basin ledge, soft morning daylight from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: apply on a wet face, rub into a light lather, massage into face and rinse thoroughly (F13), AM & PM (F14). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and every sebum, breakout, acne and anti-bacterial claim and study stat on the page. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Wet your face",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 2 · Light lather",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 3 · Massage & rinse",
+        "cites": [
+          "F13"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian woman in her early 20s with medium-brown skin, washing up in the morning at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair clipped back, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning daylight from the upper left. Panel 1: she splashes water onto her face with cupped hands, eyes closed. Panel 2: she rubs her wet palms together over the basin, nothing visible on her hands. Panel 3: her fingertips move in small circles across her cheeks, then she rinses with cupped hands under the tap. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life medium-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-lha-2-cleanser__t6",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Back from a run: a light lather on a wet face",
+    "subhead": "Pour into wet hands, rub into a light lather, massage in and rinse thoroughly.",
+    "proof_points": [
+      "BHA + LHA combined in 2% concentration",
+      "2 very mild sulfate-free surfactants",
+      "Suitable for 15+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F3"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F12"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white hallway wall in soft morning daylight from the upper left, a pale wooden bench edge along the lower left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (back home after a morning run). The page's own usage carries the moment: apply on a wet face, rub into a light lather, massage in, rinse thoroughly (F13); the proof lines are the formulation facts F3 (BHA + LHA in 2% concentration), F8 (2 mild sulfate-free surfactants) and F12 (15+). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 'Reduces Sebum & Prevents Breakout' (F2), 'acne fighting' (F3), the sebum/oily-look line (F5), anti-bacterial Zinc (F7, F21), barrier-repair wording (F20) and the 6-wash and 4-6 week stats (F16-F18). The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his early 30s with deep-brown skin, back home after a morning run: he stands just inside the front door of a modest apartment, catching his breath, wearing a plain running t-shirt and shorts darkened with sweat, a small cotton towel over one shoulder, running shoes on the doormat behind him, a calm, satisfied expression. Soft morning daylight from the upper left through the open doorway, an off-white hallway wall, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-lha-2-cleanser__t7",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Pour into wet hands and rub into a light lather",
+    "subhead": "Massage into your face, then rinse thoroughly. AM & PM, every day.",
+    "proof_points": [
+      "High purity grade Salicylic Acid",
+      "BHA + LHA combined in 2% concentration",
+      "Suitable for 15+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F13",
+        "F14"
+      ],
+      "proof_points": [
+        [
+          "F9"
+        ],
+        [
+          "F3"
+        ],
+        [
+          "F12"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white tiled bathroom wall with soft daylight from a frosted window at the upper left and a narrow stone basin ledge along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. Copy is the page's usage only: pour into wet hands, rub into a light lather, massage into face, rinse thoroughly (F13), AM & PM (F14); proof lines are F9 (high purity grade Salicylic Acid), F3 (BHA + LHA in 2% concentration) and F12 (15+). Kept: open hand at the moment of use with a single-step headline (Chemist at Play), pack held in the hand against a plain bright backdrop, composited in front of the photo by code (Dot & Key), usage as short lines (Foxtale). Dropped: '#1 daily duo' superlative, the dated 5-star review card, the timed-fix headline, any sebum, breakout, acne or anti-bacterial wording (F2, F3, F5, F7, F21) and the study stats (F16-F18). The person is AI-generated (High risk, labelled); real in-hand photos would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "open hand at the moment of use, headline naming one daily step"
+      },
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "pack held in the hand against a plain bright backdrop (pack composited in front of the photo)"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "how-to-use told as a short sequence of lines"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her late 20s with light-brown skin, standing at a bathroom basin in the morning, framed from the waist up in a plain cotton top with her hair clipped back. One hand is held out open in front of her at chest height, palm up, completely empty and relaxed, as if about to receive something, while the other hand rests on the edge of the basin; she looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left, an off-white tiled wall behind her, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and nothing in her hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-05",
+        "span": "High purity grade Salicylic Acid",
+        "message": "'High purity grade' is the vague form of a purity claim: no grade, supplier or percentage is named, and the page names none for this cleanser's salicylic acid. Minimalist states purity precisely (for example '86% pure Vitamin C content' or a named supplier grade).",
+        "fix": "Remove the line (the 'BHA + LHA combined in 2% concentration' line already carries the strength), or name the grade or supplier only if the product's supplier file states it.",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t22",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "Evening routine: serums, then the moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ],
+        [
+          "F13"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · Apply serums / Step 3 · Massage in), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale warm-grey wall above a narrow stone vanity shelf, soft warm lamp light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: use after cleansing, toning and applying all serums, then massage into face and neck (F13), AM & PM (F14). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and every repair, barrier and wound-healing line and study stat on the page. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse & tone",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 2 · Apply serums",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Step 3 · Massage in",
+        "cites": [
+          "F13"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian man in his early 30s with light-brown skin, his evening routine at his home bathroom basin, in all three panels wearing the same plain white cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same plain wall and the same soft warm lamp light from the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: his fingertips are pressed lightly against his cheek, as if applying a few drops, his other hand resting on the basin edge. Panel 3: both hands massage his face and neck in slow upward strokes, nothing visible on his hands. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t6",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "Working from home: lightweight and oil-free",
+    "subhead": "Use after cleansing, toning and your serums. AM & PM, every day.",
+    "proof_points": [
+      "Formulated for oily / combination skin",
+      "With Hyaluronic Acid & Betaine",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [
+        "F13",
+        "F14"
+      ],
+      "proof_points": [
+        [
+          "F3"
+        ],
+        [
+          "F7"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a bright off-white wall beside a window with the edge of a sheer white curtain at the far left, soft daylight from the upper left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (working from home by a window). The moment is carried by the page's own texture and usage facts: a lightweight, oil-free moisturizer (F3), used after cleansing, toning and serums, AM & PM (F13, F14); proof lines are F3, F7 and F11. Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'Brightens'/'Reduces' tag cards, NEW bubble, 'India's 1st' claim, every repair, barrier, wound-healing and radical-scavenging line (F2, F3 'repairing', F5, F6, F15, F20-F22), and the 12-hour, hydration and irritation stats (F16-F18). The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her early 40s with medium-brown skin, working from home by a window: she sits at a small wooden desk in a bright corner of her living room with a laptop open (its screen turned away from the camera), a plain ceramic cup, a potted money plant on the windowsill and sheer white curtains moving slightly beside her. She wears a soft cotton kurta in a muted colour with her dark hair, a few natural grey strands at the temples, clipped up, pausing to look out of the window with a calm, thoughtful expression. Soft daylight from the window at the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t9",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "Massage into face and neck until absorbed",
+    "subhead": "Use after cleansing, toning and applying all serums. AM & PM, every day.",
+    "proof_points": [
+      "D-Panthenol USP from BASF, Germany",
+      "Lightweight, oil-free moisturizer",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F13",
+        "F14"
+      ],
+      "proof_points": [
+        [
+          "F8"
+        ],
+        [
+          "F3"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall with soft morning daylight from the upper left and a narrow pale stone shelf along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. Copy is the page's usage only: take a sufficient quantity and massage into face and neck until absorbed, after cleansing, toning and all serums (F13), AM & PM (F14); proof lines are F8 (D-Panthenol USP from BASF, Germany), F3 (lightweight, oil-free) and F11 (16+). Kept: hands-on massage moment as the visual cue (Chemist at Play), usage told as a short sequence (Foxtale). Dropped: the timed-fix headline, '#1 daily duo', and every repair, barrier, wound-healing, radical-scavenging and 12-hour/hydration/irritation stat line on the page. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on moment of use as the visual cue"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "usage told as a short sequence (what to do, in what order)"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "timeline",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "Morning routine: cleanse, 2-3 drops, tap and spread",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations of a routine, not results. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F14",
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F14"
+        ],
+        [
+          "F14"
+        ],
+        [
+          "F14"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse & tone / Step 2 · 2-3 drops / Step 3 · Tap & spread), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall above a narrow stone shelf, soft morning window light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine journey (timeline). Frame labels come straight from the page's usage: after cleansing and toning, take 2-3 drops on the fingertips, tap on gently and spread in a circular motion (F14), AM & PM (F15, in the headline). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and the page's brightening, dark-spot, collagen, 'heal' and photo-ageing wording and study stats. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+    "angle": "routine_journey",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names the routine steps in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels sitting beside a person"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "numbered cards in a row, one action each"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Step 1 · Cleanse & tone",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Step 2 · 2-3 drops",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Step 3 · Tap & spread",
+        "cites": [
+          "F14"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "The same Indian woman in her late 20s with deep-brown skin, her morning routine at her home bathroom basin, in all three panels wearing the same plain cotton top with her hair tied up in a soft cloth band, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning window light from the upper left. Panel 1: she rinses her face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: her fingertips are held together just below her chin, as if about to press a few drops onto her cheek, nothing visible on her fingertips. Panel 3: her fingertips tap gently along her cheek and then her palms move in a slow circular motion. Actions only: her skin looks identical in all three panels, with natural texture and true-to-life deep-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "Before the metro: 2-3 drops after cleansing",
+    "subhead": "Tap on gently, then spread in a circular motion. AM & PM, every day.",
+    "proof_points": [
+      "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+      "Contains 1% Acetyl Glucosamine",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F14",
+        "F15"
+      ],
+      "subhead": [
+        "F14",
+        "F15"
+      ],
+      "proof_points": [
+        [
+          "F5"
+        ],
+        [
+          "F6"
+        ],
+        [
+          "F12"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a pale grey-white wall in soft cool morning daylight from the upper left with a faint warm-grey gradient towards the lower right, nothing else in frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: lifestyle (a morning metro commute). The page's own usage (2-3 drops after cleansing and toning, tap on gently, spread in a circular motion; F14) and AM & PM (F15) carry the moment; proof lines are F5 (Ethyl Ascorbic Acid, 86% pure Vitamin C content, the page's own wording), F6 (contains 1% Acetyl Glucosamine) and F12 (16+). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 'glow-boosting', brightening, dark-spot, collagen and photo-ageing wording (F2, F3, F16, F21, F25), the comparison with other Vitamin C derivatives (F5), 'heal' (F8), natural-process wording (F6, F22, F23) and the 4-8 week stats (F17-F19). The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+    "angle": "lifestyle",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "feature callouts sitting beside the pack, limited to page facts"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian woman in her early 30s with light-brown skin, on a morning metro commute: she stands in a modern metro coach holding the overhead handrail with one hand, a plain canvas tote on her shoulder, wearing a simple cotton shirt and straight trousers with her hair tied back, looking calmly through the window as the station slides past, softly out-of-focus fellow commuters behind her. Soft daylight from the window at the upper left mixing with cool coach lighting, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and no signage, route maps or phone screens. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "Take 2-3 drops on your fingertips with the dropper",
+    "subhead": "Tap gently onto the skin, then spread evenly in a circular motion.",
+    "proof_points": [
+      "AM & PM, every day",
+      "Ethyl Ascorbic Acid, 86% pure Vitamin C content",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F14"
+      ],
+      "subhead": [
+        "F14"
+      ],
+      "proof_points": [
+        [
+          "F15"
+        ],
+        [
+          "F5"
+        ],
+        [
+          "F12"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+    "image_prompt": "Empty background scene only: a bright off-white bedroom wall with a soft shaft of morning light from the upper left and the edge of a sheer curtain at the far left only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: human usage. Copy is the page's usage only: take 2-3 drops on the fingertips with the dropper, tap on gently, spread in a circular motion after cleansing and toning (F14), AM & PM (F15); proof lines F5 (Ethyl Ascorbic Acid, 86% pure Vitamin C content) and F12 (16+). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline, '#1 daily duo', de-tan/brighten promises, and the page's brightening, dark-spot, collagen, 'heal' and photo-ageing wording and study stats (F2, F3, F8, F16-F19, F21, F25). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "human_usage",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "usage told as a short sequence (what to do, in what order)"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on moment of use as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "An Indian man in his early 30s with medium-brown skin, in the morning light by a bedroom window, framed from the chest up in a plain cotton t-shirt, his fingertips held together just below his chin as if about to press a few drops onto his cheek (nothing visible on his fingertips), looking towards the mirror edge with a calm, focused expression. Soft warm morning light from the upper left, an off-white wall and a sheer curtain edge behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 1,
+    "kept_because": "passed"
+  }
+]

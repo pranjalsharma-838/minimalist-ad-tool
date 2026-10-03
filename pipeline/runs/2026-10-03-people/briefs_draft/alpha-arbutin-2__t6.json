@@ -1,0 +1,71 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "alpha-arbutin-2__t6",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "Evening wind-down: 2-3 drops after cleansing",
+  "subhead": "Apply after cleansing & toning. Use sunscreen during the day.",
+  "proof_points": [
+    "AM & PM, every day",
+    "Alpha Arbutin from Alfa Aesar, USA",
+    "Suitable for 18+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F19",
+      "F20"
+    ],
+    "subhead": [
+      "F19"
+    ],
+    "proof_points": [
+      [
+        "F20"
+      ],
+      [
+        "F8"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a calm off-white plaster wall in soft warm evening window light from the upper left, with a low pale-wood shelf edge along the lower left and one trailing green plant leaf at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: lifestyle (evening at home). The moment is placed by F19 (after cleansing & toning, 2-3 drops, sunscreen in the day) and F20 (AM & PM), so the evening framing is within the page and nothing implies a skin result. Kept: short ingredient/fact lines under the headline (Dot & Key), a calm editorial scene with a minimal message (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'ONE serum for X' benefit headline and NEW bubble (no launch fact), 'India's 1st' leadership claim (no objective source), hydration/brightening tag cards, and the page's pigmentation, skin-lightening and benchmark-comparison wording (F2, F3, F5, F6, F13, F26, F27) and consumer-study stats (F22-F24). The person is AI-generated (High risk, labelled); a real, consented photo would lower the risk. Rating in the footnote slot.",
+  "angle": "lifestyle",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "feature callouts sitting beside the pack, limited to page facts"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian woman in her early 30s with medium-brown skin, winding down in the evening in her Bengaluru apartment: she sits curled into the corner of a sofa beside a tall window, a soft cotton throw over her knees, the blue-grey dusk and a few distant apartment lights outside, a leafy indoor plant and a cane side table with a plain steel tumbler beside her. She wears a simple pale cotton kurta with her dark hair loosely tied back, one hand resting relaxed in her lap, her expression calm and unhurried as she gazes out of the window. Warm lamp light from the upper left blends with the last of the daylight, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no heavy makeup or jewellery, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

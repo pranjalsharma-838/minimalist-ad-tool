@@ -1,0 +1,65 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "multi-vitamin-spf-50__t8",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Apply generously and evenly on face and neck",
+  "subhead": "Use on a cleansed face, after your serums and moisturisers.",
+  "proof_points": [
+    "AM, every day",
+    "Reapply with continued sun exposure",
+    "Broad Spectrum SPF 50, PA++++"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F20"
+    ],
+    "subhead": [
+      "F20"
+    ],
+    "proof_points": [
+      [
+        "F21"
+      ],
+      [
+        "F20"
+      ],
+      [
+        "F2"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large 'SPF 50' figure, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a matte off-white balcony wall in bright, soft morning sunlight from the upper left, a faint pale-blue sky gradient along the top edge and one small leafy plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: human usage. Copy is the page's usage only: apply generously and evenly on face and neck, on a cleansed face after serums and moisturisers (F20), AM every day (F21), reapply with continued sun exposure (F20), labelled SPF 50 / PA++++ (F2). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline ('in 10 minutes'), '#1 daily duo', de-tan/brighten promises, any 'protection' absolutes, and the measured lab value (F16). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "human_usage",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "usage told as a short sequence (what to do, in what order)"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "hands-on moment of use as the visual cue"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian woman in her late 20s with deep-brown skin, standing on a sunny apartment balcony in the morning just before stepping out, making a slow, even smoothing gesture across her cheek with her fingertips (nothing visible on her fingers or skin), her other hand relaxed at her side. She wears a light cotton kurta top and small stud earrings with her hair in a loose braid; behind her a painted balcony railing, a pot of tulsi and a softly out-of-focus neighbouring building. Bright, soft morning sunlight from the upper left, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

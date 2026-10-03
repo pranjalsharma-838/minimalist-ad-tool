@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "LNG-05",
+      "dimension": "language",
+      "field": "on_image_text",
+      "span": "High purity grade Salicylic Acid",
+      "severity": "advisory",
+      "why": "'High purity grade' is the vague form of a purity claim: no grade, supplier or percentage is named, and the page names none for this cleanser's salicylic acid. Minimalist states purity precisely (for example '86% pure Vitamin C content' or a named supplier grade).",
+      "fix": "Remove the line (the 'BHA + LHA combined in 2% concentration' line already carries the strength), or name the grade or supplier only if the product's supplier file states it."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Plain how-to copy in the brand's calm register; no fear, hype or urgency.",
+  "language_read": "The 2% BHA + LHA strength is stated as the page states it, but 'High purity grade Salicylic Acid' is vaguer than the brand's usual precise purity wording. The usage lines match the page and no efficacy claim is made."
+}

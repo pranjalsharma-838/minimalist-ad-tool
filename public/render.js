@@ -590,8 +590,13 @@ LAYOUTS.native = (spec, s) => {
     parts.push(T(sl, PAD, y + 26, Math.round(26 * s), Math.round(34 * s), `fill="${C.muted}"`));
     y += sl.length * Math.round(34 * s);
   }
-  // With an AI creator/UGC image the photo card takes the lower right and the pack becomes its inset.
-  parts.push(spec.personHref ? productVisual(spec, 640, Math.max(y + 20, BAND_Y - 470), 368, Math.min(450, BAND_Y - 30 - Math.max(y + 20, BAND_Y - 470))) : pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
+  // With an AI creator/UGC image: a large photo card on the right and the pack BESIDE it on the left (eye-check
+  // 2026-10-03: as an inset on this smaller card the pack covered the person's face).
+  if (spec.personHref) {
+    const cy = Math.max(y + 24, BAND_Y - 500), ch = BAND_Y - 30 - cy;
+    parts.push(`<clipPath id="personClip"><rect x="560" y="${cy}" width="448" height="${ch}" rx="18"/></clipPath><rect x="560" y="${cy}" width="448" height="${ch}" rx="18" fill="#FFFFFF"/><image href="${esc(spec.personHref)}" x="560" y="${cy}" width="448" height="${ch}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`);
+    parts.push(pack(spec, spec.imageHref, PAD + 40, Math.max(y + 24, BAND_Y - 330), 220, Math.min(300, BAND_Y - 30 - Math.max(y + 24, BAND_Y - 330))));
+  } else parts.push(pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
   return chromeEnd(spec, parts, y);
 };
 

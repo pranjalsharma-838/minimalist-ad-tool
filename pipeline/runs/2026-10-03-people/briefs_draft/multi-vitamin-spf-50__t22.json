@@ -1,0 +1,90 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "timeline",
+  "source_ad_id": "multi-vitamin-spf-50__t22",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Morning routine: cleanse, moisturise, then SPF 50",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not results. Apply at least 15 minutes before sun exposure; reapply in case of continued sun exposure. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20",
+      "F21"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F20",
+      "RATING"
+    ],
+    "frames": [
+      [
+        "F20"
+      ],
+      [
+        "F20"
+      ],
+      [
+        "F2",
+        "F21"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Step 1 · Cleanse / Step 2 · Moisturise / Step 3 · SPF 50, every AM), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same person doing each routine step (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; routine-not-results note and rating in the footnote band; CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a pale off-white tiled bathroom wall above a narrow white shelf, soft morning daylight from a frosted window at the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: routine journey (timeline). Frame labels come from the page's usage: on a cleansed face, after serums and moisturisers (F20), AM every day (F21), labelled SPF 50 (F2). The footnote carries the page's 'at least 15 minutes before sun exposure' and 'reapply in case of continued sun exposure' (F20), the latter added per the judge note. Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern headline, happy-model result feel, any claim of protection from sun damage or skin repair (F3, F6), the lab value (F16). No before/after, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.",
+  "angle": "routine_journey",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "headline that names the routine steps in order"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "'Step N' labels sitting beside a person"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "numbered cards in a row, one action each"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Step 1 · Cleanse",
+      "cites": [
+        "F20"
+      ]
+    },
+    {
+      "label": "Step 2 · Moisturise",
+      "cites": [
+        "F20"
+      ]
+    },
+    {
+      "label": "Step 3 · SPF 50, every AM",
+      "cites": [
+        "F2",
+        "F21"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "The same Indian man in his mid 20s with light-brown skin, his morning routine before work at his home bathroom basin, in all three panels wearing the same plain white cotton t-shirt, framed the same way from the shoulders up beside the basin, with the same off-white tiled wall and the same soft morning daylight from a frosted window at the upper left. Panel 1: he rinses his face with both cupped hands over the basin, eyes closed, then pats it dry with a plain towel. Panel 2: both palms smooth lightly over his cheeks and jaw in slow strokes, nothing visible on his hands. Panel 3: his fingertips spread evenly across his cheeks and forehead and then down his neck, his gaze calm and ready for the day ahead. Actions only: his skin looks identical in all three panels, with natural texture and true-to-life light-brown colour, and the three panels read as one continuous routine. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

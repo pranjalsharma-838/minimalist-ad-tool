@@ -1,0 +1,72 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "multi-vitamin-spf-50__t6",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Before the ride: Broad Spectrum SPF 50, PA++++",
+  "subhead": "AM, every day: apply at least 15 minutes before sun exposure.",
+  "proof_points": [
+    "4 UV filters for UVA & UVB protection",
+    "Reapply with continued sun exposure",
+    "No visible white cast on application"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F21"
+    ],
+    "subhead": [
+      "F20",
+      "F21"
+    ],
+    "proof_points": [
+      [
+        "F5"
+      ],
+      [
+        "F20"
+      ],
+      [
+        "F8"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large 'SPF 50' figure, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a pale sunlit off-white wall in bright, soft morning daylight from the upper left, with a faint warm-grey shadow gradient towards the lower right and a narrow strip of pale stone paving along the bottom edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: lifestyle (a Mumbai two-wheeler commute). The moment fits the page: AM, every day (F21) and apply at least 15 minutes before sun exposure, reapply with continued sun exposure (F20). The labelled SPF 50 / PA++++ (F2) is the claim; the lab-measured value (F16) is deliberately not used (house rule: lab results only in the footnote, and only when needed). Kept: short fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 2-in-1 and dual-chamber features (not ours), moisturising/repair wording (F3, F6) and the pregnancy FAQ. The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+  "angle": "lifestyle",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "feature callouts sitting beside the pack, limited to page facts"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian man in his early 30s with medium-brown skin, about to commute on a two-wheeler through Mumbai in bright morning daylight: he stands beside a parked scooter on a quiet side street, a plain helmet held in one hand at his side, wearing a light cotton shirt with the sleeves rolled once and a small backpack on one shoulder, looking ahead with a relaxed, ready expression. Behind him a softly out-of-focus lane with a pastel apartment wall and the edge of a leafy tree, no signs or number plates visible. Strong but soft daylight from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no sunburn or tan lines, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

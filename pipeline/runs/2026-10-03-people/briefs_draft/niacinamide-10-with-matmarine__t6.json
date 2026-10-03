@@ -1,0 +1,71 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "niacinamide-10-with-matmarine__t6",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "Workday routine: 2-3 drops, AM & PM",
+  "subhead": "Apply after cleansing & toning. Let it absorb fully before the next step.",
+  "proof_points": [
+    "Niacinamide from Lonza, Switzerland",
+    "With Matmarine, Zinc & Acetyl Glucosamine",
+    "Suitable for 16+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [
+      [
+        "F9"
+      ],
+      [
+        "F5"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a matte off-white office wall with a pale oak desk edge across the lower third, soft overcast daylight from the upper left, and one small green desk plant at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: lifestyle (a workday in a Gurugram office). The moment is carried by the page's own usage: 2-3 drops after cleansing & toning, absorb before the next step (F13), AM & PM (F14). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'Brightens'/'Reduces' benefit tags and the NEW bubble, 'India's 1st' claim, and every sebum, pore, barrier and melanin line on the page (F2, F3, F6, F7, F8, F16-F18), plus 'clinically proven' (F6) and the pregnancy line (F12). The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+  "angle": "lifestyle",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "feature callouts sitting beside the pack, limited to page facts"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian woman in her late 20s with medium-brown skin, in the middle of a busy workday in a Gurugram office: she sits at a desk by a floor-to-ceiling window with the hazy glass towers of the city softly out of focus behind her, a laptop open with its screen turned away from the camera, a plain ceramic mug and a blank notebook beside it. She wears a pastel cotton shirt with her hair in a neat low ponytail and a thin silver bracelet, pausing mid-task with her chin resting lightly on one hand, a focused but relaxed expression. Soft overcast daylight from the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, light makeup at most, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

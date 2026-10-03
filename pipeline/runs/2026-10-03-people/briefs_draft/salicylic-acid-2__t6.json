@@ -1,0 +1,72 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-acid-2__t6",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Evening in: 2-3 drops after cleansing & toning",
+  "subhead": "A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily.",
+  "proof_points": [
+    "Recommended for combination/oily skin",
+    "Salicylic Acid from Merck, Germany",
+    "Suitable for 18+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F12",
+      "F13"
+    ],
+    "subhead": [
+      "F3",
+      "F13"
+    ],
+    "proof_points": [
+      [
+        "F9"
+      ],
+      [
+        "F8"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person photo (person_prompt) fills the rounded card in the right-hand zone and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; the real pack shot stands large in front of the photo on a soft plinth (lower left of the card); rating line in the footnote band, CTA \"Shop now\" bottom-left.",
+  "image_prompt": "Empty background scene only: a plain off-white painted wall with a pale wooden desk edge along the lower left, soft warm lamp light from the upper left and a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: lifestyle (an evening in a college hostel room). The page supports the moment: PM use and 'start with every alternate day, then daily' (F13), 2-3 drops after cleansing & toning (F12), and the first half of F3 ('a gentle exfoliant with 2% salicylic acid'; 'daily' appears only together with the F13 start-up direction, per the judge note). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, every acne, blackhead and oil claim (F2, F3 second half, F4, F10, F15-F17, F19, F23), anti-microbial and 'clinically proven' wording (F5-F7, F20, F21) and the 4-week stats. The person is AI-generated (High risk, labelled). Rating in the footnote slot.",
+  "angle": "lifestyle",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "short ingredient-and-fact lines under the headline in place of benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "editorial, scene-led mood: one person in a real setting beside a minimal message"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "feature callouts sitting beside the pack, limited to page facts"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "An Indian man around 21 with light-brown skin, spending an evening in a small college hostel room: he sits cross-legged on a single bed with a plain cotton bedsheet, a study desk behind him with a closed laptop and a neat stack of plain notebooks, a clothes rack with a few shirts and a small barred window showing the evening dusk. He wears a plain grey cotton t-shirt and relaxed track pants, looking up with an easy, relaxed expression as if a friend has just walked in. Warm lamp light from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}
