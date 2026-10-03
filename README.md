@@ -10,6 +10,8 @@ It has three parts:
 | **B. Score any ad** (app) | Paste or upload any ad (yours, an agency's, a creator's, a competitor's). You get a verdict plus each flagged phrase with severity, rule, source and suggested fix, covering policy/claims, brand tone and brand language. | same app (scoring surface) |
 | **Ad library pipeline** (built on A + B) | Takes proven competitor ads, chooses formats per product, writes cited briefs, then runs compliance (rules + AI judge, retry loop), image prompts, AI backgrounds, the real pack shot composited in, 3 sizes plus Hindi/regional versions, and saves everything with descriptions. | `pipeline/RUNBOOK.md`, output in `ad_library/` |
 
+![Pipeline: agents, scripts, checks and outputs](docs/pipeline_diagram.png)
+
 ## Setup on a new device (about 5 minutes)
 
 **Required:**

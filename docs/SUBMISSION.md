@@ -38,7 +38,7 @@ Mapped point by point to the original brief, for evaluation. Minimalist is the t
 | Prompts as files | ✅ All 9: scorer (system + user), brief writer, image prompt director, translator, generator (system + user), tagger, transcriber | `prompts/` |
 | One-page decision doc | ✅ | `docs/DECISIONS.md` |
 | Failure-modes list | ✅ 3 main modes + evidence seen in the pilot | `docs/FAILURE_MODES.md` |
-| Architecture + run order | ✅ | `docs/ARCHITECTURE.md`, `pipeline/RUNBOOK.md` |
+| Architecture + run order | ✅ including a diagram of every agent, script and check | `docs/pipeline_diagram.png`, `docs/ARCHITECTURE.md`, `pipeline/RUNBOOK.md` |
 
 ## Extras added during the build (user requests)
 
