@@ -1,0 +1,43 @@
+{
+  "ad_type": "brand",
+  "layout": "timeline",
+  "source_ad_id": "salicylic-acid-2__t14",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Your 4-week routine with 2% Salicylic Acid",
+  "subhead": "Apply 2-3 drops after cleansing & toning, in the PM.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "frames": [
+    { "label": "Day 1" },
+    { "label": "Week 2: felt less oily" },
+    { "label": "Week 4: visible clarity" }
+  ],
+  "footnote": "Brand consumer studies: 97% subjects felt less oily after 2 weeks; 90% subjects noticed visible skin clarity in 4 weeks. Frames are AI illustrations, not real results.",
+  "cta": "Learn more",
+  "citations": {
+    "headline": ["F13", "F15"],
+    "subhead": ["F12", "F13"],
+    "frames": ["F13", "F17", "F15"],
+    "footnote": ["F17", "F15"]
+  },
+  "layout_description": "Transformation journey (template #14 Progress / timeline): headline top, three progress frames of the same AI-illustrated skin area left to right (Day 1, Week 2, Week 4), each label tied to a cited study line; small real pack shot bottom-right; AI-GENERATED — ILLUSTRATIVE badge; study footnote.",
+  "image_prompt": "Background only: off-white tabletop and matte wall, soft light from the upper left. Keep the top 30% calm and empty for the headline copy and an empty clear space at the lower right for a product photo placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented progress photos from the brand's own 4-week consumer study (same person, same light, Day 1 / Week 2 / Week 4) to replace the AI frames before any use.",
+  "ai_label_required": true,
+  "risk_level_requested": "severe",
+  "adaptation_notes": "User request 2026-10-03: transformation-journey format (progress frames rather than before/after wording), flagged Severe. Frame labels use only the page's study wording and timeframes (F17: less oily at 2 weeks; F15: visible clarity at 4 weeks); no 'acne gone' or cure wording. Frames are AI illustrations and carry the visible AI mark; not exportable until real study photos replace them.",
+  "angle": "situation",
+  "hook_type": "statement",
+  "blend_sources": [
+    { "id": "1290012680862234", "brand": "Dr. Sheth's", "took": "timed labels across frames" },
+    { "id": "3961263437511522", "brand": "Re'equil", "took": "left-to-right progression" },
+    { "id": "2307135286779864", "brand": "The Derma Co", "took": "calm headline over the sequence" }
+  ]
+}

@@ -28,7 +28,8 @@ async function packShot(src) {
 }
 
 const summary = [];
-for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
+// kept_with_warnings briefs are composed for review too; they are never marked exportable (see below).
+for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warnings"].includes(b.status))) {
   const bg = ["png", "jpg", "jpeg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.${e}`)).find((p) => fs.existsSync(p));
   if (!bg) {
     console.log(`${b.source_ad_id}: no background yet (image step not done) — skipped`);
@@ -49,6 +50,12 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
   };
   spec.imageHref = cut(main) || (await packShot(spec.imageSrc));
   for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
+  // Progress / split frames: backgrounds/<id>.frame<N>.png (N from 1). These are AI illustrations for the
+  // transformation-journey format — the brief must carry ai_label_required so the AI mark is drawn.
+  (spec.frames || []).forEach((f, i) => {
+    const fp = ["png", "jpg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.frame${i + 1}.${e}`)).find((p) => fs.existsSync(p));
+    if (fp) { f.imageHref = dataUrl(fs.readFileSync(fp), `image/${path.extname(fp).slice(1).replace("jpg", "jpeg")}`); if (!b.ai_label_required) throw new Error(`${b.source_ad_id}: frame images present but ai_label_required is not set`); }
+  });
   const ext = path.extname(bg).slice(1).replace("jpg", "jpeg");
   spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
   const square = renderAdSvg(spec);
@@ -83,6 +90,7 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
   const extraSheets = [...(b.steps || []), ...(b.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheets[main]);
   const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });
   // Severe-risk creatives (AI frames standing in for real results) are composed for review but never exportable.
+  if (b.status === "kept_with_warnings") layoutIssues.push("Kept with warnings: open findings must be resolved by a reviewer");
   if (b.risk_level === "severe") layoutIssues.push("Severe risk: AI-generated frames stand in for real study photos — not exportable until replaced");
   const exportable = !layoutIssues.length && report.verdict.code !== "BLOCKED";
   summary.push({ id: b.source_ad_id, layout: spec.layout, exportable, layoutIssues, recheck: report.verdict.code });
