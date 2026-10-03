@@ -1,7 +1,7 @@
 # Brief input — alpha-arbutin-2__t36
 source_ad_id: alpha-arbutin-2__t36
 Format (from the archetype skill): #36 Offer creative · family Commercial · layout "offer" (if "new", use the closest built layout and describe the intended design in layout_description) · image source MARKETER
-Why chosen: 18 competitor ads 30+ days in this format (4 in this category); trend signal 0.89; product page has the facts it needs; already picked for 3 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
+Why chosen: 18 competitor ads 30+ days in this format (4 in this category); trend signal 0.89; product page has the facts it needs; no own results yet for this format; already picked for 3 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
 Risk: Medium — Needs numbers/terms a marketer must supply and source (offer, sales count, prices). · Offer terms / numbers must come from the marketer with a source and date.
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -17,8 +17,12 @@ C. Foxtale · 95 days · id 903698342763669 · #36 Offer creative
 Blend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].
 
 ## Angle (balanced across the run): concern_solved
+Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):
+- irritation: competitors 8 mentions (0 in ≤3★) · answered by F19 "Apply after cleansing & toning. Apply 2-3 drops. With gentle circular motion, spread it all over your face. Use sunscree" · customer words: "Isse skin par koi irritation ya breakout nahi hua." (Amazon.in · Pilgrim, 5★) / "The product felt gentle on my skin, and I did not face any major skin sensitivity or irritation issues while using it." (Amazon.in · Pilgr
+- dryness: competitors 3 mentions (0 in ≤3★) · answered by F29 "Water/Aqua, Dimethyl Isosorbide, Alpha Arbutin, Ethoxydiglycol, Pentylene Glycol, PEG-40 Hydrogenated Castor Oil, Feruli" · customer words: "I apply 2–3 drops on a clean, dry face, gently spread it over the skin, and then follow it with a moisturizer." (Amazon.in · Pilgrim, 4★) / "This is the best lighting serum, I have black spots on my face due to pimples 
+- texture: competitors 13 mentions (0 in ≤3★) · answered by F5 "A skin tone enhancing serum with a potent & safe skin lightening active Alpha Arbutin (9 times more effective than Beta " · customer words: "Good Glow & Skin Texture Improvement, But Feels Oily on Face." (Amazon.in · Pilgrim, 4★) / "I especially liked its smooth texture and glow-boosting effect." (Amazon.in · Pilgrim, 5★)
 Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.
-Record "angle": "concern_solved" in the brief.
+Record "angle": "concern_solved" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

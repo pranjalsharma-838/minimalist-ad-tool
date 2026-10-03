@@ -1,7 +1,7 @@
 # Brief input — vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t38
 source_ad_id: vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t38
 Format (from the archetype skill): #38 Bundle / kit image · family Commercial · layout "range" (if "new", use the closest built layout and describe the intended design in layout_description) · image source PACK
-Why chosen: 17 competitor ads 30+ days in this format (14 in this category); trend signal 0.70; product page has the facts it needs; already picked for 3 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
+Why chosen: 17 competitor ads 30+ days in this format (14 in this category); trend signal 0.70; product page has the facts it needs; no own results yet for this format; already picked for 3 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
 Risk: Low — Real asset available in the library (brand_packs/minimalist/assets/raw/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/01.png).
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -18,7 +18,7 @@ Blend rule: take ONE element from each — e.g. the hook device from one, the la
 
 ## Angle (balanced across the run): routine
 Routine: where the product sits in a simple AM/PM routine (companion products allowed in journey/range layouts).
-Record "angle": "routine" in the brief.
+Record "angle": "routine" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

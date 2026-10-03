@@ -1,7 +1,7 @@
 # Brief input — salicylic-lha-2-cleanser__t38
 source_ad_id: salicylic-lha-2-cleanser__t38
 Format (from the archetype skill): #38 Bundle / kit image · family Commercial · layout "range" (if "new", use the closest built layout and describe the intended design in layout_description) · image source PACK
-Why chosen: 17 competitor ads 30+ days in this format (6 in this category); trend signal 0.70; product page has the facts it needs; Commercial fits a sales objective well
+Why chosen: 17 competitor ads 30+ days in this format (6 in this category); trend signal 0.70; product page has the facts it needs; no own results yet for this format; Commercial fits a sales objective well
 Risk: Low — Real asset available in the library (brand_packs/minimalist/assets/raw/salicylic-lha-2-cleanser/01.jpg).
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -17,8 +17,12 @@ C. Chemist at Play · 303 days · id 1393861285783656 · #36 Offer creative
 Blend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].
 
 ## Angle (balanced across the run): concern_solved
+Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):
+- irritation: competitors 2 mentions (0 in ≤3★) · answered by F3 "A daily, gentle exfoliating, acne fighting face cleanser. It combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Ac" · customer words: "No fragrance so no irritation." (Amazon.in · Cetaphil, 5★) / "The large 400 ml bottle offers excellent value for money, lasting a long time even with twice-daily use." (Amazon.in · Himalaya, 5★)
+- dryness: competitors 7 mentions (0 in ≤3★) · answered by F7 "Boosted with anti-bacterial Zinc and several hydrating & soothing ingredients like Xylitylglucoside, Panthenol (Vitamin " · customer words: "Awesome quality and and effective at removing dirt, with good compatibility for sensitive and dry skin types." (Amazon.in · Cetaphil, 5★) / "The combination of Salicylic Acid and Niacinamide does a great job at deep cle
+- texture: competitors 4 mentions (0 in ≤3★) · answered by F13 "Apply on wet face. Pour an appropriate quantity into wet hands, rub together into a light lather, and massage into face." · customer words: "Achcha face wash hai skin ko smooth rakhta Hai Harsh nahin hone deta Hai lightweight Hai, sensitive skin ke liye bahut achcha hai iske bad agar moisturizer nahin bhi lagaye to bhi kam Karega, texture " (Amazon.in · Ceta
 Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.
-Record "angle": "concern_solved" in the brief.
+Record "angle": "concern_solved" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

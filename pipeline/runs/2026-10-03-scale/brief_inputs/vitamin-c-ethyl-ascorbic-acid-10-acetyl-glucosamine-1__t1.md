@@ -1,7 +1,7 @@
 # Brief input — vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1
 source_ad_id: vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1
 Format (from the archetype skill): #1 Clean product hero · family Product · layout "hero" (if "new", use the closest built layout and describe the intended design in layout_description) · image source PACK+BG
-Why chosen: 7 competitor ads 30+ days in this format (3 in this category); trend signal 0.75; product page has the facts it needs; already picked for 1 earlier product(s) in this run (variety penalty); Product fits a sales objective well
+Why chosen: 7 competitor ads 30+ days in this format (3 in this category); trend signal 0.75; product page has the facts it needs; no own results yet for this format; already picked for 1 earlier product(s) in this run (variety penalty); Product fits a sales objective well
 Risk: Low — Real asset available in the library (brand_packs/minimalist/assets/raw/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/01.png).
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -17,8 +17,13 @@ C. The Derma Co · 35 days · id 4305763079698667 · #1 Clean product hero
 Blend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].
 
 ## Angle (balanced across the run): concern_solved
+Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):
+- irritation: competitors 7 mentions (0 in ≤3★) · answered by F7 "Boosted with Polyhydroxy Acid (PHA) which are new age hydroxy acids, suitable even for sensitive skin. PHAs gently remov" · customer words: "Isse skin par koi irritation ya breakout nahi hua." (Amazon.in · Pilgrim, 5★) / "The product felt gentle on my skin, and I did not face any major skin sensitivity or irritation issues while using it." (Amazon.in · Pilgr
+- dryness: competitors 3 mentions (0 in ≤3★) · answered by F6 "Contains 1% Acetyl Glucosamine (AG), an amino-monosaccharide (simple sugar) and a precursor of hyaluronic acid, that pro" · customer words: "I apply 2–3 drops on a clean, dry face, gently spread it over the skin, and then follow it with a moisturizer." (Amazon.in · Pilgrim, 4★) / "This is the best lighting serum, I have black spots on my face due to pimples 
+- packaging: competitors 0 mentions (0 in ≤3★) · answered by F14 "After cleansing and toning your face, take 2-3 drops of Vitamin C serum on your fingertips with the dropper. Apply it on" · customer words: "Hi, I ordered a Vitamin C serum from your website, but upon opening the package, I found that the product had leaked inside the box and the serum appears oxidized and unusable." (beminimalist.co, 1★)
+- texture: competitors 16 mentions (0 in ≤3★) · answered by F22 "Not only lightens skin tone, it also promotes synthesis of Hyaluronic Acid to improve skin hydration" · customer words: "Good Glow & Skin Texture Improvement, But Feels Oily on Face." (Amazon.in · Pilgrim, 4★) / "I especially liked its smooth texture and glow-boosting effect." (Amazon.in · Pilgrim, 5★)
 Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.
-Record "angle": "concern_solved" in the brief.
+Record "angle": "concern_solved" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

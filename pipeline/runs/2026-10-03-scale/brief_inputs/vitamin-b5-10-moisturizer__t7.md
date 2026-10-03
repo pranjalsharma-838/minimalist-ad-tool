@@ -1,7 +1,7 @@
 # Brief input — vitamin-b5-10-moisturizer__t7
 source_ad_id: vitamin-b5-10-moisturizer__t7
 Format (from the archetype skill): #7 Product-in-hand · family Human + Product · layout "hero" (if "new", use the closest built layout and describe the intended design in layout_description) · image source REAL PHOTO:people
-Why chosen: 8 competitor ads 30+ days in this format (5 in this category); trend signal 0.40; product page has the facts it needs; Human + Product fits a sales objective moderately
+Why chosen: 8 competitor ads 30+ days in this format (5 in this category); trend signal 0.40; product page has the facts it needs; no own results yet for this format; Human + Product fits a sales objective moderately
 Risk: High — AI-generated person/hands: must be labelled as synthetic (ASCI SGC); real photo strongly preferred. · Real in hand photos would lower the risk (none in the asset library for this SKU). Any AI-generated person/skin/result must carry the visible "AI-GENERATED — ILLUSTRATIVE" mark.
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -18,7 +18,7 @@ Blend rule: take ONE element from each — e.g. the hook device from one, the la
 
 ## Angle (balanced across the run): routine
 Routine: where the product sits in a simple AM/PM routine (companion products allowed in journey/range layouts).
-Record "angle": "routine" in the brief.
+Record "angle": "routine" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

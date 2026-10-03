@@ -1,7 +1,7 @@
 # Brief input — niacinamide-10-with-matmarine__t48
 source_ad_id: niacinamide-10-with-matmarine__t48
 Format (from the archetype skill): #48 Seasonal creative · family Commercial · layout "hero" (if "new", use the closest built layout and describe the intended design in layout_description) · image source PACK+BG
-Why chosen: 4 competitor ads 30+ days in this format (1 in this category); trend signal 0.65; product page has the facts it needs; Commercial fits a sales objective well
+Why chosen: 4 competitor ads 30+ days in this format (1 in this category); trend signal 0.65; product page has the facts it needs; no own results yet for this format; Commercial fits a sales objective well
 Risk: Low — Real asset available in the library (brand_packs/minimalist/assets/raw/niacinamide-10-with-matmarine/01.png).
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -18,7 +18,7 @@ Blend rule: take ONE element from each — e.g. the hook device from one, the la
 
 ## Angle (balanced across the run): social_proof
 Social proof: lead with the real rating (RATING, verbatim, never rounded) and/or one verbatim verified review (REV*).
-Record "angle": "social_proof" in the brief.
+Record "angle": "social_proof" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

@@ -1,7 +1,7 @@
 # Brief input — niacinamide-10-with-matmarine__t12
 source_ad_id: niacinamide-10-with-matmarine__t12
 Format (from the archetype skill): #12 Before / after · family Transformation · layout "before_after" (if "new", use the closest built layout and describe the intended design in layout_description) · image source REAL PHOTO:result
-Why chosen: 4 competitor ads 30+ days in this format (3 in this category); trend signal 0.56; product page has the facts it needs; Transformation fits a sales objective moderately
+Why chosen: 4 competitor ads 30+ days in this format (3 in this category); trend signal 0.56; product page has the facts it needs; no own results yet for this format; Transformation fits a sales objective moderately
 Risk: Medium — Real asset available in the library (brand_packs/minimalist/assets/raw/niacinamide-10-with-matmarine/05.png). Result imagery still needs the study it comes from on file.
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -17,8 +17,12 @@ C. Pilgrim · 30 days · id 1079958907863521 · #12 Before / after
 Blend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].
 
 ## Angle (balanced across the run): concern_solved
+Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):
+- sticky greasy: competitors 10 mentions (0 in ≤3★) · answered by F8 "Lightweight serum coupled with Zinc that balances sebum activity and reduces inflammation, leaving smooth textured skin " · customer words: "Bahut hi lightweight aur non-sticky serum hai jo skin me turant absorb ho jata hai." (Amazon.in · Pilgrim, 5★) / "Overall, it’s good for improving glow and skin texture, but the oily finish may not suit everyone for day
+- dryness: competitors 3 mentions (0 in ≤3★) · answered by F3 "A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine. Niacinamide reduces the sebum level of the sk" · customer words: "I apply 2–3 drops on a clean, dry face, gently spread it over the skin, and then follow it with a moisturizer." (Amazon.in · Pilgrim, 4★) / "This is the best lighting serum, I have black spots on my face due to pimples 
+- texture: competitors 11 mentions (0 in ≤3★) · answered by F8 "Lightweight serum coupled with Zinc that balances sebum activity and reduces inflammation, leaving smooth textured skin " · customer words: "Good Glow & Skin Texture Improvement, But Feels Oily on Face." (Amazon.in · Pilgrim, 4★) / "I especially liked its smooth texture and glow-boosting effect." (Amazon.in · Pilgrim, 5★)
 Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.
-Record "angle": "concern_solved" in the brief.
+Record "angle": "concern_solved" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

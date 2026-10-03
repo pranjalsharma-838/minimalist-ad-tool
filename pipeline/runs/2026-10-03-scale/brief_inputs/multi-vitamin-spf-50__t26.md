@@ -1,7 +1,7 @@
 # Brief input — multi-vitamin-spf-50__t26
 source_ad_id: multi-vitamin-spf-50__t26
 Format (from the archetype skill): #26 Review creative · family Proof · layout "review" (if "new", use the closest built layout and describe the intended design in layout_description) · image source LAYOUT
-Why chosen: 2 competitor ads 30+ days in this format (1 in this category); trend signal 0.70; product page has the facts it needs; Proof fits a sales objective well
+Why chosen: 2 competitor ads 30+ days in this format (1 in this category); trend signal 0.70; product page has the facts it needs; no own results yet for this format; Proof fits a sales objective well
 Risk: Low — Type and graphics with the real pack shot.
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -17,8 +17,12 @@ C. Conscious Chemist · 100 days · id 991199233902436 · #28 Social-proof creat
 Blend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].
 
 ## Angle (balanced across the run): concern_solved
+Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):
+- texture: competitors 17 mentions (3 in ≤3★) · answered by F3 "A light weight, moisturiser-meets-sunscreen. This broad spectrum SPF 50 with PA++++ rating, has a very light texture tha" · customer words: "I'd say it's a good everyday sunscreen, especially if you have oily skin and hate thick or greasy formulas." (Amazon.in · Deconstruct, 5★) / "I’ve been using this sunscreen as part of my daily routine and particularly l
+- dryness: competitors 7 mentions (2 in ≤3★) · answered by F3 "A light weight, moisturiser-meets-sunscreen. This broad spectrum SPF 50 with PA++++ rating, has a very light texture tha" · customer words: "Must-have for dry skin." (Amazon.in · RE' EQUIL, 5★) / "Good product, whitening sunscreen, creamy, but works only for few hours for my oily skin, not sure about dry and normal skin" (Amazon.in · RE' EQUIL, 4★)
+- sticky greasy: competitors 24 mentions (1 in ≤3★) · answered by F3 "A light weight, moisturiser-meets-sunscreen. This broad spectrum SPF 50 with PA++++ rating, has a very light texture tha" · customer words: "I'd say it's a good everyday sunscreen, especially if you have oily skin and hate thick or greasy formulas." (Amazon.in · Deconstruct, 5★) / "It spreads easily and absorbs quickly without leaving the heavy, greasy feeli
 Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.
-Record "angle": "concern_solved" in the brief.
+Record "angle": "concern_solved" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.

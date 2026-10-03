@@ -1,7 +1,7 @@
 # Brief input — multi-vitamin-spf-50__t36
 source_ad_id: multi-vitamin-spf-50__t36
 Format (from the archetype skill): #36 Offer creative · family Commercial · layout "offer" (if "new", use the closest built layout and describe the intended design in layout_description) · image source MARKETER
-Why chosen: 18 competitor ads 30+ days in this format (9 in this category); trend signal 0.89; product page has the facts it needs; already picked for 1 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
+Why chosen: 18 competitor ads 30+ days in this format (9 in this category); trend signal 0.89; product page has the facts it needs; no own results yet for this format; already picked for 1 earlier product(s) in this run (variety penalty); Commercial fits a sales objective well
 Risk: Medium — Needs numbers/terms a marketer must supply and source (offer, sales count, prices). · Offer terms / numbers must come from the marketer with a source and date.
 
 ## Blend these proven competitor winners (structure only, never their wording)
@@ -18,7 +18,7 @@ Blend rule: take ONE element from each — e.g. the hook device from one, the la
 
 ## Angle (balanced across the run): routine
 Routine: where the product sits in a simple AM/PM routine (companion products allowed in journey/range layouts).
-Record "angle": "routine" in the brief.
+Record "angle": "routine" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).
 
 ## Social proof (automatic where it fits)
 If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. "4.0★ from 1,491 reviews") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'.
