@@ -1,0 +1,7 @@
+{ "lang": "ta", "register": "everyday conversational (English allowed for product/ingredient names)",
+  "lines": {
+    "headline": { "text": "SPF 50, PA++++ உடன் லேசான, மாய்ஸ்சரைசர் போன்ற உணர்வு", "back_translation": "With SPF 50, PA++++, a light, moisturiser-like feel" },
+    "on_image_text": { "text": "பிராட் ஸ்பெக்ட்ரம் SPF 50\nPA++++ மதிப்பீடு\nமாய்ஸ்சரைசர் போல பரவும்\nPhotostable மற்றும் acne safe\nSPF 50 Sunscreen", "back_translation": "Broad spectrum SPF 50\nPA++++ rating\nSpreads like a moisturiser\nPhotostable and acne safe\nSPF 50 Sunscreen" },
+    "footnote": { "text": "லேபிளில் SPF 50. சுயாதீன மூன்றாம் தரப்பு ஆய்வகத்தின் in-vivo சோதனையில் (ISO 24444:2019) SPF 56.6 கிடைத்தது.", "back_translation": "SPF 50 on the label. In an independent third-party laboratory's in-vivo test (ISO 24444:2019), SPF 56.6 was obtained." },
+    "cta": { "text": "இப்போதே வாங்குங்கள்", "back_translation": "Buy right now" } },
+  "notes": "'acne safe' and 'Photostable' kept in English to avoid stronger Tamil medical-sounding phrasing." }

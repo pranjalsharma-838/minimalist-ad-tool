@@ -1,0 +1,7 @@
+{ "lang": "hi", "register": "everyday conversational (Hinglish allowed for product/ingredient names)",
+  "lines": {
+    "headline": { "text": "10% Niacinamide सीरम, ऑयली और मुंहासे-प्रवण त्वचा के लिए", "back_translation": "10% Niacinamide serum, for oily and acne-prone skin" },
+    "on_image_text": { "text": "Matmarine और Zinc के साथ। रोज़ सुबह और शाम लगाएँ।\n30ml: Rs. 539, MRP Rs. 599\nBuy 2, Get 3rd Free\n2 प्रोडक्ट खरीदने पर 3rd प्रोडक्ट फ्री। शर्तें लागू (T&C)।\nNiacinamide 10% Face Serum", "back_translation": "With Matmarine and Zinc. Apply every morning and evening.\n30ml: Rs. 539, MRP Rs. 599\nBuy 2, Get 3rd Free\nThe 3rd product is free on buying 2 products. Terms apply (T&C).\nNiacinamide 10% Face Serum" },
+    "footnote": { "text": "ऑफ़र beminimalist.co के अनुसार, 2026-10-02। शर्तें लागू (T&C)। 2 खरीदने पर 3rd प्रोडक्ट फ्री। कीमत 30ml के लिए है।", "back_translation": "Offers as per beminimalist.co, 2026-10-02. Terms apply (T&C). 3rd product free on buying 2. Price is for 30ml." },
+    "cta": { "text": "अभी खरीदें", "back_translation": "Buy now" } },
+  "notes": "Offer lines (Buy 2, Get 3rd Free; Rs. prices) kept in English exactly as the website shows them. 'acne-prone' rendered as मुंहासे-प्रवण (descriptive, not treatment)." }

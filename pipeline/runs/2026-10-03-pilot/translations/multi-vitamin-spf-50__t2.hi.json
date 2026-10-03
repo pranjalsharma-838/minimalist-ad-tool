@@ -1,0 +1,7 @@
+{ "lang": "hi", "register": "everyday conversational (Hinglish allowed for product/ingredient names)",
+  "lines": {
+    "headline": { "text": "SPF 50, PA++++ और हल्का, मॉइस्चराइज़र जैसा एहसास", "back_translation": "SPF 50, PA++++ and a light, moisturiser-like feel" },
+    "on_image_text": { "text": "ब्रॉड स्पेक्ट्रम SPF 50\nPA++++ रेटेड\nमॉइस्चराइज़र की तरह फैलता है\nफोटोस्टेबल और acne safe\nSPF 50 Sunscreen", "back_translation": "Broad spectrum SPF 50\nPA++++ rated\nSpreads like a moisturiser\nPhotostable and acne safe\nSPF 50 Sunscreen" },
+    "footnote": { "text": "लेबल पर SPF 50। एक स्वतंत्र थर्ड-पार्टी लैब के इन-वीवो टेस्ट (ISO 24444:2019) में SPF 56.6 मिला।", "back_translation": "SPF 50 on the label. In an independent third-party lab's in-vivo test (ISO 24444:2019), SPF 56.6 was obtained." },
+    "cta": { "text": "अभी खरीदें", "back_translation": "Buy now" } },
+  "notes": "'acne safe' kept in English (Latin) to avoid a stronger Hindi phrasing implying treatment. Numbers and test standard unchanged." }

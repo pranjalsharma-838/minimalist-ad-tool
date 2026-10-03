@@ -1,0 +1,7 @@
+{ "lang": "ta", "register": "everyday conversational (English allowed for product/ingredient names)",
+  "lines": {
+    "headline": { "text": "எண்ணெய் பசை மற்றும் முகப்பரு வரக்கூடிய சருமத்திற்கான 10% Niacinamide சீரம்", "back_translation": "10% Niacinamide serum for oily and acne-prone skin" },
+    "on_image_text": { "text": "Matmarine மற்றும் Zinc உடன். தினமும் காலை மற்றும் மாலை பயன்படுத்தவும்.\n30ml: Rs. 539, MRP Rs. 599\nBuy 2, Get 3rd Free\n2 பொருட்கள் வாங்கினால் 3வது பொருள் இலவசம். நிபந்தனைகளுக்கு உட்பட்டது (T&C).\nNiacinamide 10% Face Serum", "back_translation": "With Matmarine and Zinc. Use every morning and evening.\n30ml: Rs. 539, MRP Rs. 599\nBuy 2, Get 3rd Free\nBuy 2 products and the 3rd product is free. Subject to conditions (T&C).\nNiacinamide 10% Face Serum" },
+    "footnote": { "text": "beminimalist.co இல் உள்ளபடி சலுகைகள், 2026-10-02. நிபந்தனைகளுக்கு உட்பட்டது (T&C). 2 வாங்கினால் 3வது பொருள் இலவசம். விலை 30ml-க்கானது.", "back_translation": "Offers as on beminimalist.co, 2026-10-02. Subject to conditions (T&C). Buy 2, 3rd product free. Price is for 30ml." },
+    "cta": { "text": "இப்போதே வாங்குங்கள்", "back_translation": "Buy right now" } },
+  "notes": "Offer lines kept in English as on website. 'acne-prone' as முகப்பரு வரக்கூடிய (likely to get pimples), descriptive only." }
