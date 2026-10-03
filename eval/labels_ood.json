@@ -1,0 +1,473 @@
+[
+  {
+    "id": "ood_B0CW1N7QRT",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "8Hrs+ SPF Protection",
+        "level": "fix",
+        "concern": "Duration-of-protection promise (repeated as '8 HOURS+ SPF PROTECTION') has no recognised SPF test method behind it and undercuts reapplication advice (brand_corpus §3.6); risks under-protection (ASCI-3.3, ASCI-1.1) in ASCI's current SPF enforcement focus (ASCI-RPT-HEAT). Remove or route to legal (Q4)."
+      },
+      {
+        "phrase": "helps you to get clear and acne free skin",
+        "level": "fix",
+        "concern": "Acne-elimination outcome on a sunscreen (repeated as 'acne & oil free skin') moves past the audience descriptor toward mitigation (DCA-DRUG-DEF; open Q1, route to legal); ingredient benefits sold as product efficacy (ASCI-RPT-BPC); 'you' + acne implies a health attribute (META-PA)."
+      },
+      {
+        "phrase": "SPF rating of 50+",
+        "level": "fix",
+        "concern": "Conflicts with 'SPF 50' in the headline; the stated SPF must match the label and the in-vivo report on file (BIS-SPF, ASCI-1.1; Q4)."
+      },
+      {
+        "phrase": "In-Vivo Tested",
+        "level": "fix",
+        "concern": "Test claim needs lab/study source and date in the ad (ASCI-1.2) and an IS 17494 / ISO 24444 report on file (BIS-SPF; open Q4)."
+      },
+      {
+        "phrase": "the thinnest sunscreen",
+        "level": "fix",
+        "concern": "Unsubstantiated superlative/superiority claim (ASCI-1.1; ASCI-RPT-BPC leadership claims; ASCI-G-AWARD: superiority needs research)."
+      },
+      {
+        "phrase": "Non-Toxic",
+        "level": "fix",
+        "concern": "Implies other formulas are toxic - vague, misleading safety claim (COS-R36) and the chemophobic fear framing Minimalist explicitly rejects (brand_corpus §6, S3)."
+      },
+      {
+        "phrase": "free from OMC and Oxybenxone",
+        "level": "fix",
+        "concern": "Free-from framing denigrates legally permitted UV filters (EU-655-4/5/6 §5(1); open Q12) and would disparage Minimalist's own Light Fluid SPF, whose page (S6) names ethylhexyl methoxycinnamate, i.e. OMC (brand_corpus §5); also misspelled."
+      },
+      {
+        "phrase": "advanced and revolutionary formula",
+        "level": "advisory",
+        "concern": "Hype vocabulary absent from Minimalist copy ('revolutionary' = 0, brand_corpus §4.1); conflicts with 'No unnecessary marketing fluff' (§6)."
+      },
+      {
+        "phrase": "highest-quality ingredients which is backed by advanced science",
+        "level": "advisory",
+        "concern": "'Backed by science' carries legal weight and ingredient literature is not product proof (CCPA-4 4(1)(b),(f)); 'highest-quality' is puffery."
+      },
+      {
+        "phrase": "suitable for anyone with sensitive skin",
+        "level": "advisory",
+        "concern": "Universal suitability; soften to 'suitable for sensitive skin' with patch-test data on file (ASCI-1.1; EU-655-4/5/6 rewrite)."
+      }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "No hard drug or fairness claim, but the 8-hour protection promise, acne-free outcome, SPF 50 vs 50+ mismatch and 'thinnest' superlative must be fixed or substantiated before this sunscreen copy runs."
+  },
+  {
+    "id": "ood_B0FDQZBV6K",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Collagen Boost",
+        "level": "fix",
+        "concern": "Structure/function claim - DMR-2's own example ('Boosts collagen production'); open Q2, route to legal; rewrite e.g. 'helps skin look firmer'."
+      },
+      {
+        "phrase": "20% Collagen",
+        "level": "fix",
+        "concern": "Reads as 20% collagen content, yet no collagen appears among the listed actives; a % tied to a benefit is misleading by ambiguity (ASCI-1.4; CPA-2(28)) and breaks concentration transparency (brand_corpus §6; open Q5)."
+      },
+      {
+        "phrase": "18% Brightening",
+        "level": "fix",
+        "concern": "Percentage attached to a benefit, not an ingredient - can read as an 18% brightening result (ASCI-1.4; ASCI-RPT-BPC 'Y% more' with unclear basis); name the actives (11% + 5% + 2%) instead."
+      },
+      {
+        "phrase": "11% Mandarin",
+        "level": "advisory",
+        "concern": "Name the actual ingredient (e.g. mandarin extract, per INCI); Minimalist names the molecule with its % (brand_corpus §2.1)."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Ingredient-led naming is on-brand, but 'Collagen Boost' (Q2) and percentages pinned to benefits rather than named ingredients must be reworked before it runs."
+  },
+  {
+    "id": "ood_B09W1JM81P",
+    "label": "block",
+    "issues": [
+      {
+        "phrase": "Anti-inflammatory, Cystic Acne, Rosacea",
+        "level": "block",
+        "concern": "Positions a cosmetic 'for' named medical conditions (rosacea, cystic acne) plus a pharmacological action - drug language (DCA-DRUG-DEF lists rosacea; CDSCO-PN-2026 on 'treatment' positioning; ASCI-3.4; cf. ASCI-G-INF-HEALTH 'treats cystic acne' example)."
+      },
+      {
+        "phrase": "fights acne-causing bacteria",
+        "level": "fix",
+        "concern": "Antibacterial mitigation claim on acne (DCA-DRUG-DEF; open Q1/Q2 - route to legal)."
+      },
+      {
+        "phrase": "regulates sebum production",
+        "level": "fix",
+        "concern": "Structure/function verb named in open Q2 ('regulates sebum'); route to legal; e.g. 'helps control the look of oil'."
+      },
+      {
+        "phrase": "reduces the formation of open pores (or blackheads)",
+        "level": "fix",
+        "concern": "Scientifically inaccurate structure claim (blackheads are not open pores) (Q2; COS-R36) - wrong for a science-first brand (brand_corpus §6)."
+      },
+      {
+        "phrase": "this mineral is loved for its anti-inflammatory, antibacterial and mattifying properties",
+        "level": "fix",
+        "concern": "Wrong ingredient fact: witch hazel is a plant extract, not a mineral, and 'It essential for healthy skin' is untrue (COS-R36, CPA-2(28)); repeats drug-like anti-inflammatory/antibacterial claims (Q2)."
+      },
+      {
+        "phrase": "Clean Formulation, Non-toxic",
+        "level": "fix",
+        "concern": "'Clean/non-toxic' implies other products are toxic - misleading (COS-R36) and the chemophobic framing Minimalist rejects (brand_corpus §6, S3)."
+      },
+      {
+        "phrase": "non-toxic-to-skin alternatives",
+        "level": "fix",
+        "concern": "Fear framing that standard ingredients are toxic to skin (brand_corpus §6 'fear mongering'; EU-655-4/5/6 §5(1) on denigrating legal ingredients)."
+      },
+      {
+        "phrase": "botanically-derived acid",
+        "level": "advisory",
+        "concern": "Natural-origin claim - keep supplier proof on file (ASCI-RPT-BPC natural claims); natural halo sits badly with brand_corpus §6 anti-'natural' stance."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Positioning a cosmetic serum for rosacea and cystic acne with anti-inflammatory/antibacterial claims is drug territory Minimalist cannot publish, on top of factual errors and 'non-toxic' fear framing."
+  },
+  {
+    "id": "ood_B0B9QMYYY4",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Glycolic Bright 8%",
+        "level": "fix",
+        "concern": "Concentration conflict: headline '8%' reads as 8% glycolic, but the body twice says '1% Glycolic Acid' with '2% Niacinamide' and never quantifies Melasyl - misleading on quantity (ASCI-1.4; CPA-2(28)); reconcile with the formula (brand_corpus §6 concentration transparency)."
+      },
+      {
+        "phrase": "helps fade dark spots in as little as 4 weeks",
+        "level": "fix",
+        "concern": "Time-bound result needs a finished-product study on file and a qualifier/source (ASCI-1.1, ASCI-1.2; META-HW-CLAIMS timeframe promises)."
+      },
+      {
+        "phrase": "reduces dullness and excess melanin appearance",
+        "level": "advisory",
+        "concern": "Melanin wording is a drug claim in the US (FDA-DEF) and depigmentation phrasing is open Q3; keep to 'the look of dark spots'."
+      },
+      {
+        "phrase": "apply 2-3 drops evenly across the face",
+        "level": "advisory",
+        "concern": "Daily AHA directions omit daytime sunscreen; add SPF guidance (ASCI-3.3; Minimalist's own copy: 'Use sunscreen during the day', brand_corpus §4.2)."
+      }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Mostly hedged, cosmetic-safe copy, but the headline '8%' conflicts with the 1% glycolic / 2% niacinamide stated in the body and the 4-week result needs a study and qualifier."
+  },
+  {
+    "id": "ood_B0CKTQGLMZ",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Visibly Reduces Dark Spots from Day 7",
+        "level": "fix",
+        "concern": "Time-bound result with no qualifier or study reference (META-HW-CLAIMS; ASCI-1.1); the fast-result pattern ASCI-RPT-HEAT flagged ('Visible Difference in 5 Days')."
+      },
+      {
+        "phrase": "leaving skin radiant, glowing and clear from the very first week",
+        "level": "fix",
+        "concern": "Exaggerated fast-transformation promise (ASCI-1.5; ASCI-RPT-HEAT)."
+      },
+      {
+        "phrase": "Clinically Tested",
+        "level": "fix",
+        "concern": "Testing claim needs source and date in the ad (ASCI-1.2; open Q8); 'dermatologically tested' in the body is open Q6."
+      },
+      {
+        "phrase": "safe for all skin types",
+        "level": "fix",
+        "concern": "Safety absolute on a 10% glycolic acid serum used nightly; soften to 'suitable for most skin types; patch test' with data on file (ASCI-1.5, ASCI-3.3; cf. Minimalist's acid cautions, brand_corpus §3.7)."
+      },
+      {
+        "phrase": "Organically sourced Turmeric",
+        "level": "fix",
+        "concern": "Organic claim needs certification on file; an organic halo on a largely synthetic acid serum is an ASCI enforcement pattern (ASCI-RPT-BPC)."
+      },
+      {
+        "phrase": "preserves active principles of Turmeric to visibly reduce dark spots",
+        "level": "advisory",
+        "concern": "Ingredient efficacy presented as product efficacy (ASCI-RPT-BPC; Q5)."
+      },
+      {
+        "phrase": "Free from mineral oils, parabens, phthalates, silicones, SLS and SLES",
+        "level": "advisory",
+        "concern": "Free-from list implies legal ingredients are harmful (EU-655-4/5/6 §5(1); open Q12); at odds with brand_corpus §6 anti-fear stance."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "No drug or fairness claim, but the Day-7 / first-week results, unsourced 'Clinically Tested', organic halo and 'safe for all skin types' on a 10% AHA all need fixing or evidence."
+  },
+  {
+    "id": "ood_B00E96N6O8",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "2X more moisturizers and 300% hydration boost",
+        "level": "fix",
+        "concern": "Comparative stats with no stated basis (vs what, measured how?) - ASCI-RPT-BPC 'Y% more' pattern; ASCI-4.1; ASCI-G-DISC requires the basis of comparison."
+      },
+      {
+        "phrase": "72Hr Hydration",
+        "level": "fix",
+        "concern": "Duration claim needs a finished-product hydration study on file, cited in the ad (ASCI-1.1, ASCI-1.2)."
+      },
+      {
+        "phrase": "dermatologically approved for skin compatibility",
+        "level": "fix",
+        "concern": "'Approved' implies expert endorsement; needs a test report and legal view (ASCI-RPT-BPC expert recommendation; open Q6)."
+      },
+      {
+        "phrase": "delivers instant hydration",
+        "level": "advisory",
+        "concern": "'Instant' is hype Minimalist never uses (brand_corpus §4.1) and an ASCI-RPT-HEAT watch term; acceptable only as a tested sensory claim."
+      },
+      {
+        "phrase": "100% natural Jojoba Oil",
+        "level": "advisory",
+        "concern": "'100% natural' framing is what Minimalist's philosophy criticises (brand_corpus §6, S3); keep the ingredient spec on file."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Benign moisturiser copy undermined by unexplained '2X / 300%' comparisons, an uncited 72-hour claim and 'dermatologically approved'."
+  },
+  {
+    "id": "ood_B0BXSDJQNR",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "clinically proven to brighten skin in 5 days",
+        "level": "fix",
+        "concern": "'Clinically proven' with no source/date (ASCI-1.2; Q8) plus a 5-day result - the exact pattern ASCI-RPT-HEAT flagged ('Visible Difference in 5 Days')."
+      },
+      {
+        "phrase": "Gives Brighter Skin",
+        "level": "fix",
+        "concern": "Whole face-and-body brightening led by glutathione (commonly marketed for skin lightening) reads as skin-lightening - ASCI-G-FAIR / META-HW-WHITEN exposure; open Q3, route to legal; reframe to radiance or the look of dullness."
+      },
+      {
+        "phrase": "10x more powerful than Vitamin C",
+        "level": "fix",
+        "concern": "Unqualified multiplier with no basis (ASCI-RPT-BPC '30X' pattern; ASCI-4.1); an ingredient comparison is not product proof (CCPA-4 4(1)(f))."
+      },
+      {
+        "phrase": "Dewy glowing skin from first use",
+        "level": "fix",
+        "concern": "Instant-result promise (ASCI-1.5; ASCI-RPT-HEAT instant transformation; META-HW-CLAIMS timeframe)."
+      },
+      {
+        "phrase": "Provides 48 hours of glowing radiant skin",
+        "level": "fix",
+        "concern": "Duration claim for a visual outcome needs a study and qualifier (ASCI-1.1, ASCI-1.2)."
+      },
+      {
+        "phrase": "1.5x increase in skin hydration",
+        "level": "fix",
+        "concern": "Stat with no baseline, sample or method (ASCI-1.1, ASCI-1.2; ASCI-RPT-BPC)."
+      },
+      {
+        "phrase": "10x active Niacinamide",
+        "level": "fix",
+        "concern": "Multiplier with no basis instead of a stated % (ASCI-RPT-BPC; brand_corpus §6 concentration transparency)."
+      },
+      {
+        "phrase": "gets absorbed in 3 seconds",
+        "level": "fix",
+        "concern": "Precise time claim needs test data on file (ASCI-1.1)."
+      },
+      {
+        "phrase": "It provides 14 layers absorption",
+        "level": "fix",
+        "concern": "Unclear, likely unsubstantiable penetration claim - misleading by ambiguity (ASCI-1.4); structure-type language (Q2)."
+      }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "A stack of unsourced multipliers, fast-result and 'clinically proven' claims plus glutathione-led 'brighter skin' - runnable only after studies are on file and legal clears the brightening framing."
+  },
+  {
+    "id": "ood_B01HMLB0LW",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Repairs Skin",
+        "level": "fix",
+        "concern": "Repair/heal language beyond the cosmetic definition (DCA-COS-DEF 'Heals damaged skin barrier' example); open Q2 - route to legal; e.g. 'helps support the skin barrier'."
+      },
+      {
+        "phrase": "48H Hydration",
+        "level": "fix",
+        "concern": "Duration claim needs a finished-product hydration study on file, cited in the ad (ASCI-1.1, ASCI-1.2)."
+      },
+      {
+        "phrase": "Rich Fragrance and Paraben Free",
+        "level": "fix",
+        "concern": "Ambiguous fragrance claim contradicted by the body ('Features a pleasant almond scent'); state 'no added fragrance' or drop the fragrance-free claim (ASCI-1.4, COS-R36) - matters on a sensitive-skin product."
+      },
+      {
+        "phrase": "Prevents Moisture Loss",
+        "level": "advisory",
+        "concern": "Absolute 'prevents'; prefer 'helps reduce moisture loss' backed by TEWL data."
+      },
+      {
+        "phrase": "Target Audience: Suitable for both men and women",
+        "level": "advisory",
+        "concern": "Marketplace/SEO scaffolding labels ('Target Audience:', 'Brand and Product:') are not ad copy."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Plain spec-style copy, but 'Repairs Skin' (Q2), an uncited 48H claim and the fragrance-free vs almond-scent contradiction need fixing first."
+  },
+  {
+    "id": "ood_B01CCGW4OE",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Clinically proven to provide continuous hydration",
+        "level": "fix",
+        "concern": "'Clinically proven' with no source/date in the ad (ASCI-1.2; CCPA-12 12(b); open Q8)."
+      },
+      {
+        "phrase": "DERMATOLOGIST RECOMMENDED",
+        "level": "fix",
+        "concern": "Expert-recommendation claim needs evidence on file (ASCI-RPT-BPC); whether doctor endorsement is permissible is open Q6 (CCPA-13) - route to legal."
+      },
+      {
+        "phrase": "DEFENDS AGAINST 5 SIGNS OF SKIN SENSITIVITY",
+        "level": "fix",
+        "concern": "Multi-part efficacy claim (irritation, weakened barrier) needs finished-product data on file (ASCI-1.1)."
+      },
+      {
+        "phrase": "Hypoallergenic formula",
+        "level": "advisory",
+        "concern": "Keep the HRIPT/clinical test on file; Minimalist states such tests explicitly (brand_corpus §3.5)."
+      },
+      {
+        "phrase": "Target Audience Keywords: Unisex Adult",
+        "level": "advisory",
+        "concern": "SEO scaffolding, not consumer copy."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Gentle, benefit-led cleanser copy that only needs the 'clinically proven', 'dermatologist recommended' and '5 signs' claims sourced or legally cleared."
+  },
+  {
+    "id": "ood_B07XS46Q73",
+    "label": "block",
+    "issues": [
+      {
+        "phrase": "Clears & Prevents Pimples & Acne",
+        "level": "block",
+        "concern": "Claims to clear and prevent acne - treatment/prevention of a skin disorder is drug language (DCA-DRUG-DEF, whose violation example is 'Treats acne and prevents breakouts'; Q1 itself labels 'treats acne' a drug claim)."
+      },
+      {
+        "phrase": "prevents reoccurence with regular use",
+        "level": "block",
+        "concern": "Recurrence-prevention claim for acne - 'prevention of any disease or disorder' (DCA-DRUG-DEF; ASCI-3.4)."
+      },
+      {
+        "phrase": "Clinically Proven Formula",
+        "level": "fix",
+        "concern": "No source/date in the ad (ASCI-1.2; open Q8)."
+      },
+      {
+        "phrase": "target pimple-causing bacteria",
+        "level": "fix",
+        "concern": "Antibacterial mechanism claim for acne (open Q1/Q2 - route to legal)."
+      },
+      {
+        "phrase": "most studied antibacterial botanicals",
+        "level": "fix",
+        "concern": "Unsubstantiated superlative; ingredient literature is not product proof (CCPA-4 4(1)(f); ASCI-RPT-BPC)."
+      },
+      {
+        "phrase": "free from harsh chemicals",
+        "level": "fix",
+        "concern": "Chemophobic framing Minimalist explicitly rejects ('chemical-free products don't exist', brand_corpus §6, S3); misleading by implication (COS-R36)."
+      },
+      {
+        "phrase": "They tackle pimple at the source rather than just clearing surface oil",
+        "level": "advisory",
+        "concern": "Treatment-style mechanism talk plus an implied knock at other cleansers (ASCI-4.1 denigration by implication)."
+      },
+      {
+        "phrase": "Clean herbal formulation",
+        "level": "advisory",
+        "concern": "Natural/clean halo (ASCI-RPT-BPC); off-brand for Minimalist (brand_corpus §6)."
+      }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "'Clears & Prevents Pimples & Acne' plus 'prevents reoccurence' is acne treatment/prevention language a cosmetic cannot carry, beyond the fixable unsourced 'clinically proven' and chemophobic lines."
+  },
+  {
+    "id": "ood_B08NYD1GGK",
+    "label": "block",
+    "issues": [
+      {
+        "phrase": "Fairness Face Wash",
+        "level": "block",
+        "concern": "Explicit fairness (skin-colour improvement) positioning - ASCI-G-FAIR, META-HW-WHITEN framing, possible DMR schedule addition (open Q11); Minimalist uses zero fairness terms (brand_corpus §4.1)."
+      },
+      {
+        "phrase": "Removes Dead Skin And Dark Spots",
+        "level": "fix",
+        "concern": "A rinse-off wash promising to remove dark spots is an exaggerated, improbable outcome (ASCI-1.5; GADS-UNREL); needs data and 'helps reduce the look of' wording. Repeated as 'Dark spots removal'."
+      },
+      {
+        "phrase": "Spot-less brightness",
+        "level": "fix",
+        "concern": "Absolute 'spotless' promise (ASCI-1.5; ASCI-1.4)."
+      },
+      {
+        "phrase": "Clinically proven face wash",
+        "level": "fix",
+        "concern": "No source/date (ASCI-1.2; open Q8)."
+      },
+      {
+        "phrase": "Washes away germs",
+        "level": "advisory",
+        "concern": "Germ/hygiene claim drifts toward antimicrobial territory; keep to cleansing language or hold data (Q2)."
+      },
+      {
+        "phrase": "Infused with Advanced Vitamin B3+ to brighten skin",
+        "level": "advisory",
+        "concern": "'Vitamin B3+' is vague; Minimalist names the molecule and its % (brand_corpus §2.1, §6)."
+      }
+    ],
+    "confidence": "high",
+    "reviewer_note": "Explicit 'Fairness' positioning is a hard stop for Minimalist; the spot-removal and unsourced 'clinically proven' claims would also need fixing."
+  },
+  {
+    "id": "ood_B0BLCM1BQD",
+    "label": "fix",
+    "issues": [
+      {
+        "phrase": "Treats Hyperpigmentation",
+        "level": "fix",
+        "concern": "'Treats' is drug language (DCA-DRUG-DEF; CDSCO-PN-2026 watching 'treatment' positioning), but whether hyperpigmentation is a disorder is unsettled (open Q3) - route to legal; rewrite 'fades the look of hyperpigmentation'."
+      },
+      {
+        "phrase": "by reducing excess melanin production",
+        "level": "fix",
+        "concern": "Melanin-production mechanism is structure/function language (open Q2/Q3) and a drug claim in the US (FDA-DEF)."
+      },
+      {
+        "phrase": "helps brighten the skin complexion",
+        "level": "advisory",
+        "concern": "Whole-complexion brightening edges toward fairness; keep the focus on spots and even tone (ASCI-G-FAIR rewrite; Q3)."
+      },
+      {
+        "phrase": "Alpha arbutin in the formula helps fade dark spots and acne marks",
+        "level": "advisory",
+        "concern": "Ingredient efficacy presented as product efficacy - hold finished-product data or use 'formulated with' (ASCI-RPT-BPC; Q5)."
+      }
+    ],
+    "confidence": "medium",
+    "reviewer_note": "Largely hedged depigmentation copy close to Minimalist's own register, but 'Treats Hyperpigmentation' and the melanin-production mechanism need rewording or legal sign-off."
+  }
+]
