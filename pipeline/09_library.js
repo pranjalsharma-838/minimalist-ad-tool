@@ -12,13 +12,17 @@ const match = new Map(JSON.parse(fs.readFileSync(path.join(runDir, "match.json")
 const slug = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const rows = [];
 for (const b of briefs) {
-  const pngs = fs.existsSync(path.join(runDir, "finals")) ? fs.readdirSync(path.join(runDir, "finals")).filter((f) => f.startsWith(b.source_ad_id) && f.endsWith(".png")) : [];
+  // One description per creative; the 4:5 / 9:16 PNGs are copied alongside and listed under "Placements".
+  const all = fs.existsSync(path.join(runDir, "finals")) ? fs.readdirSync(path.join(runDir, "finals")).filter((f) => f.startsWith(b.source_ad_id + ".") || f.startsWith(b.source_ad_id + "_v")) : [];
+  const pngs = all.filter((f) => /\.png$/.test(f) && !/\.(4x5|9x16)\.png$/.test(f));
+  const extra = all.filter((f) => /\.(4x5|9x16)\.png$/.test(f));
   if (!pngs.length) continue;
   const m = match.get(b.source_ad_id) || {};
   const dest = path.join("ad_library", b.product_handle, slug(m.template_name || b.layout));
   fs.mkdirSync(dest, { recursive: true });
   const dirJson = path.join(runDir, "director", `${b.source_ad_id}.json`);
   const director = fs.existsSync(dirJson) ? JSON.parse(fs.readFileSync(dirJson, "utf8")) : null;
+  for (const e of extra) fs.copyFileSync(path.join(runDir, "finals", e), path.join(dest, e));
   for (const png of pngs) {
     const id = png.replace(/\.png$/, "");
     fs.copyFileSync(path.join(runDir, "finals", png), path.join(dest, png));
@@ -32,6 +36,11 @@ for (const b of briefs) {
       `| Product | ${b.product_title} (${b.product_url}) |`,
       `| Format | #${m.template_id ?? "?"} ${m.template_name || ""} · layout \`${b.layout || "hero"}\` |`,
       `| Why this format | ${b.archetype_reason || m.match_method || ""} |`,
+      `| Angle / hook | ${b.angle || m.angle || "—"} · hook: ${b.hook_type || "—"} |`,
+      `| Blended from | ${(b.blend_sources || []).map((x) => `${x.brand} (${x.id}): ${x.took}`).join("; ") || (m.blend_refs || []).join("; ") || "—"} |`,
+      `| Social proof | ${Object.keys(b.citations || {}).length && JSON.stringify(b.citations).match(/RATING|REV\d/g) ? [...new Set(JSON.stringify(b.citations).match(/RATING|REV\d/g))].join(", ") + " (real, verbatim)" : "none"} |`,
+      `| Placements | 1:1 ${id}.png${fs.existsSync(path.join(runDir, "finals", `${id}.4x5.png`)) ? ` · 4:5 ${id}.4x5.png · 9:16 ${id}.9x16.png` : ""} |`,
+      `| Language versions | ${fs.existsSync(path.join(runDir, "translations")) ? fs.readdirSync(path.join(runDir, "translations")).filter((f) => f.startsWith(b.source_ad_id + ".") && /\.[a-z]{2}\.json$/.test(f)).map((f) => f.slice(-7, -5)).join(", ") || "none" : "none"} |`,
       `| Risk level | **${b.risk_level}**${b.ai_label_required ? " · carries the AI-GENERATED — ILLUSTRATIVE mark" : ""} |`,
       `| Compliance verdict | ${b.verdict?.label || ""} (${b.coverage?.model ? "rules + AI judge" : "rules only"}) |`,
       `| Retry rounds | ${b.rounds_tried || 1} |`,
