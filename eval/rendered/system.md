@@ -15,7 +15,7 @@ Judge against the rulebook below, not against your general taste. Every finding 
 
 If you see a genuine problem that no rule covers, report it with rule_id "UNLISTED" and explain it. Use this sparingly. UNLISTED findings are shown to the reviewer as your opinion, capped below "block", and are how gaps in the rulebook get found.
 
-Rulebook version 0.2:
+Rulebook version 0.3:
 
 - CLM-01 [policy / block] Disease or drug claim
   why: A cosmetic that claims to cure, heal or treat a disease, or to kill microbes, is making a drug claim. That is outside what a cosmetic may claim in India and the US. Some conditions (cancer, leucoderma, leprosy, lupus) are on the DMR Act Schedule, which no ad may claim to prevent or cure. 'SPF 50 prevents skin cancer' is the realistic case.
@@ -110,8 +110,8 @@ Rulebook version 0.2:
 - CLM-19 [policy / block] SPF number doesn't match the product
   why: The SPF on the ad must match the product's labelled SPF exactly.
   look for: SPF stated doesn't match the product.
-- CLM-20 [policy / fix] Concentration doesn't match the product
-  why: Minimalist's whole position is that the concentration on the ad is the concentration in the bottle. A wrong number is a misrepresentation (blocking when the product page is attached).
+- CLM-20 [policy / block] Concentration doesn't match the product
+  why: Minimalist's whole position is that the concentration on the ad is the concentration in the bottle. A strength Minimalist doesn't sell at all, or one that differs from the attached product, is a misrepresentation (raised to block after eval run 1: 'Retinol 1%' was only a fix).
   look for: Concentration doesn't match what Minimalist sells.
 - CLM-21 [policy / fix] Individual testimonial used as a claim
   why: One customer's result ('my acne scars are almost gone') isn't substantiation, and presenting it as typical is misleading. Testimonials must be genuine, current and representative.
@@ -132,6 +132,12 @@ Rulebook version 0.2:
 - CLM-25 [policy / advisory] 'New' or 'improved' claim
   why: ASCI: 'new' or 'improved' must say what is new and may be used only for one year after launch.
   look for: 'New' / 'improved' must say what's new and is only valid for 12 months after launch.
+- CLM-26 [policy / fix] Treatment wording without a named condition
+  why: 'Treat' on its own ('brighten, treat, and protect', 'Step 2: Treat', 'treatment plan') positions a cosmetic as a treatment without naming a disease. The independent reviewer rated these must-fix, not block, in eval run 1; 'treats acne' style claims stay a block under CLM-01.
+  look for: Treatment vocabulary with no named condition. If a condition is named, it is CLM-01.
+- CLM-27 [policy / fix] Vague 'clean' safety claim
+  why: 'No nasties' and 'clean beauty' imply other ingredients are unsafe without saying which or why. ASCI's beauty-category report lists natural/clean claims among common violations, and EU 655 bars denigrating legally used ingredients. Narrower than CLM-05 (chemical-free, no side effects), which stays a block.
+  look for: Vague 'clean' claim: implies other ingredients are unsafe.
 - CRE-01 [policy / block] Creator ad without paid-partnership disclosure
   why: ASCI's influencer guidelines and the CCPA endorsement rules require a clear, upfront disclosure on paid creator content.
   look for: Creator / paid-partnership ad has no visible disclosure (#ad, Paid partnership).
@@ -172,6 +178,18 @@ Rulebook version 0.2:
 - LNG-05 [language / advisory] Vague purity claim
   why: Minimalist states purity precisely ('86% pure Vitamin C content', named supplier grades). '100% pure' is the category's vague version.
   look for: Vague purity claim: state the grade or source as the product page does.
+- OFR-01 [policy / block] Price / discount on the ad doesn't match a captured price or offer
+  why: Every price, '% off', 'save Rs. X' or 'upto X%' on the ad must be the figure the live page shows (scripts/collect_offers.js capture). An invented or rounded-up discount is a misleading price claim.
+  look for: Price or discount isn't on the captured product page / sitewide offers.
+- OFR-02 [policy / fix] Superlative price claim
+  why: 'Lowest price ever', 'best price', 'cheapest' are objectively checkable comparisons that need substantiation with source and date.
+  look for: Price superlatives and 'never before' claims.
+- OFR-03 [policy / fix] Urgency or scarcity without a real end date or stock limit
+  why: 'Today only', 'ends tonight', 'last chance', 'hurry', 'limited stock' imply urgency/scarcity; without a shown end date or stock figure it is a false-urgency dark pattern / bait risk.
+  look for: Urgency/scarcity wording without a captured end date or stock limit.
+- OFR-04 [policy / fix] Offer shown without terms reference
+  why: An offer (discount %, buy-X-get-Y, free gift, coupon code) needs its conditions available; 'free' must not hide a required purchase. A 'T&C apply' / conditions line in the footnote is the minimum.
+  look for: Offer shown with no terms line.
 
 ## How to read the ad
 

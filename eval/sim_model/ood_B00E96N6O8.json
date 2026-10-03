@@ -1,0 +1,70 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "72Hr Hydration",
+      "severity": "fix",
+      "why": "'72Hr hydration' is a specific duration claim, so it needs a study that measured hydration over 72 hours, with that qualifier shown on the ad. It repeats in the primary text with no qualifier.",
+      "fix": "Remove '72Hr' unless the 72-hour study is on file; if it is, keep it with a footnote naming the study. Otherwise: 'Lightweight daily moisturizer with Vitamin E & Jojoba Oil'."
+    },
+    {
+      "rule_id": "CLM-08",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "300% Hydration Boost",
+      "severity": "fix",
+      "why": "'300% hydration boost' is a result figure with no qualifier: it doesn't say what was measured, against what baseline, over how long or on how many people. As written it reads as an efficacy number nobody can check.",
+      "fix": "Remove the figure, or keep it only with its study qualifier on the creative. Otherwise: 'Moisturizing formula that helps lock in moisture'."
+    },
+    {
+      "rule_id": "LNG-03",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "100% natural Jojoba Oil",
+      "severity": "advisory",
+      "why": "Selling the jojoba oil as '100% natural' is the naturalness framing Minimalist explicitly rejects, and '100%' is a vague purity claim (LNG-05) rather than a stated grade or source.",
+      "fix": "Enriched with Vitamin E and Jojoba Oil"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'100% natural' describes where the jojoba oil comes from; it doesn't promise a guaranteed or permanent result. The real issue is natural/purity framing, raised as LNG-03."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "No safety claim is made here (no 'chemical-free', 'no side effects' or 'natural so it's safe'); '100% natural' is ingredient-origin framing, raised as an LNG-03 advisory."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'delivers instant hydration' promises an immediate result; it needs a study measuring hydration right after application, with the qualifier on the ad."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'Dermatologically Approved' is an endorsement claim, and 'approved' implies a formal approval that doesn't exist for cosmetics; it needs a specific dermatologist study on file or narrower wording."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Same 'dermatologically approved' claim in the body copy; it needs the same substantiation or narrower wording."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "'2X more moisturizers' compares against an unstated baseline (an older formula or other creams); it must say what it is compared with and be substantiated."
+    },
+    {
+      "index": 6,
+      "assessment": "likely_false_positive",
+      "why": "'natural glow' describes the skin's own healthy-looking glow, not a natural-ingredient claim; the natural framing problem is '100% natural Jojoba Oil'."
+    }
+  ],
+  "tone_read": "This reads as keyword-stuffed marketplace copy: long run-on feature headers, repeated mood words (deep nourishment, fresh glowing, refreshing) and big unqualified numbers (72Hr, 2X, 300%). It is calm and has no fear hooks, but it isn't Minimalist's educational voice because it never explains what Vitamin E or jojoba oil does or at what strength.",
+  "language_read": "Vitamin E and Jojoba Oil are named without any concentration, and the copy leans on '100% natural' and 'Natural Jojoba Oil' framing the brand avoids. Most efficacy is hedged with 'helps', but '72Hr hydration', 'instant hydration' and '300% hydration boost' are stated as flat facts with no study scoping."
+}

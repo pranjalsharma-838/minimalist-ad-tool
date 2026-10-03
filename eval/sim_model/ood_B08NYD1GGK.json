@@ -1,0 +1,50 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-04",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Dark spots removal",
+      "severity": "fix",
+      "why": "This repeats the headline's 'removes dark spots' claim in the body; a face wash can't remove dark spots, and only a change in appearance can be claimed.",
+      "fix": "Visibly reduces the appearance of dark spots"
+    },
+    {
+      "rule_id": "CLM-03",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Spot-less brightness",
+      "severity": "block",
+      "why": "'Spot-less' promises skin with no spots at all, an absolute result no cleanser can deliver; next to 'Fairness' in the product name it also reads as lightening (CLM-06).",
+      "fix": "Remove it; if a benefit line is needed, use 'For brighter-looking skin'."
+    },
+    {
+      "rule_id": "CLM-01",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Washes away germs",
+      "severity": "block",
+      "why": "Germ claims position the face wash as antimicrobial, which is a drug/hygiene claim rather than cosmetic cleansing; it is acceptable only if legal clears it as purely mechanical cleansing.",
+      "fix": "Washes away dirt and impurities"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Removes ... Dark Spots' is an elimination claim on a skin concern; removing dead skin cells is fine as a cleansing mechanism, but dark spots can only be claimed as 'visibly reduces the appearance of'."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Fairness' in the product name makes lighter skin the goal, a direct breach of ASCI's skin-lightening guidelines; it has to go."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'Clinically proven face wash' doesn't say what was proven; it needs a product-specific study on file and its qualifier on the ad."
+    }
+  ],
+  "tone_read": "This is fairness-category copy: a product name built on 'Fairness' and 'Spot Less', fragment bullets and removal promises, with no explanation of what the active does. It is the opposite of Minimalist's calm, educational, no-fear positioning.",
+  "language_read": "The active is named loosely as 'Advanced Vitamin B3+' instead of Niacinamide, and with no concentration. Efficacy is unhedged elimination language ('removal', 'Removes', 'Spot-less') rather than 'visibly reduces the appearance of'."
+}

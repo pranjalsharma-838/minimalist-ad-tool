@@ -1,0 +1,92 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "10x more powerful than Vitamin C",
+      "severity": "fix",
+      "why": "Comparing glutathione with Vitamin C ('10x more powerful') is an unsubstantiated comparison with no stated measure or source, and it presents an ingredient comparison as the product's benefit (CLM-23).",
+      "fix": "Remove the comparison: 'Boosted with GlutaGlow technology that uses Glutathione'."
+    },
+    {
+      "rule_id": "CLM-13",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "10x active Niacinamide",
+      "severity": "fix",
+      "why": "'10x active Niacinamide' is an unexplained multiplier with no baseline or source; it reads like a strength claim but gives no actual concentration.",
+      "fix": "State the niacinamide percentage exactly as on the label, or simply 'Niacinamide helps reduce the appearance of blemishes'."
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "gets absorbed in 3 seconds",
+      "severity": "fix",
+      "why": "A 3-second absorption time is a specific timed claim, so it needs a test that measured it, with the qualifier on the ad.",
+      "fix": "Remove the timing: 'bursts into water droplets on the skin with a non-sticky finish'."
+    },
+    {
+      "rule_id": "CLM-13",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "14 layers absorption",
+      "severity": "fix",
+      "why": "'14 layers absorption' is an unsourced technical figure (14 layers of what, measured how?) that implies deep penetration and can't be checked as written.",
+      "fix": "Remove it and keep 'leaving skin feeling nourished and visibly glowing'."
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Provides 48 hours of glowing radiant skin",
+      "severity": "fix",
+      "why": "A 48-hour result is a specific duration claim, so it needs a study of that length and the qualifier shown on the ad.",
+      "fix": "Remove it, or keep it only with its study footnote on the creative."
+    },
+    {
+      "rule_id": "CLM-08",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "1.5x increase in skin hydration",
+      "severity": "fix",
+      "why": "This result figure has no qualifier: it doesn't say what was measured, against what baseline, over how long or on how many people.",
+      "fix": "Keep it only with the study qualifier on the creative; otherwise: 'helps boost skin's moisture'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'brighten skin in 5 days' is a time-bound result; it needs a 5-day study and its qualifier on the ad."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Dewy glowing skin from first use' promises an instant result; it needs a first-application study and qualifier."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'Clinically Proven formula' needs a product-specific study on file and a qualifier saying what was measured."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'clinically proven to brighten skin in 5 days' stacks a clinical claim on a time-bound result; both need the study and its qualifier."
+    },
+    {
+      "index": 4,
+      "assessment": "likely_false_positive",
+      "why": "'Supports natural radiance' describes the skin's own radiance, not a natural-ingredient claim."
+    },
+    {
+      "index": 5,
+      "assessment": "likely_false_positive",
+      "why": "'boost skin's natural radiance' again refers to the skin's own glow, not natural framing."
+    }
+  ],
+  "tone_read": "This reads as category hype: branded tech names ('GlutaGlow', 'Water Burst'), stacked multipliers (10x, 14 layers, 1.5x) and instant-result promises ('from first use', '3 seconds', '5 days'). Minimalist's calm, education-first voice would explain what glutathione and niacinamide do at what strength instead of piling up numbers.",
+  "language_read": "No concentrations are given; '10x active Niacinamide' swaps a multiplier for a percentage and 'Hyaluron' isn't a precise ingredient name. 'Gives Brighter Skin' with glutathione on face and body sits close to lightening framing; 'more radiant-looking skin' would be safer."
+}

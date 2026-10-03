@@ -1,0 +1,102 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-01",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Anti-inflammatory, Cystic Acne",
+      "severity": "block",
+      "why": "The headline sells the serum 'for' cystic acne and as an anti-inflammatory, both disease/drug claims; the rule layer caught only 'Rosacea' in the same list, and 'anti-inflammatory' repeats in the Witch Hazel line.",
+      "fix": "10% Azelaic Acid Face Serum with Witch Hazel Extract | For oily, acne-prone skin"
+    },
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Reduce Redness, Excess Oil & Breakout",
+      "severity": "fix",
+      "why": "'Reduce ... Breakout' is an unscoped acne-reduction claim, which sits on the cosmetic/drug line.",
+      "fix": "Helps reduce the look of redness and blemishes"
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "regulates sebum production",
+      "severity": "fix",
+      "why": "Claiming the product 'regulates sebum production' (and 'reduces the formation of' blackheads) is a claim to change a body process. It is also azelaic acid's literature presented as this product's result (CLM-23).",
+      "fix": "Helps reduce the look of excess oil"
+    },
+    {
+      "rule_id": "CLM-13",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "It essential for healthy skin, this mineral",
+      "severity": "fix",
+      "why": "Calling witch hazel 'essential for healthy skin' is unsourced, and calling it a mineral is factually wrong (it is a plant extract). For a science-led brand, an ingredient error undermines every other claim.",
+      "fix": "It also contains Witch Hazel Extract."
+    },
+    {
+      "rule_id": "CLM-27",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Clean Formulation",
+      "severity": "fix",
+      "why": "'Clean' is a vague safety claim implying other ingredients are unsafe; paired with 'non-toxic' (already flagged) it builds the clean-is-safe story the brand rejects.",
+      "fix": "Cruelty free, paraben free, vegan, gluten free, fragrance free."
+    },
+    {
+      "rule_id": "CLM-11",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "highest-quality ingredients",
+      "severity": "fix",
+      "why": "'Highest-quality' is a superlative against the whole market and needs objective support; as written it is unsubstantiated.",
+      "fix": "Remove it, or name the specific ingredient grade or supplier if that is documented."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "Rosacea is a medical skin condition; listing it as what the serum is 'for' is a disease claim."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Describing the acid's 'antibacterial' benefits claims microbe-killing, which is a drug claim for a cosmetic."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Witch hazel's 'antibacterial' (and 'anti-inflammatory') properties are presented as product benefits; same drug-claim problem."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'fights acne-causing bacteria' is an explicit antibacterial acne claim."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Same phrase as hit 3; it is also a fight-acne claim, with CLM-01 the more serious reading."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "'Non-toxic' implies other products are toxic and can't be substantiated for every user; it is a safety absolute."
+    },
+    {
+      "index": 6,
+      "assessment": "agree",
+      "why": "Second 'non-toxic' in the same block; same safety-absolute problem."
+    },
+    {
+      "index": 7,
+      "assessment": "agree",
+      "why": "'non-toxic-to-skin alternatives' implies the ingredients it replaced are toxic; same problem."
+    }
+  ],
+  "tone_read": "The copy sounds clinical but is condition-led (cystic acne, rosacea, inflammation) and leans on 'clean' and 'non-toxic' fear framing plus 'potent' boasting, which Minimalist positions itself against. It names the active and its strength and explains mechanisms, but those explanations are drug-style claims rather than calm, appearance-scoped education.",
+  "language_read": "'10% Azelaic Acid' is written in the right format, but Witch Hazel is misdescribed as a mineral and 'botanically-derived acid' adds natural framing. Outcome verbs ('evens skin texture and tone', 'reduces blemishes', 'reduces redness') are mostly unhedged where the brand would say 'helps' or 'visibly reduces the appearance of'."
+}

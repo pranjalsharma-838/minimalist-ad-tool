@@ -1,0 +1,82 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-18",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "8Hrs+ SPF Protection",
+      "severity": "fix",
+      "why": "'8Hrs+ SPF Protection' implies one application protects for 8+ hours, i.e. no need to reapply, which overstates what a sunscreen does; the body repeats it.",
+      "fix": "Broad Spectrum SPF 50 PA++++ (drop the hours claim)."
+    },
+    {
+      "rule_id": "CLM-03",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "zero white cast",
+      "severity": "block",
+      "why": "'Zero white cast' is an absolute promise across all skin tones, like the rulebook's 'Absolutely zero white cast'; the headline's 'No White Cast' should likewise be scoped.",
+      "fix": "leaves no visible white cast on application"
+    },
+    {
+      "rule_id": "CLM-19",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "SPF rating of 50+",
+      "severity": "block",
+      "why": "The headline says SPF 50 twice, but the body says 'SPF rating of 50+'; the ad must match the labelled SPF exactly, and '50+' is a stronger claim.",
+      "fix": "This sunscreen has SPF 50 with PA++++ Broad Spectrum protection."
+    },
+    {
+      "rule_id": "CLM-11",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "the thinnest sunscreen",
+      "severity": "fix",
+      "why": "'The thinnest sunscreen' is a market-wide superlative that needs objective comparative data with its basis stated.",
+      "fix": "The ultra light fluid texture gets absorbed quickly and leaves a matte finish."
+    },
+    {
+      "rule_id": "CLM-09",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "science backed ingredient",
+      "severity": "fix",
+      "why": "'Science backed' is an evidence claim with no study named, and 'backed by advanced science' repeats it later; each needs specific substantiation or should be replaced with what the ingredients do.",
+      "fix": "Infused with Niacinamide, Oats Extract and Zinc PCA to help balance oil."
+    },
+    {
+      "rule_id": "CLM-11",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "highest-quality ingredients",
+      "severity": "fix",
+      "why": "'Highest-quality' is a superlative against the whole market and needs objective support; as written it is unsubstantiated.",
+      "fix": "Remove it, or name the specific ingredient grade or supplier if that is documented."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'helps you to get clear and acne free skin' claims to clear acne, and 'acne free' edges into an absolute result (CLM-03)."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "The Science Forward line repeats it ('clear and acne & oil free skin'); same acne-clearing claim."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'Non-Toxic' implies other sunscreens are toxic and is a safety absolute that can't be substantiated for every user."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'revolutionary' is hype vocabulary that Minimalist's own copy never uses."
+    }
+  ],
+  "tone_read": "Hype-forward category voice: 'revolutionary', 'formulations of tomorrow', 'thinnest sunscreen' and 'new age' filters, with all-caps headers and outcome promises (clear, acne-free skin). It does name actives and filters, but the register is boastful rather than Minimalist's calm, declarative education.",
+  "language_read": "The SPF is stated inconsistently (SPF 50 vs 50+) and niacinamide and zinc PCA carry no concentrations. 'Zero white cast', 'acne free' and 'clear skin' are unhedged absolutes, and spelling slips ('Cermaides', 'Oxybenxone', 'sprread') would not pass a brand copy check."
+}

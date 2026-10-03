@@ -13,7 +13,7 @@ Shop now
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-(none)
+0. OFR-02 in headline: "never before"
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 (no product page attached — judge claims on the ad alone)

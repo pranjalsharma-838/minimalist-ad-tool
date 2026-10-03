@@ -1,0 +1,98 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-05",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "free from harsh chemicals",
+      "severity": "block",
+      "why": "'Free from harsh chemicals' is chemical-free framing: it implies other formulas are harmful and can't be substantiated, which is the exact claim Minimalist's founding position rejects.",
+      "fix": "Free from parabens, silicones, sulphates and animal-derived ingredients."
+    },
+    {
+      "rule_id": "CLM-27",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Clean herbal formulation",
+      "severity": "fix",
+      "why": "'Clean' is a vague safety claim that implies other ingredients are unsafe without saying which or why; 'herbal' adds the natural framing already flagged under LNG-03.",
+      "fix": "Gentle, soap-free gel formulation."
+    },
+    {
+      "rule_id": "CLM-12",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "rather than just clearing surface oil",
+      "severity": "fix",
+      "why": "This implies other face washes only clear surface oil, an unsubstantiated comparison that disparages alternatives.",
+      "fix": "Remove the comparison and describe the product on its own: 'Cleanses excess oil, dirt and pollution'."
+    },
+    {
+      "rule_id": "CLM-23",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "Neem is one of Ayurveda's most studied antibacterial botanicals",
+      "severity": "fix",
+      "why": "This uses neem's research reputation as proof that the face wash works, which is ingredient literature rather than a test of this product. 'Most studied' is also an unsourced superlative (CLM-11), and 'antibacterial' is already flagged under CLM-01.",
+      "fix": "Made with 5 parts of the Neem plant (leaf, bark, flower, fruit, seed)."
+    },
+    {
+      "rule_id": "CLM-02",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "prevents reoccurence",
+      "severity": "fix",
+      "why": "Saying the face wash stops pimples coming back is an acne-prevention claim, and it also implies a lasting result (CLM-03 risk).",
+      "fix": "Remove it; position the product as 'For oily & acne-prone skin'."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Clears & Prevents Pimples & Acne' claims to clear and prevent acne, which sits on the cosmetic/drug line; 'For oily & acne-prone skin' is the acceptable framing."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Clinically Proven Formula' needs a product-specific study on file and a qualifier saying what was proven."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "Calling neem 'antibacterial' in a pimple context is a microbe-killing claim, which is a drug claim for a cosmetic."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'target pimple-causing bacteria' is an explicit antibacterial acne claim, a drug claim for a face wash."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "'CLEARS AND PREVENTS PIMPLES' is an acne clearing and prevention claim."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "'tackle pimple at the source' is a fight-acne claim that also implies a treatment mechanism."
+    },
+    {
+      "index": 6,
+      "assessment": "agree",
+      "why": "'reduce breakouts' is an unscoped acne-reduction claim; the acceptable form is 'helps reduce the look of blemishes'."
+    },
+    {
+      "index": 7,
+      "assessment": "agree",
+      "why": "Same 'Clinically proven' claim, here attached to antibacterial acne results; it needs a product study and qualifier."
+    },
+    {
+      "index": 8,
+      "assessment": "agree",
+      "why": "'Clean herbal formulation' sells on naturalness, which the brand avoids; the 'clean' part is raised separately as CLM-27."
+    }
+  ],
+  "tone_read": "The register is calm, but the copy is built on Ayurvedic, herbal and 'harsh chemicals' positioning, which is the natural-is-safer story Minimalist explicitly argues against. It explains the neem parts and gives usage steps, yet its core message is acne-clearing promises rather than education about what an ingredient does at what strength.",
+  "language_read": "No concentrations are given for neem or turmeric, and the outcome verbs ('clears', 'prevents', 'tackle pimple at the source', 'reduce breakouts') are unhedged. 'Clean herbal formulation' and 'free from harsh chemicals' are exactly the natural/chemical-free framing the brand language rules out."
+}

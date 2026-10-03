@@ -1,0 +1,93 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-04",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Dark Spot Clearing",
+      "severity": "fix",
+      "why": "'Dark Spot Clearing' promises to clear spots, an elimination claim, while the body's 'visibly reduces dark spots' is the scoped version. Even as a product name it still reads as a claim.",
+      "fix": "Turmeric Face Serum that visibly reduces the appearance of dark spots"
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Visibly Reduces Dark Spots from Day 7",
+      "severity": "fix",
+      "why": "A result promised from day 7 needs a study of that duration with its qualifier on the ad; the body heading repeats it with no qualifier.",
+      "fix": "Visibly Reduces the Appearance of Dark Spots (keep 'from Day 7' only with its study footnote on the creative)"
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "clear from the very first week",
+      "severity": "fix",
+      "why": "This is a second time-bound promise (radiant, glowing, clear skin within the first week) with no study qualifier; 'clear' next to 'acne spots' can also read as an acne-clearing claim.",
+      "fix": "Remove the timeframe: 'visibly diminishes the appearance of acne spots, sun spots and age spots'."
+    },
+    {
+      "rule_id": "CLM-05",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "safe for all skin types",
+      "severity": "block",
+      "why": "'Safe for all skin types' is a blanket safety promise that can't be substantiated for every user, least of all for a 10% glycolic acid serum; being tested doesn't make it safe for everyone.",
+      "fix": "Suitable for all skin types. Follow up with sunscreen."
+    },
+    {
+      "rule_id": "LNG-03",
+      "dimension": "language",
+      "field": "headline",
+      "span": "Organically sourced Turmeric",
+      "severity": "advisory",
+      "why": "Leading with 'organically sourced' turmeric sells on naturalness, which Minimalist avoids; the brand leads with the active and its strength, and an organic claim also needs certification on file.",
+      "fix": "with 10% Glycolic Acid, 2% Niacinamide & Turmeric"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Clinically Tested' is an evidence claim; it needs the study on file and should say what was tested."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "10% Glycolic Acid is stated identically in the headline and body and nothing attached contradicts it; the flag only reflects that this isn't a Minimalist strength. Confirm against the product label."
+    },
+    {
+      "index": 2,
+      "assessment": "likely_false_positive",
+      "why": "2% Niacinamide is stated consistently in the headline and body, and no product page contradicts it. Confirm against the label."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "'Clinically tested face serum that visibly diminishes...' ties a clinical claim to results; it needs the study and its qualifier."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "Second 'Clinically tested' claim; same substantiation needed."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "'dermatologically tested' is an evidence claim (the rulebook's own fail example); it needs the test on file or narrower wording that says what was actually done."
+    },
+    {
+      "index": 6,
+      "assessment": "likely_false_positive",
+      "why": "Body repeat of '10% Glycolic Acid', consistent with the headline; no evidence of a mismatch. Confirm against the label."
+    },
+    {
+      "index": 7,
+      "assessment": "likely_false_positive",
+      "why": "Mis-paired match: the '2%' belongs to Niacinamide, not 'Acid', and it is consistent with the headline."
+    }
+  ],
+  "tone_read": "Partly educational (it names 10% glycolic acid and 2% niacinamide and says what each does), but nearly every line repeats radiance mood words ('radiant, glowing') and an organic-turmeric story. The day-7 and first-week promises and the blanket 'safe' line are not Minimalist's understated register.",
+  "language_read": "Concentrations are written in the brand's format (10%, 2%) and 'visibly reduces' is properly hedged, but 'Dark Spot Clearing' and 'Niacinamide reduces marks' are unscoped. 'Organically sourced' and 'cold pressed' turmeric is natural framing the brand doesn't use."
+}

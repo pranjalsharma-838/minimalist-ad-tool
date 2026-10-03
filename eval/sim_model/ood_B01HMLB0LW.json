@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "48H Hydration",
+      "severity": "fix",
+      "why": "'48H hydration' is a specific duration claim, so it needs a study that measured hydration over 48 hours, with that qualifier shown on the ad.",
+      "fix": "Keep '48H Hydration' only with its study footnote on the creative; otherwise: 'Moisturising cream for dry & sensitive skin'."
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Repairs Skin",
+      "severity": "fix",
+      "why": "'Repairs skin' claims the cream restores skin structure, which reads as healing; that is a structure/function (drug-type) claim rather than a moisturising one.",
+      "fix": "Remove 'Repairs Skin' and keep the moisture claim scoped: 'Helps prevent moisture loss'."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Rich Fragrance and Paraben Free",
+      "severity": "fix",
+      "why": "This reads as 'fragrance and paraben free', but the body says the cream 'Features a pleasant almond scent'. If it is scented, a fragrance-free reading misleads sensitive-skin shoppers; if it isn't, the scent line is wrong.",
+      "fix": "Check the label and state it one way only, e.g. 'Paraben-free moisturiser with a pleasant almond scent' if it is scented."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, neutral spec-sheet copy with no fear hooks or hype words, so nothing here fights Minimalist's tone. It isn't educational, though: it lists ingredients but never says what niacinamide or panthenol does, and the benefit language ('comprehensive skin nourishment', 'effective skin hydration') is generic.",
+  "language_read": "Almond Oil, Niacinamide and Panthenol are named in the headline without concentrations, and 'Repairs Skin' is an unhedged outcome claim. The fragrance wording contradicts itself ('Fragrance ... Free' vs 'pleasant almond scent'), which a precise, label-led brand voice would not allow."
+}

@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-20",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "18% Brightening + 20% Collagen",
+      "severity": "block",
+      "why": "These percentages are attached to benefits, not ingredients: 18% appears to be 11% Mandarin + 5% Niacinamide + 2% PGA added together, and '20% Collagen' maps to no listed ingredient, so it reads as 20% collagen. Acceptable only if the pack shows a named ingredient at each strength (the primary text repeats it).",
+      "fix": "Face Serum with 11% Mandarin, 5% Niacinamide, 2% PGA & Bakuchiol"
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Collagen Boost",
+      "severity": "fix",
+      "why": "'Collagen Boost' claims the serum increases collagen, a body process; that is a structure/function claim for legal, and the primary text repeats it.",
+      "fix": "Brightening & Hydrating Serum for Dry Skin"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "This is a bare product title repeated as the body, so there is no fear, hype or emoji, and it is ingredient-led, which is close to Minimalist's approach. But it gives no education about what any active does, and 'Double Shot' and 'Summer Skincare' are filler keywords.",
+  "language_read": "Mandarin, Niacinamide and PGA carry concentrations in the brand's format, but bakuchiol has none and the headline percentages ('18% Brightening', '20% Collagen') are attached to benefits rather than ingredients. 'Collagen Boost' is an unhedged body-process claim."
+}

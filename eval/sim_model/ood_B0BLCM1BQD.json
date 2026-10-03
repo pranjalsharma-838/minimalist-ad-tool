@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "rule_id": "LNG-04",
+      "dimension": "language",
+      "field": "headline",
+      "span": "Fades Dark Spots",
+      "severity": "advisory",
+      "why": "The headline states 'Fades Dark Spots' and 'Evens Skin Tone' as flat outcomes, while the body already uses the brand-style hedge ('helps fade dark spots').",
+      "fix": "Helps fade the look of dark spots for a more even-looking tone"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "Hyperpigmentation is a named skin condition, so 'Treats' makes this a treatment (drug) claim; the body heading 'Tackles Hyperpigmentation' repeats the framing and should be reworded too."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "Same word as hit 0 and a genuine problem; because a condition is named, CLM-01 is the governing rule and this flag is a duplicate."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "'reducing excess melanin production' claims to change a body process, which is the rulebook's own structure/function example."
+    }
+  ],
+  "tone_read": "Calm and fairly educational: each claim names the ingredient doing the work (alpha arbutin, rice milk, marine algae, glycerin, betaine) and some mechanisms (TEWL, water retention), with no fear hooks or hype words. The headline, though, is a stack of unhedged outcome promises rather than Minimalist's ingredient-and-concentration lead.",
+  "language_read": "Alpha arbutin and hyaluronic acid are named without concentrations, which the brand would always state. 'Helps brighten the skin complexion' alongside melanin reduction sits close to complexion-lightening framing; 'more even-looking tone' is the safer vocabulary."
+}

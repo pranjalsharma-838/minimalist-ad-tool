@@ -1,0 +1,55 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-20",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Glycolic Bright 8% [Melasyl + Niacinamide]",
+      "severity": "block",
+      "why": "The headline's 8% sits next to 'Glycolic' and '[Melasyl + Niacinamide]', but the body states 1% Glycolic Acid and 2% Niacinamide. No listed ingredient is at 8%, so the headline overstates the strength in the bottle.",
+      "fix": "Glycolic Bright Face Serum with 1% Glycolic Acid + 2% Niacinamide + Melasyl; if 8% is a blend total, say so and list each ingredient's strength."
+    },
+    {
+      "rule_id": "CLM-07",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "helps fade dark spots in as little as 4 weeks",
+      "severity": "fix",
+      "why": "A result promised within 4 weeks needs a study of that duration, and its qualifier (what was measured, on how many people) must be on the ad; none is shown.",
+      "fix": "Keep it only with the study footnote on the creative; otherwise: 'helps fade the look of dark spots with continued use'."
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "primary_text",
+      "span": "support skin renewal",
+      "severity": "fix",
+      "why": "'Skin renewal' means cell turnover, a body process, so claiming to support it is a structure/function claim for legal to clear. It is fine if reworded to the exfoliation the ad already describes.",
+      "fix": "help exfoliate the skin surface"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "1% Glycolic Acid is stated twice in the body and reads as the true per-ingredient strength; the real mismatch is the headline's 'Glycolic Bright 8%', raised as a finding. Don't 'fix' this line to 8%."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "2% Niacinamide is stated consistently in the body; the conflict is the headline's unattributed '8% [Melasyl + Niacinamide]', raised as a finding. Confirm against the label."
+    },
+    {
+      "index": 2,
+      "assessment": "likely_false_positive",
+      "why": "Repeat of the 1% Glycolic Acid statement, consistent with the first; the problem is the headline's 8%."
+    },
+    {
+      "index": 3,
+      "assessment": "likely_false_positive",
+      "why": "Repeat of the 2% Niacinamide statement, consistent with the first; the problem is the headline's 8%."
+    }
+  ],
+  "tone_read": "This is the closest of these ads to Minimalist's register: calm and hedged ('help visibly reduce', 'more even-looking complexion', 'over time'), with usage steps and a named mechanism (AHA exfoliation). It slips into mood words in places ('naturally luminous', 'radiant') but has no fear hooks or hype.",
+  "language_read": "The body states concentrations in the brand's format (1% Glycolic Acid, 2% Niacinamide), but the headline's unattributed '8%' contradicts them and Melasyl has no strength at all. Efficacy is mostly scoped correctly, apart from the time-bound 'in as little as 4 weeks' with no qualifier."
+}

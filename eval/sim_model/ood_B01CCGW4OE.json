@@ -1,0 +1,27 @@
+{
+  "findings": [
+    {
+      "rule_id": "LNG-04",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "DEFENDS AGAINST 5 SIGNS OF SKIN SENSITIVITY",
+      "severity": "advisory",
+      "why": "'Defends against' dryness, irritation and a weakened barrier is stated as a flat outcome with no 'helps' scoping, and '5 signs' reads like a study result with no qualifier on the ad.",
+      "fix": "Helps defend against 5 signs of skin sensitivity (keep '5 signs' only if the supporting study is on file)."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "'Clinically proven to provide continuous hydration' needs a product-specific clinical study on file, and its qualifier (what was measured, for how long) should be on the ad."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "'Dermatologist recommended' is an endorsement claim; it needs a documented basis on file, or it should come out."
+    }
+  ],
+  "tone_read": "The voice is calm and factual, with no fear hooks or hype words, and it names its actives (niacinamide, vitamin B5, glycerin) and a mechanism (micellar cleansing), which is close to Minimalist's register. The all-caps keyword headers and the stray 'Target Audience Keywords: Unisex Adult' line make it read like a marketplace listing rather than a brand ad.",
+  "language_read": "Niacinamide and Vitamin B5 are named in the headline without their concentrations, which is the brand's signature detail. 'Clinically proven', 'Dermatologist recommended' and 'Defends against' are unscoped; the brand would hedge with 'helps' and carry the study qualifier."
+}
