@@ -1,0 +1,66 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-lha-2-cleanser__t8",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Morning wash: a light lather on a wet face",
+  "subhead": "Pour an appropriate quantity into wet hands, rub into a light lather, massage into face; rinse thoroughly.",
+  "proof_points": [
+    "AM & PM, every day",
+    "2 mild sulfate-free surfactants (cleansers)",
+    "Suitable for 15+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [
+      [
+        "F14"
+      ],
+      [
+        "F8"
+      ],
+      [
+        "F12"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a bright morning bathroom wall in off-white tile with a soft frosted-window light shape on the left and a gentle shadow towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: situation. The moment is a morning wash before the day starts, which matches the page's 'AM & PM, every day' (F14) and the lather-and-rinse steps (F13); no result is implied. Kept: in-use moment (Foxtale), headline that names one use moment (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and all sebum, acne-fighting and pore-decongestion wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+  "angle": "situation",
+  "hook_type": "situation",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "in-use moment as the visual cue"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "headline that names one use moment"
+    }
+  ],
+  "ai_label_required": true,
+  "person_prompt": "A woman in her early 30s with a medium-brown skin tone at a bathroom basin on a weekday morning, hair clipped up and a shirt collar visible, wet hands lathering a light white foam between her palms before washing her face; bright soft daylight from the upper left through a frosted window, plain off-white tile behind, shallow depth of field, brisk but calm expression, natural unretouched skin, nothing implying a result, framed so she sits slightly left of centre with calm space to her right. No product, bottle, pump, tube or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

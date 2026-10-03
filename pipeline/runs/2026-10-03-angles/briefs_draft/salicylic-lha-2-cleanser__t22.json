@@ -1,0 +1,80 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "source_ad_id": "salicylic-lha-2-cleanser__t22",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Cleanser first: a simple three-step morning routine",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 · Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "AM & PM: light lather on a wet face, then rinse",
+      "cites": [
+        "F13",
+        "F14"
+      ]
+    },
+    {
+      "label": "Step 2 · Serum",
+      "product_handle": "niacinamide-10-with-matmarine",
+      "line": "2-3 drops after cleansing & toning; let it absorb fully",
+      "cites": [
+        "niacinamide-10-with-matmarine:F13"
+      ]
+    },
+    {
+      "label": "Step 3 · Sunscreen",
+      "product_handle": "multi-vitamin-spf-50",
+      "line": "Apply at least 15 minutes before sun exposure",
+      "cites": [
+        "multi-vitamin-spf-50:F20"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F14",
+      "niacinamide-10-with-matmarine:F13",
+      "multi-vitamin-spf-50:F21"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline across the top; three real pack shots in a row, each under a 'Step N' label with a one-line usage note below it, arrows between the packs (cleanser, Niacinamide 10% serum, SPF 50 sunscreen); rating of the cleanser in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale grey stone shelf with a faint wet sheen, soft morning window light from the upper left and a plain wall behind. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: routine. The cleanser sits first in a morning routine: AM & PM use (F14) with the lather-and-rinse steps (F13), then the serum after cleansing & toning (niacinamide F13), then sunscreen at least 15 minutes before sun exposure (SPF F20). Kept: sequence headline naming where the product sits (Foxtale), 'Step N' labels over each pack (Dot & Key), one usage line per numbered step (Pilgrim). Dropped: 'glow' and 'treat' step names, oily-skin duo concern headline, model, handwritten checklist, any pairing claim, kit saving and every sebum or acne outcome. The rating shown is the cleanser's, named as such.",
+  "angle": "routine",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "headline that places the product in an ordered sequence"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "'Step N' labels above each pack"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "one usage line under each numbered step"
+    }
+  ]
+}

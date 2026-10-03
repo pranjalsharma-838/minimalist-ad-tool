@@ -1,0 +1,57 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "multi-vitamin-spf-50__t26",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "What customers say about SPF 50 Sunscreen",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a sun-washed off-white plaster wall with a soft diagonal band of window light and a faint leaf shadow in the top-left corner. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Angle: social_proof. The review is REV4, a 4-star verified buyer quoted verbatim with name, date and source; it is the sensory one (matte finish, blends with skin tone), which matches the page's 'non-shiny' texture wording (F3) and makes no sun-protection or result claim. REV1, REV2, REV5 and REV6 were skipped: they carry result, tan or sweat-resistance claims the page does not make. Kept: dated verified review card on an open, bright scene (Dot & Key), 'what customers say' lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '4.8 by 15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+  "angle": "social_proof",
+  "hook_type": "social_proof",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified review card on a bright open scene"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "'what customers say' lead-in headline"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line carried in the footer"
+    }
+  ],
+  "review": {
+    "stars": 4,
+    "quote": "Matte finish. like the matte finish and how it blends with my skin tone",
+    "source": "Pushkar V., verified buyer, 4★, 2025-07-15"
+  }
+}

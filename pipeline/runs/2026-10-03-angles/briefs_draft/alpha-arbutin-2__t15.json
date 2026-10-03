@@ -1,0 +1,77 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "alpha-arbutin-2__t15",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "Questions on irritation? Our notes on Alpha Arbutin 2%",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Patch tested for safety under a Dermatologist's supervision",
+      "cites": [
+        "F25"
+      ]
+    },
+    {
+      "text": "Dry/normal, sensitive, oily/combination, acne-prone skin",
+      "cites": [
+        "F9"
+      ]
+    },
+    {
+      "text": "2-3 drops after cleansing & toning",
+      "cites": [
+        "F19"
+      ]
+    },
+    {
+      "text": "Use sunscreen during the day for best results",
+      "cites": [
+        "F19"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F25"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, skin types, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a pale terrazzo tabletop seen from directly above, off-white with very faint grey flecks, even soft daylight and no shadows. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: irritation (customer words such as 'no irritation or breakout', 'did not face any major skin sensitivity'), answered only by what the page states: the supervised patch-test note (F25), the skin types it lists (F9) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made, and the label only restates its own wording. The 'extra sensitive skin should consult a dermatologist' FAQ (F33) is not citable here, so no sensitive-skin promise is added. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
+  "angle": "concern_solved",
+  "hook_type": "question",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern named first, product second"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "labels wired by thin lines to a centred pack"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "one page detail paired with each label"
+    }
+  ]
+}

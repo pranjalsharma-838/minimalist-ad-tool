@@ -1,0 +1,387 @@
+[
+  {
+    "id": "alpha-arbutin-2__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  }
+]

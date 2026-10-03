@@ -1,0 +1,87 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "salicylic-lha-2-cleanser__t14",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Day one to week four with 2% Salicylic Acid + LHA",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "90% subjects agreed significant reduction in skin oiliness after 6 washes. 90% subjects agreed skin felt smoother & brighter after 4 weeks. Frames are AI illustrations, not real results.",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F18",
+      "F3"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F16",
+      "F18"
+    ],
+    "frames": [
+      [
+        "F14"
+      ],
+      [
+        "F16"
+      ],
+      [
+        "F18"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / After 6 washes / Week 4), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint cool-grey gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, after 6 washes and at Week 4 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+  "adaptation_notes": "Kept: three equal labelled frames (Re'equil), footnote carrying the study qualifier (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: after 6 washes (F16, oiliness perception) and Week 4 (F18, smoother and brighter perception); Day 1 is the start. The 6-week acne-occurrence line (F17) is deliberately not used: it would put an acne claim on AI skin. Both stats stay perception stats with the qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+  "angle": "transformation",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "study qualifier footnote under labelled frames"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "left-to-right progression across equal frames"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "timeframe-led headline, used as routine length not a result"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Day 1",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "After 6 washes",
+      "cites": [
+        "F16"
+      ]
+    },
+    {
+      "label": "Week 4",
+      "cites": [
+        "F18"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a man in his mid-20s with a medium-brown skin tone and normal-to-oily skin), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows a slight natural sheen; panel 2 (After 6 washes) shows the same area with a slightly less shiny look; panel 3 (Week 4) shows it looking slightly smoother and a touch brighter. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos."
+}

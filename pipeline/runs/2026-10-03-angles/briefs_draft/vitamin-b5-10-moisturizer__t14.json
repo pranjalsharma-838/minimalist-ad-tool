@@ -1,0 +1,89 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t14",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "12 hours and two weeks with 10% Vitamin B5",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "93% subjects agreed skin remains moisturized for 12 hours after application. Frames are AI illustrations, not real results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F16",
+      "F18"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F16",
+      "RATING"
+    ],
+    "frames": [
+      [
+        "F13"
+      ],
+      [
+        "F16"
+      ],
+      [
+        "F14",
+        "F18"
+      ]
+    ]
+  },
+  "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · applied / 12 hours later / Week 2 · daily use), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+  "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-cream gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched photos of the same person right after application, 12 hours later and at Week 2 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+  "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: 12 hours (F16, moisturized perception) and Week 2 (F18, a timeframe only, shown with the routine-stage words 'daily use' and no result wording); Day 1 is the start. The irritation outcome in F18 is deliberately not printed. The stat stays a perception stat with its qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording, barrier and skin-repair wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them.",
+  "angle": "transformation",
+  "hook_type": "statement",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "study qualifier footnote under labelled frames"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "left-to-right progression across equal frames"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "timeframe-led headline, used as routine length not a result"
+    }
+  ],
+  "frames": [
+    {
+      "label": "Day 1 · applied",
+      "cites": [
+        "F13"
+      ]
+    },
+    {
+      "label": "12 hours later",
+      "cites": [
+        "F16"
+      ]
+    },
+    {
+      "label": "Week 2 · daily use",
+      "cites": [
+        "F14",
+        "F18"
+      ]
+    }
+  ],
+  "ai_label_required": true,
+  "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1, applied) shows skin with a slightly dry-looking matte surface; panel 2 (12 hours later) shows the same area looking comfortably moisturized and not shiny; panel 3 (Week 2, daily use) shows the same comfortable, hydrated look continuing. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no jar, no tube, no bottle, no packaging, no hands, no text, no letters, no logos."
+}

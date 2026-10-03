@@ -1,0 +1,2309 @@
+[
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "alpha-arbutin-2__t14",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "An 8-week routine with 2% Alpha Arbutin",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "93% subjects said it reduced sun tanning after 4 weeks of use. 90% subjects noticed reduction in hyperpigmentation marks in 8 weeks. Frames are AI illustrations, not real results.",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F22"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F24",
+        "F22"
+      ],
+      "frames": [
+        [
+          "F19"
+        ],
+        [
+          "F24"
+        ],
+        [
+          "F22"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-grey gradient from top to bottom and a soft diagonal shadow from a window frame in the upper-left corner. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F24, F22), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+    "adaptation_notes": "Kept: three equal labelled progress frames (Chemist at Play, Re'equil), a footnote that carries the study qualifier (Chemist at Play) and a timeframe-led headline used as routine length, not a result (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F24, tanning perception) and Week 8 (F22, marks perception); Day 1 is the start. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades dark spots in 15 days' result headline, Dermat/clinically-certified badges, struck price, before/after wording, the benchmark comparison (F13) and melanin wording (F6, F26). Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full with the two study lines.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "footnote carrying the study qualifier under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "left-to-right progression across equal frames"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, used as routine length not a result"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Week 4",
+        "cites": [
+          "F24"
+        ]
+      },
+      {
+        "label": "Week 8",
+        "cites": [
+          "F22"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and cheekbone area (a woman in her late 20s with medium-brown skin), identical framing, camera distance, soft diffuse daylight from the upper left and a plain off-white backdrop in every panel, natural skin texture and visible pores throughout. Panel 1 (Day 1) shows a few small, faint, uneven-toned dark marks on the cheek; panel 2 (Week 4) shows the same area with a slightly softer tan tone; panel 3 (Week 8) shows the same marks looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss, makeup or jewellery. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F24). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F24). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 8 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "problem_solution",
+    "layout": "callouts",
+    "source_ad_id": "alpha-arbutin-2__t15",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "Questions on irritation? Our notes on Alpha Arbutin 2%",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [
+      {
+        "text": "Patch tested for safety under a Dermatologist's supervision",
+        "cites": [
+          "F25"
+        ]
+      },
+      {
+        "text": "Dry/normal, sensitive, oily/combination, acne-prone skin",
+        "cites": [
+          "F9"
+        ]
+      },
+      {
+        "text": "2-3 drops after cleansing & toning",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "text": "Use sunscreen during the day for best results",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F25"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (patch-test note, skin types, how to apply, sunscreen reminder); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale terrazzo tabletop seen from directly above, off-white with very faint grey flecks, even soft daylight and no shadows. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Concern: irritation (customer words such as 'no irritation or breakout', 'did not face any major skin sensitivity'), answered only by what the page states: the supervised patch-test note (F25), the skin types it lists (F9) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made, and the label only restates its own wording. The 'extra sensitive skin should consult a dermatologist' FAQ (F33) is not citable here, so no sensitive-skin promise is added. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.",
+    "angle": "concern_solved",
+    "hook_type": "question",
+    "blend_sources": [
+      {
+        "id": "1386072156792745",
+        "brand": "Re'equil",
+        "took": "concern named first, product second"
+      },
+      {
+        "id": "1739037801557913",
+        "brand": "Deconstruct",
+        "took": "labels wired by thin lines to a centred pack"
+      },
+      {
+        "id": "2307135286779864",
+        "brand": "The Derma Co",
+        "took": "one page detail paired with each label"
+      }
+    ],
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "journey",
+    "source_ad_id": "alpha-arbutin-2__t22",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "Wash, then serum, then sunscreen: a morning routine",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [
+      {
+        "label": "Step 1 · Cleanse",
+        "product_handle": "salicylic-lha-2-cleanser",
+        "line": "Light lather on a wet face, then rinse thoroughly",
+        "cites": [
+          "salicylic-lha-2-cleanser:F13"
+        ]
+      },
+      {
+        "label": "Step 2 · Serum",
+        "product_handle": "alpha-arbutin-2",
+        "line": "2-3 drops after cleansing & toning, AM & PM",
+        "cites": [
+          "F19",
+          "F20"
+        ]
+      },
+      {
+        "label": "Step 3 · Sunscreen",
+        "product_handle": "multi-vitamin-spf-50",
+        "line": "Broad Spectrum SPF 50, PA++++; apply in the AM",
+        "cites": [
+          "multi-vitamin-spf-50:F2",
+          "multi-vitamin-spf-50:F21"
+        ]
+      }
+    ],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Alpha Arbutin 2% Face Serum: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "salicylic-lha-2-cleanser:F14",
+        "F20",
+        "multi-vitamin-spf-50:F21"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline across the top; three real pack shots in a row, each under a 'Step N · name' label with a one-line usage note below it, arrows between the packs (cleanser, Alpha Arbutin 2% serum, SPF 50 sunscreen); rating of the serum in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale stone bathroom shelf in soft morning window light from the upper left, with a folded off-white cotton cloth at the far left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine. Order follows the page's own usage: cleanse (cleanser F13), serum after cleansing & toning (F19, F20), sunscreen on a cleansed face in the AM (SPF F2, F21; F19 also says to use sunscreen during the day). Companions used: cleanser and SPF 50 only. Kept: sequence headline naming each step (Foxtale), 'Step N' labels over each pack (Dot & Key), one usage line per numbered step (Pilgrim). Dropped: 'glow', 'treat' step name, concern headline, model, handwritten checklist, any pairing claim or kit saving. The rating shown is the serum's, named as such.",
+    "angle": "routine",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that names each step in order"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels above each pack"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "one usage line under each numbered step"
+      }
+    ],
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "alpha-arbutin-2__t9",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "headline": "2-3 drops, spread with a gentle circular motion",
+    "subhead": "Apply after cleansing & toning. Use sunscreen during the day for best results.",
+    "proof_points": [
+      "AM & PM, every day",
+      "Alpha Arbutin sourced from Alfa Aesar, USA",
+      "Suitable for 18+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F19"
+      ],
+      "subhead": [
+        "F19"
+      ],
+      "proof_points": [
+        [
+          "F20"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white tiled wall above a narrow stone counter edge, soft daylight from the upper left, a faint warm-grey gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: sensorial. The page has no texture fact for this serum, so the sensory cue is the application gesture from F19 (2-3 drops, gentle circular motion) and the AM and PM cadence (F20). Kept: close hand-level application moment (Chemist at Play), finger-on-skin moment as the visual cue (Foxtale). Dropped: the timed-fix headline ('in 10 minutes'), '#1 daily duo', de-tan and brightening promises, shower setting, any texture adjective the page does not state. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "sensorial",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "close hand-level framing of the application moment"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "finger-on-skin application moment as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "Close, softly lit crop of a woman in her late 20s with medium-brown skin, seen from just below the eyes to the chin, at a sunlit bathroom counter in the morning; her fingertips are gently spreading a few clear drops across her cheek in a slow circular motion while her other hand rests empty on the counter; soft daylight from the upper left, plain off-white tiled wall behind her, shallow depth of field, calm relaxed expression, natural unretouched skin texture with visible pores, no makeup or jewellery, framed so she sits slightly left of centre with calm space to her right. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names; no airbrushed or retouched skin and nothing implying a result.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "multi-vitamin-spf-50__t14",
+    "product_title": "SPF 50 Sunscreen",
+    "headline": "Four weeks, one habit: SPF 50 every morning",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Frames are AI illustrations of a routine, not results. Reapply in case of continued sun exposure. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F2",
+        "F21"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F20",
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F21"
+        ],
+        [
+          "F21"
+        ],
+        [
+          "F21"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale blue-grey to off-white gradient like an overcast morning sky, very low contrast, with soft diffuse light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented morning routine (same framing, distance and light), shot only with the person's written consent and with no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "The page has no timed study (the only study is the SPF lab test, F13-F18), so frames carry routine-stage labels only (first use, daily habit, in the routine) and no result wording; the headline states a routine length, not an outcome. Kept: three equal labelled frames in a row (Re'equil), timeframe-led headline (Dr. Sheth's), footnote qualifier (Chemist at Play). Dropped: 'visible reduction in dark spots within 7 days', 'dermat recommended / clinically certified', any tan or UV-damage result, struck price. Footnote adds the page's reapplication instruction (F20) and the RATING. SPF 50 is the labelled value; the lab-measured value is not used. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "footnote qualifier under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "equal frames read left to right"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, as routine length"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1 · first use",
+        "cites": [
+          "F21"
+        ]
+      },
+      {
+        "label": "Week 2 · daily habit",
+        "cites": [
+          "F21"
+        ]
+      },
+      {
+        "label": "Week 4 · in the routine",
+        "cites": [
+          "F21"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and jawline area (a man in his early 30s with a medium-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel. The skin reads as consistently healthy and even in all three panels, with natural texture and visible pores; the only differences between panel 1 (Day 1), panel 2 (Week 2) and panel 3 (Week 4) are very subtle shifts in light and tone, so the panels look like one routine continuing rather than a change. No sunburn, tan lines or marks, no dramatic difference, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "review",
+    "source_ad_id": "multi-vitamin-spf-50__t26",
+    "product_title": "SPF 50 Sunscreen",
+    "headline": "What customers say about SPF 50 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F1"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a sun-washed off-white plaster wall with a soft diagonal band of window light and a faint leaf shadow in the top-left corner. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: social_proof. The review is REV4, a 4-star verified buyer quoted verbatim with name, date and source; it is the sensory one (matte finish, blends with skin tone), which matches the page's 'non-shiny' texture wording (F3) and makes no sun-protection or result claim. REV1, REV2, REV5 and REV6 were skipped: they carry result, tan or sweat-resistance claims the page does not make. Kept: dated verified review card on an open, bright scene (Dot & Key), 'what customers say' lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '4.8 by 15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+    "angle": "social_proof",
+    "hook_type": "social_proof",
+    "blend_sources": [
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "dated verified review card on a bright open scene"
+      },
+      {
+        "id": "1619243416440363",
+        "brand": "Deconstruct",
+        "took": "'what customers say' lead-in headline"
+      },
+      {
+        "id": "991199233902436",
+        "brand": "Conscious Chemist",
+        "took": "rating line carried in the footer"
+      }
+    ],
+    "review": {
+      "stars": 4,
+      "quote": "Matte finish. like the matte finish and how it blends with my skin tone",
+      "source": "Pushkar V., verified buyer, 4★, 2025-07-15"
+    },
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "niacinamide-10-with-matmarine__t14",
+    "product_title": "Niacinamide 10% Face Serum",
+    "headline": "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Frames are AI illustrations of a routine, not results. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F13"
+        ],
+        [
+          "F14"
+        ],
+        [
+          "F14"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · first use / Week 2 · daily habit / Week 4 · in the routine), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a very faint sage-grey tint at the lower edge and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, Week 2 and Week 4 of a documented AM and PM routine (same framing, distance and light), with written consent and no result wording, to replace the AI frames. None exist for this SKU.",
+    "adaptation_notes": "The page's only timeframe (F6, 'improve skin complexion in 2 weeks') is an ingredient claim ('clinically proven', melanin wording), not a study of this serum, so it is not used; the Consumer Studies section only has the patch-test note (F15). Frames therefore carry routine-stage labels and no result wording; the headline states routine length and the page's usage (F13, F14). Kept: equal labelled frames in a row (Re'equil), timeframe-led headline as routine length (Dr. Sheth's), qualifier footnote (Chemist at Play) with the RATING. Dropped: timed-result headline, 'dermat recommended', struck price, any pore/sebum/melanin outcome. Frames are AI illustrations: Severe, not exportable until real photos replace them.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "qualifier footnote under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "equal frames read left to right"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, as routine length"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1 · first use",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Week 2 · daily habit",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Week 4 · in the routine",
+        "cites": [
+          "F14"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a woman in her mid-20s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel. The skin looks consistently healthy with natural texture and visible pores in all three; any difference between panel 1 (Day 1), panel 2 (Week 2) and panel 3 (Week 4) is limited to very subtle, non-dramatic shifts in light and sheen. No marks removed, no dramatic change, no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "niacinamide-10-with-matmarine__t9",
+    "product_title": "Niacinamide 10% Face Serum",
+    "headline": "Lightweight serum, no sticky residue",
+    "subhead": "Apply 2-3 drops after cleansing & toning; let it absorb fully before the next step.",
+    "proof_points": [
+      "Niacinamide, Matmarine, Zinc and Acetyl Glucosamine",
+      "AM & PM, every day",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F8"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F5"
+        ],
+        [
+          "F14"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale grey-green matte tiled wall above a narrow stone counter edge, soft daylight from the upper left, minimal and uncluttered. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: sensorial, from the page's texture and usage facts only: 'lightweight serum ... no sticky residue' (F8, quoted without the sebum and inflammation wording) and 'let the serum absorb fully' (F13). Kept: close hand-level application framing (Chemist at Play), finger-on-skin moment as the visual cue (Foxtale). Dropped: timed-fix headline, '#1 daily duo' device, pore, sebum and melanin outcomes, 'highly effective' superlative in F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "sensorial",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "close hand-level framing of the application moment"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "finger-on-skin application moment as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "Macro-style close-up of a man in his early 30s with a light-brown skin tone and short stubble, shown from the nose to the jaw in a bright bathroom in the morning; two fingertips are pressing a few clear, lightweight drops into his cheek and spreading them downward with a light touch while his other hand is out of frame; soft daylight from the upper left, plain pale grey-green tile behind, shallow depth of field, relaxed expression, natural skin texture with visible pores, no retouching, nothing implying a result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "problem_solution",
+    "layout": "callouts",
+    "source_ad_id": "salicylic-acid-2__t15",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "Irritation questions? Ease in with 2% Salicylic Acid",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [
+      {
+        "text": "A daily gentle exfoliant with 2% salicylic acid",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "text": "Start every alternate day; after 2 weeks, use it every day",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "text": "Apply 2-3 drops after cleansing & toning",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "text": "Recommended for combination/oily skin",
+        "cites": [
+          "F9"
+        ]
+      }
+    ],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F3",
+        "F13"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (what it is, the start-slowly schedule, how to apply, skin type); no skin close-ups; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale stone surface seen from above with a faint blush-grey tint, even soft light, a few smooth grey pebbles at the extreme lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Concern: irritation (customer words such as 'haven't experienced any irritation or redness'), answered by the page's own wording: 'a daily gentle exfoliant' (F3, quoted without the acne and flawless-skin wording) and the start-slowly schedule (F13: every alternate day, then everyday after 2 weeks). No 'will not irritate' promise is made. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), the active named with its strength in the first label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the acne, blackhead and oil outcomes in F2/F3/F10.",
+    "angle": "concern_solved",
+    "hook_type": "question",
+    "blend_sources": [
+      {
+        "id": "1386072156792745",
+        "brand": "Re'equil",
+        "took": "concern named first, product second"
+      },
+      {
+        "id": "1739037801557913",
+        "brand": "Deconstruct",
+        "took": "labels wired by thin lines to a centred pack"
+      },
+      {
+        "id": "2307135286779864",
+        "brand": "The Derma Co",
+        "took": "active named with its strength in a label"
+      }
+    ],
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 2 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "offer_promo",
+    "layout": "offer",
+    "source_ad_id": "salicylic-acid-2__t36",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "2% Salicylic Acid, a daily gentle exfoliant",
+    "subhead": "Apply 2-3 drops after cleansing & toning, in the PM.",
+    "proof_points": [
+      "30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": {
+      "line": "Buy 2, Get 3rd Free",
+      "condition": "The 3rd product is free when you buy 2. T&C apply.",
+      "valid_till": "",
+      "cites": [
+        "OFFER3"
+      ]
+    },
+    "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. Third item free on buying 2. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [
+        "F12",
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "PRICE1"
+        ]
+      ],
+      "footnote": [
+        "OFFER3",
+        "RATING"
+      ]
+    },
+    "layout_description": "Offer line 'Buy 2, Get 3rd Free' as the large block top-left with its condition directly beneath; the 30ml sale price with MRP in bold under it; usage line below; real pack shot on the right 45%; CTA bottom-left; footnote with the capture date, T&C and rating along the bottom. No end date or countdown (none shown on site).",
+    "image_prompt": "Empty background scene only: a matte off-white studio sweep with two low pale stone blocks at the far left edge and a faint blush-grey tone at the base. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Offer quoted exactly from the live sitewide banner OFFER3 ('Buy 2, Get 3rd Free', beminimalist.co, captured 2026-10-02), with its condition beside it and 'T&C apply'; price is PRICE1 (30ml, sale price with MRP). No end date was captured, so no urgency wording and no valid-till. Kept: a single offer lockup as the whole message (Chemist at Play), bold offer line as the hook (Foxtale), sale price shown with the MRP (Conscious Chemist). Dropped: bundle price and discount code, countdown and 'sale ends in 4 hours', seasonal kicker, acne and oil claims. Other live offers (OFFER1, 2, 4) not used, to keep one clear offer.",
+    "angle": "offer_value",
+    "hook_type": "offer",
+    "blend_sources": [
+      {
+        "id": "1393861285783656",
+        "brand": "Chemist at Play",
+        "took": "single offer lockup as the whole message"
+      },
+      {
+        "id": "27209515258657747",
+        "brand": "Conscious Chemist",
+        "took": "sale price shown beside the MRP"
+      },
+      {
+        "id": "903698342763669",
+        "brand": "Foxtale",
+        "took": "bold offer line as the headline device"
+      }
+    ],
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-acid-2__t8",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "headline": "Evening wind-down: 2-3 drops after cleansing & toning",
+    "subhead": "PM use: start every alternate day, then after 2 weeks of usage, use it everyday.",
+    "proof_points": [
+      "RonaCare Salicylic Acid Extra Pure from Merck, Germany",
+      "Recommended for combination/oily skin",
+      "Suitable for 18+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F12",
+        "F13"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F8"
+        ],
+        [
+          "F9"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a quiet evening bathroom wall in off-white tile, warm soft lamp light from the upper left, a faint shadow gradient towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: situation. The moment is the PM routine the page states (F12 after cleansing & toning, F13 'When to use: PM' and the alternate-day start), shown as an evening wind-down; no result is implied. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: '10-minute fix', de-tan and brightening promises, '#1 daily duo', and every acne, blackhead and oil outcome in F2/F3/F10. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "situation",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "in-use moment as the visual cue"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "headline that names one use moment"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "A man in his late 20s with a medium-brown skin tone at a bathroom basin in the evening, wearing a plain grey t-shirt, damp hair pushed back after washing his face, a plain towel over one shoulder; he is pressing a few clear drops onto his cheek with his fingertips and looking into the mirror with a relaxed expression; warm soft lamp light from the upper left, off-white tiled wall behind, shallow depth of field, natural unretouched skin with visible pores and nothing implying a result, framed so he sits slightly left of centre with calm space to his right. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 2 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "salicylic-lha-2-cleanser__t14",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Day one to week four with 2% Salicylic Acid + LHA",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "90% subjects agreed significant reduction in skin oiliness after 6 washes. 90% subjects agreed skin felt smoother & brighter after 4 weeks. Frames are AI illustrations, not real results.",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F18",
+        "F3"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16",
+        "F18"
+      ],
+      "frames": [
+        [
+          "F14"
+        ],
+        [
+          "F16"
+        ],
+        [
+          "F18"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / After 6 washes / Week 4), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint cool-grey gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched photos of the same person at Day 1, after 6 washes and at Week 4 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), footnote carrying the study qualifier (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: after 6 washes (F16, oiliness perception) and Week 4 (F18, smoother and brighter perception); Day 1 is the start. The 6-week acne-occurrence line (F17) is deliberately not used: it would put an acne claim on AI skin. Both stats stay perception stats with the qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "study qualifier footnote under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "left-to-right progression across equal frames"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, used as routine length not a result"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "After 6 washes",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Week 4",
+        "cites": [
+          "F18"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and nose-side area (a man in his mid-20s with a medium-brown skin tone and normal-to-oily skin), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows a slight natural sheen; panel 2 (After 6 washes) shows the same area with a slightly less shiny look; panel 3 (Week 4) shows it looking slightly smoother and a touch brighter. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "After 6 washes",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 6 washes",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "journey",
+    "source_ad_id": "salicylic-lha-2-cleanser__t22",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Cleanser first: a simple three-step morning routine",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [
+      {
+        "label": "Step 1 · Cleanse",
+        "product_handle": "salicylic-lha-2-cleanser",
+        "line": "AM & PM: light lather on a wet face, then rinse",
+        "cites": [
+          "F13",
+          "F14"
+        ]
+      },
+      {
+        "label": "Step 2 · Serum",
+        "product_handle": "niacinamide-10-with-matmarine",
+        "line": "2-3 drops after cleansing & toning; let it absorb fully",
+        "cites": [
+          "niacinamide-10-with-matmarine:F13"
+        ]
+      },
+      {
+        "label": "Step 3 · Sunscreen",
+        "product_handle": "multi-vitamin-spf-50",
+        "line": "Apply at least 15 minutes before sun exposure",
+        "cites": [
+          "multi-vitamin-spf-50:F20"
+        ]
+      }
+    ],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F14",
+        "niacinamide-10-with-matmarine:F13",
+        "multi-vitamin-spf-50:F21"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline across the top; three real pack shots in a row, each under a 'Step N' label with a one-line usage note below it, arrows between the packs (cleanser, Niacinamide 10% serum, SPF 50 sunscreen); rating of the cleanser in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale grey stone shelf with a faint wet sheen, soft morning window light from the upper left and a plain wall behind. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: routine. The cleanser sits first in a morning routine: AM & PM use (F14) with the lather-and-rinse steps (F13), then the serum after cleansing & toning (niacinamide F13), then sunscreen at least 15 minutes before sun exposure (SPF F20). Kept: sequence headline naming where the product sits (Foxtale), 'Step N' labels over each pack (Dot & Key), one usage line per numbered step (Pilgrim). Dropped: 'glow' and 'treat' step names, oily-skin duo concern headline, model, handwritten checklist, any pairing claim, kit saving and every sebum or acne outcome. The rating shown is the cleanser's, named as such.",
+    "angle": "routine",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "headline that places the product in an ordered sequence"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "'Step N' labels above each pack"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "one usage line under each numbered step"
+      }
+    ],
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-lha-2-cleanser__t8",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "Morning wash: a light lather on a wet face",
+    "subhead": "Pour an appropriate quantity into wet hands, rub into a light lather, massage into face; rinse thoroughly.",
+    "proof_points": [
+      "AM & PM, every day",
+      "2 mild sulfate-free surfactants (cleansers)",
+      "Suitable for 15+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F13",
+        "F14"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F14"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F12"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a bright morning bathroom wall in off-white tile with a soft frosted-window light shape on the left and a gentle shadow towards the lower right. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: situation. The moment is a morning wash before the day starts, which matches the page's 'AM & PM, every day' (F14) and the lather-and-rinse steps (F13); no result is implied. Kept: in-use moment (Foxtale), headline that names one use moment (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and all sebum, acne-fighting and pore-decongestion wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "situation",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "in-use moment as the visual cue"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "headline that names one use moment"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "A woman in her early 30s with a medium-brown skin tone at a bathroom basin on a weekday morning, hair clipped up and a shirt collar visible, wet hands lathering a light white foam between her palms before washing her face; bright soft daylight from the upper left through a frosted window, plain off-white tile behind, shallow depth of field, brisk but calm expression, natural unretouched skin, nothing implying a result, framed so she sits slightly left of centre with calm space to her right. No product, bottle, pump, tube or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "salicylic-lha-2-cleanser__t9",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "headline": "A light lather, then a hydrating after-feel",
+    "subhead": "Rub into a light lather in wet hands, massage into the face, then rinse thoroughly.",
+    "proof_points": [
+      "Panthenol (Vitamin B5) and Allantoin for a hydrating after-feel",
+      "2 mild sulfate-free surfactants (cleansers)",
+      "AM & PM, every day"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F13",
+        "F7"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "proof_points": [
+        [
+          "F7"
+        ],
+        [
+          "F8"
+        ],
+        [
+          "F14"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a calm off-white tile surface with a few faint beads of water along the lower edge, soft daylight from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: sensorial, from the page's usage and after-feel facts only: light lather (F13), hydrating after-feel (F7, quoted without the zinc/anti-bacterial wording), mild sulfate-free surfactants (F8). Kept: close hand-level application framing (Chemist at Play), in-use moment as the visual cue (Foxtale). Dropped: timed-fix headline, '#1 daily duo', sebum, acne-fighting and pore wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "sensorial",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "close hand-level framing of the lathering moment"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "in-use moment as the visual cue"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "Close-up of a young woman in her early 20s with a wheatish skin tone, seen from the cheekbones to the chin at a bathroom basin in the morning; both wet hands are working a light white lather in small circles over her cheeks and jaw, a few water drops on her wrists; soft daylight from a frosted window at the upper left, plain off-white tiles behind, shallow depth of field, eyes closed, calm expression, natural unretouched skin, nothing implying a result. No product, bottle, pump, tube or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t14",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "12 hours and two weeks with 10% Vitamin B5",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "93% subjects agreed skin remains moisturized for 12 hours after application. Frames are AI illustrations, not real results. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F16",
+        "F18"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16",
+        "RATING"
+      ],
+      "frames": [
+        [
+          "F13"
+        ],
+        [
+          "F16"
+        ],
+        [
+          "F14",
+          "F18"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 · applied / 12 hours later / Week 2 · daily use), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-cream gradient and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched photos of the same person right after application, 12 hours later and at Week 2 from the brand's own consumer study (F16, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: 12 hours (F16, moisturized perception) and Week 2 (F18, a timeframe only, shown with the routine-stage words 'daily use' and no result wording); Day 1 is the start. The irritation outcome in F18 is deliberately not printed. The stat stays a perception stat with its qualifier in the footnote. Dropped: result headline, badges, struck price, before/after wording, barrier and skin-repair wording. Frames are AI illustrations: Severe, not exportable until real study photos replace them.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "study qualifier footnote under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "left-to-right progression across equal frames"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, used as routine length not a result"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1 · applied",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "12 hours later",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Week 2 · daily use",
+        "cites": [
+          "F14",
+          "F18"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek area (a woman in her early 30s with a light-brown skin tone), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1, applied) shows skin with a slightly dry-looking matte surface; panel 2 (12 hours later) shows the same area looking comfortably moisturized and not shiny; panel 3 (Week 2, daily use) shows the same comfortable, hydrated look continuing. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no jar, no tube, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "problem_solution",
+    "layout": "callouts",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t15",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "Greasy feel? Notes on a lightweight, oil-free moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [
+      {
+        "text": "Lightweight, oil-free moisturizer",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "text": "10% Vitamin B5 (Panthenol) for oil-free moisturization",
+        "cites": [
+          "F5"
+        ]
+      },
+      {
+        "text": "Formulated especially for oily/combination skin",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "text": "Hydrated without the greasy feel*",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "*97% subjects agreed skin remains hydrated throughout the day without the greasy feel. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17",
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline across the top; the real pack shot centred; two short labels on each side, each wired to the pack by a thin line (lightweight and oil-free, 10% Vitamin B5, oily/combination skin, hydrated without the greasy feel); no skin close-ups; study qualifier and rating in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale cream-grey matte surface seen from above, even soft light, a single smooth stone at the extreme lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and calm, reserved for pack photos and copy placed later, with any props only at the extreme edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Concern: sticky or greasy feel (customer words such as 'non greasy', 'without any oily feeling'), answered by the page's own facts: lightweight and oil-free (F3, F5), formulated for oily/combination skin (F3) and the consumer-study line on the greasy feel (F17). The study line stays a perception stat: the callout carries an asterisk and the full '97% subjects agreed' sentence with its qualifier sits in the footnote. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the 'repairs skin' and barrier wording (F2, F15).",
+    "angle": "concern_solved",
+    "hook_type": "question",
+    "blend_sources": [
+      {
+        "id": "1386072156792745",
+        "brand": "Re'equil",
+        "took": "concern named first, product second"
+      },
+      {
+        "id": "1739037801557913",
+        "brand": "Deconstruct",
+        "took": "labels wired by thin lines to a centred pack"
+      },
+      {
+        "id": "2307135286779864",
+        "brand": "The Derma Co",
+        "took": "one page detail paired with each label"
+      }
+    ],
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "97% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "review",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t26",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "A verified buyer on Vitamin B5 10% Moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F1"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a soft off-white linen-textured wall with gentle window light from the upper left and a faint warm-grey gradient. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: social_proof. The review is REV5, a 4-star verified buyer quoted verbatim in full with name, date and source; it speaks to 'non greasy' and 'keeps skin hydrated', which the page itself states (F3, F17), and makes no repair, barrier or result claim. REV3 (results and two-week wording), REV4 ('very gentle') and REV6 (sensitive-skin and calm wording) were skipped. Kept: dated verified review card on a calm scene (Dot & Key), customer-voice lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+    "angle": "social_proof",
+    "hook_type": "social_proof",
+    "blend_sources": [
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "dated verified review card on a calm bright scene"
+      },
+      {
+        "id": "1619243416440363",
+        "brand": "Deconstruct",
+        "took": "customer-voice lead-in headline"
+      },
+      {
+        "id": "991199233902436",
+        "brand": "Conscious Chemist",
+        "took": "rating line carried in the footer"
+      }
+    ],
+    "review": {
+      "stars": 4,
+      "quote": "Good product. Non greasy and great base and keeps skin hydrated for long time. . My go to moisturiser!",
+      "source": "Tahira P., verified buyer, 4★, 2026-06-21"
+    },
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t8",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "headline": "Last step of the routine: massage in until fully absorbed",
+    "subhead": "Use after cleansing, toning and your serums, AM & PM, on face and neck.",
+    "proof_points": [
+      "10% Vitamin B5 (Panthenol) for oil-free moisturization",
+      "Boosted with Hyaluronic Acid & Betaine for multi-level hydration",
+      "Suitable for 16+ years of age"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F13",
+        "F14"
+      ],
+      "proof_points": [
+        [
+          "F5"
+        ],
+        [
+          "F7"
+        ],
+        [
+          "F11"
+        ]
+      ],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left column: large strength figure and active name, then headline, subhead and up to three proof points; the AI-generated person scene (person_prompt) is the human cue and carries the AI-GENERATED — ILLUSTRATIVE mark top-right; real pack shot composited in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a bright off-white bathroom shelf wall with soft morning light from the upper left, a folded cream towel at the lower-left edge only. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: situation. The moment is the last step of the routine: F13 says to use it after cleansing, toning and all serums, and F14 gives AM & PM. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and skin-repair, barrier and irritation wording (F2/F15/F18), plus the pregnancy line (F12). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.",
+    "angle": "situation",
+    "hook_type": "situation",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "in-use moment as the visual cue"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "headline that names one use moment"
+      }
+    ],
+    "ai_label_required": true,
+    "person_prompt": "A woman in her mid-30s with a light-brown skin tone seated at a vanity by a window in the morning, wearing a plain white robe with a hairband holding her hair back, massaging a small amount of white cream into her cheek and jaw with her fingertips; soft daylight from the upper left, off-white wall with a faint warm-grey gradient, a plain folded towel on the surface beside her, shallow depth of field, calm expression, natural unretouched skin, nothing implying a result, framed so she sits slightly left of centre with calm space to her right. No jar, tub, tube, bottle or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "Day one, week four and week eight with 10% Vitamin C",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "93% subjects said skin felt healthier after 4 weeks of usage. 90% subjects said their dark spots faded after 8 weeks. Frames are AI illustrations, not real results.",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F19",
+        "F18"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F19",
+        "F18"
+      ],
+      "frames": [
+        [
+          "F14"
+        ],
+        [
+          "F19"
+        ],
+        [
+          "F18"
+        ]
+      ]
+    },
+    "layout_description": "Headline across the top; three equal portrait frames left to right (Day 1 / Week 4 / Week 8), each with a dark label bar along its bottom edge, showing AI-generated illustrations of the same cheek area (frames_prompt); AI-GENERATED — ILLUSTRATIVE mark top-right; small real pack shot bottom-right; study/qualifier footnote across the bottom band; CTA bottom-left.",
+    "image_prompt": "Empty background scene only: an off-white seamless paper backdrop with a faint warm-peach-grey gradient at very low saturation and soft light from the upper left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the whole central band of the frame as an empty clear space, evenly lit and calm, reserved for three image panels and copy placed later, and keep the lower right corner empty for a pack photo. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched progress photos of the same person at Day 1, Week 4 and Week 8 from the brand's own consumer study (F19, F18), same framing, distance and light, with the study report on file, to replace the AI frames before any use.",
+    "adaptation_notes": "Kept: three equal labelled frames (Re'equil), qualifier footnote (Chemist at Play), timeframe-led headline used as routine length (Dr. Sheth's). Frame labels use only page-stated timeframes: Week 4 (F19, skin-felt-healthier perception) and Week 8 (F18, dark-spot perception); Day 1 is the start. The Week 4 radiance line (F17) was not used: its 'improved' wording reads as a result claim next to AI skin. Both stats stay perception stats with their qualifier in the footnote. Dropped: 'fades in 15 days' result headline, badges, struck price, before/after wording, the collagen and 'proven' wording in F16/F21. Frames are AI illustrations: Severe, not exportable until real study photos replace them. RATING not added: the footnote is full.",
+    "angle": "transformation",
+    "hook_type": "statement",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "study qualifier footnote under labelled frames"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "left-to-right progression across equal frames"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "timeframe-led headline, used as routine length not a result"
+      }
+    ],
+    "frames": [
+      {
+        "label": "Day 1",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Week 4",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Week 8",
+        "cites": [
+          "F18"
+        ]
+      }
+    ],
+    "ai_label_required": true,
+    "frames_prompt": "Three side-by-side portrait panels of the same adult's cheek and temple area (a woman in her early 30s with a light-brown skin tone and a few faint, small dark spots), identical framing, camera distance, soft daylight from the upper left and a plain off-white backdrop in every panel, natural texture and visible pores throughout. Panel 1 (Day 1) shows the skin with a slightly tired look and the faint spots; panel 2 (Week 4) shows the same area looking slightly fresher and healthier; panel 3 (Week 8) shows the faint spots looking slightly less visible. Changes are small, subtle and realistic, never dramatic, with no retouching gloss. No product, no bottle, no packaging, no hands, no text, no letters, no logos.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F19). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 8 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ]
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "review",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "What customers say about Vitamin C 10% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Learn more",
+    "citations": {
+      "headline": [
+        "F1"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Left: headline, then a dated verified-review card (stars, verbatim quote trimmed with …, name, rating, date and source line) as the main block; real pack shot on the right; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a pale warm-grey plaster wall with soft daylight from the upper left and a faint shadow from a window frame. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: social_proof. The review is REV3, a 5-star verified buyer, quoted verbatim and trimmed with … only (the original opens with a repeated title phrase and runs long); it is sensory only (lightweight, absorbs, not sticky) and makes no brightening, spot or result claim. REV2 and REV4 (spots and 'inner shine' results) and REV5 (a negative review) were skipped. Kept: dated verified review card (Dot & Key), 'what customers say' lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '4.8 by 15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.",
+    "angle": "social_proof",
+    "hook_type": "social_proof",
+    "blend_sources": [
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "dated verified review card on a calm scene"
+      },
+      {
+        "id": "1619243416440363",
+        "brand": "Deconstruct",
+        "took": "'what customers say' lead-in headline"
+      },
+      {
+        "id": "991199233902436",
+        "brand": "Conscious Chemist",
+        "took": "rating line carried in the footer"
+      }
+    ],
+    "review": {
+      "stars": 5,
+      "quote": "…Loved the absorption, the serum feels lightweight and sinks into skin quickly without sticky feeling…",
+      "source": "Riddhi M., verified buyer, 5★, 2026-06-16"
+    },
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "ingredient_explainer",
+    "layout": "actives",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t3",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "10% Vitamin C, 1% Acetyl Glucosamine and PHA",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [
+      {
+        "pct": "10%",
+        "name": "Vitamin C",
+        "line": "Ethyl Ascorbic Acid, a stabilized derivative with 86% pure Vitamin C content",
+        "cites": [
+          "F5"
+        ]
+      },
+      {
+        "pct": "1%",
+        "name": "Acetyl Glucosamine",
+        "line": "A simple sugar that provides skin moisturization",
+        "cites": [
+          "F6"
+        ]
+      },
+      {
+        "pct": "",
+        "name": "Polyhydroxy Acid (PHA)",
+        "line": "A hydroxy acid, suitable even for sensitive skin",
+        "cites": [
+          "F7"
+        ]
+      }
+    ],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "See ingredients",
+    "citations": {
+      "headline": [
+        "F5",
+        "F6",
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ]
+    },
+    "layout_description": "Headline top-left in two lines; three stacked ingredient cards below it, each with the strength (or none) in large type, the ingredient name in bold and a one-line description of what it is; real pack shot in the right 45%; rating line in the footnote band, CTA bottom-left.",
+    "image_prompt": "Empty background scene only: a matte off-white plaster shelf with soft diagonal window light, a single smooth pale stone at the lower-left edge, warm-grey tones. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Angle: ingredient_science. Leads with the active and its strength as stated (10% from the product title; 86% pure Vitamin C content, F5), then what each supporting ingredient is: Acetyl Glucosamine at 1% (F6) and PHA (F7). Each line describes the ingredient, not a result. Kept: ingredient-to-detail tag cards (Dot & Key), a minimal strength-first headline (Foxtale), strength printed with each name (Deconstruct). Dropped: 'ONE serum for bright skin' benefit headline, NEW bubble, the 'much higher than other derivatives' comparison (F5), hyaluronic-acid synthesis and exfoliation-regulation wording (F6), the dead-skin-removal, 'glow' and heal wording (F7, F8), fruit props.",
+    "angle": "ingredient_science",
+    "hook_type": "ingredient",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "three ingredient-to-detail tag cards"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "minimal strength-first headline"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "strength printed beside each ingredient name"
+      }
+    ],
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  },
+  {
+    "ad_type": "offer_promo",
+    "layout": "offer",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36",
+    "product_title": "Vitamin C 10% Face Serum",
+    "headline": "10% Vitamin C with Acetyl Glucosamine and PHA",
+    "subhead": "Take 2-3 drops after cleansing and toning, AM & PM.",
+    "proof_points": [
+      "30ml: Rs. 629 (MRP Rs. 699), beminimalist.co, captured 2026-10-02"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": {
+      "line": "Build Your Own Bundle — Save an additional up to 15% off",
+      "condition": "Applies when you build your own bundle on beminimalist.co. T&C apply.",
+      "valid_till": "",
+      "cites": [
+        "OFFER1"
+      ]
+    },
+    "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+    "cta": "Shop now",
+    "citations": {
+      "headline": [
+        "F6",
+        "F7"
+      ],
+      "subhead": [
+        "F14",
+        "F15"
+      ],
+      "proof_points": [
+        [
+          "PRICE2"
+        ]
+      ],
+      "footnote": [
+        "OFFER1",
+        "RATING"
+      ]
+    },
+    "layout_description": "Offer line as the large block top-left with its condition directly beneath; the 30ml sale price with MRP in bold under it; usage line below; real pack shot on the right 45%; CTA bottom-left; footnote with the capture date, T&C and rating along the bottom. No end date or countdown (none shown on site).",
+    "image_prompt": "Empty background scene only: a matte off-white studio sweep with a faint warm-peach-grey tone at the base and two low pale stone blocks at the far left edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit, reserved for a pack photo placed later, and keep the left 50% calm and low-detail, reserved for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "adaptation_notes": "Offer quoted exactly from the live sitewide banner OFFER1 ('Build Your Own Bundle — Save an additional up to 15% off', beminimalist.co, captured 2026-10-02), with its condition beside it and 'T&C apply'; price is PRICE2 (30ml, sale price with MRP). No end date was captured, so no urgency wording and no valid-till. Kept: a single offer lockup as the whole message (Chemist at Play), bold offer line as the hook (Foxtale), sale price shown with the MRP (Conscious Chemist). Dropped: fixed bundle price and discount code, countdown, seasonal kicker, brightening and dark-spot claims. Other live offers (OFFER2, 3, 4) not used, to keep one clear offer.",
+    "angle": "offer_value",
+    "hook_type": "offer",
+    "blend_sources": [
+      {
+        "id": "1393861285783656",
+        "brand": "Chemist at Play",
+        "took": "single offer lockup as the whole message"
+      },
+      {
+        "id": "27209515258657747",
+        "brand": "Conscious Chemist",
+        "took": "sale price shown beside the MRP"
+      },
+      {
+        "id": "903698342763669",
+        "brand": "Foxtale",
+        "took": "bold offer line as the headline device"
+      }
+    ],
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.3"
+    },
+    "findings": []
+  }
+]

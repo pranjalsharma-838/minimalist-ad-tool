@@ -77,13 +77,21 @@ const ANGLES = {
   sensorial: "Texture / sensorial: how it feels and absorbs, from the page's texture/usage facts only.",
 };
 const CL = fs.existsSync("research/customer_language.json") ? JSON.parse(fs.readFileSync("research/customer_language.json", "utf8")) : null;
-const angleUsed =Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
+const angleUsed = Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
+// Angle-matrix fill (user request 2026-10-03: one ad per angle per product). The transformation journey is an
+// angle of its own (progress frames), used only when requested via PAIRS (never auto-balanced). Formats that show
+// people use AI-generated people: the brief describes the person scene (no product, no text), sets
+// ai_label_required, and the real pack shot is composited beside the person.
+ANGLES.transformation = "Transformation journey (Progress / timeline): 3 progress frames of the same AI-illustrated skin area. Frame labels may ONLY use timeframes and outcomes stated in the page's own study lines (cite them); if the page has no timed study, label frames by routine stage (e.g. 'Day 1 · first use', 'Week 2 · daily habit', 'Week 4 · still in the routine') with NO result wording. Set ai_label_required: true; risk is Severe (AI-illustrated results; not exportable until real study photos replace the frames). Put a one-paragraph description of the 3 frames in frames_prompt (same person, same framing; no product, no text).";
+const PERSON_FORMAT = (t) => /REAL PHOTO:(people|endorser)/.test(t.source);
+const PERSON_NOTE = "This format shows a PERSON. The person image will be AI-generated and carry the visible AI-GENERATED — ILLUSTRATIVE mark: set ai_label_required: true. Describe the person scene in person_prompt (an adult in the moment the angle names — e.g. morning bathroom counter, commute in sun, fingertips applying a few drops — with NO product, bottle or packaging in their hands or in frame, no text, no brand names, no visible skin-result claims). The real pack shot is composited beside the person by code.";
+const PAIRS = process.env.PAIRS ? JSON.parse(fs.readFileSync(process.env.PAIRS, "utf8")) : null;
 function pickAngle(t, sheet) {
   // Bug fix (2026-10-03): families are named "Commercial" etc., so `family === "offer"` never matched and offer
   // formats were given (and counted as) a non-offer angle. Offer = the offer / price-comparison layouts.
   if (["offer", "pricecompare"].includes(t.layout)) return "offer_value";
   const has = (k) => sheet.facts.some((f) => f.kind === k);
-  const ok = Object.keys(ANGLES).filter((a) => a !== "social_proof" || has("rating") || has("review"));
+  const ok = Object.keys(ANGLES).filter((a) => a !== "transformation" && (a !== "social_proof" || has("rating") || has("review")));
   const a = ok.sort((x, y) => angleUsed[x] - angleUsed[y])[0];
   angleUsed[a]++;
   return a;
@@ -91,16 +99,19 @@ function pickAngle(t, sheet) {
 
 const match = [];
 const used = {};
-for (const h of handles) {
+for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
   const sheet = await sheetFor(h);
   const pick = rankArchetypes({ product_handle: h, sheet, objective: "sales", top: Number(per), used });
-  for (const r of pick.shortlist) used[r.id] = (used[r.id] || 0) + 1;
-  for (const r of pick.shortlist) {
+  // PAIRS mode: exactly the requested (product, format, angle) cells; otherwise the archetype shortlist.
+  const myPairs = PAIRS ? PAIRS.filter((p) => p.handle === h) : null;
+  const chosen = myPairs ? myPairs.map((p) => ({ ...pick.full_ranking.find((r) => r.id === p.template_id), forcedAngle: p.angle })) : pick.shortlist;
+  for (const r of chosen) used[r.id] = (used[r.id] || 0) + 1;
+  for (const r of chosen) {
     const t = TEMPLATES.find((x) => x.id === r.id);
     const id = `${h}__t${r.id}`;
     const refs = blendRefs(t);
     const example = refs.length ? rawById.get(String(refs[0].id)) : ads.filter((a) => t.competitor_types.includes(a.ad_type)).sort((a, b) => b.days_running - a.days_running)[0];
-    const angle = pickAngle(t, sheet);
+    const angle = r.forcedAngle || pickAngle(t, sheet);
     const refBlock = refs.map((w, i) => { const a = rawById.get(String(w.id)) || {}; return `${"ABC"[i]}. ${w.brand} · ${w.days_running} days · id ${w.id} · #${w.template_id} ${w.template_name}\n   What it is: ${w.one_line}\n   Headline: ${a.headline || ""} | On image: ${(a.on_image_text || "").slice(0, 160)}`; }).join("\n");
     const comps = [];
     for (const c of COMPANIONS.filter((c) => c !== h)) comps.push([c, await sheetFor(c)]);
@@ -117,6 +128,7 @@ for (const h of handles) {
       `## Angle (balanced across the run): ${angle}`,
       ...(angle === "concern_solved" && CL?.concern_map?.[h] ? ["Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):", ...CL.concern_map[h].filter((c) => c.answered_by).slice(0, 4).map((c) => `- ${c.concern.replace(/_/g, " ")}: competitors ${c.competitor_mentions} mentions (${c.competitor_in_negative} in ≤3★) · answered by ${c.answered_by.id} "${c.answered_by.text.slice(0, 120)}" · customer words: ${c.customer_phrases.slice(0, 2).join(" / ").slice(0, 220)}`)] : []),
       angle === "offer_value" ? "Offer-led: quote the live offer (OFFER*) exactly with sale price + MRP (PRICE*); footnote with capture date, 'T&C apply' and any free item's condition; no urgency words unless an end date is captured." : ANGLES[angle],
+      ...(PERSON_FORMAT(t) ? ["", PERSON_NOTE] : []),
       `Record "angle": "${angle}" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).`,
       "",
       "## Social proof (automatic where it fits)",

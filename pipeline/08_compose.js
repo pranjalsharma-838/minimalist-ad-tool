@@ -52,10 +52,12 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
   // Progress / split frames: backgrounds/<id>.frame<N>.png (N from 1). These are AI illustrations for the
   // transformation-journey format — the brief must carry ai_label_required so the AI mark is drawn.
-  (spec.frames || []).forEach((f, i) => {
-    const fp = ["png", "jpg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.frame${i + 1}.${e}`)).find((p) => fs.existsSync(p));
-    if (fp) { f.imageHref = dataUrl(fs.readFileSync(fp), `image/${path.extname(fp).slice(1).replace("jpg", "jpeg")}`); if (!b.ai_label_required) throw new Error(`${b.source_ad_id}: frame images present but ai_label_required is not set`); }
-  });
+  // Any AI-generated people/skin (frames, before/after photos, a person image) force the visible AI mark.
+  const aiImg = (name) => { const fp = ["png", "jpg", "webp"].map((e) => path.join(runDir, "backgrounds", `${b.source_ad_id}.${name}.${e}`)).find((p) => fs.existsSync(p)); return fp ? dataUrl(fs.readFileSync(fp), `image/${path.extname(fp).slice(1).replace("jpg", "jpeg")}`) : null; };
+  (spec.frames || []).forEach((f, i) => { const href = aiImg(`frame${i + 1}`); if (href) { f.imageHref = href; spec.aiLabel = true; } });
+  if (spec.layout === "before_after") { const ph = [aiImg("frame1"), aiImg("frame2")].filter(Boolean); if (ph.length === 2) { spec.photos = ph; spec.aiLabel = true; } }
+  const person = aiImg("person");
+  if (person) { spec.personHref = person; spec.aiLabel = true; }
   const ext = path.extname(bg).slice(1).replace("jpg", "jpeg");
   spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
   const square = renderAdSvg(spec);

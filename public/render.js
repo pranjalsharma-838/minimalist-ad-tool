@@ -73,7 +73,7 @@ const FOOT_PX = 26;
 // spec.layout picks the format (research/ad_format_library.md): hero (default), actives, journey, stat,
 // callouts, spec, range, offer, before_after. All share the same chrome: wordmark, CTA band, 26px
 // footnote, internal-test mark — so the legal furniture is identical whichever format is used.
-const LAYOUTS = { hero: (spec, s) => layout(spec, s) };
+export const LAYOUTS = { hero: (spec, s) => layout(spec, s) };
 
 function pick(spec) {
   return LAYOUTS[spec.layout || "hero"] || LAYOUTS.hero;
@@ -121,8 +121,9 @@ function layout(spec, s) {
     // Tried mix-blend-mode:multiply (2026-10-02): it greyed the white tube — that changes how the real
     // product looks, so it was reverted. Until a cut-out (transparent) pack shot is supplied, the photo
     // sits in a deliberate white frame so it reads as a product card, not a paste error.
-    // 2026-10-03: with a clean cut-out the bottle stands in the scene with a shadow (see pack()).
-    parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+    // 2026-10-03: with a clean cut-out the bottle stands in the scene with a shadow (see pack()); with an AI person
+    // image the person fills the zone and the pack is an inset (see productVisual()).
+    parts.push(productVisual(spec, 590, 110, 430, 660));
   }
 
   // Wordmark (text, not the logo file).
@@ -197,6 +198,9 @@ function layout(spec, s) {
   if (spec.testMark) {
     parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   }
+  // Bug fix (eye-check 2026-10-03): this hero layout builds its own SVG and skipped the AI label that chromeEnd()
+  // draws, so hero ads with AI people (product-in-use, product-in-hand) showed no mark. Same label, same rule.
+  if (spec.aiLabel) parts.push(aiBadge(w));
 
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(spec)}${parts.join("")}</svg>`;
   return { svg, bottom };
@@ -221,6 +225,8 @@ function chromeStart(spec, panel) {
   return parts;
 }
 
+const aiBadge = (w) => `<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`;
+
 // CTA band, product name, footnote, test mark -> svg.
 function chromeEnd(spec, parts, bottom) {
   const { w, h } = SIZE;
@@ -232,7 +238,7 @@ function chromeEnd(spec, parts, bottom) {
   if (spec.productName) parts.push(T(wrap(spec.productName, 22, 560), 372, BAND_Y + 74, 22, 28, `fill="${C.muted}"`));
   if (spec.footnote) parts.push(T(wrap(spec.footnote, FOOT_PX, w - 2 * PAD, 0.5).slice(0, 3), PAD, BAND_Y + 140, FOOT_PX, 32, `fill="${C.muted}"`));
   // Visible AI label whenever generated people/skin/results are in the creative (user decision 2026-10-03).
-  if (spec.aiLabel) parts.push(`<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`);
+  if (spec.aiLabel) parts.push(aiBadge(w));
   if (spec.testMark) parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(spec)}${parts.join("")}</svg>`, bottom };
 }
@@ -252,6 +258,17 @@ function pack(spec, href, x, y, w, h) {
   }
   const frame = spec.backgroundHref ? `<rect x="${x - 10}" y="${y - 10}" width="${w + 20}" height="${h + 20}" rx="10" fill="#FFFFFF"/>` : "";
   return `${frame}${img}/>`;
+}
+// The product zone. With an AI-generated person image (spec.personHref, angle-matrix fill 2026-10-03) the person is
+// the main visual — a rounded photo card filling the zone — and the REAL pack shot sits in front as an inset at the
+// lower left (the product is never part of the AI image). Without one, the zone holds the pack shot as before.
+function productVisual(spec, x, y, w, h) {
+  if (!spec.personHref) return pack(spec, spec.imageHref, x, y, w, h);
+  const card = `<clipPath id="personClip"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18"/></clipPath>` +
+    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="#FFFFFF"/>` +
+    `<image href="${esc(spec.personHref)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`;
+  const iw = Math.round(w * 0.36), ih = Math.round(h * 0.42);
+  return card + pack(spec, spec.imageHref, x + 18, y + h - ih - 18, iw, ih);
 }
 const defs = (spec) => `<defs><filter id="packShadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="${spec.shadowDx ?? 12}" dy="14" stdDeviation="12" flood-color="#000" flood-opacity="0.22"/></filter><filter id="contactBlur" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="9"/></filter></defs>`;
 
@@ -510,7 +527,7 @@ LAYOUTS.review = (spec, s) => {
 // #28 Social proof: one big sourced number.
 LAYOUTS.socialproof = (spec, s) => {
   const parts = chromeStart(spec, "left");
-  parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
+  parts.push(productVisual(spec, 590, 110, 430, 660));
   const p = spec.proof || {};
   let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 34) + Math.round(24 * s);
   const vs = Math.min(Math.round(130 * s), Math.floor(490 / Math.max(1, vlen(p.value || "") * 0.5)));
@@ -560,7 +577,8 @@ LAYOUTS.native = (spec, s) => {
     parts.push(T(sl, PAD, y + 26, Math.round(26 * s), Math.round(34 * s), `fill="${C.muted}"`));
     y += sl.length * Math.round(34 * s);
   }
-  parts.push(pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
+  // With an AI creator/UGC image the photo card takes the lower right and the pack becomes its inset.
+  parts.push(spec.personHref ? productVisual(spec, 640, Math.max(y + 20, BAND_Y - 470), 368, Math.min(450, BAND_Y - 30 - Math.max(y + 20, BAND_Y - 470))) : pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
   return chromeEnd(spec, parts, y);
 };
 

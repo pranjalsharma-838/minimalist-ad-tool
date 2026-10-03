@@ -59,7 +59,10 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   const hard = [...refused, ...fixable];
   const v = report.verdict.code;
   const copyRisk = briefRisk(v, report.findings);
-  const risk = worstRisk(copyRisk, img.risk, brief.needs_real_photography ? "severe" : "low");
+  // Bug fix (angle run 2026-10-03): risk and the AI flag were recomputed from copy + image prompt only, so briefs
+  // for AI-people formats came out "low, no AI label". Risk can only go UP: the format's own risk (match.json, from
+  // the archetype skill) and the brief's AI flag are floors.
+  const risk = worstRisk(copyRisk, img.risk, brief.needs_real_photography ? "severe" : "low", m.risk || "low", brief.ai_label_required ? "high" : "low");
   const status = refused.length ? "refused_image_prompt" : fixable.length || v !== "READY_FOR_REVIEW" && v !== "LIMITED_CHECK" ? "needs_retry" : "approved_for_image_step";
   out.push({
     ...brief,
@@ -68,7 +71,7 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
     source_brand: m.brand,
     status,
     risk_level: risk,
-    ai_label_required: img.ai_label_required || Boolean(brief.needs_real_photography),
+    ai_label_required: img.ai_label_required || Boolean(brief.needs_real_photography) || Boolean(brief.ai_label_required) || ["high", "severe"].includes(m.risk) && /person|people|frames/i.test(`${brief.person_prompt ? "person" : ""}${brief.frames_prompt ? "frames" : ""}`),
     warnings,
     hard_failures: hard,
     verdict: report.verdict,
