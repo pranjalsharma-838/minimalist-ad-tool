@@ -113,7 +113,7 @@ for (const h of handles) {
       "",
       `## Angle (balanced across the run): ${angle}`,
       angle === "offer_value" ? "Offer-led: quote the live offer (OFFER*) exactly with sale price + MRP (PRICE*); footnote with capture date, 'T&C apply' and any free item's condition; no urgency words unless an end date is captured." : ANGLES[angle],
-      `Record "angle": "${angle}" in the brief.`,
+      `Record "angle": "${angle}" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).`,
       "",
       "## Social proof (automatic where it fits)",
       sheet.facts.some((f) => f.kind === "rating") ? "If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. \"4.0★ from 1,491 reviews\") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'." : "No rating captured for this product — no social proof.",

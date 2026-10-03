@@ -325,3 +325,17 @@ These are genuinely ambiguous. The pre-screen should route matching lines to "ne
 - **Q10. Labelling rule vs advertising.** Cosmetics Rules r. 36 sits in the labelling chapter. Does legal treat it as applying to e-commerce listing copy and ads? CDSCO's 2026 notice suggests a broad reading (SECONDARY).
 - **Q11. DMR Schedule amendments.** I could not confirm whether the 2020 draft DMR amendment (which, from memory, proposed adding conditions such as fairness of skin, premature ageing and greying of hair) was ever notified. If it was, it would directly hit anti-ageing and brightening claims. UNVERIFIED; needs a check.
 - **Q12. Cross-border creatives.** The same creative may run in India, the US and the EU. US acne/SPF ads are drug ads (FDA-OTC, UNVERIFIED detail). EU forbids "free from [legally used ingredient]" denigration. Should the tool score per market, or apply the strictest market's rule?
+
+---
+
+## G. Watch list (added 2026-10-03; `scripts/reg_watch.js` → `research/reg_watch.md`)
+
+**64. ASCI-GENAI-WP** · ASCI × Kochhar & Co white paper "Generative AI and Advertising: Opportunities, Risks and Best Practices" (July 2024) · BEST PRACTICE, not binding
+- URL: https://www.ascionline.in/wp-content/uploads/2024/07/Kco-WhitePaper-GenAI-D11-DIGITAL_LowRes.pdf
+- Use: supports our house rule that AI-generated people, skin or results carry a visible "AI-GENERATED — ILLUSTRATIVE" mark and are never presented as real results.
+
+**65. ASCI-AI-2026 (PENDING)** · ASCI guidance on AI-generated content in advertising, expected Dec 2026 · NOT YET PUBLISHED as of 2026-10-03
+- Action when published: read it, update `lib/image_prompt_check.js` (AI label rules) and add rules to `rules/brand_rules.json`.
+
+**66. CDSCO-NOTICES** · CDSCO public notices page, watched for cosmetics/claims notices (complements CDSCO-PN-2026) · WATCH
+- URL: https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/
