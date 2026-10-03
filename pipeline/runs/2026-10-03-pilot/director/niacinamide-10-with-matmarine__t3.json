@@ -1,0 +1,21 @@
+{
+  "id": "niacinamide-10-with-matmarine__t3",
+  "rationale": "Brief said light from the upper right; overridden to upper-left because the real pack shot is lit from the upper left. Blush reduced to a trace to stay in the white/grey palette.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Off-white surface, pale grey wall with trace of blush, one pebble lower right",
+      "image_prompt": "Create a photographic background image: a straight-on view of a smooth off-white #F4F2EE surface against a seamless pale grey wall #E5E9EA with only a trace of warm tint, surface in the lower three quarters. One small smooth pale stone sits at the extreme lower-right corner, under 5% of the frame width. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: soft daylight from the upper left at 5600K, a gentle gradient shadow falling to the lower right. Background: matte seamless wall, fine plaster texture, soft depth. Style: clinical editorial, matte and uncluttered. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

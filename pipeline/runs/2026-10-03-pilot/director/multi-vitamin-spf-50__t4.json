@@ -1,0 +1,21 @@
+{
+  "id": "multi-vitamin-spf-50__t4",
+  "rationale": "Dropped the sliver of sunlight (it would put a bright patch in the pack-shot zone). Pebbles kept in the lower-left corner.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Top-down fine-grain paper flat lay, pale pebbles",
+      "image_prompt": "Create a photographic background image: a top-down flat lay on a smooth off-white #F4F2EE surface with a subtle fine-grain paper texture. Two small smooth pale stone pebbles in warm grey #E5E9EA rest near the lower-left corner, each under 5% of the frame width. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: soft daylight from the upper left at 5600K, shadows of the pebbles falling to the lower right, otherwise even. Background: matte off-white #F4F2EE paper, pale sand #E8E1D3 only as a faint tonal drift near the bottom edge. Style: spec sheet, flat and even, minimal. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

@@ -1,0 +1,21 @@
+{
+  "id": "niacinamide-10-with-matmarine__t1",
+  "rationale": "Brief asked for a cool reflection and aqua; kept it to a faint pale-grey gradient to hold the white/grey palette. Light upper-left per pack shot.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Off-white tabletop against matte wall, pale grey cool tint",
+      "image_prompt": "Create a photographic background image: a straight-on view of a smooth off-white #F4F2EE studio tabletop meeting a matte wall, tabletop in the lower three quarters. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: single soft window light from the upper left at 5600K, one soft diagonal window shadow across the far upper-left only, shadows falling to the lower right. Background: off-white #F4F2EE matte wall with a very faint pale-grey #E5E9EA gradient toward the right edge, fine matte texture, shallow depth. Style: clinical editorial, single light source, generous negative space. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

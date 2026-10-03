@@ -51,6 +51,41 @@ async function sheetFor(h) {
 }
 const factLines = (s, prefix = "") => s.facts.filter((f) => !["inci", "faq", "testimonial"].includes(f.kind) || f.kind === "faq").map((f) => `${prefix}${f.id} [${f.kind}] (${f.section}) ${f.text}`).join("\n");
 
+// Add-on (a) 2026-10-03: blend, don't copy — each concept gets 3 proven competitor winners (30+ days, different
+// brands) for this format, and the writer takes one element from each (hook / layout / proof device).
+const WIN = JSON.parse(fs.readFileSync("research/winners.json", "utf8")).ads.filter((w) => w.winner);
+const rawById = new Map(ads.map((a) => [String(a.id), a]));
+function blendRefs(t) {
+  const prim = WIN.filter((w) => w.template_id === t.id), sec = WIN.filter((w) => (w.secondary_template_ids || []).includes(t.id));
+  const fam = WIN.filter((w) => TEMPLATES.find((x) => x.id === w.template_id)?.family === t.family);
+  const out = [], brands = new Set();
+  for (const w of [...prim, ...sec, ...fam].sort((a, b) => (prim.includes(b) - prim.includes(a)) || b.days_running - a.days_running)) {
+    if (out.length >= 3) break;
+    if (brands.has(w.brand) || out.includes(w)) continue;
+    brands.add(w.brand); out.push(w);
+  }
+  return out;
+}
+// Add-ons (a) balancing + (d) situation-first: angles are spread evenly across the run (least-used first,
+// among the angles this product's facts can support). Offer formats are always "offer_value".
+const ANGLES = {
+  situation: "Situation-first: open on a real moment where the product fits (e.g. morning rush before work, commute in sun, humid day, before makeup, night routine, gym/sweat). The situation must match the page's usage facts and must not imply a result the page doesn't state.",
+  concern_solved: "Concern solved: name a common cosmetic concern customers voice (sticky feel, heavy texture, white cast, greasiness, complicated routines) and answer it ONLY with a page fact that addresses it. Never name a competitor; no medical conditions.",
+  ingredient_science: "Ingredient science: lead with the active and its strength as stated on the page; explain what it is, not what it cures.",
+  social_proof: "Social proof: lead with the real rating (RATING, verbatim, never rounded) and/or one verbatim verified review (REV*).",
+  routine: "Routine: where the product sits in a simple AM/PM routine (companion products allowed in journey/range layouts).",
+  sensorial: "Texture / sensorial: how it feels and absorbs, from the page's texture/usage facts only.",
+};
+const angleUsed = Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
+function pickAngle(t, sheet) {
+  if (t.family === "offer") return "offer_value";
+  const has = (k) => sheet.facts.some((f) => f.kind === k);
+  const ok = Object.keys(ANGLES).filter((a) => a !== "social_proof" || has("rating") || has("review"));
+  const a = ok.sort((x, y) => angleUsed[x] - angleUsed[y])[0];
+  angleUsed[a]++;
+  return a;
+}
+
 const match = [];
 const used = {};
 for (const h of handles) {
@@ -60,7 +95,10 @@ for (const h of handles) {
   for (const r of pick.shortlist) {
     const t = TEMPLATES.find((x) => x.id === r.id);
     const id = `${h}__t${r.id}`;
-    const example = ads.filter((a) => t.competitor_types.includes(a.ad_type)).sort((a, b) => b.days_running - a.days_running)[0];
+    const refs = blendRefs(t);
+    const example = refs.length ? rawById.get(String(refs[0].id)) : ads.filter((a) => t.competitor_types.includes(a.ad_type)).sort((a, b) => b.days_running - a.days_running)[0];
+    const angle = pickAngle(t, sheet);
+    const refBlock = refs.map((w, i) => { const a = rawById.get(String(w.id)) || {}; return `${"ABC"[i]}. ${w.brand} · ${w.days_running} days · id ${w.id} · #${w.template_id} ${w.template_name}\n   What it is: ${w.one_line}\n   Headline: ${a.headline || ""} | On image: ${(a.on_image_text || "").slice(0, 160)}`; }).join("\n");
     const comps = [];
     for (const c of COMPANIONS.filter((c) => c !== h)) comps.push([c, await sheetFor(c)]);
     const md = [
@@ -70,8 +108,15 @@ for (const h of handles) {
       `Why chosen: ${r.why}`,
       `Risk: ${r.risk_label} — ${r.risk_note}${r.suggestions.length ? " · " + r.suggestions.join(" ") : ""}`,
       "",
-      "## Reference competitor ad for this format (structure only, never its wording)",
-      example ? `${example.brand} · ${example.days_running} days · ${example.ad_type}\nHeadline: ${example.headline || ""}\nText: ${(example.primary_text || "").slice(0, 400)}\nOn image: ${example.on_image_text || ""}\nVisual: ${example.visual_notes || ""}` : "(none)",
+      refs.length > 1 ? "## Blend these proven competitor winners (structure only, never their wording)" : "## Reference competitor ad for this format (structure only, never its wording)",
+      refs.length > 1 ? `${refBlock}\nBlend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].` : example ? `${example.brand} · ${example.days_running} days · ${example.ad_type}\nHeadline: ${example.headline || ""}\nText: ${(example.primary_text || "").slice(0, 400)}\nOn image: ${example.on_image_text || ""}\nVisual: ${example.visual_notes || ""}` : "(none)",
+      "",
+      `## Angle (balanced across the run): ${angle}`,
+      angle === "offer_value" ? "Offer-led: quote the live offer (OFFER*) exactly with sale price + MRP (PRICE*); footnote with capture date, 'T&C apply' and any free item's condition; no urgency words unless an end date is captured." : ANGLES[angle],
+      `Record "angle": "${angle}" in the brief.`,
+      "",
+      "## Social proof (automatic where it fits)",
+      sheet.facts.some((f) => f.kind === "rating") ? "If the layout has a badge, footnote or CTA-band slot, add the RATING fact verbatim (e.g. \"4.0★ from 1,491 reviews\") citing RATING — never round up, never 'top rated'. Quote a REV* review only in review/social-proof layouts or when the angle is social_proof; quote exactly (trim with … only), with name + 'verified buyer'." : "No rating captured for this product — no social proof.",
       "",
       `## Product facts: ${sheet.title} (main product, handle "${h}")`,
       `Hero shown by the layout: ${sheet.actives.map((a) => (a.name === "SPF" ? `SPF ${a.pct}` : `${a.pct} ${a.name}`)).join(", ") || "(none)"}`,
@@ -79,7 +124,7 @@ for (const h of handles) {
       ...comps.flatMap(([c, s]) => ["", `## Companion product: ${s.title} (handle "${c}"; cite as "${c}:F<n>"; journey/range layouts only)`, factLines(s, `${c}:`).split("\n").slice(0, 12).join("\n")]),
     ].join("\n");
     fs.writeFileSync(path.join(runDir, "brief_inputs", `${id}.md`), md);
-    match.push({ id, brand: example?.brand || "", ad_type: t.competitor_types[0], product_handle: h, product_title: sheet.title, template_id: t.id, template_name: t.name, risk: r.risk, match_method: "archetype skill" });
+    match.push({ id, brand: example?.brand || "", ad_type: t.competitor_types[0], product_handle: h, product_title: sheet.title, template_id: t.id, template_name: t.name, risk: r.risk, match_method: "archetype skill", angle, blend_refs: refs.map((w) => `${w.brand} ${w.id} (${w.days_running}d)`) });
     console.log(`${id}: #${t.id} ${t.name} [${t.layout}] risk ${r.risk_label}`);
   }
 }

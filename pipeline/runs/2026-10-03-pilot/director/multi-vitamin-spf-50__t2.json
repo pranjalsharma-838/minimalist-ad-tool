@@ -1,0 +1,21 @@
+{
+  "id": "multi-vitamin-spf-50__t2",
+  "rationale": "Brief draft asked for sky blue and a warm sunlight patch; kept palette to white/off-white/sand per brand_visual and used a single leaf shadow. Light kept upper-left to match the real pack shot.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Matte plaster wall and off-white tabletop, hint of sand",
+      "image_prompt": "Create a photographic background image: a straight-on view of a smooth off-white #F4F2EE studio tabletop meeting a matte plaster wall, with the tabletop filling the lower three quarters and the wall the top quarter. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: single soft window light from the upper left at 5600K, one faint diagonal leaf shadow falling across the far upper-left corner only, shadows falling toward the lower right. Background: off-white #F4F2EE plaster wall with a faint sand-pale #E8E1D3 tonal shift near the tabletop edge, matte, no gloss. Style: clinical editorial restraint, matte surfaces, generous negative space, one light source. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}

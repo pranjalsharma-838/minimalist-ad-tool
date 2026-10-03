@@ -1,0 +1,21 @@
+{
+  "id": "multi-vitamin-spf-50__t36",
+  "rationale": "Brief said light from the left; set to upper-left to match the pack shot. Kept blocks neutral off-white/grey, no promo colour.",
+  "refused": null,
+  "variants": [
+    {
+      "axis_value": "Three low off-white blocks on right, pale warm grey",
+      "image_prompt": "Create a photographic background image: a seamless off-white #F4F2EE studio backdrop with three low smooth matte geometric blocks in off-white #F4F2EE and pale warm grey #E5E9EA, arranged at the far right edge at three different heights, each lower than 15% of the frame height, camera straight-on at table height. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The flat top of the highest block sits near the middle of the right zone as an empty open surface. Lighting: single soft key light from the upper left at 5600K, soft-edged shadows falling to the lower right of each block. Background: seamless off-white sweep, matte plaster-like blocks, very gentle gradient to pale grey at the lower edge. Style: clinical editorial, spec-sheet geometry, restrained neutral palette. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "negative_prompt": "Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.",
+      "light_direction": "upper-left",
+      "risk": "low",
+      "ai_label_required": false
+    }
+  ],
+  "asset_requirements": [
+    "real pack shot composited by the tool"
+  ],
+  "risk_level": "low",
+  "ai_label_required": false,
+  "risk_note": ""
+}
