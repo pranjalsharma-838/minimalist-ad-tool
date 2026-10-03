@@ -1,4 +1,21 @@
-# CHECKPOINT: Minimalist Ad Desk (updated 2026-10-03, later)
+# CHECKPOINT: Minimalist Ad Desk
+
+## FINAL STATE 2026-10-03 ~23:45 (latest; supersedes the sections below)
+- **External review (DeepSeek, "Shortlist") applied to the essentials:**
+  - eval provenance plus an OOD set (frozen: 81% recall, 0 missed blocks);
+  - catalog checks scoped to Minimalist's own ads;
+  - decision doc: rule split, scope, ad-type mechanics;
+  - submission leads with the standard;
+  - transcript "start here" index.
+- **User review rounds:**
+  - every product × every angle (23 ads);
+  - AI people in place of placeholders;
+  - clear product and CTA;
+  - a people pack (lifestyle, usage, routine journey) with balanced Indian casting;
+  - existing AI people recast.
+- **Library:** 81 ads (41 with AI people), 247 PNGs; gallery at `ad_library/index.html`. Tests 41/41.
+- **GitHub:** private repo github.com/pranjalsharma-838/minimalist-ad-tool. The clean copy is built by streaming fast-export, then the sanitiser (scratchpad `sanitize_stream.mjs`), then fast-import into `Desktop\minimalist-ad-tool-github`. That gives 0 client names, 0 emails, and the no-reply identity `82684542+pranjalsharma-838@users.noreply.github.com`.
+- **Open on the user's side:** change the two passwords shared in chat; optionally add an Anthropic API key in `.env` (live judge). After the push, send a follow-up to DeepSeek. (updated 2026-10-03, later)
 
 Architecture agreed with the user: `docs/ARCHITECTURE.md`. Step-by-step run order: `pipeline/RUNBOOK.md`. Decisions:
 - winner = 30+ days running;
