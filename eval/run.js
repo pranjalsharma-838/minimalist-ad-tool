@@ -10,8 +10,11 @@
 import fs from "node:fs";
 import { scoreAd } from "../lib/score.js";
 
-const cases = JSON.parse(fs.readFileSync("eval/cases.json", "utf8"));
-const labels = new Map(JSON.parse(fs.readFileSync("eval/labels.json", "utf8")).map((l) => [l.id, l]));
+// The out-of-distribution set (unseen brands, Amazon.in listing copy; scripts/build_ood_eval.js) is kept in its
+// own files so rebuilding the original cases never drops it. Its labels were committed before it was scored.
+const readIf = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : []);
+const cases = [...readIf("eval/cases.json"), ...readIf("eval/cases_ood.json")];
+const labels = new Map([...readIf("eval/labels.json"), ...readIf("eval/labels_ood.json")].map((l) => [l.id, l]));
 const toLevel = (code) => ({ BLOCKED: "block", NEEDS_CHANGES: "fix" })[code] || "pass";
 const RANK = { pass: 0, fix: 1, block: 2, advisory: 0 };
 const FIELDS = ["headline", "primary_text", "on_image_text", "footnote", "cta"];
@@ -65,7 +68,7 @@ async function evaluate(mode) {
 }
 
 function summarize(rows, title) {
-  const splits = ["tuning", "holdout", "synthetic"];
+  const splits = ["tuning", "holdout", "synthetic", "ood"];
   const out = [`### ${title}`, "", "| split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |", "|---|---|---|---|---|---|---|---|---|---|---|"];
   for (const s of [...splits, "ALL"]) {
     const R = s === "ALL" ? rows : rows.filter((r) => r.split === s);
@@ -86,7 +89,7 @@ const md = [
   "",
   `Generated ${new Date().toISOString()}. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).`,
   "Model layer: outputs in eval/sim_model/ were produced by Claude Code subagents given the exact rendered prompt (eval/rendered/), because no API key was available. They pass through the app's real validation code. This approximates, but is not, the production API path.",
-  "Tuning-split numbers are optimistic: rules were written while reading those ads, and some appear verbatim as rulebook examples. Holdout and synthetic are the honest numbers.",
+  "How far each split generalises (see eval/README.md): tuning = read while writing the rules (optimistic); holdout = same Meta capture, hash-split and sealed until the rules were frozen (held out, but in-distribution); synthetic = adversarial edge cases written during the build (not independent of the builder); ood = brands never seen in the build + a different channel (Amazon.in listings), labelled blind and committed before scoring (the closest to 'ads you have not seen').",
   "",
   summarize(rulesOnly, "Rules only"),
   "",

@@ -25,6 +25,8 @@ None of these are bugs. Each is what happens when the tool does exactly what it 
 
 A confident tool enforcing the wrong line fails two ways. It blocks good ads, and the team routes around it. Or it passes ads that are now non-compliant.
 
+A design-caused version of this, which is my own choice working as intended: a claim on Minimalist's own product page gets its severity lowered one step (DECISIONS §5). If that page line is itself risky (e.g. "Reduces Acne"), the generator repeats it in every ad built from that page, one level softer than it should be, at scale. *Before launch:* legal reviews the product pages the generator reads, not just the ads. *After launch:* any page line that legal later rejects is added to a page-level deny list, and every ad built from it is re-scored.
+
 **What I'd do:**
 - *Before launch:* legal signs off the rulebook and resolves the 12 open questions. Rules are versioned, and every report shows the rules version and date. The catalog check reads the live Shopify feed instead of a snapshot.
 - *After launch:* a quarterly rule review, and a feed of ASCI and CDSCO updates.

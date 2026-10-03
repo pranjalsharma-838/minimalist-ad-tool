@@ -5,7 +5,7 @@ import fs from "node:fs";
 import { runRules } from "../lib/rules.js";
 import { buildJudgePrompt } from "../lib/judge.js";
 
-const cases = JSON.parse(fs.readFileSync("eval/cases.json", "utf8"));
+const cases = [...JSON.parse(fs.readFileSync("eval/cases.json", "utf8")), ...(fs.existsSync("eval/cases_ood.json") ? JSON.parse(fs.readFileSync("eval/cases_ood.json", "utf8")) : [])];
 fs.rmSync("eval/rendered", { recursive: true, force: true });
 fs.mkdirSync("eval/rendered", { recursive: true });
 let system = null;
