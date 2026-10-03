@@ -79,7 +79,9 @@ const ANGLES = {
 const CL = fs.existsSync("research/customer_language.json") ? JSON.parse(fs.readFileSync("research/customer_language.json", "utf8")) : null;
 const angleUsed =Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
 function pickAngle(t, sheet) {
-  if (t.family === "offer") return "offer_value";
+  // Bug fix (2026-10-03): families are named "Commercial" etc., so `family === "offer"` never matched and offer
+  // formats were given (and counted as) a non-offer angle. Offer = the offer / price-comparison layouts.
+  if (["offer", "pricecompare"].includes(t.layout)) return "offer_value";
   const has = (k) => sheet.facts.some((f) => f.kind === k);
   const ok = Object.keys(ANGLES).filter((a) => a !== "social_proof" || has("rating") || has("review"));
   const a = ok.sort((x, y) => angleUsed[x] - angleUsed[y])[0];

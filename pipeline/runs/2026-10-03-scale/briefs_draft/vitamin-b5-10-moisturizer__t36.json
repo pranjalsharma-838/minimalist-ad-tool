@@ -55,6 +55,6 @@
       "took": "kicker line above the bold headline"
     }
   ],
-  "angle": "social_proof",
-  "hook_type": "social_proof"
+  "angle": "offer_value",
+  "hook_type": "offer"
 }

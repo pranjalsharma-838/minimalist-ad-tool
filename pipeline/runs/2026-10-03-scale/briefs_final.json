@@ -160,8 +160,8 @@
         "took": "bold headline over a code/condition bar (condition only, no code)"
       }
     ],
-    "angle": "concern_solved",
-    "hook_type": "statement",
+    "angle": "offer_value",
+    "hook_type": "offer",
     "product_handle": "alpha-arbutin-2",
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Chemist at Play",
@@ -505,8 +505,8 @@
         "took": "offer sticker as the focal element"
       }
     ],
-    "angle": "routine",
-    "hook_type": "statement",
+    "angle": "offer_value",
+    "hook_type": "offer",
     "product_handle": "multi-vitamin-spf-50",
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Chemist at Play",
@@ -1698,8 +1698,8 @@
         "took": "kicker slot above the headline (placeholder)"
       }
     ],
-    "angle": "situation",
-    "hook_type": "situation",
+    "angle": "offer_value",
+    "hook_type": "offer",
     "product_handle": "salicylic-lha-2-cleanser",
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Chemist at Play",
@@ -1985,8 +1985,8 @@
         "took": "kicker line above the bold headline"
       }
     ],
-    "angle": "social_proof",
-    "hook_type": "social_proof",
+    "angle": "offer_value",
+    "hook_type": "offer",
     "product_handle": "vitamin-b5-10-moisturizer",
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Chemist at Play",

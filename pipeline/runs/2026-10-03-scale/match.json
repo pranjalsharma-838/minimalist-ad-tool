@@ -9,7 +9,7 @@
     "template_name": "Offer creative",
     "risk": "medium",
     "match_method": "archetype skill",
-    "angle": "situation",
+    "angle": "offer_value",
     "blend_refs": [
       "Chemist at Play 1393861285783656 (303d)",
       "Conscious Chemist 27209515258657747 (107d)",
@@ -77,7 +77,7 @@
     "template_name": "Offer creative",
     "risk": "medium",
     "match_method": "archetype skill",
-    "angle": "routine",
+    "angle": "offer_value",
     "blend_refs": [
       "Chemist at Play 1393861285783656 (303d)",
       "Conscious Chemist 27209515258657747 (107d)",
@@ -162,7 +162,7 @@
     "template_name": "Offer creative",
     "risk": "medium",
     "match_method": "archetype skill",
-    "angle": "social_proof",
+    "angle": "offer_value",
     "blend_refs": [
       "Chemist at Play 1393861285783656 (303d)",
       "Conscious Chemist 27209515258657747 (107d)",
@@ -432,7 +432,7 @@
     "template_name": "Offer creative",
     "risk": "medium",
     "match_method": "archetype skill",
-    "angle": "concern_solved",
+    "angle": "offer_value",
     "blend_refs": [
       "Chemist at Play 1393861285783656 (303d)",
       "Conscious Chemist 27209515258657747 (107d)",
