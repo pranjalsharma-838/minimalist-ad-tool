@@ -1,0 +1,69 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "10% Vitamin C, boosted with PHA suited to sensitive skin",
+  "subhead": "Also contains 1% Acetyl Glucosamine for skin moisturization.",
+  "proof_points": [
+    "Ethyl Ascorbic Acid with 86% pure Vitamin C content",
+    "Skin type: all skin types",
+    "Apply 2-3 drops AM & PM after cleansing & toning"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F7"
+    ],
+    "subhead": [
+      "F6"
+    ],
+    "proof_points": [
+      [
+        "F5"
+      ],
+      [
+        "F10"
+      ],
+      [
+        "F14",
+        "F15"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Clean catalogue card: headline top-left, subhead below, three proof lines. A single sticker top-right reading '10%'. Real pack shot in the right 45%. Footnote bottom-left.",
+  "image_prompt": "Empty background scene only: a soft white background with a faint warm peach tint, a single thin citrus peel curl near the lower edge and gentle even light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: irritation/sensitivity; answered only by F7 (PHA suitable even for sensitive skin), without saying the serum won't irritate. Customer words not quoted. Kept: plain white card (Pilgrim), one sticker with one fact (Dot & Key), concern-aware headline structure (The Derma Co, without 'dermat-approved' or discount). Dropped: 35% off, freebies, code.",
+  "blend_sources": [
+    {
+      "id": "3885583851576384",
+      "brand": "Pilgrim",
+      "took": "plain white catalogue card"
+    },
+    {
+      "id": "2634392720313080",
+      "brand": "Dot & Key",
+      "took": "one sticker carrying one fact"
+    },
+    {
+      "id": "4305763079698667",
+      "brand": "The Derma Co",
+      "took": "concern-aware headline structure"
+    }
+  ],
+  "angle": "concern_solved",
+  "hook_type": "ingredient"
+}

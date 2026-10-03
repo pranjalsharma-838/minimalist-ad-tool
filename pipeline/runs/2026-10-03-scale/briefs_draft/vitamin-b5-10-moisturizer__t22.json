@@ -1,0 +1,81 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t22",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "From light lather to lightweight moisturizer",
+  "subhead": "AM & PM, every day.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 · Wash",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "Light lather on a wet face, then rinse thoroughly",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "label": "Step 2 · Serum",
+      "product_handle": "niacinamide-10-with-matmarine",
+      "line": "2-3 drops; let the serum absorb fully",
+      "cites": [
+        "niacinamide-10-with-matmarine:F13"
+      ]
+    },
+    {
+      "label": "Step 3 · Moisturizer",
+      "product_handle": "vitamin-b5-10-moisturizer",
+      "line": "Lightweight, oil-free; massage in until fully absorbed",
+      "cites": [
+        "F3",
+        "F13"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F13",
+      "F3"
+    ],
+    "subhead": [
+      "F14"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Three real pack shots across the middle, each linked by a thin connecting line, step label above and one short line below. Headline and subhead across the top. Footnote bottom, CTA bottom-right.",
+  "image_prompt": "Empty background scene only: a pale off-white surface with a soft wide splash-like ripple pattern in very light blue only at the outer edges and gentle daylight. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and keep any props in the outer edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: water-splash scene (Foxtale), 'Step N' labels (Dot & Key), numbered-card ordering (Pilgrim). Reworded step names to avoid Pilgrim's Cleanse/Treat wording. Dropped: seasonal monsoon kicker, model, 'Glow' promises, swatches and handwritten checklist. Textures come from each product's own page facts.",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "water-splash scene behind the packs"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "Step 1 / Step 2 labels above each pack"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "numbered, connected-card ordering of three products"
+    }
+  ],
+  "angle": "sensorial",
+  "hook_type": "statement"
+}

@@ -1,0 +1,81 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "multi-vitamin-spf-50__t26",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "A light texture that spreads easily",
+  "subhead": "Broad Spectrum SPF 50, PA++++, in a moisturiser-meets-sunscreen formula.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F2",
+      "F3"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: headline, subhead, then a dated verified-review card (stars, quote, name and date line) as the main block. Real pack shot on the right 45%. Rating line in the footnote, CTA bottom-left.",
+  "image_prompt": "Empty background scene only: a bright open sky gradient fading to off-white with a soft cloud edge near the top, very low contrast. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: texture (customers say 'sticky/greasy'); answered only by F3 'very light texture that spreads easily'. Customer review is a verbatim REV4 quote with name, date and 'verified buyer'. Kept: dated verified 5-star card (Dot & Key), customer-voice attribution (Deconstruct), rating line (Conscious Chemist). Dropped: bold review title copy and 'my 3rd bottle' style claims (not on our page).",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified review card on an open-sky scene"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "name and verified-purchase attribution line"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line in the footer"
+    }
+  ],
+  "angle": "concern_solved",
+  "hook_type": "statement",
+  "review": {
+    "stars": "★★★★",
+    "quote": "Matte finish. like the matte finish and how it blends with my skin tone",
+    "source": "Pushkar V., verified buyer, 4★, 2025-07-15 (beminimalist.co, captured 2026-10-02)"
+  },
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Day 0",
+      "severity": "fix",
+      "why": "\"Day 0 / Week 2\" labels frame a before/after progression, which draws platform restrictions and needs representative, unretouched evidence.",
+      "fix": "Remove the Day 0 / Week 2 labels, or show only the study qualifier text."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "97% perception stat is shown with duration (2 weeks) and perception wording in the footnote; no n given, so acceptable only if the study file supports it."
+    }
+  ],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

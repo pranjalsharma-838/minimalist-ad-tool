@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-16",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Upto 33% OFF + Freebies",
+      "severity": "fix",
+      "why": "\"Freebies\" is offered without its purchase condition in the creative, and the up-to-33% figure is a sitewide banner not tied to this product (listed 10% below MRP); the terms link covers only the Buy 2 Get 3rd offer.",
+      "fix": "Buy 2, Get 3rd Free (T&C apply), or state the freebie condition and which products qualify."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "[confirm eligible products and any code]",
+      "severity": "advisory",
+      "why": "Unresolved marketer placeholder text sits in the ad copy and must be filled or removed before publishing.",
+      "fix": "Replace with the confirmed value (eligible products, end date, or consented attribution) or delete the line."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

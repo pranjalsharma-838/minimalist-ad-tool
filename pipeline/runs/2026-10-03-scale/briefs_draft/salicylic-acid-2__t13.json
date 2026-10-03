@@ -1,0 +1,63 @@
+{
+  "ad_type": "other",
+  "layout": "splitscreen",
+  "source_ad_id": "salicylic-acid-2__t13",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "97% said skin felt less oily throughout the day",
+  "subhead": "Apply 2-3 drops after cleansing & toning, in the PM.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Consumer study: 97% subjects said skin felt less oily throughout the day after using this serum for 2 weeks. This is subjects' own perception.",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F17"
+    ],
+    "subhead": [
+      "F12",
+      "F13"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "F17"
+    ]
+  },
+  "layout_description": "Headline top-left, subhead below. Centre: one wide split frame divided by a thin vertical line with usage-routine labels ('Cleanse & tone', '2-3 drops'), kept empty until real routine photos are supplied. Real pack shot right 45%. Study footnote bottom.",
+  "image_prompt": "Empty background scene only: a clean off-white surface divided by a very faint vertical seam into two slightly different pale tones, soft even light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real photos of a consenting person's routine steps (cleansing, then 2-3 drops), hands and pack only. No timed markers, no skin results.",
+  "adaptation_notes": "Sensorial angle from the F17 perception study (felt less oily). Perception stat stays a perception stat; time window and 'subjects said' qualifier are in the footnote. Kept: split frame with two time labels (Dr. Sheth's), from-X-to-Y structure (Re'equil, reworded), two-state arrangement (The Derma Co). Dropped: 7-day dark circle claim, 25% off block, ingredient icons, 'greasy to balanced' wording.",
+  "blend_sources": [
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "from-state to to-state arrangement above the pack"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "split frame with a calm headline above"
+    },
+    {
+      "id": "1290012680862234",
+      "brand": "Dr. Sheth's",
+      "took": "timed labels on the split"
+    }
+  ],
+  "angle": "sensorial",
+  "hook_type": "stat",
+  "frames": [
+    {
+      "label": "Cleanse & tone"
+    },
+    {
+      "label": "2-3 drops"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-acid-2__t5",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "2% Salicylic Acid, a daily gentle exfoliant",
+  "subhead": "It penetrates the pore lining and scoops out dirt, debris and sebum.",
+  "proof_points": [
+    "RonaCare Salicylic Acid Extra Pure from Merck, Germany",
+    "Oligopeptide-10 works synergistically with Salicylic Acid",
+    "Recommended for combination/oily skin"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F4"
+    ],
+    "proof_points": [
+      [
+        "F8"
+      ],
+      [
+        "F5"
+      ],
+      [
+        "F9"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Minimal editorial layout: two-line headline top-left, subhead beneath, three tag-style proof lines down the left. Real pack shot stands in the right 45%, between two calm props. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a pale stone and off-white scene with two smooth rounded grey stones near the lower edge, soft diffused light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: editorial two-stone staging (Foxtale metaphor shot), tag-card proof lines (Dot & Key), highlight emphasis (Deconstruct). Dropped: 'zero grease', 'pearl glow', India's-1st claims, any result wording.",
+  "blend_sources": [
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "editorial metaphor staging, minimal headline"
+    },
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "tag-style proof lines"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "highlight bars behind key words"
+    }
+  ],
+  "angle": "ingredient_science",
+  "hook_type": "ingredient",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

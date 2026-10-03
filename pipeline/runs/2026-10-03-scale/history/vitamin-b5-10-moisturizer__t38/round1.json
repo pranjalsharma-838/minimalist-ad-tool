@@ -1,0 +1,124 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t38",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "A routine labelled by active and strength",
+  "subhead": "Vitamin B5 (Panthenol) at 10% for oil-free moisturization and repairing skin.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "vitamin-b5-10-moisturizer",
+      "label": "10% Vitamin B5 (Panthenol)",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "10% Niacinamide",
+      "cites": [
+        "niacinamide-10-with-matmarine:F3"
+      ]
+    },
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "2% Salicylic Acid + LHA",
+      "cites": [
+        "salicylic-lha-2-cleanser:F3"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "Broad Spectrum SPF 50",
+      "cites": [
+        "multi-vitamin-spf-50:F2"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F5",
+      "niacinamide-10-with-matmarine:F3",
+      "salicylic-lha-2-cleanser:F3",
+      "multi-vitamin-spf-50:F2"
+    ],
+    "subhead": [
+      "F5"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline and subhead across the top; four real pack shots in a row across the middle with the active and strength printed beneath each. A small sticker upper right carries '10%'. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a pale cool surface with small clear ice-like crystals and a few droplets only at the outer edges, bright soft light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and keep any props in the outer edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: routine kit staging (Dot & Key), plain catalogue card (The Derma Co), single sticker carrying a fact (Chemist at Play). Dropped: 25% off, 'kits for every goal' wording, offer lockup. Every label is an active and strength from the product's own page.",
+  "blend_sources": [
+    {
+      "id": "1606881954486073",
+      "brand": "Dot & Key",
+      "took": "colour-matched routine kit staging"
+    },
+    {
+      "id": "3159883944203364",
+      "brand": "The Derma Co",
+      "took": "plain white catalogue card with products in a row"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "single sticker carrying one fact"
+    }
+  ],
+  "angle": "ingredient_science",
+  "hook_type": "ingredient",
+  "product_handle": "vitamin-b5-10-moisturizer",
+  "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+  "source_brand": "Dot & Key",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-24",
+      "span": "repairing skin",
+      "message": "\"Repairing skin\" claims the product changes skin function/barrier; grey area even though the page uses it.",
+      "fix": "for oil-free moisturization",
+      "layer": "model"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin B5",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    }
+  ]
+}

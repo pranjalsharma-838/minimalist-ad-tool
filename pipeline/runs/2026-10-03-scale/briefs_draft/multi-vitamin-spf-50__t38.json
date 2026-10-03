@@ -1,0 +1,78 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "multi-vitamin-spf-50__t38",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Light textures from wash to sunscreen",
+  "subhead": "Each texture is described on its product page.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Light lather on a wet face",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "Lightweight, no sticky residue",
+      "cites": [
+        "niacinamide-10-with-matmarine:F8"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "Light texture, spreads easily",
+      "cites": [
+        "F3"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F13",
+      "niacinamide-10-with-matmarine:F8",
+      "F3"
+    ],
+    "subhead": [
+      "F3"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Plain catalogue-card feel: headline and subhead across the top, three real pack shots standing in a row across the middle with one short label under each. A single quiet band under the products carries the CTA. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a cool pale-blue and off-white surface with a few small clear ice-like crystals and water droplets only along the outer edges, soft cool light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and keep any props in the outer edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: cool, light-feel staging (Dot & Key), plain catalogue-card arrangement (The Derma Co), single band under products (Chemist at Play). Dropped: 25% off sticker, offer lockup, fruit props, 'coolest routine' wording. Companion labels come from their own page facts (F13 usage, F8).",
+  "blend_sources": [
+    {
+      "id": "1606881954486073",
+      "brand": "Dot & Key",
+      "took": "cool ice-and-water staging for a light-feel message"
+    },
+    {
+      "id": "3159883944203364",
+      "brand": "The Derma Co",
+      "took": "plain catalogue-card layout with products in a row"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "single band under the products"
+    }
+  ],
+  "angle": "sensorial",
+  "hook_type": "statement"
+}

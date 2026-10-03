@@ -1,0 +1,81 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "source_ad_id": "alpha-arbutin-2__t23",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "3.9 out of 5 stars from 1,800 reviews",
+  "subhead": "What does each active in this serum do? The page explains.",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "2%",
+      "name": "Alpha Arbutin",
+      "line": "Skin tone enhancing active, sourced from Alfa Aesar, USA",
+      "cites": [
+        "F5",
+        "F8"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Butylresorcinol",
+      "line": "An active used for the look of hyperpigmentation",
+      "cites": [
+        "F6",
+        "F10"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Ferulic acid",
+      "line": "A powerful antioxidant that can neutralize free radicals",
+      "cites": [
+        "F7"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Ratings from beminimalist.co (Yotpo), captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [
+      "F3"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Top-left: rating headline in large type with the question subhead beneath. Left column: three stacked ingredient rows, each with the strength or name in bold and a one-line job beneath. Real pack shot sits in the right 45%. Footnote bottom-left, CTA bottom-right.",
+  "image_prompt": "Empty background scene only: a pale stone surface with soft diagonal window light and a few smooth pebbles near the lower edge, in off-white and warm grey. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: ingredient-to-benefit rows (Pilgrim), question-style subhead (Foxtale), facts-strip footer feel (Re'equil). Dropped: timed-result headline and the spec-label percentages (Pilgrim 5-day, Re'equil metrics) because the page has no such stats; dropped the model with mask. Rating quoted verbatim.",
+  "blend_sources": [
+    {
+      "id": "1957996591744819",
+      "brand": "Foxtale",
+      "took": "question-led subhead 'what does X do?'"
+    },
+    {
+      "id": "1111018274708028",
+      "brand": "Pilgrim",
+      "took": "ingredient-to-benefit row arrangement"
+    },
+    {
+      "id": "1593356795737812",
+      "brand": "Re'equil",
+      "took": "facts-strip footer carrying the proof figure"
+    }
+  ],
+  "angle": "social_proof",
+  "hook_type": "social_proof"
+}

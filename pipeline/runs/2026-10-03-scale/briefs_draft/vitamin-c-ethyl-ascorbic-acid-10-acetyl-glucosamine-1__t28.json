@@ -1,0 +1,61 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "socialproof",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "Tap in 2-3 drops, spread evenly, let skin absorb",
+  "subhead": "Ethyl Ascorbic Acid formulated in Centella Water, for AM and PM use.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [
+      "F8",
+      "F9",
+      "F15"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Rating badge as a rounded oval at the upper right of the left column, showing value, label and source line. Headline top-left, subhead beneath. Real pack shot held in the right 45%. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a pale off-white surface with a soft overflow of smooth round off-white pebbles gathered in the lower corner and gentle even light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: rating-and-count badge (Conscious Chemist), oval badge shape (Foxtale, without the 'sold every 30 seconds' line), dated source line (Dot & Key). Dropped: sales velocity, 'our #1', quick-commerce footer, review card. Texture/feel comes from the usage steps in F14; marketer data (rating) is verbatim with source and date.",
+  "blend_sources": [
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating-and-count badge"
+    },
+    {
+      "id": "1418542033483616",
+      "brand": "Foxtale",
+      "took": "oval badge shape as the focal proof element"
+    },
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated source line"
+    }
+  ],
+  "angle": "sensorial",
+  "hook_type": "statement",
+  "proof": {
+    "value": "4.1 out of 5 stars",
+    "label": "from 2,013 reviews on beminimalist.co",
+    "source": "Yotpo reviews, beminimalist.co, captured 2026-10-02"
+  }
+}

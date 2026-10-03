@@ -1,0 +1,91 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "multi-vitamin-spf-50__t4",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "Heading out? SPF 50, applied 15 minutes before",
+  "subhead": "Broad Spectrum SPF 50, PA++++, in a light moisturiser-meets-sunscreen texture.",
+  "proof_points": [
+    "Reapply with continued sun exposure, swimming or perspiring",
+    "4 UV filters for UVA & UVB protection",
+    "Apply AM, every day"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [
+      "F2",
+      "F3"
+    ],
+    "proof_points": [
+      [
+        "F20"
+      ],
+      [
+        "F5"
+      ],
+      [
+        "F21"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Two-line headline top-left, subhead below, three proof points as small tag cards stacked down the left. Real pack shot in the right 45% standing among the background props. Footnote bottom-left.",
+  "image_prompt": "Empty background scene only: a pale blue surface with a few clear water droplets and two thin citrus slices placed near the lower edge, bright but soft daylight. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: pack among simple ingredient-cue props (Dr. Sheth's), tag-card proof points (Dot & Key), minimal two-line headline (Foxtale). SPF 50 is the claim; lab figures are left out. Dropped: 'zero grease', 'pearl glow' and brightening wording (not on page).",
+  "blend_sources": [
+    {
+      "id": "984872741086615",
+      "brand": "Dr. Sheth's",
+      "took": "pale blue prop scene with water droplets"
+    },
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "three tag cards for proof points"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "minimal two-line headline structure"
+    }
+  ],
+  "angle": "situation",
+  "hook_type": "situation",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Dr. Sheth's",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

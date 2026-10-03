@@ -1,0 +1,69 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-lha-2-cleanser__t1",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "2% Salicylic Acid + LHA in a daily face cleanser",
+  "subhead": "BHA + LHA give deep cleansing, pore decongestion and a less oily look without drying out the skin.",
+  "proof_points": [
+    "2 mild sulfate-free surfactants, no stripping of skin lipids",
+    "Zinc and Panthenol (Vitamin B5) for a hydrating after-feel",
+    "For oily/combination, acne-prone skin"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F3",
+      "F5"
+    ],
+    "proof_points": [
+      [
+        "F8"
+      ],
+      [
+        "F7"
+      ],
+      [
+        "F10"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Catalogue-card layout: headline and subhead top-left, three proof lines below, a single circular sticker at upper right carrying '2%'. Real pack shot centred in the right 45%. Footnote bottom-left.",
+  "image_prompt": "Empty background scene only: a pale off-white studio sweep with a very soft floor shadow and a single small smooth pebble near the lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: calm catalogue-card message in copy (Pilgrim), one sticker carrying the strength (Dot & Key), single upright hero composition (The Derma Co). Dropped: scattered duplicate packs, 35% off, 'dermat-approved', fruit prop.",
+  "blend_sources": [
+    {
+      "id": "3885583851576384",
+      "brand": "Pilgrim",
+      "took": "plain catalogue-card with message in copy"
+    },
+    {
+      "id": "2634392720313080",
+      "brand": "Dot & Key",
+      "took": "one sticker carrying one fact"
+    },
+    {
+      "id": "4305763079698667",
+      "brand": "The Derma Co",
+      "took": "single upright hero composition"
+    }
+  ],
+  "angle": "ingredient_science",
+  "hook_type": "ingredient"
+}

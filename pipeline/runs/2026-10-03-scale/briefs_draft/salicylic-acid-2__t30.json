@@ -1,0 +1,50 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "salicylic-acid-2__t30",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Night routine: cleanse, tone, then 2-3 drops",
+  "subhead": "Start every alternate day; after 2 weeks of usage, use it everyday.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "[Creator name or handle and written consent to be supplied by the marketer]. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F12",
+      "F13"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Designer layout (not built): phone-screenshot look. Top: a casual caption box in the creator's voice, left-aligned. Middle: a real creator video thumbnail slot with a [creator handle] bar. Real pack shot at lower right. Small rating line at the bottom. Marked AI-GENERATED - ILLUSTRATIVE if any synthetic person is used.",
+  "image_prompt": "Empty background scene only: a softly blurred bedside table scene in warm off-white tones with a lamp glow in the far corner, very low detail. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator's own screenshot or thumbnail (named, consenting, handle verified) showing the night routine steps, framed on the routine not on skin results.",
+  "adaptation_notes": "Kept: native video-thumbnail framing (Plum) and a casual confession-style caption box (Conscious Chemist). Dropped: unboxing 'X sent me' hook (no invented partner), makeup-industry claims, emoji. Routine is PM, alternate-day start, from F12/F13 only; no result implied.",
+  "blend_sources": [
+    {
+      "id": "1518480183631080",
+      "brand": "Plum",
+      "took": "native video thumbnail framing"
+    },
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "casual caption box in creator voice"
+    }
+  ],
+  "angle": "routine",
+  "hook_type": "statement"
+}

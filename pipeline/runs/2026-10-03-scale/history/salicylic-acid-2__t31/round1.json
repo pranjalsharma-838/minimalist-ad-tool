@@ -1,0 +1,88 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "salicylic-acid-2__t31",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "4 out of 5 stars from 1,969 reviews",
+  "subhead": "Recommended for combination/oily skin; salicylic acid dissolves dead skin cells and sebum from inner pore walls.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "[Creator name or handle and written consent to be supplied by the marketer]. Ratings from beminimalist.co (Yotpo), captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [
+      "F9",
+      "F14"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Designer layout (not built): selfie-style frame. A real creator talking-to-camera slot fills the left 55%, with a question-style caption pill on top. Real pack shot right. Rating as a text strip below. Marked AI-GENERATED - ILLUSTRATIVE if any synthetic person is used.",
+  "image_prompt": "Empty background scene only: a quiet off-white bathroom shelf corner in soft morning light with a pale grey tile edge, nothing on the shelf. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims.",
+  "adaptation_notes": "Kept: creator talking-head slot with finger-raise framing (Plum) and an insider-style caption box (Conscious Chemist). Dropped: makeup-industry confession, 'oily skin changed behaviour' question (implies a result), emoji. Rating verbatim; no review quoted because none supports the headline cleanly.",
+  "blend_sources": [
+    {
+      "id": "1415802417140754",
+      "brand": "Plum",
+      "took": "creator talking-head frame with a caption pill"
+    },
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "insider-style caption box"
+    }
+  ],
+  "angle": "social_proof",
+  "hook_type": "social_proof",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Conscious Chemist",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "ai_label_required": true,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "salicylic acid",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "UNLISTED",
+      "span": "[Creator name or handle and written consent to be supplied by the marketer]",
+      "message": "Unresolved marketer placeholder text sits in the ad copy and must be filled or removed before publishing.",
+      "fix": "Replace with the confirmed value (eligible products, end date, or consented attribution) or delete the line.",
+      "layer": "model"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t38",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "A simple routine: wash, vitamin C, sunscreen",
+  "subhead": "Vitamin C goes on after cleansing and toning; sunscreen follows on a cleansed face in the AM.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Wet face, light lather",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+      "label": "10% Vitamin C, AM & PM",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "SPF 50, AM",
+      "cites": [
+        "multi-vitamin-spf-50:F21"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F13",
+      "F14",
+      "multi-vitamin-spf-50:F21"
+    ],
+    "subhead": [
+      "F14",
+      "multi-vitamin-spf-50:F20"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline and subhead across the top; three real pack shots in a row across the middle with a short label under each. A slim CTA band under the products. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a pale off-white surface with soft cool tones and a few small ice-like crystals and water droplets only along the outer edges, bright gentle light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and keep any props in the outer edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: routine staging (Dot & Key), plain white catalogue card (The Derma Co), slim band under products (Chemist at Play). Dropped: 25% off, fruit cubes, 'coolest routine', offer sticker. Order and timing come only from each product's usage facts.",
+  "blend_sources": [
+    {
+      "id": "1606881954486073",
+      "brand": "Dot & Key",
+      "took": "routine staging on a cool scene"
+    },
+    {
+      "id": "3159883944203364",
+      "brand": "The Derma Co",
+      "took": "plain catalogue-card arrangement"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "single band under the products"
+    }
+  ],
+  "angle": "routine",
+  "hook_type": "statement",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    }
+  ]
+}

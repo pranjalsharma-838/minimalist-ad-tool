@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "repairing skin",
+      "severity": "fix",
+      "why": "\"Repairing skin\" claims the product changes skin function/barrier; grey area even though the page uses it.",
+      "fix": "for oil-free moisturization"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "\"10% Vitamin B5 (Panthenol)\" is stated on the same image; the active is named with its strength."
+    }
+  ],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

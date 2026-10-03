@@ -1,0 +1,54 @@
+{
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "source_ad_id": "niacinamide-10-with-matmarine__t12",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "A lightweight serum with no sticky residue",
+  "subhead": "10% Niacinamide with Matmarine, Zinc and Acetyl Glucosamine.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F8"
+    ],
+    "subhead": [
+      "F5"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline top-left, subhead beneath. Two clearly empty, labelled photo frames (Before, After) stacked on the left, kept blank until real study photos are supplied. Real pack shot centred on the right. Footnote bottom, with the study reference to be added when the study is on file.",
+  "image_prompt": "Empty background scene only: a smooth stone plinth in pale grey beside a folded off-white towel edge, soft diffused spa-like light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, unretouched before and after photos from a documented study on this exact product, with the study details, duration and consent on file. No timed result is stated until then.",
+  "adaptation_notes": "Concern: sticky/greasy feel; answered only by F8 'no sticky residue'. Kept: stacked labelled before/after frames (Chemist at Play), clinical footnote slot, stone-plinth scene (Pilgrim). Dropped: 'fades marks in 7/15 days', 'dermat recommended', price drop, ingredient molecule callouts. No result is described; the page's 'in 2 weeks' line (F6) is left out because the study is not supplied.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "stacked labelled Before/After frames and footnote slot"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "pack centred between the frames"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "stone plinth with spa props scene"
+    }
+  ],
+  "angle": "concern_solved",
+  "hook_type": "statement"
+}

@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "reducing sebum & pores",
+      "severity": "fix",
+      "why": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Niacinamide Face Serum, formulated for oily skin and an even-looking tone"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

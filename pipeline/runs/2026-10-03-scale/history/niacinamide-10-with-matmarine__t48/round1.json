@@ -1,0 +1,94 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "niacinamide-10-with-matmarine__t48",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "4 out of 5 stars from 1,491 reviews",
+  "subhead": "10% Niacinamide Face Serum, for reducing sebum & pores, and even skin tone.",
+  "proof_points": [
+    "Apply 2-3 drops after cleansing & toning",
+    "Suitable for 16+ years of age"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Ratings from beminimalist.co (Yotpo), captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [
+      "F2"
+    ],
+    "proof_points": [
+      [
+        "F13"
+      ],
+      [
+        "F11"
+      ]
+    ],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Rating shown as a round sticker badge at top-left over the headline text. A small seasonal-kicker placeholder tag [season or occasion, marketer to supply] sits above the headline. Real pack shot right 45%. Diagonal CTA strip lower-left. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a soft off-white tabletop with a thin satin ribbon curve in pale sage lying along the lower edge and soft warm daylight. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "No seasonal fact exists on the page, so the seasonal slot is a placeholder only. Kept: seasonal kicker slot (Deconstruct), sticker lockup used for the rating (Chemist at Play), diagonal CTA strip (Conscious Chemist). Dropped: gift hamper, struck MRP roundel, free pouch, countdown. Rating quoted verbatim.",
+  "blend_sources": [
+    {
+      "id": "1043812398239559",
+      "brand": "Deconstruct",
+      "took": "seasonal kicker slot above the headline (placeholder)"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "sticker lockup shape, used for the rating"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "diagonal CTA strip"
+    }
+  ],
+  "angle": "social_proof",
+  "hook_type": "social_proof",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Deconstruct",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-24",
+      "span": "reducing sebum & pores",
+      "message": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Niacinamide Face Serum, formulated for oily skin and an even-looking tone",
+      "layer": "model"
+    }
+  ]
+}

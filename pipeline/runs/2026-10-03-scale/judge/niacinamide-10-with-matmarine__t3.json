@@ -1,0 +1,43 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "reduces the sebum level",
+      "severity": "fix",
+      "why": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Pure Vitamin B3 for a less oily look"
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "helps regulate oiliness",
+      "severity": "fix",
+      "why": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "helps reduce the look of oiliness"
+    },
+    {
+      "rule_id": "CLM-24",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Balances sebum activity",
+      "severity": "fix",
+      "why": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Lightweight serum with Zinc"
+    },
+    {
+      "rule_id": "LNG-04",
+      "dimension": "language",
+      "field": "on_image_text",
+      "span": "evens skin tone",
+      "severity": "advisory",
+      "why": "Outcome verb with no hedge such as \"helps\" or \"even-looking\".",
+      "fix": "helps skin look more even-toned"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

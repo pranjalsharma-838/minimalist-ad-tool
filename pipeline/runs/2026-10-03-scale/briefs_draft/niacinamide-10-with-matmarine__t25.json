@@ -1,0 +1,61 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "niacinamide-10-with-matmarine__t25",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "10% Niacinamide: what pure Vitamin B3 does",
+  "subhead": "Paired with Matmarine, which supports hydration.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "10%",
+    "label": "Niacinamide, pure Vitamin B3, formulated for oily skin",
+    "cites": [
+      "F3",
+      "F10"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F7"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Oversized '10%' number at left-centre with its one-line label directly beneath. Headline above, subhead below the label. Real pack shot in the right 45%. Rating footnote bottom-left with date.",
+  "image_prompt": "Empty background scene only: a softly lit off-white wall with a faint diagonal shadow and a pale grey-blue floor line, very quiet and low contrast. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "The page has no percentage consumer-study stat for this serum (F15 is patch testing only), so the stat is the labelled strength, 10%, with the plain function line from F3. Kept: bold single-number device with callout line (Re'equil), dated attribution and rating line (Dot & Key, Conscious Chemist). Dropped: result percentages, 'without purging', user counts.",
+  "blend_sources": [
+    {
+      "id": "1039318678808682",
+      "brand": "Re'equil",
+      "took": "big number plus one callout line"
+    },
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated attribution in the footer"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line as proof strip"
+    }
+  ],
+  "angle": "ingredient_science",
+  "hook_type": "ingredient"
+}

@@ -1,0 +1,90 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "alpha-arbutin-2__t36",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "Two to three drops, morning and night",
+  "subhead": "30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "[confirm eligible products and any code] Source: beminimalist.co homepage banner, captured 2026-10-02; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free",
+    "valid_till": "[end date: none shown on the page, marketer to confirm]"
+  },
+  "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. Third item free on buying 2. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F19",
+      "F20"
+    ],
+    "subhead": [
+      "PRICE1"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "OFFER3",
+      "RATING"
+    ]
+  },
+  "layout_description": "Sticker-style offer lockup in the upper right quarter carrying the offer line, with the condition in small type beneath it. Left: headline, then price line with MRP shown struck through next to the page price. Real pack shot on the right. CTA strip across the bottom, footnote beneath.",
+  "image_prompt": "Empty background scene only: a smooth off-white surface with two soft pastel colour blocks in muted sage and cream, gentle natural light from the left. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern used: a complicated routine. The listed 'answered by' facts (F19 usage, F29 ingredient list, F5) do not directly address irritation, dryness or texture, so the concern is the simple-routine one and is answered only by the usage facts F19/F20. Kept: offer-as-the-message lockup (Chemist at Play), struck MRP beside page price (Conscious Chemist), condition bar (Foxtale). Dropped: promo code, countdown and 'ends in hours' (invented/urgency), three-SKU stack. Offer quoted exactly from the homepage banner; end date and eligibility are placeholders.",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "sticker lockup where the offer is the whole message"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "MRP vs page price pair"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "bold headline over a code/condition bar (condition only, no code)"
+    }
+  ],
+  "angle": "concern_solved",
+  "hook_type": "statement",
+  "product_handle": "alpha-arbutin-2",
+  "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "UNLISTED",
+      "span": "[confirm eligible products and any code]",
+      "message": "Unresolved marketer placeholder text sits in the ad copy and must be filled or removed before publishing.",
+      "fix": "Replace with the confirmed value (eligible products, end date, or consented attribution) or delete the line.",
+      "layer": "model"
+    }
+  ]
+}

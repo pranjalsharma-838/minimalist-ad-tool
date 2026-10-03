@@ -1,0 +1,61 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "multi-vitamin-spf-50__t36",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "SPF 50 is the last step of your morning routine",
+  "subhead": "50g: Rs. 359 (MRP Rs. 399), beminimalist.co, captured 2026-10-02",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Build Your Own Bundle — Save an additional up to 15% off",
+    "condition": "Source: beminimalist.co homepage banner, captured 2026-10-02; terms: https://beminimalist.co/apps/gbb/easybundle/1",
+    "valid_till": "No end date shown on the page"
+  },
+  "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20",
+      "F21"
+    ],
+    "subhead": [
+      "PRICE1"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "OFFER1",
+      "RATING"
+    ]
+  },
+  "layout_description": "Seasonal-kicker slot top-left as a small placeholder tag. Bold headline beneath, price line with MRP struck through, offer in a rounded sticker top-right with condition in small type. Real pack shot right. Diagonal CTA strip across the lower third.",
+  "image_prompt": "Empty background scene only: a soft off-white backdrop with a faint cool condensation texture and pale blue-grey tones, gentle even light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: seasonal-kicker slot (Foxtale, left as placeholder), struck MRP beside page price (Conscious Chemist), offer sticker (Chemist at Play). Dropped: promo code, countdown, 'ends in 4 hours', three-SKU stack. Routine placement from F20/F21. Offer quoted exactly; eligibility and end date are placeholders.",
+  "blend_sources": [
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "seasonal kicker slot over a bold headline"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "struck MRP vs page price pair and diagonal CTA strip"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "offer sticker as the focal element"
+    }
+  ],
+  "angle": "routine",
+  "hook_type": "statement"
+}

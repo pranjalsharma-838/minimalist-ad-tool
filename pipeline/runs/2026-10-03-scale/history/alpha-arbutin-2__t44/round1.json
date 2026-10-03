@@ -1,0 +1,88 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "socialproof",
+  "source_ad_id": "alpha-arbutin-2__t44",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "Evening routine: 2-3 drops after cleansing & toning",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "[Named expert or customer, role and written consent to be supplied by the marketer]. Use sunscreen during the day for best results.",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F19",
+      "F20"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F19"
+    ]
+  },
+  "layout_description": "Designer layout (format not built): left half is a real portrait slot of a consenting expert or customer at a desk or window, framed as a talking-head thumbnail with a name bar beneath it using [placeholders]. Right 45%: real pack shot. Headline top-left, rating badge (value, label, source) as a rounded chip overlapping the portrait corner. Footnote bottom. Marked AI-GENERATED - ILLUSTRATIVE if any synthetic person is used.",
+  "image_prompt": "Empty background scene only: a calm indoor corner with an off-white wall, a simple wooden desk edge and soft window light, nothing on the desk. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real, consenting expert or customer portrait (named, role verified, written consent on file) in a plain desk or window setting. No AI-generated endorser, no skin close-ups, no result imagery.",
+  "adaptation_notes": "Kept: talking-head portrait slot (Plum), rating-and-count badge (Conscious Chemist), verified-attribution line (Dot & Key). Dropped: any named doctor or lab coat, any quote or endorsement text, review card (no consenting expert supplied), 'selling out' line. Situation: evening routine from F19/F20 only; no result implied.",
+  "blend_sources": [
+    {
+      "id": "1115173371246578",
+      "brand": "Plum",
+      "took": "expert talking-head portrait framing (placeholder only)"
+    },
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "verified attribution line under the portrait"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating badge with review count"
+    }
+  ],
+  "angle": "situation",
+  "hook_type": "situation",
+  "proof": {
+    "value": "3.9 out of 5 stars",
+    "label": "from 1,800 reviews on beminimalist.co",
+    "source": "Yotpo reviews, beminimalist.co, captured 2026-10-02"
+  },
+  "product_handle": "alpha-arbutin-2",
+  "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+  "source_brand": "Plum",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "ai_label_required": true,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "UNLISTED",
+      "span": "[Named expert or customer, role and written consent to be supplied by the marketer]",
+      "message": "Unresolved marketer placeholder text sits in the ad copy and must be filled or removed before publishing.",
+      "fix": "Replace with the confirmed value (eligible products, end date, or consented attribution) or delete the line.",
+      "layer": "model"
+    }
+  ]
+}

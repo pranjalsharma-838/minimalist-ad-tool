@@ -1,0 +1,134 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "source_ad_id": "niacinamide-10-with-matmarine__t3",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "Morning or night: 2-3 drops after cleansing & toning",
+  "subhead": "Let the serum absorb fully before the next step of your routine.",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "10%",
+      "name": "Niacinamide",
+      "line": "Pure Vitamin B3: reduces the sebum level and evens skin tone",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Matmarine",
+      "line": "Marine extract that helps regulate oiliness and supports hydration",
+      "cites": [
+        "F7"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Zinc",
+      "line": "Balances sebum activity in a lightweight serum, no sticky residue",
+      "cites": [
+        "F8"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "See ingredients",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline top-left, subhead beneath. Three ingredient tag cards stacked down the left, each with strength or name in bold and one line. Real pack shot rests in the right 45%. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a pale off-white surface with soft morning window light casting a gentle diagonal shadow, two small smooth pebbles near the lower edge. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: ingredient-to-benefit tag cards (Dot & Key), calm editorial scene (Foxtale), highlight-bar headline emphasis (Deconstruct). Dropped: 'ONE serum for bright skin', NEW bubble, emoji, 'zero grease', India's-1st style claims.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "ingredient-to-benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "calm editorial scene"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "highlight-bar emphasis on the headline"
+    }
+  ],
+  "angle": "situation",
+  "hook_type": "situation",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Dot & Key",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-24",
+      "span": "reduces the sebum level",
+      "message": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Pure Vitamin B3 for a less oily look",
+      "layer": "model"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-24",
+      "span": "helps regulate oiliness",
+      "message": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "helps reduce the look of oiliness",
+      "layer": "model"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-24",
+      "span": "Balances sebum activity",
+      "message": "Describes changing a body process (sebum/oil production) rather than the look or feel of skin; a structure/function grey area for legal.",
+      "fix": "Lightweight serum with Zinc",
+      "layer": "model"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-04",
+      "span": "evens skin tone",
+      "message": "Outcome verb with no hedge such as \"helps\" or \"even-looking\".",
+      "fix": "helps skin look more even-toned",
+      "layer": "model"
+    }
+  ]
+}

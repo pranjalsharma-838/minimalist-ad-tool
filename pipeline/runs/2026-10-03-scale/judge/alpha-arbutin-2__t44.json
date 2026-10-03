@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "footnote",
+      "span": "[Named expert or customer, role and written consent to be supplied by the marketer]",
+      "severity": "advisory",
+      "why": "Unresolved marketer placeholder text sits in the ad copy and must be filled or removed before publishing.",
+      "fix": "Replace with the confirmed value (eligible products, end date, or consented attribution) or delete the line."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

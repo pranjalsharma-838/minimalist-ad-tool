@@ -1,0 +1,17 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "Generic mention in headline; the strength \"10% Vitamin C\" and product name carry the concentration."
+    },
+    {
+      "index": 1,
+      "assessment": "likely_false_positive",
+      "why": "Concentration is stated (\"10% Vitamin C, AM & PM\") on the image."
+    }
+  ],
+  "tone_read": "Calm, declarative and education-led, in line with Minimalist voice; no fear, hype or urgency pressure.",
+  "language_read": "Actives and strengths are named as on the product page and the rating carries its source and capture date."
+}

@@ -1,0 +1,77 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "salicylic-lha-2-cleanser__t38",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Hydrating after-feel, from cleanse to sunscreen",
+  "subhead": "Zinc, Panthenol (Vitamin B5), Allantoin and more in the cleanser for a hydrating after-feel.",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Hydrating after-feel",
+      "cites": [
+        "F7"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "Lightweight, no sticky residue",
+      "cites": [
+        "niacinamide-10-with-matmarine:F8"
+      ]
+    },
+    {
+      "product_handle": "multi-vitamin-spf-50",
+      "label": "Moisturised, non-shiny look",
+      "cites": [
+        "multi-vitamin-spf-50:F3"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Learn more",
+  "citations": {
+    "headline": [
+      "F7",
+      "multi-vitamin-spf-50:F3"
+    ],
+    "subhead": [
+      "F7"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ]
+  },
+  "layout_description": "Headline and subhead across the top; three real pack shots in a row across the middle, each with one short label beneath. A thin band under the products carries the CTA. Footnote bottom.",
+  "image_prompt": "Empty background scene only: a cool white and pale blue surface with a few small ice-like crystals and water droplets only along the outer edges, soft cool light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the middle 80% of the frame as an empty clear space, evenly lit and keep any props in the outer edges. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Concern: dryness; answered only by F7 (hydrating and soothing ingredients). Customer words not quoted. Kept: cool staging (Dot & Key), plain card layout (The Derma Co), band under products (Chemist at Play). Dropped: 25% off, 'coolest routine', offer sticker. Labels come from each product's own facts.",
+  "blend_sources": [
+    {
+      "id": "1606881954486073",
+      "brand": "Dot & Key",
+      "took": "cool ice-and-water staging"
+    },
+    {
+      "id": "3159883944203364",
+      "brand": "The Derma Co",
+      "took": "plain catalogue-card arrangement of products in a row"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "band under the products"
+    }
+  ],
+  "angle": "concern_solved",
+  "hook_type": "statement"
+}
