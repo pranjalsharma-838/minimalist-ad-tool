@@ -1,0 +1,82 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "multi-vitamin-spf-50__t36",
+  "product_title": "SPF 50 Sunscreen",
+  "main_theme": "",
+  "headline": "Broad spectrum SPF 50, PA++++ for every day",
+  "subhead": "Light texture that spreads easily, with no white cast.",
+  "proof_points": [
+    "50g: Rs. 359, MRP Rs. 399"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "The 3rd product is free when you buy 2. T&C apply.",
+    "valid_till": "",
+    "cites": [
+      "OFFER3"
+    ]
+  },
+  "footnote": "Offers as on beminimalist.co, 2026-10-02. T&C apply. 3rd product free on buying 2. Price shown for 50g.",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F2",
+      "F21"
+    ],
+    "subhead": [
+      "F3",
+      "F8"
+    ],
+    "proof_points": [
+      [
+        "PRICE1"
+      ]
+    ],
+    "footnote": [
+      "OFFER3",
+      "PRICE1"
+    ]
+  },
+  "layout_description": "Square 1080x1080. Offer line 'Buy 2, Get 3rd Free' as the large block top-left, with its condition directly beneath in readable size. Product headline and subhead below on the left. Price line: sale price Rs. 359 in bold with 'MRP Rs. 399' beside it struck through, size (50g) in small type. Real pack shot on the right 45%, standing on top of a low block. CTA bottom-left; footnote along the bottom edge. No end date or countdown (none shown on site).",
+  "image_prompt": "Square 1080x1080 background plate only. A minimal studio set of three low, smooth geometric blocks in off-white and pale warm grey, arranged on the right side at different heights, with a seamless off-white backdrop. Soft natural light from the left, gentle soft shadows, clinical and uncluttered, a quiet echo of a colourful promo set but in a restrained neutral palette. Keep the right 45% of the frame as clear, evenly lit empty space on top of the blocks, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: the competitor's offer-led structure (big offer line, product on display blocks, Shop now CTA). Offer quoted exactly from the live sitewide banner OFFER3 (beminimalist.co, captured 2026-10-02); price is the main size from PRICE1, sale price with MRP struck through. Dropped: the competitor's bundle price and discount code, all urgency ('limited time', 'hurry'; no end date shown on site), emoji, the youthful-skin promise. Other live offers (OFFER1/2/4) not used, to keep one clear offer; OFFER2 'Freebies' has no stated condition on the capture.",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Chemist at Play",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-03",
+      "span": "no white cast",
+      "message": "An unqualified 'no white cast' reads as an absolute for everyone. The page scopes it to application.",
+      "fix": "Light texture that spreads easily, with no visible white cast on application.",
+      "layer": "model"
+    }
+  ]
+}

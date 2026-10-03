@@ -6,9 +6,9 @@ The ad, field by field:
 Inside: Niacinamide, Matmarine and Zinc
 </headline>
 <on_image_text>
-10% Niacinamide Vitamin B3 that reduces sebum, improves the barrier and evens skin tone
+10% Niacinamide Vitamin B3 for reducing sebum & pores, and even skin tone
 Matmarine Biotechnological ingredient to reduce excess sebum, shine, pores and spots
-Zinc Regulates sebum production; suited to oily, acne-prone skin
+Zinc Paired with Niacinamide; suited to oily, acne-prone skin
 Niacinamide 10% Face Serum
 </on_image_text>
 <footnote>

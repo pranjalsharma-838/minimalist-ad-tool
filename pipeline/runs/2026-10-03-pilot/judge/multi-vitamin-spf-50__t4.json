@@ -1,0 +1,14 @@
+{
+    "findings":  [
+
+                 ],
+    "language_read":  "Filters and vitamins match page facts F5, F6, F22-F24, and the labelled SPF is kept separate from the lab value. No hedging problems.",
+    "tone_read":  "Education-first and mechanism-led, naming each filter and its job in a calm voice. It sounds like Minimalist.",
+    "rule_hit_review":  [
+                            {
+                                "assessment":  "likely_false_positive",
+                                "why":  "The ad labels the product SPF 50 and reports 56.6 only as the independent in-vivo lab result, which matches page fact F16. It is a disclosed test result, not a different SPF claim.",
+                                "index":  0
+                            }
+                        ]
+}

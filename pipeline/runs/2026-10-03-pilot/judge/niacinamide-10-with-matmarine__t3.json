@@ -1,0 +1,40 @@
+{
+    "findings":  [
+                     {
+                         "rule_id":  "CLM-24",
+                         "fix":  "Zinc Balances sebum activity; suited to oily, acne-prone skin",
+                         "why":  "This is a body-process claim. It is also stronger than the page, which says Zinc \u0027balances sebum activity\u0027.",
+                         "dimension":  "policy",
+                         "span":  "Zinc Regulates sebum production",
+                         "severity":  "fix",
+                         "field":  "on_image_text"
+                     },
+                     {
+                         "rule_id":  "CLM-24",
+                         "fix":  "Vitamin B3 for sebum, pores and even tone",
+                         "why":  "\u0027Improves the barrier\u0027 claims a change in skin function and is stated as fact for the ingredient. Legal should confirm it is acceptable.",
+                         "dimension":  "policy",
+                         "span":  "improves the barrier",
+                         "severity":  "fix",
+                         "field":  "on_image_text"
+                     },
+                     {
+                         "rule_id":  "LNG-04",
+                         "fix":  "helps reduce excess sebum, shine and the appearance of pores and spots",
+                         "why":  "Outcome verbs with no \u0027helps\u0027 or \u0027appearance\u0027 scoping.",
+                         "dimension":  "language",
+                         "span":  "reduce excess sebum, shine, pores and spots",
+                         "severity":  "advisory",
+                         "field":  "on_image_text"
+                     }
+                 ],
+    "language_read":  "Actives and 10% are named correctly. The outcome verbs are unhedged compared with the brand\u0027s \u0027helps\u0027 and \u0027appearance of\u0027 wording.",
+    "tone_read":  "Educational and ingredient-led, calm, with no fear or hype. It sounds like Minimalist.",
+    "rule_hit_review":  [
+                            {
+                                "assessment":  "likely_false_positive",
+                                "why":  "The headline is an ingredient list. The 10% strength is on the product name and the first on-image line.",
+                                "index":  0
+                            }
+                        ]
+}

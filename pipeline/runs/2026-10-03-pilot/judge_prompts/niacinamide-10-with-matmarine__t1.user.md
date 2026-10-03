@@ -9,7 +9,7 @@ Niacinamide 10% for sebum, pores and even tone
 10% Niacinamide
 With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no sticky residue.
 Matmarine helps regulate oiliness and the appearance of pores
-Zinc balances sebum activity
+Zinc, suited to oily, acne-prone skin
 For daily use, AM & PM
 Niacinamide 10% Face Serum
 </on_image_text>

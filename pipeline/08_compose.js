@@ -15,7 +15,8 @@ const briefs = JSON.parse(fs.readFileSync(path.join(runDir, "briefs_final.json")
 const sheets = Object.fromEntries(fs.readdirSync(path.join(runDir, "products")).map((f) => [f.replace(/\.json$/, ""), JSON.parse(fs.readFileSync(path.join(runDir, "products", f), "utf8"))]));
 fs.mkdirSync(path.join(runDir, "finals"), { recursive: true });
 
-const dataUrl = (buf, type) => `data:${type};base64,${buf.toString("base64")}`;
+const ASSETS = JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/index.json", "utf8")).assets;
+const dataUrl =(buf, type) => `data:${type};base64,${buf.toString("base64")}`;
 const cache = new Map();
 async function packShot(src) {
   if (!src) return "";
@@ -35,8 +36,19 @@ for (const b of briefs.filter((b) => b.status === "approved_for_image_step")) {
   }
   const main = b.product_handle;
   const spec = specFromBrief(b, sheets, main);
-  spec.imageHref = await packShot(spec.imageSrc);
-  for (const s of [...spec.steps, ...spec.range]) s.imageHref = await packShot(s.imageSrc);
+  // Prefer a clean transparent cut-out from the asset library (real product, background removed) so the pack
+  // can stand in the scene with a shadow; otherwise the page's studio pack shot in a white frame.
+  spec.cutoutHrefs = [];
+  const cut = (handle) => {
+    const a = ASSETS.find((x) => x.product_handle === handle && x.cutout && !/unusable/i.test(`${x.cutout_status || ""} ${x.notes || ""}`) && fs.existsSync(x.cutout));
+    if (!a) return "";
+    const href = dataUrl(fs.readFileSync(a.cutout), "image/png");
+    spec.cutoutHrefs.push(href);
+    if (/key from (upper-)?right/i.test(a.light || "")) spec.shadowDx = -12;
+    return href;
+  };
+  spec.imageHref = cut(main) || (await packShot(spec.imageSrc));
+  for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
   const ext = path.extname(bg).slice(1).replace("jpg", "jpeg");
   spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${ext}`);
   fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), renderAdSvg(spec));

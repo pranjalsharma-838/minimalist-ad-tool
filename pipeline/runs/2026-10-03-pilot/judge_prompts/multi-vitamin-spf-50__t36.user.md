@@ -6,7 +6,7 @@ The ad, field by field:
 Broad spectrum SPF 50, PA++++ for every day
 </headline>
 <on_image_text>
-Light texture that spreads easily, with no white cast.
+Light texture that spreads easily, with a natural, non-shiny look.
 50g: Rs. 359, MRP Rs. 399
 Buy 2, Get 3rd Free
 The 3rd product is free when you buy 2. T&C apply.

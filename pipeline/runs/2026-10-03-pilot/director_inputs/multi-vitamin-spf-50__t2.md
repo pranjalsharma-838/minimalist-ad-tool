@@ -1,0 +1,16 @@
+# Director input — multi-vitamin-spf-50__t2
+target_model: chatgpt_image · placement: 1:1, 1080x1080 · variants: 1 (axis: surface)
+risk_level (format): low
+
+## layout_zones (badges)
+{"footnote_band":[0,0.76,1,1],"wordmark":[0.06,0.05,0.25,0.1],"copy":[0.04,0.1,0.96,0.24],"product":[0.3,0.26,0.7,0.74],"badges_ring":[0.06,0.26,0.94,0.74]}
+
+## product_footprint
+SPF 50 Sunscreen: Studio photo, 50g tube standing on light grey seamless. On-pack: 'broad spectrum, PA++++', 'for all skin types'. Cut-out unusable (white tube eaten); use photo with its own background.; light: soft key from upper-left, shadow falls lower-right
+
+## brand_visual
+{"brand":"Minimalist","colors":{"primary_white":"#FFFFFF","off_white":"#F4F2EE","black":"#111111","studio_grey":"#E5E9EA","accent_note":"Pack labels carry a single thin colour line per product (e.g. green on Niacinamide, pink on Salicylic). Backgrounds stay white/off-white/black/studio grey; the accent may echo the product's own line colour at low saturation."},"aesthetic_anchors":["clinical editorial","spec sheet","laboratory still life","bathroom shelf"],"pack_shot_light":"Website pack shots: soft key light from upper left, shadow falling to the lower right on a light studio grey (#E5E9EA) sweep. Match this in generated scenes.","banned_words":["luxury","glow","glowing","radiant","vibrant","dreamy","soft feminine","flawless","magic","miracle","natural beauty"],"banned_imagery":["the product or any packaging","any text, numbers, logos","doctors, lab coats, clinic settings","badges, seals, certificates, award ribbons","fruit or food used as an ingredient claim the product doesn't contain"],"source":"Observed: beminimalist.co pack shots and site palette (2026-10-03). To be refined with the Instagram house-style capture (brand_packs/minimalist/raw/instagram.md) when it lands."}
+
+## brief
+layout badges; headline: SPF 50, PA++++ with a light, moisturiser feel; layout_description: Square 1080x1080. Headline top-left across the left half. Four badges stacked in a single column down the left half below the headline, each a small rounded pill with a thin line icon. Real pack shot (library 01.jpg) on the right 45%, standing on the surface, softly shadowed. Footnote in small type along the bottom edge; CTA button bottom-left above the footnote.
+visual direction (writer's draft prompt, to be recompiled): Square 1080x1080 background plate only. A calm off-white studio surface meeting a soft matte plaster wall, lit by soft natural daylight from the upper left, with one faint diagonal leaf shadow and a gentle warm patch of sunlight that hints at a bright summer day. Palette of off-white, pale sand and a whisper of soft sky blue, very few props. Keep the right 45% of the frame as clear, evenly lit empty space on the surface, reserved for a photo composited later. Keep the left 50% calm and low-detail as empty space for copy added later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.

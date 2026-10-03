@@ -1,0 +1,22 @@
+{
+    "findings":  [
+                     {
+                         "rule_id":  "CLM-03",
+                         "fix":  "No visible white cast on application",
+                         "why":  "A flat \u0027no white cast\u0027 reads as an absolute for every skin tone. The page scopes it to application.",
+                         "dimension":  "policy",
+                         "span":  "No white cast",
+                         "severity":  "fix",
+                         "field":  "on_image_text"
+                     }
+                 ],
+    "language_read":  "SPF, PA rating and the lab result are stated precisely and match the page, with the labelled value kept distinct from the test value. The only loose wording is the unscoped \u0027No white cast\u0027.",
+    "tone_read":  "Calm, declarative and spec-led, with no fear, hype or emoji. It sounds like Minimalist.",
+    "rule_hit_review":  [
+                            {
+                                "assessment":  "likely_false_positive",
+                                "why":  "The ad labels the product SPF 50 and reports 56.6 only as the independent in-vivo lab result, which matches page fact F16. It is a disclosed test result, not a different SPF claim.",
+                                "index":  0
+                            }
+                        ]
+}

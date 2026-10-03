@@ -1,0 +1,18 @@
+{
+    "findings":  [
+                     {
+                         "rule_id":  "CLM-03",
+                         "fix":  "Light texture that spreads easily, with no visible white cast on application.",
+                         "why":  "An unqualified \u0027no white cast\u0027 reads as an absolute for everyone. The page scopes it to application.",
+                         "dimension":  "policy",
+                         "span":  "no white cast",
+                         "severity":  "fix",
+                         "field":  "on_image_text"
+                     }
+                 ],
+    "language_read":  "SPF and PA claims match the page, and price and MRP are shown with the pack size. \u0027No white cast\u0027 is the one unscoped phrase.",
+    "tone_read":  "Plain, factual offer ad with no urgency, fear or hype. The free-offer condition and T\u0026C are stated in the creative.",
+    "rule_hit_review":  [
+
+                        ]
+}

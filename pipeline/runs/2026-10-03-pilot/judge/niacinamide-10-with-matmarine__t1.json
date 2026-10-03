@@ -1,0 +1,18 @@
+{
+    "findings":  [
+                     {
+                         "rule_id":  "CLM-24",
+                         "fix":  "Zinc, used with Niacinamide, for oily, acne-prone skin",
+                         "why":  "A body-process claim (sebum activity) sits in the structure/function grey area. The \u0027helps regulate oiliness\u0027 wording on Matmarine is milder but the same concern. Legal should confirm.",
+                         "dimension":  "policy",
+                         "span":  "Zinc balances sebum activity",
+                         "severity":  "fix",
+                         "field":  "on_image_text"
+                     }
+                 ],
+    "language_read":  "10% is stated in the standard format and the actives are named precisely. Sebum wording follows the page but is unhedged for Zinc.",
+    "tone_read":  "Ingredient-and-concentration-led, calm, with no fear or hype. It sounds like Minimalist.",
+    "rule_hit_review":  [
+
+                        ]
+}

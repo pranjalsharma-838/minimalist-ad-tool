@@ -109,12 +109,8 @@ function layout(spec, s) {
     // Tried mix-blend-mode:multiply (2026-10-02): it greyed the white tube — that changes how the real
     // product looks, so it was reverted. Until a cut-out (transparent) pack shot is supplied, the photo
     // sits in a deliberate white frame so it reads as a product card, not a paste error.
-    if (spec.backgroundHref) {
-      parts.push(`<rect x="578" y="98" width="454" height="684" rx="10" fill="#FFFFFF"/>`);
-    }
-    parts.push(
-      `<image href="${esc(spec.imageHref)}" x="590" y="110" width="430" height="660" preserveAspectRatio="xMidYMid meet"/>`
-    );
+    // 2026-10-03: with a clean cut-out the bottle stands in the scene with a shadow (see pack()).
+    parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
   }
 
   // Wordmark (text, not the logo file).
@@ -190,7 +186,7 @@ function layout(spec, s) {
     parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
   }
 
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(spec)}${parts.join("")}</svg>`;
   return { svg, bottom };
 }
 
@@ -226,15 +222,26 @@ function chromeEnd(spec, parts, bottom) {
   // Visible AI label whenever generated people/skin/results are in the creative (user decision 2026-10-03).
   if (spec.aiLabel) parts.push(`<rect x="${w - 372}" y="16" width="352" height="40" rx="6" fill="#B42318"/><text x="${w - 196}" y="43" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#FFFFFF">AI-GENERATED — ILLUSTRATIVE</text>`);
   if (spec.testMark) parts.push(`<text x="${w - 24}" y="${h - 14}" text-anchor="end" font-family="${FONT}" font-size="16" fill="#B42318" fill-opacity="0.85">${esc(spec.testMark)}</text>`);
-  return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${parts.join("")}</svg>`, bottom };
+  return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${defs(spec)}${parts.join("")}</svg>`, bottom };
 }
 
-// A real pack shot, aspect kept, framed when it sits on a generated background.
+// A real pack shot, aspect kept. On a generated background:
+//  - clean transparent cut-out (spec.cutoutHrefs, from the asset library) → no frame; a soft shadow that follows
+//    the bottle's silhouette, falling away from the light (spec.shadowDx: + = light from the left), plus a contact
+//    shadow ellipse at the base, so it stands IN the scene. Pixels of the product itself are untouched.
+//  - studio photo with its own backdrop → deliberate white frame (multiply blend greyed white packs; reverted).
+// Contact-shadow base: the photo is "meet"-fitted, so the visible bottom is approximated by the box bottom.
 function pack(spec, href, x, y, w, h) {
   if (!href) return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="none" stroke="${C.rule}" stroke-dasharray="6 6"/>`;
+  const img = `<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"`;
+  if (spec.backgroundHref && (spec.cutoutHrefs || []).includes(href)) {
+    const dx = spec.shadowDx ?? 12;
+    return `<ellipse cx="${x + w / 2 + dx}" cy="${y + h - 4}" rx="${w * 0.32}" ry="${Math.max(8, h * 0.025)}" fill="#000" fill-opacity="0.28" filter="url(#contactBlur)"/>${img} filter="url(#packShadow)"/>`;
+  }
   const frame = spec.backgroundHref ? `<rect x="${x - 10}" y="${y - 10}" width="${w + 20}" height="${h + 20}" rx="10" fill="#FFFFFF"/>` : "";
-  return `${frame}<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"/>`;
+  return `${frame}${img}/>`;
 }
+const defs = (spec) => `<defs><filter id="packShadow" x="-20%" y="-10%" width="140%" height="130%"><feDropShadow dx="${spec.shadowDx ?? 12}" dy="14" stdDeviation="12" flood-color="#000" flood-opacity="0.22"/></filter><filter id="contactBlur" x="-30%" y="-200%" width="160%" height="500%"><feGaussianBlur stdDeviation="9"/></filter></defs>`;
 
 function headlineBlock(parts, text, x, y, maxW, s, size = 44) {
   const hs = Math.round(size * s), hl = Math.round(size * 1.18 * s);

@@ -40,7 +40,8 @@ for (const f of fs.readdirSync(draftDir).filter((f) => f.endsWith(".json"))) {
   const shownForJudge = [...(brief.steps || []), ...(brief.range || [])].map((x) => sheets[x.product_handle]).filter((s) => s && s !== sheet);
   const jp = buildJudgePrompt(ad, runRules(ad, { sheet, extraSheets: shownForJudge }), { sheet });
   fs.writeFileSync(path.join(runDir, "judge_prompts", `${brief.source_ad_id}.user.md`), jp.user);
-  if (!fs.existsSync(path.join(runDir, "judge_prompts", "system.md"))) fs.writeFileSync(path.join(runDir, "judge_prompts", "system.md"), jp.system);
+  // The API path sends the schema separately (output_config); a stand-in only sees files, so append it (pilot audit).
+  if (!fs.existsSync(path.join(runDir, "judge_prompts", "system.md"))) fs.writeFileSync(path.join(runDir, "judge_prompts", "system.md"), `${jp.system}\n\n## Output format (JSON, exactly this schema)\n\n\`\`\`json\n${JSON.stringify(jp.schema, null, 2)}\n\`\`\`\n`);
   const injected = path.join(runDir, "judge", `${brief.source_ad_id}.json`);
   const shownHandles = [...(brief.steps || []), ...(brief.range || [])].map((x) => x.product_handle).filter((h) => h && h !== m.product_handle && sheets[h]);
   // Lab results as the main theme: brief says so, or a spec layout whose headline is about testing.

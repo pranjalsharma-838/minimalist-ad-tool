@@ -8,7 +8,7 @@ SPF 50, PA++++ with a light, moisturiser feel
 <on_image_text>
 Broad spectrum SPF 50
 PA++++ rated
-No white cast
+Spreads like a moisturiser
 Photostable & acne safe
 SPF 50 Sunscreen
 </on_image_text>
