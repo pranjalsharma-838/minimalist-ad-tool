@@ -9,6 +9,8 @@ const run = process.argv[2];
 const runDir = path.join("pipeline", "runs", run);
 const briefs = JSON.parse(fs.readFileSync(path.join(runDir, "briefs_final.json"), "utf8"));
 const match = new Map(JSON.parse(fs.readFileSync(path.join(runDir, "match.json"), "utf8")).map((m) => [m.id, m]));
+// Files carry the run tag so ads with the same id from different runs never overwrite each other.
+const tag = run.replace(/^\d{4}-\d{2}-\d{2}-?/, "") || run;
 const slug = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const rows = [];
 for (const b of briefs) {
@@ -22,10 +24,11 @@ for (const b of briefs) {
   fs.mkdirSync(dest, { recursive: true });
   const dirJson = path.join(runDir, "director", `${b.source_ad_id}.json`);
   const director = fs.existsSync(dirJson) ? JSON.parse(fs.readFileSync(dirJson, "utf8")) : null;
-  for (const e of extra) fs.copyFileSync(path.join(runDir, "finals", e), path.join(dest, e));
+  for (const e of extra) fs.copyFileSync(path.join(runDir, "finals", e), path.join(dest, e.replace(b.source_ad_id, `${b.source_ad_id}__${tag}`)));
   for (const png of pngs) {
     const id = png.replace(/\.png$/, "");
-    fs.copyFileSync(path.join(runDir, "finals", png), path.join(dest, png));
+    const outName = png.replace(b.source_ad_id, `${b.source_ad_id}__${tag}`);
+    fs.copyFileSync(path.join(runDir, "finals", png), path.join(dest, outName));
     const v = Number((id.match(/_v(\d+)$/) || [, 1])[1]);
     const lines = [
       `# ${b.product_title} — ${m.template_name || b.layout}${pngs.length > 1 ? ` (variant ${v})` : ""}`,
@@ -69,8 +72,8 @@ for (const b of briefs) {
       "## Adaptation notes",
       b.adaptation_notes || "",
     ];
-    fs.writeFileSync(path.join(dest, `${id}.md`), lines.join("\n") + "\n");
-    rows.push(`| ${b.product_title} | ${m.template_name || b.layout} | ${b.risk_level} | [${png}](${path.join(b.product_handle, slug(m.template_name || b.layout), png).replace(/\\/g, "/")}) |`);
+    fs.writeFileSync(path.join(dest, outName.replace(/\.png$/, ".md")), lines.join("\n") + "\n");
+    rows.push(`| ${b.product_title} | ${m.template_name || b.layout} | ${b.risk_level} | [${outName}](${path.join(b.product_handle, slug(m.template_name || b.layout), outName).replace(/\\/g, "/")}) |`);
   }
 }
 // INDEX.md is rebuilt from the whole library on every run (appending duplicated rows on re-runs).

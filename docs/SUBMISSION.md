@@ -13,10 +13,14 @@ Mapped point by point to the original brief, for evaluation. Minimalist is the t
 | Real, current commercial data | Live prices, MRP and offers ("Buy 2, Get 3rd Free", "Upto 33% OFF + Freebies", "Build Your Own Bundle…") captured by script with a date; real star ratings and verified reviews | `scripts/collect_offers.js`, `scripts/collect_reviews.js` |
 | Customer language | Amazon.in best-seller competitors (5 per product type) + reviews mined into concerns; concern ads only where our page answers the concern | `research/competitor_map.md`, `research/customer_language.md` |
 
-**Produced in this submission:**
-- **Pilot:** 8 ads (2 products × 4 formats) × 3 sizes, plus Hindi and Tamil versions of 2 ads, all composed and checked by eye.
-- **Scale run:** 7 products × 4 formats = 28 briefs across 21 different formats, all passed by the rules and the AI judge. Their backgrounds are generating; the finals are composed as each background lands.
-- **Transformation-journey example:** Day 1 → Week 2 → Week 4, rated **Severe** and carrying the AI label. It's not exportable until real study photos replace the AI frames.
+**Produced in this submission: `ad_library/` holds 36 ads and 112 PNGs, every one checked by eye**
+- **Pilot:** 8 ads (2 products × 4 formats) × 3 sizes, plus Hindi and Tamil versions of 2 ads.
+- **Scale run:** 7 products × 4 formats = 28 briefs across 21 different formats, checked by rules + AI judge with retries.
+  - 27 approved and composed in 3 sizes.
+  - 1 kept with a warning, not composed: its freebie terms aren't stated on the site.
+  - 7 of the 27 are Severe-risk formats (creator, product-in-hand, before/after, split-screen). They're composed for review with placeholders and **not exportable** until real photos exist.
+- **Transformation-journey example** (salicylic serum): AI skin frames for Day 1 → Week 2 → Week 4, each label taken from the page's study lines. It's rated **Severe**, carries the "AI-GENERATED — ILLUSTRATIVE" mark, and isn't exportable until real study photos replace the frames.
+- **Angles across the scale run:** offer 4, ingredient science 5, situation-first 4, concern solved 4, social proof 4, texture 4, routine 3.
 
 ## Part B: score any ad on policy/claims, brand tone and brand language
 
