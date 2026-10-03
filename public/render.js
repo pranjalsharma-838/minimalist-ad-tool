@@ -17,7 +17,8 @@ const C = {
   rule: "#D6D2CB",
   card: "#FFFFFF",
 };
-const FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
+// 'Nirmala UI' (ships with Windows) + Noto fallbacks cover Devanagari, Tamil, Telugu, Bengali for language versions.
+const FONT = "'Helvetica Neue', Helvetica, Arial, 'Nirmala UI', 'Noto Sans Devanagari', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Bengali', sans-serif";
 
 function esc(s) {
   return String(s ?? "")

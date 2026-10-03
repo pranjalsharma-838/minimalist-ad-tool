@@ -76,7 +76,8 @@ const ANGLES = {
   routine: "Routine: where the product sits in a simple AM/PM routine (companion products allowed in journey/range layouts).",
   sensorial: "Texture / sensorial: how it feels and absorbs, from the page's texture/usage facts only.",
 };
-const angleUsed = Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
+const CL = fs.existsSync("research/customer_language.json") ? JSON.parse(fs.readFileSync("research/customer_language.json", "utf8")) : null;
+const angleUsed =Object.fromEntries(Object.keys(ANGLES).map((k) => [k, 0]));
 function pickAngle(t, sheet) {
   if (t.family === "offer") return "offer_value";
   const has = (k) => sheet.facts.some((f) => f.kind === k);
@@ -112,6 +113,7 @@ for (const h of handles) {
       refs.length > 1 ? `${refBlock}\nBlend rule: take ONE element from each — e.g. the hook device from one, the layout/visual arrangement from another, the proof device from the third. The concept must not match any single reference. Record it in "blend_sources": [{"id","brand","took"}].` : example ? `${example.brand} · ${example.days_running} days · ${example.ad_type}\nHeadline: ${example.headline || ""}\nText: ${(example.primary_text || "").slice(0, 400)}\nOn image: ${example.on_image_text || ""}\nVisual: ${example.visual_notes || ""}` : "(none)",
       "",
       `## Angle (balanced across the run): ${angle}`,
+      ...(angle === "concern_solved" && CL?.concern_map?.[h] ? ["Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):", ...CL.concern_map[h].filter((c) => c.answered_by).slice(0, 4).map((c) => `- ${c.concern.replace(/_/g, " ")}: competitors ${c.competitor_mentions} mentions (${c.competitor_in_negative} in ≤3★) · answered by ${c.answered_by.id} "${c.answered_by.text.slice(0, 120)}" · customer words: ${c.customer_phrases.slice(0, 2).join(" / ").slice(0, 220)}`)] : []),
       angle === "offer_value" ? "Offer-led: quote the live offer (OFFER*) exactly with sale price + MRP (PRICE*); footnote with capture date, 'T&C apply' and any free item's condition; no urgency words unless an end date is captured." : ANGLES[angle],
       `Record "angle": "${angle}" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).`,
       "",
