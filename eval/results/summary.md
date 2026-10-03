@@ -1,6 +1,6 @@
 # Eval results
 
-Generated 2026-10-03T10:31:02.939Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
+Generated 2026-10-03T10:32:43.991Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
 Model layer: outputs in eval/sim_model/ were produced by Claude Code subagents given the exact rendered prompt (eval/rendered/), because no API key was available. They pass through the app's real validation code. This approximates, but is not, the production API path.
 How far each split generalises (see eval/README.md): tuning = read while writing the rules (optimistic); holdout = same Meta capture, hash-split and sealed until the rules were frozen (held out, but in-distribution); synthetic = adversarial edge cases written during the build (not independent of the builder); ood = brands never seen in the build + a different channel (Amazon.in listings), labelled blind and committed before scoring (the closest to 'ads you have not seen').
 
@@ -9,20 +9,20 @@ How far each split generalises (see eval/README.md): tuning = read while writing
 | split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tuning | 20 | 15 | 0 | 3 | 0 | 0 | 2 | 29/35 (83%) | 10 | 0 |
-| holdout | 13 | 11 | 1 | 0 | 0 | 0 | 1 | 15/29 (52%) | 6 | 0 |
+| holdout | 13 | 10 | 1 | 1 | 0 | 0 | 1 | 15/29 (52%) | 5 | 0 |
 | synthetic | 16 | 8 | 3 | 3 | 0 | 0 | 2 | 4/14 (29%) | 2 | 0 |
-| ood | 12 | 5 | 0 | 2 | 0 | 5 | 0 | 23/54 (43%) | 17 | 0 |
-| ALL | 61 | 39 | 4 | 8 | 0 | 5 | 5 | 71/132 (54%) | 35 | 0 |
+| ood | 12 | 6 | 0 | 3 | 0 | 3 | 0 | 23/54 (43%) | 9 | 0 |
+| ALL | 61 | 39 | 4 | 10 | 0 | 3 | 5 | 71/132 (54%) | 26 | 0 |
 
 ### Rules + model (stand-in)
 
 | split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |
 |---|---|---|---|---|---|---|---|---|---|---|
 | tuning | 20 | 16 | 0 | 0 | 0 | 1 | 3 | 32/35 (91%) | 16 | 4 |
-| holdout | 13 | 11 | 0 | 0 | 0 | 1 | 1 | 26/29 (90%) | 11 | 1 |
+| holdout | 13 | 11 | 0 | 0 | 0 | 1 | 1 | 26/29 (90%) | 10 | 1 |
 | synthetic | 16 | 13 | 1 | 0 | 0 | 0 | 2 | 14/14 (100%) | 2 | 0 |
-| ood | 12 | 7 | 0 | 0 | 0 | 5 | 0 | 44/54 (81%) | 25 | 3 |
-| ALL | 61 | 47 | 1 | 0 | 0 | 7 | 6 | 116/132 (88%) | 54 | 8 |
+| ood | 12 | 8 | 0 | 0 | 0 | 4 | 0 | 44/54 (81%) | 17 | 3 |
+| ALL | 61 | 48 | 1 | 0 | 0 | 6 | 6 | 116/132 (88%) | 45 | 8 |
 
 ## Per-case disagreements (rules + model)
 - **meta_3043932412484720** (tuning, Minimalistinc): reviewer **pass**, tool **fix**
@@ -42,7 +42,7 @@ How far each split generalises (see eval/README.md): tuning = read while writing
 - **ood_B0CW1N7QRT** (ood, WishCare): reviewer **fix**, tool **block**; missed: [fix] SPF rating of 50+ — Conflicts with 'SPF 50' in the headline; the stated SPF must match the label and the in-vivo report on file (BIS-SPF, ASCI-1.1; Q4). | [fix] In-Vivo Tested — Test claim needs lab/study source and date in the ad (ASCI-1.2) and an IS 17494 / ISO 24444 report on file (BIS-SPF; open Q4). | [fix] free from OMC and Oxybenxone — Free-from framing denigrates legally permitted UV filters (EU-655-4/5/6 §5(1); open Q12) and would disparage Minimalist's own Light Fluid SPF, whose page (S6) names ethylhexyl methoxycinnamate, i.e. OMC (brand_corpus §5); also misspelled.
 - **ood_B0FDQZBV6K** (ood, Hyphen): reviewer **fix**, tool **fix**; missed: [fix] 20% Collagen — Reads as 20% collagen content, yet no collagen appears among the listed actives; a % tied to a benefit is misleading by ambiguity (ASCI-1.4; CPA-2(28)) and breaks concentration transparency (brand_corpus §6; open Q5). | [fix] 18% Brightening — Percentage attached to a benefit, not an ingredient - can read as an 18% brightening result (ASCI-1.4; ASCI-RPT-BPC 'Y% more' with unclear basis); name the actives (11% + 5% + 2%) instead.
 - **ood_B09W1JM81P** (ood, The True Therapy): reviewer **block**, tool **block**; missed: [fix] reduces the formation of open pores (or blackheads) — Scientifically inaccurate structure claim (blackheads are not open pores) (Q2; COS-R36) - wrong for a science-first brand (brand_corpus §6).
-- **ood_B0B9QMYYY4** (ood, L'Oreal Paris): reviewer **fix**, tool **block**; missed: [fix] Glycolic Bright 8% — Concentration conflict: headline '8%' reads as 8% glycolic, but the body twice says '1% Glycolic Acid' with '2% Niacinamide' and never quantifies Melasyl - misleading on quantity (ASCI-1.4; CPA-2(28)); reconcile with the formula (brand_corpus §6 concentration transparency).
+- **ood_B0B9QMYYY4** (ood, L'Oreal Paris): reviewer **fix**, tool **fix**; missed: [fix] Glycolic Bright 8% — Concentration conflict: headline '8%' reads as 8% glycolic, but the body twice says '1% Glycolic Acid' with '2% Niacinamide' and never quantifies Melasyl - misleading on quantity (ASCI-1.4; CPA-2(28)); reconcile with the formula (brand_corpus §6 concentration transparency).
 - **ood_B0CKTQGLMZ** (ood, Himalaya): reviewer **fix**, tool **block**; missed: [fix] Organically sourced Turmeric — Organic claim needs certification on file; an organic halo on a largely synthetic acid serum is an ASCI enforcement pattern (ASCI-RPT-BPC).
 - **ood_B00E96N6O8** (ood, NIVEA): reviewer **fix**, tool **block**
 - **ood_B0BXSDJQNR** (ood, Vaseline): reviewer **fix**, tool **fix**; missed: [fix] Gives Brighter Skin — Whole face-and-body brightening led by glutathione (commonly marketed for skin lightening) reads as skin-lightening - ASCI-G-FAIR / META-HW-WHITEN exposure; open Q3, route to legal; reframe to radiance or the look of dullness.

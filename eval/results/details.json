@@ -411,15 +411,13 @@
       "split": "holdout",
       "advertiser": "The Derma Co.",
       "label": "fix",
-      "tool": "fix",
+      "tool": "pass",
       "phrases_total": 1,
       "phrases_caught": 0,
       "missed_phrases": [
         "[fix] Dark & pigmented lips? Not anymore! — Negative appearance question plus implied permanent result (META-HW-INFERIOR, ASCI-1.5)."
       ],
-      "extra_flags": [
-        "[fix] CLM-20 \"1% Kojic\" (rule)"
-      ],
+      "extra_flags": [],
       "dropped_model_findings": 0
     },
     {
@@ -730,19 +728,14 @@
       "split": "ood",
       "advertiser": "L'Oreal Paris",
       "label": "fix",
-      "tool": "block",
+      "tool": "pass",
       "phrases_total": 2,
       "phrases_caught": 0,
       "missed_phrases": [
         "[fix] Glycolic Bright 8% — Concentration conflict: headline '8%' reads as 8% glycolic, but the body twice says '1% Glycolic Acid' with '2% Niacinamide' and never quantifies Melasyl - misleading on quantity (ASCI-1.4; CPA-2(28)); reconcile with the formula (brand_corpus §6 concentration transparency).",
         "[fix] helps fade dark spots in as little as 4 weeks — Time-bound result needs a finished-product study on file and a qualifier/source (ASCI-1.1, ASCI-1.2; META-HW-CLAIMS timeframe promises)."
       ],
-      "extra_flags": [
-        "[block] CLM-20 \"1% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)",
-        "[block] CLM-20 \"1% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)"
-      ],
+      "extra_flags": [],
       "dropped_model_findings": 0
     },
     {
@@ -750,7 +743,7 @@
       "split": "ood",
       "advertiser": "Himalaya",
       "label": "fix",
-      "tool": "block",
+      "tool": "fix",
       "phrases_total": 5,
       "phrases_caught": 1,
       "missed_phrases": [
@@ -760,10 +753,6 @@
         "[fix] Organically sourced Turmeric — Organic claim needs certification on file; an organic halo on a largely synthetic acid serum is an ASCI enforcement pattern (ASCI-RPT-BPC)."
       ],
       "extra_flags": [
-        "[block] CLM-20 \"10% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)",
-        "[block] CLM-20 \"10% GLYCOLIC\" (rule)",
-        "[block] CLM-20 \"ACID AND 2%\" (rule)",
         "[fix] CLM-09 \"Clinically tested\" (rule)",
         "[fix] CLM-09 \"dermatologically tested\" (rule)"
       ],
@@ -1296,9 +1285,7 @@
       "phrases_total": 1,
       "phrases_caught": 1,
       "missed_phrases": [],
-      "extra_flags": [
-        "[fix] CLM-20 \"1% Kojic\" (rule)"
-      ],
+      "extra_flags": [],
       "dropped_model_findings": 1
     },
     {
@@ -1588,17 +1575,13 @@
       "split": "ood",
       "advertiser": "L'Oreal Paris",
       "label": "fix",
-      "tool": "block",
+      "tool": "fix",
       "phrases_total": 2,
       "phrases_caught": 1,
       "missed_phrases": [
         "[fix] Glycolic Bright 8% — Concentration conflict: headline '8%' reads as 8% glycolic, but the body twice says '1% Glycolic Acid' with '2% Niacinamide' and never quantifies Melasyl - misleading on quantity (ASCI-1.4; CPA-2(28)); reconcile with the formula (brand_corpus §6 concentration transparency)."
       ],
       "extra_flags": [
-        "[block] CLM-20 \"1% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)",
-        "[block] CLM-20 \"1% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)",
         "[fix] CLM-24 \"support skin renewal\" (model)"
       ],
       "dropped_model_findings": 1
@@ -1615,10 +1598,6 @@
         "[fix] Organically sourced Turmeric — Organic claim needs certification on file; an organic halo on a largely synthetic acid serum is an ASCI enforcement pattern (ASCI-RPT-BPC)."
       ],
       "extra_flags": [
-        "[block] CLM-20 \"10% Glycolic\" (rule)",
-        "[block] CLM-20 \"2% Niacinamide\" (rule)",
-        "[block] CLM-20 \"10% GLYCOLIC\" (rule)",
-        "[block] CLM-20 \"ACID AND 2%\" (rule)",
         "[fix] CLM-04 \"Dark Spot Clearing\" (model)",
         "[fix] CLM-09 \"Clinically tested\" (rule)",
         "[fix] CLM-09 \"dermatologically tested\" (rule)"

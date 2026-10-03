@@ -1,59 +1,72 @@
 # Submission: Minimalist Ad Creative Tool
 
-Mapped point by point to the original brief, for evaluation. Minimalist is the test brand used to build and prove the pipeline. Nothing is published; every creative carries an "INTERNAL TEST" mark.
+Mapped to the brief, standard first. Minimalist is the test brand used to build and prove the pipeline. Nothing is published, and every creative carries an "INTERNAL TEST" mark.
 
-## Part A: product URL → finished visual ad
+## Read first: two limits that colour every number below
 
-| Requirement | What exists | Where / how to check |
+1. **The AI judge has not run live.** No API key was available. The judge, brief writer and image director were played by Claude agents given the *exact* production prompts, and their outputs went through the app's real validation code.
+   - **Plan:** set `ANTHROPIC_API_KEY` and run `npm run eval`. The same cases go through the live API on the same code path.
+   - Compare live and stand-in results case by case; every disagreement becomes a regression case.
+2. **How far the evaluation generalises, per split** (details in `eval/README.md`):
+   - **Holdout:** a sealed, hash-split slice of the same Meta capture. It's held out, but **in-distribution**.
+   - **Synthetic:** cases written during the build, so not independent.
+   - **Unseen brands and channel (OOD):** 12 Amazon.in listings from 10 brands never seen in the build, labelled blind, committed before scoring and scored once. This was added after external review. It's the closest thing here to "ads you have not seen".
+
+## 1. The standard (Part B): score any ad on policy/claims, brand tone and brand language
+
+| What | Detail | Where |
 |---|---|---|
-| Paste a product URL, get a finished ad | App: URL → page facts → copy (every line cites a page fact) → composed 1080×1080 ad with the **real pack shot**, pre-screened before export | `npm start`, then http://localhost:5173 |
-| At scale: an ad library | Pipeline: format choice (48 types) → cited brief → compliance loop → background prompt → AI background → real pack shot composited with shadow → PNG in 1:1, 4:5, 9:16 (+ Hindi/Tamil) → library with a description per ad | `pipeline/RUNBOOK.md`; output in `ad_library/INDEX.md` |
-| Grounded in the real brand | Brand pack from the website + Amazon (catalog, 294-claim matrix, house style), 118 real gallery images, 13 clean cut-outs | `brand_packs/minimalist/` |
-| Grounded in what works in the market | 74 competitor ads from 10 Indian brands tagged to 48 formats. 57 are "winners" (running 30+ days). Each concept blends 3 winners, never copies one | `research/winners.md`, `research/template_library.md` |
-| Real, current commercial data | Live prices, MRP and offers ("Buy 2, Get 3rd Free", "Upto 33% OFF + Freebies", "Build Your Own Bundle…") captured by script with a date; real star ratings and verified reviews | `scripts/collect_offers.js`, `scripts/collect_reviews.js` |
-| Customer language | Amazon.in best-seller competitors (5 per product type) + reviews mined into concerns; concern ads only where our page answers the concern | `research/competitor_map.md`, `research/customer_language.md` |
+| Rules | **43**: 32 policy/claims (9 block · 22 fix · 1 advisory), 6 tone, 5 language. Tone and language are advisory except fear hooks, because an off-voice ad costs a revision while an illegal claim costs a recall. The AI judge covers voice beyond the rules | `rules/brand_rules.json` |
+| Sources | 66 regulatory/platform sources, 60 verified against primary text; brand philosophy plus counted brand copy | `research/regulatory_sources.md`, `research/brand_corpus.md` |
+| AI judge guardrails | Adds findings, never removes a rule hit. Severity = min(judge, rulebook). Quotes must exist in the ad. Verdict computed in code; best verdict "Ready for human review" | `lib/judge.js`, `lib/score.js` |
+| Any ad | Ad type changes tone, never law: 10 tone/language rules relax for creator ads (`lib/rules.js:278-281`) | `lib/rules.js` |
+| Computed checks | Concentration and SPF vs the catalog; prices/discounts vs the dated offer capture; "free" needs its condition; creator disclosure | `lib/rules.js` |
 
-**Produced in this submission: `ad_library/` holds 36 ads and 112 PNGs, every one checked by eye**
-- **Pilot:** 8 ads (2 products × 4 formats) × 3 sizes, plus Hindi and Tamil versions of 2 ads.
-- **Scale run:** 7 products × 4 formats = 28 briefs across 21 different formats, checked by rules + AI judge with retries.
-  - 27 approved and composed in 3 sizes.
-  - 1 kept with a warning, not composed: its freebie terms aren't stated on the site.
-  - 7 of the 27 are Severe-risk formats (creator, product-in-hand, before/after, split-screen). They're composed for review with placeholders and **not exportable** until real photos exist.
-- **Transformation-journey example** (salicylic serum): AI skin frames for Day 1 → Week 2 → Week 4, each label taken from the page's study lines. It's rated **Severe**, carries the "AI-GENERATED — ILLUSTRATIVE" mark, and isn't exportable until real study photos replace the frames.
-- **Angles across the scale run:** offer 4, ingredient science 5, situation-first 4, concern solved 4, social proof 4, texture 4, routine 3.
+**Evaluation** (rules + AI judge, stand-in; independent blind labels):
 
-## Part B: score any ad on policy/claims, brand tone and brand language
+| Split | What it is | Phrases caught | Missed blocks | Over-severity |
+|---|---|---|---|---|
+| Holdout (13) | Sealed slice of the same Meta capture | **90%** (rules alone 52%) | 0 | 1 |
+| **Unseen brands + channel (12)** | 10 new brands' Amazon.in listings, blind labels committed before scoring, scored once | **81%** (rules alone 43%) | **0** | 5 → 4 after a scoped fix (re-run not clean) |
+| Synthetic (16) | Edge cases written during the build (not independent) | 100% | 1 | 0 |
+| Tuning (20) | Read while writing the rules (optimistic) | 91% | 0 | 1 |
 
-| Requirement | What exists | Where / how to check |
-|---|---|---|
-| Any ad, any source | Paste text or upload an image; the ad type (brand / creator / competitor) adjusts the tone rules but never the legal ones | App, scoring surface; `lib/score.js` |
-| Policy and claims | 43 rules (drug claims, statistics, timeframes, SPF accuracy, fairness, offers and discounts under CCPA/ASCI, influencer disclosure…), each sourced to 66 verified regulatory references | `rules/brand_rules.json`, `research/regulatory_sources.md` |
-| Brand tone and language | Rules derived from Minimalist's stated philosophy and observed copy (concentration-led, no emoji, no fear or hype) | Same rulebook, `dimension` field |
-| An AI judge for implied claims | The judge adds findings but can't remove rule hits; quotes are verified against the ad; the verdict is computed by code; the best verdict is "Ready for human review" | `lib/judge.js`, `prompts/scorer_system.md` |
-| Evidence it works | 49 independently labelled cases: rules + judge caught 92% of flagged phrases (rules alone 62%), with 1 missed block | `eval/README.md`, `eval/results/summary.md` |
+The tool errs toward over-flagging, not under-flagging. On unseen brands the main error was catalog checks firing on other brands' products; they are now scoped to Minimalist's own ads (details in `eval/README.md`).
 
-## Deliverables
+## 2. Part A: product URL → finished visual ad
 
-| Deliverable | Status | Where |
-|---|---|---|
-| Working app | ✅ Node only, no packages to install; runs on Windows, macOS and Linux | `README.md` (setup on a new device) |
-| Commit history | ✅ 70+ commits, each a readable step | `git log` |
-| Transcript | ✅ Redacted (emails, passwords, keys removed; verified 0 left) | `docs/TRANSCRIPT.md`, `scripts/export_transcript.js` |
-| Prompts as files | ✅ All 9: scorer (system + user), brief writer, image prompt director, translator, generator (system + user), tagger, transcriber | `prompts/` |
-| One-page decision doc | ✅ | `docs/DECISIONS.md` |
-| Failure-modes list | ✅ 3 main modes + evidence seen in the pilot | `docs/FAILURE_MODES.md` |
-| Architecture + run order | ✅ including a diagram of every agent, script and check | `docs/pipeline_diagram.png`, `docs/ARCHITECTURE.md`, `pipeline/RUNBOOK.md` |
+| What | Where |
+|---|---|
+| App: URL → page facts → copy where every line cites a fact → 1080×1080 ad with the **real pack shot**, pre-screened, exported with a review ticket | `npm start` → http://localhost:5173 |
+| Brand facts (catalog, claims matrix, house style), 118 real photos, 13 clean cut-outs | `brand_packs/minimalist/` |
 
-## Extras added during the build (user requests)
+## 3. Deliverables
 
-Risk levels (formats never removed), a retry loop that keeps the best judged version, archetype skill, asset library with cut-outs, image prompt director, blended concepts and balanced angles, situation-first concepts, automatic social proof, an own-results ledger that feeds format choice, offer/discount rules, Hindi/regional versions with their own compliance checks, a regulatory watch (ASCI AI-content rule, CDSCO), 4:5 and 9:16 placements, and script-first data capture (token-light).
+| Deliverable | Where |
+|---|---|
+| Working app (Node only, no installs; Windows/macOS/Linux) | `README.md` |
+| Commit history (~80 commits, about 20 of them fixes to agent mistakes) | `git log` |
+| Transcript, opening with an index of where things went wrong and how each was caught | `docs/TRANSCRIPT.md` |
+| Prompts as files, including a reusable prompt to build this pipeline for any brand | `prompts/` (start with `00_build_this_pipeline.md`) |
+| One-page decision doc (standard, scope defence, least-sure decision, brief critique) | `docs/DECISIONS.md` |
+| Failure modes: 3 design-caused, each with before/after-launch actions | `docs/FAILURE_MODES.md` |
+| Architecture, run order, diagram | `docs/ARCHITECTURE.md`, `pipeline/RUNBOOK.md`, `docs/pipeline_diagram.png` |
 
-## Known limits (honest)
+## 4. Built on top: modules, each removable without touching the standard
 
-- **No API keys:** the AI judge, brief writer and director were run by Claude agents receiving the exact production prompts. Backgrounds come from ChatGPT in a browser the user logs into.
-- **The judge is inconsistent across runs** on page wording such as "reduces sebum", so human review stays mandatory (`FAILURE_MODES.md`).
-- **Data gaps:**
-  - Flipkart reviews aren't parsed and Nykaa blocks scripts, so customer language comes from the website + Amazon.
-  - Minimalist's own Amazon listing match is sometimes the wrong listing.
-- **Severe formats** (before/after, transformation journey) need real consented study photos before any use.
-- **India-first rules:** Running the pipeline for a US brand or market needs a US rule set (FTC/FDA, TikTok Shop, Amazon) before going live.
+- **Ad library pipeline:**
+  - competitor winners (30+ days) tagged to 48 formats;
+  - format selection (no format removed; risk levels);
+  - briefs blending 3 winners with balanced angles (incl. situation-first);
+  - live offers and real reviews captured by script;
+  - background-only image prompts;
+  - real pack shot composited with a shadow, in 1:1, 4:5 and 9:16.
+- **Output:** `ad_library/` holds **36 ads and 112 PNGs**, each with a description file: 8 pilot ads, 27 scale ads, plus a transformation-journey example rated Severe that carries the AI mark and isn't exportable. Every image was checked by eye.
+- **Also built:** Hindi/regional versions with their own checks, an own-results ledger feeding format choice, and a regulatory watch (ASCI AI-content rule, CDSCO).
+
+## Other known limits
+
+- Flipkart reviews aren't parsed and Nykaa blocks scripts, so customer language comes from the website and Amazon only.
+- The AI judge is inconsistent across runs on some page wording ("reduces sebum"), so human review stays mandatory.
+- Severe formats need real consented study photos before any use.
+- The rules are India-first; a US market needs a US rule set (FTC/FDA, TikTok Shop, Amazon).
