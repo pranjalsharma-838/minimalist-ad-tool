@@ -64,7 +64,6 @@
     "layout": "before_after",
     "exportable": false,
     "layoutIssues": [
-      "Before/after has no real study photos attached — export stays blocked.",
       "Severe risk: needs real photos (people / skin / results) with consent and study backing before any use — not exportable"
     ],
     "recheck": "LIMITED_CHECK"
