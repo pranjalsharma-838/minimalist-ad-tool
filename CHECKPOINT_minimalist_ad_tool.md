@@ -43,6 +43,13 @@ Architecture agreed with the user: `docs/ARCHITECTURE.md`. Step-by-step run orde
   - **Image-pipeline gaps to fix first:** a shadow/light match for the composited pack shot, and 4:5 + 9:16 sizes (currently 1080×1080 only).
 - **Token rule:** use script-based scraping wherever possible (user, 2026-10-03).
 
+## WRAP-UP STATE 2026-10-03 ~12:50 (user: finalise submission, run on another device)
+- **Submission docs done:** `docs/SUBMISSION.md` (mapped to the brief), README (new-device setup), DECISIONS, FAILURE_MODES, eval/README, redacted `docs/TRANSCRIPT.md` (verified 0 secrets; the user should still change the ChatGPT password).
+- **Pilot DONE:** 8 ads × 3 sizes + hi/ta for 2, in `ad_library/`.
+- **Scale backgrounds:** generating by a Playwright batch (in-app New chat + reload-if-not-ready). Prompts are served by `python -m http.server 8765` from `pipeline/runs`. When done: `08_compose.js 2026-10-03-scale` → `08b_png.js` → eye-check contact sheets → `09_library.js`.
+- **Transformation journey:** run `2026-10-03-transformation` (brief kept with warnings, severe, AI label). Needs a 3-panel skin image from ChatGPT → split into `backgrounds/salicylic-acid-2__t14.frame1..3.png` → compose.
+- **Junk clean-up:** the user wants to discuss it later; nothing deleted.
+
 ## PROGRESS 2026-10-03 from 07:40 (latest at top)
 - **Pilot:** 8/8 pass rules + judge; 8 director prompts clean (`director/`, `chatgpt_prompts.md`).
   - **BLOCKED:** ChatGPT is not logged in. Asked the user to log in (Google sign-in); never type passwords.
