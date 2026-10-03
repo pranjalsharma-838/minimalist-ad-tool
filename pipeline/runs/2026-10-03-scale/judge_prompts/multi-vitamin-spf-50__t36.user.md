@@ -8,8 +8,7 @@ SPF 50 is the last step of your morning routine
 <on_image_text>
 50g: Rs. 359 (MRP Rs. 399), beminimalist.co, captured 2026-10-02
 Build Your Own Bundle — Save an additional up to 15% off
-Source: beminimalist.co homepage banner, captured 2026-10-02; terms: https://beminimalist.co/apps/gbb/easybundle/1
-Valid till No end date shown on the page
+Applies when you build your own bundle on beminimalist.co. T&C apply.
 SPF 50 Sunscreen
 </on_image_text>
 <footnote>

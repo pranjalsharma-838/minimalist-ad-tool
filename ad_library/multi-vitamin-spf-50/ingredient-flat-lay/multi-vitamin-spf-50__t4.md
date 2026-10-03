@@ -7,38 +7,38 @@
 | Product | SPF 50 Sunscreen (https://beminimalist.co/products/multi-vitamin-spf-50) |
 | Format | #4 Ingredient flat lay · layout `hero` |
 | Why this format | archetype skill |
-| Angle / hook | — · hook: — |
-| Blended from | — |
-| Social proof | none |
+| Angle / hook | situation · hook: situation |
+| Blended from | Dr. Sheth's (984872741086615): pale blue prop scene with water droplets; Dot & Key (9868853523169382): three tag cards for proof points; Foxtale (1475983576999549): minimal two-line headline structure |
+| Social proof | RATING (real, verbatim) |
 | Placements | 1:1 multi-vitamin-spf-50__t4.png · 4:5 multi-vitamin-spf-50__t4.4x5.png · 9:16 multi-vitamin-spf-50__t4.9x16.png |
 | Language versions | none |
 | Risk level | **low** |
 | Compliance verdict | Ready for human review (rules + AI judge) |
-| Retry rounds | 3 |
-| Run | 2026-10-03-pilot |
+| Retry rounds | 2 |
+| Run | 2026-10-03-scale |
 
 ## Copy on the creative
-- Headline: Four UV filters behind a broad spectrum SPF 50
-- Subhead: Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin.
-- Avobenzone for UVA protection
-- Octocrylene for UVB, and it further stabilises Avobenzone
-- Uvinul T 150, a highly effective UVB filter
-- Footnote: Labelled SPF 50, PA++++. In-vivo test (ISO 24444:2019) by an independent lab obtained SPF 56.6.
-- CTA: See ingredients
+- Headline: Heading out? SPF 50, applied 15 minutes before
+- Subhead: Broad Spectrum SPF 50, PA++++, in a light moisturiser-meets-sunscreen texture.
+- Reapply with continued sun exposure, swimming or perspiring
+- 4 UV filters for UVA & UVB protection
+- Apply AM, every day
+- Footnote: 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+- CTA: Shop now
 
 ## Facts cited (from the product page)
 ```json
-{"headline":["F2","F5"],"subhead":["F6"],"proof_points":[["F22"],["F23"],["F5","F24"]],"footnote":["F2","F14","F16"]}
+{"headline":["F2","F20"],"subhead":["F2","F3"],"proof_points":[["F20"],["F5"],["F21"]],"footnote":["RATING"]}
 ```
 
 ## Remaining findings / warnings
 - none above advisory
 
 ## Image
-- Background prompt: Create a photographic background image: a top-down flat lay on a smooth off-white #F4F2EE surface with a subtle fine-grain paper texture. Two small smooth pale stone pebbles in warm grey #E5E9EA rest near the lower-left corner, each under 5% of the frame width. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. Lighting: soft daylight from the upper left at 5600K, shadows of the pebbles falling to the lower right, otherwise even. Background: matte off-white #F4F2EE paper, pale sand #E8E1D3 only as a faint tonal drift near the bottom edge. Style: spec sheet, flat and even, minimal. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
-- Director rationale: Dropped the sliver of sunlight (it would put a bright patch in the pack-shot zone). Pebbles kept in the lower-left corner.
+- Background prompt: Create a photographic background image: a top-down view of a pale blue #E5E9EA surface fading to off-white #F4F2EE, with a few small clear water droplets scattered only near the bottom edge. Lighting: bright soft daylight from the upper left at 5600K, droplet shadows falling to the lower right. Background: smooth matte surface, shallow depth. Style: spec sheet, flat and even. The left half of the frame is intentionally empty, an even low-detail field for headline copy added later. The right 45% of the frame is intentionally empty, an evenly lit open area reserved for a photo placed later. The bottom quarter of the frame stays plain and calm. Square 1:1, 1024x1024, 50mm lens at f/8 so the whole surface is sharp, fine photographic detail, no film grain. Do not include: any text, letters, numbers, logos, product, bottle, tube, packaging, people, faces, skin, hands.
+- Director rationale: Followed the brief's scene in the white/off-white/grey palette; light set to upper-left to match the real pack shots. Props, tints and textures kept in outer or lower areas so the copy and photo zones stay empty. Situation briefs evoke the moment without people or product.
 - Product: real pack shot from beminimalist.co, composited (never generated).
 
 
 ## Adaptation notes
-Kept: the ingredient flat-lay structure (pack on a styled surface with ingredient-to-benefit tags beside it). Replaced the competitor's actives with our four UV filters and vitamins from F5, F6, F22-F24. Dropped: the fruit props (they suggest a scent/'natural' story Minimalist avoids; replaced with neutral pebbles), the 'NEW' launch bubble (not a new launch), 'Clinically Proven', 'Dermatologically Tested' and 'No Nasties' (not on our page as claims / fluff), and emoji. Lab SPF 56.6 kept only in the footnote; labelled SPF 50 is the claim. Override: the archetype skill picked layout 'hero' for this ingredient_explainer reference; kept 'hero' as instructed.
+Kept: pack among simple ingredient-cue props (Dr. Sheth's), tag-card proof points (Dot & Key), minimal two-line headline (Foxtale). SPF 50 is the claim; lab figures are left out. Dropped: 'zero grease', 'pearl glow' and brightening wording (not on page).

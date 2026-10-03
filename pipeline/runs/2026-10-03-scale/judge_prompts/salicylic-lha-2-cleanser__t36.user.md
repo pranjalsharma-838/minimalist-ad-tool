@@ -8,8 +8,7 @@ Morning rush? Lather on a wet face and rinse thoroughly
 <on_image_text>
 100ml: Rs. 269 (MRP Rs. 299), beminimalist.co, captured 2026-10-02
 Buy 2, Get 3rd Free
-Source: beminimalist.co homepage banner, captured 2026-10-02; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
-Valid till No end date shown on the page
+The 3rd product is free when you buy 2. T&C apply.
 Salicylic Acid + LHA 2% Cleanser
 </on_image_text>
 <footnote>

@@ -8,8 +8,7 @@ The ad, field by field:
 <on_image_text>
 50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02
 "Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free"
-Both banners link to the same offer page, https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free (beminimalist.co homepage, captured 2026-10-02); the page shows no further terms.
-Valid till No end date shown on the page
+The 3rd product is free when you buy 2. T&C apply.
 Vitamin B5 10% Moisturizer
 </on_image_text>
 <footnote>

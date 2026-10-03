@@ -8,8 +8,7 @@ Two to three drops, morning and night
 <on_image_text>
 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02
 Buy 2, Get 3rd Free
-Source: beminimalist.co homepage banner, captured 2026-10-02; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free
-Valid till No end date shown on the page
+The 3rd product is free when you buy 2. T&C apply.
 Alpha Arbutin 2% Face Serum
 </on_image_text>
 <footnote>

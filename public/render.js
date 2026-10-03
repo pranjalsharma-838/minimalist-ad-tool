@@ -313,7 +313,8 @@ LAYOUTS.stat = (spec, s) => {
   parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
   let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 38) + Math.round(30 * s);
   const st = spec.stat || {};
-  const vs = Math.round(150 * s);
+  // Eye-check fix (scale run): long values ("3.9 out of 5 stars") overflowed under the pack; shrink to fit 490px.
+  const vs = Math.min(Math.round(150 * s), Math.floor(490 / Math.max(1, vlen(st.value || "") * 0.5)));
   parts.push(`<text x="${PAD - 6}" y="${y + vs}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-4" fill="${C.ink}">${esc(st.value || "")}</text>`);
   y += vs + Math.round(16 * s);
   const ls = wrap(st.label, Math.round(28 * s), 490);
@@ -391,17 +392,19 @@ LAYOUTS.offer = (spec, s) => {
   parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
   const o = spec.offer || {};
   let y = headlineBlock(parts, o.line || spec.headline, PAD, 150, 490, s, 58) + Math.round(26 * s);
-  const cond = wrap(o.condition, Math.round(28 * s), 490);
+  // Eye-check fix (scale run): sourcing text and URLs belong in the footnote, not the offer block.
+  const cleanCond = String(o.condition || "").replace(/Source:[^;]*;?\s*/i, "").replace(/terms:\s*\S+/i, "").replace(/https?:\/\/\S+/g, "").replace(/\s{2,}/g, " ").trim();
+  const cond = wrap(cleanCond, Math.round(28 * s), 490);
   parts.push(T(cond, PAD, y + Math.round(28 * s), Math.round(28 * s), Math.round(36 * s), `font-weight="500" fill="${C.ink}"`));
   y += Math.round(28 * s) + (cond.length - 1) * Math.round(36 * s);
-  if (o.valid_till) {
+  if (o.valid_till && !/no end date/i.test(o.valid_till)) {
     parts.push(T([`Valid till ${o.valid_till}`], PAD, y + Math.round(40 * s), Math.round(22 * s), 28, `fill="${C.muted}"`));
     y += Math.round(40 * s);
   }
   // Eye-check fix (pilot): the price (sale price + MRP, in proof_points) wasn't drawn although the footnote
   // referred to it. Price lines are shown bold, right under the offer and its condition.
   for (const pp of (spec.proofPoints || []).filter((p) => /\b(Rs\.?|₹|MRP)\s?\d/i.test(p))) {
-    const pl = wrap(pp, Math.round(30 * s), 490);
+    const pl = wrap(pp.replace(/,?\s*(beminimalist\.co|website)?,?\s*captured \d{4}-\d{2}-\d{2}/i, "").replace(/,\s*beminimalist\.co\s*$/i, "").trim(), Math.round(30 * s), 490);
     parts.push(T(pl, PAD, y + Math.round(52 * s), Math.round(30 * s), Math.round(38 * s), `font-weight="700" fill="${C.ink}"`));
     y += Math.round(52 * s) + (pl.length - 1) * Math.round(38 * s);
   }
@@ -510,7 +513,7 @@ LAYOUTS.socialproof = (spec, s) => {
   parts.push(pack(spec, spec.imageHref, 590, 110, 430, 660));
   const p = spec.proof || {};
   let y = headlineBlock(parts, spec.headline, PAD, 140, 490, s, 34) + Math.round(24 * s);
-  const vs = Math.round(130 * s);
+  const vs = Math.min(Math.round(130 * s), Math.floor(490 / Math.max(1, vlen(p.value || "") * 0.5)));
   parts.push(`<text x="${PAD - 4}" y="${y + vs}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-3" fill="${C.ink}">${esc(p.value || "")}</text>`);
   y += vs + Math.round(20 * s);
   const l = wrap(p.label, Math.round(28 * s), 490);

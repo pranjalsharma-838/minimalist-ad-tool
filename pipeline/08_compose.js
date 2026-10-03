@@ -91,7 +91,7 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   const report = await scoreAd(adFromBrief(b, sheets, main), { sheet: sheets[main], extraSheets, rulesOnly: true });
   // Severe-risk creatives (AI frames standing in for real results) are composed for review but never exportable.
   if (b.status === "kept_with_warnings") layoutIssues.push("Kept with warnings: open findings must be resolved by a reviewer");
-  if (b.risk_level === "severe") layoutIssues.push("Severe risk: AI-generated frames stand in for real study photos — not exportable until replaced");
+  if (b.risk_level === "severe") layoutIssues.push("Severe risk: needs real photos (people / skin / results) with consent and study backing before any use — not exportable");
   const exportable = !layoutIssues.length && report.verdict.code !== "BLOCKED";
   summary.push({ id: b.source_ad_id, layout: spec.layout, exportable, layoutIssues, recheck: report.verdict.code });
   console.log(`${b.source_ad_id} [${spec.layout}]: composed · re-check ${report.verdict.code}${layoutIssues.length ? " · NOT EXPORTABLE: " + layoutIssues.join("; ") : ""}`);
