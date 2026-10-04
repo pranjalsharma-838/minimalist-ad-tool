@@ -206,3 +206,5 @@ Amazon best-seller competitor search, Flipkart, Instagram, Amazon 11–20, deep 
 - [ ] Re-render all library ads with verified renders; gallery + Desktop review folders refresh
 - [ ] Real review photos (Flipkart/Myntra/Amazon) as reference only, "permission needed"
 - [ ] GitHub: clean copy rebuilt; push needs the user's login
+
+- 2026-10-05 DONE: 20/20 verified pack renders, 20/20 textures, 58-ad format batch (153 ads, 463 files, all sizes), all ads scored + judged (107 ready / 14 fix / 32 blocked, 31 = ASCI AI-01), app image library + live Image Studio (npm run studio; not yet run live against ChatGPT), size downloads. Open: GitHub push (user login); Alpha Arbutin problem-macro reused a sofa scene (redo).
