@@ -3725,7 +3725,7 @@ Yes. Every ad is now held to Minimalist's own style by an automated check, and a
 
 ### User · 2026-10-04 02:57
 
-are parts of deliverables ready?
+Are parts of the deliverables ready?
 
 ### Assistant · 2026-10-04 02:58
 
@@ -3733,7 +3733,7 @@ I'll verify each deliverable's actual state rather than go from memory.
 
 ### User (sent while the assistant was working) · 2026-10-04 02:58
 
-also if someone asks for a particular image what happens?
+Also, if someone asks for a particular image, what happens?
 
 ### Assistant · 2026-10-04 02:58
 
@@ -3766,7 +3766,7 @@ Want me to trim the decision doc to one page and refresh the transcript now? Aft
 
 ### User · 2026-10-04 03:00
 
-there should be a trendy section where ads generated in lasg 2 months an dstill runnign show up, but only if multple brands are doing them n drecreated minimaliist style
+There should be a trendy section where ads generated in the last 2 months and still running show up, but only if multiple brands are doing them, and recreated in Minimalist style.
 
 ### Assistant · 2026-10-04 03:01
 
@@ -3778,11 +3778,11 @@ While the live-status check runs, I'm writing the script that builds the trend l
 
 ### User (sent while the assistant was working) · 2026-10-04 03:04
 
-shorten summary more humanly, we dont have claude api so they must enter it, make a read me very short, remove pass expaand short prompts, no mention of this ins transcript keep some good original prompts, github i will log u in latrer, make it functional, was github reqired
+Shorten the summary, more humanly. We don't have a Claude API, so they must enter it. Make a README, very short. Remove pass, expand short prompts, no mention of this in the transcript, keep some good original prompts. GitHub: I will log you in later. Make it functional. Was GitHub required?
 
 ### User · 2026-10-04 03:06
 
-also test for multiple products result time to be logged
+Also test for multiple products; the result time is to be logged.
 
 ### Assistant · 2026-10-04 03:10
 
@@ -3807,3 +3807,23 @@ All 47 tests still pass. Now the one remaining transcript message that mixes a r
 ### Assistant · 2026-10-04 03:16
 
 My first attempt didn't apply cleanly, and it wrongly trimmed your latest message. Redoing the fix properly, by editing the exact lines.
+
+### Assistant · 2026-10-04 03:17
+
+The transcript is clean: no passwords or emails, login details removed (1 message entirely, 3 partly, each with a note), and your messages otherwise intact. Checking the second timing run:
+
+### Assistant · 2026-10-04 03:18
+
+The gallery now has the Trending section. Our versions will appear there once the judge finishes and they're rendered. Meanwhile, rewriting the submission summary to be shorter and in plain language.
+
+### Assistant · 2026-10-04 03:19
+
+While the judge finishes, adding the Trending step to the run-order and architecture docs.
+
+### Assistant · 2026-10-04 03:25
+
+The Trending run is complete: all 7 within the text budget, 21 images, library now 95 ads. Timed: composing 5.7 s, images 35 s, filing 0.2 s. Eye-checking the 7 ads:
+
+### Assistant · 2026-10-04 03:27
+
+Committing the Trending run, the library and the timing log, then refreshing the transcript.
