@@ -3,15 +3,13 @@ Ad type: brand-authored
 The ad, field by field:
 
 <headline>
-Spotted: oiliness. Solution: BHA + LHA
+Spotted: oiliness. Meet BHA + LHA
 </headline>
 <primary_text>
-Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Pour into wet hands, rub into a light lather, massage into the face and rinse thoroughly. AM & PM, every day.
+Back from a run? Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Salicylic Acid (BHA) helps reduce the oily look; LHA gives gentle exfoliation on the outer layer. Lather on a wet face and rinse thoroughly, AM & PM.
 </primary_text>
 <on_image_text>
-Lather on a wet face, rinse thoroughly.
-Salicylic Acid (BHA) reduces the oily look
-LHA gently exfoliates the outer layer
+Skin Science
 Salicylic Acid + LHA 2% Cleanser
 Hide Nothing.
 </on_image_text>
@@ -20,7 +18,7 @@ Shop now
 </cta>
 
 Rule-layer hits already found (review each in rule_hit_review, by index):
-0. LNG-01 in on_image_text: "Salicylic Acid"
+(none)
 
 Product page facts for the advertised product (brand-authored lines from beminimalist.co; customer reviews excluded):
 F1 [name] Salicylic Acid + LHA 2% Cleanser

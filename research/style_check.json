@@ -937,11 +937,11 @@
  {
   "run": "2026-10-04-trending",
   "id": "salicylic-lha-2-cleanser__t10",
-  "layout": "callouts",
-  "on_image_words": 25,
+  "layout": "hero",
+  "on_image_words": 7,
   "headline_words": 5,
   "footnote_chars": 0,
-  "caption_words": 30,
+  "caption_words": 40,
   "within": true,
   "issues": []
  },

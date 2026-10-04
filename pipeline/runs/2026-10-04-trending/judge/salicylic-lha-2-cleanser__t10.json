@@ -1,22 +1,34 @@
 {
   "findings": [
     {
-      "rule_id": "LNG-04",
-      "dimension": "language",
-      "field": "headline",
-      "span": "Solution: BHA + LHA",
-      "severity": "advisory",
-      "why": "'Solution' presents the cleanser as solving oiliness outright, while the image line and the product page scope it to 'reduces the oily look'. The headline also names the actives without their 2% (LNG-01), which is the brand's signature.",
-      "fix": "Spotted: oiliness. Formulated with BHA + LHA 2%"
-    }
-  ],
-  "rule_hit_review": [
+      "rule_id": "CLM-20",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "2% Salicylic Acid + LHA",
+      "severity": "block",
+      "why": "The product page gives 2% as the combined strength of BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid), but this line reads as 2% salicylic acid with LHA added on top, overstating the salicylic acid strength in the on-image text most viewers read. The pack name on the same card ('Salicylic Acid + LHA 2% Cleanser') puts the 2% after the pair.",
+      "fix": "Salicylic Acid + LHA 2% (the pack's order, so the 2% covers both acids)"
+    },
     {
-      "index": 0,
-      "assessment": "likely_false_positive",
-      "why": "On the image, 'Salicylic Acid' appears in a mechanism line and in the pack name 'Salicylic Acid + LHA 2% Cleanser', which carries the 2% on the same image. That 2% is the combined BHA + LHA strength and the page gives no separate Salicylic Acid figure, so adding one would invent a number."
+      "rule_id": "CLM-20",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "2% BHA + LHA",
+      "severity": "block",
+      "why": "Same placement problem in the headline: '2% BHA + LHA' reads as 2% BHA (salicylic acid) plus LHA, while the product page and the ad's own primary text ('BHA + LHA in 2% concentration') make 2% the combined strength of both acids.",
+      "fix": "BHA + LHA 2% (headline: 'Spotted: oiliness. Meet BHA + LHA 2%')"
+    },
+    {
+      "rule_id": "CLM-03",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Hide Nothing.",
+      "severity": "fix",
+      "why": "Paired with the headline 'Spotted: oiliness.', this can read as a promise that skin will have nothing left to hide after using the cleanser, an implied absolute result much like 'no more oily skin'. It is fine only if the reviewer is satisfied it reads as Minimalist's transparency sign-off about the formula, not a skin outcome.",
+      "fix": "Remove it and let 'Skin Science' and the product name close the card; keep it only if the reviewer confirms it reads as a transparency line rather than a promise about the skin."
     }
   ],
-  "tone_read": "Mostly on-voice: the image explains what each active does ('reduces the oily look', 'gently exfoliates the outer layer') in calm, mechanism-led lines, which is the brand's education-first style. The 'Spotted: oiliness.' headline is a trend-format hook that names the concern without agitating it, so it stays within bounds, though it is punchier than Minimalist's usual register.",
-  "language_read": "Concentration is given as the page gives it ('BHA + LHA in 2% concentration'), the ingredient lines are appearance-hedged, and the page's 'Prevents Breakout' and 'acne fighting' wording is rightly left out. The weak spots are both in the headline: 'Solution' is unhedged, and the actives appear there without their 2%."
+  "rule_hit_review": [],
+  "tone_read": "Largely on-voice: calm and educational, it names both actives, the 2% strength and what each acid does, with no hype words, emoji, exclamation marks or urgency, and 'Spotted: oiliness.' and 'Back from a run?' are light, situational hooks rather than fear or shame framing. The one off note is the 'Hide Nothing.' sign-off, which suits the brand's transparency stance beside 'Skin Science' but, read against 'Spotted: oiliness.', drifts into a promise about the skin.",
+  "language_read": "Active naming and hedging follow the brand: 'Salicylic Acid (BHA) helps reduce the oily look' is scoped to appearance, 'LHA gives gentle exfoliation on the outer layer' is a mechanism line taken from the product page, 'BHA + LHA in 2% concentration' states the strength exactly, and there is no natural or chemical-free framing. The slip is where the 2% sits: '2% Salicylic Acid + LHA' and '2% BHA + LHA' attach it to salicylic acid alone, whereas the pack name 'Salicylic Acid + LHA 2% Cleanser' and the page make it the combined strength of the two acids."
 }

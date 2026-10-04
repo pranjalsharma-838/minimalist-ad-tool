@@ -409,29 +409,16 @@
   },
   {
     "ad_type": "problem_solution",
-    "layout": "callouts",
+    "layout": "hero",
     "source_ad_id": "salicylic-lha-2-cleanser__t10",
     "product_title": "Salicylic Acid + LHA 2% Cleanser",
-    "subhead": "Lather on a wet face, rinse thoroughly.",
-    "tag": "",
+    "subhead": "",
+    "tag": "Skin Science",
     "proof_points": [],
     "actives": [],
     "steps": [],
     "stat": null,
-    "callouts": [
-      {
-        "text": "Salicylic Acid (BHA) reduces the oily look",
-        "cites": [
-          "F5"
-        ]
-      },
-      {
-        "text": "LHA gently exfoliates the outer layer",
-        "cites": [
-          "F6"
-        ]
-      }
-    ],
+    "callouts": [],
     "specs": [],
     "range": [],
     "offer": null,
@@ -441,14 +428,12 @@
     "needs_real_photography": false,
     "photography_needed": "",
     "angle": "trend",
-    "ai_label_required": false,
-    "hook_type": "contrast",
-    "headline": "Spotted: oiliness. Solution: BHA + LHA",
-    "caption": "Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Pour into wet hands, rub into a light lather, massage into the face and rinse thoroughly. AM & PM, every day.",
+    "ai_label_required": true,
+    "hook_type": "situation",
+    "headline": "Spotted: oiliness. Meet BHA + LHA",
+    "caption": "Back from a run? Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Salicylic Acid (BHA) helps reduce the oily look; LHA gives gentle exfoliation on the outer layer. Lather on a wet face and rinse thoroughly, AM & PM.",
     "citations": {
-      "subhead": [
-        "F13"
-      ],
+      "subhead": [],
       "tag": [],
       "proof_points": [],
       "footnote": [],
@@ -458,6 +443,8 @@
       ],
       "caption": [
         "F3",
+        "F5",
+        "F6",
         "F13",
         "F14"
       ]
@@ -466,27 +453,28 @@
       {
         "id": "1778713726796593",
         "brand": "The Derma Co",
-        "took": "the 'Spotted: … / Solution: …' headline pair"
+        "took": "the Spotted: ... / Solution headline pair (here Spotted / Meet)"
       },
       {
         "id": "1587965372880796",
         "brand": "Conscious Chemist",
-        "took": "a one-line 'do this' instruction; its pimple close-up and timed claim dropped"
+        "took": "the problem moment shown on a person, recast as a calm lifestyle moment after a run; the pimple close-up and timed claim dropped"
       }
     ],
-    "layout_description": "White canvas; the 'Spotted / Solution' headline; two thin callout lines pointing at the real pack (what each acid does); one grey how-to line. No skin imagery.",
-    "adaptation_notes": "Trending format (#10 Problem macro): 2 brands. Both references rely on an extreme skin-problem close-up; that is fear framing the brand avoids and would need real photos, so the macro is dropped and the structure kept as calm callouts with the pack. No acne wording (CLM-02).",
+    "layout_description": "Lifestyle version (user review 2026-10-04: use a lifestyle shot and the brand taglines). Light canvas; a black Skin Science tag above the headline; the AI lifestyle photo on the right with the real pack in front; Hide Nothing. sign-off under the wordmark; quiet Shop now.",
+    "adaptation_notes": "Trending format (#10 Problem macro): 2 brands. Both references rely on an extreme skin-problem close-up; that is fear framing the brand avoids and would need real photos, so the macro is dropped and the structure kept as calm callouts with the pack. No acne wording (CLM-02). Round 3 (user review 2026-10-04): rebuilt as a lifestyle shot (reused AI image of an Indian man back from a run, from run 2026-10-03-people) with the brand taglines: a black Skin Science tag and the Hide Nothing. sign-off. Headline: Solution became Meet and the 2% is named (judge advisory). A model is used, so Severe (user rule). Round 4 (judge block): 2% BHA + LHA read as 2% salicylic acid alone; the 2% is BHA + LHA combined, so the headline drops the figure and the product name line beneath (Salicylic Acid + LHA 2% Cleanser) carries it. Re-checked by the rules and the round-3 judge findings (span-checked), not a fresh judge pass. The judge also noted, as a lesser point, that Hide Nothing. near a skin-concern headline could read as a promise; it stays as the brand sign-off under the logo.",
+    "person_prompt": "An Indian man in his early 30s with deep-brown skin, back home after a morning run: he stands just inside the front door of a modest apartment, catching his breath, wearing a plain running t-shirt and shorts darkened with sweat, a small cotton towel over one shoulder, running shoes on the doormat behind him, a calm, satisfied expression. Soft morning daylight from the upper left through the open doorway, an off-white hallway wall, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
     "product_handle": "salicylic-lha-2-cleanser",
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "The Derma Co",
-    "status": "approved_for_image_step",
-    "risk_level": "medium",
+    "status": "kept_with_warnings",
+    "risk_level": "severe",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
-      "code": "READY_FOR_REVIEW",
-      "label": "Ready for human review",
-      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
     },
     "coverage": {
       "rules": true,
@@ -497,24 +485,16 @@
     },
     "findings": [
       {
-        "severity": "advisory",
-        "rule_id": "LNG-04",
-        "span": "Solution: BHA + LHA",
-        "message": "'Solution' presents the cleanser as solving oiliness outright, while the image line and the product page scope it to 'reduces the oily look'. The headline also names the actives without their 2% (LNG-01), which is the brand's signature.",
-        "fix": "Spotted: oiliness. Formulated with BHA + LHA 2%",
+        "severity": "fix",
+        "rule_id": "CLM-03",
+        "span": "Hide Nothing.",
+        "message": "Paired with the headline 'Spotted: oiliness.', this can read as a promise that skin will have nothing left to hide after using the cleanser, an implied absolute result much like 'no more oily skin'. It is fine only if the reviewer is satisfied it reads as Minimalist's transparency sign-off about the formula, not a skin outcome.",
+        "fix": "Remove it and let 'Skin Science' and the product name close the card; keep it only if the reviewer confirms it reads as a transparency line rather than a promise about the skin.",
         "layer": "model"
-      },
-      {
-        "severity": "advisory",
-        "rule_id": "LNG-01",
-        "span": "Salicylic Acid",
-        "message": "Active named without its concentration.",
-        "fix": "State it as on the pack: 'Niacinamide 10%'.",
-        "layer": "rule"
       }
     ],
-    "rounds_tried": 3,
-    "kept_because": "passed"
+    "rounds_tried": 1,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
   },
   {
     "ad_type": "offer_promo",

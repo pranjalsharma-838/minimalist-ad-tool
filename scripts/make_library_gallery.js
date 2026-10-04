@@ -70,11 +70,11 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:
 .risk.low{background:var(--low)}.risk.medium{background:var(--medium)}.risk.high{background:var(--high)}.risk.severe{background:var(--severe)}
 .aib{background:#111;color:#fff;border-radius:6px;padding:1px 7px;font-weight:700}.ok{color:var(--low)}.no{color:var(--severe);font-weight:700}.run{margin-left:auto;color:var(--muted)}
 .trend{max-width:1400px;margin:8px auto 4px;padding:0 24px}.trend h2{margin:8px 0 4px;font-size:22px}.trend>p{margin:0 0 12px;color:var(--muted)}
-.trow{display:grid;grid-template-columns:220px 1fr 28px 260px;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin:0 0 12px}
+.trow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;width:fit-content;max-width:100%;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 10px}
 .tinfo h3{margin:0 0 4px;font-size:16px}.tinfo p{margin:0;font-size:13px;color:var(--muted)}.tb{margin-top:4px!important}
-.trefs{display:flex;gap:8px;overflow-x:auto}.trefs a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:12px;text-align:center}.trefs img{display:block;height:130px;width:auto;border-radius:8px;border:1px solid var(--line);background:#eee}
-.tarrow{font-size:24px;color:var(--muted);text-align:center}.tours{display:flex;flex-direction:column;gap:6px;font-size:12px}.tours img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
-@media (max-width:900px){.trow{grid-template-columns:1fr}.tarrow{display:none}}
+.tinfo{flex:0 0 190px}.trefs{display:flex;gap:10px;flex:0 1 auto;overflow-x:auto}.trefs a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:12px;text-align:center}.trefs img{display:block;height:230px;width:auto;border-radius:8px;border:1px solid var(--line);background:#eee}
+.tarrow{flex:0 0 auto;font-size:26px;color:var(--muted)}.tours{flex:0 0 230px;display:flex;flex-direction:column;gap:6px;font-size:12px}.tours img{display:block;width:230px;height:230px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+@media (max-width:700px){.tinfo{flex-basis:100%}.tarrow{display:none}}
 </style></head><body>
 <header><h1>Ad library review</h1><p>${ads.length} ads · internal test (Minimalist is the test brand) · every claim cites a source; the product is the real pack shot, never AI-drawn. Click an image for full size; 4:5 / 9:16 / language versions and each ad's description are linked under it.</p></header>
 ${trending}

@@ -55,7 +55,7 @@ Each ad has a description file (`<id>.md`) next to it: product, format, angle, b
 | Salicylic Acid + LHA 2% Cleanser | How-to / steps | severe | [salicylic-lha-2-cleanser__t22__people.png](salicylic-lha-2-cleanser/how-to-steps/salicylic-lha-2-cleanser__t22__people.png) |
 | Salicylic Acid + LHA 2% Cleanser | Lifestyle product shot | severe | [salicylic-lha-2-cleanser__t6__people.png](salicylic-lha-2-cleanser/lifestyle-product-shot/salicylic-lha-2-cleanser__t6__people.png) |
 | Salicylic Acid + LHA 2% Cleanser | Offer creative | low | [salicylic-lha-2-cleanser__t36__scale.png](salicylic-lha-2-cleanser/offer-creative/salicylic-lha-2-cleanser__t36__scale.png) |
-| Salicylic Acid + LHA 2% Cleanser | Problem macro | medium | [salicylic-lha-2-cleanser__t10__trending.png](salicylic-lha-2-cleanser/problem-macro/salicylic-lha-2-cleanser__t10__trending.png) |
+| Salicylic Acid + LHA 2% Cleanser | Problem macro | severe | [salicylic-lha-2-cleanser__t10__trending.png](salicylic-lha-2-cleanser/problem-macro/salicylic-lha-2-cleanser__t10__trending.png) |
 | Salicylic Acid + LHA 2% Cleanser | Product + benefit badges | low | [salicylic-lha-2-cleanser__t2__scale.png](salicylic-lha-2-cleanser/product-benefit-badges/salicylic-lha-2-cleanser__t2__scale.png) |
 | Salicylic Acid + LHA 2% Cleanser | Product-in-hand | severe | [salicylic-lha-2-cleanser__t7__people.png](salicylic-lha-2-cleanser/product-in-hand/salicylic-lha-2-cleanser__t7__people.png) |
 | Salicylic Acid + LHA 2% Cleanser | Product-in-use | severe | [salicylic-lha-2-cleanser__t8__angles.png](salicylic-lha-2-cleanser/product-in-use/salicylic-lha-2-cleanser__t8__angles.png) |
