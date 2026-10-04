@@ -1,5 +1,19 @@
 # CHECKPOINT: Minimalist Ad Desk
 
+## 2026-10-04 LATER (latest; supersedes below)
+- **Trending now:**
+  - `scripts/build_trending.js` reads 33 of 34 recent competitor statics confirmed live (`research/competitor_status_2026-10-04.json`) and finds 7 formats with 2+ brands launched in the last 60 days;
+  - run `2026-10-04-trending` holds 7 ads, one per product (2 Severe: before/after, split-screen);
+  - judge round 1 + round 2 fixes; the gallery opens with a Trending section.
+- **App:**
+  - Claude API key box (memory only, checked against Anthropic, local requests only) plus `.env.example`;
+  - the background takes the pack photo's colour; long subheads go to the caption.
+- **Timing:** `scripts/time_products.js` gives 10 products in 33.7 s without a key (3.4 s/ad). The library pipeline timing (7 products) is in `results/timing_2026-10-04.md`.
+- **Docs:** README is 15 lines; SUBMISSION is short and plain (668 words); DECISIONS is one page (728 words).
+- **Transcript:** login-detail messages removed (whole or part, with a note). The user's request to expand short prompts without disclosure was declined; grammar-only corrections stay disclosed.
+- **Library:** 95 ads, 50 not exportable; 95/95 within the text budget. Tests 47/47. Commits: 99.
+- **GitHub (not required by the brief; a zip of the clean copy also works):** the user will log in later. Before pushing, rebuild the clean copy (fast-export → `sanitize_stream.mjs` → fast-import, fast-forward `Desktop\minimalist-ad-tool-github`), then push in steps under 2 GB.
+
 ## 2026-10-04 STYLE OVERHAUL (latest; supersedes the sections below)
 User reviews on 2026-10-04:
 - **"are we making sure brand tone and style is followed"** → added `scripts/style_check.js`. On-image text budget: ≤ 20 words (30 for lists), headline ≤ 8 words (study-quote headlines exempt), footnote ≤ 2 lines.
