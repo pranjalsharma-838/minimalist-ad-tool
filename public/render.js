@@ -143,7 +143,8 @@ export function lockupHeight(lk, s, maxW, size = "big") {
 }
 function lockup(parts, lk, accent, x, y, s, maxW, size = "big", align = "start") {
   if (!lk) return y;
-  const k = size === "big" ? { ns: 28, nl: 34, vs: 64, gap: 10, line: 120, lh: 4 } : { ns: 16, nl: 20, vs: 26, gap: 4, line: 44, lh: 3 };
+  // User review 2026-10-05: the line before the % was too long; shorter and broader, in the bottle's own colour.
+  const k = size === "big" ? { ns: 28, nl: 34, vs: 64, gap: 10, line: 60, lh: 9 } : { ns: 16, nl: 20, vs: 26, gap: 4, line: 24, lh: 5 };
   const ns = Math.round(k.ns * s), vs = Math.round(k.vs * s), nl = Math.round(k.nl * s);
   const name = wrap(lk.name, ns, maxW, 0.62).slice(0, 2);
   const anchor = align === "middle" ? ' text-anchor="middle"' : "";
@@ -151,7 +152,7 @@ function lockup(parts, lk, accent, x, y, s, maxW, size = "big", align = "start")
   y += ns + (name.length - 1) * nl + Math.round(k.gap * s);
   const lineW = Math.round(k.line * s), pctW = Math.round(vlen(lk.pct) * vs * 0.52), total = lineW + 12 + pctW;
   const x0 = align === "middle" ? Math.round(x - total / 2) : x;
-  parts.push(`<rect x="${x0}" y="${y + Math.round(vs * 0.62)}" width="${lineW}" height="${k.lh}" fill="${accent || C.ink}"/>`);
+  parts.push(`<rect x="${x0}" y="${y + Math.round(vs * 0.62 - k.lh / 2)}" width="${lineW}" height="${k.lh}" rx="${Math.round(k.lh / 2)}" fill="${accent || C.ink}"/>`);
   parts.push(`<text x="${x0 + lineW + 12}" y="${y + vs - Math.round(vs * 0.12)}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-1" fill="${C.ink}">${esc(lk.pct)}</text>`);
   return y + vs;
 }
@@ -708,7 +709,7 @@ export function layoutProblems(spec) {
   // The review card draws 6 quote lines at most: a longer quote must be swapped for a shorter one, never cut.
   if (spec.layout === "review" && spec.review?.quote && wrap(`“${spec.review.quote}”`, Math.round(32 * m.scale), 440, 0.52).length > 6) problems.push("Customer quote is too long for the card and would be cut; use a shorter quote (never shorten one).");
   if (spec.layout === "offer" && spec.offer && !String(spec.offer.condition || "").trim()) problems.push("Offer has no condition: 'free' / discount terms must sit with the offer (CCPA 7).");
-  if (spec.layout === "before_after" && !(spec.photos || []).length) problems.push("Before/after has no real study photos attached — export stays blocked.");
+  if (spec.layout === "before_after" && !(spec.photos || []).length && !(spec.photoSrcs || []).length) problems.push("Before/after has no real study photos attached — export stays blocked.");
   if (["journey", "range"].includes(spec.layout) && (spec.steps || spec.range || []).some((x) => !x.imageHref && !x.imageSrc)) problems.push("A product in the journey/range has no pack shot.");
   return problems;
 }

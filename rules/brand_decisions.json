@@ -9,14 +9,22 @@
       "answer": "Yes.",
       "scope": "Acne wording: 'anti-acne', 'acne control', 'reduces acne', 'fights breakouts', 'clears breakouts', 'for acne-prone skin'. Still flagged: treat / cure / heal (drug claim, CLM-01, block), prevent / stop (the statute's own 'prevention' wording), elimination promises ('acne-free', 'no more acne', 'say goodbye to breakouts'), anti-bacterial claims, and every hair-fall claim, which the answer did not cover.",
       "match": {
-        "rules": ["CLM-02"],
+        "rules": [
+          "CLM-02"
+        ],
         "span": "\\b(acne|breakouts?|pimples?|zits)\\b",
         "unless": "\\b(prevent\\w*|stop\\w*|get rid|rid of|banish\\w*|eliminat\\w*|eradicat\\w*|remov\\w*|free|goodbye|bye|no more|anymore|for good|gone|never|forever|permanent\\w*|treat\\w*|cur(e|es|ed|ing)|heal\\w*|relie\\w*|bacteri\\w*|germs?|microb\\w*|hair)\\b"
       },
       "effect": "advisory",
       "note": "Acne wording accepted by brand/legal (DEC-01, 2026-10-04). Treat/cure, prevent/stop and 'acne-free' style promises are still flagged.",
       "eval_relabels": [
-        { "id": "meta_1339515484419819", "phrase": "clearing active breakouts", "from": "fix", "to": "advisory", "why": "The reviewer's only reason was open question Q1 ('arguably acne mitigation'), which DEC-01 answers." }
+        {
+          "id": "meta_1339515484419819",
+          "phrase": "clearing active breakouts",
+          "from": "fix",
+          "to": "advisory",
+          "why": "The reviewer's only reason was open question Q1 ('arguably acne mitigation'), which DEC-01 answers."
+        }
       ]
     },
     {
@@ -35,10 +43,22 @@
       "scope": "A judge finding whose whole quote is one of the taglines is kept for the record but not acted on. The taglines also need no citation as a tag (lib/brief_check.js).",
       "match": {
         "layer": "model",
-        "exact_span": ["hide nothing.", "hide nothing", "skin science"]
+        "exact_span": [
+          "hide nothing.",
+          "hide nothing",
+          "skin science"
+        ]
       },
       "effect": "advisory",
       "note": "Brand tagline: accepted by the brand team (DEC-03, 2026-10-04)."
+    },
+    {
+      "id": "DEC-04",
+      "date": "2026-10-05",
+      "question": "What risk level does an AI-made product texture (swatch beside the verified pack) carry?",
+      "answer": "Low (user decision).",
+      "scope": "Texture shots made by ChatGPT from the label-verified pack: the pack is unchanged and checked word by word; only the swatch is AI. Risk Low; the small AI-generated - illustrative mark stays for transparency. AI people, hands, skin or result images stay Severe.",
+      "effect": "none"
     }
   ]
 }

@@ -1,4 +1,11 @@
 import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
+import {
+  VERDICTS, RISKS, SIZES, IMG_TYPES, IMG_GROUPS, IMG_SORTS,
+  adDefaults, cleanAdState, filterAds, sortAds, adSortsFor, defaultAdSort, adFacetCounts, adOptions, activeAdFilters, countText,
+  imgDefaults, cleanImgState, filterImages, sortImages, imgFacetCounts, imgProductOptions, activeImgFilters, usableInAds,
+  parseHash, buildHash,
+} from "./filters.js";
+import { TEMPLATE_CSV, VERDICT_KEYS, parseCsv, parseXlsx, adsFromTable, summarise, sortRows, filterRows, resultsToCsv, statusText, runPool } from "./bulk.js";
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -16,10 +23,12 @@ async function api(path, body) {
 let llm = false;
 function showStatus(s) {
   llm = s.llm;
-  $("#status").innerHTML = `Rules v${esc(s.rulesVersion)} · AI judge: <b class="${s.llm ? "on" : "off"}">${s.llm ? "on" : "off (rules only)"}</b>`;
+  $("#status").innerHTML = `Rules v${esc(s.rulesVersion)} · AI judge: <b class="${s.llm ? "on" : "off"}">${s.llm ? "on" : "off (rules only)"}</b> · Images: <b class="${s.openai ? "on" : "off"}">${s.openai ? "OpenAI" : "ChatGPT window"}</b>`;
   $("#mode").querySelector('[value="model"]').disabled = !s.llm;
   if (!s.llm) $("#mode").value = "verbatim";
   $("#keyform").style.display = s.llm ? "none" : "";
+  $("#oaform").style.display = s.openai ? "none" : "";
+  updateBulkControls(); // image rows that were waiting for the key can be scored now
 }
 api("/api/status").then(showStatus).catch(() => ($("#status").textContent = "server not reachable"));
 $("#keyform").addEventListener("submit", async (e) => {
@@ -36,15 +45,35 @@ $("#keyform").addEventListener("submit", async (e) => {
   }
 });
 
+$("#oaform").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  $("#oamsg").textContent = "checking…";
+  try {
+    await api("/api/openai-key", { key: $("#oakey").value });
+    $("#oakey").value = "";
+    $("#oamsg").textContent = "";
+    showStatus(await api("/api/status"));
+  } catch (err) { $("#oamsg").textContent = err.message; }
+});
+
 // ---------- tabs ----------
+let currentTab = "generate";
 document.querySelectorAll(".tab").forEach((b) =>
   b.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === b));
+    currentTab = b.dataset.tab;
+    document.querySelectorAll(".tab").forEach((x) => { x.classList.toggle("active", x === b); x.setAttribute("aria-selected", x === b); });
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("hidden", p.id !== `tab-${b.dataset.tab}`));
     if (b.dataset.tab === "images") initImageLibrary();
+    syncHash();
   })
 );
 const showTab = (name) => document.querySelector(`.tab[data-tab="${name}"]`).click();
+
+// The address bar remembers the tab and every filter, so a filtered view can be shared and reopened (filters.js: parseHash / buildHash).
+function syncHash() {
+  const h = buildHash({ tab: currentTab, lib: libVisible ? libMode : "", h: libHandle, ads: adState, images: imgState });
+  try { history.replaceState(null, "", location.pathname + location.search + h); } catch { /* a sandboxed page: skip */ }
+}
 
 // ---------- report rendering (shared) ----------
 const SEV_LABEL = { block: "Block", fix: "Must fix", advisory: "Advisory" };
@@ -198,31 +227,157 @@ $("#manual-form").onsubmit = async (e) => {
   e.preventDefault();
   const manual = Object.fromEntries(new FormData(e.target));
   handle = "";
-  $("#library").classList.add("hidden");
+  if (libMode === "p") { $("#library").classList.add("hidden"); libVisible = false; syncHash(); }
   $("#prod-images").classList.add("hidden");
   const { sheet: s, refusal } = await api("/api/extract", { manual });
   showSheet(s, refusal);
 };
 
-let library = null;
-async function loadLibrary(h) {
-  try {
-    library = await api(`/api/library?handle=${encodeURIComponent(h)}`);
-  } catch { library = { groups: [], count: 0 }; }
+// ---------- existing ads: filters, sort and the "All ads" view (client-side, one fetched list; filters.js) ----------
+let libMode = "p";      // "p" = this product's library, "all" = every product
+let libHandle = "";     // the product whose library "This product" shows
+let libVisible = false;
+let libAds = [];        // the flat list for the current mode
+let adState = adDefaults();
+let adShown = [];       // what is on screen, in order (card clicks index into it)
+let libSeq = 0, adTimer = null;
+
+const loadLibrary = (h) => openLibrary("p", { h, state: adDefaults() });
+$("#lib-all").onclick = async () => { await openLibrary("all", { state: adDefaults() }); $("#library").scrollIntoView({ behavior: "smooth", block: "start" }); };
+
+async function openLibrary(mode, { h = libHandle, state = null } = {}) {
+  const my = ++libSeq;
+  libMode = mode;
+  if (mode === "p") libHandle = h;
+  libVisible = true;
   $("#library").classList.remove("hidden");
-  $("#lib-count").textContent = library.count ? `(${library.count} ads in ${library.groups.length} formats)` : "";
-  $("#lib-body").innerHTML = library.count
-    ? library.groups.map((g, gi) => `<div class="lib-group"><h4>${esc(g.title)} <span class="hint">${esc(g.template)}</span></h4><div class="lib-cards">${g.ads.map((a, ai) => `
-        <div class="lib-card">
-          <button type="button" class="lib-open" data-g="${gi}" data-a="${ai}" title="Open"><img src="${esc(a.png)}" alt="${esc(g.title)}" loading="lazy" /></button>
+  $("#lib-body").innerHTML = '<p class="hint">Loading the ads…</p>';
+  let ads = [];
+  try {
+    ads = mode === "all" ? (await api("/api/library-all")).ads : (await api(`/api/library?handle=${encodeURIComponent(libHandle)}`)).groups.flatMap((g) => g.ads);
+  } catch (err) { $("#lib-body").innerHTML = `<p class="err">${esc(err.message)}</p>`; return; }
+  if (my !== libSeq) return; // a newer open won
+  libAds = ads;
+  const products = new Set(ads.map((a) => a.handle)), formats = new Set(ads.map((a) => a.fmt));
+  $("#lib-count").textContent = !ads.length ? "" : mode === "all" ? `(${ads.length} ads, ${products.size} products, ${formats.size} formats)` : `(${ads.length} ads in ${formats.size} formats)`;
+  buildAdControls();
+  adState = cleanAdState(state || adState);
+  writeAdControls(adState);
+  adState = readAdControls();
+  renderLibrary();
+  syncHash();
+}
+
+function fillSelect(sel, allLabel, opts) {
+  sel.innerHTML = `<option value="">${esc(allLabel)}</option>` + opts.map((o) => `<option value="${esc(o.key)}" data-label="${esc(o.label)}">${esc(o.label)}</option>`).join("");
+}
+function buildChecks(sel, name, opts) {
+  const fs = $(sel);
+  fs.querySelectorAll("label").forEach((l) => l.remove());
+  fs.insertAdjacentHTML("beforeend", opts.map((o) => `<label class="fchip"><input type="checkbox" name="${name}" value="${esc(o.key)}" /> <span class="t">${esc(o.label)}</span> <span class="n"></span></label>`).join(""));
+}
+function buildAdControls() {
+  const { products, formats } = adOptions(libAds);
+  fillSelect($("#f-product"), "All products", products);
+  fillSelect($("#f-fmt"), "All formats", formats);
+  $("#f-sort").innerHTML = adSortsFor(libMode).map((s) => `<option value="${s.key}">${esc(s.label)}</option>`).join("");
+  buildChecks("#f-verdict", "verdict", VERDICTS);
+  buildChecks("#f-risk", "risk", RISKS);
+  buildChecks("#f-size", "size", SIZES);
+  $("#f-product-wrap").classList.toggle("hidden", libMode === "p");
+  document.querySelectorAll('#lib-mode input').forEach((i) => { i.checked = i.value === libMode; if (i.value === "p") i.disabled = !libHandle; });
+  for (const id of ["#f-exp", "#f-ai"]) for (const o of $(id).options) o.dataset.label = o.textContent;
+}
+function writeAdControls(s) {
+  $("#f-q").value = s.q; $("#f-product").value = s.product; $("#f-fmt").value = s.fmt; $("#f-exp").value = s.exp; $("#f-ai").value = s.ai;
+  $("#f-sort").value = s.sort || defaultAdSort(libMode);
+  $("#f-align").value = s.align; $("#f-win").value = s.win;
+  for (const [id, k] of [["#f-verdict", "verdict"], ["#f-risk", "risk"], ["#f-size", "size"]]) $(id).querySelectorAll("input").forEach((i) => (i.checked = s[k].includes(i.value)));
+  sliderText();
+}
+function readAdControls() {
+  const checked = (id) => [...$(id).querySelectorAll("input:checked")].map((i) => i.value);
+  const sort = $("#f-sort").value;
+  return cleanAdState({
+    q: $("#f-q").value, product: libMode === "all" ? $("#f-product").value : "", fmt: $("#f-fmt").value,
+    verdict: checked("#f-verdict"), risk: checked("#f-risk"), size: checked("#f-size"),
+    exp: $("#f-exp").value, ai: $("#f-ai").value, align: $("#f-align").value, win: $("#f-win").value,
+    sort: sort === defaultAdSort(libMode) ? "" : sort,
+  });
+}
+function sliderText() {
+  for (const k of ["align", "win"]) { const v = Number($(`#f-${k}`).value); $(`#f-${k}-out`).textContent = v ? `${v} or more` : "any"; }
+}
+// Counts beside every option: how many ads it would show with the other filters as they are now.
+function setCounts(sel, counts) {
+  $(sel).querySelectorAll("label").forEach((l) => { l.querySelector(".n").textContent = `(${counts[l.querySelector("input").value] || 0})`; });
+}
+function setSelectCounts(sel, counts) {
+  for (const o of $(sel).options) if (o.value) o.textContent = `${o.dataset.label} (${counts[o.value] || 0})`;
+}
+
+function adCard(a, i, flat) {
+  return `<div class="lib-card">
+          <button type="button" class="lib-open" data-i="${i}" title="Open" aria-label="Open ${esc(a.fmt_title)}, ${esc(a.product)}"><img src="${esc(a.png)}" alt="${esc(a.fmt_title)}" loading="lazy" /></button>
+          ${flat ? `<span class="lib-where"><b>${esc(a.fmt_title)}</b><br>${esc(a.product)}</span>` : ""}
           <span class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk) || "?")} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span>${a.ai ? '<span class="chip no">AI person</span>' : ""}</span>
           ${a.scores ? scoresCompact(libScores(a.scores)) : '<span class="hint small">Not scored yet</span>'}
           <span class="dlrow" title="Download PNG">${adSizes(a).map((s) => `<a class="dl" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}" title="Download ${esc(s.label)} PNG">${esc(s.label)}</a>`).join("")}</span>
           <span class="hint small">${esc(a.run)}</span>
-        </div>`).join("")}</div></div>`).join("")
-    : `<p class="hint">No ads for this product in the library yet. Make new ones below.</p>`;
-  $("#lib-body").querySelectorAll(".lib-open").forEach((b) => (b.onclick = () => openLibraryAd(library.groups[b.dataset.g], library.groups[b.dataset.g].ads[b.dataset.a])));
+        </div>`;
 }
+
+function renderLibrary() {
+  const sorted = sortAds(filterAds(libAds, adState), adState.sort, libMode);
+  adShown = sorted;
+  const grouped = libMode === "p" && (adState.sort || defaultAdSort("p")) === "fmt";
+  $("#lib-shown").textContent = libAds.length ? `${countText(sorted.length, libAds.length)}${libMode === "p" ? " for this product" : ""}` : "";
+  $("#f-clear").disabled = !activeAdFilters(adState, libMode) && !adState.sort;
+  let html;
+  if (!libAds.length) html = `<p class="hint">${libMode === "p" ? "No ads for this product in the library yet. Make new ones below." : "No ads in the library yet."}</p>`;
+  else if (!sorted.length) html = `<p class="hint empty-note">No ads match these filters. <button type="button" class="ghost" data-clear>Clear filters</button></p>`;
+  else if (!grouped) html = `<div class="lib-cards">${sorted.map((a, i) => adCard(a, i, true)).join("")}</div>`;
+  else {
+    const parts = [];
+    sorted.forEach((a, i) => {
+      if (!i || sorted[i - 1].fmt !== a.fmt) parts.push(`${i ? "</div></div>" : ""}<div class="lib-group"><h4>${esc(a.fmt_title)} <span class="hint">${esc(a.template)}</span></h4><div class="lib-cards">`);
+      parts.push(adCard(a, i, false));
+    });
+    html = parts.join("") + "</div></div>";
+  }
+  $("#lib-body").innerHTML = html;
+  $("#lib-body").querySelectorAll(".lib-open").forEach((b) => (b.onclick = () => { const a = adShown[b.dataset.i]; openLibraryAd({ title: a.fmt_title }, a); }));
+  $("#lib-body").querySelector("[data-clear]")?.addEventListener("click", clearAdFilters);
+  setCounts("#f-verdict", adFacetCounts(libAds, adState, "verdict"));
+  setCounts("#f-risk", adFacetCounts(libAds, adState, "risk"));
+  setCounts("#f-size", adFacetCounts(libAds, adState, "size"));
+  setSelectCounts("#f-product", adFacetCounts(libAds, adState, "product"));
+  setSelectCounts("#f-fmt", adFacetCounts(libAds, adState, "fmt"));
+  setSelectCounts("#f-exp", adFacetCounts(libAds, adState, "exp"));
+  setSelectCounts("#f-ai", adFacetCounts(libAds, adState, "ai"));
+}
+
+function clearAdFilters() {
+  adState = adDefaults();
+  writeAdControls(adState);
+  renderLibrary();
+  syncHash();
+}
+$("#f-clear").onclick = clearAdFilters;
+$("#lib-filters").onsubmit = (e) => e.preventDefault();
+// One listener: every control fires "input" (typing, sliders, ticks, dropdowns). Typing and sliders wait a moment.
+$("#lib-filters").addEventListener("input", (e) => {
+  adState = readAdControls();
+  sliderText();
+  clearTimeout(adTimer);
+  adTimer = setTimeout(() => { renderLibrary(); syncHash(); }, ["search", "range"].includes(e.target.type) ? 120 : 0);
+});
+$("#lib-mode").addEventListener("change", (e) => {
+  const mode = e.target.value;
+  if (mode === libMode || (mode === "p" && !libHandle)) return;
+  openLibrary(mode, { state: { ...adState, product: "", sort: "" } });
+});
+
 const cap = (s) => String(s || "").replace(/^./, (c) => c.toUpperCase());
 // Library scores (scripts/score_library.js) in the shape the new-ad score widgets already draw.
 const libScores = (s) => ({
@@ -244,7 +399,7 @@ function openLibraryAd(g, a) {
         <div class="sizes"><span class="hint">Download PNG</span><span class="sizebtns">${sizes.map((s) => `<a class="dlbtn" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}">${esc(s.label)}</a>`).join("")}</span></div>
       </div>
       <div>
-        <p><span class="tag existing">Existing</span> <b>${esc(g.title)}</b></p>
+        <p><span class="tag existing">Existing</span> <b>${esc(g.title)}</b>${a.product ? ` <span class="hint">${esc(a.product)}</span>` : ""}</p>
         <p class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk))} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span></p>
         ${a.not_exportable_why ? `<p class="hint">${esc(a.not_exportable_why)}</p>` : ""}
         <p class="hint">${esc(a.template)} · run ${esc(a.run)} · ${esc(a.verdict)}</p>
@@ -300,7 +455,6 @@ $("#img-queue").onclick = async () => {
 };
 
 // ---------- image library: every image we hold, searchable (GET /api/images) ----------
-const IMG_TYPES = { requested: "Image studio request", verified_render: "Verified pack render", ai_texture: "Texture shot (verified)", cutout: "Cut-out", real_pack: "Real pack photo", real_texture: "Real texture", real_photo: "Real photo (other)", ai_scene: "AI scene / person / frame", review_photo: "Customer review photo" };
 const imgChips = (e) => {
   const c = [`<span class="chip">${esc(IMG_TYPES[e.type] || e.type)}</span>`];
   if (e.type === "ai_scene") c.push('<span class="chip risk-severe">AI — Severe</span>');
@@ -311,10 +465,9 @@ const imgChips = (e) => {
   return `<span class="chips">${c.join("")}</span>`;
 };
 const imgCard = (e, i) => `<button type="button" class="img-card" data-i="${i}" title="${esc(e.label)}"><img src="${esc(e.url)}" alt="${esc(e.label)}" loading="lazy" />${imgChips(e)}<span class="hint small">${esc(e.product || e.handle || "")}</span></button>`;
-const IMG_USE = new Set(["real_pack", "cutout", "verified_render"]);
 
 function openImage(e) {
-  const canUse = e.handle && IMG_USE.has(e.type) && e.use_in_ad !== false;
+  const canUse = usableInAds(e);
   $("#viewer-body").innerHTML = `
     <div class="viewer-grid">
       <img class="${e.type === "requested" && e.status === "needs_review" ? "warn" : ""}" src="${esc(e.url)}" alt="${esc(e.label)}" />
@@ -352,22 +505,45 @@ async function loadProductImages(h) {
   $("#pi-body").innerHTML = productImages.slice(0, 24).map(imgCard).join("");
   $("#pi-body").querySelectorAll(".img-card").forEach((b) => (b.onclick = () => openImage(productImages[b.dataset.i])));
 }
-$("#pi-open").onclick = async () => { showTab("images"); await imgReady; $("#img-handle").value = handle; $("#img-q").value = ""; $("#img-type").value = ""; runImageSearch(); };
+$("#pi-open").onclick = async () => { imgState = { ...imgDefaults(), product: handle }; showTab("images"); await imgReady; };
 
-let imgList = [], imgShown = 0, imgInit = false, imgTimer = null, imgSeq = 0;
+// The whole list is fetched once per visit to the tab; type chips, product, "usable in ads", search and sort all filter it here (filters.js).
+let imgAll = [], imgState = imgDefaults(), imgList = [], imgShown = 0, imgInit = false, imgTimer = null;
 const IMG_PAGE = 120;
-async function runImageSearch() {
-  const my = ++imgSeq;
-  const qs = new URLSearchParams({ q: $("#img-q").value.trim(), handle: $("#img-handle").value, type: $("#img-type").value });
-  $("#img-count").textContent = "Searching…";
-  try {
-    const list = await api(`/api/images?${qs}`);
-    if (my !== imgSeq) return;
-    imgList = list; imgShown = 0;
-    $("#img-grid").innerHTML = "";
-    $("#img-count").textContent = list.length ? `${list.length} image${list.length === 1 ? "" : "s"}` : "No images match. Try fewer words, or clear the product and type filters.";
-    showMoreImages();
-  } catch (err) { $("#img-count").textContent = err.message; }
+
+function buildImageControls() {
+  $("#img-types").insertAdjacentHTML("beforeend", IMG_GROUPS.map((g) => `<label class="fchip"><input type="checkbox" name="itype" value="${g.key}" /> <span class="t">${esc(g.label)}</span> <span class="n"></span></label>`).join(""));
+  $("#img-sort").innerHTML = IMG_SORTS.map((s) => `<option value="${s.key}">${esc(s.label)}</option>`).join("");
+  $("#img-use").querySelectorAll("option").forEach((o) => (o.dataset.label = o.textContent));
+  $("#img-search").addEventListener("input", (e) => {
+    imgState = readImageControls();
+    clearTimeout(imgTimer);
+    imgTimer = setTimeout(() => { renderImages(); syncHash(); }, e.target.type === "search" ? 150 : 0);
+  });
+  $("#img-search").onsubmit = (e) => e.preventDefault();
+  $("#img-clear").onclick = () => { imgState = imgDefaults(); writeImageControls(); renderImages(); syncHash(); };
+  $("#img-more").onclick = showMoreImages;
+}
+function writeImageControls() {
+  const s = imgState;
+  $("#img-q").value = s.q; $("#img-handle").value = s.product; $("#img-use").value = s.use; $("#img-sort").value = s.sort;
+  $("#img-types").querySelectorAll("input").forEach((i) => (i.checked = s.type.includes(i.value)));
+}
+function readImageControls() {
+  return cleanImgState({ q: $("#img-q").value, product: $("#img-handle").value, use: $("#img-use").value, sort: $("#img-sort").value, type: [...$("#img-types").querySelectorAll("input:checked")].map((i) => i.value) });
+}
+function renderImages() {
+  imgList = sortImages(filterImages(imgAll, imgState), imgState.sort);
+  imgShown = 0;
+  $("#img-grid").innerHTML = "";
+  $("#img-count").textContent = !imgAll.length ? "No images in the library." : imgList.length ? countText(imgList.length, imgAll.length, "image") : "No images match these filters. Try fewer words, or clear the filters.";
+  $("#img-clear").disabled = !activeImgFilters(imgState) && !imgState.sort;
+  const typ = imgFacetCounts(imgAll, imgState, "type");
+  $("#img-types").querySelectorAll("label").forEach((l) => { l.querySelector(".n").textContent = `(${typ[l.querySelector("input").value] || 0})`; });
+  const prod = imgFacetCounts(imgAll, imgState, "product"), use = imgFacetCounts(imgAll, imgState, "use");
+  for (const o of $("#img-handle").options) if (o.value) o.textContent = `${o.dataset.label} (${prod[o.value] || 0})`;
+  for (const o of $("#img-use").options) if (o.value) o.textContent = `${o.dataset.label} (${use[o.value] || 0})`;
+  showMoreImages();
 }
 function showMoreImages() {
   const from = imgShown;
@@ -379,23 +555,18 @@ function showMoreImages() {
 }
 let imgReady = Promise.resolve();
 function initImageLibrary() {
-  if (imgInit) { imgReady = runImageSearch(); return imgReady; } // refresh: new studio images may have arrived
-  imgInit = true;
-  imgReady = setupImageLibrary();
+  if (!imgInit) { imgInit = true; buildImageControls(); }
+  imgReady = refreshImages(); // every visit: new studio images may have arrived
   return imgReady;
 }
-async function setupImageLibrary() {
-  $("#img-type").innerHTML += Object.entries(IMG_TYPES).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
-  try {
-    const all = await api("/api/images");
-    const seen = new Map(all.filter((e) => e.handle).map((e) => [e.handle, e.product || e.handle]));
-    $("#img-handle").innerHTML += [...seen].sort((a, b) => a[1].localeCompare(b[1])).map(([h, t]) => `<option value="${esc(h)}">${esc(t)}</option>`).join("");
-  } catch { /* the search below reports the error */ }
-  $("#img-q").addEventListener("input", () => { clearTimeout(imgTimer); imgTimer = setTimeout(runImageSearch, 250); });
-  $("#img-type").onchange = $("#img-handle").onchange = runImageSearch;
-  $("#img-search").onsubmit = (e) => { e.preventDefault(); runImageSearch(); };
-  $("#img-more").onclick = showMoreImages;
-  await runImageSearch();
+async function refreshImages() {
+  $("#img-count").textContent = "Loading…";
+  try { imgAll = await api("/api/images"); } catch (err) { $("#img-count").textContent = err.message; return; }
+  $("#img-handle").innerHTML = `<option value="">All products</option>` + imgProductOptions(imgAll).map((o) => `<option value="${esc(o.key)}" data-label="${esc(o.label)}">${esc(o.label)}</option>`).join("");
+  writeImageControls();
+  imgState = readImageControls();
+  renderImages();
+  syncHash();
 }
 
 // ---------- new ads: every format, ranked, rendered progressively ----------
@@ -414,12 +585,17 @@ async function hydrate(id) {
     }));
   }
   if (spec.textureSrc) s.textureHref = await dataUrlOf(spec.textureSrc);
+  // The product's own AI images (no upload needed): person, before/after and progress frames from the library's runs. An uploaded photo replaces them.
+  if (spec.personSrc && !up.person) s.personHref = await dataUrlOf(spec.personSrc);
+  if (spec.photoSrcs?.length && !(up.before && up.after)) s.photos = await Promise.all(spec.photoSrcs.map((u) => dataUrlOf(u)));
+  if (spec.frames?.some((f) => f.imageSrc)) s.frames = await Promise.all(spec.frames.map(async (f) => ({ ...f, imageHref: await dataUrlOf(f.imageSrc) })));
   if (up.texture) s.textureHref = up.texture;
   if (up.person) s.personHref = up.person;
   if (up.before && up.after) s.photos = [up.before, up.after];
   // White canvas when every pack is a clean cut-out (as in the library); else the photo's own studio colour.
   const photo = [spec, ...(spec.steps || []), ...(spec.range || [])].find((x) => x.imageSrc && !x.cutout);
   s.canvas = photo ? (await cornerColour(await dataUrlOf(photo.imageSrc))) || "#FFFFFF" : "#FFFFFF";
+  if (spec.textureScene) s.canvas = "#FFFFFF"; // the texture shot sits on white, as in pipeline/08_compose.js
   return s;
 }
 
@@ -794,3 +970,154 @@ $("#image").onchange = async (e) => {
     $("#score-msg").innerHTML = `<span class="err">${esc(err.message)}</span>`;
   }
 };
+
+// ---------- score many ads at once: images and/or a CSV / XLSX of copy, each through the same /api/score (bulk.js) ----------
+let bulkRows = [], bulkRunning = false, bulkStop = false, bulkOrder = 0;
+const BULK_LIMIT = 3, BULK_IMG_MAX = 8 * 1024 * 1024, BULK_ALL_MAX = 400;
+const BULK_DIR = { order: "asc", verdict: "desc", alignment: "desc", win: "desc", findings: "desc", name: "asc" };
+const sheetCache = new Map(); // product_url -> Promise<sheet | null>
+
+$("#bulk-template").onclick = () => download(new Blob([TEMPLATE_CSV], { type: "text/csv" }), "ad_copy_template.csv");
+$("#bulk-files").onchange = (e) => { const files = [...e.target.files]; e.target.value = ""; addBulkFiles(files); };
+const drop = $("#bulk-drop");
+["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", (e) => addBulkFiles([...e.dataTransfer.files]));
+
+const IMG_EXT = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", webp: "image/webp" };
+async function addBulkFiles(files) {
+  const notes = [];
+  let imgs = 0, copy = 0;
+  for (const f of files) {
+    const ext = (f.name.toLowerCase().match(/\.(\w+)$/) || [])[1] || "";
+    try {
+      if (IMG_EXT[ext]) {
+        if (f.size > BULK_IMG_MAX) { notes.push(`${f.name}: over 8 MB, skipped (resize it first).`); continue; }
+        if (bulkRows.length >= BULK_ALL_MAX) { notes.push(`The list is full (${BULK_ALL_MAX} rows); ${f.name} was skipped.`); continue; }
+        bulkRows.push(newBulkRow({ kind: "image", file: f, name: f.name, thumb: URL.createObjectURL(f) })); imgs++;
+      } else if (ext === "csv" || ext === "xlsx") {
+        const table = ext === "csv" ? parseCsv(await f.text()) : await parseXlsx(await f.arrayBuffer());
+        const t = adsFromTable(table);
+        notes.push(...t.problems.map((p) => `${f.name}: ${p}`));
+        if (t.ignored.length) notes.push(`${f.name}: columns not used: ${t.ignored.join(", ")}.`);
+        for (const a of t.ads) {
+          if (bulkRows.length >= BULK_ALL_MAX) { notes.push(`The list is full (${BULK_ALL_MAX} rows); the rest of ${f.name} was skipped.`); break; }
+          bulkRows.push(newBulkRow({ kind: "copy", ad: a.ad, product_url: a.product_url, name: `${f.name} · row ${a.row}`, headline: a.ad.headline })); copy++;
+        }
+      } else notes.push(`${f.name}: not an image, CSV or XLSX file, skipped.`);
+    } catch (err) { notes.push(`${f.name}: ${err.message}`); }
+  }
+  $("#bulk-msg").textContent = [`Added ${imgs} image${imgs === 1 ? "" : "s"} and ${copy} copy row${copy === 1 ? "" : "s"}.`, ...notes].join(" ");
+  renderBulk();
+}
+const newBulkRow = (r) => ({ order: ++bulkOrder, status: "queued", verdict: "", verdictLabel: "", alignment: null, win: null, compliance: "", findings: [], findingCount: 0, headline: "", error: "", note: "", report: null, ...r });
+
+const fileB64 = (file) => new Promise((res, rej) => { const fr = new FileReader(); fr.onload = () => res(String(fr.result).split(",")[1]); fr.onerror = () => rej(new Error("Could not read the file")); fr.readAsDataURL(file); });
+const sheetFor = (url) => { if (!sheetCache.has(url)) sheetCache.set(url, api("/api/extract", { url }).then((r) => r.sheet).catch(() => null)); return sheetCache.get(url); };
+
+async function scoreBulkRow(row) {
+  row.status = "scoring"; row.error = ""; row.note = "";
+  renderBulk();
+  try {
+    let report;
+    if (row.kind === "image") {
+      report = await api("/api/score", { image: await fileB64(row.file), mediaType: IMG_EXT[(row.name.toLowerCase().match(/\.(\w+)$/) || [])[1]] || row.file.type });
+      row.headline = report.transcript?.headline || report.ad?.headline || "";
+    } else {
+      const sheet = row.product_url ? await sheetFor(row.product_url) : null;
+      if (row.product_url && !sheet) row.note = "The product page could not be read, so it was scored without it.";
+      report = await api("/api/score", { ad: row.ad, sheet });
+    }
+    Object.assign(row, summarise(report), { report, status: "done", headline: row.headline || report.ad?.headline || "" });
+  } catch (err) { row.status = "error"; row.error = err.message; }
+  renderBulk();
+}
+
+async function startBulk() {
+  if (bulkRunning) return;
+  // Image rows need the key (the model reads the picture's text); without it they are marked, not sent.
+  for (const r of bulkRows) if (r.status === "needs_key" && llm) r.status = "queued";
+  for (const r of bulkRows) if (r.status === "queued" && r.kind === "image" && !llm) r.status = "needs_key";
+  const todo = bulkRows.filter((r) => r.status === "queued" || r.status === "error");
+  if (!todo.length) { renderBulk(); return; }
+  bulkRunning = true; bulkStop = false;
+  todo.forEach((r) => (r.status = "queued"));
+  renderBulk();
+  await runPool(todo, BULK_LIMIT, scoreBulkRow, () => bulkStop);
+  if (bulkStop) bulkRows.forEach((r) => { if (r.status === "scoring") r.status = "queued"; });
+  bulkRunning = false;
+  renderBulk();
+}
+$("#bulk-start").onclick = startBulk;
+$("#bulk-stop").onclick = () => { bulkStop = true; $("#bulk-stop").disabled = true; };
+$("#bulk-clear").onclick = () => {
+  if (bulkRunning) return;
+  bulkRows.forEach((r) => r.thumb && URL.revokeObjectURL(r.thumb));
+  bulkRows = []; $("#bulk-msg").textContent = ""; renderBulk();
+};
+$("#bulk-csv").onclick = () => download(new Blob([resultsToCsv(bulkRows)], { type: "text/csv" }), "ad-scores.csv");
+$("#bulk-filters").onsubmit = (e) => e.preventDefault();
+$("#bulk-filters").addEventListener("input", () => renderBulk());
+$("#bulk-reset").onclick = () => { $("#bulk-q").value = ""; $("#bulk-verdict").value = ""; $("#bulk-sort").value = "order"; $("#bulk-asc").checked = false; renderBulk(); };
+
+let bulkFrame = 0;
+function renderBulk() { cancelAnimationFrame(bulkFrame); bulkFrame = requestAnimationFrame(drawBulk); }
+// Called when the API key arrives: image rows that were waiting for it can be scored now.
+function updateBulkControls() { if (bulkRows.length) drawBulk(); }
+function drawBulk() {
+  $("#bulk-run").classList.toggle("hidden", !bulkRows.length);
+  if (!bulkRows.length) return;
+  const done = bulkRows.filter((r) => r.status === "done" || r.status === "error").length;
+  const needKey = bulkRows.filter((r) => r.status === "needs_key" && !llm).length;
+  const errors = bulkRows.filter((r) => r.status === "error").length;
+  const queued = bulkRows.filter((r) => ["queued", "error"].includes(r.status) || (r.status === "needs_key" && llm)).length;
+  $("#bulk-bar").max = Math.max(1, bulkRows.length - needKey);
+  $("#bulk-bar").value = done;
+  $("#bulk-prog").textContent = `${done} of ${bulkRows.length - needKey} scored${errors ? ` · ${errors} failed` : ""}${needKey ? ` · ${needKey} image row${needKey === 1 ? "" : "s"} need the API key (top right) to read the image text` : ""}${bulkRunning ? " · working…" : ""}`;
+  const start = $("#bulk-start");
+  start.disabled = bulkRunning || !queued;
+  start.textContent = bulkRunning ? "Scoring…" : done && queued ? `Score the remaining ${queued}` : `Score ${bulkRows.length} ad${bulkRows.length === 1 ? "" : "s"}`;
+  $("#bulk-stop").classList.toggle("hidden", !bulkRunning);
+  $("#bulk-stop").disabled = bulkStop;
+  $("#bulk-clear").disabled = bulkRunning;
+
+  const sortKey = $("#bulk-sort").value;
+  const dir = (BULK_DIR[sortKey] === "desc") !== $("#bulk-asc").checked ? "desc" : "asc";
+  const shown = sortRows(filterRows(bulkRows, { verdict: $("#bulk-verdict").value, q: $("#bulk-q").value }), sortKey, dir);
+  $("#bulk-count").textContent = bulkRows.length ? countText(shown.length, bulkRows.length, "row") : "";
+  $("#bulk-reset").disabled = !$("#bulk-q").value && !$("#bulk-verdict").value && sortKey === "order" && !$("#bulk-asc").checked;
+  const num = (n) => (n == null ? "–" : n);
+  $("#bulk-body").innerHTML = shown.map((r) => {
+    const v = VERDICT_KEYS.find((x) => x.key === r.verdict);
+    const chip = r.status === "done" ? `<span class="chip st-${{ ready: "READY_FOR_REVIEW", fix: "NEEDS_CHANGES", blocked: "BLOCKED", rules: "wait" }[r.verdict] || "wait"}">${esc(v?.label || r.verdictLabel || "–")}</span>` : `<span class="chip ${r.status === "error" || r.status === "needs_key" ? "no" : "st-wait"}">${esc(r.status === "needs_key" ? "Needs the API key" : r.status === "error" ? "Failed" : r.status === "scoring" ? "Scoring…" : "Waiting")}</span>`;
+    const name = `${r.thumb ? `<img class="bthumb" src="${esc(r.thumb)}" alt="" />` : ""}<span class="bname"><b>${esc(r.name)}</b>${r.headline ? `<br><span class="hint">${esc(r.headline.slice(0, 90))}</span>` : ""}</span>`;
+    const finds = r.status === "done" ? (r.findings.length ? `<ul class="bfind">${r.findings.map((f) => `<li>${esc(f)}</li>`).join("")}${r.findingCount > r.findings.length ? `<li class="hint">+ ${r.findingCount - r.findings.length} more</li>` : ""}</ul>` : '<span class="hint">No findings</span>') + (r.note ? `<p class="hint">${esc(r.note)}</p>` : "") : `<span class="hint">${esc(statusText(r))}</span>`;
+    return `<tr data-id="${r.order}" class="brow"><td>${r.order}</td><td><div class="bad">${name}</div></td><td>${chip}</td><td>${r.status === "done" ? num(r.alignment) : "–"}</td><td>${r.status === "done" ? num(r.win) : "–"}</td><td>${r.status === "done" ? esc(r.compliance) : "–"}</td><td>${finds}</td><td><button type="button" class="ghost bopen" data-id="${r.order}" ${r.status === "done" ? "" : "disabled"} aria-label="Open the full report for ${esc(r.name)}">Open</button></td></tr>`;
+  }).join("") || `<tr><td colspan="8" class="hint empty-note">No rows match these filters.</td></tr>`;
+}
+$("#bulk-body").addEventListener("click", (e) => {
+  const tr = e.target.closest("tr[data-id]");
+  const row = tr && bulkRows.find((r) => r.order === Number(tr.dataset.id));
+  if (row?.status === "done") openBulkReport(row);
+});
+function openBulkReport(row) {
+  $("#viewer-body").innerHTML = `<h3>${esc(row.name)}</h3>${row.thumb ? `<p><img class="bpreview" src="${esc(row.thumb)}" alt="${esc(row.name)}" /></p>` : ""}${row.note ? `<p class="hint">${esc(row.note)}</p>` : ""}<div id="bulk-report"></div>`;
+  renderReport(row.report, $("#bulk-report"));
+  $("#viewer").showModal();
+}
+
+// ---------- open straight to a shared view (#...): the tab, the existing-ads filters and the image filters ----------
+async function applyHash() {
+  const p = parseHash(location.hash);
+  imgState = p.images;
+  if (p.lib === "all") await openLibrary("all", { state: p.ads });
+  else if (p.lib === "p") {
+    $("#url").value = `https://beminimalist.co/products/${p.h}`;
+    loadProductImages(p.h);
+    await openLibrary("p", { h: p.h, state: p.ads });
+  }
+  if (p.tab !== currentTab) showTab(p.tab);
+  else if (p.tab === "images") initImageLibrary();
+}
+window.addEventListener("hashchange", applyHash);
+if (location.hash) applyHash();

@@ -1,6 +1,7 @@
 // Local server. No framework: node:http + static files + JSON API.
 //   GET  /                     -> public/index.html
 //   GET  /api/library?handle=  -> the product's existing library ads, grouped by format (read-only, instant)
+//   GET  /api/library-all      -> every product's existing ads as one flat list (the "All ads" view; filtered in the browser)
 //   GET  /library/<path>       -> a PNG / description file under ad_library/ (read-only)
 //   POST /api/extract          {url, refresh?} | {manual:{...}} -> fact sheet (cached per product for 7 days) + live facts
 //   GET  /api/image?src=       (Shopify CDN only)              -> image bytes (same-origin, so PNG export isn't blocked)
@@ -58,7 +59,7 @@ async function handleApi(req, res, url) {
   const q = (k) => url.searchParams.get(k) || "";
   if (url.pathname === "/api/status") {
     const { judgeAvailable } = await lazy("./lib/judge.js");
-    return send(res, 200, { llm: judgeAvailable(), rulesVersion: (await lazy("./lib/rules.js")).RULES.version });
+    return send(res, 200, { openai: Boolean(process.env.OPENAI_API_KEY), llm: judgeAvailable(), rulesVersion: (await lazy("./lib/rules.js")).RULES.version });
   }
   if (req.method === "GET") {
     if (url.pathname === "/api/image") {
@@ -86,6 +87,10 @@ async function handleApi(req, res, url) {
     if (url.pathname === "/api/library") {
       const { libraryFor } = await lazy("./lib/library.js");
       return send(res, 200, libraryFor(q("handle")));
+    }
+    if (url.pathname === "/api/library-all") {
+      const { libraryAll } = await lazy("./lib/library.js");
+      return send(res, 200, libraryAll());
     }
     if (url.pathname === "/api/image-requests") {
       const { imageRequests } = await lazy("./lib/library.js");
@@ -118,6 +123,20 @@ async function handleApi(req, res, url) {
     if (r.status === 401 || r.status === 403) return send(res, 400, { error: "Anthropic rejected this key. Check it was copied in full." });
     process.env.ANTHROPIC_API_KEY = key;
     return send(res, 200, { llm: true });
+  }
+
+  // OpenAI key for images (memory only, localhost only). With a key the server itself makes queued image-studio requests through
+  // the OpenAI Images API; without one the web-ChatGPT worker (npm run studio) stays the way.
+  if (url.pathname === "/api/openai-key") {
+    if (!["127.0.0.1", "::1", "::ffff:127.0.0.1"].includes(req.socket.remoteAddress)) return send(res, 403, { error: "Keys can only be set from this computer." });
+    if (body.clear) { delete process.env.OPENAI_API_KEY; return send(res, 200, { images: false }); }
+    const key = String(body.key || "").trim();
+    if (!/^sk-[A-Za-z0-9_-]{20,}$/.test(key)) return send(res, 400, { error: "That doesn't look like an OpenAI API key (it starts with sk-)." });
+    const { validateOpenAiKey } = await lazy("./lib/image_api.js");
+    const v = await validateOpenAiKey(key);
+    if (!v.ok) return send(res, 400, { error: v.error });
+    process.env.OPENAI_API_KEY = key;
+    return send(res, 200, { images: true });
   }
 
   if (url.pathname === "/api/extract") {
@@ -190,6 +209,18 @@ const server = http.createServer(async (req, res) => {
     send(res, code, { error: e.message });
   }
 });
+
+// Image requests: made here through the OpenAI Images API whenever an OpenAI key is set (checked each time, so a key pasted later works).
+let apiBusy = false;
+setInterval(async () => {
+  if (apiBusy || !process.env.OPENAI_API_KEY) return;
+  apiBusy = true;
+  try {
+    const W = await import("./scripts/image_studio_worker.mjs"), { createApiStudio } = await import("./lib/image_api.js");
+    for (let i = 0; i < 5 && (await W.tick(createApiStudio())); i++);
+  } catch (e) { console.log(`image requests: ${e.message.replace(/sk-[A-Za-z0-9_-]+/g, "[key]")}`); }
+  apiBusy = false;
+}, 5000).unref();
 
 server.listen(PORT, () => {
   console.log(`Minimalist ad tool running at http://localhost:${PORT}`);

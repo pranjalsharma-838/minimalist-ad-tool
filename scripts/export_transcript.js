@@ -25,6 +25,11 @@ const neutralise = (t) => NEUTRAL.reduce((s, [rx, rep]) => s.replace(rx, rep), t
 // and punctuation only — no added goals, facts or instructions (checked by length ratio below).
 const CORR = fs.existsSync("docs/transcript_corrections.json") ? JSON.parse(fs.readFileSync("docs/transcript_corrections.json", "utf8")) : {};
 const DUMP = process.env.DUMP_USER ? [] : null;
+// Explanatory notes (user decision 2026-10-05: "where a workflow was used, explain those prompts a bit, but keep
+// originality"). docs/transcript_notes.json maps a message key → a short note on what that prompt set running. The
+// user's words are never changed by a note; it is shown under the message, marked as added for the submission.
+const NOTES = fs.existsSync("docs/transcript_notes.json") ? JSON.parse(fs.readFileSync("docs/transcript_notes.json", "utf8")) : {};
+const noteFor = (key) => (NOTES[key] ? [`> *Note added for the submission (not part of the original message): ${NOTES[key]}*`, ""] : []);
 // "Start here": the moments the brief says matter most — where an output was wrong, how it was caught, the fix.
 const START_HERE = `## Start here: where things went wrong, and how they were caught
 
@@ -126,7 +131,7 @@ for (const f of files) {
       const c = CORR[key];
       if (c && c.length <= Math.max(redact(q).length * 1.15, redact(q).length + 25)) q = c;
       else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
-      out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", scrubUser(redact(q)), "");
+      out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", scrubUser(redact(q)), "", ...noteFor(key));
       continue;
     }
     const role = e.message?.role || e.type;
@@ -144,11 +149,19 @@ for (const f of files) {
       if (c && c.length <= Math.max(redact(t).length * 1.15, redact(t).length + 25)) t = c;
       else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
     }
-    out.push(`### ${role === "user" ? "User" : "Assistant"}${e.timestamp ? ` · ${e.timestamp.slice(0, 16).replace("T", " ")}` : ""}`, "", role === "user" ? scrubUser(redact(t)) : redact(t), "");
+    out.push(`### ${role === "user" ? "User" : "Assistant"}${e.timestamp ? ` · ${e.timestamp.slice(0, 16).replace("T", " ")}` : ""}`, "", role === "user" ? scrubUser(redact(t)) : redact(t), "", ...(role === "user" ? noteFor(`${e.timestamp}#${n}`) : []));
     n++;
   }
 }
 if (DUMP) { fs.writeFileSync(process.env.DUMP_USER, JSON.stringify(DUMP, null, 1)); console.log(`${DUMP.length} user messages dumped to ${process.env.DUMP_USER}`); }
 if (Object.keys(CORR).length) out[2] = out[2].replace("**Nothing else was removed**", "The user's messages have had **spelling and grammar corrected; wording and content are otherwise unchanged** (nothing added). **Nothing else was removed**");
-fs.writeFileSync("docs/TRANSCRIPT.md", out.join("\n"));
+// Catch-all (user, 2026-10-05: "remove every client-brand mention", transcript included): any stray mention of the
+// internal client anywhere in the transcript becomes "the target brand".
+const clientWord = new RegExp(`\\b${CLIENT}(us)?\\b`, "gi");
+// Same pass: every email address and anything typed as a password/passcode becomes [redacted] (user, 2026-10-05).
+const scrubbed = out.join("\n")
+  .replace(clientWord, "the target brand").replace(/\b(the|our|an?) the target brand\b/gi, "the target brand")
+  .replace(/[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9.-]{1,100}\.[A-Za-z]{2,10}/g, (m) => (/noreply\.github\.com$/i.test(m) ? m : "[email redacted]"))
+  .replace(/\b(pass(word|code|wd)?|pwd)\s*(is|:|=|-)\s*\S+/gi, "$1 [redacted]");
+fs.writeFileSync("docs/TRANSCRIPT.md", scrubbed);
 console.log(`${n} messages → docs/TRANSCRIPT.md`);

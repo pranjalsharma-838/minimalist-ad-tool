@@ -19,3 +19,6 @@ Turns a product page into a checked, on-brand static ad, and scores any ad for c
 - `ad_library/index.html` is every ad made, with a Trending section on top. Open it in a browser.
 - `prompts/` holds every prompt the tool uses.
 - `pipeline/RUNBOOK.md` explains how to run the ad library pipeline.
+
+
+Run on any computer: put ANTHROPIC_API_KEY and OPENAI_API_KEY in .env, npm start; no ChatGPT browser needed. (Or paste the keys in the app header; they stay in server memory only.) With an OpenAI key the server makes queued image requests itself through the OpenAI Images edit API (the real pack photo attached, 1024x1536, same label check and up to 3 rounds); without one, `npm run studio` and the ChatGPT window stay the way.

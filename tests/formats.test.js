@@ -5,7 +5,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import { verbatimCopy, formatOptions, specFromCopy, adFromCopy, pickQuote, pickStat, allFormats, formatItem } from "../lib/generate.js";
-import { FORMATS, buildFormat, listFormats, packVisual } from "../lib/app_formats.js";
+import { FORMATS, buildFormat, listFormats, packVisual, textureScene } from "../lib/app_formats.js";
+import { imageFile } from "../lib/images.js";
 import { addLiveFacts } from "../lib/live_facts.js";
 import { libraryFor, imageRequests } from "../lib/library.js";
 import { layoutProblems, renderAdSvg } from "../public/render.js";
@@ -102,7 +103,8 @@ test("drafts show placeholders on the image but never score them", () => {
 });
 
 test("people and before/after photos carry the AI mark and Severe risk, like the library", () => {
-  const s = sheet("salicylic-acid-2"), copy = verbatimCopy(s);
+  // A product with no AI person image in the library still asks for a photo; the product used here has none.
+  const s = sheet("light-fluid-spf-50-sunscreen"), copy = verbatimCopy(s);
   const empty = buildFormat("person", copy, s);
   assert.equal(empty.meta.status, "needs_input");
   assert.equal(empty.meta.risk, "severe");
@@ -114,6 +116,72 @@ test("people and before/after photos carry the AI mark and Severe risk, like the
   const ba = buildFormat("before_after", copy, s, { before_after: { photos: { before: true, after: true } } });
   assert.equal(ba.spec.aiLabel, true);
   assert.deepEqual(ba.layout, []);
+  assert.equal(buildFormat("before_after", copy, s).meta.status, "needs_input", "no AI frames and no upload: still asks for the photos");
+  assert.equal(buildFormat("timeline", copy, s).notFit.length > 10, true, "no AI progress frames for this product: not offered, with a reason");
+});
+
+// User, 2026-10-05: ads made in the app use our AI images, without asking for uploads.
+const servable = (u) => { assert.ok(u.startsWith("/img/"), u); assert.ok(imageFile(decodeURIComponent(u.slice(5))), `not servable: ${u}`); };
+
+test("texture format uses the approved ChatGPT texture shot, Low risk, with the AI mark (DEC-04)", () => {
+  for (const h of HANDLES) {
+    const s = sheet(h), copy = verbatimCopy(s);
+    const t = buildFormat("texture", copy, s);
+    assert.equal(t.meta.status, "ready", h);
+    assert.equal(t.spec.textureScene, true);
+    assert.equal(t.spec.aiLabel, true);
+    assert.equal(t.spec.cutout, false);
+    assert.match(t.spec.imageSrc, /\/ai_renders\/[^/]+\/texture\d\.png$/);
+    servable(t.spec.imageSrc);
+    assert.equal(t.meta.risk, "low");
+    assert.match(t.meta.risk_note, /DEC-04/);
+    assert.deepEqual(t.layout, []);
+    assert.equal(t.meta.photos.length, 0, "no upload asked for");
+    assert.ok(renderAdSvg({ ...t.spec, imageHref: "data:image/png;base64,AAAA" }).includes("AI-GENERATED"), "the AI mark is drawn");
+    assert.match(t.ad.footnote, /AI illustration/);
+  }
+  // not an approved shot (or no shot): falls back to the real texture photo / an upload, never an unapproved image
+  assert.equal(textureScene("not-a-product"), null);
+  assert.equal(textureScene("../x"), null);
+});
+
+test("person, creator, before/after and timeline reuse the product's AI images (AI mark, Severe), no upload needed", () => {
+  const s = sheet("niacinamide-10-with-matmarine"), copy = verbatimCopy(s);
+  for (const id of ["person", "creator"]) {
+    const b = buildFormat(id, copy, s);
+    assert.equal(b.meta.status, "ready", id);
+    assert.equal(b.meta.risk, "severe");
+    assert.equal(b.spec.aiLabel, true);
+    assert.match(b.spec.personSrc, /\/pipeline\/runs\/[^/]+\/backgrounds\/niacinamide-10-with-matmarine__t\d+\.person\.png$/);
+    servable(b.spec.personSrc);
+    assert.ok(b.meta.photos.every((p) => /^Optional/.test(p.label)), "an upload is only an optional replacement");
+    // an uploaded photo takes over from the AI image
+    const own = buildFormat(id, copy, s, { [id]: { photos: { person: true } } });
+    assert.equal(own.spec.personSrc, undefined);
+    assert.equal(own.spec.aiLabel, true);
+  }
+  assert.match(buildFormat("creator", copy, s).spec.personSrc, /__t31\.person\.png$/, "creator posts prefer the selfie-style image");
+  const ba = buildFormat("before_after", copy, s);
+  assert.equal(ba.meta.status, "ready");
+  assert.equal(ba.spec.photoSrcs.length, 2);
+  ba.spec.photoSrcs.forEach(servable);
+  assert.deepEqual(ba.layout, []);
+  assert.equal(ba.meta.risk, "severe");
+  const tl = buildFormat("timeline", copy, s);
+  assert.equal(tl.spec.layout, "timeline");
+  assert.equal(tl.meta.status, "ready");
+  assert.equal(tl.meta.risk, "severe");
+  assert.equal(tl.spec.aiLabel, true);
+  assert.equal(tl.spec.packInFrames, true);
+  assert.ok(tl.spec.frames.length >= 2 && tl.spec.frames.every((f) => f.label && f.imageSrc));
+  tl.spec.frames.forEach((f) => servable(f.imageSrc));
+  assert.deepEqual(tl.layout, []);
+  assert.match(tl.ad.footnote, /not real results/);
+  // frames always come from one run
+  assert.equal(new Set(tl.spec.frames.map((f) => f.imageSrc.match(/runs\/([^/]+)\//)[1])).size, 1);
+  // the one-call listing offers them without asking for anything
+  const { built } = listFormats(copy, s);
+  for (const id of ["person", "creator", "before_after", "timeline", "texture"]) assert.equal(built.find((b) => b.id === id)?.meta.status, "ready", id);
 });
 
 test("AI-drafted lines keep citations only while they check out against the page", () => {

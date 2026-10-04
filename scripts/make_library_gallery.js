@@ -36,7 +36,10 @@ const products = [...new Set(ads.map((a) => a.product))];
 const TR = fs.existsSync("research/trending.json") ? JSON.parse(fs.readFileSync("research/trending.json", "utf8")) : null;
 const tid = (a) => Number((a.format.match(/^#(\d+)/) || [])[1]);
 const trendRow = (t) => {
-  const ours = ads.filter((a) => a.run === "trending" && tid(a) === t.template_id);
+  // Our versions: the trending run's recreations first, then the same format made in any later batch (no "not made yet"
+  // when the format exists; user 2026-10-05: nothing pending).
+  const all = ads.filter((a) => tid(a) === t.template_id);
+  const ours = [...all.filter((a) => a.run === "trending"), ...all.filter((a) => a.run !== "trending")].slice(0, 4);
   const refs = t.ads.filter((x, i, all) => all.findIndex((y) => y.brand === x.brand) === i).slice(0, 4);
   return `<div class="trow"><div class="tinfo"><h3>#${t.template_id} ${esc(t.name)}</h3><p><b>${t.brands.length} brands</b> · ${t.ads.length} ads · newest ${t.ads[0].days} days ago</p><p class="tb">${esc(t.brands.join(", "))}</p></div>
   <div class="trefs">${refs.map((x) => `<a href="${esc(x.url)}" target="_blank" title="${esc(x.one_line)}"><img loading="lazy" src="../${esc(x.image_file)}" alt="${esc(x.brand)}"><span>${esc(x.brand)} · ${x.days}d</span></a>`).join("")}</div>
@@ -50,7 +53,7 @@ const scoreRow = (a) => {
   if (!s) return "";
   return `<p class="scores" title="Reviewed by: ${esc(s.reviewed_by)}"><b>Align ${s.alignment ?? "—"}</b> · <b>Win ${s.win ?? "—"}</b> · <b>Compliance ${s.compliance ?? "—"}</b> <span class="v">${esc(s.verdict_label)}</span></p>`;
 };
-const card = (a) => `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}">
+const card = (a) => { const s = SCORES[path.basename(a.png, ".png")] || {}; return `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}" data-format="${esc(a.format)}" data-verdict="${s.verdict || ""}" data-export="${a.exportable ? "yes" : "no"}" data-align="${s.alignment ?? ""}" data-win="${s.win ?? ""}" data-comp="${s.compliance ?? ""}" data-text="${esc(`${a.title} ${a.format} ${a.product} ${a.angle || ""}`.toLowerCase())}">
   <a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a>
   <div class="meta">
     <div class="row"><span class="risk ${a.risk}">${a.risk}</span>${a.exportable ? '<span class="ok">exportable after review</span>' : '<span class="no">not exportable</span>'}${a.ai ? '<span class="aib">AI people</span>' : ""}<span class="run">${esc(a.run)}</span></div>
@@ -60,7 +63,7 @@ const card = (a) => `<article class="card" data-product="${esc(a.product)}" data
     ${scoreRow(a)}
     <p class="links">Download: <a href="${esc(a.png)}" download>1:1</a>${a.extras.map((x) => ` · <a href="${esc(x.f)}" download>${esc(x.tag)}</a>`).join("")} · <a href="${esc(a.md)}" target="_blank">description</a></p>
   </div>
-</article>`;
+</article>`; };
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ad Library Review</title>
 <style>
@@ -70,6 +73,7 @@ header{padding:28px 24px 8px;max-width:1400px;margin:auto}h1{margin:0 0 6px;font
 .filters{display:flex;flex-wrap:wrap;gap:8px;padding:16px 24px;max-width:1400px;margin:auto}
 .filters button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit}
 .filters button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.filters{align-items:center}.filters input[type=search],.filters select{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font:inherit;background:#fff}.filters input[type=search]{min-width:240px}.filters label{display:flex;align-items:center;gap:6px;font-size:13px}#cnt{font-size:13px;color:#666;margin-left:auto}.scores{font-size:12px;margin:4px 0}.scores .v{color:#666}
 main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;padding:8px 24px 40px;max-width:1400px;margin:auto}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}.card img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#eee}
 .meta{padding:12px 14px 14px}.meta h3{margin:6px 0 2px;font-size:16px}.prod,.angle{margin:0;color:var(--muted);font-size:13px}.links{margin:8px 0 0;font-size:13px}
@@ -86,16 +90,28 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:
 </style></head><body>
 <header><h1>Ad library review</h1><p>${ads.length} ads · internal test (Minimalist is the test brand) · every claim cites a source; the product is the real pack shot, never AI-drawn. Click an image for full size; 4:5 / 9:16 / language versions and each ad's description are linked under it.</p></header>
 ${trending}
-<div class="filters" id="f"><button class="on" data-p="*">All products</button>${products.map((p) => `<button data-p="${esc(p)}">${esc(p)}</button>`).join("")}
-<span style="width:16px"></span><button class="on" data-r="*">All risk</button>${["low", "medium", "high", "severe"].map((r) => `<button data-r="${r}">${r}</button>`).join("")}<span style="width:16px"></span><button class="on" data-a="*">All imagery</button><button data-a="yes">AI-generated people (${ads.filter((a) => a.ai).length})</button><button data-a="no">No AI people</button></div>
+<div class="filters" id="f">
+<input id="q" type="search" placeholder="Search headline, format, product…" aria-label="Search">
+<select id="fp" aria-label="Product"><option value="">All products</option>${products.map((p) => `<option>${esc(p)}</option>`).join("")}</select>
+<select id="ff" aria-label="Format"><option value="">All formats</option>${[...new Set(ads.map((a) => a.format))].sort().map((x) => `<option>${esc(x)}</option>`).join("")}</select>
+<select id="fv" aria-label="Verdict"><option value="">Any verdict</option><option value="READY_FOR_REVIEW">Ready for review</option><option value="LIMITED_CHECK">Ready (limited check)</option><option value="NEEDS_CHANGES">Needs fixes</option><option value="BLOCKED">Blocked</option></select>
+<select id="fr" aria-label="Risk"><option value="">Any risk</option>${["low", "medium", "high", "severe"].map((r) => `<option>${r}</option>`).join("")}</select>
+<select id="fe" aria-label="Exportable"><option value="">Exportable or not</option><option value="yes">Exportable after review</option><option value="no">Not exportable</option></select>
+<select id="fa" aria-label="AI people"><option value="">Any imagery</option><option value="no">No AI people</option><option value="yes">AI people (Severe)</option></select>
+<label>Min alignment <input id="ma" type="range" min="0" max="100" step="5" value="0"><b id="mav">0</b></label>
+<label>Min win <input id="mw" type="range" min="0" max="100" step="5" value="0"><b id="mwv">0</b></label>
+<select id="so" aria-label="Sort"><option value="">Sort: product</option><option value="align">Best alignment</option><option value="win">Best win</option><option value="comp">Best compliance</option></select>
+<button id="clr" type="button">Clear</button><span id="cnt"></span></div>
 <main id="g">${ads.map(card).join("\n")}</main>
 <script>
-let P="*",R="*",A="*";const f=document.getElementById("f");
-f.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
-if(b.dataset.p){P=b.dataset.p;f.querySelectorAll("[data-p]").forEach(x=>x.classList.toggle("on",x===b))}
-if(b.dataset.r){R=b.dataset.r;f.querySelectorAll("[data-r]").forEach(x=>x.classList.toggle("on",x===b))}
-if(b.dataset.a){A=b.dataset.a;f.querySelectorAll("[data-a]").forEach(x=>x.classList.toggle("on",x===b))}
-document.querySelectorAll(".card").forEach(c=>{c.style.display=(P==="*"||c.dataset.product===P)&&(R==="*"||c.dataset.risk===R)&&(A==="*"||c.dataset.ai===A)?"":"none"})});
+const $=id=>document.getElementById(id),g=$("g"),cards=[...document.querySelectorAll(".card")];
+function apply(){const q=$("q").value.trim().toLowerCase(),ma=+$("ma").value,mw=+$("mw").value;$("mav").textContent=ma;$("mwv").textContent=mw;let n=0;
+for(const c of cards){const d=c.dataset;const ok=(!q||d.text.includes(q))&&(!$("fp").value||d.product===$("fp").value)&&(!$("ff").value||d.format===$("ff").value)&&(!$("fv").value||d.verdict===$("fv").value)&&(!$("fr").value||d.risk===$("fr").value)&&(!$("fe").value||d.export===$("fe").value)&&(!$("fa").value||d.ai===$("fa").value)&&(+d.align||0)>=ma&&(+d.win||0)>=mw;c.style.display=ok?"":"none";if(ok)n++}
+const k={align:"align",win:"win",comp:"comp"}[$("so").value];if(k)cards.slice().sort((a,b)=>(+b.dataset[k]||0)-(+a.dataset[k]||0)).forEach(c=>g.appendChild(c));else cards.forEach(c=>g.appendChild(c));
+$("cnt").textContent=n+" of "+cards.length+" ads";location.hash=new URLSearchParams([...document.querySelectorAll("#f input,#f select")].filter(e=>e.id&&e.value&&e.value!=="0").map(e=>[e.id,e.value])).toString()}
+document.querySelectorAll("#f input,#f select").forEach(e=>e.addEventListener("input",apply));
+$("clr").onclick=()=>{document.querySelectorAll("#f input,#f select").forEach(e=>e.value=e.type==="range"?0:"");apply()};
+new URLSearchParams(location.hash.slice(1)).forEach((v,k)=>{if($(k))$(k).value=v});apply();
 </script></body></html>`;
 fs.writeFileSync(path.join(ROOT, "index.html"), html);
 console.log(`${ads.length} ads → ad_library/index.html (${ads.filter((a) => !a.exportable).length} not exportable)`);
