@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Use after cleansing, toning and applying all serums. AM & PM, every day. D-Panthenol USP from BASF, Germany Lightweight, oil-free moisturizer Suitable for 16+ years of age 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Use after cleansing, toning and applying all serums. AM & PM, every day. D-Panthenol USP from BASF, Germany. Lightweight, oil-free moisturizer. Suitable for 16+ years of age. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

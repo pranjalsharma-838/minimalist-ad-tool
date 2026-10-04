@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Ethyl Ascorbic Acid, 86% pure Vitamin C content. Press in with a circular motion and let skin absorb it. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02 PHA gently removes dead skin cells for a glow Formulated in Centella Water to soothe
+Ethyl Ascorbic Acid, 86% pure Vitamin C content. Press in with a circular motion and let skin absorb it. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02. PHA gently removes dead skin cells for a glow. Formulated in Centella Water to soothe.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - callouts.0.text: "Ethyl Ascorbic Acid, 86% pure Vitamin C content" → "Ethyl Ascorbic Acid" ("86% pure Vitamin C content" next to a 10% serum reads as the serum's strength (flagged as misleading by ambiguity by the independent eval reviewer, ASCI 1.4); the full line moves to the caption)

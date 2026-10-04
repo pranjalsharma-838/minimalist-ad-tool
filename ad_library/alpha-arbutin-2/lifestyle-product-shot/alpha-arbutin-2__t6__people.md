@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Apply after cleansing & toning. Use sunscreen during the day. AM & PM, every day Alpha Arbutin from Alfa Aesar, USA Suitable for 18+ years of age 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
+Apply after cleansing & toning. Use sunscreen during the day. AM & PM, every day. Alpha Arbutin from Alfa Aesar, USA. Suitable for 18+ years of age. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

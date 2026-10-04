@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-2% Salicylic Acid, a daily gentle exfoliant Apply 2-3 drops after cleansing & toning, in the PM. 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+2% Salicylic Acid, a daily gentle exfoliant. Apply 2-3 drops after cleansing & toning, in the PM. 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02. Offer as on beminimalist.co on 2026-10-02. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

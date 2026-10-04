@@ -17,6 +17,8 @@ fs.mkdirSync(path.join(runDir, "finals"), { recursive: true });
 
 const ASSETS = JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/index.json", "utf8")).assets;
 const STUDIO = fs.existsSync("brand_packs/minimalist/assets/studio_bg.json") ? JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/studio_bg.json", "utf8")) : {};
+// Each pack's thin label-line colour (scripts sample it from the pack shot), used by the ingredient lockup.
+const ACCENT = fs.existsSync("brand_packs/minimalist/assets/accent_colours.json") ? JSON.parse(fs.readFileSync("brand_packs/minimalist/assets/accent_colours.json", "utf8")) : {};
 const dataUrl =(buf, type) => `data:${type};base64,${buf.toString("base64")}`;
 const cache = new Map();
 async function packShot(src) {
@@ -49,7 +51,8 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
     return href;
   };
   spec.imageHref = cut(main) || (await packShot(spec.imageSrc));
-  for (const s of [...spec.steps, ...spec.range]) s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc));
+  spec.accent = ACCENT[main] || "";
+  for (const s of [...spec.steps, ...spec.range]) { s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc)); s.accent = ACCENT[s.product_handle] || ""; }
   // Minimal look (2026-10-04): white canvas. A pack without a clean cut-out (white packs on the grey sweep) would
   // show as a grey box on white, so the canvas takes that photo's own studio grey (scripts/studio_bg.py) instead.
   const noCut = [main, ...[...spec.steps, ...spec.range].map((s) => s.product_handle)].filter((h) => h && !ASSETS.some((x) => x.product_handle === h && x.cutout && fs.existsSync(x.cutout)));

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Paired with Matmarine, which supports hydration. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
+Paired with Matmarine, which supports hydration. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - subhead: "Paired with Matmarine, which supports hydration." → "" (22 > 20 words; the Matmarine line moves to the caption)

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-A daily, gentle exfoliating face cleanser with BHA + LHA. Ratings from beminimalist.co (Yotpo), captured 2026-10-02 Oily/combination, acne-prone AM & PM, every day
+A daily, gentle exfoliating face cleanser with BHA + LHA. Ratings from beminimalist.co (Yotpo), captured 2026-10-02. Oily/combination, acne-prone. AM & PM, every day.
 
 ## Facts cited (from the product page)
 ```json

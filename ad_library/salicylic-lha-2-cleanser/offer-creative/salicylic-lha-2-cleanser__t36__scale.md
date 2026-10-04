@@ -19,14 +19,17 @@
 | Run | 2026-10-03-scale |
 
 ## Copy on the creative
-- Offer: Buy 2, Get 3rd Free · The 3rd product is free when you buy 2. T&C apply.
+- Offer: Buy 2, Get 3rd Free · T&C apply.
 
 
 - Footnote: T&C apply. Third item free on buying 2.
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Morning rush? Lather on a wet face and rinse thoroughly 100ml: Rs. 269 (MRP Rs. 299), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+The 3rd product is free when you buy 2. T&C apply. Morning rush? Lather on a wet face and rinse thoroughly. 100ml: Rs. 269 (MRP Rs. 299), beminimalist.co, captured 2026-10-02. Offer as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
+
+## Style edits (cuts only; the replaced line moved to the caption)
+- offer.condition: "The 3rd product is free when you buy 2. T&C apply." → "T&C apply." (the condition restated the offer line; the ingredient lockup now names the product)
 
 ## Facts cited (from the product page)
 ```json

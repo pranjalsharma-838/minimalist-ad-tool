@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off. SPF 50 is the last step of your morning routine 50g: Rs. 359 (MRP Rs. 399), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off. SPF 50 is the last step of your morning routine. 50g: Rs. 359 (MRP Rs. 399), beminimalist.co, captured 2026-10-02. Offer as on beminimalist.co on 2026-10-02. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - offer.line: "Build Your Own Bundle — Save an additional up to 15% off" → "Build Your Own Bundle: up to 15% off" (offer title 11 > 8 words)

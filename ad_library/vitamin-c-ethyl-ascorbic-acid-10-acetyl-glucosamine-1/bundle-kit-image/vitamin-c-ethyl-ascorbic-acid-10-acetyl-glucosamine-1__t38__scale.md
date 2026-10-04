@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Vitamin C goes on after cleansing and toning; sunscreen follows on a cleansed face in the AM. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+Vitamin C goes on after cleansing and toning; sunscreen follows on a cleansed face in the AM. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

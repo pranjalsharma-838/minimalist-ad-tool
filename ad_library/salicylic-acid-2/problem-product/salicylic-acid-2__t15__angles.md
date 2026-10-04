@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02 Apply 2-3 drops after cleansing & toning Recommended for combination/oily skin
+4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02. Apply 2-3 drops after cleansing & toning. Recommended for combination/oily skin.
 
 ## Facts cited (from the product page)
 ```json

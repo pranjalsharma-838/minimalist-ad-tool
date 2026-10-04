@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-10% Vitamin C, boosted with PHA suited to sensitive skin. Ethyl Ascorbic Acid with 86% pure Vitamin C content Skin type: all skin types Apply 2-3 drops AM & PM after cleansing & toning 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+10% Vitamin C, boosted with PHA suited to sensitive skin. Ethyl Ascorbic Acid with 86% pure Vitamin C content. Skin type: all skin types. Apply 2-3 drops AM & PM after cleansing & toning. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "10% Vitamin C, boosted with PHA suited to sensitive skin" → "10% Vitamin C, boosted with PHA" (headline 10 > 8 words)

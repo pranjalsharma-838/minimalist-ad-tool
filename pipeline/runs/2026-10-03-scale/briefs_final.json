@@ -1689,7 +1689,7 @@
     "range": [],
     "offer": {
       "line": "Buy 2, Get 3rd Free",
-      "condition": "The 3rd product is free when you buy 2. T&C apply.",
+      "condition": "T&C apply.",
       "valid_till": ""
     },
     "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. Third item free on buying 2. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
@@ -1754,7 +1754,16 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "caption": "The 3rd product is free when you buy 2. T&C apply.",
+    "style_edits": [
+      {
+        "field": "offer.condition",
+        "from": "The 3rd product is free when you buy 2. T&C apply.",
+        "to": "T&C apply.",
+        "why": "the condition restated the offer line; the ingredient lockup now names the product"
+      }
+    ]
   },
   {
     "ad_type": "other",

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-10% Niacinamide serum for oily, acne-prone skin With Matmarine and Zinc. Use AM & PM, every day. 30ml: Rs. 539, MRP Rs. 599 Offers as on beminimalist.co, 2026-10-02. Price shown for 30ml.
+10% Niacinamide serum for oily, acne-prone skin. With Matmarine and Zinc. Use AM & PM, every day. 30ml: Rs. 539, MRP Rs. 599. Offers as on beminimalist.co, 2026-10-02. Price shown for 30ml.
 
 ## Facts cited (from the product page)
 ```json

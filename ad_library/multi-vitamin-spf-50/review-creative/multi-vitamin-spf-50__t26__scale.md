@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Broad Spectrum SPF 50, PA++++, in a moisturiser-meets-sunscreen formula. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+Broad Spectrum SPF 50, PA++++, in a moisturiser-meets-sunscreen formula. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

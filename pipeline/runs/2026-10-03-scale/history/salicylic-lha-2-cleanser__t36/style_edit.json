@@ -1,0 +1,83 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "salicylic-lha-2-cleanser__t36",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Morning rush? Lather on a wet face and rinse thoroughly",
+  "subhead": "100ml: Rs. 269 (MRP Rs. 299), beminimalist.co, captured 2026-10-02",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "The 3rd product is free when you buy 2. T&C apply.",
+    "valid_till": ""
+  },
+  "footnote": "Offer as on beminimalist.co on 2026-10-02. T&C apply. Third item free on buying 2. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02",
+  "cta": "Shop now",
+  "citations": {
+    "headline": [
+      "F13",
+      "F14"
+    ],
+    "subhead": [
+      "PRICE1"
+    ],
+    "proof_points": [],
+    "footnote": [
+      "OFFER3",
+      "RATING"
+    ]
+  },
+  "layout_description": "Offer sticker top-right with its condition line beneath. Headline top-left, price line below it with the MRP struck through beside the page price. Real pack shot right. Seasonal kicker slot left empty as a placeholder. Diagonal CTA strip at the bottom, footnote beneath.",
+  "image_prompt": "Empty background scene only: a pale colour-blocked backdrop of soft sage and cream panels with a faint damp-glass texture, gentle light. Off-white, soft natural light, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "adaptation_notes": "Kept: sticker lockup (Chemist at Play), MRP vs price pair and diagonal CTA strip (Conscious Chemist), seasonal kicker slot as a placeholder (Foxtale). Dropped: promo code, countdown, three-SKU stack. Situation: AM and PM use per F13/F14. Offer quoted exactly; eligibility and end date are placeholders.",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "sticker lockup as the focal element"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "struck MRP vs price pair and diagonal CTA strip"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "kicker slot above the headline (placeholder)"
+    }
+  ],
+  "angle": "offer_value",
+  "hook_type": "offer",
+  "product_handle": "salicylic-lha-2-cleanser",
+  "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-2% Salicylic Acid + LHA in a daily face cleanser. BHA + LHA give deep cleansing, pore decongestion and a less oily look without drying out the skin. 2 mild sulfate-free surfactants, no stripping of skin lipids Zinc and Panthenol (Vitamin B5) for a hydrating after-feel For oily/combination, acne-prone skin 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+2% Salicylic Acid + LHA in a daily face cleanser. BHA + LHA give deep cleansing, pore decongestion and a less oily look without drying out the skin. 2 mild sulfate-free surfactants, no stripping of skin lipids. Zinc and Panthenol (Vitamin B5) for a hydrating after-feel. For oily/combination, acne-prone skin. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "2% Salicylic Acid + LHA in a daily face cleanser" → "A daily face cleanser" (headline 9 > 8 words; the product name line under the title carries 2% Salicylic Acid + LHA)

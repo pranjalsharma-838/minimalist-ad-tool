@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Step 1 · Cleanse: Light lather on a wet face, then rinse thoroughly Step 2 · Serum: 2-3 drops after cleansing & toning, AM & PM Step 3 · Sunscreen: Broad Spectrum SPF 50, PA++++; apply in the AM Alpha Arbutin 2% Face Serum: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
+Step 1 · Cleanse: Light lather on a wet face, then rinse thoroughly. Step 2 · Serum: 2-3 drops after cleansing & toning, AM & PM. Step 3 · Sunscreen: Broad Spectrum SPF 50, PA++++; apply in the AM. Alpha Arbutin 2% Face Serum: 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

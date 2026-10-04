@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Step 1 · Cleanse: AM & PM: light lather on a wet face, then rinse Step 2 · Serum: 2-3 drops after cleansing & toning; let it absorb fully Step 3 · Sunscreen: Apply at least 15 minutes before sun exposure Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+Step 1 · Cleanse: AM & PM: light lather on a wet face, then rinse. Step 2 · Serum: 2-3 drops after cleansing & toning; let it absorb fully. Step 3 · Sunscreen: Apply at least 15 minutes before sun exposure. Salicylic Acid + LHA 2% Cleanser: 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

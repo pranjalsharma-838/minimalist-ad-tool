@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-A daily serum with high purity Alpha Arbutin, applied AM and PM after cleansing & toning. Alpha Arbutin sourced from Alfa Aesar, USA Apply 2-3 drops after cleansing & toning Suitable for 18+ years of age 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
+A daily serum with high purity Alpha Arbutin, applied AM and PM after cleansing & toning. Alpha Arbutin sourced from Alfa Aesar, USA. Apply 2-3 drops after cleansing & toning. Suitable for 18+ years of age. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

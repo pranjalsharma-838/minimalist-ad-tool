@@ -8,7 +8,7 @@
 // Usage: node scripts/style_check.js [run ...]   → research/style_check.json + summary on screen (exit 1 if any fail)
 import fs from "node:fs";
 import path from "node:path";
-import { leanBrief } from "../lib/brief_check.js";
+import { leanBrief, lockupFor, lockupText, itemLockup } from "../lib/brief_check.js";
 import { wrap } from "../public/render.js";
 
 const RUNS = /^2026-10-0[34]-(pilot|scale|transformation|angles|people|usvsthem|trending)$/;
@@ -17,14 +17,18 @@ const runs = process.argv.slice(2).length ? process.argv.slice(2) : fs.readdirSy
 export const words = (s) => (String(s || "").match(/[\p{L}\p{N}][\p{L}\p{N}%₹+'’.,-]*/gu) || []).length;
 const LIST_LAYOUTS = new Set(["actives", "journey", "range", "timeline", "splitscreen", "callouts", "badges", "spec", "faq", "oldnew", "thisvsthat", "usvsthem", "before_after"]);
 
-export function styleIssues(b0) {
+export function styleIssues(b0, sheets = {}) {
   const b = leanBrief(b0);
   const offerTitle = ["offer"].includes(b.layout) && b.offer?.line;
-  const parts = [offerTitle ? b.offer.line : b.headline, b.subhead, b.tag, offerTitle ? b.offer.condition : "", b.stat ? `${b.stat.value} ${b.stat.label}` : "", b.review?.quote,
+  // Count only what each layout draws: the subhead appears on these layouts alone (render.js).
+  const drawsSub = ["hero", "offer", "stat", "native", "usvsthem", "question"].includes(b.layout || "hero");
+  const parts = [offerTitle ? b.offer.line : b.headline, drawsSub ? b.subhead : "", b.tag, offerTitle ? b.offer.condition : "", b.stat ? `${b.stat.value} ${b.stat.label}` : "", b.review?.quote,
     b.faq ? `${b.faq.question} ${b.faq.answer}` : "", b.layout === "question" ? `${b.question || ""} ${b.answer || ""}` : "",
     ...(b.actives || []).map((a) => `${a.name} ${a.line}`), ...(b.steps || []).map((s) => `${s.label || ""} ${s.line || ""}`), ...(b.callouts || []).map((c) => c.text),
     ...(b.badges || []).map((x) => x.text), ...(b.specs || []).map((x) => `${x.label} ${x.value}`), ...(b.frames || []).map((x) => x.label), ...(b.range || []).map((x) => x.label),
-    ...(b.compare ? [b.compare.us, b.compare.them, ...(b.compare.rows || []).map((r) => `${r.label} ${r.us} ${r.them}`)] : [])];
+    ...(b.compare ? [b.compare.us, b.compare.them, ...(b.compare.rows || []).map((r) => `${r.label} ${r.us} ${r.them}`)] : []),
+    // The ingredient lockup (active + %) counts too: on the main layout and under each pack in routines and ranges.
+    lockupText(lockupFor(b, sheets[b0.product_handle])), ...[...(b.steps || []), ...(b.range || [])].map((x) => { const a = sheets[x.product_handle]?.actives?.[0]; return lockupText(itemLockup(x.label, a?.pct ? { name: a.name, pct: a.pct } : null)); })];
   const onImage = parts.reduce((n, p) => n + words(p), 0);
   const limit = LIST_LAYOUTS.has(b.layout) ? 30 : 20;
   const head = offerTitle ? b.offer.line : b.headline;
@@ -44,7 +48,9 @@ if (process.argv[1] && path.resolve(process.argv[1]) === path.resolve("scripts/s
   for (const run of runs) {
     const f = path.join("pipeline/runs", run, "briefs_final.json");
     if (!fs.existsSync(f)) continue;
-    for (const b of JSON.parse(fs.readFileSync(f, "utf8")).filter((x) => ["approved_for_image_step", "kept_with_warnings"].includes(x.status))) rows.push({ run, id: b.source_ad_id, ...styleIssues(b) });
+    const pdir = path.join("pipeline/runs", run, "products");
+    const sheets = fs.existsSync(pdir) ? Object.fromEntries(fs.readdirSync(pdir).map((x) => [x.replace(/\.json$/, ""), JSON.parse(fs.readFileSync(path.join(pdir, x), "utf8"))])) : {};
+    for (const b of JSON.parse(fs.readFileSync(f, "utf8")).filter((x) => ["approved_for_image_step", "kept_with_warnings"].includes(x.status))) rows.push({ run, id: b.source_ad_id, ...styleIssues(b, sheets) });
   }
   fs.writeFileSync("research/style_check.json", JSON.stringify(rows, null, 1));
   const ok = rows.filter((r) => r.within).length, med = (a) => a.sort((x, y) => x - y)[Math.floor(a.length / 2)];

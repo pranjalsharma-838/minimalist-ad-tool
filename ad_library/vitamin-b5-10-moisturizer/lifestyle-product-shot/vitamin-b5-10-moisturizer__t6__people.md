@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Use after cleansing, toning and your serums. AM & PM, every day. Formulated for oily / combination skin With Hyaluronic Acid & Betaine Suitable for 16+ years of age 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Use after cleansing, toning and your serums. AM & PM, every day. Formulated for oily / combination skin. With Hyaluronic Acid & Betaine. Suitable for 16+ years of age. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

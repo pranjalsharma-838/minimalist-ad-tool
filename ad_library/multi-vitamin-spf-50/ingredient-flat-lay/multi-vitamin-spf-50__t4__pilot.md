@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Four UV filters behind a broad spectrum SPF 50. Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin. Avobenzone for UVA protection Octocrylene for UVB, and it further stabilises Avobenzone Uvinul T 150, a highly effective UVB filter
+Four UV filters behind a broad spectrum SPF 50. Boosted with Vitamins B3, B5, E and F that soothe, nourish and hydrate skin. Avobenzone for UVA protection. Octocrylene for UVB, and it further stabilises Avobenzone. Uvinul T 150, a highly effective UVB filter.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Four UV filters behind a broad spectrum SPF 50" → "Four UV filters, broad spectrum SPF 50" (headline 9 > 8 words; the minimal hero has no big SPF line, so SPF 50 stays in the title)

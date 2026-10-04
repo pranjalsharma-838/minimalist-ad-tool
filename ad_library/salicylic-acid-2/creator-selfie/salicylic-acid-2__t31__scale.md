@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Recommended for combination/oily skin; salicylic acid dissolves dead skin cells and sebum from inner pore walls. [Creator name or handle and written consent to be supplied by the marketer]. Ratings from beminimalist.co (Yotpo), captured 2026-10-02
+Recommended for combination/oily skin; salicylic acid dissolves dead skin cells and sebum from inner pore walls. [Creator name or handle and written consent to be supplied by the marketer]. Ratings from beminimalist.co (Yotpo), captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

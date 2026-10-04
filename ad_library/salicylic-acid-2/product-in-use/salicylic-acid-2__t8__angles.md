@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-PM use: start every alternate day, then after 2 weeks of usage, use it everyday. RonaCare Salicylic Acid Extra Pure from Merck, Germany Recommended for combination/oily skin Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+PM use: start every alternate day, then after 2 weeks of usage, use it everyday. RonaCare Salicylic Acid Extra Pure from Merck, Germany. Recommended for combination/oily skin. Suitable for 18+ years of age. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-AM & PM routine: a 2% Salicylic Acid + LHA cleanser. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+AM & PM routine: a 2% Salicylic Acid + LHA cleanser. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "AM & PM routine: a 2% Salicylic Acid + LHA cleanser" → "AM & PM: a 2% Salicylic Acid + LHA cleanser" (headline 9 > 8 words)

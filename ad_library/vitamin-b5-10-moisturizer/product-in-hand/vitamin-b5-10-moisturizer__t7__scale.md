@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Massage into face and neck until fully absorbed, AM and PM. Lightweight, oil-free; formulated for oily/combination skin Boosted with Hyaluronic Acid & Betaine for multi-level hydration 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Massage into face and neck until fully absorbed, AM and PM. Lightweight, oil-free; formulated for oily/combination skin. Boosted with Hyaluronic Acid & Betaine for multi-level hydration. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

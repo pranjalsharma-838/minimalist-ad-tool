@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Spreads like a moisturiser Photostable & acne safe
+Spreads like a moisturiser. Photostable & acne safe.
 
 ## Facts cited (from the product page)
 ```json

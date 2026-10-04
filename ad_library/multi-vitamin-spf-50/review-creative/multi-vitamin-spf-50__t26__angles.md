@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-What customers say about SPF 50 Sunscreen. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+What customers say about SPF 50 Sunscreen. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "What customers say about SPF 50 Sunscreen" → "What customers say" (quote + headline 21 > 20 words; the pack names the product)

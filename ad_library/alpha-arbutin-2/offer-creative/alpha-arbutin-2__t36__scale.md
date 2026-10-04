@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Two to three drops, morning and night 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
+Two to three drops, morning and night. 30ml: Rs. 494 (MRP Rs. 549), beminimalist.co, captured 2026-10-02. Offer as on beminimalist.co on 2026-10-02. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

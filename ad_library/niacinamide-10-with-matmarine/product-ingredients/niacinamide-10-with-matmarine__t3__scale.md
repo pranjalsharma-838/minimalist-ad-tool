@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Let the serum absorb fully before the next step of your routine. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02 Zinc: Lightweight serum with Zinc, no sticky residue 10% Niacinamide: Pure Vitamin B3, formulated for oily skin Matmarine: Marine extract that supports hydration
+Let the serum absorb fully before the next step of your routine. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02. Zinc: Lightweight serum with Zinc, no sticky residue. 10% Niacinamide: Pure Vitamin B3, formulated for oily skin. Matmarine: Marine extract that supports hydration.
 
 ## Facts cited (from the product page)
 ```json

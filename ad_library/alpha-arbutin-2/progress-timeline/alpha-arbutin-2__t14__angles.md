@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-AM & PM routine: 2-3 drops of 2% Alpha Arbutin. Use sunscreen during the day for best results. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02
+AM & PM routine: 2-3 drops of 2% Alpha Arbutin. Use sunscreen during the day for best results. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "AM & PM routine: 2-3 drops of 2% Alpha Arbutin" → "AM & PM: 2-3 drops of 2% Alpha Arbutin" (headline 9 > 8 words; dropped "routine")

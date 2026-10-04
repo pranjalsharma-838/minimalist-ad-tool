@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Last step of the routine: massage in until fully absorbed. Use after cleansing, toning and your serums, AM & PM, on face and neck. 10% Vitamin B5 (Panthenol) for oil-free moisturization Boosted with Hyaluronic Acid & Betaine for multi-level hydration Suitable for 16+ years of age 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Last step of the routine: massage in until fully absorbed. Use after cleansing, toning and your serums, AM & PM, on face and neck. 10% Vitamin B5 (Panthenol) for oil-free moisturization. Boosted with Hyaluronic Acid & Betaine for multi-level hydration. Suitable for 16+ years of age. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Last step of the routine: massage in until fully absorbed" → "Last step of the routine" (headline 10 > 8 words; keeps the routine angle)

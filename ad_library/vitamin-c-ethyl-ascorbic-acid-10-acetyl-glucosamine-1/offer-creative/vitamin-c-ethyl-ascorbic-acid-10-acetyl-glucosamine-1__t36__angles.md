@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off. 10% Vitamin C with Acetyl Glucosamine and PHA Take 2-3 drops after cleansing and toning, AM & PM. 30ml: Rs. 629 (MRP Rs. 699), beminimalist.co, captured 2026-10-02 Offer as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your Own Bundle — Save an additional up to 15% off. 10% Vitamin C with Acetyl Glucosamine and PHA. Take 2-3 drops after cleansing and toning, AM & PM. 30ml: Rs. 629 (MRP Rs. 699), beminimalist.co, captured 2026-10-02. Offer as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - offer.line: "Build Your Own Bundle — Save an additional up to 15% off" → "Build Your Own Bundle: up to 15% off" (offer title 11 > 8 words; the full offer text and condition move to the caption)

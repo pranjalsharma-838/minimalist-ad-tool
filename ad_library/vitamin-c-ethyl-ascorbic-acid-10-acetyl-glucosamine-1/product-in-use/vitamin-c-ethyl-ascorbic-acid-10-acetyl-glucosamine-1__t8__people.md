@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Take 2-3 drops on your fingertips with the dropper. Tap gently onto the skin, then spread evenly in a circular motion. AM & PM, every day Ethyl Ascorbic Acid, 86% pure Vitamin C content Suitable for 16+ years of age 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+Take 2-3 drops on your fingertips with the dropper. Tap gently onto the skin, then spread evenly in a circular motion. AM & PM, every day. Ethyl Ascorbic Acid, 86% pure Vitamin C content. Suitable for 16+ years of age. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Take 2-3 drops on your fingertips with the dropper" → "2-3 drops on your fingertips" (headline 9 > 8 words)

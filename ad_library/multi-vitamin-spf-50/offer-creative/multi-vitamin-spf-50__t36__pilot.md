@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Broad spectrum SPF 50, PA++++ for every day Light texture that spreads easily, with a natural, non-shiny look. 50g: Rs. 359, MRP Rs. 399 Offers as on beminimalist.co, 2026-10-02. Price shown for 50g.
+Broad spectrum SPF 50, PA++++ for every day. Light texture that spreads easily, with a natural, non-shiny look. 50g: Rs. 359, MRP Rs. 399. Offers as on beminimalist.co, 2026-10-02. Price shown for 50g.
 
 ## Facts cited (from the product page)
 ```json

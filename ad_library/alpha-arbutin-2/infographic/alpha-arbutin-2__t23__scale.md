@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-What does each active in this serum do? The page explains. Ratings from beminimalist.co (Yotpo), captured 2026-10-02 Ferulic acid: A powerful antioxidant that can neutralize free radicals 2% Alpha Arbutin: Skin tone enhancing active, sourced from Alfa Aesar, USA Butylresorcinol: An active used for the look of hyperpigmentation
+What does each active in this serum do? The page explains. Ratings from beminimalist.co (Yotpo), captured 2026-10-02. Ferulic acid: A powerful antioxidant that can neutralize free radicals. 2% Alpha Arbutin: Skin tone enhancing active, sourced from Alfa Aesar, USA. Butylresorcinol: An active used for the look of hyperpigmentation.
 
 ## Facts cited (from the product page)
 ```json

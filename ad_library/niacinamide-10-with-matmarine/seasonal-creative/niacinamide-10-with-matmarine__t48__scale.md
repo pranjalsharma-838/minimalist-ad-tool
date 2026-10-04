@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-10% Niacinamide Face Serum, formulated for oily skin and an even-looking tone. Apply 2-3 drops after cleansing & toning Suitable for 16+ years of age Ratings from beminimalist.co (Yotpo), captured 2026-10-02
+10% Niacinamide Face Serum, formulated for oily skin and an even-looking tone. Apply 2-3 drops after cleansing & toning. Suitable for 16+ years of age. Ratings from beminimalist.co (Yotpo), captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

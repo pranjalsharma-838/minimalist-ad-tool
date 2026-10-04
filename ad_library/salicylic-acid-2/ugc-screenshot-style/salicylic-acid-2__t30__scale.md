@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Start every alternate day; after 2 weeks of usage, use it everyday. [Creator name or handle and written consent to be supplied by the marketer]. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+Start every alternate day; after 2 weeks of usage, use it everyday. [Creator name or handle and written consent to be supplied by the marketer]. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

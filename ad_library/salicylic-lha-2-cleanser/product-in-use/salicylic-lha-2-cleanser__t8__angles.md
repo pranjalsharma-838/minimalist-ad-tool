@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Morning wash: a light lather on a wet face. Pour an appropriate quantity into wet hands, rub into a light lather, massage into face; rinse thoroughly. AM & PM, every day 2 mild sulfate-free surfactants (cleansers) Suitable for 15+ years of age 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+Morning wash: a light lather on a wet face. Pour an appropriate quantity into wet hands, rub into a light lather, massage into face; rinse thoroughly. AM & PM, every day. 2 mild sulfate-free surfactants (cleansers) Suitable for 15+ years of age. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Morning wash: a light lather on a wet face" → "Morning wash: a light lather" (headline 9 > 8 words; keeps the situation)

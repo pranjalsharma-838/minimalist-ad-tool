@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Apply after cleansing & toning. Let the serum absorb fully before the next step. Use in the PM Start with every alternate day Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+Apply after cleansing & toning. Let the serum absorb fully before the next step. Use in the PM. Start with every alternate day. Suitable for 18+ years of age. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-It penetrates the pore lining and scoops out dirt, debris and sebum. RonaCare Salicylic Acid Extra Pure from Merck, Germany Oligopeptide-10 works synergistically with Salicylic Acid Recommended for combination/oily skin 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+It penetrates the pore lining and scoops out dirt, debris and sebum. RonaCare Salicylic Acid Extra Pure from Merck, Germany. Oligopeptide-10 works synergistically with Salicylic Acid. Recommended for combination/oily skin. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

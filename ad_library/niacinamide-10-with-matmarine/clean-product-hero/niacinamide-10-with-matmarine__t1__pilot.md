@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no sticky residue. Matmarine helps regulate oiliness and the appearance of pores Zinc, suited to oily, acne-prone skin For daily use, AM & PM Evaluated for safety through patch testing. Suitable for 16+ years of age.
+With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no sticky residue. Matmarine helps regulate oiliness and the appearance of pores. Zinc, suited to oily, acne-prone skin. For daily use, AM & PM. Evaluated for safety through patch testing. Suitable for 16+ years of age.
 
 ## Facts cited (from the product page)
 ```json

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-"Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free". 4.1 out of 5 stars from 899 reviews 50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02 Offers as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+"Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free". 4.1 out of 5 stars from 899 reviews. 50g: Rs. 314 (MRP Rs. 349), beminimalist.co, captured 2026-10-02. Offers as on beminimalist.co on 2026-10-02. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - offer.line: ""Upto 33% OFF + Freebies" and "Buy 2, Get 3rd Free"" → "Buy 2, Get 3rd Free" (two offers in one title (10 words); one offer per ad, the other moves to the caption)

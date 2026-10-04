@@ -24,7 +24,7 @@ const sheets = Object.fromEntries(fs.readdirSync(path.join(dir, "products")).map
 const toks = (s) => (String(s || "").toLowerCase().match(/[\p{L}\p{N}][\p{L}\p{N}%₹+'’.-]*/gu) || []).map((t) => t.replace(/[.'’-]+$/, ""));
 const printed = (b) => [b.headline, b.subhead, b.caption, b.footnote, b.product_title, b.offer?.line, b.offer?.condition, b.stat?.value, b.stat?.label, b.review?.quote,
   ...(b.proof_points || []), ...(b.actives || []).flatMap((a) => [a.pct, a.name, a.line]), ...(b.callouts || []).map((c) => c.text), ...(b.steps || []).flatMap((s) => [s.label, s.line]),
-  ...(b.frames || []).map((f) => f.label), ...(b.badges || []).map((x) => x.text), ...(b.specs || []).flatMap((x) => [x.label, x.value])].join(" ");
+  ...(b.frames || []).map((f) => f.label), ...(b.badges || []).map((x) => x.text), ...(b.specs || []).flatMap((x) => [x.label, x.value]), ...(b.range || []).map((x) => x.label), b.proof?.label, b.proof?.value].join(" ");
 const get = (b, p) => p.split(".").reduce((o, k) => o?.[k], b);
 const set = (b, p, v) => { const ks = p.split("."); const last = ks.pop(); ks.reduce((o, k) => (o[k] ??= {}), b)[last] = v; };
 const ruleIds = (b, h) => new Set(runRules(adFromBrief(b, sheets, h), { sheet: sheets[h] }).filter((f) => f.severity !== "advisory").map((f) => f.rule_id));

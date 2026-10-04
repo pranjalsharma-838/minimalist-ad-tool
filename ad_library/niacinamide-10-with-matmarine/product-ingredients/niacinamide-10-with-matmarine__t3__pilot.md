@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Also contains Acetyl Glucosamine. Evaluated for safety through patch testing. Zinc: Paired with Niacinamide; suited to oily, acne-prone skin 10% Niacinamide: Vitamin B3 for reducing sebum & pores, and even skin tone Matmarine: Biotechnological ingredient to reduce excess sebum, shine, pores and spots
+Also contains Acetyl Glucosamine. Evaluated for safety through patch testing. Zinc: Paired with Niacinamide; suited to oily, acne-prone skin. 10% Niacinamide: Vitamin B3 for reducing sebum & pores, and even skin tone. Matmarine: Biotechnological ingredient to reduce excess sebum, shine, pores and spots.
 
 ## Facts cited (from the product page)
 ```json

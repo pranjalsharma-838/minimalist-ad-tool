@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Four weeks, AM & PM: 2-3 drops of 10% Niacinamide. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
+Four weeks, AM & PM: 2-3 drops of 10% Niacinamide. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Four weeks, AM & PM: 2-3 drops of 10% Niacinamide" → "AM & PM: 2-3 drops of 10% Niacinamide" (headline 9 > 8 words)

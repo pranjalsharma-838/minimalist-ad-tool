@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Questions on irritation? Our notes on Alpha Arbutin 2%. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02 2-3 drops after cleansing & toning Use sunscreen during the day for best results
+Questions on irritation? Our notes on Alpha Arbutin 2%. 3.9 out of 5 stars from 1,800 reviews on beminimalist.co, captured 2026-10-02. 2-3 drops after cleansing & toning. Use sunscreen during the day for best results.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Questions on irritation? Our notes on Alpha Arbutin 2%" → "Our notes on Alpha Arbutin 2%" (headline 9 > 8 words; kept the calm half, the question moves to the caption)

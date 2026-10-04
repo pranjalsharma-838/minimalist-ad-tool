@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily. Recommended for combination/oily skin Salicylic Acid from Merck, Germany Suitable for 18+ years of age 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02
+A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alternate day, then daily. Recommended for combination/oily skin. Salicylic Acid from Merck, Germany. Suitable for 18+ years of age. 4 out of 5 stars from 1,969 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

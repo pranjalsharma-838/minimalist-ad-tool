@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Step 1 · Wash: Light lather on a wet face, then rinse thoroughly Step 2 · Serum: 2-3 drops; let the serum absorb fully Step 3 · Moisturizer: Lightweight, oil-free; massage in until fully absorbed 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02
+Step 1 · Wash: Light lather on a wet face, then rinse thoroughly. Step 2 · Serum: 2-3 drops; let the serum absorb fully. Step 3 · Moisturizer: Lightweight, oil-free; massage in until fully absorbed. 4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

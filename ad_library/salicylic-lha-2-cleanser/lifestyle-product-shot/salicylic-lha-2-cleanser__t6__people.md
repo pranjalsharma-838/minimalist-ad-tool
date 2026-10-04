@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Back from a run: a light lather on a wet face. Pour into wet hands, rub into a light lather, massage in and rinse thoroughly. BHA + LHA combined in 2% concentration 2 very mild sulfate-free surfactants Suitable for 15+ years of age 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+Back from a run: a light lather on a wet face. Pour into wet hands, rub into a light lather, massage in and rinse thoroughly. BHA + LHA combined in 2% concentration. 2 very mild sulfate-free surfactants. Suitable for 15+ years of age. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Back from a run: a light lather on a wet face" → "Back from a run: a light lather" (headline 11 > 8 words; keeps the situation)

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-AM, every day: apply at least 15 minutes before sun exposure. 4 UV filters for UVA & UVB protection Reapply with continued sun exposure No visible white cast on application 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02
+AM, every day: apply at least 15 minutes before sun exposure. 4 UV filters for UVA & UVB protection. Reapply with continued sun exposure. No visible white cast on application. 3.9 out of 5 stars from 1,890 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

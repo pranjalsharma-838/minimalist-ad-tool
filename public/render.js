@@ -112,19 +112,48 @@ function layout(spec, s) {
   if (spec.imageHref || spec.personHref) parts.push(productVisual(spec, 530, 120, 490, 680));
   const title = spec.headline || spec.productName || "";
   const hs = px(52), hl = px(60), head = wrap(title, hs, colW, 0.55).slice(0, 4);
-  const showName = spec.productName && !title.toLowerCase().includes(spec.productName.toLowerCase());
+  // The ingredient lockup (active + % in the pack's style) replaces the product-name line when it's shown.
+  const showName = !spec.lockup && spec.productName && !title.toLowerCase().includes(spec.productName.toLowerCase());
   const ns = px(24), nl = px(30), name = showName ? wrap(spec.productName, ns, colW, 0.58) : [];
   const ss = px(23), sl = px(31), sub = spec.subhead ? wrap(spec.subhead, ss, colW) : [];
   const tagH = spec.tag ? 34 + px(24) : 0;
-  const height = tagH + hs + (head.length - 1) * hl + (name.length ? px(24) + name.length * nl : 0) + (sub.length ? px(16) + sub.length * sl : 0);
+  const lkH = spec.lockup ? px(30) + lockupHeight(spec.lockup, s, colW) : 0;
+  const height = tagH + hs + (head.length - 1) * hl + lkH + (name.length ? px(24) + name.length * nl : 0) + (sub.length ? px(16) + sub.length * sl : 0);
   // The text stack is centred beside the pack, as in the brand's statics.
   let y = Math.max(150, Math.round(450 - height / 2));
   if (spec.tag) { parts.push(tagLabel(PAD, y, spec.tag)); y += tagH; }
   parts.push(T(head, PAD, y + hs, hs, hl, `font-weight="500" fill="${C.ink}"`));
   y += hs + (head.length - 1) * hl;
+  if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + px(30), s, colW);
   if (name.length) { y += px(24); parts.push(T(name, PAD, y + ns, ns, nl, `font-weight="600" fill="${C.ink}"`)); y += ns + (name.length - 1) * nl; }
   if (sub.length) { y += px(16); parts.push(T(sub, PAD, y + ss, ss, sl, `fill="${C.muted}"`)); y += ss + (sub.length - 1) * sl; }
   return chromeEnd(spec, parts, y);
+}
+
+// Ingredient lockup in the brand's pack-label style (user review 2026-10-04: "the ingredient and its % bold and bigger
+// ... the same style of ingredient presentation could be used in many images"). As printed on every Minimalist pack:
+// the active in bold, then the product's thin accent-colour line with the strength in a light weight beside it.
+// lk = {name, pct}; size "big" (single-product layouts) or "small" (under each pack in routine / range layouts).
+// Returns the y below the block. align "middle" centres it on x (small lockups under packs).
+export function lockupHeight(lk, s, maxW, size = "big") {
+  if (!lk) return 0;
+  const k = size === "big" ? { ns: 28, nl: 34, vs: 64, gap: 10 } : { ns: 16, nl: 20, vs: 26, gap: 4 };
+  const lines = wrap(lk.name, Math.round(k.ns * s), maxW, 0.62).slice(0, 2).length;
+  return Math.round(k.ns * s) + (lines - 1) * Math.round(k.nl * s) + Math.round(k.gap * s) + Math.round(k.vs * s);
+}
+function lockup(parts, lk, accent, x, y, s, maxW, size = "big", align = "start") {
+  if (!lk) return y;
+  const k = size === "big" ? { ns: 28, nl: 34, vs: 64, gap: 10, line: 120, lh: 4 } : { ns: 16, nl: 20, vs: 26, gap: 4, line: 44, lh: 3 };
+  const ns = Math.round(k.ns * s), vs = Math.round(k.vs * s), nl = Math.round(k.nl * s);
+  const name = wrap(lk.name, ns, maxW, 0.62).slice(0, 2);
+  const anchor = align === "middle" ? ' text-anchor="middle"' : "";
+  parts.push(T(name, x, y + ns, ns, nl, `font-weight="700" fill="${C.ink}"${anchor}`));
+  y += ns + (name.length - 1) * nl + Math.round(k.gap * s);
+  const lineW = Math.round(k.line * s), pctW = Math.round(vlen(lk.pct) * vs * 0.52), total = lineW + 12 + pctW;
+  const x0 = align === "middle" ? Math.round(x - total / 2) : x;
+  parts.push(`<rect x="${x0}" y="${y + Math.round(vs * 0.62)}" width="${lineW}" height="${k.lh}" fill="${accent || C.ink}"/>`);
+  parts.push(`<text x="${x0 + lineW + 12}" y="${y + vs - Math.round(vs * 0.12)}" font-family="${FONT}" font-size="${vs}" font-weight="300" letter-spacing="-1" fill="${C.ink}">${esc(lk.pct)}</text>`);
+  return y + vs;
 }
 
 // One small black label at most (top-running statics: "Clinically Tested", "Updated" — only a page-stated fact).
@@ -233,13 +262,12 @@ LAYOUTS.actives = (spec, s) => {
   const parts = chromeStart(spec, "left");
   parts.push(pack(spec, spec.imageHref, 530, 120, 490, 680));
   let y = headlineBlock(parts, spec.headline, PAD, 150, 430, s, 46) + Math.round(44 * s);
+  // Each active in the pack-label lockup style (bold name, accent line, light %); an active with no stated % is the
+  // bold name alone.
   for (const a of (spec.actives || []).slice(0, 3)) {
-    const ps = Math.round(60 * s), ns = Math.round(26 * s);
-    if (a.pct) parts.push(`<text x="${PAD - 2}" y="${y + ps}" font-family="${FONT}" font-size="${ps}" font-weight="300" letter-spacing="-1" fill="${C.ink}">${esc(a.pct)}</text>`);
-    const nx = PAD + (a.pct ? Math.round(vlen(a.pct) * ps * 0.62) + 16 : 0); // eye-check: 0.52 let "10%" touch the name
-    const nl = wrap(a.name, ns, 430 - (nx - PAD), 0.58).slice(0, 2);
-    parts.push(T(nl, nx, y + ps - 8 - (nl.length - 1) * Math.round(30 * s), ns, Math.round(30 * s), `font-weight="600" fill="${C.ink}"`));
-    y += ps + Math.round(12 * s);
+    if (a.pct) y = lockup(parts, { name: a.name, pct: a.pct }, spec.accent, PAD, y, s, 430);
+    else { const ns = Math.round(28 * s), nl = wrap(a.name, ns, 430, 0.62).slice(0, 2); parts.push(T(nl, PAD, y + ns, ns, Math.round(34 * s), `font-weight="700" fill="${C.ink}"`)); y += ns + (nl.length - 1) * Math.round(34 * s); }
+    y += Math.round(12 * s);
     if (a.line) { const ln = wrap(a.line, Math.round(21 * s), 430).slice(0, 2); parts.push(T(ln, PAD, y + Math.round(21 * s), Math.round(21 * s), Math.round(27 * s), `fill="${C.muted}"`)); y += Math.round(21 * s) + (ln.length - 1) * Math.round(27 * s); }
     y += Math.round(30 * s);
   }
@@ -266,9 +294,9 @@ LAYOUTS.journey = (spec, s) => {
     const lab = wrap(((st.label || "").replace(/^\s*step\s*\d+\s*[·:.\-–]?\s*/i, "") || `Step ${i + 1}`).toUpperCase(), 17, colW, 0.66).slice(0, 2);
     parts.push(T(lab, cx, ty, 17, 21, `text-anchor="middle" font-weight="700" letter-spacing="1.2" fill="${C.ink}"`));
     ty += (lab.length - 1) * 21 + 26;
-    const nm = wrap(st.productName || "", 17, colW, 0.56).slice(0, 2);
-    parts.push(T(nm, cx, ty, 17, 21, `text-anchor="middle" fill="${C.muted}"`));
-    ty += (nm.length - 1) * 21;
+    // Under each pack, its active and % in the pack-label style (or the product name when it states none).
+    if (st.lockup) ty = lockup(parts, st.lockup, st.accent, cx, ty - 16, 1, colW, "small", "middle") - 4;
+    else { const nm = wrap(st.productName || "", 17, colW, 0.56).slice(0, 2); parts.push(T(nm, cx, ty, 17, 21, `text-anchor="middle" fill="${C.muted}"`)); ty += (nm.length - 1) * 21; }
     if (st.line) { const ln = wrap(st.line, 17, colW).slice(0, 2); parts.push(T(ln, cx, ty + 24, 17, 21, `text-anchor="middle" fill="${C.muted}"`)); ty += 24 + (ln.length - 1) * 21; }
     bottom = Math.max(bottom, ty);
   });
@@ -345,10 +373,9 @@ LAYOUTS.range = (spec, s) => {
     parts.push(pack(spec, it.imageHref, x, y, colW, imgH));
     const lb = wrap(it.label, Math.round(22 * s), colW, 0.56);
     parts.push(T(lb, x, y + imgH + Math.round(38 * s), Math.round(22 * s), Math.round(28 * s), `font-weight="600" fill="${C.ink}"`));
-    const nm = wrap(it.productName || "", Math.round(18 * s), colW);
     const ny = y + imgH + Math.round(38 * s) + lb.length * Math.round(28 * s);
-    parts.push(T(nm, x, ny, Math.round(18 * s), Math.round(23 * s), `fill="${C.muted}"`));
-    bottom = Math.max(bottom, ny + (nm.length - 1) * Math.round(23 * s));
+    if (it.lockup) bottom = Math.max(bottom, lockup(parts, it.lockup, it.accent, x, ny - Math.round(16 * s), s, colW, "small"));
+    else { const nm = wrap(it.productName || "", Math.round(18 * s), colW); parts.push(T(nm, x, ny, Math.round(18 * s), Math.round(23 * s), `fill="${C.muted}"`)); bottom = Math.max(bottom, ny + (nm.length - 1) * Math.round(23 * s)); }
   });
   return chromeEnd(spec, parts, bottom);
 };
@@ -367,12 +394,15 @@ LAYOUTS.offer = (spec, s) => {
   const cond = wrap(cleanCond, cs, 430).slice(0, 3);
   const valid = o.valid_till && !/no end date/i.test(o.valid_till) ? [`Valid till ${o.valid_till}`] : [];
   const sub = spec.subhead ? wrap(spec.subhead, Math.round(23 * s), 430) : [];
-  const height = hs + (head.length - 1) * hl + (cond.length ? Math.round(22 * s) + cond.length * cl : 0) + valid.length * cl + (sub.length ? Math.round(18 * s) + sub.length * Math.round(31 * s) : 0);
+  const lkH = spec.lockup ? Math.round(40 * s) + lockupHeight(spec.lockup, s, 430) : 0;
+  const height = hs + (head.length - 1) * hl + (cond.length ? Math.round(22 * s) + cond.length * cl : 0) + valid.length * cl + lkH + (sub.length ? Math.round(18 * s) + sub.length * Math.round(31 * s) : 0);
   let y = Math.max(150, Math.round(450 - height / 2));
   parts.push(T(head, PAD, y + hs, hs, hl, `font-weight="500" fill="${C.ink}"`));
   y += hs + (head.length - 1) * hl;
   if (cond.length) { y += Math.round(22 * s); parts.push(T(cond, PAD, y + cs, cs, cl, `fill="${C.muted}"`)); y += cs + (cond.length - 1) * cl; }
   if (valid.length) { parts.push(T(valid, PAD, y + cl, cs, cl, `fill="${C.muted}"`)); y += cl; }
+  // Which product the offer is on, in the pack's own style.
+  if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + Math.round(40 * s), s, 430);
   if (sub.length) { y += Math.round(18 * s); parts.push(T(sub, PAD, y + Math.round(23 * s), Math.round(23 * s), Math.round(31 * s), `fill="${C.muted}"`)); y += Math.round(23 * s) + (sub.length - 1) * Math.round(31 * s); }
   return chromeEnd(spec, parts, y);
 };
@@ -504,7 +534,9 @@ LAYOUTS.review = (spec, s) => {
   parts.push(T(q, PAD, y + qs, qs, ql, `font-weight="400" fill="${C.ink}"`));
   y += qs + (q.length - 1) * ql + Math.round(30 * s);
   parts.push(T(wrap(r.source || "[review source + date]", 18, 440).slice(0, 2), PAD, y + 18, 18, 23, `fill="${C.muted}"`));
-  return chromeEnd(spec, parts, y + 40);
+  let yb = y + 40;
+  if (spec.lockup) yb = lockup(parts, spec.lockup, spec.accent, PAD, yb + Math.round(24 * s), s, 440);
+  return chromeEnd(spec, parts, yb);
 };
 
 // #28 Social proof: one big sourced number.
@@ -520,7 +552,9 @@ LAYOUTS.socialproof = (spec, s) => {
   parts.push(T(l, PAD, y + 28, Math.round(28 * s), Math.round(36 * s), `fill="${C.ink}"`));
   y += 28 + (l.length - 1) * 36;
   parts.push(T([p.source || "[source + date]"], PAD, y + 44, 18, 22, `fill="${C.muted}"`));
-  return chromeEnd(spec, parts, y + 44);
+  let yb = y + 44;
+  if (spec.lockup) yb = lockup(parts, spec.lockup, spec.accent, PAD, yb + Math.round(36 * s), s, 490);
+  return chromeEnd(spec, parts, yb);
 };
 
 function qa(spec, s, q, a, bubble) {

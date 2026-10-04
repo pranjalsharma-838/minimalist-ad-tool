@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Apply 2-3 drops after cleansing & toning; let it absorb fully before the next step. Niacinamide, Matmarine, Zinc and Acetyl Glucosamine AM & PM, every day Suitable for 16+ years of age 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
+Apply 2-3 drops after cleansing & toning; let it absorb fully before the next step. Niacinamide, Matmarine, Zinc and Acetyl Glucosamine. AM & PM, every day. Suitable for 16+ years of age. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

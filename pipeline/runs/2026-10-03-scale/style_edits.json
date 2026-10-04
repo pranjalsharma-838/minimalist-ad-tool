@@ -27,5 +27,9 @@
     "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15":  {
                                                                        "callouts.0.text":  "Ethyl Ascorbic Acid",
                                                                        "why":  "\"86% pure Vitamin C content\" next to a 10% serum reads as the serum\u0027s strength (flagged as misleading by ambiguity by the independent eval reviewer, ASCI 1.4); the full line moves to the caption"
-                                                                   }
+                                                                   },
+    "salicylic-lha-2-cleanser__t36":  {
+                                          "offer.condition":  "T\u0026C apply.",
+                                          "why":  "the condition restated the offer line; the ingredient lockup now names the product"
+                                      }
 }

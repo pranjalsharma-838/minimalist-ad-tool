@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Apply after cleansing & toning. Let it absorb fully before the next step. Niacinamide from Lonza, Switzerland With Matmarine, Zinc & Acetyl Glucosamine Suitable for 16+ years of age 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02
+Apply after cleansing & toning. Let it absorb fully before the next step. Niacinamide from Lonza, Switzerland. With Matmarine, Zinc & Acetyl Glucosamine. Suitable for 16+ years of age. 4 out of 5 stars from 1,491 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

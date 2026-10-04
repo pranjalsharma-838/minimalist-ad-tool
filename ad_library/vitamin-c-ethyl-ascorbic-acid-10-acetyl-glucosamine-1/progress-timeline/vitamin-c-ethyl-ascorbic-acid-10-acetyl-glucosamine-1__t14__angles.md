@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-AM & PM routine: 2-3 drops of 10% Vitamin C. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+AM & PM routine: 2-3 drops of 10% Vitamin C. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "AM & PM routine: 2-3 drops of 10% Vitamin C" → "AM & PM: 2-3 drops of 10% Vitamin C" (headline 9 > 8 words)

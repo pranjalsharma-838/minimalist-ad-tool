@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Rub into a light lather in wet hands, massage into the face, then rinse thoroughly. Panthenol (Vitamin B5) and Allantoin for a hydrating after-feel 2 mild sulfate-free surfactants (cleansers) AM & PM, every day 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02
+Rub into a light lather in wet hands, massage into the face, then rinse thoroughly. Panthenol (Vitamin B5) and Allantoin for a hydrating after-feel. 2 mild sulfate-free surfactants (cleansers) AM & PM, every day. 4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

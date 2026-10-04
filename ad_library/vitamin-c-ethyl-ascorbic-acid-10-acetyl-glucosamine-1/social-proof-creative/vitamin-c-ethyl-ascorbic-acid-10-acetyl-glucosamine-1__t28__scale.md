@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Tap in 2-3 drops, spread evenly, let skin absorb. Ethyl Ascorbic Acid formulated in Centella Water, for AM and PM use. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02
+Tap in 2-3 drops, spread evenly, let skin absorb. Ethyl Ascorbic Acid formulated in Centella Water, for AM and PM use. 4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - headline: "Tap in 2-3 drops, spread evenly, let skin absorb" → "Tap in 2-3 drops" (headline 9 > 8 words)

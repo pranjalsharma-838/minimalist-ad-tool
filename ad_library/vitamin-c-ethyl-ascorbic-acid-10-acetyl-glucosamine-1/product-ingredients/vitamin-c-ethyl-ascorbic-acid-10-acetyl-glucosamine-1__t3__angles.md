@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02 Polyhydroxy Acid (PHA): A hydroxy acid, suitable even for sensitive skin 10% Vitamin C: Ethyl Ascorbic Acid, a stabilized derivative with 86% pure Vitamin C content 1% Acetyl Glucosamine: A simple sugar that provides skin moisturization
+4.1 out of 5 stars from 2,013 reviews on beminimalist.co, captured 2026-10-02. Polyhydroxy Acid (PHA): A hydroxy acid, suitable even for sensitive skin. 10% Vitamin C: Ethyl Ascorbic Acid, a stabilized derivative with 86% pure Vitamin C content. 1% Acetyl Glucosamine: A simple sugar that provides skin moisturization.
 
 ## Facts cited (from the product page)
 ```json

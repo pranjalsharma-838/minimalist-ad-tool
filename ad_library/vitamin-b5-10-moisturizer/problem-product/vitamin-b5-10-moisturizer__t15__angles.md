@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02 Formulated especially for oily/combination skin Hydrated without the greasy feel*
+4.1 out of 5 stars from 899 reviews on beminimalist.co, captured 2026-10-02. Formulated especially for oily/combination skin. Hydrated without the greasy feel*.
 
 ## Facts cited (from the product page)
 ```json
