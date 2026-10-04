@@ -7,6 +7,8 @@ Turns a product page into a checked, on-brand static ad, and scores any ad for c
 2. In this folder run `npm start` and open http://localhost:5173.
 3. Paste your **Claude API key** in the box at the top right (or copy `.env.example` to `.env` and put it there). Without a key the app still works, with copy taken word for word from the product page and the rule checks only.
 
+**Image Studio:** run `npm run studio` once (in a second window, next to `npm start`), sign in to ChatGPT in the browser window it opens, then leave it running. Prompts typed under "Make a different image" in the app are then made automatically, one at a time, and every image is label-checked against the real pack (up to 3 tries; a picture that still fails is shown as "Needs review" and is not offered for ads). The sign-in is remembered in its own browser profile (`%LOCALAPPDATA%\MinimalistImageStudio`); the worker never types a password. Progress is in `image_requests\worker.log`. Every image we hold, including the studio's, is searchable in the app's **Image library** tab.
+
 `npm test` runs the tests. `npm run eval` re-runs the scorer evaluation.
 
 **Weekly trend check (optional):** `powershell -ExecutionPolicy Bypass -File scripts\schedule_weekly.ps1` makes Windows re-check competitors' ads in the Meta Ad Library every Monday and refresh the Trending section (`-Remove` turns it off). Or run it once with `node scripts/adlib_weekly.js`.

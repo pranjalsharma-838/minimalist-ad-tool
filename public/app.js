@@ -1,4 +1,4 @@
-import { renderAdSvg, SIZE } from "./render.js";
+import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
 
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -41,8 +41,10 @@ document.querySelectorAll(".tab").forEach((b) =>
   b.addEventListener("click", () => {
     document.querySelectorAll(".tab").forEach((x) => x.classList.toggle("active", x === b));
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("hidden", p.id !== `tab-${b.dataset.tab}`));
+    if (b.dataset.tab === "images") initImageLibrary();
   })
 );
+const showTab = (name) => document.querySelector(`.tab[data-tab="${name}"]`).click();
 
 // ---------- report rendering (shared) ----------
 const SEV_LABEL = { block: "Block", fix: "Must fix", advisory: "Advisory" };
@@ -182,7 +184,7 @@ $("#extract-form").onsubmit = async (e) => {
   $("#gen-result").classList.add("hidden");
   $("#extract-msg").textContent = "Opening product…";
   // Library first: the existing ads show while the facts load (nothing is generated).
-  if (handle) loadLibrary(handle);
+  if (handle) { loadLibrary(handle); loadProductImages(handle); }
   try {
     const { sheet: s, refusal, cached } = await api("/api/extract", { url, refresh: $("#refresh").checked });
     showSheet(s, refusal, cached);
@@ -197,6 +199,7 @@ $("#manual-form").onsubmit = async (e) => {
   const manual = Object.fromEntries(new FormData(e.target));
   handle = "";
   $("#library").classList.add("hidden");
+  $("#prod-images").classList.add("hidden");
   const { sheet: s, refusal } = await api("/api/extract", { manual });
   showSheet(s, refusal);
 };
@@ -210,29 +213,51 @@ async function loadLibrary(h) {
   $("#lib-count").textContent = library.count ? `(${library.count} ads in ${library.groups.length} formats)` : "";
   $("#lib-body").innerHTML = library.count
     ? library.groups.map((g, gi) => `<div class="lib-group"><h4>${esc(g.title)} <span class="hint">${esc(g.template)}</span></h4><div class="lib-cards">${g.ads.map((a, ai) => `
-        <button type="button" class="lib-card" data-g="${gi}" data-a="${ai}" title="Open">
-          <img src="${esc(a.png)}" alt="${esc(g.title)}" loading="lazy" />
+        <div class="lib-card">
+          <button type="button" class="lib-open" data-g="${gi}" data-a="${ai}" title="Open"><img src="${esc(a.png)}" alt="${esc(g.title)}" loading="lazy" /></button>
           <span class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk) || "?")} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span>${a.ai ? '<span class="chip no">AI person</span>' : ""}</span>
+          ${a.scores ? scoresCompact(libScores(a.scores)) : '<span class="hint small">Not scored yet</span>'}
+          <span class="dlrow" title="Download PNG">${adSizes(a).map((s) => `<a class="dl" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}" title="Download ${esc(s.label)} PNG">${esc(s.label)}</a>`).join("")}</span>
           <span class="hint small">${esc(a.run)}</span>
-        </button>`).join("")}</div></div>`).join("")
+        </div>`).join("")}</div></div>`).join("")
     : `<p class="hint">No ads for this product in the library yet. Make new ones below.</p>`;
-  $("#lib-body").querySelectorAll(".lib-card").forEach((b) => (b.onclick = () => openLibraryAd(library.groups[b.dataset.g], library.groups[b.dataset.g].ads[b.dataset.a])));
+  $("#lib-body").querySelectorAll(".lib-open").forEach((b) => (b.onclick = () => openLibraryAd(library.groups[b.dataset.g], library.groups[b.dataset.g].ads[b.dataset.a])));
 }
 const cap = (s) => String(s || "").replace(/^./, (c) => c.toUpperCase());
+// Library scores (scripts/score_library.js) in the shape the new-ad score widgets already draw.
+const libScores = (s) => ({
+  alignment: { score: s.alignment, band: s.alignment_band, parts: s.parts?.alignment },
+  win: { score: s.win, band: s.win_band, parts: s.parts?.win },
+  compliance: { score: s.compliance, code: s.verdict, label: s.verdict_label },
+});
+// Every size file this ad has: 1:1, 4:5, 9:16 and the language versions (hi, ta) when they exist.
+const LANG = { hi: "Hindi", ta: "Tamil" };
+const adSizes = (a) => [{ label: "1:1", url: a.png }, ...a.placements.map((p) => ({ label: LANG[p.label] || p.label, url: p.png }))];
 function openLibraryAd(g, a) {
+  const sizes = adSizes(a);
+  const sc = a.scores;
   $("#viewer-body").innerHTML = `
     <div class="viewer-grid">
-      <img src="${esc(a.png)}" alt="" />
+      <div>
+        <img id="v-img" src="${esc(a.png)}" alt="" />
+        <div class="sizes"><span class="hint">Preview</span><span class="sizebtns">${sizes.map((s, i) => `<button type="button" class="ghost size${i === 0 ? " on" : ""}" data-url="${esc(s.url)}">${esc(s.label)}</button>`).join("")}</span></div>
+        <div class="sizes"><span class="hint">Download PNG</span><span class="sizebtns">${sizes.map((s) => `<a class="dlbtn" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}">${esc(s.label)}</a>`).join("")}</span></div>
+      </div>
       <div>
         <p><span class="tag existing">Existing</span> <b>${esc(g.title)}</b></p>
         <p class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk))} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span></p>
         ${a.not_exportable_why ? `<p class="hint">${esc(a.not_exportable_why)}</p>` : ""}
         <p class="hint">${esc(a.template)} · run ${esc(a.run)} · ${esc(a.verdict)}</p>
+        ${sc ? `${scoresBlock(libScores(sc))}<p class="hint"><b>Reviewed by:</b> ${esc(sc.reviewed_by || "not recorded")}</p>${sc.findings?.length ? `<ul class="hint">${sc.findings.map((f) => `<li>${esc(f)}</li>`).join("")}</ul>` : ""}` : `<p class="hint">Scores not available for this ad yet (they are written by scripts/score_library.js).</p>`}
         <h3>On the image</h3><ul>${a.on_image.map((l) => `<li>${esc(l)}</li>`).join("")}</ul>
         <h3>Caption</h3><p>${esc(a.caption)}</p>
-        <p class="row">${a.placements.map((p) => `<a href="${esc(p.png)}" target="_blank" rel="noopener">${esc(p.label)}</a>`).join(" · ")} · <a href="${esc(a.md)}" target="_blank" rel="noopener">Full description</a> · <a href="${esc(a.png)}" download>Download 1:1</a></p>
+        <p class="row"><a href="${esc(a.md)}" target="_blank" rel="noopener">Full description</a></p>
       </div>
     </div>`;
+  $("#viewer-body").querySelectorAll("button.size").forEach((b) => (b.onclick = () => {
+    $("#v-img").src = b.dataset.url;
+    $("#viewer-body").querySelectorAll("button.size").forEach((x) => x.classList.toggle("on", x === b));
+  }));
   $("#viewer").showModal();
 }
 
@@ -242,13 +267,27 @@ async function loadRequests() {
   clearTimeout(pollTimer);
   if (!handle) { $("#img-requests").innerHTML = ""; return; }
   const { requests } = await api(`/api/image-requests?handle=${encodeURIComponent(handle)}`).catch(() => ({ requests: [] }));
-  $("#img-requests").innerHTML = requests.map((r) => `<div class="req">
-      <div><span class="chip ${r.status === "done" ? "ok" : r.status === "failed" ? "no" : ""}">${r.status === "queued" ? "Queued for the image studio" : esc(cap(r.status))}</span> <span class="hint">${esc(new Date(r.requested_at).toLocaleString())}</span></div>
-      <p>${esc(r.prompt)}</p>
-      ${r.result?.url ? `<p><span class="tag new">New</span> from the image studio${r.result.rounds ? `, ${esc(r.result.rounds)} round(s)` : ""}${r.result.notes ? ` · ${esc(r.result.notes)}` : ""}</p><a href="${esc(r.result.url)}" target="_blank" rel="noopener"><img src="${esc(r.result.url)}" alt="Result" /></a><p class="hint">Any person in it is an AI model: Severe risk, needs the AI mark.</p>` : r.result?.notes ? `<p class="hint">${esc(r.result.notes)}</p>` : `<p class="hint">ChatGPT, label checked word for word, up to 3 rounds. This updates by itself.</p>`}
-    </div>`).join("");
-  if (requests.some((r) => !["done", "failed"].includes(r.status))) pollTimer = setTimeout(loadRequests, 10000);
+  const STATUS = { queued: ["Queued", ""], working: ["Working", "st-wait"], done: ["Done", "ok"], needs_review: ["Needs review", "no"], failed: ["Failed", "no"] };
+  $("#img-requests").innerHTML = requests.map((r) => {
+    const [label, cls] = STATUS[r.status] || [cap(r.status), ""];
+    const res = r.result, review = r.status === "needs_review";
+    const body = res?.url
+      ? `<p>${review ? '<span class="chip no">Warning</span> The pack label did not pass the check. Not offered for ads.' : '<span class="tag new">New</span> from the image studio'}${res.rounds ? `, ${esc(res.rounds)} round(s)` : ""}</p>
+         <a href="${esc(res.url)}" target="_blank" rel="noopener"><img class="${review ? "warn" : ""}" src="${esc(res.url)}" alt="Result" /></a>
+         <p class="hint">${esc(res.notes || "")}</p>
+         <p class="row"><a class="dlbtn" href="${esc(res.url)}" download="${esc(r.id)}.png">Download PNG</a>${review ? `<a href="/img/image_requests/${encodeURIComponent(r.id)}_check.png" target="_blank" rel="noopener">See the label comparison</a>` : ""}</p>
+         ${review ? "" : '<p class="hint">Any person in it is an AI model: Severe risk, needs the AI mark.</p>'}`
+      : res?.notes ? `<p class="hint">${esc(res.notes)}</p>`
+      : r.status === "working" ? `<p class="hint">${esc(r.progress || "ChatGPT is drawing it")}. This updates by itself.</p>`
+      : `<p class="hint">Waiting for the image studio. If nothing happens, run <b>npm run studio</b> on this computer and sign in to ChatGPT in its window.</p>`;
+    return `<div class="req"><div><span class="chip ${cls}">${esc(label)}</span> <span class="hint">${esc(new Date(r.requested_at).toLocaleString())}</span></div><p>${esc(r.prompt)}</p>${body}</div>`;
+  }).join("");
+  // A request that just finished adds its image to this product's image list.
+  const finished = requests.filter((r) => ["done", "needs_review"].includes(r.status)).map((r) => r.id).join();
+  if (finished !== lastFinished) { lastFinished = finished; if (handle) loadProductImages(handle); }
+  if (requests.some((r) => !["done", "failed", "needs_review"].includes(r.status))) pollTimer = setTimeout(loadRequests, 10000);
 }
+let lastFinished = "";
 $("#img-queue").onclick = async () => {
   if (!handle) return ($("#img-msg").textContent = "Open a beminimalist.co product first.");
   $("#img-msg").textContent = "Queuing…";
@@ -259,6 +298,105 @@ $("#img-queue").onclick = async () => {
     loadRequests();
   } catch (err) { $("#img-msg").textContent = err.message; }
 };
+
+// ---------- image library: every image we hold, searchable (GET /api/images) ----------
+const IMG_TYPES = { requested: "Image studio request", verified_render: "Verified pack render", ai_texture: "Texture shot (verified)", cutout: "Cut-out", real_pack: "Real pack photo", real_texture: "Real texture", real_photo: "Real photo (other)", ai_scene: "AI scene / person / frame", review_photo: "Customer review photo" };
+const imgChips = (e) => {
+  const c = [`<span class="chip">${esc(IMG_TYPES[e.type] || e.type)}</span>`];
+  if (e.type === "ai_scene") c.push('<span class="chip risk-severe">AI — Severe</span>');
+  else if (e.ai) c.push('<span class="chip risk-medium">AI-made</span>');
+  if (e.type === "review_photo") c.push('<span class="chip risk-medium">Reference only</span>');
+  if (e.type === "requested" && e.status === "needs_review") c.push('<span class="chip no">Needs review</span>');
+  if (e.type === "requested" && !["done", "needs_review"].includes(e.status)) c.push(`<span class="chip st-wait">${esc(e.status || "queued")}</span>`);
+  return `<span class="chips">${c.join("")}</span>`;
+};
+const imgCard = (e, i) => `<button type="button" class="img-card" data-i="${i}" title="${esc(e.label)}"><img src="${esc(e.url)}" alt="${esc(e.label)}" loading="lazy" />${imgChips(e)}<span class="hint small">${esc(e.product || e.handle || "")}</span></button>`;
+const IMG_USE = new Set(["real_pack", "cutout", "verified_render"]);
+
+function openImage(e) {
+  const canUse = e.handle && IMG_USE.has(e.type) && e.use_in_ad !== false;
+  $("#viewer-body").innerHTML = `
+    <div class="viewer-grid">
+      <img class="${e.type === "requested" && e.status === "needs_review" ? "warn" : ""}" src="${esc(e.url)}" alt="${esc(e.label)}" />
+      <div>
+        <p><b>${esc(e.label)}</b></p>
+        ${imgChips(e)}
+        <p class="hint">${esc(e.product || "")}${e.handle ? ` · ${esc(e.handle)}` : ""} · ${esc(e.file || "")}</p>
+        <p>${esc(e.usage)}</p>
+        ${e.prompt ? `<h3>Prompt</h3><p>${esc(e.prompt)}</p>` : ""}
+        ${e.notes ? `<h3>Notes</h3><p class="hint">${esc(e.notes)}</p>` : ""}
+        <p class="row">
+          ${canUse ? `<button type="button" id="img-use">Make new ads for this product</button>` : ""}
+          <a class="dlbtn" href="${esc(e.url)}" download="${esc(e.file || "image.png")}">Download</a>
+          <a href="${esc(e.url)}" target="_blank" rel="noopener">Open full size</a>
+          ${e.check_url ? `<a href="${esc(e.check_url)}" target="_blank" rel="noopener">Label comparison</a>` : ""}
+        </p>
+        ${canUse ? `<p class="hint">The ad builder picks the best verified pack image for this product by itself (cut-out of the verified render first), so this opens the product and builds from the same asset library.</p>` : `<p class="hint">${e.type === "requested" && e.status === "needs_review" ? "Needs review: not offered for ads." : "View or download only: the ad builder does not take this kind of image."}</p>`}
+      </div>
+    </div>`;
+  $("#img-use")?.addEventListener("click", () => {
+    $("#viewer").close();
+    showTab("generate");
+    $("#url").value = `https://beminimalist.co/products/${e.handle}`;
+    $("#extract-form").requestSubmit();
+  });
+  $("#viewer").showModal();
+}
+
+// This product's images, under the product (first 24; the Image library tab has all of them and the search).
+let productImages = [];
+async function loadProductImages(h) {
+  try { productImages = await api(`/api/images?handle=${encodeURIComponent(h)}`); } catch { productImages = []; }
+  $("#prod-images").classList.toggle("hidden", !productImages.length);
+  $("#pi-count").textContent = productImages.length ? `(${productImages.length})` : "";
+  $("#pi-body").innerHTML = productImages.slice(0, 24).map(imgCard).join("");
+  $("#pi-body").querySelectorAll(".img-card").forEach((b) => (b.onclick = () => openImage(productImages[b.dataset.i])));
+}
+$("#pi-open").onclick = async () => { showTab("images"); await imgReady; $("#img-handle").value = handle; $("#img-q").value = ""; $("#img-type").value = ""; runImageSearch(); };
+
+let imgList = [], imgShown = 0, imgInit = false, imgTimer = null, imgSeq = 0;
+const IMG_PAGE = 120;
+async function runImageSearch() {
+  const my = ++imgSeq;
+  const qs = new URLSearchParams({ q: $("#img-q").value.trim(), handle: $("#img-handle").value, type: $("#img-type").value });
+  $("#img-count").textContent = "Searching…";
+  try {
+    const list = await api(`/api/images?${qs}`);
+    if (my !== imgSeq) return;
+    imgList = list; imgShown = 0;
+    $("#img-grid").innerHTML = "";
+    $("#img-count").textContent = list.length ? `${list.length} image${list.length === 1 ? "" : "s"}` : "No images match. Try fewer words, or clear the product and type filters.";
+    showMoreImages();
+  } catch (err) { $("#img-count").textContent = err.message; }
+}
+function showMoreImages() {
+  const from = imgShown;
+  imgShown = Math.min(imgList.length, imgShown + IMG_PAGE);
+  $("#img-grid").insertAdjacentHTML("beforeend", imgList.slice(from, imgShown).map((e, k) => imgCard(e, from + k)).join(""));
+  $("#img-grid").querySelectorAll(".img-card:not([data-bound])").forEach((b) => { b.dataset.bound = "1"; b.onclick = () => openImage(imgList[b.dataset.i]); });
+  $("#img-more").classList.toggle("hidden", imgShown >= imgList.length);
+  $("#img-more").textContent = `Show more (${imgList.length - imgShown} left)`;
+}
+let imgReady = Promise.resolve();
+function initImageLibrary() {
+  if (imgInit) { imgReady = runImageSearch(); return imgReady; } // refresh: new studio images may have arrived
+  imgInit = true;
+  imgReady = setupImageLibrary();
+  return imgReady;
+}
+async function setupImageLibrary() {
+  $("#img-type").innerHTML += Object.entries(IMG_TYPES).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("");
+  try {
+    const all = await api("/api/images");
+    const seen = new Map(all.filter((e) => e.handle).map((e) => [e.handle, e.product || e.handle]));
+    $("#img-handle").innerHTML += [...seen].sort((a, b) => a[1].localeCompare(b[1])).map(([h, t]) => `<option value="${esc(h)}">${esc(t)}</option>`).join("");
+  } catch { /* the search below reports the error */ }
+  $("#img-q").addEventListener("input", () => { clearTimeout(imgTimer); imgTimer = setTimeout(runImageSearch, 250); });
+  $("#img-type").onchange = $("#img-handle").onchange = runImageSearch;
+  $("#img-search").onsubmit = (e) => { e.preventDefault(); runImageSearch(); };
+  $("#img-more").onclick = showMoreImages;
+  await runImageSearch();
+}
 
 // ---------- new ads: every format, ranked, rendered progressively ----------
 const fmtOf = (id) => formats.find((f) => f.id === id);
@@ -329,6 +467,21 @@ function select(id) {
   drawMain();
 }
 
+// Sizes: 1:1 is the rendered ad; 4:5 and 9:16 put the same approved 1:1 on a taller canvas (same recipe as the library,
+// pipeline/08_compose.js), so every size is the one reviewed creative.
+let previewSize = "1x1";
+const placementOf = (key) => PLACEMENTS.find((p) => p.key === key) || PLACEMENTS[0];
+function svgFor(spec, key) {
+  const svg = renderAdSvg(spec), p = placementOf(key);
+  return p.key === "1x1" ? svg : placementSvg(svg, p.h, spec.backgroundHref || "");
+}
+function drawSizeButtons(blocked) {
+  $("#size-preview").innerHTML = PLACEMENTS.map((p) => `<button type="button" class="ghost size${p.key === previewSize ? " on" : ""}" data-size="${p.key}">${p.label}</button>`).join("");
+  $("#size-dl").innerHTML = PLACEMENTS.map((p) => `<button type="button" class="dlbtn" data-dl="${p.key}"${blocked ? " disabled" : ""} title="Download ${p.label} PNG (${p.w}×${p.h})">${p.label}</button>`).join("");
+  $("#size-preview").querySelectorAll("button").forEach((b) => (b.onclick = () => { previewSize = b.dataset.size; drawMain(); }));
+  $("#size-dl").querySelectorAll("button").forEach((b) => (b.onclick = () => downloadSize(b.dataset.dl)));
+}
+
 // Why export is off for this format, if it is.
 function exportBlock(id) {
   const f = fmtOf(id), it = items[id];
@@ -345,9 +498,9 @@ async function drawMain() {
   const myGen = gen;
   const spec = await hydrate(id);
   if (myGen !== gen || id !== selected) return;
-  $("#preview").innerHTML = renderAdSvg(spec);
+  $("#preview").innerHTML = svgFor(spec, previewSize);
   const block = exportBlock(id);
-  $("#dl-png").disabled = Boolean(block);
+  drawSizeButtons(Boolean(block));
   $("#export-note").textContent = block || "Exports include the review ticket — send both to the reviewer. This is not an approval.";
   $("#fmt-head").innerHTML = `
     <h3 class="fmt-title"><span class="tag new">New</span> #${f.rank} ${esc(f.label)}</h3>
@@ -526,18 +679,19 @@ $("#recheck").onclick = async () => {
   } catch (err) { $("#export-note").textContent = err.message; }
 };
 
-$("#dl-png").onclick = async () => {
+async function downloadSize(key) {
   if (exportBlock(selected)) return;
-  const svg = renderAdSvg(await hydrate(selected));
+  const p = placementOf(key), id = selected;
+  const svg = svgFor(await hydrate(id), key);
   const img = new Image();
   img.src = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
   await img.decode();
   const c = document.createElement("canvas");
-  c.width = SIZE.w;
-  c.height = SIZE.h;
-  c.getContext("2d").drawImage(img, 0, 0);
-  c.toBlob((b) => download(b, `${slug()}_${selected}_1080x1080.png`), "image/png");
-};
+  c.width = p.w;
+  c.height = p.h;
+  c.getContext("2d").drawImage(img, 0, 0, p.w, p.h);
+  c.toBlob((b) => download(b, `${slug()}_${id}_${p.w}x${p.h}.png`), "image/png");
+}
 
 $("#dl-ticket").onclick = () => download(new Blob([ticket()], { type: "text/markdown" }), `${slug()}_${selected}_review-ticket.md`);
 

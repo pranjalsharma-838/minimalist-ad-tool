@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "studio": "node scripts/image_studio_worker.mjs",
     "eval": "node eval/run.js",
     "test": "node --test \"tests/*.test.js\""
   },

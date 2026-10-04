@@ -14,6 +14,8 @@
 //   POST /api/image-request    {handle, prompt, sheet}         -> queues a request for the image studio (no image API)
 //   GET  /api/image-requests?handle= -> that product's queued requests and any results
 //   GET  /api/request-image?id= -> a finished request's image
+//   GET  /api/images?q=&handle=&type= -> every image we hold (real, cut-out, verified renders, AI scenes, requests, review photos), searchable
+//   GET  /img/<path>           -> one image file under the allowed image folders only (read-only, path-traversal safe)
 //   GET  /api/status                                           -> which layers are active
 //   POST /api/key              {key} | {clear:true}            -> sets the Claude API key for this session (memory only)
 import http from "node:http";
@@ -88,6 +90,10 @@ async function handleApi(req, res, url) {
     if (url.pathname === "/api/image-requests") {
       const { imageRequests } = await lazy("./lib/library.js");
       return send(res, 200, { requests: imageRequests(q("handle")) });
+    }
+    if (url.pathname === "/api/images") {
+      const { listImages } = await lazy("./lib/images.js");
+      return send(res, 200, listImages({ q: q("q"), handle: q("handle"), type: q("type") }));
     }
     if (url.pathname === "/api/request-image") {
       const { requestImageFile } = await lazy("./lib/library.js");
@@ -167,6 +173,12 @@ const server = http.createServer(async (req, res) => {
       const { libraryFile } = await lazy("./lib/library.js");
       const f = libraryFile(url.pathname.slice("/library/".length));
       return f ? sendFile(res, f) : send(res, 404, { error: "Not in the ad library" });
+    }
+    // Image library files, read-only, only the folders lib/images.js lists.
+    if (url.pathname.startsWith("/img/")) {
+      const { imageFile } = await lazy("./lib/images.js");
+      const f = imageFile(url.pathname.slice("/img/".length));
+      return f ? sendFile(res, f, 60) : send(res, 404, { error: "Not in the image library" });
     }
     const rel = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
     const file = path.normalize(path.join(here, "public", rel));

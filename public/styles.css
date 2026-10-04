@@ -162,3 +162,21 @@ label.inline.small input { width: auto; margin: 0; }
 .viewer-grid { display: grid; grid-template-columns: minmax(240px, 460px) 1fr; gap: 16px; clear: both; }
 .viewer-grid img { width: 100%; border: 1px solid var(--line); border-radius: 4px; }
 @media (max-width: 700px) { .viewer-grid { grid-template-columns: 1fr; } .strip, .lib-cards { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }
+
+/* image library, size buttons, library scores (2026-10-05) */
+.img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 10px 0; }
+.img-card { background: var(--panel); color: var(--ink); border: 1px solid var(--line); padding: 6px; display: flex; flex-direction: column; gap: 4px; text-align: left; align-items: flex-start; }
+.img-card img { width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 4px; background: #fff; }
+.lib-open { background: none; border: 0; padding: 0; width: 100%; cursor: pointer; }
+.sizes { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 6px 0; }
+.sizes > .hint { min-width: 92px; }
+.sizebtns { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.sizebtns button, .dlbtn, a.dl { padding: 5px 12px; font-size: 13px; border-radius: 6px; border: 1px solid var(--ink); text-decoration: none; cursor: pointer; display: inline-block; }
+.sizebtns button.size.on { background: var(--ink); color: var(--panel); }
+.dlbtn, .sizebtns button.dlbtn { background: var(--ink); color: var(--panel); }
+.dlrow { display: flex; gap: 4px; flex-wrap: wrap; }
+a.dl { padding: 2px 8px; font-size: 12px; background: transparent; color: var(--ink); }
+a.dl:hover { background: var(--ink); color: var(--panel); }
+.req img.warn, .viewer-grid img.warn { border: 3px solid var(--block); }
+.lib-card .scores { display: flex; gap: 6px; flex-wrap: wrap; font-size: 12px; }
+#viewer-body .score-cards { margin: 8px 0; }

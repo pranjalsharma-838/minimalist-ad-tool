@@ -712,3 +712,17 @@ export function layoutProblems(spec) {
   if (["journey", "range"].includes(spec.layout) && (spec.steps || spec.range || []).some((x) => !x.imageHref && !x.imageSrc)) problems.push("A product in the journey/range has no pack shot.");
   return problems;
 }
+
+// Other placements (same recipe as pipeline/08_compose.js): the approved 1:1 creative is centred, unchanged, as a 1000px
+// rounded card on a taller canvas (4:5 feed 1080x1350, 9:16 Stories/Reels 1080x1920). The 9:16 leaves 420px top and bottom,
+// clear of Meta's Stories/Reels UI zones. backgroundHref (a generated background, when there is one) is blurred behind the card.
+export const PLACEMENTS = [
+  { key: "1x1", label: "1:1", w: 1080, h: 1080 },
+  { key: "4x5", label: "4:5", w: 1080, h: 1350 },
+  { key: "9x16", label: "9:16", w: 1080, h: 1920 },
+];
+export function placementSvg(squareSvg, H, backgroundHref = "") {
+  const S = 1000, x0 = 40, y0 = (H - S) / 2;
+  const b64 = btoa(unescape(encodeURIComponent(squareSvg)));
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="${H}" viewBox="0 0 1080 ${H}"><defs><filter id="soft" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="40"/></filter><filter id="card" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.22"/></filter><clipPath id="r"><rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28"/></clipPath></defs><rect width="1080" height="${H}" fill="#EDEDED"/>${backgroundHref ? `<image href="${backgroundHref}" x="-120" y="-120" width="1320" height="${H + 240}" preserveAspectRatio="xMidYMid slice" filter="url(#soft)"/>` : ""}<rect x="${x0}" y="${y0}" width="${S}" height="${S}" rx="28" fill="#fff" filter="url(#card)"/><image href="data:image/svg+xml;base64,${b64}" x="${x0}" y="${y0}" width="${S}" height="${S}" clip-path="url(#r)"/></svg>`;
+}

@@ -22,6 +22,7 @@
   <nav class="tabs" role="tablist">
     <button class="tab active" data-tab="generate" role="tab">Ads for a product</button>
     <button class="tab" data-tab="score" role="tab">Score any ad</button>
+    <button class="tab" data-tab="images" role="tab">Image library</button>
   </nav>
 
   <main>
@@ -48,6 +49,13 @@
         <div class="sechead"><h2><span class="tag existing">Existing</span> Ads already in the library <span id="lib-count" class="hint"></span></h2></div>
         <div id="lib-body"></div>
       </section>
+
+      <!-- This product's images (real, cut-outs, verified renders, requests); the full searchable list is the Image library tab -->
+      <details id="prod-images" class="library hidden" aria-label="Images for this product">
+        <summary><b>Images for this product</b> <span id="pi-count" class="hint"></span></summary>
+        <div id="pi-body" class="img-grid"></div>
+        <p class="row"><button type="button" id="pi-open" class="ghost">Open in the Image library</button></p>
+      </details>
 
       <details id="facts" class="facts hidden">
         <summary>Product facts the generator may use</summary>
@@ -92,7 +100,8 @@
             <div id="preview" class="preview"></div>
             <div id="needs" class="needs hidden"></div>
             <div class="exports">
-              <button id="dl-png">Download PNG (1080×1080)</button>
+              <div class="sizes"><span class="hint">Preview</span><span id="size-preview" class="sizebtns"></span></div>
+              <div class="sizes"><span class="hint">Download PNG</span><span id="size-dl" class="sizebtns"></span></div>
               <button id="dl-ticket" class="ghost">Download review ticket</button>
               <p id="export-note" class="hint"></p>
             </div>
@@ -138,6 +147,19 @@
       </form>
       <div id="score-msg" class="msg"></div>
       <div id="score-report"></div>
+    </section>
+
+    <!-- IMAGE LIBRARY -->
+    <section id="tab-images" class="panel hidden">
+      <p class="hint">Every image we hold: real pack photos, cut-outs, label-verified ChatGPT renders and texture shots, AI scenes and people (AI — Severe), images made by the image studio, and customer review photos (reference only). Search by product, type or words from the prompt or notes.</p>
+      <form id="img-search" class="row" autocomplete="off">
+        <input id="img-q" type="search" placeholder="Search: e.g. niacinamide texture, bathroom shelf, cut-out, review photo" aria-label="Search images" />
+        <select id="img-type" aria-label="Type"><option value="">All types</option></select>
+        <select id="img-handle" aria-label="Product"><option value="">All products</option></select>
+      </form>
+      <p id="img-count" class="hint"></p>
+      <div id="img-grid" class="img-grid"></div>
+      <p class="row"><button type="button" id="img-more" class="ghost hidden">Show more</button></p>
     </section>
   </main>
 
