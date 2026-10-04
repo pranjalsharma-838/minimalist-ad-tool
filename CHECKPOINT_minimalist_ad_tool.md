@@ -1,6 +1,18 @@
 # CHECKPOINT: Minimalist Ad Desk
 
-## 2026-10-04 LATER (latest; supersedes below)
+## 2026-10-04 LATEST
+- **Ingredient lockup** in the pack-label style (bold active, the pack's accent-colour line, light %) on hero, offer and socialproof ads, on ingredient ads and under each pack in routines and ranges; also in the app.
+  - Rule: `lib/brief_check.js` `lockupFor` / `itemLockup`.
+  - Colours: `brand_packs/minimalist/assets/accent_colours.json`.
+- **"Hide Nothing."** accepted by the user: judge findings on brand taglines are marked accepted (`lib/score.js`). "Skin Science" is allowed as a tag.
+- **Trending #10** rebuilt as a lifestyle shot with a Skin Science tag (Severe: a model).
+- **Library:** 95 ads / 289 PNGs, 51 not exportable; 95/95 within budget. Commits: 104; tests 47/47.
+- **Answered:**
+  - sunscreen top 5 = offer, routine bundle, clean product shot, benefit badges, product-in-hand (Severe);
+  - gap list (real photos, live key run, texture shots, white-pack cut-outs, app format picker, Meta export, refresh schedule, video/carousels, results loop, second brand).
+- **Open:** GitHub push when the user logs in (rebuild the clean copy first).
+
+## 2026-10-04 LATER (superseded by LATEST above)
 - **Trending now:**
   - `scripts/build_trending.js` reads 33 of 34 recent competitor statics confirmed live (`research/competitor_status_2026-10-04.json`) and finds 7 formats with 2+ brands launched in the last 60 days;
   - run `2026-10-04-trending` holds 7 ads, one per product (2 Severe: before/after, split-screen);
