@@ -4,54 +4,57 @@
   "source_file": "brand_packs/minimalist/assets/raw/salicylic-lha-2-cleanser/01.jpg",
   "cutout": "brand_packs/minimalist/assets/cutouts/salicylic-lha-2-cleanser_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.117,
+  "kept_fraction": 0.293,
   "size": [
-   723,
-   1086
+   510,
+   1176
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "white bottle: body and label eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow; base edge slightly uneven at full size",
+  "method": "edge-walled backdrop removal, shape other (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "multi-vitamin-spf-50",
   "source_file": "brand_packs/minimalist/assets/raw/multi-vitamin-spf-50/01.jpg",
   "cutout": "brand_packs/minimalist/assets/cutouts/multi-vitamin-spf-50_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.222,
+  "kept_fraction": 0.358,
   "size": [
-   962,
-   1221
+   542,
+   1348
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "white tube: shaded side and label eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "vitamin-b5-10-moisturizer",
   "source_file": "brand_packs/minimalist/assets/raw/vitamin-b5-10-moisturizer/01.png",
   "cutout": "brand_packs/minimalist/assets/cutouts/vitamin-b5-10-moisturizer_01.png",
   "bg": [
-   226,
-   230,
-   231
+   232,
+   127,
+   127
   ],
-  "kept_fraction": 0.267,
+  "kept_fraction": 0.302,
   "size": [
-   866,
-   1179
+   532,
+   1327
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "white tube: shaded side eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "niacinamide-10-with-matmarine",
@@ -130,18 +133,19 @@
   "source_file": "brand_packs/minimalist/assets/raw/marula-05-moisturizer/01.png",
   "cutout": "brand_packs/minimalist/assets/cutouts/marula-05-moisturizer_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.266,
+  "kept_fraction": 0.308,
   "size": [
-   962,
-   1220
+   535,
+   1357
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "white tube: shaded side eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "niacinamide-5-hyaluronic-acid-1",
@@ -256,18 +260,19 @@
   "source_file": "brand_packs/minimalist/assets/raw/light-fluid-spf-50-sunscreen/01.jpg",
   "cutout": "brand_packs/minimalist/assets/cutouts/light-fluid-spf-50-sunscreen_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.03,
+  "kept_fraction": 0.235,
   "size": [
-   663,
-   1048
+   434,
+   1191
   ],
   "auto_check": "CHECK",
-  "visual_check": "unusable",
-  "visual_note": "white tube: shaded side matches the background grey, edge eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "2-hyaluronic-acid",
@@ -292,36 +297,38 @@
   "source_file": "brand_packs/minimalist/assets/raw/vitamin-k-retinal-01-eye-cream/01.png",
   "cutout": "brand_packs/minimalist/assets/cutouts/vitamin-k-retinal-01-eye-cream_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.12,
+  "kept_fraction": 0.136,
   "size": [
-   542,
-   999
+   307,
+   1134
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "pale tube: label partly eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "spf-60-silymarin",
   "source_file": "brand_packs/minimalist/assets/raw/spf-60-silymarin/01.png",
   "cutout": "brand_packs/minimalist/assets/cutouts/spf-60-silymarin_01.png",
   "bg": [
-   229,
-   233,
-   234
+   235,
+   127,
+   127
   ],
-  "kept_fraction": 0.222,
+  "kept_fraction": 0.296,
   "size": [
-   962,
-   1209
+   535,
+   1331
   ],
   "auto_check": "ok",
-  "visual_check": "unusable",
-  "visual_note": "white tube: shaded side eaten"
+  "visual_check": "clean",
+  "visual_note": "re-cut 2026-10-04 (edge-walled, shape-aware); checked on red: body, label and cap intact, no floor shadow",
+  "method": "edge-walled backdrop removal, shape tube (scripts/cutout_edges.py)"
  },
  {
   "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",

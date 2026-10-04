@@ -184,3 +184,11 @@ Architecture agreed with the user: `docs/ARCHITECTURE.md`. Step-by-step run orde
 
 ## Deferred (conserving tokens)
 Amazon best-seller competitor search, Flipkart, Instagram, Amazon 11–20, deep Meta, Google Ads Transparency, global trend sources.
+
+## 2026-10-04 EVENING (fixes after the walkthrough)
+- Brand/legal answers YES: rules/brand_decisions.json (DEC-01 acne wording advisory; DEC-02 comparisons in scope, still High risk + proof needed; DEC-03 taglines). lib/decisions.js applies them. Eval unchanged (holdout 90%, OOD 81%).
+- Weekly Trending check: scripts/adlib_weekly.js (lib/cdp.js, headless Edge, no installs) + Windows task "Minimalist Ad Desk - Trending weekly" (Mondays 10:00; remove: scripts/schedule_weekly.ps1 -Remove). First run: 46 new competitor statics, tagged by stand-in agents (prompts/trend_tagger.md); trending 7 -> 10 formats; #1, #38, #5 NOT yet recreated in the library.
+- App: 7 formats (hero, actives, badges, stat, review, question, texture). Review uses lib/reviews.js (captured verified reviews, same screen as pipeline). OFR-03 "almost gone" false positive fixed. Review stars bug fixed (string stars drew none; missing drew 5).
+- Cut-outs: scripts/cutout_edges.py re-cut 7 white packs (edge-walled + tube outline); registered in assets/index.json; library re-rendered.
+- Texture: only real texture on file = oat cleanser gel crop (assets/textures/). 7 best sellers need a texture shoot.
+- NEXT: user wants "each agent's instructions".

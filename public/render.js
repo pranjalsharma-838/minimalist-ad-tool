@@ -454,6 +454,19 @@ LAYOUTS.badges = (spec, s) => {
   return chromeEnd(spec, parts, y);
 };
 
+// #21 Texture shot (user, 2026-10-04: "there are no texture shots"): a REAL photo of the product's texture (asset
+// library type "texture", never generated) under the title, the pack large on the right, as in the brand's statics
+// that pair a pack with its gel or cream. Without a texture photo the format isn't offered.
+LAYOUTS.texture = (spec, s) => {
+  const parts = chromeStart(spec, "left");
+  parts.push(pack(spec, spec.imageHref, 560, 120, 460, 680));
+  let y = headlineBlock(parts, spec.headline, PAD, 150, 440, s, 46);
+  if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + Math.round(26 * s), s, 440);
+  const ty = y + Math.round(36 * s), th = Math.max(160, Math.min(300, BAND_Y - 40 - ty));
+  if (spec.textureHref) parts.push(`<clipPath id="texClip"><rect x="${PAD}" y="${ty}" width="440" height="${th}" rx="8"/></clipPath><image href="${esc(spec.textureHref)}" x="${PAD}" y="${ty}" width="440" height="${th}" preserveAspectRatio="xMidYMid slice" clip-path="url(#texClip)"/>`);
+  return chromeEnd(spec, parts, ty + th);
+};
+
 function twoColumns(spec, s, left, right, rightHasPack) {
   const { w } = SIZE;
   const parts = chromeStart(spec, "full");
@@ -528,10 +541,14 @@ LAYOUTS.review = (spec, s) => {
   const r = spec.review || {};
   // Minimal look (2026-10-04): no card box; stars, the quote set large, the source in grey.
   let y = headlineBlock(parts, spec.headline, PAD, 150, 440, s, 30) + Math.round(40 * s);
-  parts.push(`<text x="${PAD}" y="${y + 30}" font-family="${FONT}" font-size="30" letter-spacing="2" fill="${C.ink}">${"★".repeat(Math.max(0, Math.min(5, r.stars || 5)))}</text>`);
-  y += 30 + Math.round(30 * s);
-  const qs = Math.round(32 * s), ql = Math.round(42 * s), q = wrap(`“${r.quote || ""}”`, qs, 440, 0.52).slice(0, 6);
+  // Stars only when the review states its rating (4, or "★★★★"). A quote with no rating gets none: drawing five
+  // would invent one. (Fix 2026-10-04: a "★★★★" string drew nothing, and a missing rating drew five.)
+  const stars = Math.min(5, typeof r.stars === "string" ? (r.stars.match(/★/g) || []).length || Number(r.stars) || 0 : Number(r.stars) || 0);
+  if (stars) { parts.push(`<text x="${PAD}" y="${y + 30}" font-family="${FONT}" font-size="30" letter-spacing="2" fill="${C.ink}">${"★".repeat(stars)}</text>`); y += 30 + Math.round(30 * s); }
+  const qs = Math.round(32 * s), ql = Math.round(42 * s), qAll = wrap(`“${r.quote || ""}”`, qs, 440, 0.52), q = qAll.slice(0, 6);
   parts.push(T(q, PAD, y + qs, qs, ql, `font-weight="400" fill="${C.ink}"`));
+  // A quote that needs more than 6 lines at this size forces a smaller size; at the smallest, layoutProblems blocks it.
+  if (qAll.length > 6) return { svg: chromeEnd(spec, parts, 0).svg, bottom: 1e9 };
   y += qs + (q.length - 1) * ql + Math.round(30 * s);
   parts.push(T(wrap(r.source || "[review source + date]", 18, 440).slice(0, 2), PAD, y + 18, 18, 23, `fill="${C.muted}"`));
   let yb = y + 40;
@@ -664,6 +681,8 @@ export function layoutProblems(spec) {
   (spec.specs || []).forEach((r, i) => lim(`Spec ${i + 1}`, r.value, 70));
   (spec.range || []).forEach((r, i) => lim(`Range label ${i + 1}`, r.label, 40));
   (spec.compare?.rows || []).forEach((r, i) => { lim(`Row ${i + 1} label`, r.label, 40); lim(`Row ${i + 1} us`, r.us, 24); lim(`Row ${i + 1} them`, r.them, 24); });
+  // The review card draws 6 quote lines at most: a longer quote must be swapped for a shorter one, never cut.
+  if (spec.layout === "review" && spec.review?.quote && wrap(`“${spec.review.quote}”`, Math.round(32 * m.scale), 440, 0.52).length > 6) problems.push("Customer quote is too long for the card and would be cut; use a shorter quote (never shorten one).");
   if (spec.layout === "offer" && spec.offer && !String(spec.offer.condition || "").trim()) problems.push("Offer has no condition: 'free' / discount terms must sit with the offer (CCPA 7).");
   if (spec.layout === "before_after" && !(spec.photos || []).length) problems.push("Before/after has no real study photos attached — export stays blocked.");
   if (["journey", "range"].includes(spec.layout) && (spec.steps || spec.range || []).some((x) => !x.imageHref && !x.imageSrc)) problems.push("A product in the journey/range has no pack shot.");

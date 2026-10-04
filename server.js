@@ -2,7 +2,8 @@
 //   GET  /                 -> public/index.html
 //   POST /api/extract      {url} | {manual:{...}}        -> fact sheet
 //   GET  /api/image?src=   (Shopify CDN only)              -> image bytes (same-origin, so PNG export isn't blocked)
-//   POST /api/generate     {sheet}                         -> {ad, report}  (self-scored)
+//   POST /api/generate     {sheet, mode?, format?}         -> {copy, format, formats, spec, report}  (self-scored)
+//   POST /api/rescore      {copy, sheet, format?}          -> {spec, report, formats}  (after an edit or a format change)
 //   POST /api/score        {ad, sheet?} | {image}          -> report
 //   GET  /api/status                                       -> which layers are active
 //   POST /api/key          {key} | {clear:true}            -> sets the Claude API key for this session (memory only)
@@ -51,6 +52,14 @@ async function handleApi(req, res, url) {
     res.writeHead(200, { "content-type": r.headers.get("content-type") || "image/png", "cache-control": "max-age=3600" });
     return res.end(Buffer.from(await r.arrayBuffer()));
   }
+  // A product's real texture photo from the asset library (type "texture"), for the Texture shot format.
+  if (url.pathname === "/api/texture" && req.method === "GET") {
+    const { textureOf } = await lazy("./lib/generate.js");
+    const t = textureOf({ url: `https://beminimalist.co/products/${url.searchParams.get("handle") || ""}` });
+    if (!t) return send(res, 404, { error: "No texture photo for this product" });
+    res.writeHead(200, { "content-type": t.file.endsWith(".png") ? "image/png" : "image/jpeg", "cache-control": "max-age=3600" });
+    return res.end(await fs.readFile(path.join(here, t.file)));
+  }
   if (req.method !== "POST") return send(res, 405, { error: "POST only" });
   const body = await readJson(req);
   // Claude API key typed into the app (2026-10-04: the people running it bring their own key). It lives only in this
@@ -76,22 +85,24 @@ async function handleApi(req, res, url) {
   }
   if (url.pathname === "/api/generate") {
     const { generateAd } = await lazy("./lib/generate.js");
-    return send(res, 200, await generateAd(body.sheet, { mode: body.mode }));
+    return send(res, 200, await generateAd(body.sheet, { mode: body.mode, format: body.format }));
   }
   if (url.pathname === "/api/rescore") {
-    // Marketer edited the copy: re-render spec, re-check layout, re-score against the same product page.
-    const { adFromCopy, specFromCopy } = await lazy("./lib/generate.js");
+    // Marketer edited the copy or picked another format: re-render spec, re-check layout, re-score against the same
+    // product page.
+    const { adFromCopy, specFromCopy, formatOptions } = await lazy("./lib/generate.js");
     const { scoreAd } = await lazy("./lib/score.js");
     const { layoutProblems } = await lazy("./public/render.js");
-    const spec = specFromCopy(body.copy, body.sheet);
-    const report = await scoreAd(adFromCopy(body.copy, body.sheet), { sheet: body.sheet });
+    const spec = specFromCopy(body.copy, body.sheet, body.format);
+    const formats = formatOptions(body.copy, body.sheet);
+    const report = await scoreAd(adFromCopy(body.copy, body.sheet, spec.format), { sheet: body.sheet });
     const layout_problems = layoutProblems(spec);
     if (layout_problems.length) {
       report.findings.unshift({ rule_id: "LAYOUT", dimension: "language", severity: "block", title: "Copy doesn't fit the layout", field: "headline", start: 0, end: 0, span: "", message: layout_problems.join(" "), fix: "Shorten the copy.", sources: [], confidence: "layout check", layer: "rule" });
       const { verdictFor } = await lazy("./lib/score.js");
       report.verdict = verdictFor(report.findings, report.coverage);
     }
-    return send(res, 200, { spec, report, layout_problems });
+    return send(res, 200, { spec, report, layout_problems, format: spec.format, formats });
   }
   if (url.pathname === "/api/score") {
     const { scoreAd, scoreImageAd } = await lazy("./lib/score.js");

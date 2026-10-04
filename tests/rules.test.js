@@ -163,6 +163,12 @@ test("brand/legal decision DEC-01: acne wording accepted, drug, prevention and e
   assert.deepEqual(r.findings.filter((f) => f.layer === "model").map((f) => [f.severity, f.decision]), [["advisory", "DEC-01"], ["advisory", "DEC-03"]]);
 });
 
+test("'almost gone' is scarcity only when it's about stock", () => {
+  const gone = (t) => runRules({ ad_type: "brand", headline: "", primary_text: t, on_image_text: "", footnote: "", cta: "" }).some((f) => f.rule_id === "OFR-03" && /almost gone/i.test(f.span));
+  assert.ok(gone("Almost gone! Stock up before the sale ends."));
+  assert.ok(!gone("I had acne scar marks and now it's almost gone."));
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));

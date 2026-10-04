@@ -101,7 +101,7 @@ export function renderReport(report, el) {
 }
 
 // ---------- generate flow ----------
-let sheet = null, current = null, imageDataUrl = "", canvasColour = "";
+let sheet = null, current = null, imageDataUrl = "", canvasColour = "", format = "hero";
 // Minimal look (2026-10-04): the ad's background takes the pack photo's own studio colour (its corner pixel), so a
 // pack shot with a grey backdrop blends in instead of showing as a grey box on white.
 async function cornerColour(src) {
@@ -159,9 +159,21 @@ async function toDataUrl(src) {
   });
 }
 
-function drawPreview() {
+// Texture photos (Texture shot format) are inlined the same way, fetched once per product.
+const textures = {};
+async function textureData(src) {
+  if (!src) return "";
+  if (!(src in textures)) {
+    const r = await fetch(src);
+    textures[src] = r.ok ? await new Promise(async (res) => { const fr = new FileReader(); fr.onload = () => res(fr.result); fr.readAsDataURL(await r.blob()); }) : "";
+  }
+  return textures[src];
+}
+
+async function drawPreview() {
   // The product photo is inlined as a data URL so PNG export works (an SVG drawn to canvas can't load external images).
-  $("#preview").innerHTML = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, canvas: canvasColour });
+  current.textureHref = await textureData(current.spec.textureSrc);
+  $("#preview").innerHTML = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, textureHref: current.textureHref, canvas: canvasColour });
   const blocked = current.report.verdict.code === "BLOCKED";
   $("#dl-png").disabled = blocked;
   $("#export-note").textContent = blocked
@@ -171,6 +183,32 @@ function drawPreview() {
   $("#gen-log").innerHTML = current.log?.length
     ? `<details><summary>Generation log (${current.mode} mode)</summary><pre>${esc(JSON.stringify(current.log, null, 2))}</pre></details>`
     : `<p class="hint">Copy mode: ${current.mode}.</p>`;
+}
+
+// Format picker (2026-10-04: "there's only one layout, the standard product ad"). The same cited copy fills each
+// format; one the product can't fill honestly stays visible with the reason instead of being faked.
+function renderFormats(formats) {
+  $("#formats").innerHTML = formats
+    .map((f) => `<button type="button" class="fmt${f.id === format ? " on" : ""}${f.available ? "" : " off"}" data-id="${f.id}" role="radio" aria-checked="${f.id === format}"${f.available ? "" : ` aria-disabled="true" title="${esc(f.why)}"`}>${esc(f.label)}</button>`)
+    .join("");
+  $("#fmt-why").textContent = "";
+  $("#formats").querySelectorAll(".fmt").forEach((b) => (b.onclick = () => {
+    const f = formats.find((x) => x.id === b.dataset.id);
+    if (!f.available) return ($("#fmt-why").textContent = `${f.label}: ${f.why}`);
+    if (f.id !== format) rescore({ format: f.id });
+  }));
+}
+
+async function rescore({ copy = current.copy, format: next = format, edited = false } = {}) {
+  try {
+    const out = await api("/api/rescore", { copy, sheet, format: next });
+    format = out.format;
+    current = { ...current, copy, spec: out.spec, report: out.report, format, formats: out.formats, log: [...(current.log || []), edited ? { step: "marketer edited copy and re-checked", layout: out.layout_problems } : { step: `format changed to ${format}`, layout: out.layout_problems }] };
+    renderFormats(out.formats);
+    drawPreview();
+  } catch (err) {
+    $("#export-note").textContent = err.message;
+  }
 }
 
 function fillEditor(copy) {
@@ -184,12 +222,14 @@ function fillEditor(copy) {
 $("#generate").onclick = async () => {
   $("#extract-msg").textContent = "Generating and self-checking…";
   try {
-    const out = await api("/api/generate", { sheet, mode: $("#mode").value });
+    const out = await api("/api/generate", { sheet, mode: $("#mode").value, format });
     if (out.refused) return ($("#extract-msg").innerHTML = `<div class="refusal">${esc(out.reason)}</div>`);
     current = out;
+    format = out.format;
     imageDataUrl = await toDataUrl(out.spec.imageSrc);
     canvasColour = imageDataUrl ? await cornerColour(imageDataUrl) : "";
     fillEditor(out.copy);
+    renderFormats(out.formats);
     $("#gen-result").classList.remove("hidden");
     $("#extract-msg").textContent = "";
     drawPreview();
@@ -206,18 +246,12 @@ $("#recheck").onclick = async () => {
     footnote: $("#e-footnote").value.trim(),
     cta: $("#e-cta").value,
   };
-  try {
-    const out = await api("/api/rescore", { copy, sheet });
-    current = { ...current, copy, spec: out.spec, report: out.report, log: [...(current.log || []), { step: "marketer edited copy and re-checked", layout: out.layout_problems }] };
-    drawPreview();
-  } catch (err) {
-    $("#export-note").textContent = err.message;
-  }
+  await rescore({ copy, edited: true });
 };
 
 $("#dl-png").onclick = async () => {
   if (current.report.verdict.code === "BLOCKED") return;
-  const svg = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, canvas: canvasColour });
+  const svg = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, textureHref: current.textureHref, canvas: canvasColour });
   const img = new Image();
   img.src = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
   await img.decode();
@@ -225,10 +259,10 @@ $("#dl-png").onclick = async () => {
   c.width = SIZE.w;
   c.height = SIZE.h;
   c.getContext("2d").drawImage(img, 0, 0);
-  c.toBlob((b) => download(b, `${slug()}_1080x1080.png`), "image/png");
+  c.toBlob((b) => download(b, `${slug()}_${format}_1080x1080.png`), "image/png");
 };
 
-$("#dl-ticket").onclick = () => download(new Blob([ticket(current)], { type: "text/markdown" }), `${slug()}_review-ticket.md`);
+$("#dl-ticket").onclick = () => download(new Blob([ticket(current)], { type: "text/markdown" }), `${slug()}_${format}_review-ticket.md`);
 
 const slug = () => (sheet?.title || "ad").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -250,8 +284,15 @@ function ticket(cur) {
     `- Verdict from pre-screen: **${r.verdict.label}** — ${r.verdict.detail}`,
     `- Checked: ${r.coverage.model ? "rules + model" : "rules only"} · rules v${r.coverage.rules_version} · ${r.scored_at}`,
     `- Copy mode: ${cur.mode}`,
+    `- Format: ${(cur.formats || []).find((f) => f.id === cur.format)?.label || "Product hero"}`,
     ``,
-    `## Copy on the creative`,
+    `## What the image shows`,
+    ...[r.ad.headline, ...String(r.ad.on_image_text || "").split("\n")].filter(Boolean).map((l) => `- ${l}`),
+    r.ad.footnote ? `- Footnote: ${r.ad.footnote}` : "",
+    ``,
+    `Caption (post text): ${r.ad.primary_text || "—"}`,
+    ``,
+    `## Generated copy and its sources`,
     `| Field | Text | Cited facts |`,
     `|---|---|---|`,
     `| Headline | ${c.headline} | ${cites("headline")} |`,

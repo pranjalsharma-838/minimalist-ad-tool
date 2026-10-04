@@ -13,11 +13,11 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 
 ## Making ads
 
-- **From a product link:** the app reads the page and writes copy where every line traces back to it. It puts the real product photo on a clean layout and checks the result. You can edit and re-check, then download the PNG with a review note. Timed on 10 products: about 3–4 seconds each without a key (`results/timing_2026-10-04.md`).
+- **From a product link:** the app reads the page and writes copy where every line traces back to it. It puts the real product photo on a clean layout and checks the result. Seven layouts: product hero, ingredient focus, benefit badges, study result, customer review (verified reviews captured from the brand site, stars and date kept), question and answer, and texture shot (real texture photos only). A layout the product can't fill honestly is shown greyed out with the reason. You can edit and re-check, then download the PNG with a review note. Timed on 10 products: about 3–4 seconds each without a key (`results/timing_2026-10-04.md`).
 - **The ad library** (`ad_library/index.html`) shows what the full pipeline makes: 95 ads across Minimalist's 7 best sellers, every angle for every product, in three sizes, a few in Hindi and Tamil.
 - **The look** comes from Minimalist's own longest-running static ads: white background, the product big, about 15 words on the image, details in the caption, and its "Hide Nothing." sign-off.
 - **The ideas** come from competitor ads that have run for over 30 days, blended so nothing is copied.
-- **Trending now:** a section for formats at least two brands launched in the last two months and are still running, each recreated Minimalist's way.
+- **Trending now:** a section for formats at least two brands launched in the last two months and are still running, each recreated Minimalist's way. A scheduled script re-checks the Meta Ad Library every Monday (about 4 minutes, nothing to install) and reports new launches, stopped ads and trends not yet recreated.
 - **Safety:**
   - The product photo is always real, never AI-drawn.
   - Any ad with an AI person or hands carries a visible AI label and is rated Severe, so it can't be exported until real, consented photos replace it.
@@ -39,4 +39,6 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 - **The AI judge hasn't run live,** and it isn't fully consistent from run to run, so a person always reviews.
 - **Customer-review language** comes from the brand site and Amazon only (Flipkart isn't parsed, and Nykaa blocks scripts).
 - **The rules are India-first;** another market needs its own rule set.
+- **Texture photos:** only one product (the oat cleanser) has a real texture photo on file; the 7 best sellers need a texture shoot before they get texture ads. No texture is ever AI-drawn.
+- **New competitor ads are sorted into formats by AI,** so with no key the weekly check lists them as unsorted (this week's 49 were sorted by stand-in agents on the same prompt).
 - **Brand and legal answers (4 Oct):** comparison ads are in, and acne wording is fine on a cosmetic. Both are recorded in `rules/brand_decisions.json` and applied automatically. The 7 comparison ads still can't be exported until someone attaches the proof behind each comparison.

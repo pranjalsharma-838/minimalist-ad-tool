@@ -9,6 +9,8 @@ Turns a product page into a checked, on-brand static ad, and scores any ad for c
 
 `npm test` runs the tests. `npm run eval` re-runs the scorer evaluation.
 
+**Weekly trend check (optional):** `powershell -ExecutionPolicy Bypass -File scripts\schedule_weekly.ps1` makes Windows re-check competitors' ads in the Meta Ad Library every Monday and refresh the Trending section (`-Remove` turns it off). Or run it once with `node scripts/adlib_weekly.js`.
+
 ## What's where
 - `docs/SUBMISSION.md` is the place to start.
 - Also in `docs/`: the decision doc (`DECISIONS.md`), the failure modes (`FAILURE_MODES.md`) and the build transcript (`TRANSCRIPT.md`).
