@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "axis_value": "surface: seamless white (single variant)",
+      "image_prompt": "Create a photographic image: keep the pack in the attached photo exactly as it is, with every colour, line of text and graphic on it identical, and keep its size, angle and soft contact shadow. Place it on a seamless pure white surface (#FFFFFF) lit by soft daylight from the upper left (about 5600K), square 1:1, with the pack on the right half of the frame. Add only a small swatch of this product's texture, a clear, lightweight serum smear with two small droplets, no sticky look, resting on the white surface to the left of the pack, about the size of a coin, with a soft natural highlight and a gentle contact shadow. The rest of the frame is intentionally empty. Do not include: any text or letters other than what is already on the pack, any logos, any second pack or bottle, any props, hands or people.",
+      "negative_prompt": "added text, extra logos, second pack, altered label, altered pack colours, props, hands, people, busy background"
+    }
+  ],
+  "rationale": "User instruction 2026-10-05 for format #21: the texture image is made by the orchestrator in ChatGPT from the verified pack render (attached), pack unchanged, only a texture swatch added beside it. House look: pure white seamless, daylight from the upper left, one texture element only. Texture described only as the page's own texture words (light, lightweight, oil-free, serum drops, light lather). One variant.",
+  "asset_requirements": [
+    "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\brand_packs\\minimalist\\assets\\ai_renders\\niacinamide-10-with-matmarine\\round1.png"
+  ],
+  "risk_level": "high",
+  "ai_label_required": true,
+  "risk_note": "AI-made texture swatch is illustrative and may differ from the real formula; replace with a real macro photo before any publication. The pack itself is the verified pack render, not redrawn.",
+  "refused": null,
+  "stand_in": "written by the Claude orchestrator agent as stand-in for the image prompt director (prompts/image_prompt_director.md)"
+}

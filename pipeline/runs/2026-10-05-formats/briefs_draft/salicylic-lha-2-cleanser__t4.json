@@ -1,0 +1,61 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "salicylic-lha-2-cleanser__t4",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "A daily, gentle exfoliating cleanser",
+  "subhead": "Sulfate-free surfactants",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "situation",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Salicylic Acid + LHA 2% Cleanser is a daily, gentle exfoliating face cleanser with 2 very mild sulfate-free surfactants that clean without stripping skin lipids or proteins. 2% is the combined BHA + LHA strength.",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F8"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F3",
+      "F8"
+    ]
+  },
+  "layout_description": "White canvas; two-line ingredient headline and one supporting line on the left with the active + strength lockup beneath; the real pack large on the right.",
+  "adaptation_notes": "Format #4 Ingredient flat lay: the minimal house look draws no prop scene (no fruit, droplets or backdrop), so the ingredient cue is the named ingredient and its sourcing from the page, with the strength in the lockup. Dropped: overlay-free hero-fruit staging, 'zero grease', pearl-glow and brightening wording. No result claims.",
+  "blend_sources": [
+    {
+      "id": "984872741086615",
+      "brand": "Dr. Sheth's",
+      "took": "pack with an ingredient cue"
+    },
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "ingredient tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "minimal two-line headline"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

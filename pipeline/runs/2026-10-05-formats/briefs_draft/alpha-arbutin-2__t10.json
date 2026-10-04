@@ -1,0 +1,64 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "hero",
+  "source_ad_id": "alpha-arbutin-2__t10",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "headline": "2% Alpha Arbutin, AM and PM",
+  "subhead": "Use sunscreen during the day",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real lifestyle photo (consenting person, natural light) would replace the AI person.",
+  "angle": "social_proof",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page. Apply 2-3 drops after cleansing & toning, AM & PM, and use sunscreen during the day.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F20"
+    ],
+    "subhead": [
+      "F19"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F19",
+      "F20"
+    ]
+  },
+  "layout_description": "Light canvas; black tagline tag above the headline; the AI lifestyle photo on the right with the real pack in front; AI-GENERATED mark; Hide Nothing. sign-off under the wordmark; quiet Shop now.",
+  "adaptation_notes": "Format #10 Problem macro: both reference structures rely on a skin-problem close-up (fear framing, needs real photos), so the macro is dropped and the format is rebuilt as a lifestyle shot with the brand taglines, as in the 2026-10-04 trending run. Reuses the existing AI lifestyle image from run 2026-10-03-people (t6) for this product. Headline states the active and strength; copy is page usage or suitability only; no result wording. Person is AI-generated: Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern labels around the pack"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "labelled callouts to the pack"
+    },
+    {
+      "id": "1594682718905718",
+      "brand": "Dr. Sheth's",
+      "took": "people strip reduced to one lifestyle photo"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "person_prompt": "An Indian woman in her early 30s with medium-brown skin, winding down in the evening in her Bengaluru apartment: she sits curled into the corner of a sofa beside a tall window, a soft cotton throw over her knees, the blue-grey dusk and a few distant apartment lights outside, a leafy indoor plant and a cane side table with a plain steel tumbler beside her. She wears a simple pale cotton kurta with her dark hair loosely tied back, one hand resting relaxed in her lap, her expression calm and unhurried as she gazes out of the window. Warm lamp light from the upper left blends with the last of the daylight, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no heavy makeup or jewellery, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

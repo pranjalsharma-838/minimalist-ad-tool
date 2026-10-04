@@ -1,0 +1,107 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "multi-vitamin-spf-50__t15",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "SPF 50 for UV exposure",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "4 UV filters for UVA & UVB protection",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "text": "No white cast on application",
+      "cites": [
+        "F8"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50; in-vivo ISO 24444:2019, independent lab; SPF obtained: 56.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "SPF 50 Sunscreen has 4 UV filters (Uvinul T 150, Avobenzone, Octocrylene and Titanium Dioxide) for UVA & UVB protection, and is a photostable, acne safe sunscreen that does not leave a white cast. Apply at least 15 minutes before sun exposure.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F11"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F14",
+      "F16",
+      "F18"
+    ],
+    "caption": [
+      "F5",
+      "F8",
+      "F20"
+    ]
+  },
+  "layout_description": "Headline top-left naming the strength; two short callout labels on the left connected to the large pack on the right; SPF lab basis in the footnote.",
+  "adaptation_notes": "Format #15 Problem -> product: the 'problem' is the page's own concern line (UV exposure, F11), shown as plain text with no skin close-up or fear framing. Two callouts only (user note 2026-10-05; the layout puts the pack large on the right). Dropped: four-concern icon grid, best-seller strip, split face.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern labels around a central pack"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "wired callout labels"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "ingredient-to-benefit pairing"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 56",
+      "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

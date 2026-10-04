@@ -53,6 +53,16 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
     return href;
   };
   spec.imageHref = cut(main) || (await packShot(spec.imageSrc));
+  // Texture shot (user decision 2026-10-05): ChatGPT's pack-plus-swatch image of this product (label checked like the
+  // pack renders) is the visual. The texture is AI-made, so the ad carries the AI mark.
+  const tex = path.join("brand_packs/minimalist/assets/ai_renders", main, "texture1.png");
+  if (spec.layout === "texture" && fs.existsSync(tex)) {
+    spec.imageHref = dataUrl(fs.readFileSync(tex), "image/png");
+    spec.textureHref = undefined;
+    spec.textureScene = true;
+    spec.canvas = "#FFFFFF";
+    spec.aiLabel = true;
+  }
   spec.accent = ACCENT[main] || "";
   for (const s of [...spec.steps, ...spec.range]) { s.imageHref = cut(s.product_handle) || (await packShot(s.imageSrc)); s.accent = ACCENT[s.product_handle] || ""; }
   // Minimal look (2026-10-04): white canvas. A pack without a clean cut-out (white packs on the grey sweep) would

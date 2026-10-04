@@ -1,0 +1,64 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t9",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "2-3 drops after cleansing and toning",
+  "subhead": "Tap in gently, then spread evenly",
+  "tag": "",
+  "proof_points": [
+    "Use AM & PM, every day"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+  "angle": "social_proof",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly with a circular motion. Use AM & PM, every day. 10% is the Vitamin C strength stated on the page.",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [
+      "F14"
+    ],
+    "tag": [],
+    "proof_points": [
+      [
+        "F15"
+      ]
+    ],
+    "footnote": [],
+    "caption": [
+      "F14",
+      "F15",
+      "F1"
+    ]
+  },
+  "layout_description": "Left column: large Vitamin C 10% lockup, headline and subhead; the AI-generated person photo fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it.",
+  "adaptation_notes": "Format #9 Application macro, reuses the existing AI image from run 2026-10-03-people (vitamin C t8, fingertips by a bedroom window). Copy is usage only (F14, F15); the strength comes from the lockup. Dropped: timed-fix headline, de-tan / brightening wording. Person is AI-generated: Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "hands-on moment of use as the visual cue"
+    },
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "usage told as a short sequence"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "person_prompt": "An Indian man in his early 30s with medium-brown skin, in the morning light by a bedroom window, framed from the chest up in a plain cotton t-shirt, his fingertips held together just below his chin as if about to press a few drops onto his cheek (nothing visible on his fingertips), looking towards the mirror edge with a calm, focused expression. Soft warm morning light from the upper left, an off-white wall and a sheer curtain edge behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

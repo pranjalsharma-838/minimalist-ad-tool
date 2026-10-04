@@ -1,0 +1,101 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "multi-vitamin-spf-50__t9",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "SPF 50 at least 15 minutes before sun",
+  "subhead": "Apply generously and evenly on face and neck",
+  "tag": "",
+  "proof_points": [
+    "Reapply with continued sun exposure",
+    "Apply in the AM, every day"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50; in-vivo ISO 24444:2019, independent lab; SPF obtained: 56.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+  "angle": "concern_solved",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "SPF 50 Sunscreen: apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure. Reapply with continued sun exposure. Labelled SPF 50; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [
+      "F20"
+    ],
+    "tag": [],
+    "proof_points": [
+      [
+        "F20"
+      ],
+      [
+        "F21"
+      ]
+    ],
+    "footnote": [
+      "F14",
+      "F16",
+      "F18"
+    ],
+    "caption": [
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "Left column: headline, subhead; the AI-generated person photo fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it; SPF lab basis in the footnote band.",
+  "adaptation_notes": "Format #9 Application macro, reuses the existing AI image from run 2026-10-03-people (spf t8, a woman smoothing the face on a balcony). Copy is the page's usage only (F20, F21). Dropped: '#1 daily duo' and every tan / de-tan wording. The person is AI-generated (Severe, labelled); a real photo would lower the risk.",
+  "blend_sources": [
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "hands-on moment of use as the visual cue"
+    },
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "usage told as a short sequence"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "person_prompt": "An Indian woman in her late 20s with deep-brown skin, standing on a sunny apartment balcony in the morning just before stepping out, making a slow, even smoothing gesture across her cheek with her fingertips (nothing visible on her fingers or skin), her other hand relaxed at her side. She wears a light cotton kurta top and small stud earrings with her hair in a loose braid; behind her a painted balcony railing, a pot of tulsi and a softly out-of-focus neighbouring building. Bright, soft morning sunlight from the upper left, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 56",
+      "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

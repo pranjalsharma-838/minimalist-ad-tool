@@ -1,0 +1,75 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "niacinamide-10-with-matmarine__t15",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "10% Niacinamide for oily skin",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Matmarine helps regulate oiliness",
+      "cites": [
+        "F7"
+      ]
+    },
+    {
+      "text": "Zinc balances sebum activity",
+      "cites": [
+        "F8"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Niacinamide 10% Face Serum is formulated with pure Vitamin B3 (Niacinamide) and Matmarine; 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning, AM & PM.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F10"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F3",
+      "F13",
+      "F14"
+    ]
+  },
+  "layout_description": "Headline top-left naming the strength; two short callout labels connected to the large pack on the right.",
+  "adaptation_notes": "Format #15 Problem -> product: concern 'oily skin' from the page's suitability line (F10); two callouts (user note 2026-10-05) pairing each named ingredient with what the page says it does, hedged as the page words it. Dropped: acne and mark wording, thumbnails, best-seller strip.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern labels around a central pack"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "wired callout labels"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "ingredient-to-benefit pairing"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

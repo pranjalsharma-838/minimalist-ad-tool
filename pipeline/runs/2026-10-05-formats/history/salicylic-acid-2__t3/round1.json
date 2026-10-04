@@ -1,0 +1,108 @@
+{
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "source_ad_id": "salicylic-acid-2__t3",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "Three actives in one PM serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "2%",
+      "name": "Salicylic Acid",
+      "line": "Dissolves dead skin cells and sebum from pore walls",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Oligopeptide-10",
+      "line": "Works together with Salicylic Acid",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "EGCG",
+      "line": "A green tea antioxidant",
+      "cites": [
+        "F6"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "social_proof",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Salicylic Acid 2% Face Serum: 2% is the strength stated on the page. Salicylic Acid dissolves dead skin cells and sebum from the inner pore walls; Oligopeptide-10 works together with it and EGCG is a green tea antioxidant.",
+  "citations": {
+    "headline": [
+      "F5",
+      "F6",
+      "F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F14",
+      "F5",
+      "F6"
+    ]
+  },
+  "layout_description": "Headline top-left; up to two ingredient cards stacked down the left, each with its strength (where the page states one) and name in bold; the real pack large on the right; footnote states the basis.",
+  "adaptation_notes": "Format #3 Product + ingredients: kept the ingredient-to-detail cards and a calm two-line headline. Dropped 'ONE serum for X', the NEW bubble, emoji, benefit claims and 'zero grease'. Strength shown wherever the page states one; what each ingredient does is one plain page line (moved to the caption by the style rule).",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "ingredient-to-benefit tag cards"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "calm editorial scene"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "minimal two-line headline"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

@@ -1,0 +1,76 @@
+{
+  "ad_type": "product_hero",
+  "layout": "badges",
+  "source_ad_id": "salicylic-acid-2__t2",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "2% Salicylic Acid in a daily serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "concern_solved",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Salicylic Acid 2% Face Serum uses RonaCare Salicylic Acid Extra Pure from Merck, Germany; 2% is the strength stated on the page. Apply 2-3 drops after cleansing & toning in the PM; start with every alternate day.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F3"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F8",
+      "F12",
+      "F13"
+    ]
+  },
+  "layout_description": "White canvas; headline naming the active and strength with two outlined badges stacked on the left; the real pack large on the right.",
+  "adaptation_notes": "Format #2 Product + benefit badges: three icon benefits cut to two badges (house text budget). Badges state verifiable page facts (source, suitability), not benefits; the headline shows the active and its strength. Dropped: credential headline, 'clinically' wording, tick-mark benefit claims, glow / fade wording.",
+  "blend_sources": [
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "headline with callout lines to the pack"
+    },
+    {
+      "id": "2196301691128293",
+      "brand": "Chemist at Play",
+      "took": "short attribute list beside a large pack"
+    },
+    {
+      "id": "1420890446893063",
+      "brand": "Pilgrim",
+      "took": "credential-style strip, kept to page facts"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "badges": [
+    {
+      "text": "From Merck, Germany",
+      "cites": [
+        "F8"
+      ]
+    },
+    {
+      "text": "For combination / oily skin",
+      "cites": [
+        "F9"
+      ]
+    }
+  ]
+}

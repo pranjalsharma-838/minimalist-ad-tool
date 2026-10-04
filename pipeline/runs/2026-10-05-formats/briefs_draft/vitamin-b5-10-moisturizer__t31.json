@@ -1,0 +1,54 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t31",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "headline": "After serums: 10% Vitamin B5 moisturizer",
+  "subhead": "Massage into face and neck until absorbed",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims, no scripted testimonial.",
+  "angle": "sensorial",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Vitamin B5 10% Moisturizer: use after cleansing, toning and applying all serums; massage into face and neck until fully absorbed, AM & PM. 10% is the Vitamin B5 strength stated on the page.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F13"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F13",
+      "F14",
+      "F1"
+    ]
+  },
+  "layout_description": "Plain native feel: casual headline and one supporting line on the left; the AI-generated selfie-style photo card on the right with the AI-GENERATED mark; the real pack beside it; no emoji.",
+  "adaptation_notes": "Format #31 Creator selfie: kept the mirror / front-camera selfie framing and a single plain caption. Dropped the insider-confession hook, makeup-industry claim and emoji. Headline is the product with its strength and a usage line from the page; no first-person testimonial is invented for the AI person. Reuses an existing AI image from run 2026-10-03-people (chest-up at a basin / mirror) to save generation. Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "mirror-selfie framing with one caption box"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "person_prompt": "An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

@@ -1,0 +1,74 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "salicylic-lha-2-cleanser__t31",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "Cleanser step: Salicylic Acid + LHA 2%",
+  "subhead": "Light lather on a wet face, then rinse",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims, no scripted testimonial.",
+  "angle": "routine",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Salicylic Acid + LHA 2% Cleanser: pour into wet hands, rub into a light lather, massage into the face and rinse thoroughly, AM & PM. 2% is the combined strength of BHA + LHA.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F13"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F13",
+      "F14",
+      "F3"
+    ]
+  },
+  "layout_description": "Plain native feel: casual headline and one supporting line on the left; the AI-generated selfie-style photo card on the right with the AI-GENERATED mark; the real pack beside it; no emoji.",
+  "adaptation_notes": "Format #31 Creator selfie: kept the mirror / front-camera selfie framing and a single plain caption. Dropped the insider-confession hook, makeup-industry claim and emoji. Headline is the product with its strength and a usage line from the page; no first-person testimonial is invented for the AI person. Reuses an existing AI image from run 2026-10-03-people (chest-up at a basin / mirror) to save generation. Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "mirror-selfie framing with one caption box"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "person_prompt": "An Indian woman in her late 20s with light-brown skin, standing at a bathroom basin in the morning, framed from the waist up in a plain cotton top with her hair clipped back. One hand is held out open in front of her at chest height, palm up, completely empty and relaxed, as if about to receive something, while the other hand rests on the edge of the basin; she looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left, an off-white tiled wall behind her, medium close-up, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and nothing in her hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "salicylic-lha-2-cleanser",
+  "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+  "source_brand": "Conscious Chemist",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

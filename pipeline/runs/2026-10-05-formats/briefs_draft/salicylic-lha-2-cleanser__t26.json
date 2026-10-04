@@ -1,0 +1,66 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "salicylic-lha-2-cleanser__t26",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "headline": "4.1 out of 5 from 2,732 reviews",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Rating from beminimalist.co (Yotpo), captured 2026-10-02",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "social_proof",
+  "ai_label_required": false,
+  "hook_type": "social_proof",
+  "caption": "Salicylic Acid + LHA 2% Cleanser: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 2% is the combined strength of BHA + LHA.",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ],
+    "caption": [
+      "F3",
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: rating headline, then a dated verified-review card (stars, quote, name and date line); the product name with its strength under the wordmark; real pack on the right; rating source in the caption.",
+  "adaptation_notes": "Format #26 Review creative: kept the dated verified-review card, buyer attribution and a plain rating line. The rating is verbatim (never rounded) and the review is a verbatim quote chosen for describing use or feel, not a result; dropped bold review titles, '3rd bottle' claims and result quotes. Real review text, so no placeholder.",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified-review card"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "customer-voice attribution"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "review": {
+    "stars": "★★★★★",
+    "quote": "This cleanser works really well for daily use, especially if you have oily or acne-prone skin.…",
+    "source": "Shruti J., verified buyer, 5★, 2026-04-17 (beminimalist.co, captured 2026-10-02)"
+  }
+}

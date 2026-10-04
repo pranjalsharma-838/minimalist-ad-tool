@@ -1,0 +1,62 @@
+{
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "source_ad_id": "multi-vitamin-spf-50__t12",
+  "product_title": "SPF 50 Sunscreen",
+  "headline": "SPF 50 in a daily routine",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not real results. Individual results vary.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "SPF 50 Sunscreen: labelled SPF 50, the strength stated on the page; apply AM, every day. The two frames are AI illustrations, not results.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F21"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F21"
+    ],
+    "caption": [
+      "F21"
+    ]
+  },
+  "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; headline names the active, strength and routine only.",
+  "adaptation_notes": "Format #12 Before / after: kept the labelled stacked frames beside the pack. Dropped every result claim, time frame, struck price and clinical wording (the page has no before/after study for this product). The frames are illustrative AI skin crops showing a small, realistic change only; Severe, AI-labelled, not exportable until real consented study photos replace them. New 2-panel AI image needed.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "stacked labelled Before / After crops beside the pack"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "pack as the anchor between the frames"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "labelled frames beside the pack"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "frames_prompt": "two equal side-by-side panels of the same Indian woman in her mid 30s with medium-brown skin outdoors in light shade, identical close crop of cheek and temple, framing, angle and soft daylight from the upper left. Left panel: a faint natural flush on the cheek after time outdoors; right panel: the same flush only slightly less noticeable. The difference is small and realistic, never dramatic; skin keeps natural pores and texture."
+}

@@ -1,0 +1,88 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "review",
+  "source_ad_id": "niacinamide-10-with-matmarine__t26",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "4 out of 5 from 1,491 reviews",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Rating from beminimalist.co (Yotpo), captured 2026-10-02",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "sensorial",
+  "ai_label_required": false,
+  "hook_type": "social_proof",
+  "caption": "Niacinamide 10% Face Serum: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 10% is the Niacinamide strength stated on the page.",
+  "citations": {
+    "headline": [
+      "RATING"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "RATING"
+    ],
+    "caption": [
+      "F1",
+      "RATING"
+    ]
+  },
+  "layout_description": "Left: rating headline, then a dated verified-review card (stars, quote, name and date line); the product name with its strength under the wordmark; real pack on the right; rating source in the caption.",
+  "adaptation_notes": "Format #26 Review creative: kept the dated verified-review card, buyer attribution and a plain rating line. The rating is verbatim (never rounded) and the review is a verbatim quote chosen for describing use or feel, not a result; dropped bold review titles, '3rd bottle' claims and result quotes. Real review text, so no placeholder.",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "dated verified-review card"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "customer-voice attribution"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "rating line"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "review": {
+    "stars": "★★★★★",
+    "quote": "I have been using your product since 1 & halfyear, and I definitely say I don't want to change my any skincare product…",
+    "source": "Pratika B., verified buyer, 5★, 2025-09-27 (beminimalist.co, captured 2026-10-02)"
+  },
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

@@ -1,0 +1,83 @@
+{
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "source_ad_id": "salicylic-acid-2__t12",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "headline": "2% Salicylic Acid serum, PM",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not real results. Individual results vary.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+  "angle": "sensorial",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "Salicylic Acid 2% Face Serum: 2% is the strength stated on the page; use in the PM. The two frames are AI illustrations, not results.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13"
+    ],
+    "caption": [
+      "F1",
+      "F13"
+    ]
+  },
+  "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; headline names the active, strength and routine only.",
+  "adaptation_notes": "Format #12 Before / after: kept the labelled stacked frames beside the pack. Dropped every result claim, time frame, struck price and clinical wording (the page has no before/after study for this product). The frames are illustrative AI skin crops showing a small, realistic change only; Severe, AI-labelled, not exportable until real consented study photos replace them. New 2-panel AI image needed.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "stacked labelled Before / After crops beside the pack"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "pack as the anchor between the frames"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "labelled frames beside the pack"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "frames_prompt": "two equal side-by-side panels of the same Indian man in his early 20s with light-brown skin, identical close crop of the cheek beside the nose, framing, angle and soft daylight from the upper left. Left panel: some natural shine and a few small dark pores; right panel: slightly less shine and a few fewer small dark pores. The difference is small and realistic, never dramatic; skin keeps natural pores and texture.",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

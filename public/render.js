@@ -462,6 +462,16 @@ LAYOUTS.badges = (spec, s) => {
 // that pair a pack with its gel or cream. Without a texture photo the format isn't offered.
 LAYOUTS.texture = (spec, s) => {
   const parts = chromeStart(spec, "left");
+  // textureScene: one image already holds the pack and its swatch (ChatGPT texture shot, 2026-10-05): draw it large on
+  // the right; the tag ("Hide Nothing." / "Skin Science"), title and ingredient lockup stack on the left.
+  if (spec.textureScene) {
+    parts.push(`<image href="${esc(spec.imageHref)}" x="470" y="110" width="560" height="700" preserveAspectRatio="xMidYMid meet"/>`);
+    let y = 200;
+    if (spec.tag) { parts.push(tagLabel(PAD, y, spec.tag)); y += 34 + Math.round(24 * s); }
+    y = headlineBlock(parts, spec.headline, PAD, y, 370, s, 44);
+    if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + Math.round(26 * s), s, 370);
+    return chromeEnd(spec, parts, y);
+  }
   parts.push(pack(spec, spec.imageHref, 560, 120, 460, 680));
   let y = headlineBlock(parts, spec.headline, PAD, 150, 440, s, 46);
   if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + Math.round(26 * s), s, 440);
@@ -656,7 +666,8 @@ LAYOUTS.timeline = (spec, s) => {
   const y0 = headlineBlock(parts, spec.headline, PAD, 150, w - 2 * PAD, s, 40) + Math.round(36 * s);
   const frames = (spec.frames || []).slice(0, 4);
   // The real pack gets its own column at the right, level with the frames (clear product; the AI mark owns the top right).
-  const packW = 190, n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - packW - 24 - (n - 1) * gap) / n), fh = Math.min(Math.round(fw * 1.3), BAND_Y - 110 - y0);
+  // Remake 2026-10-05 (spec.packInFrames): the real pack is composited small into the lower-right of EVERY frame (the AI image leaves that corner empty), so frames take the full width.
+  const packW = spec.packInFrames ? 0 : 190, n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - (packW ? packW + 24 : 0) - (n - 1) * gap) / n), fh = Math.min(Math.round(fw * 1.3), BAND_Y - 110 - y0);
   frames.forEach((f, i) => {
     const x = PAD + i * (fw + gap);
     if (f.imageHref) parts.push(`<clipPath id="fr${i}"><rect x="${x}" y="${y0}" width="${fw}" height="${fh}" rx="6"/></clipPath><image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice" clip-path="url(#fr${i})"/>`);
@@ -664,8 +675,8 @@ LAYOUTS.timeline = (spec, s) => {
     // Minimal look (2026-10-04): the label sits under the frame in small capitals, not on a dark bar over it.
     parts.push(T(wrap(String(f.label || "").toUpperCase(), 16, fw, 0.66).slice(0, 2), x, y0 + fh + 30, 16, 20, `font-weight="700" letter-spacing="1.2" fill="${C.ink}"`));
   });
-  const ph = Math.min(fh, 320);
-  parts.push(pack(spec, spec.imageHref, w - PAD - packW, y0 + fh - ph, packW, ph));
+  if (spec.packInFrames) frames.forEach((f, i) => { const x = PAD + i * (fw + gap), pw = Math.round(fw * 0.3), ph = Math.round(fh * 0.4); parts.push(pack(spec, spec.imageHref, x + fw - pw - 8, y0 + fh - ph - 8, pw, ph)); });
+  else { const ph = Math.min(fh, 320); parts.push(pack(spec, spec.imageHref, w - PAD - packW, y0 + fh - ph, packW, ph)); }
   return chromeEnd(spec, parts, y0 + fh + 50);
 };
 

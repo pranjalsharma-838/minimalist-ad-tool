@@ -1,4 +1,4 @@
-// Product-led run: for each product, the archetype skill picks the formats, and one brief input is written
+﻿// Product-led run: for each product, the archetype skill picks the formats, and one brief input is written
 // per (product, format). Downstream stages (05 gate, 05b retry, 06b director, 08 compose) are unchanged.
 // Usage: node pipeline/00_product_run.js <run-id> <formats-per-product> <handle> [handle...]
 import fs from "node:fs";
@@ -104,6 +104,11 @@ ANGLES.comparison = "Us vs Them (layout \"usvsthem\"): compare THIS product with
 ANGLES.trend = "Trending now: several brands launched this format in the last 60 days and still run it (the references below are those ads). Recreate the FORMAT for Minimalist in its minimal house style: white canvas, the real pack as the hero, 0-15 words on the image, details in the caption. Take one element from each reference (hook device, layout or proof device), never their wording. Use only what the product page supports. If a reference relies on a skin-problem close-up, a fear hook or a result photo, keep the structure and drop that element (say so in adaptation_notes).";
 const PERSON_FORMAT = (t) => /REAL PHOTO:(people|endorser)/.test(t.source);
 const PERSON_NOTE = "This format shows a PERSON. The person image will be AI-generated and carry the visible AI-GENERATED — ILLUSTRATIVE mark: set ai_label_required: true. Describe the person scene in person_prompt (an adult in the moment the angle names — e.g. morning bathroom counter, commute in sun, fingertips applying a few drops — with NO product, bottle or packaging in their hands or in frame, no text, no brand names, no visible skin-result claims). The real pack shot is composited beside the person by code.";
+// Per-format notes from the user review (2026-10-05).
+const FORMAT_NOTES = {
+  21: "Texture shot: a texture smear/swatch of THIS product beside the verified pack, plus the main active shown in the pack-label lockup (concentration + active name, exactly as the pack title/page gives it), plus one tag: \"Hide Nothing.\" or \"Skin Science\" (brand taglines, accepted: rules/brand_decisions.json DEC-03; the tag needs no citation). The texture image is AI-made by the orchestrator from the verified pack render, so the image need is \"texture beside the real pack\" (set needs_real_photography per the template, say in photography_needed: texture swatch beside the real pack, made from the verified pack render). Texture wording only from the page texture/usage facts.",
+  15: "Problem -> product: at most 2 callouts (the layout puts the pack large on the right). Callouts are concern or ingredient labels from page facts, no skin close-ups.",
+};
 const PAIRS = process.env.PAIRS ? JSON.parse(fs.readFileSync(process.env.PAIRS, "utf8")) : null;
 function pickAngle(t, sheet) {
   // Bug fix (2026-10-03): families are named "Commercial" etc., so `family === "offer"` never matched and offer
@@ -123,7 +128,7 @@ for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
   const pick = rankArchetypes({ product_handle: h, sheet, objective: "sales", top: Number(per), used });
   // PAIRS mode: exactly the requested (product, format, angle) cells; otherwise the archetype shortlist.
   const myPairs = PAIRS ? PAIRS.filter((p) => p.handle === h) : null;
-  const chosen = myPairs ? myPairs.map((p) => ({ ...pick.full_ranking.find((r) => r.id === p.template_id), forcedAngle: p.angle, forcePerson: Boolean(p.person), casting: p.casting || "", trend: Boolean(p.trend) })) : pick.shortlist;
+  const chosen = myPairs ? myPairs.map((p) => ({ ...pick.full_ranking.find((r) => r.id === p.template_id), forcedAngle: p.angle || (p.remake ? "transformation" : undefined), forcePerson: Boolean(p.person), casting: p.casting || "", trend: Boolean(p.trend), remake: p.remake || "" })) : pick.shortlist;
   for (const r of chosen) used[r.id] = (used[r.id] || 0) + 1;
   for (const r of chosen) {
     const t = TEMPLATES.find((x) => x.id === r.id);
@@ -150,6 +155,8 @@ for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
       ...(angle === "concern_solved" && CL?.concern_map?.[h] ? ["Concerns customers raise for this product type (real reviews; scripts/mine_customer_language.js). Use ONLY a concern that has an 'answered by' fact, cite that fact, and you may echo the customer's words (not quoted as a testimonial):", ...CL.concern_map[h].filter((c) => c.answered_by).slice(0, 4).map((c) => `- ${c.concern.replace(/_/g, " ")}: competitors ${c.competitor_mentions} mentions (${c.competitor_in_negative} in ≤3★) · answered by ${c.answered_by.id} "${c.answered_by.text.slice(0, 120)}" · customer words: ${c.customer_phrases.slice(0, 2).join(" / ").slice(0, 220)}`)] : []),
       angle === "offer_value" ? "Offer-led: quote the live offer (OFFER*) exactly with sale price + MRP (PRICE*); footnote with capture date, 'T&C apply' and any free item's condition; no urgency words unless an end date is captured." : ANGLES[angle],
       ...(PERSON_FORMAT(t) || r.forcePerson ? ["", PERSON_NOTE] : []),
+      ...(r.remake ? ["", `## Remake instruction (PAIRS "remake"; replaces the earlier ad of this format for this product)`, r.remake] : []),
+      ...(FORMAT_NOTES[t.id] ? ["", `## Format notes from the user (2026-10-05; follow them)`, FORMAT_NOTES[t.id]] : []),
       ...(r.casting ? [`Casting (use exactly this person in person_prompt / frames_prompt): ${r.casting}. Respectful, everyday styling; natural Indian skin tones and texture; no fairness or lightening cues.`] : []),
       `Record "angle": "${angle}" in the brief, and "hook_type": one of question | stat | situation | offer | social_proof | contrast | ingredient | statement (the device the headline opens with — used to score our own results by hook).`,
       "",
@@ -169,3 +176,5 @@ for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
 fs.writeFileSync(path.join(runDir, "match.json"), JSON.stringify(match, null, 2));
 fs.writeFileSync(path.join(runDir, "pool.json"), JSON.stringify(match.map((m) => ({ id: m.id, brand: m.brand, days_running: "", format: "", image_file: "" })), null, 2));
 console.log(`${match.length} brief inputs`);
+
+

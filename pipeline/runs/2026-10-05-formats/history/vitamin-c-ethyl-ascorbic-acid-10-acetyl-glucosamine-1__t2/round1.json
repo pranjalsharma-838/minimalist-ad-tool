@@ -1,0 +1,97 @@
+{
+  "ad_type": "product_hero",
+  "layout": "badges",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t2",
+  "product_title": "Vitamin C 10% Face Serum",
+  "headline": "Vitamin C 10% with 1% Acetyl Glucosamine",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative, and contains 1% Acetyl Glucosamine; 10% is the Vitamin C strength stated on the page. Use AM & PM after cleansing and toning.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F6"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F5",
+      "F6",
+      "F14",
+      "F15"
+    ]
+  },
+  "layout_description": "White canvas; headline naming the active and strength with two outlined badges stacked on the left; the real pack large on the right.",
+  "adaptation_notes": "Format #2 Product + benefit badges: three icon benefits cut to two badges (house text budget). Badges state verifiable page facts (source, suitability), not benefits; the headline shows the active and its strength. Dropped: credential headline, 'clinically' wording, tick-mark benefit claims, glow / fade wording.",
+  "blend_sources": [
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "headline with callout lines to the pack"
+    },
+    {
+      "id": "2196301691128293",
+      "brand": "Chemist at Play",
+      "took": "short attribute list beside a large pack"
+    },
+    {
+      "id": "1420890446893063",
+      "brand": "Pilgrim",
+      "took": "credential-style strip, kept to page facts"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "badges": [
+    {
+      "text": "Ethyl Ascorbic Acid form",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "text": "For all skin types",
+      "cites": [
+        "F10"
+      ]
+    }
+  ],
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Deconstruct",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

@@ -1,0 +1,62 @@
+{
+  "ad_type": "product_hero",
+  "layout": "texture",
+  "source_ad_id": "niacinamide-10-with-matmarine__t21",
+  "product_title": "Niacinamide 10% Face Serum",
+  "headline": "Lightweight, no sticky residue",
+  "subhead": "",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Texture shown is an AI illustration.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real macro photo of this product's texture should replace the AI texture swatch before any publication (AI texture is illustrative and may differ from the real formula).",
+  "angle": "social_proof",
+  "ai_label_required": true,
+  "hook_type": "ingredient",
+  "caption": "Niacinamide 10% Face Serum is a lightweight serum with Zinc that leaves smooth textured skin with no sticky residue. 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning.",
+  "citations": {
+    "headline": [
+      "F8"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F8"
+    ],
+    "caption": [
+      "F8",
+      "F1",
+      "F13"
+    ]
+  },
+  "layout_description": "White canvas; headline top-left with the active + strength lockup beneath it; a texture swatch of this product beside the real pack (one image made from the verified pack render, pack unchanged); small black tagline tag; the pack large on the right; quiet Shop now.",
+  "adaptation_notes": "Format #21 Texture shot (user note 2026-10-05): texture swatch of this product beside the verified pack, the main active in the pack-label lockup (strength as stated in the product title), and a brand tagline tag (DEC-03, no citation needed). Texture wording only from the page's own texture / usage facts. Dropped: fruit-pile prop, 'NEW' bubble, glow / grease claims, emoji. The texture is AI-made from the verified pack render with the pack kept identical, so the ad carries an AI label and High risk until a real macro photo replaces it.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "pack beside a detail element"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "minimal two-line headline"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "short feature callout beside the pack"
+    }
+  ],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}
