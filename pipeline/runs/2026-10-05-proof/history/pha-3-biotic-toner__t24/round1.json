@@ -1,0 +1,79 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "spec",
+  "source_ad_id": "pha-3-biotic-toner__t24",
+  "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Smoother texture",
+      "value": "90% agreed, 3 weeks",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "label": "Felt hydrated",
+      "value": "93% agreed, on application",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "Safety",
+      "value": "Patch tested, Dermatologist-supervised",
+      "cites": [
+        "F16"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "PHA toner study notes",
+  "footnote": "Share of study subjects who agreed, as stated on the product page.",
+  "citations": {
+    "headline": [
+      "F15"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F15"
+    ]
+  },
+  "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+  "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+  "product_handle": "pha-3-biotic-toner",
+  "product_url": "https://beminimalist.co/products/pha-3-biotic-toner",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

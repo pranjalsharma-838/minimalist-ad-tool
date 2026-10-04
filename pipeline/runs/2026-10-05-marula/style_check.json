@@ -1,0 +1,189 @@
+[
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t10",
+  "layout": "hero",
+  "on_image_words": 14,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 48,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t12",
+  "layout": "before_after",
+  "on_image_words": 6,
+  "headline_words": 6,
+  "footnote_chars": 60,
+  "caption_words": 26,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t14",
+  "layout": "timeline",
+  "on_image_words": 13,
+  "headline_words": 7,
+  "footnote_chars": 95,
+  "caption_words": 29,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t15",
+  "layout": "callouts",
+  "on_image_words": 17,
+  "headline_words": 6,
+  "footnote_chars": 58,
+  "caption_words": 41,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t17",
+  "layout": "usvsthem",
+  "on_image_words": 21,
+  "headline_words": 6,
+  "footnote_chars": 78,
+  "caption_words": 16,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t2",
+  "layout": "badges",
+  "on_image_words": 17,
+  "headline_words": 8,
+  "footnote_chars": 0,
+  "caption_words": 43,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t21",
+  "layout": "texture",
+  "on_image_words": 9,
+  "headline_words": 4,
+  "footnote_chars": 36,
+  "caption_words": 41,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t22",
+  "layout": "journey",
+  "on_image_words": 24,
+  "headline_words": 8,
+  "footnote_chars": 0,
+  "caption_words": 59,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t26",
+  "layout": "review",
+  "on_image_words": 18,
+  "headline_words": 7,
+  "footnote_chars": 0,
+  "caption_words": 59,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t3",
+  "layout": "actives",
+  "on_image_words": 10,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 54,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t31",
+  "layout": "native",
+  "on_image_words": 12,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 43,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t36",
+  "layout": "offer",
+  "on_image_words": 18,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 45,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t38",
+  "layout": "range",
+  "on_image_words": 15,
+  "headline_words": 3,
+  "footnote_chars": 0,
+  "caption_words": 36,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t4",
+  "layout": "hero",
+  "on_image_words": 12,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 40,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t6",
+  "layout": "hero",
+  "on_image_words": 16,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 46,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t8",
+  "layout": "hero",
+  "on_image_words": 18,
+  "headline_words": 8,
+  "footnote_chars": 0,
+  "caption_words": 53,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-05-marula",
+  "id": "marula-05-moisturizer__t9",
+  "layout": "hero",
+  "on_image_words": 13,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 42,
+  "within": true,
+  "issues": []
+ }
+]

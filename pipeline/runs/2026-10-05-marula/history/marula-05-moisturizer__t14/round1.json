@@ -1,0 +1,95 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Day and week labels mark routine stages, not study timings. AI illustrations, not real results.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t14",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "headline": "5% Marula Oil in a daily routine",
+  "caption": "Marula Oil 5% Face Moisturizer: 5% is the Marula Oil strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13"
+    ],
+    "caption": [
+      "F1",
+      "F13"
+    ]
+  },
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented progress photos from a documented study of this product (same person, same light; the real pack in frame) to replace the AI frames before any use.",
+  "angle": "transformation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "layout_description": "Headline top; three progress frames of the same AI-illustrated skin area left to right (Day 1, Week 2, Week 4), the real pack placed small in the lower-right of EVERY frame; AI-GENERATED mark; footnote states that the labels are routine stages and the frames are illustrations.",
+  "frames": [
+    {
+      "label": "Day 1"
+    },
+    {
+      "label": "Week 2"
+    },
+    {
+      "label": "Week 4"
+    }
+  ],
+  "frames_prompt": "Three equal panels of the same Indian woman in her early 40s with medium-brown skin, an identical close crop of the cheek in every panel, same framing, angle and soft daylight from the upper left. Concern: dry skin. Panel 1: a few faint dry, dull patches; panel 2: slightly smoother; panel 3: slightly smoother again. The change is small and realistic, never dramatic; natural pores and texture in all three. In every panel the lower-right corner (about 30% of the panel width and 40% of its height) is a plain, softly lit area that is intentionally empty, reserved for the real pack to be placed later.",
+  "pack_in_frames": true,
+  "adaptation_notes": "Format #14 Progress / timeline REMAKE (PAIRS 'remake'): subtle, with the product visible in every frame (the AI image leaves a plain empty corner in each panel and the REAL pack cut-out is composited there by code, pack_in_frames; the image model never draws the product). The concern (dry skin, F9) is shown with a small, realistic change only, never dramatic. Labels are routine stages with no result wording and the footnote says so (no study timing is claimed); the headline names the active and strength only. Reuses the dry-skin frames already generated for the Vitamin B5 moisturizer ad. Severe, AI-labelled, not exportable until real study photos replace the frames.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "stacked labelled crops"
+    },
+    {
+      "id": "3961263437511522",
+      "brand": "Re'equil",
+      "took": "left-to-right progression"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "pack as the anchor"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

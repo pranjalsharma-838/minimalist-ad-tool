@@ -1,0 +1,43 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "salicylic-acid-2__t25",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "50%",
+    "label": "fewer blackheads after 28 days: White Horehound Extract, clinically proven",
+    "cites": [
+      "F7"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Blackheads: what the page states",
+  "footnote": "Clinical study result stated for White Horehound Extract, an ingredient in this serum.",
+  "citations": {
+    "headline": [
+      "F7"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F7"
+    ]
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+  "caption": ""
+}

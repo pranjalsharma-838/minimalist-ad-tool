@@ -1,0 +1,244 @@
+{
+  "url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "title": "Marula Oil 5% Face Moisturizer",
+  "actives": [
+    {
+      "name": "Marula Oil",
+      "pct": "5%"
+    }
+  ],
+  "price": 179,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_New.png?v=1756803801",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_2.png?v=1756803801",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_3.png?v=1756803801",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_4.png?v=1756803802",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_6.png?v=1756803802",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Marula_Oil_30g.png?v=1783339918"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Marula Oil 5% Face Moisturizer"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Deep & Intense Moisturization. Treats Dryness, Roughness and Flakiness"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "An everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E to nourish, moisturize and improve skin softness. It's a heavy cream, suitable for dry/damaged to normal skin types."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"This moisturizer stays true to its claim. Keep the skin hydrated for long time and is non sticky. Loved it. -Kavita B.\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with 5% Marula Oil that softens, nourishes and revitalizes the skin. It has high content of Omega-9 fatty acid and and has antioxidant properties"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Multiple hydrators like Hyaluronic Acid, Saccharide Isomerate and Glycerin, hydrate skin and make it soft & supple"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Contains Vitamin F and Vitamin E for repairing dry, sensitive, mature, and damaged skin with disturbed lipid barrier"
+    },
+    {
+      "id": "F8",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Dry, Normal, Sensitive"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Dry Skin, Flakiness & Skin Tightness"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 16+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Pregnancy/Lactation: Safe"
+    },
+    {
+      "id": "F12",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Use after cleansing, toning and applying all serums. Take sufficient quantity of product and massage into face and neck until it is fully absorbed."
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Marula Oil at 5% is an excellent emollient and not only nourishes and softens skin, but also repairs skin as it has high concentration of oleic acid and linoleic fatty acid"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "93% subjects agreed skin remains moisturized & soft for 24 hours"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "97% subjects agreed skin flakiness is disappeared immediately on application"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agreed skin stays hydrated throughout the day after using the product"
+    },
+    {
+      "id": "F18",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F19",
+      "section": "Marula Oil",
+      "kind": "ingredient_note",
+      "text": "An excellent, lightweight oil that not only moisturizes skin but also increases its hydration. As per a clinical study (conducted by supplier), a cream containing 5% Marula Oil increased skin capacitance value by 17.7 %. Higher capacitance signifies higher water content of the skin. This signifies that Marula Oil at this concentration improves skin's hydration"
+    },
+    {
+      "id": "F20",
+      "section": "Vitamin F & Vitamin E",
+      "kind": "ingredient_note",
+      "text": "Together they are suitable for the treatment of dry, stressed and sensitive skin, potently supporting the skin in re-building and maintaining its natural healthy structure and functionality"
+    },
+    {
+      "id": "F21",
+      "section": "Hyaluronic Acid",
+      "kind": "ingredient_note",
+      "text": "Potent humectant that not only hydrates, but also softens skin"
+    },
+    {
+      "id": "F22",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/ Aqua, Glycerin, Sclerocarya Birrea (Marula) Seed Oil, Methypropanediol, Dicaprylyl Carbonate, Caprylic/Capric Triglyceride, Butylene Glycol, Cetostearyl Alcohol, Glyceryl Stearate, PEG-100 Stearate, Trehalose, Dimethicone, Saccharide Isomerate, Pentylene Glycol, Coco-Caprylate/Caprate, Triheptanoin, C9-12 Alkane, Sodium Hyaluronate, Allantoin, Linoleic Acid, Linolenic Acid, Carbomer, Cetyl Alcohol, Phenoxyethanol, Tocopheryl Acetate, Sodium Hydroxide, Nylon 12, Petrolatum, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Ethylhexylglycerin, Butyrospermum Parkii (Shea) Butter, Polyurethane-100, Trisodium Ethylenediamine Disuccinate, Citric Acid, Sodium Citrate"
+    },
+    {
+      "id": "F23",
+      "section": "Is it suitable for dry / damaged skin?",
+      "kind": "faq",
+      "text": "Yes. This product is especially formulated for dry and damaged skin. Our choice of humectants, emollients and occlusives not only replenish skin lipids, but also repair skin. Continued used of this moisturizer will reduce skin dryness, flakiness and roughness."
+    },
+    {
+      "id": "PRICE1",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "50g: Rs. 269 (MRP Rs. 299; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE2",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "30g: Rs. 179 (MRP Rs. 199; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE_AMZ",
+      "kind": "price",
+      "section": "price (Amazon.in)",
+      "text": "Amazon.in: Rs. 599 — search result, captured 2026-10-02 (verify it is the brand's own listing)"
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "RATING",
+      "kind": "rating",
+      "section": "reviews (Yotpo, website)",
+      "text": "4.2 out of 5 stars from 388 reviews on beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "REV1",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"My opinion. I have a very very dry skin so this moisturizer is not enough for me though its good. .\" — Vaishali k., verified buyer, 4★, 2025-08-26 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV2",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Marula oil 5% face moisturizer. It's too oily\" — Swathi N., verified buyer, 5★, 2025-05-31 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV3",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Quantity is the only minus. Quantity is the only minus point. It's too less for the price that is being charged for it.\" — Tridisha S., verified buyer, 4★, 2024-04-30 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV4",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"perfect for dry skin and. perfect for dry skin and winter.\" — Rajesh M., verified buyer, 5★, 2026-05-18 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV5",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Product Review. It is amazing. . very good quality and apt for my very dry skin !!!\" — Diksha A., verified buyer, 5★, 2025-12-17 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV6",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Super. I bought it for my mother ( she has dry skin) and it's quite satisfactory\" — Nibha K., verified buyer, 5★, 2025-01-30 (beminimalist.co, captured 2026-10-02)"
+    }
+  ],
+  "source": "page"
+}

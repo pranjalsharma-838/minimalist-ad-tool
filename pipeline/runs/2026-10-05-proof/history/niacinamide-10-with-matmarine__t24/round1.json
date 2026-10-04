@@ -1,0 +1,96 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "spec",
+  "source_ad_id": "niacinamide-10-with-matmarine__t24",
+  "product_title": "Niacinamide 10% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Strength",
+      "value": "10% pure Niacinamide",
+      "cites": [
+        "F6"
+      ]
+    },
+    {
+      "label": "Complexion",
+      "value": "Improved in 2 weeks, per page",
+      "cites": [
+        "F6"
+      ]
+    },
+    {
+      "label": "Safety",
+      "value": "Patch tested, Dermatologist-supervised",
+      "cites": [
+        "F15"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Niacinamide 10%: what the page states",
+  "footnote": "As stated on the product page; study size and method are not published there.",
+  "citations": {
+    "headline": [
+      "F6"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F6"
+    ]
+  },
+  "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+  "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "Re'equil",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-07",
+      "span": "in 2 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-25",
+      "span": "Improved",
+      "message": "'New' / 'improved' must say what's new and is only valid for 12 months after launch.",
+      "fix": "Say what's new ('New: 0.1% Retinol serum') and check the launch date is within 12 months.",
+      "layer": "rule"
+    }
+  ]
+}

@@ -1,0 +1,3497 @@
+[
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "2-hyaluronic-acid__t24",
+    "product_title": "Hyaluronic + PGA 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Design",
+        "value": "Double-blinded forearm study",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Measured",
+        "value": "Skin hydration up to 8 hours",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Instruments",
+        "value": "Corneometer & Tewameter",
+        "cites": [
+          "F16"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Hyaluronic + PGA: the hydration study",
+    "footnote": "Monocentric, double-blinded, comparative forearm study by MS Clinical Research Lab, an independent lab.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "2-hyaluronic-acid",
+    "product_url": "https://beminimalist.co/products/2-hyaluronic-acid",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Hyaluronic",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "2-hyaluronic-acid__t25",
+    "product_title": "Hyaluronic + PGA 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "93%",
+      "label": "subjects noticed less dryness & hydrated skin in 4 weeks",
+      "cites": [
+        "F22"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Hyaluronic + PGA: the 4-week study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F22"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F22"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "2-hyaluronic-acid",
+    "product_url": "https://beminimalist.co/products/2-hyaluronic-acid",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Hyaluronic",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "aha-25-pha-5-bha-2__t24",
+    "product_title": "AHA PHA BHA 32% Face Peel",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Brighter, glowing",
+        "value": "90% said, 4 applications",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Felt softer",
+        "value": "93% said, 1 application",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Peel study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F14"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "aha-25-pha-5-bha-2",
+    "product_url": "https://beminimalist.co/products/aha-25-pha-5-bha-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "aha-25-pha-5-bha-2__t25",
+    "product_title": "AHA PHA BHA 32% Face Peel",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "93%",
+      "label": "subjects said fine lines got reduced (less visible) after 10 applications",
+      "cites": [
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Peel: the fine lines study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F16"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "aha-25-pha-5-bha-2",
+    "product_url": "https://beminimalist.co/products/aha-25-pha-5-bha-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 10 applications",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "alpha-arbutin-2__t24",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Study type",
+        "value": "In-vitro, Melanoderma skin 3D model",
+        "cites": [
+          "F12",
+          "F14"
+        ]
+      },
+      {
+        "label": "Lab",
+        "value": "MS Clinical Research Lab, independent",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Report no.",
+        "value": "PREC/USSL/SR/2021-144",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Alpha Arbutin: the lab study",
+    "footnote": "Based on an in-vitro study by MS Clinical Research Lab, an independent testing lab.",
+    "citations": {
+      "headline": [
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Alpha Arbutin",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "alpha-arbutin-2__t25",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "90%",
+      "label": "subjects noticed reduction in hyperpigmentation marks in 8 weeks",
+      "cites": [
+        "F22"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Alpha Arbutin: the 8-week study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F22"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F22"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Alpha Arbutin",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 8 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F22). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t24",
+    "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Glycolic Acid",
+        "value": "8% for effective exfoliation",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F11"
+        ]
+      },
+      {
+        "label": "Use",
+        "value": "PM, start twice a week",
+        "cites": [
+          "F14"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Glycolic Acid 8%: the formula sheet",
+    "footnote": "Patch tested for safety under the supervision of a Dermatologist.",
+    "citations": {
+      "headline": [
+        "F6"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F11"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+    "product_url": "https://beminimalist.co/products/glycolic-acid-08-exfoliating-liquid-toner",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t25",
+    "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "8%",
+      "label": "Glycolic Acid to help in natural cell turnover and effective exfoliation",
+      "cites": [
+        "F3"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Glycolic Acid 8%, stated plainly",
+    "footnote": "Patch tested for safety under the supervision of a Dermatologist.",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F11"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+    "product_url": "https://beminimalist.co/products/glycolic-acid-08-exfoliating-liquid-toner",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "hair-growth-actives-18__t24",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Blend",
+        "value": "18% of 5 ingredients",
+        "cites": [
+          "F3"
+        ]
+      },
+      {
+        "label": "Hair looked thicker",
+        "value": "87% agreed, 8 weeks",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Hair serum study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "hair-growth-actives-18",
+    "product_url": "https://beminimalist.co/products/hair-growth-actives-18",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "hair-growth-actives-18__t25",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "97%",
+      "label": "subjects agreed scalp feels & stays hydrated",
+      "cites": [
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Hair serum: the scalp study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F16"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "hair-growth-actives-18",
+    "product_url": "https://beminimalist.co/products/hair-growth-actives-18",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "97% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "light-fluid-spf-50-sunscreen__t24",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Test type",
+        "value": "In-vivo, ISO 24444:2019",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Lab",
+        "value": "Advanced Science Laboratories, independent",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 50: the test sheet",
+    "footnote": "Study no. MS24.SPF.A1764.UPPL.ISO24444.ST10.REP.",
+    "citations": {
+      "headline": [
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F13"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "main_theme": "lab_results",
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "light-fluid-spf-50-sunscreen__t25",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "SPF 50",
+      "label": "tested in vivo (ISO 24444:2019), independent third-party lab",
+      "cites": [
+        "F7",
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 50, confirmed in vivo",
+    "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "main_theme": "lab_results",
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "marula-05-moisturizer__t24",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Skin capacitance",
+        "value": "17.7% higher, cream with 5% Marula Oil",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Hydrated all day",
+        "value": "90% agreed",
+        "cites": [
+          "F17"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F18"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Marula Oil 5%: study notes",
+    "footnote": "Clinical study conducted by the Marula Oil supplier, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F19"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F19"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-23",
+        "span": "17.7% higher, cream with 5% Marula Oil",
+        "message": "The result is for a cream with 5% Marula Oil in the supplier's study, not a finished-product study of this moisturizer; the footnote says so.",
+        "fix": "Keep the supplier-study footnote on the creative.",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "marula-05-moisturizer__t25",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "93%",
+      "label": "subjects agreed skin remains moisturized & soft for 24 hours",
+      "cites": [
+        "F15"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Marula moisturizer: the 24-hour study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F15). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "multi-vitamin-spf-50__t24",
+    "product_title": "SPF 50 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Test type",
+        "value": "In-vivo, ISO 24444:2019",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Lab",
+        "value": "Advanced Science Laboratories, independent",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 50: the test sheet",
+    "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "main_theme": "lab_results",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "multi-vitamin-spf-50__t25",
+    "product_title": "SPF 50 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "SPF 50",
+      "label": "confirmed in vivo (ISO 24444:2019) by an independent lab",
+      "cites": [
+        "F7",
+        "F14"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 50, tested in vivo",
+    "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F7",
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "main_theme": "lab_results",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "niacinamide-10-with-matmarine__t24",
+    "product_title": "Niacinamide 10% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Strength",
+        "value": "10% pure Niacinamide",
+        "cites": [
+          "F6"
+        ]
+      },
+      {
+        "label": "Form",
+        "value": "Vitamin B3",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F15"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Niacinamide 10%: what the page states",
+    "footnote": "Patch tested for safety under the supervision of a Dermatologist.",
+    "citations": {
+      "headline": [
+        "F6"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "niacinamide-10-with-matmarine__t25",
+    "product_title": "Niacinamide 10% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "10%",
+      "label": "pure Niacinamide, patch tested under the supervision of a Dermatologist",
+      "cites": [
+        "F6",
+        "F15"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "10% Niacinamide, patch tested",
+    "footnote": "Patch tested for safety under the supervision of a Dermatologist.",
+    "citations": {
+      "headline": [
+        "F6",
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "niacinamide-5-hyaluronic-acid-1__t24",
+    "product_title": "Niacinamide 5% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Even, healthy tone",
+        "value": "93% said, 8 weeks",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Less dehydrated",
+        "value": "90% said, 3 weeks",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F17"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Niacinamide 5% study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_url": "https://beminimalist.co/products/niacinamide-5-hyaluronic-acid-1",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "niacinamide-5-hyaluronic-acid-1__t25",
+    "product_title": "Niacinamide 5% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "97%",
+      "label": "subjects said their skin irritation got reduced significantly after 4 weeks of usage",
+      "cites": [
+        "F14"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Niacinamide 5% serum: the irritation study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F14"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_url": "https://beminimalist.co/products/niacinamide-5-hyaluronic-acid-1",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "97% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F14). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F14). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "nonapeptide-aha-06-underarm-roll-on__t24",
+    "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Study type",
+        "value": "In-vitro, time-kill assay",
+        "cites": [
+          "F11",
+          "F13"
+        ]
+      },
+      {
+        "label": "Standard",
+        "value": "ASTM E2315-16",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F16"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Roll-On: the lab study",
+    "footnote": "In-vitro data from an independent third-party product testing lab.",
+    "citations": {
+      "headline": [
+        "F11"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+    "product_url": "https://beminimalist.co/products/nonapeptide-aha-06-underarm-roll-on",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "nonapeptide-aha-06-underarm-roll-on__t25",
+    "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "99.67%",
+      "label": "reduction of Corynebacterium xerosis in 10 minutes",
+      "cites": [
+        "F12"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Roll-On: the 10-minute lab result",
+    "footnote": "In-vitro study (ASTM E2315-16) by an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F12"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F13",
+        "F15"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+    "product_url": "https://beminimalist.co/products/nonapeptide-aha-06-underarm-roll-on",
+    "source_brand": "Re'equil",
+    "status": "kept_with_warnings",
+    "risk_level": "medium",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-01",
+        "span": "reduction of Corynebacterium xerosis in 10 minutes",
+        "message": "A kill-rate on a named bacterium is an anti-bacterial claim in effect (DEC-01 keeps these flagged); it is in-vitro and the footnote says so. Needs legal sign-off.",
+        "fix": "Remove it, or attach the study file for review.",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 10 minutes",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F12). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "oat-extract-06-gentle-cleanser__t24",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Cleansing agent",
+        "value": "Oat-based, mild surfactant",
+        "cites": [
+          "F6"
+        ]
+      },
+      {
+        "label": "Hydrators",
+        "value": "Hyaluronic Acid, Vitamin B5, Glycerin",
+        "cites": [
+          "F7"
+        ]
+      },
+      {
+        "label": "Suitable for",
+        "value": "15+ years of age",
+        "cites": [
+          "F11"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Oat cleanser formula sheet",
+    "footnote": "",
+    "citations": {
+      "headline": [
+        "F2"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": []
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_url": "https://beminimalist.co/products/oat-extract-06-gentle-cleanser",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "B12",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "oat-extract-06-gentle-cleanser__t25",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "6.5%",
+      "label": "B12 + Oat Extract in a gel cream cleanser",
+      "cites": [
+        "F1",
+        "F3"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "A mild, low-foaming oat cleanser",
+    "footnote": "",
+    "citations": {
+      "headline": [
+        "F2"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": []
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_url": "https://beminimalist.co/products/oat-extract-06-gentle-cleanser",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "pha-3-biotic-toner__t24",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Smoother texture",
+        "value": "90% agreed, 3 weeks",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Felt hydrated",
+        "value": "93% agreed, on application",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F16"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "PHA toner study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "pha-3-biotic-toner",
+    "product_url": "https://beminimalist.co/products/pha-3-biotic-toner",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "pha-3-biotic-toner__t25",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "90%",
+      "label": "subjects agreed pore size got reduced after 4 weeks",
+      "cites": [
+        "F13"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "PHA toner: the pore study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F13"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "pha-3-biotic-toner",
+    "product_url": "https://beminimalist.co/products/pha-3-biotic-toner",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 4 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "retinol-0-3-q10__t24",
+    "product_title": "Retinol 0.3% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Retinol",
+        "value": "0.3% pure, water-free",
+        "cites": [
+          "F4"
+        ]
+      },
+      {
+        "label": "Bakuchiol Oil",
+        "value": "1% pure",
+        "cites": [
+          "F6"
+        ]
+      },
+      {
+        "label": "Bottle",
+        "value": "UV protective",
+        "cites": [
+          "F7"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Retinol 0.3%: the formula sheet",
+    "footnote": "",
+    "citations": {
+      "headline": [
+        "F4"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": []
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "retinol-0-3-q10",
+    "product_url": "https://beminimalist.co/products/retinol-0-3-q10",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "retinol-0-3-q10__t25",
+    "product_title": "Retinol 0.3% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "0.3%",
+      "label": "pure Retinol in water-free formulation",
+      "cites": [
+        "F4"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Water-free, to keep Retinol stable",
+    "footnote": "",
+    "citations": {
+      "headline": [
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": []
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "retinol-0-3-q10",
+    "product_url": "https://beminimalist.co/products/retinol-0-3-q10",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Retinol",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "salicylic-acid-2__t24",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Skin clarity",
+        "value": "90% noticed visible, 4 weeks",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Active acne",
+        "value": "93% saw reduction, 4 weeks",
+        "cites": [
+          "F16"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F18"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Salicylic serum study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F15"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F15"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "salicylic-acid-2__t25",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "50%",
+      "label": "fewer blackheads after 28 days: White Horehound Extract, clinically proven",
+      "cites": [
+        "F7"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Blackheads: what the page states",
+    "footnote": "Clinical study result stated for White Horehound Extract, an ingredient in this serum.",
+    "citations": {
+      "headline": [
+        "F7"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F7"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "caption": "",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 28 days",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F7). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-09",
+        "span": "clinically proven",
+        "message": "Authority claims need the specific study or endorsement on file, described accurately.",
+        "fix": "Use the exact, narrower wording you can support, e.g. 'Patch tested for safety under the supervision of a Dermatologist', or name the test ('In-vivo SPF test, ISO 24444:2019').",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F7). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "salicylic-lha-2-cleanser__t24",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Acne occurrences",
+        "value": "87% agreed reduced, 6 weeks",
+        "cites": [
+          "F17"
+        ]
+      },
+      {
+        "label": "Smoother, brighter",
+        "value": "90% agreed, 4 weeks",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Cleanser study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F17"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "salicylic-lha-2-cleanser__t25",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "90%",
+      "label": "subjects agreed significant reduction in skin oiliness after 6 washes",
+      "cites": [
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Salicylic LHA cleanser: the oiliness study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F16"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 6 washes",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "spf-60-silymarin__t24",
+    "product_title": "SPF 60 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "SPF test",
+        "value": "In-vivo, ISO 24444:2019",
+        "cites": [
+          "F12",
+          "F13"
+        ]
+      },
+      {
+        "label": "UVA test",
+        "value": "In-vivo, ISO 24442:2022",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "label": "PA rating",
+        "value": "PA++++",
+        "cites": [
+          "F16"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 60: the test sheet",
+    "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F6"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "main_theme": "lab_results",
+    "product_handle": "spf-60-silymarin",
+    "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "spf-60-silymarin__t25",
+    "product_title": "SPF 60 Sunscreen",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "SPF 60",
+      "label": "tested in vivo (ISO 24444:2019), independent third-party lab",
+      "cites": [
+        "F6",
+        "F12",
+        "F13"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "SPF 60, tested in vivo",
+    "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+    "citations": {
+      "headline": [
+        "F6",
+        "F12"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "main_theme": "lab_results",
+    "product_handle": "spf-60-silymarin",
+    "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t24",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Active",
+        "value": "10% Vitamin B5 (Panthenol)",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Skin irritation",
+        "value": "87% agreed reduced, 2 weeks",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin B5 study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F18"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin B5",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t25",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "93%",
+      "label": "subjects agreed skin remains moisturized for 12 hours after application",
+      "cites": [
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin B5 moisturizer: the hydration study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F16"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin B5",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "93% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "vitamin-c-e-ferulic-16__t24",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "More even looking",
+        "value": "87% agreed, 6 weeks",
+        "cites": [
+          "F17"
+        ]
+      },
+      {
+        "label": "Reduction in spots",
+        "value": "87% agreed, 8 weeks",
+        "cites": [
+          "F18"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F19"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin C + E + Ferulic study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F17"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_url": "https://beminimalist.co/products/vitamin-c-e-ferulic-16",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "vitamin-c-e-ferulic-16__t25",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "94%",
+      "label": "subjects agreed significant improvement in skin glow & reduction in dullness",
+      "cites": [
+        "F16"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin C + E + Ferulic: the glow study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F16"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F16"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_url": "https://beminimalist.co/products/vitamin-c-e-ferulic-16",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "94% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F16). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t24",
+    "product_title": "Vitamin C 10% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Radiance",
+        "value": "88% felt improved, 4 weeks",
+        "cites": [
+          "F17"
+        ]
+      },
+      {
+        "label": "Healthier skin",
+        "value": "93% said felt healthier, 4 weeks",
+        "cites": [
+          "F19"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F20"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin C study notes",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F17"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-25",
+        "span": "improved",
+        "message": "'New' / 'improved' must say what's new and is only valid for 12 months after launch.",
+        "fix": "Say what's new ('New: 0.1% Retinol serum') and check the launch date is within 12 months.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25",
+    "product_title": "Vitamin C 10% Face Serum",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "90%",
+      "label": "subjects said their dark spots faded after 8 weeks",
+      "cites": [
+        "F18"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Vitamin C serum: the dark spot study",
+    "footnote": "Share of study subjects who agreed, as stated on the product page.",
+    "citations": {
+      "headline": [
+        "F18"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F18"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "90% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 8 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "expert_authority",
+    "layout": "spec",
+    "source_ad_id": "vitamin-k-retinal-01-eye-cream__t24",
+    "product_title": "Vitamin K + Retinal 1% Eye Cream",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [
+      {
+        "label": "Eyebag volume",
+        "value": "40mm3 reduction in 8 weeks",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Skin hydration",
+        "value": "34% increase in 6 hours compared to placebo",
+        "cites": [
+          "F15"
+        ]
+      },
+      {
+        "label": "Safety",
+        "value": "Patch tested, Dermatologist-supervised",
+        "cites": [
+          "F16"
+        ]
+      }
+    ],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Eye cream study notes",
+    "footnote": "Based on in-vitro studies conducted by suppliers. (Actual results may vary)",
+    "citations": {
+      "headline": [
+        "F14"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F12"
+      ]
+    },
+    "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+    "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+    "product_handle": "vitamin-k-retinal-01-eye-cream",
+    "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 8 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F14). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "in 6 hours",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F15). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "stat",
+    "source_ad_id": "vitamin-k-retinal-01-eye-cream__t25",
+    "product_title": "Vitamin K + Retinal 1% Eye Cream",
+    "subhead": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": {
+      "value": "19%",
+      "label": "reduction in Under Eye Dark Circle after 8 Weeks",
+      "cites": [
+        "F13"
+      ]
+    },
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "hook_type": "stat",
+    "blend_sources": [],
+    "headline": "Eye cream: the dark circle study",
+    "footnote": "Based on in-vitro studies conducted by suppliers. (Actual results may vary)",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [],
+      "proof_points": [],
+      "footnote": [
+        "F12"
+      ]
+    },
+    "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+    "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+    "product_handle": "vitamin-k-retinal-01-eye-cream",
+    "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "ai_label_required": false,
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 8 Weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  }
+]

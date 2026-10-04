@@ -1,0 +1,80 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "spec",
+  "source_ad_id": "salicylic-acid-2__t24",
+  "product_title": "Salicylic Acid 2% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Skin clarity",
+      "value": "90% noticed visible, 4 weeks",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "label": "Active acne",
+      "value": "93% saw reduction, 4 weeks",
+      "cites": [
+        "F16"
+      ]
+    },
+    {
+      "label": "Safety",
+      "value": "Patch tested, Dermatologist-supervised",
+      "cites": [
+        "F18"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Salicylic serum study notes",
+  "footnote": "Share of study subjects who agreed, as stated on the product page.",
+  "citations": {
+    "headline": [
+      "F15"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F15"
+    ]
+  },
+  "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+  "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+  "product_handle": "salicylic-acid-2",
+  "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

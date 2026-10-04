@@ -1,0 +1,58 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "spec",
+  "source_ad_id": "2-hyaluronic-acid__t24",
+  "product_title": "Hyaluronic + PGA 2% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Design",
+      "value": "Double-blinded forearm study",
+      "cites": [
+        "F18"
+      ]
+    },
+    {
+      "label": "Measured",
+      "value": "Skin hydration up to 8 hours",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "label": "Instruments",
+      "value": "Corneometer & Tewameter",
+      "cites": [
+        "F16"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Hyaluronic + PGA: the hydration study",
+  "footnote": "Monocentric, double-blinded, comparative forearm study by MS Clinical Research Lab, an independent lab.",
+  "citations": {
+    "headline": [
+      "F15"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F18"
+    ]
+  },
+  "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+  "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote."
+}

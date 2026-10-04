@@ -1,0 +1,107 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "5%",
+      "name": "Marula Oil",
+      "line": "Softens and nourishes the skin",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Hyaluronic Acid",
+      "line": "A humectant that hydrates and softens skin",
+      "cites": [
+        "F21"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Vitamin F and Vitamin E",
+      "line": "Suited to dry, stressed and sensitive skin",
+      "cites": [
+        "F20"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t3",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "ingredient_explainer",
+  "layout": "actives",
+  "headline": "After your serums: 5% Marula Oil",
+  "caption": "Use Marula Oil 5% Face Moisturizer after cleansing, toning and applying all serums, AM & PM. 5% is the Marula Oil strength stated on the page: it softens and nourishes the skin, with Hyaluronic Acid as a humectant that hydrates and softens.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F12"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F12",
+      "F13",
+      "F5",
+      "F21"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "situation",
+  "ai_label_required": false,
+  "hook_type": "situation",
+  "layout_description": "Headline top-left; up to two ingredient cards stacked down the left, each with its strength (where the page states one) and name in bold; the real pack large on the right.",
+  "adaptation_notes": "Format #3 Product + ingredients, situation-first: the headline opens on the routine moment (after serums, F12). Three named actives, each tied to its own page line, with the strength only where the page gives one (Marula Oil 5%). Dropped: the fruit pile, 'NEW' bubble, ONE-serum headline pattern, emoji and any 'brightens / reduces' benefit wording.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "ingredient cards beside the pack"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "minimal two-line headline"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "named actives with short lines"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

@@ -1,0 +1,104 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Compared with a label that names the oil but not its strength.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t17",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "comparison",
+  "layout": "usvsthem",
+  "headline": "5% Marula Oil, stated up front",
+  "compare": {
+    "us": "Marula Oil 5% Face Moisturizer",
+    "them": "Label without the %",
+    "cites": [
+      "F1"
+    ],
+    "rows": [
+      {
+        "label": "Strength of the active",
+        "us": "5%",
+        "them": "Not stated",
+        "cites": [
+          "F1"
+        ]
+      }
+    ]
+  },
+  "caption": "Marula Oil 5% Face Moisturizer names its active and its strength, 5%, in the product title.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F1"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+  "adaptation_notes": "Format #17 Us vs Them. The product page names no benchmark product (F19 gives a supplier study of a cream with 5% Marula Oil, with no comparison arm), so this is the transparency comparison: our stated strength vs a label type that does not state one. 'Them' is a label type, never a brand; no row says others hide or harm. The footnote states the basis. Dropped: the reference ad's 'European vs Korean' regional contrast, '100% photostable' and 'best of both worlds' claims. Stays High until a reviewer confirms the proof is on file (DEC-02).",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "two-column versus table"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Deconstruct",
+  "status": "needs_retry",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

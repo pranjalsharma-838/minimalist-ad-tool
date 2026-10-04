@@ -1,0 +1,716 @@
+[
+  {
+    "id": "salicylic-lha-2-cleanser__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-b5-10-moisturizer__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "alpha-arbutin-2__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "marula-05-moisturizer__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "marula-05-moisturizer",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "marula-05-moisturizer__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "marula-05-moisturizer",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "social_proof",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "light-fluid-spf-50-sunscreen__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "light-fluid-spf-50-sunscreen__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "light-fluid-spf-50-sunscreen",
+    "product_title": "Light Fluid SPF 50 Sunscreen",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "2-hyaluronic-acid__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "2-hyaluronic-acid",
+    "product_title": "Hyaluronic + PGA 2% Face Serum",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "2-hyaluronic-acid__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "2-hyaluronic-acid",
+    "product_title": "Hyaluronic + PGA 2% Face Serum",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "vitamin-k-retinal-01-eye-cream__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-k-retinal-01-eye-cream",
+    "product_title": "Vitamin K + Retinal 1% Eye Cream",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-k-retinal-01-eye-cream__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "vitamin-k-retinal-01-eye-cream",
+    "product_title": "Vitamin K + Retinal 1% Eye Cream",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "spf-60-silymarin__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "spf-60-silymarin",
+    "product_title": "SPF 60 Sunscreen",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "spf-60-silymarin__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "spf-60-silymarin",
+    "product_title": "SPF 60 Sunscreen",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "glycolic-acid-08-exfoliating-liquid-toner__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+    "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "glycolic-acid-08-exfoliating-liquid-toner__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+    "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "aha-25-pha-5-bha-2__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "aha-25-pha-5-bha-2",
+    "product_title": "AHA PHA BHA 32% Face Peel",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "aha-25-pha-5-bha-2__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "aha-25-pha-5-bha-2",
+    "product_title": "AHA PHA BHA 32% Face Peel",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  },
+  {
+    "id": "nonapeptide-aha-06-underarm-roll-on__t25",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+    "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+    "template_id": 25,
+    "template_name": "Stat-led creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1039318678808682 (66d)",
+      "Dot & Key 621835826921394 (610d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "nonapeptide-aha-06-underarm-roll-on__t24",
+    "brand": "Re'equil",
+    "ad_type": "expert_authority",
+    "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+    "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+    "template_id": 24,
+    "template_name": "Clinical / science visual",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Re'equil 1593356795737812 (66d)",
+      "Foxtale 1957996591744819 (227d)",
+      "Chemist at Play 27546140265006255 (74d)"
+    ]
+  }
+]

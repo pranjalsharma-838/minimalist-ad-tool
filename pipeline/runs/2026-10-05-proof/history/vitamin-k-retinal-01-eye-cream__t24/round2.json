@@ -1,0 +1,99 @@
+{
+  "ad_type": "expert_authority",
+  "layout": "spec",
+  "source_ad_id": "vitamin-k-retinal-01-eye-cream__t24",
+  "product_title": "Vitamin K + Retinal 1% Eye Cream",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Eyebag volume",
+      "value": "40mm3 reduction in 8 weeks",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "Skin hydration",
+      "value": "34% increase in 6 hours compared to placebo",
+      "cites": [
+        "F15"
+      ]
+    },
+    {
+      "label": "Safety",
+      "value": "Patch tested, Dermatologist-supervised",
+      "cites": [
+        "F16"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Eye cream study notes",
+  "footnote": "Based on in-vitro studies conducted by suppliers. (Actual results may vary)",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F12"
+    ]
+  },
+  "layout_description": "Spec sheet: headline over three label and value rows separated by hairlines at the left; real pack shot in the right 45%; study basis as the footnote below.",
+  "adaptation_notes": "Proof run: a clean science visual built from page-stated study, test or dermatologist facts, with the study basis in the footnote.",
+  "product_handle": "vitamin-k-retinal-01-eye-cream",
+  "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "in 8 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F14). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "in 6 hours",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F15). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

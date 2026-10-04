@@ -1,0 +1,80 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t25",
+  "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "8%",
+    "label": "Glycolic Acid in free acid form",
+    "cites": [
+      "F6"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Free acid form: what is available to work",
+  "footnote": "Patch tested for safety under the supervision of a Dermatologist.",
+  "citations": {
+    "headline": [
+      "F6"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F11"
+    ]
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+  "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+  "product_url": "https://beminimalist.co/products/glycolic-acid-08-exfoliating-liquid-toner",
+  "source_brand": "Re'equil",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-16",
+      "span": "Free",
+      "message": "The condition for the free item has to be in the same line or clearly next to it.",
+      "fix": "Put the condition right next to 'free': 'Free bottle when you buy any 2 products'.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-16",
+      "span": "free",
+      "message": "The condition for the free item has to be in the same line or clearly next to it.",
+      "fix": "Put the condition right next to 'free': 'Free bottle when you buy any 2 products'.",
+      "layer": "rule"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "url": "https://beminimalist.co/products/glycolic-acid-08-exfoliating-liquid-toner",
+  "title": "Glycolic Acid 8% Exfoliating Liquid",
+  "actives": [
+    {
+      "name": "Glycolic Acid",
+      "pct": "8%"
+    }
+  ],
+  "price": 449,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/GlycolicNew.png?v=1721398128",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Glycolic_Exfoliating_Liquid_08_04.png?v=1726489864",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Glycolic_Exfoliating_Liquid_08_02.png?v=1726489864",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Glycolic_Exfoliating_Liquid_08_03.png?v=1726489864"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Glycolic Acid 8% Exfoliating Liquid"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Deep Exfoliation For Even Skin Tone, Texture & Glow"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A multi-purpose exfoliator formulated with Glycolic Acid in free acid form (at 8%) to help in natural cell turnover and effective exfoliation. Combined with bamboo water for hydrating and soothing skin."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"Superb with my dead skin totally exfoliate my skin love using the product on daily basis.\" - Priya M"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Multi-purpose exfoliator for face, body, underarms & scalp"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Delivers an optimal concentration of 8% Glycolic Acid in free acid form to promote effective exfoliation and natural cell turnover. Free acid form represents how much acid is available in non-ionized form and is actually able to work effectively on the skin"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with Bamboo Water that has regenerative properties that help sooth & calm skin. It also doubles up as an excellent hydrator"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "High quality ingredients including Glycolic acid sourced from Chemours, USA"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Dull Skin, Uneven Tone & Texture"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F12",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Take few drops into your palms & gently press into face, body, or neck until fully absorbed. Leave overnight. Can be applied with cotton pads as well. Layer it with your preferred moisturizer."
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "For external use only. Patch test recommended before use. Store in cool, dry place."
+    },
+    {
+      "id": "F14",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: PM. Start with twice a week, & gradually increase frequency. Do not use more than once a day."
+    },
+    {
+      "id": "F15",
+      "section": "Glycolic Acid",
+      "kind": "ingredient_note",
+      "text": "Glycolic acid with free acid form permits it to work at 08% concentration and helps unleash the true power of the molecule. It penetrates the skin's epidermis layer promoting cell turnover to reduce impurities and dead cells for improved skin texture."
+    },
+    {
+      "id": "F16",
+      "section": "Bamboo Water",
+      "kind": "ingredient_note",
+      "text": "Bamboo water supports the formulation to directly affect the skin by soothing and reducing skin irritation. With its regenerating properties it revitalizes, repairs & renews skin."
+    },
+    {
+      "id": "F17",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Aqua, Glycolic Acid, Bambusa Vulgaris (Bamboo) Water, Sodium Hydroxide, Propanediol, Ethoxydiglycol, Polysorbate-20, Sodium Hyaluronate, Sodium PCA, Aminomethyl Propanol, Phenoxyethanol, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F18",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    }
+  ],
+  "source": "page"
+}

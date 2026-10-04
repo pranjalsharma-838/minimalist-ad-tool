@@ -1,0 +1,96 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Dry skin and flakiness",
+      "cites": [
+        "F9"
+      ]
+    },
+    {
+      "text": "5% Marula Oil, Vitamin F, Vitamin E",
+      "cites": [
+        "F3"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Basis: 5% is the Marula Oil strength in the product title.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t15",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "headline": "5% Marula Oil for dry skin",
+  "caption": "Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E, for dry to normal skin types. Concerns listed on the page: dry skin, flakiness and skin tightness. Use AM & PM.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F8"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F3",
+      "F9",
+      "F13"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "concern_solved",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "layout_description": "Headline top-left naming the active, strength and skin type; two short callout labels connected to the large pack on the right; footnote states what the 5% refers to.",
+  "adaptation_notes": "Format #15 Problem -> product: the concern is 'dry skin and flakiness' as the page lists it (F9). Two callouts only (user note 2026-10-05): the concern and the ingredient set. Dropped: concern thumbnails and skin close-ups, line-art icons, the best-seller strip, any solved-in-a-time claim.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "concern labels around a central pack"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "wired callout labels"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "ingredient-to-benefit pairing"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

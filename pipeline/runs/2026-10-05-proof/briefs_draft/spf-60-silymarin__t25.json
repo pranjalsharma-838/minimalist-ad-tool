@@ -1,0 +1,46 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "spf-60-silymarin__t25",
+  "product_title": "SPF 60 Sunscreen",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "SPF 60",
+    "label": "tested in vivo (ISO 24444:2019), independent third-party lab",
+    "cites": [
+      "F6",
+      "F12",
+      "F13"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "SPF 60, tested in vivo",
+  "footnote": "In-vivo data from Advanced Science Laboratories, an independent third-party lab.",
+  "citations": {
+    "headline": [
+      "F6",
+      "F12"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F17"
+    ]
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+  "main_theme": "lab_results"
+}

@@ -1,0 +1,63 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not real results. Individual results vary.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t12",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "headline": "5% Marula Oil moisturizer, AM & PM",
+  "caption": "Marula Oil 5% Face Moisturizer: 5% is the Marula Oil strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13"
+    ],
+    "caption": [
+      "F1",
+      "F13"
+    ]
+  },
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+  "angle": "ingredient_science",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; headline names the active, strength and routine only.",
+  "frames_prompt": "two equal side-by-side panels of the same Indian woman in her early 40s with medium-brown skin, identical close crop of the cheek, framing, angle and soft daylight from the upper left. Left panel: a few faint dry, dull patches near the cheek; right panel: the same area slightly smoother. The difference is small and realistic, never dramatic; skin keeps natural pores and texture.",
+  "adaptation_notes": "Format #12 Before / after: kept the stacked labelled frames beside the pack. Dropped: the timed-result headline ('fades X in 15 days'), struck price, molecule callouts, spa props and any study stat on the image. The frames are small, realistic AI illustrations (reused dry-skin frames from the Vitamin B5 moisturizer ad) and carry the AI label; Severe and not exportable until real study photos replace them.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "stacked labelled crops"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "unlabelled crops with a pack in the centre"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "pack beside the frames"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

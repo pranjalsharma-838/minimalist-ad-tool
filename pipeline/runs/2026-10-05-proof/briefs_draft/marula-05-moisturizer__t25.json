@@ -1,0 +1,42 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "marula-05-moisturizer__t25",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "93%",
+    "label": "subjects agreed skin remains moisturized & soft for 24 hours",
+    "cites": [
+      "F15"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Marula moisturizer: the 24-hour study",
+  "footnote": "Share of study subjects who agreed, as stated on the product page.",
+  "citations": {
+    "headline": [
+      "F15"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F15"
+    ]
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used."
+}

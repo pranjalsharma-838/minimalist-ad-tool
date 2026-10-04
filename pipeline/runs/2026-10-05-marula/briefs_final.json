@@ -1,0 +1,1569 @@
+[
+  {
+    "subhead": "Formulated for dry skin and flakiness",
+    "tag": "Skin Science",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t10",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "problem_solution",
+    "layout": "hero",
+    "headline": "5% Marula Oil for dry skin",
+    "caption": "Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E. The page lists dry skin, flakiness and skin tightness as its concerns. Use after cleansing, toning and serums, AM & PM. The person image is AI-generated and illustrative.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F8"
+      ],
+      "subhead": [
+        "F9"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F3",
+        "F9",
+        "F12",
+        "F13"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "A real lifestyle photo (consenting person, natural light) would replace the AI person.",
+    "angle": "routine",
+    "ai_label_required": true,
+    "hook_type": "situation",
+    "layout_description": "Light canvas; black tagline tag above the headline; the AI lifestyle photo on the right with the real pack in front; AI-GENERATED mark; Hide Nothing. sign-off under the wordmark; quiet Shop now.",
+    "person_prompt": "An Indian woman in her late 20s with medium-brown skin, in the middle of a busy workday in a Gurugram office: she sits at a desk by a floor-to-ceiling window with the hazy glass towers of the city softly out of focus behind her, a laptop open with its screen turned away from the camera, a plain ceramic mug and a blank notebook beside it. She wears a pastel cotton shirt with her hair in a neat low ponytail and a thin silver bracelet, pausing mid-task with her chin resting lightly on one hand, a focused but relaxed expression. Soft overcast daylight from the upper left, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, light makeup at most, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "adaptation_notes": "Format #10 Problem macro, rebuilt without a skin close-up: the concern is named in words from the page (dry skin, flakiness, F9) and shown through a person in an everyday moment, with the real pack beside. Dropped: four concern thumbnails, line-art icons, the best-seller strip, face-crop strip and any percent-off line. The AI person (reused scene, no product in frame, nothing implying a skin result) makes the ad Severe and AI-labelled.",
+    "blend_sources": [
+      {
+        "id": "1386072156792745",
+        "brand": "Re'equil",
+        "took": "concern named in the headline"
+      },
+      {
+        "id": "1739037801557913",
+        "brand": "Deconstruct",
+        "took": "pack beside the scene"
+      },
+      {
+        "id": "1594682718905718",
+        "brand": "Dr. Sheth's",
+        "took": "one short supporting line"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations, not real results. Individual results vary.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t12",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "before_after",
+    "layout": "before_after",
+    "headline": "5% Marula Oil moisturizer, AM & PM",
+    "caption": "Marula Oil 5% Face Moisturizer: 5% is the Marula Oil strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F13"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F13"
+      ],
+      "caption": [
+        "F1",
+        "F13"
+      ]
+    },
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+    "angle": "ingredient_science",
+    "ai_label_required": true,
+    "hook_type": "statement",
+    "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; headline names the active, strength and routine only.",
+    "frames_prompt": "two equal side-by-side panels of the same Indian woman in her early 40s with medium-brown skin, identical close crop of the cheek, framing, angle and soft daylight from the upper left. Left panel: a few faint dry, dull patches near the cheek; right panel: the same area slightly smoother. The difference is small and realistic, never dramatic; skin keeps natural pores and texture.",
+    "adaptation_notes": "Format #12 Before / after: kept the stacked labelled frames beside the pack. Dropped: the timed-result headline ('fades X in 15 days'), struck price, molecule callouts, spa props and any study stat on the image. The frames are small, realistic AI illustrations (reused dry-skin frames from the Vitamin B5 moisturizer ad) and carry the AI label; Severe and not exportable until real study photos replace them.",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "stacked labelled crops"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "unlabelled crops with a pack in the centre"
+      },
+      {
+        "id": "1079958907863521",
+        "brand": "Pilgrim",
+        "took": "pack beside the frames"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Day and week labels mark routine stages, not study timings. AI illustrations, not real results.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t14",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "before_after",
+    "layout": "timeline",
+    "headline": "5% Marula Oil in a daily routine",
+    "caption": "Marula Oil 5% Face Moisturizer: 5% is the Marula Oil strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F13"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F13"
+      ],
+      "caption": [
+        "F1",
+        "F13"
+      ]
+    },
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented progress photos from a documented study of this product (same person, same light; the real pack in frame) to replace the AI frames before any use.",
+    "angle": "transformation",
+    "ai_label_required": true,
+    "hook_type": "statement",
+    "layout_description": "Headline top; three progress frames of the same AI-illustrated skin area left to right (Day 1, Week 2, Week 4), the real pack placed small in the lower-right of EVERY frame; AI-GENERATED mark; footnote states that the labels are routine stages and the frames are illustrations.",
+    "frames": [
+      {
+        "label": "Day 1"
+      },
+      {
+        "label": "Week 2"
+      },
+      {
+        "label": "Week 4"
+      }
+    ],
+    "frames_prompt": "Three equal panels of the same Indian woman in her early 40s with medium-brown skin, an identical close crop of the cheek in every panel, same framing, angle and soft daylight from the upper left. Concern: dry skin. Panel 1: a few faint dry, dull patches; panel 2: slightly smoother; panel 3: slightly smoother again. The change is small and realistic, never dramatic; natural pores and texture in all three. In every panel the lower-right corner (about 30% of the panel width and 40% of its height) is a plain, softly lit area that is intentionally empty, reserved for the real pack to be placed later.",
+    "pack_in_frames": true,
+    "adaptation_notes": "Format #14 Progress / timeline REMAKE (PAIRS 'remake'): subtle, with the product visible in every frame (the AI image leaves a plain empty corner in each panel and the REAL pack cut-out is composited there by code, pack_in_frames; the image model never draws the product). The concern (dry skin, F9) is shown with a small, realistic change only, never dramatic. Labels are routine stages with no result wording and the footnote says so (no study timing is claimed); the headline names the active and strength only. Reuses the dry-skin frames already generated for the Vitamin B5 moisturizer ad. Severe, AI-labelled, not exportable until real study photos replace the frames.",
+    "blend_sources": [
+      {
+        "id": "27546140265006255",
+        "brand": "Chemist at Play",
+        "took": "stacked labelled crops"
+      },
+      {
+        "id": "3961263437511522",
+        "brand": "Re'equil",
+        "took": "left-to-right progression"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "pack as the anchor"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [
+      {
+        "text": "Dry skin and flakiness",
+        "cites": [
+          "F9"
+        ]
+      },
+      {
+        "text": "5% Marula Oil, Vitamin F, Vitamin E",
+        "cites": [
+          "F3"
+        ]
+      }
+    ],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Basis: 5% is the Marula Oil strength in the product title.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t15",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "problem_solution",
+    "layout": "callouts",
+    "headline": "5% Marula Oil for dry skin",
+    "caption": "Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E, for dry to normal skin types. Concerns listed on the page: dry skin, flakiness and skin tightness. Use AM & PM.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F8"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F1"
+      ],
+      "caption": [
+        "F3",
+        "F9",
+        "F13"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "concern_solved",
+    "ai_label_required": false,
+    "hook_type": "ingredient",
+    "layout_description": "Headline top-left naming the active, strength and skin type; two short callout labels connected to the large pack on the right; footnote states what the 5% refers to.",
+    "adaptation_notes": "Format #15 Problem -> product: the concern is 'dry skin and flakiness' as the page lists it (F9). Two callouts only (user note 2026-10-05): the concern and the ingredient set. Dropped: concern thumbnails and skin close-ups, line-art icons, the best-seller strip, any solved-in-a-time claim.",
+    "blend_sources": [
+      {
+        "id": "1386072156792745",
+        "brand": "Re'equil",
+        "took": "concern labels around a central pack"
+      },
+      {
+        "id": "1739037801557913",
+        "brand": "Deconstruct",
+        "took": "wired callout labels"
+      },
+      {
+        "id": "2307135286779864",
+        "brand": "The Derma Co",
+        "took": "ingredient-to-benefit pairing"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Basis: the title states 5%; compared with a label type that gives no strength.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t17",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "comparison",
+    "layout": "usvsthem",
+    "headline": "5% Marula Oil, stated up front",
+    "compare": {
+      "us": "Marula Oil 5% Face Moisturizer",
+      "them": "Label without the %",
+      "cites": [
+        "F1"
+      ],
+      "rows": [
+        {
+          "label": "Strength of the active",
+          "us": "5%",
+          "them": "Not stated",
+          "cites": [
+            "F1"
+          ]
+        }
+      ]
+    },
+    "caption": "Marula Oil 5% Face Moisturizer names its active and its strength, 5%, in the product title.",
+    "citations": {
+      "headline": [
+        "F1"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F1"
+      ],
+      "caption": [
+        "F1"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "comparison",
+    "ai_label_required": false,
+    "hook_type": "contrast",
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left, headline across the top; the real pack large on the left; on the right a one-row table: our product vs a label type without the %, row 'Strength of the active': our % (bold black) vs 'Not stated' (grey). Footnote states the basis; quiet 'Shop now' label bottom-left.",
+    "adaptation_notes": "Format #17 Us vs Them. The product page names no benchmark product (F19 gives a supplier study of a cream with 5% Marula Oil, with no comparison arm), so this is the transparency comparison: our stated strength vs a label type that does not state one. 'Them' is a label type, never a brand; no row says others hide or harm. The footnote states the basis. Dropped: the reference ad's 'European vs Korean' regional contrast, '100% photostable' and 'best of both worlds' claims. Stays High until a reviewer confirms the proof is on file (DEC-02).",
+    "blend_sources": [
+      {
+        "id": "4500111383646459",
+        "brand": "Deconstruct",
+        "took": "two-column versus table"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "high",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      },
+      {
+        "severity": "fix",
+        "rule_id": "CLM-12",
+        "span": "vs",
+        "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+        "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 2,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t2",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "badges",
+    "headline": "5% Marula Oil with Vitamin F and E",
+    "badges": [
+      {
+        "text": "4.2★ from 388 reviews",
+        "cites": [
+          "RATING"
+        ]
+      },
+      {
+        "text": "For dry to normal skin",
+        "cites": [
+          "F8"
+        ]
+      }
+    ],
+    "caption": "Marula Oil 5% Face Moisturizer: an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E, and multiple hydrators including Hyaluronic Acid, Saccharide Isomerate and Glycerin. Rating: 4.2 out of 5 stars from 388 reviews on beminimalist.co, captured 2026-10-02.",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F3",
+        "F6",
+        "RATING"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "social_proof",
+    "ai_label_required": false,
+    "hook_type": "ingredient",
+    "layout_description": "White canvas; headline naming the active and strength with two outlined badges stacked on the left (the rating, then the skin type); the real pack large on the right.",
+    "adaptation_notes": "Format #2 Product + benefit badges, social-proof angle: the rating is the first badge (RATING verbatim, not rounded), then the skin type from the page. Dropped: the 'India's 1st' claim, highlight bars, tick-mark benefit bullets, the sun-flare disc and the three-badge credential strip.",
+    "blend_sources": [
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "outlined badge next to the pack"
+      },
+      {
+        "id": "2196301691128293",
+        "brand": "Chemist at Play",
+        "took": "short feature lines"
+      },
+      {
+        "id": "1420890446893063",
+        "brand": "Pilgrim",
+        "took": "credential line style"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Deconstruct",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "Skin Science",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Texture shown is an AI illustration.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t21",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "texture",
+    "headline": "An everyday moisturizing cream",
+    "caption": "Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E. It is a heavy cream, suitable for dry to normal skin types. Use after cleansing, toning and serums, AM & PM.",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F3"
+      ],
+      "caption": [
+        "F3",
+        "F12",
+        "F13"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "A real macro photo of this product's texture should replace the AI texture swatch before any publication (AI texture is illustrative and may differ from the real formula).",
+    "angle": "situation",
+    "ai_label_required": true,
+    "hook_type": "statement",
+    "layout_description": "White canvas; headline top-left with the active + strength lockup beneath it; a texture swatch of this product beside the real pack (the approved ChatGPT texture render brand_packs/minimalist/assets/ai_renders/marula-05-moisturizer/texture1.png, made from the verified pack render, pack unchanged); small black tagline tag; the pack large on the right; quiet Shop now.",
+    "adaptation_notes": "Format #21 Texture shot (user note 2026-10-05): texture swatch of this product beside the verified pack (already generated and label-checked, no new job), the main active in the pack-label lockup (5% Marula Oil, as the title states it), and the brand tagline 'Skin Science' as the tag (DEC-03, no citation needed). Texture wording only from the page: 'an everyday moisturizing cream' and 'heavy cream' (F3). Dropped: fruit-pile prop, 'NEW' bubble, glow claims, emoji, ingredient-to-benefit tag cards. The texture is AI-made from the verified pack render with the pack kept identical, so the ad carries the small AI-illustrative mark; risk Low per DEC-04.",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "pack beside a detail element"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "minimal two-line headline"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "short feature label beside the pack"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [
+      {
+        "label": "Step 1 · Serum",
+        "product_handle": "niacinamide-10-with-matmarine",
+        "line": "2-3 drops after cleansing & toning",
+        "cites": [
+          "niacinamide-10-with-matmarine:F13"
+        ]
+      },
+      {
+        "label": "Step 2 · Moisturize",
+        "product_handle": "marula-05-moisturizer",
+        "line": "Massage into face and neck until absorbed",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Step 3 · Protect",
+        "product_handle": "multi-vitamin-spf-50",
+        "line": "AM, after serums and moisturisers",
+        "cites": [
+          "multi-vitamin-spf-50:F20",
+          "multi-vitamin-spf-50:F21"
+        ]
+      }
+    ],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area in the middle. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t22",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "routine_regimen",
+    "layout": "journey",
+    "headline": "Where 5% Marula Oil fits in your routine",
+    "caption": "A simple routine, in the order each product page gives it: Marula Oil 5% Face Moisturizer goes on after all serums, and SPF 50 Sunscreen goes on after all your serums and moisturisers.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F12"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F12",
+        "multi-vitamin-spf-50:F20"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "ai_label_required": false,
+    "hook_type": "ingredient",
+    "layout_description": "White canvas; routine title across the top; three real packs in a row, each with a black numbered circle, the step name in capitals and the product with its active + strength under it.",
+    "adaptation_notes": "Format #22 How-to / steps: serum, moisturizer, sunscreen in the order the three pages give (moisturizer 'after applying all serums' F12; sunscreen 'after all your serums and moisturisers' F20). The headline leads with the active and its strength (ingredient-science angle). Dropped: water-splash staging, a model, handwritten checklist, skin-type or seasonal-concern headline.",
+    "blend_sources": [
+      {
+        "id": "2605728093198832",
+        "brand": "Foxtale",
+        "took": "numbered step labels on packs"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "two-to-three step structure"
+      },
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "packs in a row on a plain ground"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "Rating from beminimalist.co (Yotpo), captured 2026-10-02",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t26",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "testimonial_ugc",
+    "layout": "review",
+    "headline": "4.2 out of 5 from 388 reviews",
+    "review": {
+      "stars": "★★★★★",
+      "quote": "…for my mother ( she has dry skin) and it's quite satisfactory",
+      "source": "Nibha K., verified buyer, 5★, 2025-01-30 (beminimalist.co, captured 2026-10-02)"
+    },
+    "caption": "…I bought it for my mother ( she has dry skin) and it's quite satisfactory. Marula Oil 5% Face Moisturizer: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 5% is the Marula Oil strength stated in the product title.",
+    "citations": {
+      "headline": [
+        "RATING"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "RATING"
+      ],
+      "caption": [
+        "F1",
+        "RATING"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "ingredient_science",
+    "ai_label_required": false,
+    "hook_type": "social_proof",
+    "layout_description": "Left: rating headline, then a dated verified-review card (stars, quote, name and date line); the product name with its strength under the wordmark; real pack on the right; rating source in the caption.",
+    "adaptation_notes": "Format #26 Review creative: the real rating verbatim (RATING) and one verbatim verified review (REV6), trimmed only with an ellipsis. Reviews that use 'perfect' or 'amazing', say the product is 'too oily' or 'not enough', or are mixed were not chosen. Dropped: the hand holding the pack, review title, city, star-burst and any 'best' wording.",
+    "blend_sources": [
+      {
+        "id": "621835826921394",
+        "brand": "Dot & Key",
+        "took": "rating as the headline"
+      },
+      {
+        "id": "1619243416440363",
+        "brand": "Deconstruct",
+        "took": "dated verified-review card"
+      },
+      {
+        "id": "991199233902436",
+        "brand": "Conscious Chemist",
+        "took": "pack beside the card"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed",
+    "style_edits": [
+      {
+        "field": "review.quote",
+        "from": "…I bought it for my mother ( she has dry skin) and it's quite satisfactory",
+        "to": "…for my mother ( she has dry skin) and it's quite satisfactory",
+        "why": "review quote cut (substring only, trimmed with an ellipsis) to fit the 20-word on-image budget; stand-in editor"
+      }
+    ]
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [
+      {
+        "pct": "5%",
+        "name": "Marula Oil",
+        "line": "Softens and nourishes the skin",
+        "cites": [
+          "F5"
+        ]
+      },
+      {
+        "pct": "",
+        "name": "Hyaluronic Acid",
+        "line": "A humectant that hydrates and softens skin",
+        "cites": [
+          "F21"
+        ]
+      },
+      {
+        "pct": "",
+        "name": "Vitamin F and Vitamin E",
+        "line": "Suited to dry, stressed and sensitive skin",
+        "cites": [
+          "F20"
+        ]
+      }
+    ],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t3",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "ingredient_explainer",
+    "layout": "actives",
+    "headline": "After your serums: 5% Marula Oil",
+    "caption": "Use Marula Oil 5% Face Moisturizer after cleansing, toning and applying all serums, AM & PM. 5% is the Marula Oil strength stated on the page.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F12"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F12",
+        "F13",
+        "F1"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "situation",
+    "ai_label_required": false,
+    "hook_type": "situation",
+    "layout_description": "Headline top-left; up to two ingredient cards stacked down the left, each with its strength (where the page states one) and name in bold; the real pack large on the right.",
+    "adaptation_notes": "Format #3 Product + ingredients, situation-first: the headline opens on the routine moment (after serums, F12). Three named actives, each tied to its own page line, with the strength only where the page gives one (Marula Oil 5%). Dropped: the fruit pile, 'NEW' bubble, ONE-serum headline pattern, emoji and any 'brightens / reduces' benefit wording.",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "ingredient cards beside the pack"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "minimal two-line headline"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "named actives with short lines"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "Use after cleansing, toning and serums",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t31",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "other",
+    "layout": "native",
+    "headline": "Heavy cream, massaged in until absorbed",
+    "caption": "Marula Oil 5% Face Moisturizer is a heavy cream, suitable for dry to normal skin types. Use after cleansing, toning and applying all serums; massage into face and neck until it is fully absorbed, AM & PM. The person image is AI-generated and illustrative.",
+    "citations": {
+      "headline": [
+        "F3",
+        "F12"
+      ],
+      "subhead": [
+        "F12"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F3",
+        "F12",
+        "F13"
+      ]
+    },
+    "needs_real_photography": true,
+    "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims, no scripted testimonial.",
+    "angle": "sensorial",
+    "ai_label_required": true,
+    "hook_type": "situation",
+    "layout_description": "Plain native feel: casual headline and one supporting line on the left; the AI-generated selfie-style photo card on the right with the AI-GENERATED mark; the real pack beside it; no emoji.",
+    "person_prompt": "a casual, natural front-camera selfie of a smiling Indian woman in her early 40s with light-brown skin in a bright bedroom in the morning, simple cotton kurta, phone held at arm's length, nothing on her face or in her hands; soft daylight from a window on the upper left, an off-white wall softly out of focus behind her. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "adaptation_notes": "Format #31 Creator selfie: a casual selfie-style card with a plain, calm line in place of the reference's emoji and makeup/SPF/long-day opener. Sensorial wording only from the page ('heavy cream', F3; massage until absorbed, F12). No testimonial and no result. The AI person (reused scene) is not a real creator, so it carries the AI label, is Severe, and a real consenting creator must replace it.",
+    "blend_sources": [
+      {
+        "id": "1390426132931304",
+        "brand": "Conscious Chemist",
+        "took": "selfie-style person card"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Conscious Chemist",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": {
+      "line": "Buy 2, Get 3rd Free",
+      "condition": "On beminimalist.co, as on 2 Oct 2026. T&C apply.",
+      "valid_till": ""
+    },
+    "footnote": "",
+    "cta": "Shop the offer",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t36",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "offer_promo",
+    "layout": "offer",
+    "headline": "Stock up on Marula Oil 5% Moisturizer",
+    "caption": "Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E.",
+    "citations": {
+      "headline": [
+        "F1"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "OFFER3",
+        "F1",
+        "F3"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "offer_value",
+    "ai_label_required": false,
+    "hook_type": "offer",
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left; the offer in plain words as the title ('Buy 2, Get 3rd Free') with its condition in one small grey line; the real pack large on the right; quiet 'Shop the offer'.",
+    "adaptation_notes": "Format #36 Offer creative: the live sitewide offer quoted exactly (OFFER3), condition and 'T&C apply' on the creative, capture date in the condition and the caption. Dropped: sticker lockups, struck prices, countdown, colour blocks and any urgency (no end date was captured). No price shown, as the brand's statics show none.",
+    "blend_sources": [
+      {
+        "id": "1393861285783656",
+        "brand": "Chemist at Play",
+        "took": "offer as the whole message"
+      },
+      {
+        "id": "27209515258657747",
+        "brand": "Conscious Chemist",
+        "took": "plain studio shot of the product"
+      },
+      {
+        "id": "903698342763669",
+        "brand": "Foxtale",
+        "took": "short condition line"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [
+      {
+        "product_handle": "marula-05-moisturizer",
+        "label": "Moisturizer: AM & PM",
+        "cites": [
+          "F13"
+        ]
+      },
+      {
+        "product_handle": "multi-vitamin-spf-50",
+        "label": "Sunscreen: AM, every day",
+        "cites": [
+          "multi-vitamin-spf-50:F21"
+        ]
+      }
+    ],
+    "offer": null,
+    "footnote": "Usage as stated on each product's own page.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area in the middle. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t38",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "other",
+    "layout": "range",
+    "headline": "Moisturizer, then sunscreen",
+    "caption": "Marula Oil 5% Face Moisturizer is used after cleansing, toning and serums, AM & PM. SPF 50 Sunscreen goes on after all your serums and moisturisers, AM, every day.",
+    "citations": {
+      "headline": [
+        "F12",
+        "multi-vitamin-spf-50:F20"
+      ],
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F13",
+        "multi-vitamin-spf-50:F21"
+      ],
+      "caption": [
+        "F12",
+        "F13",
+        "multi-vitamin-spf-50:F20",
+        "multi-vitamin-spf-50:F21"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "concern_solved",
+    "ai_label_required": false,
+    "hook_type": "statement",
+    "layout_description": "White canvas; short headline across the top; two real packs side by side, each with its active + strength lockup and one short usage label; footnote band states the basis.",
+    "adaptation_notes": "Format #38 Bundle / kit image: a two-product kit built only from usage facts the pages state (moisturizer after serums, AM & PM; sunscreen after moisturisers, AM). Concern answered: which step comes after which. Dropped: colour-matched fruit staging, a discount sticker and any offer wording (the offer ad is #36).",
+    "blend_sources": [
+      {
+        "id": "1606881954486073",
+        "brand": "Dot & Key",
+        "took": "products staged side by side"
+      },
+      {
+        "id": "3159883944203364",
+        "brand": "The Derma Co",
+        "took": "plain catalogue layout without overlay"
+      },
+      {
+        "id": "1393861285783656",
+        "brand": "Chemist at Play",
+        "took": "one short label per product"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "Formulated for dry skin and flakiness",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t4",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "headline": "5% Marula Oil, high Omega-9 content",
+    "caption": "Marula Oil 5% Face Moisturizer is formulated with 5% Marula Oil, which softens and nourishes the skin and has a high content of Omega-9 fatty acid and antioxidant properties. Concerns listed on the page: dry skin, flakiness and skin tightness.",
+    "citations": {
+      "headline": [
+        "F1",
+        "F5"
+      ],
+      "subhead": [
+        "F9"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F5",
+        "F9"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "concern_solved",
+    "ai_label_required": false,
+    "hook_type": "ingredient",
+    "layout_description": "White canvas; two-line ingredient headline and one supporting line on the left with the active + strength lockup beneath; the real pack large on the right.",
+    "adaptation_notes": "Format #4 Ingredient flat lay in the minimal house look: the ingredient is named in words and the pack is the hero; no fruit, oil drops or props are drawn. Concern answered with page facts only: the concern list (F9) and the oil's Omega-9 content (F5). Dropped: halved-fruit and water-droplet staging, pale-blue ground, ingredient-to-benefit tag cards.",
+    "blend_sources": [
+      {
+        "id": "984872741086615",
+        "brand": "Dr. Sheth's",
+        "took": "ingredient as the visual cue"
+      },
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "pack as the hero"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "no overlay clutter"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dr. Sheth's",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "Massage into face and neck until absorbed",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t6",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "headline": "Your moisturizer step, AM and PM",
+    "caption": "Marula Oil 5% Face Moisturizer: use after cleansing, toning and applying all serums. Take a sufficient quantity and massage into face and neck until it is fully absorbed. When to use: AM & PM, every day. 5% is the Marula Oil strength stated in the product title.",
+    "citations": {
+      "headline": [
+        "F13"
+      ],
+      "subhead": [
+        "F12"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F12",
+        "F13",
+        "F1"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "routine",
+    "ai_label_required": false,
+    "hook_type": "situation",
+    "layout_description": "White canvas; two-line headline and one supporting line on the left with the active + strength lockup beneath; the real pack large on the right.",
+    "adaptation_notes": "Format #6 Lifestyle product shot, minimal house look: no scene or person is drawn (the brand's statics show the pack alone). The 'lifestyle' is the routine moment the page states: the moisturizer step, AM and PM. Dropped: fruit pile, editorial props, 'NEW' bubble, ingredient-to-benefit cards, benefit wording.",
+    "blend_sources": [
+      {
+        "id": "9868853523169382",
+        "brand": "Dot & Key",
+        "took": "pack as the single hero"
+      },
+      {
+        "id": "1475983576999549",
+        "brand": "Foxtale",
+        "took": "short two-line headline"
+      },
+      {
+        "id": "4416615341943591",
+        "brand": "Deconstruct",
+        "took": "one small supporting line"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Dot & Key",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "Massage into face and neck until absorbed",
+    "tag": "",
+    "proof_points": [
+      "5% Marula Oil softens and nourishes the skin",
+      "Use AM & PM, every day"
+    ],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t8",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "headline": "A heavy cream for dry to normal skin",
+    "caption": "Marula Oil 5% Face Moisturizer is a heavy cream, suitable for dry to normal skin types. Take a sufficient quantity and massage into face and neck until it is fully absorbed, AM & PM. The person image is AI-generated and illustrative.",
+    "citations": {
+      "headline": [
+        "F3"
+      ],
+      "subhead": [
+        "F12"
+      ],
+      "tag": [],
+      "proof_points": [
+        [
+          "F5"
+        ],
+        [
+          "F13"
+        ]
+      ],
+      "footnote": [],
+      "caption": [
+        "F3",
+        "F12",
+        "F13"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+    "angle": "sensorial",
+    "ai_label_required": true,
+    "hook_type": "situation",
+    "layout_description": "Left column: headline and one supporting line with the active + strength lockup; the AI-generated person photo fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it.",
+    "person_prompt": "an Indian woman in her early 40s with medium-brown skin, smoothing a light moisturiser onto her face and neck by a window in the morning, simple cotton kurta, relaxed expression, soft daylight from the upper left.",
+    "adaptation_notes": "Format #8 Product-in-use. Kept: a person smoothing a moisturizer on, beside the pack. Sensorial wording only from the page ('heavy cream', F3; massage until absorbed, F12). Dropped: the timed-fix seasonal headline, the three-panel collage and the model wearing a mask. The AI person (reused scene, no product in frame) makes the ad Severe and AI-labelled.",
+    "blend_sources": [
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "person using the product beside the pack"
+      },
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "single short benefit line"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Foxtale",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  },
+  {
+    "subhead": "AM & PM, every day",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "source_ad_id": "marula-05-moisturizer__t9",
+    "product_title": "Marula Oil 5% Face Moisturizer",
+    "ad_type": "product_hero",
+    "layout": "hero",
+    "headline": "After serums: massage in until absorbed",
+    "caption": "Marula Oil 5% Face Moisturizer: use after cleansing, toning and applying all serums. Take a sufficient quantity and massage into face and neck until it is fully absorbed. When to use: AM & PM, every day. The person image is AI-generated and illustrative.",
+    "citations": {
+      "headline": [
+        "F12"
+      ],
+      "subhead": [
+        "F13"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "caption": [
+        "F12",
+        "F13"
+      ]
+    },
+    "needs_real_photography": false,
+    "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+    "angle": "situation",
+    "ai_label_required": true,
+    "hook_type": "situation",
+    "layout_description": "Left column: headline and one supporting line with the active + strength lockup; the AI-generated person photo (massaging face and neck, nothing on the skin) fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it.",
+    "person_prompt": "An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+    "adaptation_notes": "Format #9 Application macro, situation-first: the moment is after cleansing, toning and serums (F12). Kept: the application gesture next to the pack. Dropped: the wet-hands shower setting, the '#1 daily duo' headline and any benefit wording. The AI person (reused scene, no product in frame) makes the ad Severe and AI-labelled.",
+    "blend_sources": [
+      {
+        "id": "1732129464862042",
+        "brand": "Chemist at Play",
+        "took": "hands-on application gesture"
+      },
+      {
+        "id": "1602641281689513",
+        "brand": "Foxtale",
+        "took": "one situation line"
+      }
+    ],
+    "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+    "product_handle": "marula-05-moisturizer",
+    "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+    "source_brand": "Chemist at Play",
+    "status": "approved_for_image_step",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "LIMITED_CHECK",
+      "label": "Ready for human review (limited check)",
+      "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+    },
+    "coverage": {
+      "rules": true,
+      "model": false,
+      "model_error": null,
+      "rules_version": "0.4",
+      "decisions_version": "2026-10-04"
+    },
+    "findings": [],
+    "rounds_tried": 2,
+    "kept_because": "passed"
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 · Serum",
+      "product_handle": "niacinamide-10-with-matmarine",
+      "line": "2-3 drops after cleansing & toning",
+      "cites": [
+        "niacinamide-10-with-matmarine:F13"
+      ]
+    },
+    {
+      "label": "Step 2 · Moisturize",
+      "product_handle": "marula-05-moisturizer",
+      "line": "Massage into face and neck until absorbed",
+      "cites": [
+        "F12"
+      ]
+    },
+    {
+      "label": "Step 3 · Protect",
+      "product_handle": "multi-vitamin-spf-50",
+      "line": "AM, after serums and moisturisers",
+      "cites": [
+        "multi-vitamin-spf-50:F20",
+        "multi-vitamin-spf-50:F21"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area in the middle. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t22",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "headline": "Where 5% Marula Oil fits in your routine",
+  "caption": "A simple routine, in the order each product page gives it: Marula Oil 5% Face Moisturizer goes on after all serums, and SPF 50 Sunscreen goes on after all your serums and moisturisers.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F12"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F12",
+      "multi-vitamin-spf-50:F20"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "layout_description": "White canvas; routine title across the top; three real packs in a row, each with a black numbered circle, the step name in capitals and the product with its active + strength under it.",
+  "adaptation_notes": "Format #22 How-to / steps: serum, moisturizer, sunscreen in the order the three pages give (moisturizer 'after applying all serums' F12; sunscreen 'after all your serums and moisturisers' F20). The headline leads with the active and its strength (ingredient-science angle). Dropped: water-splash staging, a model, handwritten checklist, skin-type or seasonal-concern headline.",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "numbered step labels on packs"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "two-to-three step structure"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "packs in a row on a plain ground"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

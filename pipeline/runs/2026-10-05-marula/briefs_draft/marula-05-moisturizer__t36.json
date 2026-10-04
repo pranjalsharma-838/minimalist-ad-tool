@@ -1,0 +1,64 @@
+{
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "On beminimalist.co, as on 2 Oct 2026. T&C apply.",
+    "valid_till": ""
+  },
+  "footnote": "",
+  "cta": "Shop the offer",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t36",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "headline": "Stock up on Marula Oil 5% Moisturizer",
+  "caption": "Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "OFFER3",
+      "F1",
+      "F3"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "offer_value",
+  "ai_label_required": false,
+  "hook_type": "offer",
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left; the offer in plain words as the title ('Buy 2, Get 3rd Free') with its condition in one small grey line; the real pack large on the right; quiet 'Shop the offer'.",
+  "adaptation_notes": "Format #36 Offer creative: the live sitewide offer quoted exactly (OFFER3), condition and 'T&C apply' on the creative, capture date in the condition and the caption. Dropped: sticker lockups, struck prices, countdown, colour blocks and any urgency (no end date was captured). No price shown, as the brand's statics show none.",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "offer as the whole message"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "plain studio shot of the product"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "short condition line"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

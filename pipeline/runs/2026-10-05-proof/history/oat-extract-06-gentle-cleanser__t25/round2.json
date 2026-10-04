@@ -1,0 +1,63 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "oat-extract-06-gentle-cleanser__t25",
+  "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "6.5%",
+    "label": "B12 + Oat Extract in a gel cream cleanser",
+    "cites": [
+      "F1",
+      "F3"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "A mild, low-foaming oat cleanser",
+  "footnote": "",
+  "citations": {
+    "headline": [
+      "F2"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": []
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+  "product_handle": "oat-extract-06-gentle-cleanser",
+  "product_url": "https://beminimalist.co/products/oat-extract-06-gentle-cleanser",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

@@ -1,0 +1,196 @@
+{
+  "url": "https://beminimalist.co/products/pha-3-biotic-toner",
+  "title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+  "actives": [],
+  "price": 359,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/PHANew.jpg?v=1721379191",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/PHA_2.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/PHA_3.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/PHA_4.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/PHA_6.png?v=1724763870"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Polyhydroxy Acid (PHA) 3% Face Toner"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Tightens Pores, Exfoliates, Hydrates & Rebalances Skin Microbiome"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A daily, gentle exfoliating, pH balancing, pore tightening & skin hydrating toner. Boosted with Pre-Biotics and Pro-Biotics to balance skin microbiome and accelerate the recovery of skin's barrier function."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"There's a lot of misconception about how toners are not needed. This one has reduced the visibility of my pores. It works really well with my SA cleanser. -Keerthi P.\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated for all skin types. This toner is very lightweight and glides on the skin effortlessly before absorbing quickly & completely"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "PHAs are next generation AHAs. They not just exfoliate gently, but also functions as humectants. Further, Gluconolactone (PHA used in this formula) provides up to 50% protection against UV radiation"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with Prebiotics and Probiotics to balance skin microbiome and enhance natural defence barriers of the skin. Also boosted with multiple humectants for multi-level hydration"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "High quality ingredients including Gluconolactone sourced from Jungbunzlauer, Switzerland and Prorenew Complex CLR from CLR Chemisches, Germany"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Dry/Normal, Sensitive, Oily, Combination, Acne-Prone"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Enlarged pores, Dehydrated skin or Uneven texture"
+    },
+    {
+      "id": "F12",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "This toner helps remove dead skin cells / built up left after cleansing. It also prepares the skin for the serums to follow and helps in improving active delivery"
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agreed pore size got reduced after 4 weeks"
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "93% subjects agreed skin felt hydrated immediately on application"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agreed skin texture felt smoother after 3 weeks"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F17",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "SHAKE WELL BEFORE USE. After cleansing, take few drops of toner into palms & gently press into face & neck until fully absorbed. Do not rinse off. Can be applied with cotton pads as well. Layer it with your preferred serums & moisturizer."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday."
+    },
+    {
+      "id": "F19",
+      "section": "Polyhydroxy Acid",
+      "kind": "ingredient_note",
+      "text": "PHAs are next generation AHAs. Because of its larger molecule size compared to Glycolic acid (molecular weight 178 vs. 76 for Glycolic acid), it penetrates the skin slowly, hence offering gentle exfoliation without causing any skin irritation"
+    },
+    {
+      "id": "F20",
+      "section": "Multi-Biotics",
+      "kind": "ingredient_note",
+      "text": "Topical applications of probiotics directly affect the skin by enhancing its natural defense barriers. This product uses both forms of biotic (pre & pro) to restore skin’s natural health and beauty"
+    },
+    {
+      "id": "F21",
+      "section": "Niacinamide + Salicylic Acid",
+      "kind": "ingredient_note",
+      "text": "The duo helps to reduce the appearance of enlarged pores, keeps your oil in check, gently exfoliates your skin, & prevents clogged pores giving you a flawless, matt look"
+    },
+    {
+      "id": "F22",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Methylpropanediol, Gluconolactone, PEG/PPG-17/6 Copolymer, Ethoxydiglycol, Niacinamide, Dimethyl Isosorbide, Cucumis Sativus (Cucumber) Fruit Extract, Inulin, Lactococcus Ferment Lysate, Xylitylglucoside, Anhydroxylitol, Xylitol, Salicylic Acid, Sodium Hydroxide, Allantoin, Sodium Polyglutamate, Sodium Hyaluronate, Panthenol, Pentylene Glycol, Lysine, Histidine, Arginine, Aspartic Acid, Threonine, Serine, Glutamic Acid, Proline, Glycine, Alanine, Valine, Methionine, Isoleucine, Leucine, Tyrosine, Phenylalanine, Cysteine, Phenoxyethanol, Ethylhexylglycerin, Citric Acid, Propylene Glycol, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F23",
+      "section": "Can it be used daily?",
+      "kind": "faq",
+      "text": "Yes. It's a gentle, hydrating toner and can be used every day AM and PM or as per your skin needs. When used during the day, always wear a broad spectrum sunscreen SPF 30 or above to avoid sun sensitivity."
+    },
+    {
+      "id": "F24",
+      "section": "Can it be used on acne-prone skin?",
+      "kind": "faq",
+      "text": "Yes. It's a pH-balancing toner and contains Niacinamide and Salicylic Acid. Both these ingredients are helpful in reducing excess sebum and reducing acne, and this combination makes this toner ideal for combination / oily, acne-prone skin."
+    },
+    {
+      "id": "F25",
+      "section": "What is the recommended age for using this toner?",
+      "kind": "faq",
+      "text": "Scientifically, it is safe for a younger age, but to avoid overconsumption and any undesirable effects, we recommend it for teens and adults (Above 18 years)."
+    },
+    {
+      "id": "F26",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    }
+  ],
+  "source": "page"
+}

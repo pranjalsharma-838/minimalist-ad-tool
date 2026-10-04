@@ -1,0 +1,82 @@
+{
+  "subhead": "",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Texture shown is an AI illustration.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t21",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "product_hero",
+  "layout": "texture",
+  "headline": "An everyday moisturizing cream",
+  "caption": "Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E. It is a heavy cream, suitable for dry to normal skin types. Use after cleansing, toning and serums, AM & PM.",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F3"
+    ],
+    "caption": [
+      "F3",
+      "F12",
+      "F13"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "A real macro photo of this product's texture should replace the AI texture swatch before any publication (AI texture is illustrative and may differ from the real formula).",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "layout_description": "White canvas; headline top-left with the active + strength lockup beneath it; a texture swatch of this product beside the real pack (the approved ChatGPT texture render brand_packs/minimalist/assets/ai_renders/marula-05-moisturizer/texture1.png, made from the verified pack render, pack unchanged); small black tagline tag; the pack large on the right; quiet Shop now.",
+  "adaptation_notes": "Format #21 Texture shot (user note 2026-10-05): texture swatch of this product beside the verified pack (already generated and label-checked, no new job), the main active in the pack-label lockup (5% Marula Oil, as the title states it), and the brand tagline 'Skin Science' as the tag (DEC-03, no citation needed). Texture wording only from the page: 'an everyday moisturizing cream' and 'heavy cream' (F3). Dropped: fruit-pile prop, 'NEW' bubble, glow claims, emoji, ingredient-to-benefit tag cards. The texture is AI-made from the verified pack render with the pack kept identical, so the ad carries the small AI-illustrative mark; risk Low per DEC-04.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "pack beside a detail element"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "minimal two-line headline"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "short feature label beside the pack"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

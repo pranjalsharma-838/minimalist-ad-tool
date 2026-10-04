@@ -1,0 +1,62 @@
+{
+  "subhead": "Formulated for dry skin and flakiness",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t4",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "headline": "5% Marula Oil, high Omega-9 content",
+  "caption": "Marula Oil 5% Face Moisturizer is formulated with 5% Marula Oil, which softens and nourishes the skin and has a high content of Omega-9 fatty acid and antioxidant properties. Concerns listed on the page: dry skin, flakiness and skin tightness.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F5"
+    ],
+    "subhead": [
+      "F9"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F5",
+      "F9"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "concern_solved",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "layout_description": "White canvas; two-line ingredient headline and one supporting line on the left with the active + strength lockup beneath; the real pack large on the right.",
+  "adaptation_notes": "Format #4 Ingredient flat lay in the minimal house look: the ingredient is named in words and the pack is the hero; no fruit, oil drops or props are drawn. Concern answered with page facts only: the concern list (F9) and the oil's Omega-9 content (F5). Dropped: halved-fruit and water-droplet staging, pale-blue ground, ingredient-to-benefit tag cards.",
+  "blend_sources": [
+    {
+      "id": "984872741086615",
+      "brand": "Dr. Sheth's",
+      "took": "ingredient as the visual cue"
+    },
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "pack as the hero"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "no overlay clutter"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

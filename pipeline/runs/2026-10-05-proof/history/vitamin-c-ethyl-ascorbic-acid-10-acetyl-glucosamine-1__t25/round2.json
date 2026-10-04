@@ -1,0 +1,91 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "stat",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25",
+  "product_title": "Vitamin C 10% Face Serum",
+  "subhead": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "90%",
+    "label": "subjects said their dark spots faded after 8 weeks",
+    "cites": [
+      "F18"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless studio surface with a very faint soft floor shadow, evenly lit by soft daylight, very quiet and low contrast. Off-white, few props, clinical minimal style. Square 1080x1080. Keep the right 45% of the frame as an empty clear space, evenly lit and the left 50% calm and low-detail. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "hook_type": "stat",
+  "blend_sources": [],
+  "headline": "Vitamin C serum: the dark spot study",
+  "footnote": "Share of study subjects who agreed, as stated on the product page.",
+  "citations": {
+    "headline": [
+      "F18"
+    ],
+    "subhead": [],
+    "proof_points": [],
+    "footnote": [
+      "F18"
+    ]
+  },
+  "layout_description": "Oversized stat value with its one-line study label beneath; headline above; real pack shot in the right 45%; study basis as the footnote at the bottom-left.",
+  "adaptation_notes": "Proof run: the stat is the strongest page-stated numeric, dermatologist or research fact not cited by an earlier library brief; its qualifier is in the footnote. No competitor wording used.",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "ai_label_required": false,
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-08",
+      "span": "90% subjects",
+      "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+      "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 8 weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F18). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

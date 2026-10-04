@@ -1,0 +1,57 @@
+{
+  "subhead": "AM & PM, every day",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t9",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "headline": "After serums: massage in until absorbed",
+  "caption": "Marula Oil 5% Face Moisturizer: use after cleansing, toning and applying all serums. Take a sufficient quantity and massage into face and neck until it is fully absorbed. When to use: AM & PM, every day. The person image is AI-generated and illustrative.",
+  "citations": {
+    "headline": [
+      "F12"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F12",
+      "F13"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "layout_description": "Left column: headline and one supporting line with the active + strength lockup; the AI-generated person photo (massaging face and neck, nothing on the skin) fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it.",
+  "person_prompt": "An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "adaptation_notes": "Format #9 Application macro, situation-first: the moment is after cleansing, toning and serums (F12). Kept: the application gesture next to the pack. Dropped: the wet-hands shower setting, the '#1 daily duo' headline and any benefit wording. The AI person (reused scene, no product in frame) makes the ad Severe and AI-labelled.",
+  "blend_sources": [
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "hands-on application gesture"
+    },
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "one situation line"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration"
+}

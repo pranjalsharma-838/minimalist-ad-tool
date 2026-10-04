@@ -1,0 +1,422 @@
+[
+ {
+  "id": "2-hyaluronic-acid__t24",
+  "layout": "spec",
+  "on_image_words": 19,
+  "headline_words": 5,
+  "footnote_chars": 103,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "2-hyaluronic-acid__t25",
+  "layout": "stat",
+  "on_image_words": 15,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "aha-25-pha-5-bha-2__t24",
+  "layout": "spec",
+  "on_image_words": 19,
+  "headline_words": 3,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "aha-25-pha-5-bha-2__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "alpha-arbutin-2__t24",
+  "layout": "spec",
+  "on_image_words": 24,
+  "headline_words": 5,
+  "footnote_chars": 83,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "alpha-arbutin-2__t25",
+  "layout": "stat",
+  "on_image_words": 15,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "glycolic-acid-08-exfoliating-liquid-toner__t24",
+  "layout": "spec",
+  "on_image_words": 22,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 10,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "glycolic-acid-08-exfoliating-liquid-toner__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 10,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "hair-growth-actives-18__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "hair-growth-actives-18__t25",
+  "layout": "stat",
+  "on_image_words": 12,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "light-fluid-spf-50-sunscreen__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 5,
+  "footnote_chars": 48,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "light-fluid-spf-50-sunscreen__t25",
+  "layout": "stat",
+  "on_image_words": 16,
+  "headline_words": 5,
+  "footnote_chars": 80,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "marula-05-moisturizer__t24",
+  "layout": "spec",
+  "on_image_words": 23,
+  "headline_words": 5,
+  "footnote_chars": 83,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "marula-05-moisturizer__t25",
+  "layout": "stat",
+  "on_image_words": 15,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "multi-vitamin-spf-50__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 5,
+  "footnote_chars": 80,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "multi-vitamin-spf-50__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 5,
+  "footnote_chars": 80,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "niacinamide-10-with-matmarine__t24",
+  "layout": "spec",
+  "on_image_words": 17,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 10,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "niacinamide-10-with-matmarine__t25",
+  "layout": "stat",
+  "on_image_words": 15,
+  "headline_words": 4,
+  "footnote_chars": 0,
+  "caption_words": 10,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "niacinamide-5-hyaluronic-acid-1__t24",
+  "layout": "spec",
+  "on_image_words": 21,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "niacinamide-5-hyaluronic-acid-1__t25",
+  "layout": "stat",
+  "on_image_words": 20,
+  "headline_words": 6,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "nonapeptide-aha-06-underarm-roll-on__t24",
+  "layout": "spec",
+  "on_image_words": 16,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "nonapeptide-aha-06-underarm-roll-on__t25",
+  "layout": "stat",
+  "on_image_words": 13,
+  "headline_words": 5,
+  "footnote_chars": 65,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "oat-extract-06-gentle-cleanser__t24",
+  "layout": "spec",
+  "on_image_words": 21,
+  "headline_words": 4,
+  "footnote_chars": 0,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "oat-extract-06-gentle-cleanser__t25",
+  "layout": "stat",
+  "on_image_words": 14,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "pha-3-biotic-toner__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "pha-3-biotic-toner__t25",
+  "layout": "stat",
+  "on_image_words": 15,
+  "headline_words": 5,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "retinol-0-3-q10__t24",
+  "layout": "spec",
+  "on_image_words": 16,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "retinol-0-3-q10__t25",
+  "layout": "stat",
+  "on_image_words": 11,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "salicylic-acid-2__t24",
+  "layout": "spec",
+  "on_image_words": 22,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "salicylic-acid-2__t25",
+  "layout": "stat",
+  "on_image_words": 16,
+  "headline_words": 5,
+  "footnote_chars": 86,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "salicylic-lha-2-cleanser__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 3,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "salicylic-lha-2-cleanser__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 6,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "spf-60-silymarin__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 5,
+  "footnote_chars": 80,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "spf-60-silymarin__t25",
+  "layout": "stat",
+  "on_image_words": 16,
+  "headline_words": 5,
+  "footnote_chars": 80,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-b5-10-moisturizer__t24",
+  "layout": "spec",
+  "on_image_words": 20,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-b5-10-moisturizer__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 6,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-c-e-ferulic-16__t24",
+  "layout": "spec",
+  "on_image_words": 24,
+  "headline_words": 6,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-c-e-ferulic-16__t25",
+  "layout": "stat",
+  "on_image_words": 18,
+  "headline_words": 7,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t24",
+  "layout": "spec",
+  "on_image_words": 22,
+  "headline_words": 4,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25",
+  "layout": "stat",
+  "on_image_words": 17,
+  "headline_words": 7,
+  "footnote_chars": 66,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-k-retinal-01-eye-cream__t24",
+  "layout": "spec",
+  "on_image_words": 25,
+  "headline_words": 4,
+  "footnote_chars": 75,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ },
+ {
+  "id": "vitamin-k-retinal-01-eye-cream__t25",
+  "layout": "stat",
+  "on_image_words": 16,
+  "headline_words": 6,
+  "footnote_chars": 75,
+  "caption_words": 0,
+  "within": true,
+  "issues": []
+ }
+]

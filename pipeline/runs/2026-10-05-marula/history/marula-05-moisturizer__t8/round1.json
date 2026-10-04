@@ -1,0 +1,89 @@
+{
+  "subhead": "Massage into face and neck until absorbed",
+  "tag": "",
+  "proof_points": [
+    "5% Marula Oil softens and nourishes the skin",
+    "Use AM & PM, every day"
+  ],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "source_ad_id": "marula-05-moisturizer__t8",
+  "product_title": "Marula Oil 5% Face Moisturizer",
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "headline": "A heavy cream for dry to normal skin",
+  "caption": "Marula Oil 5% Face Moisturizer is a heavy cream, suitable for dry to normal skin types. 5% Marula Oil softens and nourishes the skin. Take a sufficient quantity and massage into face and neck until it is fully absorbed, AM & PM. The person image is AI-generated and illustrative.",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [
+      "F12"
+    ],
+    "tag": [],
+    "proof_points": [
+      [
+        "F5"
+      ],
+      [
+        "F13"
+      ]
+    ],
+    "footnote": [],
+    "caption": [
+      "F3",
+      "F5",
+      "F12",
+      "F13"
+    ]
+  },
+  "needs_real_photography": false,
+  "photography_needed": "A real application photo (consenting person, natural light) would replace the AI person.",
+  "angle": "sensorial",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "layout_description": "Left column: headline and one supporting line with the active + strength lockup; the AI-generated person photo fills the rounded card on the right with the AI-GENERATED mark; the real pack stands large in front of it.",
+  "person_prompt": "an Indian woman in her early 40s with medium-brown skin, smoothing a light moisturiser onto her face and neck by a window in the morning, simple cotton kurta, relaxed expression, soft daylight from the upper left.",
+  "adaptation_notes": "Format #8 Product-in-use. Kept: a person smoothing a moisturizer on, beside the pack. Sensorial wording only from the page ('heavy cream', F3; massage until absorbed, F12). Dropped: the timed-fix seasonal headline, the three-panel collage and the model wearing a mask. The AI person (reused scene, no product in frame) makes the ad Severe and AI-labelled.",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "person using the product beside the pack"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "single short benefit line"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
+  "product_handle": "marula-05-moisturizer",
+  "product_url": "https://beminimalist.co/products/marula-05-moisturizer",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": []
+}

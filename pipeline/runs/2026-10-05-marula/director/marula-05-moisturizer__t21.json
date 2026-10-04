@@ -1,0 +1,18 @@
+{
+  "variants": [
+    {
+      "axis_value": "surface: seamless white (single variant)",
+      "image_prompt": "Create a photographic image: keep the pack in the attached photo exactly as it is, with every colour, line of text and graphic on it identical, and keep its size, angle and soft contact shadow. Place it on a seamless pure white surface (#FFFFFF) lit by soft daylight from the upper left (about 5600K), square 1:1, with the pack on the right half of the frame. Add only a small swatch of this product's texture, a smooth, thick, off-white cream smear (a heavy cream), resting on the white surface to the left of the pack, about the size of a coin, with a soft natural highlight and a gentle contact shadow. The rest of the frame is intentionally empty. Do not include: any text or letters other than what is already on the pack, any logos, any second pack or bottle, any props, hands or people.",
+      "negative_prompt": "added text, extra logos, second pack, altered label, altered pack colours, props, hands, people, busy background"
+    }
+  ],
+  "rationale": "Format #21 (user note 2026-10-05). NO NEW IMAGE IS NEEDED: the texture shot for this product already exists and is approved (brand_packs/minimalist/assets/ai_renders/marula-05-moisturizer/texture1.png, label read word by word in texture_verification.json, status approved; generated earlier from jobs_texture.json). This record is the director's equivalent prompt in the house grammar, kept for audit and NOT queued as a job. Texture described only with the page's own words ('heavy cream', F3). House look: pure white seamless, daylight from the upper left, one texture element only.",
+  "asset_requirements": [
+    "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\brand_packs\\minimalist\\assets\\ai_renders\\marula-05-moisturizer\\texture1.png"
+  ],
+  "risk_level": "low",
+  "ai_label_required": true,
+  "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the small AI-generated - illustrative mark for transparency. A real macro photo should replace it before any publication. The pack itself is the verified pack render, not redrawn.",
+  "refused": null,
+  "stand_in": "written by the Claude agent as stand-in for the image prompt director (prompts/image_prompt_director.md)"
+}
