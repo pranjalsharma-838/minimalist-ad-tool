@@ -3495,6 +3495,18 @@
       "source": "beminimalist.co product gallery image 03.jpg (crop of the gel puddle under the bottle; pixels unchanged)",
       "reuse": "real product texture, product-only",
       "notes": "Real texture: the pink cleanser gel pooled on a reflective white surface, with the bottle's base. Added 2026-10-04 for the Texture shot format (template 21)."
+    },
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "file": "brand_packs/minimalist/assets/ai_renders/salicylic-lha-2-cleanser/round1.png",
+      "type": "pack_shot",
+      "background": "plain_white",
+      "people": "none",
+      "source": "AI re-render of the brand's own pack photo (ChatGPT, label verified word by word + scripts/verify_pack.py)",
+      "preferred": true,
+      "cutout": "brand_packs/minimalist/assets/cutouts/salicylic-lha-2-cleanser_render.png",
+      "cutout_status": "clean (render on white)",
+      "notes": "Verified render: All label text identical: Salicylic Acid + LHA / 02% / coral line / CLEANSER / with oat extract + zinc + allantoin / reduces sebum & acne / for oily / acne prone skin / 100ml / 3.4 fl oz / Minimalist. Cap and bottle shape match. Rounds: 1."
     }
   ]
 }

@@ -43,7 +43,9 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   // can stand in the scene with a shadow; otherwise the page's studio pack shot in a white frame.
   spec.cutoutHrefs = [];
   const cut = (handle) => {
-    const a = ASSETS.find((x) => x.product_handle === handle && x.cutout && !/unusable/i.test(`${x.cutout_status || ""} ${x.notes || ""}`) && fs.existsSync(x.cutout));
+    // A verified render marked "preferred" (scripts/register_render.py) comes first, then any clean cut-out.
+    const ok = (x) => x.product_handle === handle && x.cutout && !/unusable/i.test(`${x.cutout_status || ""} ${x.notes || ""}`) && fs.existsSync(x.cutout);
+    const a = ASSETS.find((x) => ok(x) && x.preferred) || ASSETS.find(ok);
     if (!a) return "";
     const href = dataUrl(fs.readFileSync(a.cutout), "image/png");
     spec.cutoutHrefs.push(href);

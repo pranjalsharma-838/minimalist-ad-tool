@@ -463,6 +463,8 @@ LAYOUTS.texture = (spec, s) => {
   let y = headlineBlock(parts, spec.headline, PAD, 150, 440, s, 46);
   if (spec.lockup) y = lockup(parts, spec.lockup, spec.accent, PAD, y + Math.round(26 * s), s, 440);
   const ty = y + Math.round(36 * s), th = Math.max(160, Math.min(300, BAND_Y - 40 - ty));
+  // Without a photo yet (app draft) the slot is drawn empty and labelled, like the before/after frames.
+  if (!spec.textureHref) parts.push(`<rect x="${PAD}" y="${ty}" width="440" height="${th}" rx="8" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/><text x="${PAD + 220}" y="${ty + th / 2 + 7}" text-anchor="middle" font-family="${FONT}" font-size="18" font-weight="700" fill="#B42318">REAL TEXTURE PHOTO REQUIRED</text>`);
   if (spec.textureHref) parts.push(`<clipPath id="texClip"><rect x="${PAD}" y="${ty}" width="440" height="${th}" rx="8"/></clipPath><image href="${esc(spec.textureHref)}" x="${PAD}" y="${ty}" width="440" height="${th}" preserveAspectRatio="xMidYMid slice" clip-path="url(#texClip)"/>`);
   return chromeEnd(spec, parts, ty + th);
 };
@@ -477,7 +479,10 @@ function twoColumns(spec, s, left, right, rightHasPack) {
     parts.push(`<rect x="${x}" y="${y0}" width="${colW}" height="${BAND_Y - 40 - y0}" rx="10" fill="${hasPack ? "#FFFFFF" : C.bg}" stroke="${C.rule}" stroke-width="1.5"/>`);
     parts.push(`<text x="${x + 24}" y="${y0 + 44}" font-family="${FONT}" font-size="${Math.round(24 * s)}" font-weight="700" fill="${hasPack ? C.ink : C.muted}">${esc((col?.title || "").toUpperCase())}</text>`);
     let y = y0 + 70;
-    for (const it of (col?.items || []).slice(0, 4)) {
+    // Items may be plain strings or {text, cites} (the brief shape briefLines reads); eye-check 2026-10-05 drew
+    // "[object Object]" for the second.
+    for (const it0 of (col?.items || []).slice(0, 4)) {
+      const it = typeof it0 === "string" ? it0 : it0?.text || "";
       const ln = wrap(it, Math.round(22 * s), colW - 60);
       parts.push(`<text x="${x + 24}" y="${y + 22}" font-family="${FONT}" font-size="22" fill="${hasPack ? C.ink : C.muted}">${hasPack ? "✓" : "–"}</text>`);
       parts.push(T(ln, x + 52, y + 22, Math.round(22 * s), Math.round(28 * s), `fill="${hasPack ? C.ink : C.muted}"`));
@@ -617,7 +622,12 @@ LAYOUTS.native = (spec, s) => {
     const cy = Math.max(y + 24, BAND_Y - 500), ch = BAND_Y - 30 - cy;
     parts.push(`<clipPath id="personClip"><rect x="560" y="${cy}" width="448" height="${ch}" rx="6"/></clipPath><image href="${esc(spec.personHref)}" x="560" y="${cy}" width="448" height="${ch}" preserveAspectRatio="xMidYMid slice" clip-path="url(#personClip)"/>`);
     parts.push(pack(spec, spec.imageHref, PAD + 10, Math.max(y + 24, BAND_Y - 420), 300, Math.min(390, BAND_Y - 30 - Math.max(y + 24, BAND_Y - 420))));
-  } else parts.push(pack(spec, spec.imageHref, 760, BAND_Y - 330, 220, 300));
+  } else {
+    // Eye-check 2026-10-05: at 220×300 in the corner the pack was lost on the white canvas; it now fills the space
+    // under the headline on the right, still smaller than on a product hero.
+    const py = Math.max(y + 30, 330);
+    parts.push(pack(spec, spec.imageHref, 600, py, 400, BAND_Y - 30 - py));
+  }
   return chromeEnd(spec, parts, y);
 };
 
