@@ -43,6 +43,13 @@ const trendRow = (t) => {
   <div class="tarrow">→</div><div class="tours">${ours.length ? ours.map((a) => `<a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a><span><span class="risk ${a.risk}">${a.risk}</span> ${a.exportable ? "exportable after review" : "not exportable"} · <a href="${esc(a.md)}" target="_blank">description</a></span>`).join("") : "<span>not made yet</span>"}</div></div>`;
 };
 const trending = TR && TR.trends.length ? `<section class="trend"><h2>Trending now</h2><p>Formats that at least ${TR.min_brands} competitor brands launched in the last ${TR.window_days} days and are still running (statics only; ${esc(TR.still_running)}). Left: their ads. Right: our version in Minimalist's minimal style, built from those references, never copying them.</p>${TR.trends.map(trendRow).join("")}</section>` : "";
+// Three scores per ad (scripts/score_library.js → ad_library/scores.json): alignment, win probability, compliance.
+const SCORES = fs.existsSync("ad_library/scores.json") ? JSON.parse(fs.readFileSync("ad_library/scores.json", "utf8")) : {};
+const scoreRow = (a) => {
+  const s = SCORES[path.basename(a.png, ".png")];
+  if (!s) return "";
+  return `<p class="scores" title="Reviewed by: ${esc(s.reviewed_by)}"><b>Align ${s.alignment ?? "—"}</b> · <b>Win ${s.win ?? "—"}</b> · <b>Compliance ${s.compliance ?? "—"}</b> <span class="v">${esc(s.verdict_label)}</span></p>`;
+};
 const card = (a) => `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}">
   <a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a>
   <div class="meta">
@@ -50,7 +57,8 @@ const card = (a) => `<article class="card" data-product="${esc(a.product)}" data
     <h3>${esc(a.format)}</h3>
     <p class="prod">${esc(a.product)}</p>
     ${a.angle && a.angle !== "— · hook: —" ? `<p class="angle">${esc(a.angle)}</p>` : ""}
-    <p class="links">${a.extras.map((x) => `<a href="${esc(x.f)}" target="_blank">${esc(x.tag)}</a>`).join(" · ")}${a.extras.length ? " · " : ""}<a href="${esc(a.md)}" target="_blank">description</a></p>
+    ${scoreRow(a)}
+    <p class="links">Download: <a href="${esc(a.png)}" download>1:1</a>${a.extras.map((x) => ` · <a href="${esc(x.f)}" download>${esc(x.tag)}</a>`).join("")} · <a href="${esc(a.md)}" target="_blank">description</a></p>
   </div>
 </article>`;
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
