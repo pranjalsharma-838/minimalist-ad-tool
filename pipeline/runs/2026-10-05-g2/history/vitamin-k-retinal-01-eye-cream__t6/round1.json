@@ -1,0 +1,84 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "vitamin-k-retinal-01-eye-cream__t6",
+  "product_title": "Vitamin K + Retinal 1% Eye Cream",
+  "headline": "Evening routine",
+  "subhead": "Gently pat around the eye contours",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "sensorial",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "After cleansing, apply a small amount onto your finger and gently pat around the eye contours; PM, every day. Avoid applying very close to the eyes.",
+  "citations": {
+    "headline": [
+      "F18"
+    ],
+    "subhead": [
+      "F17"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #6: structure kept (lifestyle moment); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian man around 21 with light-brown skin, spending an evening in a small college hostel room: he sits cross-legged on a single bed with a plain cotton bedsheet, a study desk behind him with a closed laptop and a neat stack of plain notebooks, a clothes rack with a few shirts and a small barred window showing the evening dusk. He wears a plain grey cotton t-shirt and relaxed track pants, looking up with an easy, relaxed expression as if a friend has just walked in. Warm lamp light from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "vitamin-k-retinal-01-eye-cream",
+  "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

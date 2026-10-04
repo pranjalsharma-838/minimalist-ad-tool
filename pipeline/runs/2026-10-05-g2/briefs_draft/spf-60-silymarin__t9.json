@@ -1,0 +1,63 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "spf-60-silymarin__t9",
+  "product_title": "SPF 60 Sunscreen",
+  "headline": "Face and neck, evenly",
+  "subhead": "At least 15 minutes before sun exposure",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 60, PA++++; in-vivo ISO 24444:2019 and ISO 24442:2022, independent lab; SPF obtained: 66.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "concern_solved",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 60, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F19"
+    ],
+    "subhead": [
+      "F19"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F13",
+      "F15",
+      "F17"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #9: structure kept (application close-up); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "a close-up of an Indian man in his late 20s with medium-brown skin and short hair, his fingertips pressing a few clear drops onto his cheek in soft morning light from the upper left, relaxed expression, natural skin texture."
+}

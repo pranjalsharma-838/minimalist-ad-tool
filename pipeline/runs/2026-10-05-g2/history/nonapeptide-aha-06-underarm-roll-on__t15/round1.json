@@ -1,0 +1,116 @@
+{
+  "ad_type": "other",
+  "layout": "callouts",
+  "source_ad_id": "nonapeptide-aha-06-underarm-roll-on__t15",
+  "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+  "headline": "Underarm care",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "99.67% reduction of Corynebacterium xerosis in 10 minutes",
+      "cites": [
+        "F12"
+      ]
+    },
+    {
+      "text": "Aluminium-free formula",
+      "cites": [
+        "F3"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "In-vitro time-kill assay (ASTM E2315-16) by an independent lab. Report RR231167/MCR/TKA/07-2023.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Apply on clean and dry armpits using the roller and allow to dry before getting dressed; AM, every day. For external use only. Patch test recommended.",
+  "citations": {
+    "headline": [
+      "F9"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F11",
+      "F13",
+      "F14"
+    ],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #15 Problem -> product: 2 callouts only; the page's in-vitro result is quoted exactly as the page states it, with the in-vitro basis in the footnote (the checker may flag the antibacterial wording; kept verbatim for brand/legal to decide).",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+  "product_url": "https://beminimalist.co/products/nonapeptide-aha-06-underarm-roll-on",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "UNLISTED",
+      "span": "99.67% reduction of Corynebacterium xerosis in 10 minutes",
+      "message": "An antibacterial result is stated; it is the product page's own in-vitro figure (time-kill assay, independent lab) with the in-vitro basis in the footnote. Kept verbatim on the user's instruction; the brand/legal team decides.",
+      "fix": "None applied. Legal to confirm the wording and the in-vitro qualifier.",
+      "layer": "model"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "in 10 minutes",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F12). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

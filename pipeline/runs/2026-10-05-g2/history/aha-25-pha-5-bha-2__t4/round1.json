@@ -1,0 +1,82 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "aha-25-pha-5-bha-2__t4",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "Ingredients from leading global suppliers",
+  "subhead": "Including Chemours Company, USA",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start.",
+  "citations": {
+    "headline": [
+      "F7"
+    ],
+    "subhead": [
+      "F7"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "White canvas; ingredient/sourcing headline with the active + strength lockup; the real pack large on the right.",
+  "adaptation_notes": "Format #4 Ingredient flat lay: no scene is drawn (minimal house look), the real pack carries the ad; headline is a sourcing/ingredient fact stated on the page.",
+  "blend_sources": [
+    {
+      "id": "984872741086615",
+      "brand": "Dr. Sheth's",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "aha-25-pha-5-bha-2",
+  "product_url": "https://beminimalist.co/products/aha-25-pha-5-bha-2",
+  "source_brand": "Dr. Sheth's",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "The ingredient is named as on the pack and product page; this is the brand's own transparency style, not jargon for effect."
+    }
+  ],
+  "tone_read": "Calm, declarative and educational in Minimalist's voice; no fear, hype or emoji.",
+  "language_read": "Active and strength match the product page; every line is a page fact or its usage; no superlatives, no natural/chemical-free framing."
+}

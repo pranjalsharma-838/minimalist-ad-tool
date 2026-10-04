@@ -1,0 +1,132 @@
+{
+  "ad_type": "other",
+  "layout": "usvsthem",
+  "source_ad_id": "vitamin-k-retinal-01-eye-cream__t17",
+  "product_title": "Vitamin K + Retinal 1% Eye Cream",
+  "headline": "What the label states",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Transparency comparison: what this product page states vs a label type that states none. Source: the product page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "After cleansing, apply a small amount onto your finger and gently pat around the eye contours; PM, every day. Avoid applying very close to the eyes.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #17 Us vs Them: HONEST SUBSTITUTION. The page names no comparison benchmark, so this is a transparency comparison: what this pack states vs a label type that states none; 'them' is a label type, never a brand.",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "Strength stated",
+    "them": "Label without the %",
+    "cites": [
+      "F1"
+    ],
+    "rows": [
+      {
+        "label": "Active and strength",
+        "us": "Vitamin K + Retinal 1%",
+        "them": "Not stated",
+        "cites": [
+          "F1",
+          "F3"
+        ]
+      },
+      {
+        "label": "Study basis on the page",
+        "us": "In-vitro, supplier",
+        "them": "Not stated",
+        "cites": [
+          "F12"
+        ]
+      }
+    ]
+  },
+  "product_handle": "vitamin-k-retinal-01-eye-cream",
+  "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+  "source_brand": "Deconstruct",
+  "status": "needs_retry",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

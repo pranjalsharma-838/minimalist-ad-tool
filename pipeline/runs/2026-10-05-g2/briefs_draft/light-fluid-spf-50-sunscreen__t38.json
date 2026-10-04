@@ -1,0 +1,88 @@
+{
+  "ad_type": "other",
+  "layout": "range",
+  "source_ad_id": "light-fluid-spf-50-sunscreen__t38",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "A simple morning routine",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Cleanse: AM & PM",
+      "cites": [
+        "salicylic-lha-2-cleanser:F14"
+      ]
+    },
+    {
+      "product_handle": "niacinamide-10-with-matmarine",
+      "label": "Serum: AM & PM",
+      "cites": [
+        "niacinamide-10-with-matmarine:F14"
+      ]
+    },
+    {
+      "product_handle": "light-fluid-spf-50-sunscreen",
+      "label": "Sunscreen: AM, every day",
+      "cites": [
+        "F19"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "Steps and strengths as stated on each product's own page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "concern_solved",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 50, PA++++; the lab basis is in the footnote. Each product's usage and strength is the one stated on its own page.",
+  "citations": {
+    "headline": [
+      "F19",
+      "salicylic-lha-2-cleanser:F14",
+      "niacinamide-10-with-matmarine:F14"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F19",
+      "salicylic-lha-2-cleanser:F14",
+      "niacinamide-10-with-matmarine:F14"
+    ],
+    "caption": [
+      "F18",
+      "F19",
+      "F2"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #38 Bundle / kit: a pairing built only from each product page's own usage times; no offer, no 'complete' or 'best' claims.",
+  "blend_sources": [
+    {
+      "id": "1606881954486073",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "3159883944203364",
+      "brand": "The Derma Co",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)"
+}

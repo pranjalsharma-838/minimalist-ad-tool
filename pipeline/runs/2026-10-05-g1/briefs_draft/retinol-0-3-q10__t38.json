@@ -1,0 +1,64 @@
+{
+  "ad_type": "product_hero",
+  "layout": "range",
+  "source_ad_id": "retinol-0-3-q10__t38",
+  "product_title": "Retinol 0.3% Face Serum",
+  "headline": "Cleanse, then Retinol 0.3% in the PM",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [
+    {
+      "product_handle": "salicylic-lha-2-cleanser",
+      "label": "Cleanser: light lather on a wet face",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "product_handle": "retinol-0-3-q10",
+      "label": "Serum: PM, every alternate day at first",
+      "cites": [
+        "F13"
+      ]
+    }
+  ],
+  "offer": null,
+  "footnote": "Steps and strengths as stated on each product's own page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Retinol 0.3% Face Serum: apply on a cleansed face, in the PM; use in the PM.",
+  "citations": {
+    "headline": [
+      "F13",
+      "salicylic-lha-2-cleanser:F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13",
+      "salicylic-lha-2-cleanser:F13"
+    ],
+    "caption": [
+      "F1",
+      "F12",
+      "F13",
+      "salicylic-lha-2-cleanser:F13"
+    ]
+  },
+  "layout_description": "White canvas; short headline across the top; two real packs side by side with active + strength lockups and one short label each; footnote band states the basis.",
+  "adaptation_notes": "Format #38 Bundle / kit image: two-product pairing built only from each page's own usage lines; offer, props and result wording dropped. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped. The pairing is a cleanse-then-treat order from the usage lines, not a claim.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

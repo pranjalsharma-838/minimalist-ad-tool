@@ -1,0 +1,96 @@
+{
+  "ad_type": "other",
+  "layout": "texture",
+  "source_ad_id": "spf-60-silymarin__t21",
+  "product_title": "SPF 60 Sunscreen",
+  "headline": "Spreads like a lightweight moisturiser",
+  "subhead": "",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Texture shown is an AI illustration. Labelled SPF 60, PA++++; in-vivo ISO 24444:2019 and ISO 24442:2022, independent lab; SPF obtained: 66.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real macro photo of this product's texture should replace the AI texture swatch before any publication (AI texture is illustrative and may differ from the real formula).",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "ingredient",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 60, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F7"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1",
+      "F2",
+      "F13",
+      "F15",
+      "F17"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "White canvas; headline top-left with the active + strength lockup beneath it; the approved ChatGPT texture shot (swatch beside the label-verified pack); small black tagline tag; quiet Shop now.",
+  "adaptation_notes": "Format #21 Texture shot (user note 2026-10-05, DEC-03/DEC-04): approved texture image from brand_packs/minimalist/assets/ai_renders; active + strength in the lockup; tagline tag needs no citation; wording only from the page's own texture/usage facts. AI-illustrative mark kept; Low risk per DEC-04. Dropped competitor props and claims.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "spf-60-silymarin",
+  "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 66",
+      "message": "SPF 66 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 60; keep 'SPF 66 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

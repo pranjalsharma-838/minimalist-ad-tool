@@ -1,0 +1,99 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "spf-60-silymarin__t10",
+  "product_title": "SPF 60 Sunscreen",
+  "headline": "SPF 60 for everyday sun",
+  "subhead": "Broad Spectrum, PA++++",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 60, PA++++; in-vivo ISO 24444:2019 and ISO 24442:2022, independent lab; SPF obtained: 66.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 60, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [
+      "F2"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F13",
+      "F15",
+      "F17"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #10: structure kept (everyday-concern scene); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1594682718905718",
+      "brand": "Dr. Sheth's",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian man in his early 30s with medium-brown skin, about to commute on a two-wheeler through Mumbai in bright morning daylight: he stands beside a parked scooter on a quiet side street, a plain helmet held in one hand at his side, wearing a light cotton shirt with the sleeves rolled once and a small backpack on one shoulder, looking ahead with a relaxed, ready expression. Behind him a softly out-of-focus lane with a pastel apartment wall and the edge of a leafy tree, no signs or number plates visible. Strong but soft daylight from the upper left, medium shot at eye level, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched medium-brown skin with visible pores and ordinary variation in tone, true to life, no sunburn or tan lines, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "spf-60-silymarin",
+  "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 66",
+      "message": "SPF 66 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 60; keep 'SPF 66 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

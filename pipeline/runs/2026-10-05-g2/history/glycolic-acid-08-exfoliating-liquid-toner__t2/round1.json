@@ -1,0 +1,94 @@
+{
+  "ad_type": "other",
+  "layout": "badges",
+  "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t2",
+  "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+  "headline": "Glycolic Acid 8%",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "sensorial",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Take a few drops into your palms and gently press into skin; PM. Start with twice a week and increase gradually; do not use more than once a day.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F12",
+      "F14"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #2 Product + benefit badges: two verifiable page attributes only (no hype badges).",
+  "blend_sources": [
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2196301691128293",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1420890446893063",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "badges": [
+    {
+      "text": "Bamboo Water",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "text": "Suitable for 18+ years",
+      "cites": [
+        "F10"
+      ]
+    }
+  ],
+  "product_handle": "glycolic-acid-08-exfoliating-liquid-toner",
+  "product_url": "https://beminimalist.co/products/glycolic-acid-08-exfoliating-liquid-toner",
+  "source_brand": "Deconstruct",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

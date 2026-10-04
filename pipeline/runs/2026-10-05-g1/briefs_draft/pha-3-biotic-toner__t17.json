@@ -1,0 +1,62 @@
+{
+  "ad_type": "product_hero",
+  "layout": "usvsthem",
+  "source_ad_id": "pha-3-biotic-toner__t17",
+  "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+  "headline": "PHA, side by side",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Molecular weights as stated on the product page: PHA 178, Glycolic acid 76.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "Per the product page, PHAs have a larger molecule size than Glycolic acid (molecular weight 178 vs 76).",
+  "citations": {
+    "headline": [
+      "F19"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F19"
+    ],
+    "caption": [
+      "F19",
+      "F1"
+    ]
+  },
+  "layout_description": "White canvas; headline across the top; real pack large on the left; a small comparison table on the right; footnote states the basis.",
+  "adaptation_notes": "Format #17 Comparison image (Us vs Them): honest Us vs Them. 'Them' is a benchmark the product page itself names (an ingredient or condition), never a brand. Substitution made because no page-named rival benchmark exists. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "PHA (this toner)",
+    "them": "Glycolic acid",
+    "cites": [
+      "F19"
+    ],
+    "rows": [
+      {
+        "label": "Molecular weight",
+        "us": "178 (PHA)",
+        "them": "76 (Glycolic)",
+        "cites": [
+          "F19"
+        ]
+      }
+    ]
+  }
+}

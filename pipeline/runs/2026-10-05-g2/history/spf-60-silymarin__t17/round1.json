@@ -1,0 +1,132 @@
+{
+  "ad_type": "other",
+  "layout": "usvsthem",
+  "source_ad_id": "spf-60-silymarin__t17",
+  "product_title": "SPF 60 Sunscreen",
+  "headline": "What the label states",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Transparency comparison: what this product page states vs a label type that states none. Source: the product page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 60, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F11"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #17 Us vs Them: HONEST SUBSTITUTION. The page names no comparison benchmark, so this is a transparency comparison: what this pack states vs a label type that states none; 'them' is a label type, never a brand.",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "Strength stated",
+    "them": "Label without the test",
+    "cites": [
+      "F2"
+    ],
+    "rows": [
+      {
+        "label": "Sun protection rating",
+        "us": "SPF 60, PA++++",
+        "them": "Not stated",
+        "cites": [
+          "F2"
+        ]
+      },
+      {
+        "label": "Independent lab test",
+        "us": "Shown on page",
+        "them": "Not shown",
+        "cites": [
+          "F11"
+        ]
+      }
+    ]
+  },
+  "product_handle": "spf-60-silymarin",
+  "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+  "source_brand": "Deconstruct",
+  "status": "needs_retry",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

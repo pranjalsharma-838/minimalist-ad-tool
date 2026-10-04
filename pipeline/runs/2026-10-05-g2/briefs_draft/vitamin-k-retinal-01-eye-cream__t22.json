@@ -1,0 +1,85 @@
+{
+  "ad_type": "other",
+  "layout": "journey",
+  "source_ad_id": "vitamin-k-retinal-01-eye-cream__t22",
+  "product_title": "Vitamin K + Retinal 1% Eye Cream",
+  "headline": "Evening routine: cleanse, then eye cream",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 Â· Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "",
+      "cites": [
+        "salicylic-lha-2-cleanser:F14"
+      ]
+    },
+    {
+      "label": "Step 2 Â· Eye cream",
+      "product_handle": "vitamin-k-retinal-01-eye-cream",
+      "line": "",
+      "cites": [
+        "F17",
+        "F18"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Steps as stated on each product's own page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "After cleansing, apply a small amount onto your finger and gently pat around the eye contours; PM, every day. Avoid applying very close to the eyes.",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F14",
+      "F17",
+      "F18"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "salicylic-lha-2-cleanser:F14",
+      "F17",
+      "F18"
+    ],
+    "caption": [
+      "F17",
+      "F18",
+      "F19",
+      "salicylic-lha-2-cleanser:F14"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #22 How-to / steps: routine order taken from each product page's usage lines; routine only, no result.",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)"
+}

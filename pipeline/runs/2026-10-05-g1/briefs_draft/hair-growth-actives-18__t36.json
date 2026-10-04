@@ -1,0 +1,54 @@
+{
+  "ad_type": "product_hero",
+  "layout": "offer",
+  "source_ad_id": "hair-growth-actives-18__t36",
+  "product_title": "Hair Growth Actives 18% Hair Serum",
+  "headline": "18% Hair Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "The 3rd product is free when you buy 2. T&C apply.",
+    "valid_till": "",
+    "cites": [
+      "OFFER3"
+    ]
+  },
+  "footnote": "As on beminimalist.co, 2026-10-02. T&C apply.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "offer_value",
+  "ai_label_required": false,
+  "hook_type": "offer",
+  "caption": "Hair Growth Actives 18% Hair Serum: a few drops on a clean, dry scalp; use PM, every day. Offer: \"Buy 2, Get 3rd Free\", beminimalist.co homepage, captured 2026-10-02; terms on the offer page.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "OFFER3"
+    ],
+    "caption": [
+      "F1",
+      "F11",
+      "F12",
+      "OFFER3"
+    ]
+  },
+  "layout_description": "Offer line as the large block top-left with its condition beneath; usage line below; real pack on the right 45%; footnote with capture date and T&C.",
+  "adaptation_notes": "Format #36 Offer creative: quotes the captured sitewide offer exactly with its date and T&C. No price shown: no price was captured for this product, so none is invented. No urgency or end date (none shown). Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

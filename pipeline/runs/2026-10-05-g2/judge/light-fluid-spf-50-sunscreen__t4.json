@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "The ad labels the pack SPF as printed; the lab figure appears only in the footnote as test data with its ISO method and independent lab, per the house lab-result rule."
+    }
+  ],
+  "tone_read": "Calm, declarative and educational in Minimalist's voice; no fear, hype or emoji.",
+  "language_read": "Active and strength match the product page; every line is a page fact or its usage; no superlatives, no natural/chemical-free framing."
+}

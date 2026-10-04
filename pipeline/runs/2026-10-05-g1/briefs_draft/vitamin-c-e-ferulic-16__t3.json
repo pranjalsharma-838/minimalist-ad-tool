@@ -1,0 +1,69 @@
+{
+  "ad_type": "product_hero",
+  "layout": "actives",
+  "source_ad_id": "vitamin-c-e-ferulic-16__t3",
+  "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+  "headline": "Named actives, stated strength",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "",
+      "name": "Ethyl Ascorbic Acid",
+      "line": "A stabilised Vitamin C derivative",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Vitamin E + Ferulic Acid",
+      "line": "A blend of 2 antioxidants",
+      "cites": [
+        "F6"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Fullerenes (C60)",
+      "line": "A new generation antioxidant",
+      "cites": [
+        "F7"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Vitamin C + E + Ferulic 16% Face Serum: Ethyl Ascorbic Acid from Corum Inc, Taiwan. 2-3 drops after cleansing & toning.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F9",
+      "F13"
+    ]
+  },
+  "layout_description": "Headline top-left; up to three ingredient cards stacked down the left; the real pack large on the right.",
+  "adaptation_notes": "Format #3 Product + ingredients: ingredient cards with strength where the page states one; lines are sourcing or form only. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

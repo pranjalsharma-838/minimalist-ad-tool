@@ -1,0 +1,92 @@
+{
+  "ad_type": "other",
+  "layout": "offer",
+  "source_ad_id": "aha-25-pha-5-bha-2__t36",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "AHA PHA BHA 32% Face Peel",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "The 3rd product is free when you buy 2. T&C apply.",
+    "valid_till": "",
+    "cites": [
+      "OFFER3"
+    ]
+  },
+  "footnote": "Offers as on beminimalist.co, 2026-10-02. T&C apply. 3rd product free on buying 2.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "offer_value",
+  "ai_label_required": false,
+  "hook_type": "offer",
+  "caption": "AHA PHA BHA 32% Face Peel: Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start. Sitewide offer as shown on beminimalist.co on 2026-10-02 (no end date shown on the page); terms on the offer page.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "OFFER3"
+    ],
+    "caption": [
+      "F11",
+      "F12",
+      "OFFER3"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #36 Offer creative: HONEST SUBSTITUTION. No price is captured for this product, so the creative states only the live sitewide offer (OFFER3) with its condition and capture date; no price, no urgency; the page shows no end date, so none is printed.",
+  "blend_sources": [
+    {
+      "id": "1393861285783656",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "27209515258657747",
+      "brand": "Conscious Chemist",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "903698342763669",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "aha-25-pha-5-bha-2",
+  "product_url": "https://beminimalist.co/products/aha-25-pha-5-bha-2",
+  "source_brand": "Chemist at Play",
+  "status": "approved_for_image_step",
+  "risk_level": "medium",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [],
+  "rounds_tried": 2,
+  "kept_because": "passed"
+}

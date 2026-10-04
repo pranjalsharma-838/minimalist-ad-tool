@@ -1,0 +1,71 @@
+{
+  "ad_type": "other",
+  "layout": "usvsthem",
+  "source_ad_id": "2-hyaluronic-acid__t17",
+  "product_title": "Hyaluronic + PGA 2% Face Serum",
+  "headline": "Hydration, side by side",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Comparative forearm study vs an international brand's Hyaluronic Acid serum (benchmark), 8-hour window, MS Clinical Research Lab.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "Take a pea-sized amount on your fingertips and apply on the face and neck, AM & PM everyday; follow with a moisturiser to lock in the hydration.",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13",
+      "F15",
+      "F18"
+    ],
+    "caption": [
+      "F19",
+      "F20"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #17 Us vs Them: the page itself names a benchmark (an international brand's serum, unnamed) in a published comparative study; row values and basis are the page's own.",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "Hyaluronic + PGA 2%",
+    "them": "Benchmark HA serum",
+    "cites": [
+      "F13"
+    ],
+    "rows": [
+      {
+        "label": "Hydration over 8 hours",
+        "us": "~26% more",
+        "them": "Benchmark",
+        "cites": [
+          "F14"
+        ]
+      }
+    ]
+  },
+  "main_theme": "lab_results"
+}

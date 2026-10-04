@@ -1,0 +1,21 @@
+{
+    "vitamin-c-e-ferulic-16__t14":  {
+                                        "headline":  "Vitamin C + E + Ferulic 16%",
+                                        "why":  "headline cut to the product title words; routine wording dropped"
+                                    },
+    "hair-growth-actives-18__t36":  {
+                                        "footnote":  "T\u0026C apply.",
+                                        "why":  "footnote cut to the T\u0026C line to fit the 20-word budget; capture date stays in the caption",
+                                        "offer.condition":  "The 3rd product is free when you buy 2."
+                                    },
+    "oat-extract-06-gentle-cleanser__t36":  {
+                                                "footnote":  "T\u0026C apply.",
+                                                "why":  "footnote cut to the T\u0026C line to fit the 20-word budget; capture date stays in the caption",
+                                                "offer.condition":  "The 3rd product is free when you buy 2."
+                                            },
+    "vitamin-c-e-ferulic-16__t36":  {
+                                        "footnote":  "T\u0026C apply.",
+                                        "why":  "footnote cut to the T\u0026C line to fit the 20-word budget; capture date stays in the caption",
+                                        "offer.condition":  "The 3rd product is free when you buy 2."
+                                    }
+}

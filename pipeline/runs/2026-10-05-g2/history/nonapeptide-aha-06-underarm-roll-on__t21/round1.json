@@ -1,0 +1,83 @@
+{
+  "ad_type": "other",
+  "layout": "texture",
+  "source_ad_id": "nonapeptide-aha-06-underarm-roll-on__t21",
+  "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+  "headline": "Roll on, then let it dry",
+  "subhead": "",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Texture shown is an AI illustration.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real macro photo of this product's texture should replace the AI texture swatch before any publication (AI texture is illustrative and may differ from the real formula).",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "ingredient",
+  "caption": "Apply on clean and dry armpits using the roller and allow to dry before getting dressed; AM, every day. For external use only. Patch test recommended.",
+  "citations": {
+    "headline": [
+      "F17"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "White canvas; headline top-left with the active + strength lockup beneath it; the approved ChatGPT texture shot (swatch beside the label-verified pack); small black tagline tag; quiet Shop now.",
+  "adaptation_notes": "Format #21 Texture shot (user note 2026-10-05, DEC-03/DEC-04): approved texture image from brand_packs/minimalist/assets/ai_renders; active + strength in the lockup; tagline tag needs no citation; wording only from the page's own texture/usage facts. AI-illustrative mark kept; Low risk per DEC-04. Dropped competitor props and claims.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+  "product_url": "https://beminimalist.co/products/nonapeptide-aha-06-underarm-roll-on",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

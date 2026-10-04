@@ -1,0 +1,73 @@
+{
+  "ad_type": "other",
+  "layout": "badges",
+  "source_ad_id": "aha-25-pha-5-bha-2__t2",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "25% AHA, 5% PHA, 2% BHA",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "sensorial",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start.",
+  "citations": {
+    "headline": [
+      "F3"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #2 Product + benefit badges: two verifiable page attributes only (no hype badges).",
+  "blend_sources": [
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2196301691128293",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1420890446893063",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "badges": [
+    {
+      "text": "pH 3.4 - 3.8",
+      "cites": [
+        "F4"
+      ]
+    },
+    {
+      "text": "Suitable for 20+ years",
+      "cites": [
+        "F10"
+      ]
+    }
+  ]
+}

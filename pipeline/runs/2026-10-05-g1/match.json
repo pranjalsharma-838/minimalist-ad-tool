@@ -1,0 +1,1700 @@
+[
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "niacinamide-5-hyaluronic-acid-1__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "niacinamide-5-hyaluronic-acid-1",
+    "product_title": "Niacinamide 5% Face Serum",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "vitamin-c-e-ferulic-16__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "vitamin-c-e-ferulic-16",
+    "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "hair-growth-actives-18__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "hair-growth-actives-18",
+    "product_title": "Hair Growth Actives 18% Hair Serum",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "oat-extract-06-gentle-cleanser__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "oat-extract-06-gentle-cleanser",
+    "product_title": "B12 + Oat Extract 6.5% Gentle Cleanser",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "retinol-0-3-q10__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "retinol-0-3-q10",
+    "product_title": "Retinol 0.3% Face Serum",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t21",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 21,
+    "template_name": "Texture shot",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t38",
+    "brand": "Dot & Key",
+    "ad_type": "routine_regimen",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 38,
+    "template_name": "Bundle / kit image",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Dot & Key 1606881954486073 (70d)",
+      "The Derma Co 3159883944203364 (36d)",
+      "Chemist at Play 1393861285783656 (303d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t22",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Foxtale 2605728093198832 (105d)",
+      "Dot & Key 2593621517723635 (51d)",
+      "Pilgrim 1000219876379194 (32d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t36",
+    "brand": "Chemist at Play",
+    "ad_type": "offer_promo",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "archetype skill",
+    "angle": "offer_value",
+    "blend_refs": [
+      "Chemist at Play 1393861285783656 (303d)",
+      "Conscious Chemist 27209515258657747 (107d)",
+      "Foxtale 903698342763669 (95d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t17",
+    "brand": "Deconstruct",
+    "ad_type": "comparison",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 17,
+    "template_name": "Comparison image (Us vs Them)",
+    "risk": "high",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Deconstruct 4500111383646459 (129d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t6",
+    "brand": "Dot & Key",
+    "ad_type": "product_hero",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 6,
+    "template_name": "Lifestyle product shot",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t8",
+    "brand": "Foxtale",
+    "ad_type": "routine_regimen",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 8,
+    "template_name": "Product-in-use",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Foxtale 1602641281689513 (112d)",
+      "Chemist at Play 1732129464862042 (182d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t9",
+    "brand": "Chemist at Play",
+    "ad_type": "routine_regimen",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 9,
+    "template_name": "Application macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Chemist at Play 1732129464862042 (182d)",
+      "Foxtale 1602641281689513 (112d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t14",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 14,
+    "template_name": "Progress / timeline",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "transformation",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Re'equil 3961263437511522 (66d)",
+      "Dr. Sheth's 1550169393471299 (37d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t15",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 15,
+    "template_name": "Problem → product",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "The Derma Co 2307135286779864 (36d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t26",
+    "brand": "Dot & Key",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 26,
+    "template_name": "Review creative",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dot & Key 621835826921394 (610d)",
+      "Deconstruct 1619243416440363 (50d)",
+      "Conscious Chemist 991199233902436 (100d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Deconstruct 4416615341943591 (142d)",
+      "Chemist at Play 2196301691128293 (112d)",
+      "Pilgrim 1420890446893063 (32d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t10",
+    "brand": "Re'equil",
+    "ad_type": "problem_solution",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "situation",
+    "blend_refs": [
+      "Re'equil 1386072156792745 (66d)",
+      "Deconstruct 1739037801557913 (53d)",
+      "Dr. Sheth's 1594682718905718 (46d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t31",
+    "brand": "Conscious Chemist",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 31,
+    "template_name": "Creator selfie",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "concern_solved",
+    "blend_refs": [
+      "Conscious Chemist 1390426132931304 (71d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t3",
+    "brand": "Dot & Key",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 3,
+    "template_name": "Product + ingredients",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "ingredient_science",
+    "blend_refs": [
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)",
+      "Deconstruct 4416615341943591 (142d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t4",
+    "brand": "Dr. Sheth's",
+    "ad_type": "ingredient_explainer",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 4,
+    "template_name": "Ingredient flat lay",
+    "risk": "low",
+    "match_method": "archetype skill",
+    "angle": "routine",
+    "blend_refs": [
+      "Dr. Sheth's 984872741086615 (90d)",
+      "Dot & Key 9868853523169382 (508d)",
+      "Foxtale 1475983576999549 (155d)"
+    ]
+  },
+  {
+    "id": "pha-3-biotic-toner__t12",
+    "brand": "Chemist at Play",
+    "ad_type": "before_after",
+    "product_handle": "pha-3-biotic-toner",
+    "product_title": "Polyhydroxy Acid (PHA) 3% Face Toner",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "severe",
+    "match_method": "archetype skill",
+    "angle": "sensorial",
+    "blend_refs": [
+      "Chemist at Play 27546140265006255 (74d)",
+      "Dr. Sheth's 1550169393471299 (37d)",
+      "Pilgrim 1079958907863521 (30d)"
+    ]
+  }
+]

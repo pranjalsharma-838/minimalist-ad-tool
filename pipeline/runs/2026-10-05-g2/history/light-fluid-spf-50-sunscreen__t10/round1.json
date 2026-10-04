@@ -1,0 +1,99 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "light-fluid-spf-50-sunscreen__t10",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "SPF 50 for everyday sun",
+  "subhead": "Broad Spectrum, PA++++",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50, PA++++; in-vivo ISO 24444:2019, independent lab; SPF obtained: 56.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 50, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F19"
+    ],
+    "subhead": [
+      "F2"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F12",
+      "F14",
+      "F16"
+    ],
+    "caption": [
+      "F18",
+      "F19",
+      "F2"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #10: structure kept (everyday-concern scene); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1594682718905718",
+      "brand": "Dr. Sheth's",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian woman in her early 30s with light-brown skin, on a morning metro commute: she stands in a modern metro coach holding the overhead handrail with one hand, a plain canvas tote on her shoulder, wearing a simple cotton shirt and straight trousers with her hair tied back, looking calmly through the window as the station slides past, softly out-of-focus fellow commuters behind her. Soft daylight from the window at the upper left mixing with cool coach lighting, medium shot at eye level, shallow depth of field, framed so she sits slightly left of centre with calm space to her right. Natural, unretouched light-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result, and no signage, route maps or phone screens. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "light-fluid-spf-50-sunscreen",
+  "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 56",
+      "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

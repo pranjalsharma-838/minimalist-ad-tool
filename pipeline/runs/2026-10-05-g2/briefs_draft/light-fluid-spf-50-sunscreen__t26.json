@@ -1,0 +1,72 @@
+{
+  "ad_type": "other",
+  "layout": "stat",
+  "source_ad_id": "light-fluid-spf-50-sunscreen__t26",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "SPF 50, PA++++ as labelled",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "PA++++",
+    "label": "rating obtained in the independent in-vivo test",
+    "cites": [
+      "F15"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50, PA++++; in-vivo ISO 24444:2019, independent lab; SPF obtained: 56.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "stat",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 50, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F12",
+      "F14",
+      "F16"
+    ],
+    "caption": [
+      "F18",
+      "F19",
+      "F2"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #26 Review creative: HONEST SUBSTITUTION. No customer review or rating is captured for this product, so the review card is replaced by the closest honest proof element: a figure stated on the product page, with its basis in the footnote. No review invented.",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "main_theme": "lab_results"
+}

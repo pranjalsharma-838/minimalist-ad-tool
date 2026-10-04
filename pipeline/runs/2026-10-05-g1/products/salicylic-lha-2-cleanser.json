@@ -1,0 +1,269 @@
+{
+  "url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+  "title": "Salicylic Acid + LHA 2% Cleanser",
+  "actives": [
+    {
+      "name": "Salicylic Acid + LHA",
+      "pct": "2%"
+    }
+  ],
+  "price": 269,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/SalicylicCleanserNew.jpg?v=1756796206",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Cleanser_2.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Cleanser_3.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Cleanser_4.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Cleanser_5.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Salicylic_Cleanser_6.png?v=1724763871",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/SaliCleanser_ListingImage.png?v=1760691517"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Salicylic Acid + LHA 2% Cleanser"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Reduces Sebum & Prevents Breakout Without Drying Skin"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A daily, gentle exfoliating, acne fighting face cleanser. It combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration, which provides deep cleansing, pore decongestion & sebum reduction without drying out the skin."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"I have seen a reduction in acne and oiliness ever since I started using this face cleanser\" -Nikhil V."
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Contains Salicylic Acid (BHA) that penetrates deep into the skin & scoops out the dirt, debris, and sebum, hence reducing the oily look of the skin"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with Capryloyl Salicylic Acid (LHA), which unlike Salicylic Acid, stays on outer layer of skin and provides gentle exfoliation, revealing soft skin. The combination provides multi-level cleansing"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosted with anti-bacterial Zinc and several hydrating & soothing ingredients like Xylitylglucoside, Panthenol (Vitamin B5), Allantoin, Pentyle Glycol for hydrating overall after-feel"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Formulated with 2 very mild sulfate-free surfactants (cleansers) that provide optimum cleaning without stripping skin lipids or proteins"
+    },
+    {
+      "id": "F9",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "All our ingredients are sourced from leading global supplier. Our Salicylic Acid is a high purity grade ingredient"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Oily/Combination, Acne-Prone"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Acne, Breakouts & Oiliness"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 15+ years of age"
+    },
+    {
+      "id": "F13",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on wet face. Pour an appropriate quantity into wet hands, rub together into a light lather, and massage into face. Rinse thoroughly."
+    },
+    {
+      "id": "F14",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday."
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Balanced combination of mild surfactants with BHA & LHA gives gentle cleansing and multi-level exfoliation without irritating & drying the skin"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agreed significant reduction in skin oiliness after 6 washes"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "87% subjects agreed acne occurrences reduced after 6 weeks"
+    },
+    {
+      "id": "F18",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects agreed skin felt smoother & brighter after 4 weeks"
+    },
+    {
+      "id": "F19",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F20",
+      "section": "Oat Extract",
+      "kind": "ingredient_note",
+      "text": "Oat extract has excellent skin soothing properties and it also repairs damaged skin barrier function"
+    },
+    {
+      "id": "F21",
+      "section": "Zinc",
+      "kind": "ingredient_note",
+      "text": "It normalizes sebum production and because of its anti-bacterial properties, Zinc limits the proliferation of acne-causing bacteria"
+    },
+    {
+      "id": "F22",
+      "section": "Allantoin",
+      "kind": "ingredient_note",
+      "text": "Infused with Allantoin, renowned for its soothing and anti-irritating properties, this ingredient helps calm delicate skin"
+    },
+    {
+      "id": "F23",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Glycerin, Propanediol, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Salicylic Acid, PEG-150 Pentaerythrityl Tetrastearate, Xylitylglucoside, PEG-120 Methyl Glucose Dioleate, Panthenol, Betaine, Sodium PCA, PEG-6 Caprylic/Capric Glycerides, Anhydroxylitol, Xylitol, Pentylene Glycol, Avena Sativa (Oat) Kernel Extract, Sodium Hydroxide, Sodium Lactate, Phenoxyethanol, Ethylhexylglycerin, Coco-Glucoside, Glyceryl Oleate, Saccharide Isomerate, Polyglyceryl-3 Laurate, Zinc PCA, Lactic Acid, Capryloyl Salicylic Acid, Allantoin, Citric Acid, Sodium Citrate, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F24",
+      "section": "Which skin types is this suitable for?",
+      "kind": "faq",
+      "text": "This cleanser is most suitable for oily / combination or acne prone skin. The combination of actives helps to reduce the excess sebum and also reduces the occurrence of acne. For combination skin, while cleansing, focus more on the oily t-zone by massaging more there and be gentle on the drier parts of the face ensuring thorough and consistent cleansing."
+    },
+    {
+      "id": "F25",
+      "section": "Can this product be used for men & women both?",
+      "kind": "faq",
+      "text": "Yes. This face cleanser works equally well for both men and women."
+    },
+    {
+      "id": "F26",
+      "section": "What is the recommended age for using this cleanser?",
+      "kind": "faq",
+      "text": "Anyone over 15 years of age can use this cleanser."
+    },
+    {
+      "id": "F27",
+      "section": "Is the product pregnancy safe?",
+      "kind": "faq",
+      "text": "Pregnant or breastfeeding individuals should not use this product without consulting their healthcare provider first."
+    },
+    {
+      "id": "PRICE1",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "100ml: Rs. 269 (MRP Rs. 299; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE2",
+      "kind": "price",
+      "section": "price (website)",
+      "text": "250ml: Rs. 539 (MRP Rs. 599; 10% below MRP, both prices shown on the page) — beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "PRICE_AMZ",
+      "kind": "price",
+      "section": "price (Amazon.in)",
+      "text": "Amazon.in: Rs. 275 (8% off as shown) — search result, captured 2026-10-02 (verify it is the brand's own listing)"
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "RATING",
+      "kind": "rating",
+      "section": "reviews (Yotpo, website)",
+      "text": "4.1 out of 5 stars from 2,732 reviews on beminimalist.co, captured 2026-10-02"
+    },
+    {
+      "id": "REV1",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Salicylic Acid + LHA 2% Cleanser. This cleanser works really well for daily use, especially if you have oily or acne-prone skin. You only need a very small amount as it foams up nicely, which makes it last longer. It gives a deep clean and helps with oil control without making the skin feel dry or tight after washing. Post-wash, the skin feels fresh, clean, and balanced. Overall, a gentle yet effective cleanser that does a great job at cleansing pores and controlling excess oil without stripping the skin.\" — Shruti J., verified buyer, 5★, 2026-04-17 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV2",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"good product. Works well to reduce sebum and blackheads. Worth trying.\" — Anjani .., verified buyer, 5★, 2025-02-23 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV3",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"I love minimalist Brand. I like the products\" — Abhi A., verified buyer, 5★, 2025-05-20 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV4",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"After using it for 4 months. It works well on my skin and I recommend it for those who have oily skin. Also, make sure to apply moisturizer after using it for maximum results. Otherwise, this cleanser can make your skin more oily or just use it once a day.\" — Paresh P., verified buyer, 5★, 2026-06-20 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV5",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Superb. . . It cleanses amazingly. . . My. Superb. . . It cleanses amazingly. . . My skin feels fresh after use for many hours. . . The product acts directly on my acne. . I use minimalist serum and moisturizer afterwards. . keep providing such product. . . I hv bcm a fan. Thank u\" — Kan, verified buyer, 5★, 2026-04-09 (beminimalist.co, captured 2026-10-02)"
+    },
+    {
+      "id": "REV6",
+      "kind": "review",
+      "section": "customer review (verbatim; quote exactly, no edits beyond trimming with …)",
+      "text": "\"Worthy. Works very well for my acne .\" — Rashi .., verified buyer, 5★, 2025-12-16 (beminimalist.co, captured 2026-10-02)"
+    }
+  ],
+  "source": "page"
+}

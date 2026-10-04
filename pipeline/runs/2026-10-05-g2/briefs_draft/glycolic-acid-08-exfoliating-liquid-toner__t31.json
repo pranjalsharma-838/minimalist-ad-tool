@@ -1,0 +1,52 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t31",
+  "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+  "headline": "Evening step: exfoliating liquid",
+  "subhead": "Start with twice a week",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims, no scripted testimonial.",
+  "angle": "concern_solved",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Take a few drops into your palms and gently press into skin; PM. Start with twice a week and increase gradually; do not use more than once a day.",
+  "citations": {
+    "headline": [
+      "F14"
+    ],
+    "subhead": [
+      "F14"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F12",
+      "F14"
+    ]
+  },
+  "layout_description": "Plain native feel: casual headline and one supporting line on the left; AI-generated selfie-style card with the AI-GENERATED mark; the real pack beside it; no emoji.",
+  "adaptation_notes": "Format #31 Creator selfie: kept the front-camera selfie framing and a single plain caption; no first-person testimonial invented for the AI person. Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "a natural front-camera selfie of a smiling Indian woman in her mid 20s with deep-brown skin in a softly lit room, casual top, natural unretouched skin with visible texture, light everyday makeup, holding nothing, no stickers or filters."
+}

@@ -1,0 +1,66 @@
+{
+  "ad_type": "product_hero",
+  "layout": "spec",
+  "source_ad_id": "retinol-0-3-q10__t26",
+  "product_title": "Retinol 0.3% Face Serum",
+  "headline": "0.3% Retinol: facts from the page",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [
+    {
+      "label": "Strength",
+      "value": "0.3% Retinol",
+      "cites": [
+        "F1"
+      ]
+    },
+    {
+      "label": "Formula",
+      "value": "Water-free, in a UV protective bottle",
+      "cites": [
+        "F7"
+      ]
+    },
+    {
+      "label": "Retinol source",
+      "value": "BASF, Germany",
+      "cites": [
+        "F8"
+      ]
+    }
+  ],
+  "range": [],
+  "offer": null,
+  "footnote": "Strength and details as stated on the product page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "social_proof",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Retinol 0.3% Face Serum: strength and details as stated on the product page.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F1"
+    ]
+  },
+  "layout_description": "Headline top-left; a short sheet of 3 labelled page facts; the real pack large on the right.",
+  "adaptation_notes": "Format #26 Review creative: HONEST SUBSTITUTION: no customer review or rating was captured and the page has no consumer-study stat for this product, so the proof element is a short sheet of page-stated facts. Nothing is invented. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

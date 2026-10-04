@@ -1,0 +1,47 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "hair-growth-actives-18__t8",
+  "product_title": "Hair Growth Actives 18% Hair Serum",
+  "headline": "A few drops on a clean, dry scalp",
+  "subhead": "PM, every day",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "human_usage",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Hair Growth Actives 18% Hair Serum: a few drops on a clean, dry scalp; use PM, every day.",
+  "citations": {
+    "headline": [
+      "F11"
+    ],
+    "subhead": [
+      "F12"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "Left column: headline and subhead; the AI-generated person photo in a rounded card on the right with the AI-GENERATED mark; the real pack large in front; tagline tag; quiet Shop now.",
+  "adaptation_notes": "Format #8 Product-in-use: headline and subhead are page usage / sourcing lines only; nothing implies a result. The person is AI-generated: Severe, labelled. New ChatGPT image needed (no existing image fits a scalp scene). Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped. Hair product: no hair-growth or hair-fall wording anywhere; cosmetic usage wording only (CLM-02).",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian man in his early 30s with medium-brown skin and short dark hair in a bright bathroom in the morning, chest up in a plain cotton t-shirt, the fingertips of one hand parting his hair at the crown and pressing lightly on the scalp (nothing visible on his fingertips), his other hand relaxed. Soft daylight from the upper left, shallow depth of field, he sits slightly left of centre with calm space to his right. Natural, unretouched skin and scalp with visible pores, nothing implying a result, no hair-growth or hair-loss imagery. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

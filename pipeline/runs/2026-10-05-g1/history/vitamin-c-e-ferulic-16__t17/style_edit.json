@@ -1,0 +1,141 @@
+{
+  "ad_type": "product_hero",
+  "layout": "usvsthem",
+  "source_ad_id": "vitamin-c-e-ferulic-16__t17",
+  "product_title": "Vitamin C + E + Ferulic 16% Face Serum",
+  "headline": "Strength, stated on the pack",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Compared with a label that names neither strength nor form.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "Compared with a label that names neither the active's strength nor its form. Vitamin C + E + Ferulic 16% Face Serum names its form (Ethyl Ascorbic Acid, F5) and states the strength in its title.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F1",
+      "F1"
+    ]
+  },
+  "layout_description": "White canvas; headline across the top; real pack large on the left; a small comparison table on the right; footnote states the basis.",
+  "adaptation_notes": "Format #17 Comparison image (Us vs Them): honest Us vs Them. The page names no comparison, so this is the TRANSPARENCY version: what this pack states vs a label type that does not; 'them' is a label type, never a brand. Substitution made because no page-named rival benchmark exists. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "Vitamin C + E + Ferulic 16% Face Serum",
+    "them": "Label without the %",
+    "cites": [
+      "F1"
+    ],
+    "rows": [
+      {
+        "label": "Strength of the active",
+        "us": "16%",
+        "them": "Not stated",
+        "cites": [
+          "F1"
+        ]
+      },
+      {
+        "label": "Form of Vitamin C",
+        "us": "Ethyl Ascorbic Acid",
+        "them": "Not named",
+        "cites": [
+          "F5"
+        ]
+      }
+    ]
+  },
+  "product_handle": "vitamin-c-e-ferulic-16",
+  "product_url": "https://beminimalist.co/products/vitamin-c-e-ferulic-16",
+  "source_brand": "Deconstruct",
+  "status": "kept_with_warnings",
+  "risk_level": "high",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "CLM-12",
+      "span": "vs",
+      "message": "Comparative claims need like-for-like substantiation and mustn't disparage others.",
+      "fix": "Drop the comparison, or state exactly what was compared and how (test, model, report number) in the footnote.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    },
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    }
+  ],
+  "rounds_tried": 1,
+  "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)",
+  "style_edits": [
+    {
+      "field": "footnote",
+      "from": "Compared with a label that names neither the active's strength nor its form.",
+      "to": "Compared with a label that names neither strength nor form.",
+      "why": "footnote shortened by cutting words only"
+    }
+  ]
+}

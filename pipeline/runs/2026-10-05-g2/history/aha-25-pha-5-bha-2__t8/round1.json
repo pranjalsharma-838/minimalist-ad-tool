@@ -1,0 +1,78 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "aha-25-pha-5-bha-2__t8",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "Apply a thick layer",
+  "subhead": "To cleansed, dry skin",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start.",
+  "citations": {
+    "headline": [
+      "F11"
+    ],
+    "subhead": [
+      "F11"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #8: structure kept (product-in-use); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian man in his mid 30s with deep-brown skin, standing at a bathroom mirror in the morning, framed from the chest up in a plain white cotton t-shirt, both hands raised to his face and neck, massaging in slow upward strokes with his fingertips and palms (nothing visible on his hands or skin), eyes half-closed in a relaxed expression. Soft daylight from the upper left, an off-white tiled wall softly out of focus behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and ordinary variation in tone, true to life, nothing implying a skin result. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "aha-25-pha-5-bha-2",
+  "product_url": "https://beminimalist.co/products/aha-25-pha-5-bha-2",
+  "source_brand": "Foxtale",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": []
+}

@@ -1,0 +1,58 @@
+{
+  "ad_type": "product_hero",
+  "layout": "callouts",
+  "source_ad_id": "niacinamide-5-hyaluronic-acid-1__t15",
+  "product_title": "Niacinamide 5% Face Serum",
+  "headline": "5% Niacinamide for dry, sensitive skin",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "For dry, normal or sensitive skin",
+      "cites": [
+        "F9"
+      ]
+    },
+    {
+      "text": "Suitable for 16+ years",
+      "cites": [
+        "F10"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "concern_solved",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Niacinamide 5% Face Serum: 2-3 drops after cleansing & toning; use AM & PM.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F9"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "Headline top-left naming the strength; two short callout labels connected to the large pack on the right.",
+  "adaptation_notes": "Format #15 Problem → product: the 'problem' is the page's own concern or suitability line as plain text; at most 2 callouts; no skin close-up or fear framing. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

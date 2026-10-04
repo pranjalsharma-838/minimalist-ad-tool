@@ -1,0 +1,109 @@
+{
+  "ad_type": "other",
+  "layout": "callouts",
+  "source_ad_id": "light-fluid-spf-50-sunscreen__t15",
+  "product_title": "Light Fluid SPF 50 Sunscreen",
+  "headline": "SPF 50 for sun exposure",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "UVA and UVB protection",
+      "cites": [
+        "F3"
+      ]
+    },
+    {
+      "text": "Photostable filters",
+      "cites": [
+        "F5"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 50, PA++++; in-vivo ISO 24444:2019, independent lab; SPF obtained: 56.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 50, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F10"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F12",
+      "F14",
+      "F16"
+    ],
+    "caption": [
+      "F18",
+      "F19",
+      "F2"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #15 Problem -> product: at most 2 callouts (concern or ingredient labels from page facts); no skin close-ups.",
+  "blend_sources": [
+    {
+      "id": "1386072156792745",
+      "brand": "Re'equil",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1739037801557913",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2307135286779864",
+      "brand": "The Derma Co",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "light-fluid-spf-50-sunscreen",
+  "product_url": "https://beminimalist.co/products/light-fluid-spf-50-sunscreen",
+  "source_brand": "Re'equil",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 56",
+      "message": "SPF 56 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 50; keep 'SPF 56 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "url": "https://beminimalist.co/products/nonapeptide-aha-06-underarm-roll-on",
+  "title": "Nonapeptide + AHA 6% Underarm Roll-On",
+  "actives": [
+    {
+      "name": "Nonapeptide + AHA",
+      "pct": "6%"
+    }
+  ],
+  "price": 359,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/NonNew.png?v=1721398125",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nona_Roll_2.png?v=1722949288",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nona_Roll_3.png?v=1723035773",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nona_Roll_4.png?v=1722949288",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Nona_Roll_6.png?v=1722949287"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Nonapeptide + AHA 6% Underarm Roll-On"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Controls Odour and Fades Underarm Darkness"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A powerful AHA-infused roll-on that combats odour and fades underarm darkness. This aluminium-free formula inhibits bacterial growth, which keeps your underarms odour-free instead of masking it with fragrance. Nonapeptide-1 inhibits hyperproduction of melanin induced by α-MSH, hence fading underarm darkness & making it even looking."
+    },
+    {
+      "id": "F4",
+      "section": "Tagline / description",
+      "kind": "testimonial",
+      "text": "\"I have been using it for a month now and it's a good product with odour less effect and it reduces the darkness and pigmentation as well. -Arushi\""
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "A gentle exfoliating underarm roll-on containing Mandelic Acid & Glycolic Acid which helps in neutralising bad odour causing bacteria and reveals an even underarm skin tone"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "It also contains a Biomimetic Peptide, Nonapeptide-1, which inhibits melanin synthesis by preventing activation of the tyrosinase. Thus helps in reducing underarm darkness"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosted with 4-n-Butylresorcinol, Salicylic Acid and Licorice Root Extract, which further helps in reducing darkness of the underarms, sebum control and soothing. It also contains Decylene Glycol which kills bad odour causing bacterias"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "All our ingredients are sourced from leading global suppliers. Our high purity grade Mandelic Acid is sourced from Alfa Aesar, a trusted supplier from USA"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Dark Underarms, Sweating, Underarm Odour"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 18+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "An in-vitro study is conducted to evaluate the efficacy of the product against Corynebacterium Xerosis (a bad odor-causing bacteria). Below is the graphical representation of the data"
+    },
+    {
+      "id": "F12",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "The figure represents the 99.67% reduction of Corynebacterium xerosis in 10 minutes."
+    },
+    {
+      "id": "F13",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Objective : Determination of anti-bacterial efficacy of Minimalist Nonapeptide + AHA 06% underarm roll on against C. Xerosis by time kill assay as per ASTM E2315-16"
+    },
+    {
+      "id": "F14",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Study Report Number: RR231167/MCR/TKA/07-2023"
+    },
+    {
+      "id": "F15",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "(Data based on in-vitro tests conducted by an independent third party product testing lab)"
+    },
+    {
+      "id": "F16",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F17",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on clean and dry armpits using the roller. Allow to dry before getting dressed."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "For external use only. Patch test recommended before use."
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM. Everyday."
+    },
+    {
+      "id": "F20",
+      "section": "Nonapeptide",
+      "kind": "ingredient_note",
+      "text": "A powerful biomimetic peptide that helps reduce hyperpigmentation, promoting an even looking underarm complexion"
+    },
+    {
+      "id": "F21",
+      "section": "Mandelic Acid (AHA)",
+      "kind": "ingredient_note",
+      "text": "Gentle exfoliating AHA that effectively removes dead skin cells and promotes natural cell turnover. It helps achieve an even underarm tone and reduces darkness, revealing smoother and revitalised skin"
+    },
+    {
+      "id": "F22",
+      "section": "Butylresorcinol",
+      "kind": "ingredient_note",
+      "text": "It can strongly inhibit the activity of tyrosinase, resulting in reduction of hyperpigmentation"
+    },
+    {
+      "id": "F23",
+      "section": "Decylene Glycol",
+      "kind": "ingredient_note",
+      "text": "It demonstrates potent anti-bacterial activity against Corynebacterium Xerosis by inhibiting growth and helps control malodor-causing components' production."
+    },
+    {
+      "id": "F24",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, 1,2-Hexanediol, Triethyl Citrate, Mandelic Acid, Dimethyl Isosorbide, Propanediol, Ethoxydiglycol, Glycolic Acid, Hydrolyzed Wheat Protein, Salicylic Acid, 2-Methyl 5-Cyclohexylpentanol, Decylene Glycol, Sodium PCA, 4-Butylresorcinol, Nonapeptide-1, Glycyrrhiza Glabra (Liquorice) Root Extract, Pentylene Glycol, Hydroxyethylcellulose, Propylene Glycol, Sodium Hydroxide, Phenoxyethanol, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F25",
+      "section": "Which skin type is this suitable for?",
+      "kind": "faq",
+      "text": "The body roll-on is suitable for all skin types. The product is formulated keeping in mind all skin types."
+    },
+    {
+      "id": "F26",
+      "section": "Can this product be used for men and women?",
+      "kind": "faq",
+      "text": "Yes. This underarm roll-on works equally well for both men and women."
+    },
+    {
+      "id": "F27",
+      "section": "What is the recommended age and who can use this product?",
+      "kind": "faq",
+      "text": "Except for pregnant or breastfeeding women and those under 18 years of age, anyone can use this Roll-On."
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    }
+  ],
+  "source": "page"
+}

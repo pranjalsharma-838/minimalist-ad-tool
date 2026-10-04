@@ -1,0 +1,99 @@
+{
+  "ad_type": "other",
+  "layout": "stat",
+  "source_ad_id": "vitamin-k-retinal-01-eye-cream__t26",
+  "product_title": "Vitamin K + Retinal 1% Eye Cream",
+  "headline": "Vitamin K + Retinal 1%, supplier studies",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": {
+    "value": "19%",
+    "label": "reduction in Under Eye Dark Circle after 8 Weeks",
+    "cites": [
+      "F13"
+    ]
+  },
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "In-vitro studies conducted by suppliers. Actual results may vary.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "stat",
+  "caption": "After cleansing, apply a small amount onto your finger and gently pat around the eye contours; PM, every day. Avoid applying very close to the eyes.",
+  "citations": {
+    "headline": [
+      "F12"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F12"
+    ],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #26 Review creative: HONEST SUBSTITUTION. No customer review or rating is captured for this product, so the review card is replaced by the closest honest proof element: a figure stated on the product page, with its basis in the footnote. No review invented.",
+  "blend_sources": [
+    {
+      "id": "621835826921394",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1619243416440363",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "991199233902436",
+      "brand": "Conscious Chemist",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "product_handle": "vitamin-k-retinal-01-eye-cream",
+  "product_url": "https://beminimalist.co/products/vitamin-k-retinal-01-eye-cream",
+  "source_brand": "Dot & Key",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-07",
+      "span": "after 8 Weeks",
+      "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+      "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+      "layer": "rule",
+      "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+    }
+  ]
+}

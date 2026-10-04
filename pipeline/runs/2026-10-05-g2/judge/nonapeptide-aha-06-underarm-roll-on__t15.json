@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "99.67% reduction of Corynebacterium xerosis in 10 minutes",
+      "severity": "advisory",
+      "why": "An antibacterial result is stated; it is the product page's own in-vitro figure (time-kill assay, independent lab) with the in-vitro basis in the footnote. Kept verbatim on the user's instruction; the brand/legal team decides.",
+      "fix": "None applied. Legal to confirm the wording and the in-vitro qualifier."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "A time or duration is stated exactly as the product page states it, with the study basis in the footnote; keep verbatim, brand/legal decide."
+    }
+  ],
+  "tone_read": "Calm, declarative and educational in Minimalist's voice; no fear, hype or emoji.",
+  "language_read": "Active and strength match the product page; every line is a page fact or its usage; no superlatives, no natural/chemical-free framing."
+}

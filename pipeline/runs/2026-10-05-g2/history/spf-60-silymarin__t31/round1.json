@@ -1,0 +1,89 @@
+{
+  "ad_type": "other",
+  "layout": "native",
+  "source_ad_id": "spf-60-silymarin__t31",
+  "product_title": "SPF 60 Sunscreen",
+  "headline": "Last morning step: SPF 60",
+  "subhead": "Apply generously and evenly on face and neck",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Labelled SPF 60, PA++++; in-vivo ISO 24444:2019 and ISO 24442:2022, independent lab; SPF obtained: 66.6.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real creator selfie or talking-head frame (named, consenting) with natural, unretouched skin. No before/after, no result claims, no scripted testimonial.",
+  "angle": "concern_solved",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Apply on cleansed face after serums and moisturisers, generously and evenly on face and neck, at least 15 minutes before sun exposure; AM, every day. Labelled SPF 60, PA++++; the lab basis is in the footnote.",
+  "citations": {
+    "headline": [
+      "F2",
+      "F20"
+    ],
+    "subhead": [
+      "F19"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F2",
+      "F13",
+      "F15",
+      "F17"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "F2"
+    ]
+  },
+  "layout_description": "Plain native feel: casual headline and one supporting line on the left; AI-generated selfie-style card with the AI-GENERATED mark; the real pack beside it; no emoji.",
+  "adaptation_notes": "Format #31 Creator selfie: kept the front-camera selfie framing and a single plain caption; no first-person testimonial invented for the AI person. Severe, labelled.",
+  "blend_sources": [
+    {
+      "id": "1390426132931304",
+      "brand": "Conscious Chemist",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian man in his early 40s with deep-brown skin and a short, neatly kept greying beard, standing at a bathroom basin in the morning, framed from the waist up in a plain white cotton vest with a folded towel over one shoulder. His right hand is held out open at chest height, palm up, completely empty and relaxed, as if about to receive something, while his left hand rests on the edge of the basin; he looks towards the mirror with a calm, focused expression. Soft daylight from a frosted window at the upper left falls across an off-white tiled wall behind him, medium close-up, shallow depth of field, framed so he sits slightly left of centre with calm space to his right. Natural, unretouched deep-brown skin with visible pores and the grey of his beard rendered true to life, nothing implying a skin result, and nothing in his hands. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names.",
+  "product_handle": "spf-60-silymarin",
+  "product_url": "https://beminimalist.co/products/spf-60-silymarin",
+  "source_brand": "Conscious Chemist",
+  "status": "approved_for_image_step",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "READY_FOR_REVIEW",
+    "label": "Ready for human review",
+    "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.4",
+    "decisions_version": "2026-10-04",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "CLM-19",
+      "span": "SPF obtained: 66",
+      "message": "SPF 66 is the lab-measured value; fine in the footnote as the test result.",
+      "fix": "Claim the labelled SPF 60; keep 'SPF 66 obtained (ISO 24444:2019)' as the test result in the footnote.",
+      "layer": "rule"
+    }
+  ]
+}

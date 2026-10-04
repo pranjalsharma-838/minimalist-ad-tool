@@ -1,0 +1,37 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    },
+    {
+      "index": 2,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    },
+    {
+      "index": 3,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    },
+    {
+      "index": 4,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    },
+    {
+      "index": 5,
+      "assessment": "agree",
+      "why": "A comparison needs like-for-like proof on file and its basis on the creative; the basis is in the footnote and the comparison stays High risk (DEC-02)."
+    }
+  ],
+  "tone_read": "Calm and factual; the comparison states what the page states and never names or disparages a brand.",
+  "language_read": "Active and strength match the product page; every line is a page fact or its usage; no superlatives, no natural/chemical-free framing."
+}

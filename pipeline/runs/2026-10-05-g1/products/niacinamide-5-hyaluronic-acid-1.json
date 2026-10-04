@@ -1,0 +1,208 @@
+{
+  "url": "https://beminimalist.co/products/niacinamide-5-hyaluronic-acid-1",
+  "title": "Niacinamide 5% Face Serum",
+  "actives": [
+    {
+      "name": "Niacinamide",
+      "pct": "5%"
+    }
+  ],
+  "price": 539,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/products/Niacinamide5_1200-1-min.png?v=1646458955",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Niaci_05_2.png?v=1722951278",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Niaci_05_3.png?v=1722951278",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Niaci_05_4.png?v=1722951278",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Niaci_05_5.png?v=1722951278",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/Niaci_05_6.png?v=1723035694"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "Niacinamide 5% Face Serum"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Hydrates, Repairs & Soothes Skin"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "A nourishing & hydrating daily serum that repairs damaged barrier & soothes sensitive skin. Ideal for people with dry, sensitive skin & those who find Niacinamide 10% a little strong."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "A lightweight, daily serum consisting of very potent Vitamin B3, Niacinamide. Especially formulated for those with dry & sensitive skin"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosted with high concentration of Bifida Ferment Lysate, which is a biotechnological active that increases cellular repair and protects against UV-induced skin damage. It also evens & brightens skin tone"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Oat extract has anti-inflammatory and skin-protecting properties. It repairs damaged barrier and soothes skin"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Boosted with Hyaluronic Acid for meeting the hydration needs of dry / dehydrated skin. As a potent humectant, it hydrates skin and makes it soft & plump"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "The key ingredient (Niacinamide) is sourced from Lonza, Switzerland; a global science-based company"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: Dry/Normal, Sensitive & Acne Prone"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Suitable for: 16+ years of age"
+    },
+    {
+      "id": "F11",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Acne Marks, Irritated & Damaged Skin"
+    },
+    {
+      "id": "F12",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Pregnancy/Lactation: Safe"
+    },
+    {
+      "id": "F13",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "While Niacinamide has several skin benefits (like fading blemishes, repairing skin, etc), Bifida & Oat Extract repair & soothe skin."
+    },
+    {
+      "id": "F14",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "97% subjects said their skin irritation got reduced significantly after 4 weeks of usage"
+    },
+    {
+      "id": "F15",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "93% subjects said skin tone looked more even & healthy after 8 weeks"
+    },
+    {
+      "id": "F16",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "90% subjects said skin felt more healthy & less dehydrated after 3 weeks"
+    },
+    {
+      "id": "F17",
+      "section": "Consumer Studies",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F18",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply 2-3 drops after cleansing & toning. Let the serum absorb fully into the skin before moving on to the next step of your routine."
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM & PM. Everyday"
+    },
+    {
+      "id": "F20",
+      "section": "Niacinamide",
+      "kind": "ingredient_note",
+      "text": "A form of vitamin B3, Niacinamide is a superstar ingredient that repairs skin barrier, soothes, and fades blemishes. This serum is especially formulated for dry / normal or sensitive skin"
+    },
+    {
+      "id": "F21",
+      "section": "Bifida Ferment Lysate",
+      "kind": "ingredient_note",
+      "text": "A probiotic ingredient that protects against UV-induced damage and reduces skin sensitivity"
+    },
+    {
+      "id": "F22",
+      "section": "Oat Extract",
+      "kind": "ingredient_note",
+      "text": "Oat extract has excellent skin soothing properties and it also repairs damaged skin barrier function"
+    },
+    {
+      "id": "F23",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Niacinamide, Dimethyl Isosorbide, Avena Sativa (Oat) Kernel Extract, Ethoxydiglycol, Propanediol, Bifida Ferment Lysate, Sodium Hyaluronate, Phenoxyethanol, Pentylene Glycol, Ethylhexylglycerin, Hydrolyzed Hyaluronic Acid, Pullulan, Xanthan Gum, Sclerotium Gum, Lecithin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F24",
+      "section": "How does Niacinamide work on your face?",
+      "kind": "faq",
+      "text": "When applied topically, Niacinamide works on our skin by getting converted to NADH and NADPH; these compounds provide energy to the cells tackling free radicals and boosting protein synthesis, hence providing a protective skin barrier. This conversion also reduces the production of sebum, aiding in the prevention of acne and blemishes."
+    },
+    {
+      "id": "F25",
+      "section": "Does Niacinamide help in the lightening or brightening of the skin?",
+      "kind": "faq",
+      "text": "Scientific studies have proven its property to inhibit melanin production & distribution, which helps treat hyperpigmentation and lightens dark spots hence enhancing skin tone. Still, there are no clinical studies of it providing a lighter skin tone when used individually."
+    },
+    {
+      "id": "F26",
+      "section": "Does Niacinamide help in the lightening or brightening of the skin?",
+      "kind": "faq",
+      "text": "Along with Niacinamide, this serum contains Bifida Ferment Lysate which is known to brighten skin tone."
+    },
+    {
+      "id": "F27",
+      "section": "What is the right age to start using Niacinamide serum?",
+      "kind": "faq",
+      "text": "Niacinamide is safe to use at any age, but you will need it after 18 -20 years when the body's natural ability to form a skin barrier starts degrading. It can also be used in your teenage to combat acne marks caused by your teen acne."
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    }
+  ],
+  "source": "page"
+}

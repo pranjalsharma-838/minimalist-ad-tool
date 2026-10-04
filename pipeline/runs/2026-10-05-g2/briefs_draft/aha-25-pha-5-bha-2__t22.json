@@ -1,0 +1,72 @@
+{
+  "ad_type": "other",
+  "layout": "callouts",
+  "source_ad_id": "aha-25-pha-5-bha-2__t22",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "How to use: weekly, PM",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Thick layer on cleansed, dry skin",
+      "cites": [
+        "F11"
+      ]
+    },
+    {
+      "text": "Leave 10 minutes only, then rinse",
+      "cites": [
+        "F11"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start.",
+  "citations": {
+    "headline": [
+      "F12"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #22 How-to / steps: HONEST SUBSTITUTION. This page's usage is a stand-alone step (a routine with another product would be an unsupported claim), so the how-to is shown as 2 usage steps from the page instead of a multi-product journey.",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)"
+}

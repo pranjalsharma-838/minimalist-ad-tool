@@ -1,0 +1,48 @@
+{
+  "ad_type": "product_hero",
+  "layout": "hero",
+  "source_ad_id": "retinol-0-3-q10__t10",
+  "product_title": "Retinol 0.3% Face Serum",
+  "headline": "Retinol from BASF, Germany",
+  "subhead": "PM",
+  "tag": "Skin Science",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "situation",
+  "caption": "Retinol 0.3% Face Serum: apply on a cleansed face, in the PM; use in the PM.",
+  "citations": {
+    "headline": [
+      "F8"
+    ],
+    "subhead": [
+      "F13"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F12",
+      "F13",
+      "F13"
+    ]
+  },
+  "layout_description": "Left column: headline and subhead; the AI-generated person photo in a rounded card on the right with the AI-GENERATED mark; the real pack large in front; tagline tag; quiet Shop now.",
+  "adaptation_notes": "Format #10 Problem macro: the skin-problem close-up is dropped (fear framing, needs real photos); rebuilt as a lifestyle shot with the brand tagline. headline and subhead are page usage / sourcing lines only; nothing implies a result. The person is AI-generated: Severe, labelled. Reuses an existing AI image (reuse_map.json, image 11). Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "An Indian woman in her early 40s with medium-brown skin working from home at a small wooden desk by a window, laptop screen turned away, ceramic cup, money plant on the sill, sheer curtains. Soft daylight from the upper left, slightly left of centre with calm space to her right. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names."
+}

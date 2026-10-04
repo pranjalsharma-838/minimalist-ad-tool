@@ -1,0 +1,58 @@
+{
+  "ad_type": "before_after",
+  "layout": "timeline",
+  "source_ad_id": "retinol-0-3-q10__t14",
+  "product_title": "Retinol 0.3% Face Serum",
+  "headline": "0.3% Retinol in a daily routine",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Day and week labels mark routine stages, not study timings. AI illustrations, not real results.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched progress photos from a documented study of this product (same person, same light, with the claim and duration on file) to replace the AI frames before any use.",
+  "angle": "transformation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "Retinol 0.3% Face Serum: Retinol strength as stated on the page; PM. The frames are AI illustrations, not results.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F1",
+      "F13"
+    ]
+  },
+  "layout_description": "Headline top; three progress frames of the same AI-illustrated area left to right, the real pack small in the lower-right of EVERY frame; AI-GENERATED mark; footnote states the labels are routine stages.",
+  "adaptation_notes": "Format #14 Progress / timeline: REMAKE: subtle, the real pack in every frame (pack_in_frames), small realistic change only. Labels are routine stages with no result wording. New AI frames needed. Severe, AI-labelled, not exportable until real study photos replace them. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)",
+  "frames": [
+    {
+      "label": "Day 1"
+    },
+    {
+      "label": "Week 2"
+    },
+    {
+      "label": "Week 4"
+    }
+  ],
+  "frames_prompt": "Concern: a few faint fine lines across the forehead. Panel 1: as they are; panels 2 and 3: the same lines only very slightly softer-looking each time, none disappearing. The change is small and realistic, never dramatic. Same Indian woman in her early 40s with medium-brown skin, an identical close crop of the forehead and temple (no eyes) in every panel. In every panel the lower-right corner (about 30% of the panel width and 40% of its height) is a plain, softly lit area that is intentionally empty, reserved for the real pack to be placed later.",
+  "pack_in_frames": true
+}

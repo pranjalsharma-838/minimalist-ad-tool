@@ -1,0 +1,57 @@
+{
+  "ad_type": "other",
+  "layout": "hero",
+  "source_ad_id": "2-hyaluronic-acid__t8",
+  "product_title": "Hyaluronic + PGA 2% Face Serum",
+  "headline": "Apply on face and neck",
+  "subhead": "Follow with a moisturiser",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "A real photo (consenting person, natural light) would replace the AI person.",
+  "angle": "situation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "Take a pea-sized amount on your fingertips and apply on the face and neck, AM & PM everyday; follow with a moisturiser to lock in the hydration.",
+  "citations": {
+    "headline": [
+      "F19"
+    ],
+    "subhead": [
+      "F19"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F19",
+      "F20"
+    ]
+  },
+  "layout_description": "White canvas; short headline and one supporting line on the left with the active + strength lockup; AI-generated person scene with the AI-GENERATED mark; the real pack beside it.",
+  "adaptation_notes": "Format #8: structure kept (product-in-use); copy is only the page's own usage/strength facts, no result wording, no hyperbole. The AI person carries the AI label; Severe risk by house rule.",
+  "blend_sources": [
+    {
+      "id": "1602641281689513",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1732129464862042",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "person_prompt": "an Indian woman in her early 40s with medium-brown skin, smoothing a light moisturiser onto her face and neck by a window in the morning, simple cotton kurta, relaxed expression, soft daylight from the upper left."
+}

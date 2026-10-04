@@ -1,0 +1,78 @@
+{
+  "ad_type": "other",
+  "layout": "actives",
+  "source_ad_id": "nonapeptide-aha-06-underarm-roll-on__t3",
+  "product_title": "Nonapeptide + AHA 6% Underarm Roll-On",
+  "headline": "Named actives, stated strength",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [
+    {
+      "pct": "",
+      "name": "Nonapeptide-1",
+      "line": "A peptide that inhibits melanin synthesis",
+      "cites": [
+        "F6"
+      ]
+    },
+    {
+      "pct": "",
+      "name": "Mandelic + Glycolic Acid",
+      "line": "Gentle exfoliating AHAs",
+      "cites": [
+        "F5"
+      ]
+    }
+  ],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "caption": "Apply on clean and dry armpits using the roller and allow to dry before getting dressed; AM, every day. For external use only. Patch test recommended.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F5"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F17",
+      "F18",
+      "F19"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #3 Product + ingredients: named actives with the strength exactly as the page states; one plain line each, from cited facts.",
+  "blend_sources": [
+    {
+      "id": "9868853523169382",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1475983576999549",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "4416615341943591",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)"
+}

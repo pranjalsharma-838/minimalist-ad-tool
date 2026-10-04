@@ -1,0 +1,12 @@
+{
+  "findings": [],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "agree",
+      "why": "A time or duration is stated exactly as the product page states it, with the study basis in the footnote; keep verbatim, brand/legal decide."
+    }
+  ],
+  "tone_read": "Calm, declarative and educational in Minimalist's voice; no fear, hype or emoji.",
+  "language_read": "The figure and its wording match the product page and the basis sits in the footnote; no absolute or unhedged efficacy wording."
+}

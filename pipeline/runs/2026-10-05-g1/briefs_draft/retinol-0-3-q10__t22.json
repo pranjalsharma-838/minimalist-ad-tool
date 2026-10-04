@@ -1,0 +1,65 @@
+{
+  "ad_type": "product_hero",
+  "layout": "journey",
+  "source_ad_id": "retinol-0-3-q10__t22",
+  "product_title": "Retinol 0.3% Face Serum",
+  "headline": "A night routine with Retinol 0.3%",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 Â· Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "Light lather on a wet face, then rinse",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "label": "Step 2 Â· Retinol",
+      "product_handle": "retinol-0-3-q10",
+      "line": "On a cleansed face, PM; start every alternate day",
+      "cites": [
+        "F12",
+        "F13"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "routine",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Retinol 0.3% Face Serum: apply on a cleansed face, in the PM; use in the PM.",
+  "citations": {
+    "headline": [
+      "salicylic-lha-2-cleanser:F13",
+      "F1",
+      "F13"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "caption": [
+      "F1",
+      "F12",
+      "F13",
+      "F13"
+    ]
+  },
+  "layout_description": "Headline across the top; real pack shots in a row under 'Step N' labels with one usage line each, arrows between; CTA bottom-left.",
+  "adaptation_notes": "Format #22 How-to / steps: routine shown as ordered usage steps from the pages' own usage lines; no result or time-to-result wording. Minimal house look (white canvas, real pack as the hero, active + strength shown, basis in the footnote or caption); competitor wording, claims, emoji and urgency dropped.",
+  "blend_sources": [],
+  "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength, basis in footnote, no exaggeration, nothing pending)"
+}

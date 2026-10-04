@@ -1,0 +1,63 @@
+{
+  "ad_type": "other",
+  "layout": "before_after",
+  "source_ad_id": "aha-25-pha-5-bha-2__t12",
+  "product_title": "AHA PHA BHA 32% Face Peel",
+  "headline": "AHA PHA BHA 32% in a weekly routine",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not real results. Individual results vary.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+  "angle": "transformation",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "caption": "AHA PHA BHA 32% Face Peel: Apply a thick layer to cleansed, dry skin (avoid the eye area), leave for 10 minutes only, then rinse off with lukewarm water; PM, once every 2 weeks to start. The two frames are AI illustrations, not results.",
+  "citations": {
+    "headline": [
+      "F1",
+      "F12"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F12"
+    ],
+    "caption": [
+      "F11",
+      "F12"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #12 Before / after: copy is the product and its usage only (no result wording); the two AI frames show a very small realistic difference and carry the AI label; Severe by house rule.",
+  "blend_sources": [
+    {
+      "id": "27546140265006255",
+      "brand": "Chemist at Play",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "frames_prompt": "two equal side-by-side panels of the same Indian woman in her early 30s with deep-brown skin, identical close crop of the cheek, framing, angle and soft daylight from the upper left. Left panel: a few small, faint darker spots; right panel: the same spots only very slightly lighter, none disappearing. The difference is small and realistic, never dramatic; skin keeps natural pores and texture."
+}

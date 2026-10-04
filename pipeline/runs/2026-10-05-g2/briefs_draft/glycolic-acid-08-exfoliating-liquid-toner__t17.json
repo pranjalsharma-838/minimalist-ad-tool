@@ -1,0 +1,77 @@
+{
+  "ad_type": "other",
+  "layout": "usvsthem",
+  "source_ad_id": "glycolic-acid-08-exfoliating-liquid-toner__t17",
+  "product_title": "Glycolic Acid 8% Exfoliating Liquid",
+  "headline": "What the label states",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Transparency comparison: what this product page states vs a label type that states none. Source: the product page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "comparison",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "caption": "Take a few drops into your palms and gently press into skin; PM. Start with twice a week and increase gradually; do not use more than once a day.",
+  "citations": {
+    "headline": [
+      "F1"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F1"
+    ],
+    "caption": [
+      "F12",
+      "F14"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #17 Us vs Them: HONEST SUBSTITUTION. The page names no comparison benchmark, so this is a transparency comparison: what this pack states vs a label type that states none; 'them' is a label type, never a brand.",
+  "blend_sources": [
+    {
+      "id": "4500111383646459",
+      "brand": "Deconstruct",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)",
+  "compare": {
+    "us": "Strength stated",
+    "them": "Label without the %",
+    "cites": [
+      "F1"
+    ],
+    "rows": [
+      {
+        "label": "Active and strength",
+        "us": "Glycolic Acid 8%",
+        "them": "Not stated",
+        "cites": [
+          "F1",
+          "F3"
+        ]
+      },
+      {
+        "label": "Strength on the pack",
+        "us": "8%",
+        "them": "Not stated",
+        "cites": [
+          "F6"
+        ]
+      }
+    ]
+  }
+}

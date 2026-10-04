@@ -1,0 +1,94 @@
+{
+  "ad_type": "other",
+  "layout": "journey",
+  "source_ad_id": "2-hyaluronic-acid__t22",
+  "product_title": "Hyaluronic + PGA 2% Face Serum",
+  "headline": "Morning routine, ending with SPF",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 Â· Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "",
+      "cites": [
+        "salicylic-lha-2-cleanser:F14"
+      ]
+    },
+    {
+      "label": "Step 2 Â· Serum",
+      "product_handle": "2-hyaluronic-acid",
+      "line": "",
+      "cites": [
+        "F19",
+        "F20"
+      ]
+    },
+    {
+      "label": "Step 3 Â· SPF 50",
+      "product_handle": "multi-vitamin-spf-50",
+      "line": "",
+      "cites": [
+        "multi-vitamin-spf-50:F2",
+        "multi-vitamin-spf-50:F21"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "Steps as stated on each product's own page.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the middle 80% of the frame as an empty space, evenly lit, for pack photos placed later. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "ingredient_science",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "caption": "Take a pea-sized amount on your fingertips and apply on the face and neck, AM & PM everyday; follow with a moisturiser to lock in the hydration.",
+  "citations": {
+    "headline": [
+      "F20",
+      "salicylic-lha-2-cleanser:F14",
+      "multi-vitamin-spf-50:F21"
+    ],
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F20",
+      "salicylic-lha-2-cleanser:F14",
+      "multi-vitamin-spf-50:F21"
+    ],
+    "caption": [
+      "F19",
+      "F20",
+      "salicylic-lha-2-cleanser:F14",
+      "multi-vitamin-spf-50:F21"
+    ]
+  },
+  "layout_description": "",
+  "adaptation_notes": "Format #22 How-to / steps: routine order taken from each product page's usage lines; routine only, no result.",
+  "blend_sources": [
+    {
+      "id": "2605728093198832",
+      "brand": "Foxtale",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "layout / proof device (structure only)"
+    },
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "layout / proof device (structure only)"
+    }
+  ],
+  "writer": "stand-in (Claude agent) following prompts/pipeline_brief_writer.md; user rules 2026-10-05 (active + strength shown, basis in footnote, no exaggeration, nothing pending)"
+}

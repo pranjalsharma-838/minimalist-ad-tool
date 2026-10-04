@@ -1,0 +1,44 @@
+[
+ {
+  "h": "hair-growth-actives-18__t8",
+  "kind": "person",
+  "image": "",
+  "prompt": "Create a photorealistic photo: An Indian man in his early 30s with medium-brown skin and short dark hair in a bright bathroom in the morning, chest up in a plain cotton t-shirt, the fingertips of one hand parting his hair at the crown and pressing lightly on the scalp (nothing visible on his fingertips), his other hand relaxed. Soft daylight from the upper left, shallow depth of field, he sits slightly left of centre with calm space to his right. Natural, unretouched skin and scalp with visible pores, nothing implying a result, no hair-growth or hair-loss imagery. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\hair-growth-actives-18__t8.person.png"
+ },
+ {
+  "h": "hair-growth-actives-18__t9",
+  "kind": "person",
+  "image": "",
+  "prompt": "Create a photorealistic photo: Close, softly lit crop of an Indian woman in her early 30s with medium-brown skin and thick dark hair, seen from the side at the crown of her head, the fingertips of one hand parting her hair and gently massaging the scalp in small circles (nothing visible on her fingertips), the other hand out of frame. Soft daylight from the upper left, shallow depth of field, calm space to the right. Natural, unretouched skin and scalp, nothing implying a result, no hair-growth or hair-loss imagery. No product, bottle, dropper, tube, jar or packaging anywhere in frame; no text, no letters, no logos, no brand names. Natural, unretouched skin texture. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. Square 1:1.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\hair-growth-actives-18__t9.person.png"
+ },
+ {
+  "h": "hair-growth-actives-18__t14",
+  "kind": "frames",
+  "image": "",
+  "prompt": "Create a photorealistic wide image made of three equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. Concern: hair looking slightly flat at the parting. Panel 1: as it is; panels 2 and 3: very slightly fuller-looking each time. The change is small and realistic, never dramatic. Same Indian woman in her early 30s with medium-brown skin and dark hair, an identical close crop of the crown parting in every panel. In every panel the lower-right corner (about 30% of the panel width and 40% of its height) is a plain, softly lit area that is intentionally empty, reserved for the real pack to be placed later. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\hair-growth-actives-18__t14.frames.png"
+ },
+ {
+  "h": "hair-growth-actives-18__t12",
+  "kind": "frames",
+  "image": "",
+  "prompt": "Create a photorealistic wide image made of two equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. the same Indian woman in her early 30s with medium-brown skin and dark hair, identical close crop of the crown parting, framing, angle and soft daylight from the upper left. Left panel: hair at the parting looks slightly flat; right panel: the same parting looks very slightly fuller. The difference is small and realistic, never dramatic; natural scalp and hair texture. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\hair-growth-actives-18__t12.frames.png"
+ },
+ {
+  "h": "retinol-0-3-q10__t14",
+  "kind": "frames",
+  "image": "",
+  "prompt": "Create a photorealistic wide image made of three equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. Concern: a few faint fine lines across the forehead. Panel 1: as they are; panels 2 and 3: the same lines only very slightly softer-looking each time, none disappearing. The change is small and realistic, never dramatic. Same Indian woman in her early 40s with medium-brown skin, an identical close crop of the forehead and temple (no eyes) in every panel. In every panel the lower-right corner (about 30% of the panel width and 40% of its height) is a plain, softly lit area that is intentionally empty, reserved for the real pack to be placed later. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\retinol-0-3-q10__t14.frames.png"
+ },
+ {
+  "h": "retinol-0-3-q10__t12",
+  "kind": "frames",
+  "image": "",
+  "prompt": "Create a photorealistic wide image made of two equal side-by-side panels separated by thin white gaps, the SAME adult with identical framing, angle and soft daylight from the upper left in every panel. the same Indian woman in her early 40s with medium-brown skin, identical close crop of the forehead and temple (no eyes), framing, angle and soft daylight from the upper left. Left panel: a few faint fine lines across the forehead; right panel: the same lines only very slightly softer-looking, none disappearing. The difference is small and realistic, never dramatic; skin keeps natural pores and texture. Natural skin texture with visible pores, not airbrushed. Do not include: any product, bottle, tube, jar, dropper or packaging, any text, letters, labels, logos or brand names. No eyes or lips if the panels are skin close-ups. Wide 3:2 image.",
+  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-g1\\backgrounds\\retinol-0-3-q10__t12.frames.png"
+ }
+]

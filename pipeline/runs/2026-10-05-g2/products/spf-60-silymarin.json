@@ -1,0 +1,206 @@
+{
+  "url": "https://beminimalist.co/products/spf-60-silymarin",
+  "title": "SPF 60 Sunscreen",
+  "actives": [
+    {
+      "name": "SPF",
+      "pct": "60"
+    }
+  ],
+  "price": 539,
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/products/SPF601200-2-min.png?v=1646571969",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/SPF_60_2.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/SPF_60_3.png?v=1724763872",
+    "https://cdn.shopify.com/s/files/1/0410/9608/5665/files/SPF_60_4.png?v=1724763872"
+  ],
+  "facts": [
+    {
+      "id": "F1",
+      "section": "Product name",
+      "kind": "name",
+      "text": "SPF 60 Sunscreen"
+    },
+    {
+      "id": "F2",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "Broad spectrum SPF 60, PA++++"
+    },
+    {
+      "id": "F3",
+      "section": "Tagline / description",
+      "kind": "claim",
+      "text": "An antioxidant-rich SPF, that is light-as-air and provides overall protection from UV through most modern filters. It applies invisibly on all skin tones and does not pill or leave a nasty white cast. It is reef safe and free of OMC, Benzophenone / Oxybenzone, and Homosalate. A broad spectrum SPF 60 with PA++++ rating."
+    },
+    {
+      "id": "F4",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Combination of new-age, highly-effective, photostable filters - Tinosorb S, Uvinul A Plus, & Uvinul T 150. These are further boosted by Titanium Dioxide"
+    },
+    {
+      "id": "F5",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Infused with anti-oxidant, Silymarin. A strong free radical scavenger, and it reduces inflammation and photodamages in the skin after UV irradiation"
+    },
+    {
+      "id": "F6",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "Thoroughly tested by an independent lab and confirmed SPF of 60 was obtained"
+    },
+    {
+      "id": "F7",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "It is Photostable, Pregnancy Safe, Acne Safe sunscreen. Also it spreads easily like a lightweight moisturiser and does not leave behind unwated residue or heavy feeling or any white cast"
+    },
+    {
+      "id": "F8",
+      "section": "What Makes It Potent?",
+      "kind": "claim",
+      "text": "The primary filters are sourced from BASF, Germany"
+    },
+    {
+      "id": "F9",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Skin type: All skin types"
+    },
+    {
+      "id": "F10",
+      "section": "Ideal For",
+      "kind": "suitability",
+      "text": "Concerns: Sun protection, UV exposure/damage"
+    },
+    {
+      "id": "F11",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "This sunscreen is tested in an independent third party lab to confirm the level of protection it provides. Below is the lab report and the data points."
+    },
+    {
+      "id": "F12",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Test type : IN-VIVO EVALUATION OF SUN PROTECTION & UVA PROTECTION BY"
+    },
+    {
+      "id": "F13",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "INTERNATIONAL STANDARD – ISO 24444:2019 & ISO 24442:2022 respectively."
+    },
+    {
+      "id": "F14",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Study Numbers : MS25.SPF.A2899.UPPL.ISO24444.ST10.REP & MS25.UVA.A2899.UPPL.ISO24442.10.REP"
+    },
+    {
+      "id": "F15",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "SPF value obtained : 66.6"
+    },
+    {
+      "id": "F16",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "PA rating : ++++"
+    },
+    {
+      "id": "F17",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "(Data based on in-vivo tests conducted by Advanced Science Laboratories, an independent third party product testing lab)"
+    },
+    {
+      "id": "F18",
+      "section": "Clinical Results",
+      "kind": "study",
+      "text": "Note: The product has been evaluated for safety through patch testing under the supervision of a Dermatologist."
+    },
+    {
+      "id": "F19",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "Apply on cleansed face after all your serums and moisturisers. Apply generously & evenly on your face and neck. Apply sunscreen at least 15 minutes before sun exposure. For added protection, reapply in case of continued sun exposure, swimming, perspiring or towel drying."
+    },
+    {
+      "id": "F20",
+      "section": "How to Use",
+      "kind": "usage",
+      "text": "When to use: AM. Everyday."
+    },
+    {
+      "id": "F21",
+      "section": "Tinosorb S",
+      "kind": "ingredient_note",
+      "text": "A new-age, highly effective, organic, oil based broad-spectrum UVA and UVB filter and it helps to prevent long term skin damage"
+    },
+    {
+      "id": "F22",
+      "section": "Uvinul A Plus",
+      "kind": "ingredient_note",
+      "text": "Another modern filter from BASF’s (Germany) portfolio, Uvinul A Plus not only reliably filters the sun’s dangerous UVA rays, but also provides outstanding protection from free radicals and skin damage"
+    },
+    {
+      "id": "F23",
+      "section": "Silymarin Extract",
+      "kind": "ingredient_note",
+      "text": "A strong anti-oxidant, and a strong free radical scavenger, it reduces inflammation and photodamages in the skin after UV irradiation. Silymarin offers a powerful shield against urban environmental stress"
+    },
+    {
+      "id": "F24",
+      "section": "All Ingredients",
+      "kind": "inci",
+      "text": "Water/Aqua, Isododecane, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Ethylhexyl Triazone, Arachidyl Alcohol, Propylene Glycol Dicaprylate/Dicaprate, Diisopropyl Sebacate, Titanium Dioxide (nano), Caprylic/Capric Triglyceride, Nylon-12, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butylene Glycol, Diisopropyl Adipate, C12-15 Alkyl Benzoate, PEG 100-Stearate, Glyceryl Stearate, Behenyl Alcohol, Silybum Marianum Extract, Sodium Hyaluronate, Tocopheryl Acetate, Arachidyl Glucoside, Xanthan Gum, Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer, Polyacrylate Crosspolymer-6, Acacia Senegal Gum, Allantoin, Phenoxyethanol, Ethylhexylglycerin, Trisodium Ethylenediamine Disuccinate"
+    },
+    {
+      "id": "F25",
+      "section": "Does this sunscreen leave a white cast?",
+      "kind": "faq",
+      "text": "No. It does not leave any white cast or unwanted residue behind, after application."
+    },
+    {
+      "id": "F26",
+      "section": "Is it safe for all skin types?",
+      "kind": "faq",
+      "text": "Yes. This is a light-weight sunscreen suitable for all skin types."
+    },
+    {
+      "id": "F27",
+      "section": "Can pregnant or lactating women use this sunscreen?",
+      "kind": "faq",
+      "text": "Yes. This sunscreen uses all modern filters that are termed safe during pregnancy & lactation period."
+    },
+    {
+      "id": "OFFER1",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Build Your Own Bundle — Save an additional up to 15% off\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    },
+    {
+      "id": "OFFER2",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Upto 33% OFF + Freebies\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER3",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Buy 2, Get 3rd Free\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/pages/minimalist-b2g3rdfree-one-product-free"
+    },
+    {
+      "id": "OFFER4",
+      "kind": "offer",
+      "section": "sitewide offer (website banner)",
+      "text": "\"Get Additional Free Gifts on orders above ₹1199\" — beminimalist.co homepage, captured 2026-10-02, no end date shown; terms: https://beminimalist.co/apps/gbb/easybundle/1"
+    }
+  ],
+  "source": "page"
+}
