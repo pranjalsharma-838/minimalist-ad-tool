@@ -328,17 +328,20 @@ LAYOUTS.callouts = (spec, s) => {
   const { w } = SIZE;
   const parts = chromeStart(spec, "full");
   const y0 = headlineBlock(parts, spec.headline, PAD, 130, w - 2 * PAD, s, 40) + Math.round(30 * s);
-  const px0 = 400, pw = 280, ph = Math.min(470, BAND_Y - 40 - y0);
+  // With ≤ 2 callouts (the lean house brief) the right-hand slots stayed empty and the right of the frame was blank
+  // (user review 2026-10-05): then the pack moves right and grows, and the callouts stack on the left pointing at it.
+  const few = (spec.callouts || []).length <= 2;
+  const px0 = few ? 560 : 400, pw = few ? 420 : 280, ph = Math.min(few ? 620 : 470, BAND_Y - 40 - y0);
   parts.push(pack(spec, spec.imageHref, px0, y0, pw, ph));
-  const slots = [[PAD, y0 + 40, "L"], [PAD, y0 + ph * 0.55, "L"], [px0 + pw + 40, y0 + 40, "R"], [px0 + pw + 40, y0 + ph * 0.55, "R"]];
+  const slots = few ? [[PAD, y0 + ph * 0.22, "L"], [PAD, y0 + ph * 0.58, "L"]] : [[PAD, y0 + 40, "L"], [PAD, y0 + ph * 0.55, "L"], [px0 + pw + 40, y0 + 40, "R"], [px0 + pw + 40, y0 + ph * 0.55, "R"]];
   let bottom = y0 + ph;
   (spec.callouts || []).slice(0, 4).forEach((c, i) => {
     const [x, y, side] = slots[i];
-    const lines = wrap(c.text, Math.round(22 * s), 250);
-    parts.push(T(lines, x, y + 22, Math.round(22 * s), Math.round(28 * s), `font-weight="500" fill="${C.ink}"`));
-    const ly = y + 12;
+    const lines = wrap(c.text, Math.round((few ? 26 : 22) * s), few ? 380 : 250);
+    parts.push(T(lines, x, y + 22, Math.round((few ? 26 : 22) * s), Math.round((few ? 33 : 28) * s), `font-weight="500" fill="${C.ink}"`));
+    const ly = y + 12, lx = few ? x + 390 : x + 262;
     parts.push(side === "L"
-      ? `<line x1="${x + 262}" y1="${ly}" x2="${px0 - 6}" y2="${ly + 30}" stroke="${C.ink}" stroke-width="1.5"/><circle cx="${px0 - 6}" cy="${ly + 30}" r="4" fill="${C.ink}"/>`
+      ? `<line x1="${lx}" y1="${ly}" x2="${px0 + (few ? 60 : -6)}" y2="${ly + 30}" stroke="${C.ink}" stroke-width="1.5"/><circle cx="${px0 + (few ? 60 : -6)}" cy="${ly + 30}" r="4" fill="${C.ink}"/>`
       : `<line x1="${x - 12}" y1="${ly}" x2="${px0 + pw + 6}" y2="${ly + 30}" stroke="${C.ink}" stroke-width="1.5"/><circle cx="${px0 + pw + 6}" cy="${ly + 30}" r="4" fill="${C.ink}"/>`);
     bottom = Math.max(bottom, y + 22 + (lines.length - 1) * 28);
   });

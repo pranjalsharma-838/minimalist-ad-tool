@@ -1,7 +1,7 @@
 {
-  "version": "0.3",
+  "version": "0.4",
   "derived": "2026-10-02",
-  "how_to_read": "Each rule: dimension (policy | tone | language), severity (block = export disabled; fix = must change or attach substantiation; advisory = never blocks), sources (ids in research/regulatory_sources.md and research/brand_corpus.md), confidence (how solid the basis is). Patterns are case-insensitive JavaScript regexes run on each ad field after Minimalist product names are masked. 'provenance: downgrade' lowers severity one step when the same wording appears on the attached product page. creator_severity applies to creator/paid-partnership ads. Source ids: research/regulatory_sources.md (REG entries, OPEN-Qn = open questions for legal), research/brand_corpus.md (BRAND-§n), research/ad_corpus_notes.md (AD-CORPUS).",
+  "how_to_read": "Each rule: dimension (policy | tone | language), severity (block = export disabled; fix = must change or attach substantiation; advisory = never blocks), sources (ids in research/regulatory_sources.md and research/brand_corpus.md), confidence (how solid the basis is). Patterns are case-insensitive JavaScript regexes run on each ad field after Minimalist product names are masked. 'provenance: downgrade' lowers severity one step when the same wording appears on the attached product page. creator_severity applies to creator/paid-partnership ads. Source ids: research/regulatory_sources.md (REG entries, OPEN-Qn = open questions for legal), research/brand_corpus.md (BRAND-§n), research/ad_corpus_notes.md (AD-CORPUS). policy_checked / source_urls / policy_note (added 2026-10-05): the date each rule's legal and platform sources were last re-opened, the URLs actually opened, and what changed (full record: research/policy_check_2026-10-05.json).",
   "rules": [
     {
       "id": "CLM-01",
@@ -39,7 +39,14 @@
         "pass": [
           "Helps reduce the look of blemishes with 2% Salicylic Acid"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/acts_and_rules/Drugs%20and%20Cosmetics%20Act,%201940.pdf",
+        "https://cbfcindia.gov.in/cbfcAdmin/assets/pdf/Drugs.pdf",
+        "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap"
+      ],
+      "policy_note": "All 4 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-02",
@@ -72,7 +79,12 @@
         "pass": [
           "For oily, acne-prone skin"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/acts_and_rules/Drugs%20and%20Cosmetics%20Act,%201940.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-03",
@@ -112,7 +124,14 @@
         "pass": [
           "Leaves no visible white cast on application"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-04",
@@ -145,7 +164,12 @@
         "pass": [
           "Visibly reduces the appearance of dark spots"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-05",
@@ -182,7 +206,14 @@
         "pass": [
           "Fragrance free. Patch tested under dermatological supervision."
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-06",
@@ -216,7 +247,14 @@
         "pass": [
           "Helps fade the look of dark spots for a more even-looking tone"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code-guidelines/",
+        "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-07",
@@ -254,7 +292,15 @@
         "pass": [
           "90% subjects noticed visible skin clarity in 4 weeks* (*consumer perception study)"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+        "https://support.google.com/adspolicy/answer/15936857?hl=en"
+      ],
+      "policy_note": "All 7 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-08",
@@ -286,7 +332,14 @@
         "pass": [
           "97% subjects said skin felt less oily after 2 weeks* (*consumer perception study)"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-09",
@@ -323,7 +376,13 @@
         "pass": [
           "Patch tested for safety under the supervision of a Dermatologist"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-10",
@@ -354,14 +413,20 @@
         "pass": [
           "In-vivo tested by an independent third-party lab"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap",
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 4 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-11",
       "dimension": "policy",
       "title": "Superlative or leadership claim",
       "severity": "fix",
-      "rationale": "'Best', '#1', 'bestselling', 'India's first' need current, objective market data, and the claim's basis must be stated.",
+      "rationale": "'Best', '#1', 'bestselling', 'India's first' need current, objective market data, and the claim's basis must be stated. Update 2026-10-05: ASCI's Annual Complaints Report 2025-26 names 'Only product in India with…' as a common unsubstantiated beauty claim, so uniqueness claims ('only serum in India with…') are caught too.",
       "patterns": [
         "\\bbest\\b",
         "(#|\\bno\\.?\\s?)1\\b",
@@ -369,7 +434,9 @@
         "\\bbest[- ]?sell(ing|er|ers)\\b",
         "\\b(india|world)'?s\\s+(first|largest|biggest|most|favou?rite|best|#1|no\\.?\\s?1)\\b",
         "\\b(most|only)\\s+(effective|trusted|potent|advanced|loved)\\b",
-        "\\bunbeatable\\b"
+        "\\bunbeatable\\b",
+        "\\bonly\\s+([\\w%.+-]+\\s+){0,3}(product|serum|sunscreen|moisturi[sz]er|cleanser|toner|brand|formula|face wash)s?\\s+(in india|in the world|with|to have)\\b",
+        "\\b(india|world)'?s\\s+only\\b"
       ],
       "unless_same_sentence": [
         "for best results",
@@ -384,18 +451,30 @@
         "ASCI-1.5",
         "ASCI-G-AWARD",
         "ASCI-RPT-BPC",
-        "BRAND-§4.2"
+        "BRAND-§4.2",
+        "ASCI-RPT-ANNUAL-2526",
+        "EU-655-4/5/6"
       ],
       "confidence": "VERIFIED regulation; accepted data sources are open question Q9",
       "examples": {
         "fail": [
           "Bestselling Sunscreen For Summer",
-          "Only the best"
+          "Only the best",
+          "The only serum in India with 10% Niacinamide and Zinc"
         ],
         "pass": [
           "Use daily for best results"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://www.ascionline.in/the-asci-code-guidelines/",
+        "https://www.ascionline.in/wp-content/uploads/2023/04/personal-care-report_compressed.pdf",
+        "https://www.ascionline.in/wp-content/uploads/2026/05/annual-complaints-report-25-26-final.pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0655"
+      ],
+      "policy_note": "All 7 source(s) re-opened 2026-10-05. Updated: ASCI-RPT-ANNUAL-2526 (changed); see research/regulatory_sources.md §H."
     },
     {
       "id": "CLM-12",
@@ -407,8 +486,8 @@
         "\\b\\d+(\\.\\d+)?\\s?(x|times)\\s+(more|better|stronger|faster|potent|effective)\\b",
         "\\b(more|better|stronger|faster)\\s+than\\s+(other|regular|ordinary|any|most|typical|leading)\\b",
         "\\bunlike\\s+[\\w-]+",
-                "\\b(higher|lower|gentler|milder|better|stronger)\\s+than\\b",
-                "\\b(vs|v/s|versus)\\b\\.?",
+        "\\b(higher|lower|gentler|milder|better|stronger)\\s+than\\b",
+        "\\b(vs|v/s|versus)\\b\\.?",
         "\\bother brands\\b",
         "\\bcompetitors?\\b",
         "\\bbenchmark\\b"
@@ -428,7 +507,13 @@
           "25% more reduction than the benchmark product"
         ],
         "pass": []
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0655"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-13",
@@ -458,19 +543,27 @@
           "Trusted by 100,000+ Women Across India"
         ],
         "pass": []
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-14",
       "dimension": "policy",
       "title": "Asserts the viewer's condition (personal attributes)",
       "severity": "fix",
-      "rationale": "Meta's policy prohibits ads that assert or imply a viewer's personal attributes, including health or medical conditions ('Do you have acne?', 'your eczema'). Such ads get rejected or restricted.",
+      "rationale": "Meta's policy prohibits ads that assert or imply a viewer's personal attributes, including health or medical conditions ('Do you have acne?', 'your eczema'). Such ads get rejected or restricted. Update 2026-10-05: Meta's current page still lists 'Ready to upgrade your skin to look younger?' as not allowed (age is a personal attribute), so 'your … look younger' is now caught too.",
       "patterns": [
         "\\b(do|did)\\s+you\\s+(have|suffer|get)\\b",
         "\\b(are|were)\\s+you\\s+(suffering|struggling|dealing)\\b",
         "(?<!\\b(those|people|anyone|someone|customers|users|who are|for)\\s)\\b(struggling|suffering)\\s+with\\s+([\\w-]+,?\\s+){0,2}(acne|pimples|breakouts|eczema|rosacea|melasma|dark spots|pigmentation|hair\\s?fall|hair loss|wrinkles|dull skin|oily skin)\\b",
-        "\\byour\\s+(acne|pimples|breakouts|eczema|rosacea|melasma|hair\\s?loss|bald\\w*|dark spots|pigmentation|wrinkles|stretch marks|oily skin|dull skin|scars)\\b"
+        "\\byour\\s+(acne|pimples|breakouts|eczema|rosacea|melasma|hair\\s?loss|bald\\w*|dark spots|pigmentation|wrinkles|stretch marks|oily skin|dull skin|scars)\\b",
+        "\\byour\\s+([\\w-]+\\s+){0,3}(look|looks|looking|appear|appears|feel|feels)\\s+younger\\b"
       ],
       "message": "Addressing the viewer's own skin condition can breach Meta's personal-attributes policy.",
       "fix": "Talk about the product and who it's formulated for ('for oily, acne-prone skin') instead of the viewer's condition.",
@@ -481,12 +574,18 @@
       "confidence": "VERIFIED platform policy (Meta's own examples)",
       "examples": {
         "fail": [
-          "Struggling with dark spots, acne marks, or uneven skin tone?"
+          "Struggling with dark spots, acne marks, or uneven skin tone?",
+          "Ready to upgrade your skin to look younger?"
         ],
         "pass": [
           "Formulated for oily, acne-prone skin"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/"
+      ],
+      "policy_note": "All 1 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-15",
@@ -515,7 +614,14 @@
           "See the transformation"
         ],
         "pass": []
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+        "https://www.ascionline.in/wp-content/uploads/2026/09/Guidelines-for-Responsible-Labelling-of-Synthetically-Generated-Content-in-Advertising.pdf",
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 5 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-16",
@@ -546,7 +652,14 @@
         "pass": [
           "Buy any 2 products and get a freebie of your choice"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://www.ascionline.in/the-asci-code/",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      ],
+      "policy_note": "All 4 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-17",
@@ -574,7 +687,13 @@
           "Safe for pregnancy"
         ],
         "pass": []
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-18",
@@ -611,7 +730,15 @@
         "pass": [
           "Broad Spectrum SPF 50, PA++++"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-21?part=201&section=201.327",
+        "https://standardsbis.bsbedge.com/BIS_SearchStandard.aspx?Standard_Number=IS%2017494&id=0",
+        "https://www.ascionline.in/wp-content/uploads/2026/08/Press-Release-The-Heat-Is-On.pdf",
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 6 source(s) re-opened 2026-10-05. Updated: FDA-OTC-ACNE-SPF (changed); see research/regulatory_sources.md §H."
     },
     {
       "id": "CLM-19",
@@ -627,7 +754,13 @@
         "CCPA-4",
         "BRAND-§2.5"
       ],
-      "confidence": "deterministic check against the product page / catalog"
+      "confidence": "deterministic check against the product page / catalog",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-20",
@@ -644,7 +777,13 @@
         "BRAND-§2.1",
         "BRAND-§6"
       ],
-      "confidence": "deterministic check against the product page / catalog"
+      "confidence": "deterministic check against the product page / catalog",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-21",
@@ -660,7 +799,13 @@
         "GADS-UNREL",
         "CCPA-14"
       ],
-      "confidence": "VERIFIED regulation"
+      "confidence": "VERIFIED regulation",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://support.google.com/adspolicy/answer/15936857?hl=en"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-22",
@@ -695,7 +840,14 @@
         "pass": [
           "Oil control that lasts all day"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://transparency.meta.com/policies/ad-standards/restricted-goods-services/health-wellness/",
+        "https://www.ascionline.in/the-asci-code/",
+        "https://www.ascionline.in/the-asci-code-guidelines/"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-23",
@@ -712,7 +864,14 @@
         "CCPA-4",
         "OPEN-Q5"
       ],
-      "confidence": "VERIFIED enforcement pattern; which SKUs have product studies is open question Q5"
+      "confidence": "VERIFIED enforcement pattern; which SKUs have product studies is open question Q5",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/wp-content/uploads/2023/04/personal-care-report_compressed.pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0655",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-24",
@@ -744,7 +903,13 @@
         "pass": [
           "helps reduce the look of dark spots"
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://cbfcindia.gov.in/cbfcAdmin/assets/pdf/Drugs.pdf",
+        "https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-25",
@@ -763,7 +928,12 @@
       "sources": [
         "ASCI-G-NEW"
       ],
-      "confidence": "VERIFIED regulation"
+      "confidence": "VERIFIED regulation",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code-guidelines/"
+      ],
+      "policy_note": "All 1 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CLM-26",
@@ -782,7 +952,13 @@
         "CDSCO-PN-2026",
         "OPEN-Q1"
       ],
-      "confidence": "VERIFIED definition; CDSCO 2026 notice is SECONDARY"
+      "confidence": "VERIFIED definition; CDSCO 2026 notice is SECONDARY",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2022/acts_and_rules/Drugs%20and%20Cosmetics%20Act,%201940.pdf",
+        "https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadPublic_NoticesFiles/Public%20Notice%20dated%2018.05.2026.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05. Updated: CDSCO-PN-2026 (changed); see research/regulatory_sources.md §H."
     },
     {
       "id": "CLM-27",
@@ -802,7 +978,13 @@
         "EU-655-4/5/6",
         "BRAND-§6-S3"
       ],
-      "confidence": "VERIFIED enforcement pattern + brand stated"
+      "confidence": "VERIFIED enforcement pattern + brand stated",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/wp-content/uploads/2023/04/personal-care-report_compressed.pdf",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32013R0655"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "CRE-01",
@@ -817,7 +999,36 @@
         "CCPA-14",
         "CCPA-13"
       ],
-      "confidence": "VERIFIED regulation"
+      "confidence": "VERIFIED regulation",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code-guidelines/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
+    },
+    {
+      "id": "AI-01",
+      "dimension": "policy",
+      "title": "AI-generated person, voice or result without a label, or used as a testimonial / result",
+      "severity": "fix",
+      "computed": "synthetic_content",
+      "rationale": "ASCI's Guidelines for Responsible Labelling of Synthetically Generated Content in Advertising (signed 17 Sep 2026, released 29 Sep 2026, in force 3 months after publication, so from about 17-29 Dec 2026) make a visible label ('Created using AI', 'AI-generated') mandatory when synthetic people, likeness, voice or settings materially shape the ad, and prohibit, even with a label, AI-made result images and fabricated endorsements or testimonials. Runs only when the caller says which parts are AI-made (ctx.synthetic), because the scorer reads text, not pixels.",
+      "message": "AI-generated content shapes this ad but no 'Created using AI' / 'AI-generated' label is on the creative.",
+      "fix": "Put a visible label on the image ('AI-generated — illustrative'), not only in the caption. Never use AI for result images or for a person giving a testimonial or recommendation: replace them with real, consented photos.",
+      "sources": [
+        "ASCI-G-SGC",
+        "ASCI-1.4",
+        "CCPA-13"
+      ],
+      "confidence": "VERIFIED (ASCI guideline, final text, 2026)",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/wp-content/uploads/2026/09/Guidelines-for-Responsible-Labelling-of-Synthetically-Generated-Content-in-Advertising.pdf",
+        "https://www.ascionline.in/the-asci-code/",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "TON-01",
@@ -853,7 +1064,12 @@
         "pass": [
           "A daily serum formulated with pure Vitamin B3 (Niacinamide) and Matmarine."
         ]
-      }
+      },
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://transparency.meta.com/policies/ad-standards/objectionable-content/privacy-violations-personal-attributes/"
+      ],
+      "policy_note": "All 1 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "TON-02",
@@ -892,7 +1108,9 @@
           "for that flawless matt looking skin"
         ],
         "pass": []
-      }
+      },
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "TON-03",
@@ -909,7 +1127,9 @@
         "BRAND-§5",
         "AD-CORPUS"
       ],
-      "confidence": "brand observed"
+      "confidence": "brand observed",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "TON-04",
@@ -925,7 +1145,9 @@
       "sources": [
         "BRAND-§5"
       ],
-      "confidence": "brand observed"
+      "confidence": "brand observed",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "TON-05",
@@ -951,7 +1173,13 @@
         "ASCI-G-DARK",
         "CCPA-DP"
       ],
-      "confidence": "brand observed + regulation (dark-pattern guidance, if confirmed)"
+      "confidence": "brand observed + regulation (dark-pattern guidance, if confirmed)",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://www.ascionline.in/the-asci-code-guidelines/",
+        "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "TON-06",
@@ -967,7 +1195,9 @@
         "BRAND-§5",
         "BRAND-§6"
       ],
-      "confidence": "brand stated + judgment"
+      "confidence": "brand stated + judgment",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "LNG-01",
@@ -983,7 +1213,9 @@
         "BRAND-§2.1",
         "BRAND-§6"
       ],
-      "confidence": "brand observed"
+      "confidence": "brand observed",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "LNG-02",
@@ -1002,7 +1234,9 @@
       "sources": [
         "BRAND-§2.2"
       ],
-      "confidence": "brand observed"
+      "confidence": "brand observed",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "LNG-03",
@@ -1023,7 +1257,9 @@
       "sources": [
         "BRAND-§6-S3"
       ],
-      "confidence": "brand stated"
+      "confidence": "brand stated",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "LNG-04",
@@ -1038,7 +1274,9 @@
       "sources": [
         "BRAND-§3.4"
       ],
-      "confidence": "brand observed (mixed evidence: the brand is itself inconsistent)"
+      "confidence": "brand observed (mixed evidence: the brand is itself inconsistent)",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "LNG-05",
@@ -1055,7 +1293,9 @@
       "sources": [
         "BRAND-§3.3"
       ],
-      "confidence": "brand observed"
+      "confidence": "brand observed",
+      "policy_checked": null,
+      "policy_note": "Brand voice rule: rests on the brand's own corpus, no regulatory source to re-check."
     },
     {
       "id": "OFR-01",
@@ -1071,7 +1311,14 @@
         "ASCI-1.1",
         "CPA-2(28)"
       ],
-      "confidence": "deterministic check against the dated offer capture"
+      "confidence": "deterministic check against the dated offer capture",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://www.ascionline.in/the-asci-code/",
+        "https://consumeraffairs.gov.in/public/upload/files/CP%20Act%202019_1732700731.pdf"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "OFR-02",
@@ -1092,7 +1339,13 @@
         "CCPA-12",
         "ASCI-1.1"
       ],
-      "confidence": "VERIFIED source; pattern-level"
+      "confidence": "VERIFIED source; pattern-level",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://www.ascionline.in/the-asci-code/"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "OFR-03",
@@ -1107,7 +1360,13 @@
         "CCPA-DP",
         "CCPA-5"
       ],
-      "confidence": "VERIFIED source; computed against captured expiry"
+      "confidence": "VERIFIED source; computed against captured expiry",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/The%20Guidelines%20for%20Prevention%20and%20Regulation%20of%20Dark%20Patterns,%202023_1732707717.pdf",
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf"
+      ],
+      "policy_note": "All 2 source(s) re-opened 2026-10-05; wording unchanged."
     },
     {
       "id": "OFR-04",
@@ -1123,7 +1382,14 @@
         "CCPA-11",
         "ASCI-G-DISC"
       ],
-      "confidence": "VERIFIED source; computed"
+      "confidence": "VERIFIED source; computed",
+      "policy_checked": "2026-10-05",
+      "source_urls": [
+        "https://ccpa.doca.gov.in/files/CCPA_Notification.pdf",
+        "https://www.ascionline.in/the-asci-code-guidelines/"
+      ],
+      "policy_note": "All 3 source(s) re-opened 2026-10-05; wording unchanged."
     }
-  ]
+  ],
+  "policy_checked": "2026-10-05"
 }

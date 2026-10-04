@@ -156,9 +156,9 @@ Primary URLs: https://www.ascionline.in/the-asci-code/ and the numbered book htt
 > The category list includes "Sun protection products", "Before and after sun products", "Self-tanning products", "Anti hair loss products".
 - Means: in India, sunscreens and anti-hair-loss products are registrable as cosmetics, unlike the US (see FDA-DEF). A cosmetic SPF claim is still subject to substantiation (entry 63, Q4). Violates: n/a. This entry tells the scorer not to flag "SPF 50" as a drug claim for India.
 
-**33. CDSCO-PN-2026** · CDSCO Public Notice COS-12/1/2026-eoffice · SECONDARY (Luthra & Luthra note, June 2026; the primary CDSCO link was not opened)
+**33. CDSCO-PN-2026** · CDSCO Public Notice COS-12/1/2026-eoffice, dated 18.05.2026 · VERIFIED 2026-10-05 (primary CDSCO copy opened; earlier SECONDARY via a law-firm note)
 > PARAPHRASE: CDSCO restated that cosmetics may only be applied as the s. 3(aaa) definition allows, "no cosmetic is permitted to be used in treatment by professionals/individuals", and that "misleading claims on label, use of cosmetics for treatment and application of cosmetic through injection" violate the Act and the Cosmetics Rules.
-- URL: https://luthra.com/wp-content/uploads/2026/06/Public-Notice-on-Regulation-of-Cosmetics.pdf
+- URL: https://cdsco.gov.in/opencms/resources/UploadCDSCOWeb/2018/UploadPublic_NoticesFiles/Public%20Notice%20dated%2018.05.2026.pdf (primary; verbatim: "no cosmetic is permitted to be used in treatment by professionals/ individuals")
 - Means: the regulator is actively watching "treatment" positioning for cosmetics this year. Violates: "Clinic-grade treatment for melasma at home". Rewrite: "Targets the look of dark spots and uneven tone".
 
 ## C. Drugs and Magic Remedies (Objectionable Advertisements) Act 1954 (India)
@@ -285,7 +285,7 @@ Source read: government-hosted copy at https://cbfcindia.gov.in/cbfcAdmin/assets
 - URL: https://www.fda.gov/cosmetics/cosmetics-laws-regulations/it-cosmetic-drug-or-both-or-it-soap
 - Means: in US ads, "reduces melanin production", "regenerates cells", any SPF claim, and hair-regrowth claims all make the product a drug. Violates (US): "Alpha arbutin inhibits melanin production". Rewrite (US): "Helps reduce the look of dark spots".
 
-**59. FDA-OTC-ACNE-SPF** · US OTC drug monographs (acne; sunscreen) · UNVERIFIED (from memory; eCFR was bot-blocked today)
+**59. FDA-OTC-ACNE-SPF** · US OTC drug monographs (acne; sunscreen) · VERIFIED 2026-10-05 (eCFR opened; correction: sunscreen labelling is 21 CFR 201.327, acne is 21 CFR 333 Subpart D)
 > PARAPHRASE: in the US, topical acne products (for example salicylic acid 0.5-2%, benzoyl peroxide) and sunscreens are OTC drugs governed by FDA monographs (formerly 21 CFR 333 Subpart D for acne and 21 CFR 352 for sunscreens; now OTC monograph orders under the 2020 CARES Act reform). They need Drug Facts labelling, and only monograph-permitted claims are allowed (for example "Broad Spectrum SPF [value]", with "water resistant (40/80 minutes)" only when tested).
 - Means: a US-targeted "Salicylic 2% fights acne" or "SPF 50" ad is a drug ad. It must match the monograph-compliant US label. Violates (US): "Sweat-proof SPF 50". Rewrite (US): "Broad Spectrum SPF 50, water resistant (80 minutes)", if tested.
 
@@ -302,7 +302,7 @@ Source read: government-hosted copy at https://cbfcindia.gov.in/cbfcAdmin/assets
 > 4(1): "Presentations of a product's performance shall not go beyond the available supporting evidence." 4(2): "Claims shall not attribute to the product concerned specific (i.e. unique) characteristics if similar products possess the same characteristics." 5(1): Claims "shall not denigrate the competitors, nor shall they denigrate ingredients legally used." 6(1): "Claims shall be clear and understandable to the average end user."
 - Means: "paraben-free because parabens are toxic" denigrates a legal ingredient, and "the only serum with 10% niacinamide" breaks the uniqueness rule. Rewrite: "Fragrance-free; suitable for sensitive skin" (if tested).
 
-**63. BIS-SPF** · BIS IS 17494:2025 (ISO 24444:2019, MOD), in-vivo SPF test method (India) · SECONDARY (BIS e-sale catalogue listing seen in search results, plus ChemLinked database)
+**63. BIS-SPF** · BIS IS 17494:2025 (ISO 24444:2019, MOD), in-vivo SPF test method (India) · VERIFIED 2026-10-05 on the BIS e-sale store (Edition 2025, active, 0 amendments); not made mandatory by the Cosmetics Rules (see Q4)
 > PARAPHRASE: the Indian Standard specifies the in-vivo determination of SPF and is a modified adoption of ISO 24444:2019. Whether it is mandatory for SPF claims was not confirmed in primary text.
 - URL: https://standardsbis.bsbedge.com/ (search "IS 17494"); https://cosmetic.chemlinked.com/ (database entry)
 - Means: SPF numbers in India-facing ads should be backed by IS 17494 / ISO 24444 in-vivo testing on the finished product. Violates: "SPF 50" backed only by in-vitro or supplier data. Rewrite: keep the SPF value matched to the in-vivo report on file (Q4).
@@ -335,8 +335,25 @@ These are genuinely ambiguous. The pre-screen should route matching lines to "ne
 - URL: https://www.ascionline.in/wp-content/uploads/2024/07/Kco-WhitePaper-GenAI-D11-DIGITAL_LowRes.pdf
 - Use: supports our house rule that AI-generated people, skin or results carry a visible "AI-GENERATED — ILLUSTRATIVE" mark and are never presented as real results.
 
-**65. ASCI-AI-2026 (PENDING)** · ASCI guidance on AI-generated content in advertising, expected Dec 2026 · NOT YET PUBLISHED as of 2026-10-03
+**65. ASCI-AI-2026 (SUPERSEDED 2026-10-05)** · now published as ASCI-G-SGC (entry 26): signed 17 Sep 2026, released 29 Sep 2026, in force 3 months after publication (about 17-29 Dec 2026). The line below was the pre-publication note
 - Action when published: read it, update `lib/image_prompt_check.js` (AI label rules) and add rules to `rules/brand_rules.json`.
 
 **66. CDSCO-NOTICES** · CDSCO public notices page, watched for cosmetics/claims notices (complements CDSCO-PN-2026) · WATCH
 - URL: https://cdsco.gov.in/opencms/opencms/en/Notifications/Public-Notices/
+
+---
+
+## H. Re-check of 2026-10-05 (what changed)
+
+Every legal and platform source cited by a rule (49 ids) was re-opened on 2026-10-05 with node fetch or a browser; none was taken from a search summary. Each rule in `rules/brand_rules.json` now has `policy_checked`, `source_urls` and `policy_note`; the full record (URL opened, version, a verbatim quote, notes) is `research/policy_check_2026-10-05.json`. Plain-English summary:
+
+- **No change in wording** for the ASCI Code (Codes & Guidelines Book, edition August 2025, still the latest), the ASCI guidelines on disclaimers, fairness, awards/rankings, "new", influencers (incl. the health addendum), gender and dark patterns; the CCPA misleading-ads guidelines (2022, no amendment) and dark-patterns guidelines (2023, no amendment); the D&C Act definitions; Cosmetics Rules r.36 (the only 2025 amendment, G.S.R. 513(E) of 29 Jul 2025, doesn't touch it); the DMR Act s.2, s.3 and Schedule; CPA s.2(28); Meta's Health & Wellness and Personal Attributes pages; Google's unreliable-claims page; FDA's cosmetic/drug page; EU 655/2013.
+- **ASCI-G-SGC (AI / synthetic content): published.** Signed 17 Sep 2026, released 29 Sep 2026, in force 3 months after publication (about 17-29 Dec 2026; plan for 17 Dec). Entry 65 was out of date. → **New rule AI-01** (fix when AI-made people, voice, likeness or settings shape the ad with no visible "Created using AI" / "AI-generated" label; **block** for AI result images or an AI person giving a testimonial, which the guideline prohibits even with a label). It runs only when the caller says what is AI-made (`ctx.synthetic`), because the scorer reads text, not pixels.
+- **META-PA re-read:** Meta still lists "Ready to upgrade your skin to look younger?" as not allowed. → **CLM-14 extended** to "your … look younger".
+- **New source ASCI-RPT-ANNUAL-2526** (ASCI Annual Complaints Report 2025-26, May 2026, https://www.ascionline.in/wp-content/uploads/2026/05/annual-complaints-report-25-26-final.pdf): 639 beauty & personal care cases, 90% needed changes; names "Only product in India with…" as a common unsubstantiated claim. → **CLM-11 extended** to uniqueness claims ("only serum in India with…", "India's only…"). Its other patterns (guaranteed/rapid results, chemical-free, influencer result claims) were already covered.
+- **Upgraded to VERIFIED:** CDSCO-PN-2026 (primary CDSCO PDF, dated 18.05.2026), FDA-OTC-ACNE-SPF (eCFR; corrected citation 21 CFR 201.327), BIS-SPF (BIS store). No rule severity changed.
+- **CCPA dark patterns:** a CCPA advisory of 5 June 2025 asks e-commerce platforms to self-audit for dark patterns. It concerns platforms, not ad copy, so no new ad rule.
+- **Q4 (is IS 17494 mandatory?):** not shown to be. The Cosmetics Rules' Ninth Schedule lists product standards only, with no SPF test standard; BIS's compulsory-certification list didn't render, so a Quality Control Order can't be ruled out from primary text. Still a question for legal.
+- **Q11 (DMR Schedule expanded to fairness / ageing / greying?):** no notified amendment found in government copies of the Act or CDSCO's gazette list (the canonical India Code PDF timed out). Treat as not notified.
+- **Considered, not adopted** (no current Indian source requires a text rule, or it needs the rendered image): disclaimer legibility (ASCI-G-DISC; needs pixels, the style check already caps footnotes at 2 lines), US "water resistant (40/80 minutes)" wording (US only), "clinic-grade" positioning (CLM-26 already flags "treatment"), "X years younger" (ASCI report example; left to the AI judge, CLM-03/CLM-07 in spirit).
+- **Not changed:** the "fix, ask legal" vs "block" logic.
