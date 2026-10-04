@@ -48,3 +48,10 @@ The 3rd product is free when you buy 2. T&C apply. Morning rush? Lather on a wet
 
 ## Adaptation notes
 Kept: sticker lockup (Chemist at Play), MRP vs price pair and diagonal CTA strip (Conscious Chemist), seasonal kicker slot as a placeholder (Foxtale). Dropped: promo code, countdown, three-SKU stack. Situation: AM and PM use per F13/F14. Offer quoted exactly; eligibility and end date are placeholders.
+
+## Scores
+
+- Minimalist alignment: **90** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

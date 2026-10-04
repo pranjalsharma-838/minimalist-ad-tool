@@ -46,3 +46,11 @@ Salicylic Acid 2% Face Serum: apply 2-3 drops after cleansing & toning, in the P
 
 ## Adaptation notes
 Trending format (#13 Split-screen transformation): 3 brands. Frames carry routine-stage labels only, no result wording; the consumer-perception stat (F17) is quoted exactly with its qualifier. Severe (AI frames). Round 2 (judge): the stat now reads exactly as the study ('subjects') with an asterisk tied to its qualifier. CLM-15 stays (the format), hence Severe.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""; fix: CLM-15 "Week 2 · still in the routine"

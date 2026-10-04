@@ -45,3 +45,11 @@ Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page
 
 ## Adaptation notes
 Format #12 Before / after: kept the labelled stacked frames beside the pack. Dropped every result claim, time frame, struck price and clinical wording (the page has no before/after study for this product). The frames are illustrative AI skin crops showing a small, realistic change only; Severe, AI-labelled, not exportable until real consented study photos replace them. New 2-panel AI image needed.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""; fix: CLM-15 "The two frames are AI illustrations, not results."

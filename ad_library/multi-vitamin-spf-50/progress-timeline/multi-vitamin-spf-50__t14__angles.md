@@ -46,3 +46,11 @@
 
 ## Adaptation notes
 The page has no timed study (the only study is the SPF lab test, F13-F18), so frames carry routine-stage labels only (first use, daily habit, in the routine) and no result wording; the headline states a routine length, not an outcome. Kept: three equal labelled frames in a row (Re'equil), timeframe-led headline (Dr. Sheth's), footnote qualifier (Chemist at Play). Dropped: 'visible reduction in dark spots within 7 days', 'dermat recommended / clinically certified', any tan or UV-damage result, struck price. Footnote adds the page's reapplication instruction (F20) and the RATING. SPF 50 is the labelled value; the lab-measured value is not used. Frames are AI illustrations: Severe, not exportable until real photos replace them.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **73** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

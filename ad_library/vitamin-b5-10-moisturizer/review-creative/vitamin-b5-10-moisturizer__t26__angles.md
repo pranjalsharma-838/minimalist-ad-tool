@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Retry round 1 (judge CLM-21): the phrase 'keeps skin hydrated for long time' was removed, not reworded. REV5 (a 4-star verified buyer) is now quoted only up to 'Good product. Non greasy and great base' (a contiguous excerpt trimmed with …), which is sensory and carries no duration or efficacy claim. REV3 (results and two-week wording), REV4 ('very gentle', 'long lasting') and REV6 (sensitive-skin and calm wording) were skipped. Kept: dated verified review card on a calm scene (Dot & Key), customer-voice lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '5 stars' framing (this is a 4-star review), '15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

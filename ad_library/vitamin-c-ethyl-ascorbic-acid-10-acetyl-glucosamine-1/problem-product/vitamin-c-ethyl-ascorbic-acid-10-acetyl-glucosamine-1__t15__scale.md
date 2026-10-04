@@ -48,3 +48,10 @@ Ethyl Ascorbic Acid, 86% pure Vitamin C content. Press in with a circular motion
 
 ## Adaptation notes
 Kept: central pack with wired callout labels (Deconstruct), four-label arrangement (Re'equil), ingredient-to-benefit pairing (The Derma Co, reworded). Dropped: skin-concern thumbnails and named problems (fear framing and unsupported 'solves'), best-seller strip, '2 problems 2 actives'. Callouts name ingredients and what the page says they do.
+
+## Scores
+
+- Minimalist alignment: **95** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

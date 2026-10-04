@@ -45,3 +45,10 @@ With Matmarine, Zinc and Acetyl Glucosamine in a lightweight serum with no stick
 
 ## Adaptation notes
 Kept: the product-hero structure (one benefit headline, short tick-list of benefits, pack as hero) and the bright open mood, rebuilt as a calm studio. Dropped: the lifestyle model and oversized bottle (no people/skin), the 'In-Vivo Tested' sticker (no in-vivo test on this product's page), 'Dermatologically Tested' / 'Non-Comedogenic' (not on page), the time-bound '2 weeks' clinical claim in F6 (kept out to avoid a time-bound result promise), emoji and the question hook. Retry 2: replaced the Zinc sebum-activity claim with the page suitability wording (CLM-24).
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

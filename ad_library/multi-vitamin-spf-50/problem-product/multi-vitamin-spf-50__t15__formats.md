@@ -45,3 +45,11 @@ SPF 50 Sunscreen has 4 UV filters (Uvinul T 150, Avobenzone, Octocrylene and Tit
 
 ## Adaptation notes
 Format #15 Problem -> product: the 'problem' is the page's own concern line (UV exposure, F11), shown as plain text with no skin close-up or fear framing. Two callouts only (user note 2026-10-05; the layout puts the pack large on the right). Dropped: four-concern icon grid, best-seller strip, split face.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **60**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: UNLISTED "acne safe sunscreen"

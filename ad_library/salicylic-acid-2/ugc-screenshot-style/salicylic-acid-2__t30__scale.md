@@ -46,3 +46,10 @@ Start every alternate day; after 2 weeks of usage, use it everyday. [Creator nam
 
 ## Adaptation notes
 Kept: native video-thumbnail framing (Plum) and a casual confession-style caption box (Conscious Chemist). Dropped: unboxing 'X sent me' hook (no invented partner), makeup-industry claims, emoji. Routine is PM, alternate-day start, from F12/F13 only; no result implied. Re-sourced 2026-10-04 (statics only, user rule): the Plum video reference (video-thumbnail framing) was removed; that element is dropped and the static Conscious Chemist creator selfie (1390426132931304, 71d) supports the UGC look. Copy unchanged.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 No seasonal fact exists on the page, so the seasonal slot is a placeholder only. Kept: seasonal kicker slot (Deconstruct), sticker lockup used for the rating (Chemist at Play), diagonal CTA strip (Conscious Chemist). Dropped: gift hamper, struck MRP roundel, free pouch, countdown. Rating quoted verbatim.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

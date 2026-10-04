@@ -47,3 +47,11 @@ Niacinamide 10% Face Serum names its active and its strength, 10%, right on the 
 
 ## Adaptation notes
 Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The product page names no comparison for this product, so this is the TRANSPARENCY version of Us vs Them: what this pack states (the active's strength, F1) vs a label type that doesn't state it. 'Them' is a label type, never a brand; nothing says others hide anything. Dropped from the reference: 'India's 1st' (superlative, CLM-11), the claims list and the graph-paper look (house style is white). Risk High (comparison by implication): a reviewer confirms the basis before use.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **55**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-12 "vs"; fix: CLM-12 "vs"

@@ -46,3 +46,10 @@ Use on a cleansed face, after your serums and moisturisers. AM, every day. Reapp
 
 ## Adaptation notes
 Angle: human usage. Copy is the page's usage only: apply generously and evenly on face and neck, on a cleansed face after serums and moisturisers (F20), AM every day (F21), reapply with continued sun exposure (F20), labelled SPF 50 / PA++++ (F2). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline ('in 10 minutes'), '#1 daily duo', de-tan/brighten promises, any 'protection' absolutes, and the measured lab value (F16). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

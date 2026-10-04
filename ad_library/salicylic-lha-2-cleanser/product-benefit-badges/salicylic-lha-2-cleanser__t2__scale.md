@@ -45,3 +45,10 @@ A daily, gentle exfoliating face cleanser with BHA + LHA. Ratings from beminimal
 
 ## Adaptation notes
 Kept: highlight-bar headline (Deconstruct), tick-mark badge bullets (Chemist at Play), a credential-style strip of verifiable attributes (Pilgrim). Dropped: 'Treats hyperpigmentation', 'clinically certified/proven', India's-1st. Rating verbatim.
+
+## Scores
+
+- Minimalist alignment: **95** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

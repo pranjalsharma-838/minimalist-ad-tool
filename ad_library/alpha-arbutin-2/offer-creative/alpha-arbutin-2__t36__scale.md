@@ -45,3 +45,10 @@ Two to three drops, morning and night. 30ml: Rs. 494 (MRP Rs. 549), beminimalist
 
 ## Adaptation notes
 Concern used: a complicated routine. The listed 'answered by' facts (F19 usage, F29 ingredient list, F5) do not directly address irritation, dryness or texture, so the concern is the simple-routine one and is answered only by the usage facts F19/F20. Kept: offer-as-the-message lockup (Chemist at Play), struck MRP beside page price (Conscious Chemist), condition bar (Foxtale). Dropped: promo code, countdown and 'ends in hours' (invented/urgency), three-SKU stack. Offer quoted exactly from the homepage banner; end date and eligibility are placeholders.
+
+## Scores
+
+- Minimalist alignment: **91** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

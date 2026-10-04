@@ -46,3 +46,10 @@ Apply 2-3 drops after cleansing & toning; let it absorb fully before the next st
 
 ## Adaptation notes
 Angle: sensorial, from the page's texture and usage facts only: 'lightweight serum ... no sticky residue' (F8, quoted without the sebum and inflammation wording) and 'let the serum absorb fully' (F13). Kept: close hand-level application framing (Chemist at Play), finger-on-skin moment as the visual cue (Foxtale). Dropped: timed-fix headline, '#1 daily duo' device, pore, sebum and melanin outcomes, 'highly effective' superlative in F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

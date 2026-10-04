@@ -46,3 +46,11 @@ Start with every alternate day. 4 out of 5 stars from 1,969 reviews on beminimal
 
 ## Adaptation notes
 Angle: routine journey (timeline). Frame labels come straight from the page's usage: after cleansing & toning, 2-3 drops, let the serum absorb fully before the next step (F12), PM and start with every alternate day (F13, in the headline and footnote; the 'after 2 weeks' clause is left out). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, every acne, blackhead, oil and anti-microbial claim and study stat on the page. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

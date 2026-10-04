@@ -45,3 +45,10 @@ Vitamin B5 10% Moisturizer: a very high concentration of Vitamin B5 / Panthenol 
 
 ## Adaptation notes
 Format #4 Ingredient flat lay: the minimal house look draws no prop scene (no fruit, droplets or backdrop), so the ingredient cue is the named ingredient and its sourcing from the page, with the strength in the lockup. Dropped: overlay-free hero-fruit staging, 'zero grease', pearl-glow and brightening wording. No result claims.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

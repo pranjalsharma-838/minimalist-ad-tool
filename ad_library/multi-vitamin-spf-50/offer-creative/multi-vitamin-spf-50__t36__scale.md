@@ -49,3 +49,10 @@ Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your
 
 ## Adaptation notes
 Kept: seasonal-kicker slot (Foxtale, left as placeholder), struck MRP beside page price (Conscious Chemist), offer sticker (Chemist at Play). Dropped: promo code, countdown, 'ends in 4 hours', three-SKU stack. Routine placement from F20/F21. Offer quoted exactly; eligibility and end date are placeholders.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -48,3 +48,10 @@
 
 ## Adaptation notes
 Concern: irritation/sensitivity; answered only by F7 (PHA suitable even for sensitive skin), without saying the serum won't irritate. Customer words not quoted. Kept: plain white card (Pilgrim), one sticker with one fact (Dot & Key), concern-aware headline structure (The Derma Co, without 'dermat-approved' or discount). Dropped: 35% off, freebies, code.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

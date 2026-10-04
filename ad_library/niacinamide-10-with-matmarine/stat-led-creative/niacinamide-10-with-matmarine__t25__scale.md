@@ -48,3 +48,10 @@ Paired with Matmarine, which supports hydration. 4 out of 5 stars from 1,491 rev
 
 ## Adaptation notes
 The page has no percentage consumer-study stat for this serum (F15 is patch testing only), so the stat is the labelled strength, 10%, with the plain function line from F3. Kept: bold single-number device with callout line (Re'equil), dated attribution and rating line (Dot & Key, Conscious Chemist). Dropped: result percentages, 'without purging', user counts.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

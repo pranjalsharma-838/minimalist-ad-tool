@@ -46,3 +46,10 @@ Recommended for combination/oily skin; salicylic acid dissolves dead skin cells 
 
 ## Adaptation notes
 Kept: creator talking-head slot with finger-raise framing (Plum) and an insider-style caption box (Conscious Chemist). Dropped: makeup-industry confession, 'oily skin changed behaviour' question (implies a result), emoji. Rating verbatim; no review quoted because none supports the headline cleanly. Re-sourced 2026-10-04 (statics only, user rule): the Plum video reference was removed; the creator-selfie framing is supported by the static Conscious Chemist creator selfie (1390426132931304, 71d), already a source. Copy unchanged.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

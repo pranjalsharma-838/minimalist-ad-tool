@@ -45,3 +45,10 @@ Apply 2-3 drops of Alpha Arbutin 2% Face Serum after cleansing & toning, AM & PM
 
 ## Adaptation notes
 Format #38 Bundle / kit: two-product pairing because the Alpha Arbutin page itself says to use sunscreen during the day (F19). Dropped the sticker offer, 'coolest routine' wording and props. No dark-spot or tone result wording.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -48,3 +48,10 @@ Tap in 2-3 drops, spread evenly, let skin absorb. Ethyl Ascorbic Acid formulated
 
 ## Adaptation notes
 Kept: rating-and-count badge (Conscious Chemist), oval badge shape (Foxtale, without the 'sold every 30 seconds' line), dated source line (Dot & Key). Dropped: sales velocity, 'our #1', quick-commerce footer, review card. Texture/feel comes from the usage steps in F14; marketer data (rating) is verbatim with source and date.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@ Salicylic Acid + LHA 2% Cleanser combines BHA and LHA in 2% concentration for de
 
 ## Adaptation notes
 Format #15 Problem -> product: concern is 'oily skin' (page suitability, F10). Two callouts (user note 2026-10-05). The footnote states that 2% is the BHA + LHA combined strength so it is not read as 2% salicylic acid alone. Dropped: acne and breakout wording, concern thumbnails, best-seller strip.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

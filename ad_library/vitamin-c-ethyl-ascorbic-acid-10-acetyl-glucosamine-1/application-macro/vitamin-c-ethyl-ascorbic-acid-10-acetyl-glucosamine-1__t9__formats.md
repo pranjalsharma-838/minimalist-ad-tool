@@ -45,3 +45,10 @@ Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fin
 
 ## Adaptation notes
 Format #9 Application macro, reuses the existing AI image from run 2026-10-03-people (vitamin C t8, fingertips by a bedroom window). Copy is usage only (F14, F15); the strength comes from the lockup. Dropped: timed-fix headline, de-tan / brightening wording. Person is AI-generated: Severe, labelled.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **70** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

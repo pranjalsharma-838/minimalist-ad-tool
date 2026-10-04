@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Kept: routine kit staging (Dot & Key), plain catalogue card (The Derma Co), single sticker carrying a fact (Chemist at Play). Dropped: 25% off, 'kits for every goal' wording, offer lockup. Every label is an active and strength from the product's own page.
+
+## Scores
+
+- Minimalist alignment: **88** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -46,3 +46,10 @@ Apply after cleansing & toning. Use sunscreen during the day for best results. A
 
 ## Adaptation notes
 Angle: sensorial. The page has no texture fact for this serum, so the sensory cue is the application gesture from F19 (2-3 drops, gentle circular motion) and the AM and PM cadence (F20). Kept: close hand-level application moment (Chemist at Play), finger-on-skin moment as the visual cue (Foxtale). Dropped: the timed-fix headline ('in 10 minutes'), '#1 daily duo', de-tan and brightening promises, shower setting, any texture adjective the page does not state. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

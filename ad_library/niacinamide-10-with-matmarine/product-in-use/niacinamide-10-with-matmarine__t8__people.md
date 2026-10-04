@@ -46,3 +46,10 @@ Let the serum absorb fully into the skin before the next step of your routine. A
 
 ## Adaptation notes
 Angle: human usage. Copy is the page's usage only: 2-3 drops after cleansing & toning, let it absorb before the next step (F13), AM & PM (F14); the formulation line is the first sentence of F3. Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline, '#1 daily duo', de-tan/brighten promises, and the page's sebum, pore, barrier, melanin and 'clinically proven' wording (F3 second half, F6, F7, F8, F16-F18). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

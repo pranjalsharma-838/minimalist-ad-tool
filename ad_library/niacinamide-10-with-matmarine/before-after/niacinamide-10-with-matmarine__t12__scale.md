@@ -46,3 +46,11 @@
 
 ## Adaptation notes
 Concern: sticky/greasy feel; answered only by F8 'no sticky residue'. Kept: stacked labelled before/after frames (Chemist at Play), clinical footnote slot, stone-plinth scene (Pilgrim). Dropped: 'fades marks in 7/15 days', 'dermat recommended', price drop, ingredient molecule callouts. No result is described; the page's 'in 2 weeks' line (F6) is left out because the study is not supplied.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **71** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

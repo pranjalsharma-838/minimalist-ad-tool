@@ -45,3 +45,11 @@ Alpha Arbutin 2% Face Serum: rating and review are from beminimalist.co, capture
 
 ## Adaptation notes
 Format #26 Review creative: kept the dated verified-review card, buyer attribution and a plain rating line. The rating is verbatim (never rounded) and the review is a verbatim quote chosen for describing use or feel, not a result; it is a 4-star review trimmed to its texture sentence (ellipsis marks the cut; the rating in the headline shows the overall score). dropped bold review titles, '3rd bottle' claims and result quotes. Real review text, so no placeholder.
+
+## Scores
+
+- Minimalist alignment: **92** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **60**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-21 "Like the texture. I like the texture of the serum…"

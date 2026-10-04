@@ -46,3 +46,10 @@ PM use: start every alternate day, then after 2 weeks of usage, use it everyday.
 
 ## Adaptation notes
 Angle: situation. The moment is the PM routine the page states (F12 after cleansing & toning, F13 'When to use: PM' and the alternate-day start), shown as an evening wind-down; no result is implied. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: '10-minute fix', de-tan and brightening promises, '#1 daily duo', and every acne, blackhead and oil outcome in F2/F3/F10. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

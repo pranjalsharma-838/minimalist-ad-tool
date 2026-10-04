@@ -45,3 +45,11 @@ Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page
 
 ## Adaptation notes
 Format #3 Product + ingredients: kept the ingredient-to-detail cards and a calm two-line headline. Dropped 'ONE serum for X', the NEW bubble, emoji, benefit claims and 'zero grease'. Strength shown wherever the page states one; what each ingredient does is one plain page line (moved to the caption by the style rule).
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **60**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-24 "Butylresorcinol: A tyrosinase inhibitor."

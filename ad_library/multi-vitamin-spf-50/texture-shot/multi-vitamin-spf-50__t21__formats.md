@@ -45,3 +45,10 @@ SPF 50 Sunscreen has a very light texture that spreads easily and leaves a natur
 
 ## Adaptation notes
 Format #21 Texture shot (user note 2026-10-05): texture swatch of this product beside the verified pack, the main active in the pack-label lockup (strength as stated in the product title), and a brand tagline tag (DEC-03, no citation needed). Texture wording only from the page's own texture / usage facts. Dropped: fruit-pile prop, 'NEW' bubble, glow / grease claims, emoji. The texture is AI-made from the verified pack render with the pack kept identical, so the ad carries an AI label and High risk until a real macro photo replaces it.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@ Broad Spectrum SPF 50, PA++++, in a moisturiser-meets-sunscreen formula. 3.9 out
 
 ## Adaptation notes
 Concern: texture (customers say 'sticky/greasy'); answered only by F3 'very light texture that spreads easily'. Customer review is a verbatim REV4 quote with name, date and 'verified buyer'. Kept: dated verified 5-star card (Dot & Key), customer-voice attribution (Deconstruct), rating line (Conscious Chemist). Dropped: bold review title copy and 'my 3rd bottle' style claims (not on our page).
+
+## Scores
+
+- Minimalist alignment: **91** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

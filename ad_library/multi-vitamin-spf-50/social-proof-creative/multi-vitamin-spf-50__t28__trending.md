@@ -48,3 +48,10 @@ out of 5, from 1,890 reviews. SPF 50 Sunscreen: broad spectrum SPF 50, PA++++, w
 
 ## Adaptation notes
 Trending format (#28 Social-proof creative): 2 brands. Real rating quoted exactly (RATING), never rounded up; superlatives, velocity claims and award badges dropped. Round 2 (judge): '1,890 customers' replaced by '1,890 reviews' (the source counts reviews, not people).
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -49,3 +49,11 @@ Four weeks, AM & PM: 2-3 drops of 10% Niacinamide. 4 out of 5 stars from 1,491 r
 
 ## Adaptation notes
 The page's only timeframe (F6, 'improve skin complexion in 2 weeks') is an ingredient claim ('clinically proven', melanin wording), not a study of this serum, so it is not used; the Consumer Studies section only has the patch-test note (F15). Frames therefore carry routine-stage labels and no result wording; the headline states routine length and the page's usage (F13, F14). Kept: equal labelled frames in a row (Re'equil), timeframe-led headline as routine length (Dr. Sheth's), qualifier footnote (Chemist at Play) with the RATING. Dropped: timed-result headline, 'dermat recommended', struck price, any pore/sebum/melanin outcome. Frames are AI illustrations: Severe, not exportable until real photos replace them.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **73** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

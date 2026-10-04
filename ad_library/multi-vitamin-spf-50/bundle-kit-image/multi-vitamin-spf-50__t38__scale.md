@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Kept: cool, light-feel staging (Dot & Key), plain catalogue-card arrangement (The Derma Co), single band under products (Chemist at Play). Dropped: 25% off sticker, offer lockup, fruit props, 'coolest routine' wording. Companion labels come from their own page facts (F13 usage, F8).
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

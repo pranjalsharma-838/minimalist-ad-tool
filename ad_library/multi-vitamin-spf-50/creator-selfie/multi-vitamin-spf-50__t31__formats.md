@@ -45,3 +45,10 @@ SPF 50 Sunscreen: apply on cleansed face after all serums and moisturisers, gene
 
 ## Adaptation notes
 Format #31 Creator selfie: kept the mirror / front-camera selfie framing and a single plain caption. Dropped the insider-confession hook, makeup-industry claim and emoji. Headline is the product with its strength and a usage line from the page; no first-person testimonial is invented for the AI person. New AI selfie image needed. Severe, labelled.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

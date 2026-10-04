@@ -45,3 +45,10 @@ Also contains Acetyl Glucosamine. Evaluated for safety through patch testing. Zi
 
 ## Adaptation notes
 Kept: the ingredient-explainer structure (pack plus three ingredient-to-benefit rows) and a soft pink mood, muted to Minimalist's palette. Replaced the competitor's actives with our own from F3, F16-F18; only Niacinamide has a printed concentration, so the other two rows leave pct blank. Dropped: fruit props and drip (scent/'natural' story), the 'NEW' bubble, 'Brightens skin' framing (our page says evens skin tone), 'Clinically Proven', 'Dermatologically Tested', 'No Nasties', and emoji. Retry 2: removed the barrier claim and the Zinc sebum-production claim; replaced with the page tagline (F2) and suitability wording (F18) (CLM-24).
+
+## Scores
+
+- Minimalist alignment: **92** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@ Alpha Arbutin 2% Face Serum, with Butylresorcinol and Ferulic Acid. Apply 2-3 dr
 
 ## Adaptation notes
 Trending format (#2 Product + benefit badges): 2 brands. Three icon benefits cut to two badges (house text budget). 'Even-looking tone' stays hedged; no lightening or dark-spot removal wording (CLM-06, CLM-04).
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@ Salicylic Acid + LHA 2% Cleanser: pour into wet hands, rub into a light lather, 
 
 ## Adaptation notes
 Format #31 Creator selfie: kept the mirror / front-camera selfie framing and a single plain caption. Dropped the insider-confession hook, makeup-industry claim and emoji. Headline is the product with its strength and a usage line from the page; no first-person testimonial is invented for the AI person. Reuses an existing AI image from run 2026-10-03-people (chest-up at a basin / mirror) to save generation. Severe, labelled.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

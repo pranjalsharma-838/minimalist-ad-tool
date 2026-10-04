@@ -45,3 +45,10 @@ Vitamin C goes on after cleansing and toning; sunscreen follows on a cleansed fa
 
 ## Adaptation notes
 Kept: routine staging (Dot & Key), plain white catalogue card (The Derma Co), slim band under products (Chemist at Play). Dropped: 25% off, fruit cubes, 'coolest routine', offer sticker. Order and timing come only from each product's usage facts.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

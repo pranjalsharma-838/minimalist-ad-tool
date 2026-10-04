@@ -46,3 +46,10 @@ AM, every day: apply at least 15 minutes before sun exposure. 4 UV filters for U
 
 ## Adaptation notes
 Angle: lifestyle (a Mumbai two-wheeler commute). The moment fits the page: AM, every day (F21) and apply at least 15 minutes before sun exposure, reapply with continued sun exposure (F20). The labelled SPF 50 / PA++++ (F2) is the claim; the lab-measured value (F16) is deliberately not used (house rule: lab results only in the footnote, and only when needed). Kept: short fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 2-in-1 and dual-chamber features (not ours), moisturising/repair wording (F3, F6) and the pregnancy FAQ. The person is AI-generated (High risk, labelled). Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Offer quoted exactly from the live sitewide banner OFFER3 ('Buy 2, Get 3rd Free', beminimalist.co, captured 2026-10-02), with its condition beside it and 'T&C apply'; price is PRICE1 (30ml, sale price with MRP). No end date was captured, so no urgency wording and no valid-till. Kept: a single offer lockup as the whole message (Chemist at Play), bold offer line as the hook (Foxtale), sale price shown with the MRP (Conscious Chemist). Dropped: bundle price and discount code, countdown and 'sale ends in 4 hours', seasonal kicker, acne and oil claims. Other live offers (OFFER1, 2, 4) not used, to keep one clear offer.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

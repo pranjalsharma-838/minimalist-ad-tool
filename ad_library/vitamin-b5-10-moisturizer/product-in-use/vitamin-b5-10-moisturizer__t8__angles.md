@@ -49,3 +49,10 @@ Last step of the routine: massage in until fully absorbed. Use after cleansing, 
 
 ## Adaptation notes
 Angle: situation. The moment is the last step of the routine: F13 says to use it after cleansing, toning and all serums, and F14 gives AM & PM. Kept: in-use moment (Foxtale), a single use-moment headline (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and skin-repair, barrier and irritation wording (F2/F15/F18), plus the pregnancy line (F12). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **95** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

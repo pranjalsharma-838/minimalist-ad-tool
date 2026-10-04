@@ -46,3 +46,11 @@ Niacinamide 10% Face Serum, with Matmarine and Zinc. Apply 2-3 drops after clean
 
 ## Adaptation notes
 Trending format (#12 Before / after): 3 brands. Kept the labelled stacked frames; dropped every result claim and time frame (the page has no before/after study for this). Severe: AI frames stand in for photos that must be real, consented study photos. Round 2 (judge): the internal production note left the footnote (it stays in photography_needed). CLM-15 stays: before/after framing is the format, hence Severe.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""; fix: CLM-15 "AI illustrations, not real results"

@@ -49,3 +49,10 @@ Morning wash: a light lather on a wet face. Pour an appropriate quantity into we
 
 ## Adaptation notes
 Angle: situation. The moment is a morning wash before the day starts, which matches the page's 'AM & PM, every day' (F14) and the lather-and-rinse steps (F13); no result is implied. Kept: in-use moment (Foxtale), headline that names one use moment (Chemist at Play). Dropped: timed-fix headline, '#1 daily duo', and all sebum, acne-fighting and pore-decongestion wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

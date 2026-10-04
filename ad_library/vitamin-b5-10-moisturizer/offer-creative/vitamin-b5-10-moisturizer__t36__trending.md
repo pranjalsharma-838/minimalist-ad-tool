@@ -48,3 +48,10 @@ Offer as on beminimalist.co, 2 Oct 2026. T&C apply. Buy 2, Get 3rd Free on bemin
 
 ## Adaptation notes
 Trending format (#36 Offer creative): 5 brands launched offer creatives in the last 60 days and still run them. Recreated in the brand's static offer style ('Three products, At the cost of two'): one plain offer line + one condition line. The live offer is quoted exactly (OFFER3); no urgency because no end date was captured.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

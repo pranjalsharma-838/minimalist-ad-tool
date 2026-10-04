@@ -45,3 +45,11 @@ Salicylic Acid + LHA 2% Cleanser: 2% is the combined BHA + LHA strength stated o
 
 ## Adaptation notes
 Format #12 Before / after: kept the labelled stacked frames beside the pack. Dropped every result claim, time frame, struck price and clinical wording (the page has no before/after study for this product). The frames are illustrative AI skin crops showing a small, realistic change only; Severe, AI-labelled, not exportable until real consented study photos replace them. Reuses the two existing AI frames from run 2026-10-04-trending (niacinamide t12; oily-looking cheek crops) because the cleanser's concern is oiliness.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""; fix: CLM-15 "The two frames are AI illustrations, not results."

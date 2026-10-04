@@ -46,3 +46,10 @@ Rub into a light lather in wet hands, massage into the face, then rinse thorough
 
 ## Adaptation notes
 Angle: sensorial, from the page's usage and after-feel facts only: light lather (F13), hydrating after-feel (F7, quoted without the zinc/anti-bacterial wording), mild sulfate-free surfactants (F8). Kept: close hand-level application framing (Chemist at Play), in-use moment as the visual cue (Foxtale). Dropped: timed-fix headline, '#1 daily duo', sebum, acne-fighting and pore wording from F2/F3/F5. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

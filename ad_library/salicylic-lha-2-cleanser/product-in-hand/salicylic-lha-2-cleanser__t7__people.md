@@ -49,3 +49,10 @@ Pour into wet hands and rub into a light lather. Massage into your face, then ri
 
 ## Adaptation notes
 Angle: human usage. Copy is the page's usage only: pour into wet hands, rub into a light lather, massage into face, rinse thoroughly (F13), AM & PM (F14); proof lines are F9 (high purity grade Salicylic Acid), F3 (BHA + LHA in 2% concentration) and F12 (15+). Kept: open hand at the moment of use with a single-step headline (Chemist at Play), pack held in the hand against a plain bright backdrop, composited in front of the photo by code (Dot & Key), usage as short lines (Foxtale). Dropped: '#1 daily duo' superlative, the dated 5-star review card, the timed-fix headline, any sebum, breakout, acne or anti-bacterial wording (F2, F3, F5, F7, F21) and the study stats (F16-F18). The person is AI-generated (High risk, labelled); real in-hand photos would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **78** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -46,3 +46,10 @@ Apply after cleansing & toning. Use sunscreen during the day. AM & PM, every day
 
 ## Adaptation notes
 Angle: lifestyle (evening at home). The moment is placed by F19 (after cleansing & toning, 2-3 drops, sunscreen in the day) and F20 (AM & PM), so the evening framing is within the page and nothing implies a skin result. Kept: short ingredient/fact lines under the headline (Dot & Key), a calm editorial scene with a minimal message (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'ONE serum for X' benefit headline and NEW bubble (no launch fact), 'India's 1st' leadership claim (no objective source), hydration/brightening tag cards, and the page's pigmentation, skin-lightening and benchmark-comparison wording (F2, F3, F5, F6, F13, F26, F27) and consumer-study stats (F22-F24). The person is AI-generated (High risk, labelled); a real, consented photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

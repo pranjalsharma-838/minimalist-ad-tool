@@ -46,3 +46,10 @@ Use after cleansing, toning and your serums. AM & PM, every day. Formulated for 
 
 ## Adaptation notes
 Angle: lifestyle (working from home by a window). The moment is carried by the page's own texture and usage facts: a lightweight, oil-free moisturizer (F3), used after cleansing, toning and serums, AM & PM (F13, F14); proof lines are F3, F7 and F11. Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'Brightens'/'Reduces' tag cards, NEW bubble, 'India's 1st' claim, every repair, barrier, wound-healing and radical-scavenging line (F2, F3 'repairing', F5, F6, F15, F20-F22), and the 12-hour, hydration and irritation stats (F16-F18). The person is AI-generated (High risk, labelled). Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

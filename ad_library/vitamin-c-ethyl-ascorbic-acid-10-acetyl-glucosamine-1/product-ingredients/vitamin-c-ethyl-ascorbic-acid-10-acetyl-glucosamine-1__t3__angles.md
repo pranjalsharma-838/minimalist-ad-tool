@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Angle: ingredient_science. Leads with the active and its strength as stated (10% from the product title; 86% pure Vitamin C content, F5), then what each supporting ingredient is: Acetyl Glucosamine at 1% (F6) and PHA (F7). Each line describes the ingredient, not a result. Kept: ingredient-to-detail tag cards (Dot & Key), a minimal strength-first headline (Foxtale), strength printed with each name (Deconstruct). Dropped: 'ONE serum for bright skin' benefit headline, NEW bubble, the 'much higher than other derivatives' comparison (F5), hyaluronic-acid synthesis and exfoliation-regulation wording (F6), the dead-skin-removal, 'glow' and heal wording (F7, F8), fruit props.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

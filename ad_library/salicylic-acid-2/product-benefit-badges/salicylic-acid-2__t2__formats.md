@@ -45,3 +45,10 @@ Salicylic Acid 2% Face Serum uses RonaCare Salicylic Acid Extra Pure from Merck,
 
 ## Adaptation notes
 Format #2 Product + benefit badges: three icon benefits cut to two badges (house text budget). Badges state verifiable page facts (source, suitability), not benefits; the headline shows the active and its strength. Dropped: credential headline, 'clinically' wording, tick-mark benefit claims, glow / fade wording.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

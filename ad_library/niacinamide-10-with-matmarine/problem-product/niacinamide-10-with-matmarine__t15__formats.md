@@ -45,3 +45,11 @@ Niacinamide 10% Face Serum is formulated with pure Vitamin B3 (Niacinamide) and 
 
 ## Adaptation notes
 Format #15 Problem -> product: concern 'oily skin' from the page's suitability line (F10); two callouts (user note 2026-10-05) pairing each named ingredient with what the page says it does, hedged as the page words it. Dropped: acne and mark wording, thumbnails, best-seller strip.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **55**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-24 "Matmarine helps regulate oiliness"; fix: CLM-24 "Zinc balances sebum activity"

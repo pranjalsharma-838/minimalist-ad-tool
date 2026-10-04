@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Kept: talking-head portrait slot (Plum), rating-and-count badge (Conscious Chemist), verified-attribution line (Dot & Key). Dropped: any named doctor or lab coat, any quote or endorsement text, review card (no consenting expert supplied), 'selling out' line. Situation: evening routine from F19/F20 only; no result implied. Re-sourced 2026-10-04 (statics only, user rule): the expert-portrait element came only from a Plum video, so the AI portrait was removed (image kept on file as .unused-portrait-video-sourced.png); the ad is now a rating card with the pack, using the static sources only. No model is used, so the model rule no longer makes it Severe. Copy unchanged.
+
+## Scores
+
+- Minimalist alignment: **87** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -46,3 +46,11 @@
 
 ## Adaptation notes
 Angle: routine journey (timeline). Frame labels come straight from the page's usage: after cleansing and toning, take 2-3 drops on the fingertips, tap on gently and spread in a circular motion (F14), AM & PM (F15, in the headline). Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row with one action each (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern-led headline, the happy-model result feel, and the page's brightening, dark-spot, collagen, 'heal' and photo-ageing wording and study stats. No before/after, no time-to-result labels, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

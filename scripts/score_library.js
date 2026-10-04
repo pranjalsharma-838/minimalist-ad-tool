@@ -1,4 +1,4 @@
-// Scores every ad in the library with the checker's three scores (user, 2026-10-05: "every ad also reviewed and
+﻿// Scores every ad in the library with the checker's three scores (user, 2026-10-05: "every ad also reviewed and
 // scored on the scoring we decided"): Minimalist alignment, win probability, compliance gate (lib/tiers.js via
 // lib/score.js). The AI judge's review is included wherever one is on file (pipeline/runs/<run>/judge/<id>.json,
 // written by the live API or a stand-in on the same prompt); otherwise the scores say "rules only".
@@ -28,19 +28,22 @@ for (const run of fs.readdirSync("pipeline/runs")) {
   const briefs = JSON.parse(fs.readFileSync(bf, "utf8"));
   const match = fs.existsSync(path.join(dir, "match.json")) ? new Map(JSON.parse(fs.readFileSync(path.join(dir, "match.json"), "utf8")).map((m) => [m.id, m])) : new Map();
   const sheets = Object.fromEntries(fs.readdirSync(path.join(dir, "products")).map((f) => [f.replace(/\.json$/, ""), JSON.parse(fs.readFileSync(path.join(dir, "products", f), "utf8"))]));
+  // pipeline/09_library.js files each ad as <id>__<run tag>.png (the run name without its date).
+  const tag = run.replace(/^\d{4}-\d{2}-\d{2}-?/, "") || run;
   for (const b of Array.isArray(briefs) ? briefs : Object.values(briefs)) {
-    const id = b.source_ad_id || b.id;
+    const id = `${b.source_ad_id || b.id}__${tag}`;
     const fd = where.get(id);
-    if (!fd || index[id]) continue; // only ads that are in the library, newest run first is fine
-    const handle = b.product_handle || match.get(id)?.product_handle;
+    if (!fd || index[id]) continue; // only ads that are in the library
+    const m = match.get(b.source_ad_id || b.id);
+    const handle = b.product_handle || m?.product_handle;
     const ad = adFromBrief(b, sheets, handle);
-    const jf = path.join(dir, "judge", `${id}.json`);
+    const jf = path.join(dir, "judge", `${b.source_ad_id || b.id}.json`);
     const person = Boolean(b.person_prompt || b.frames_prompt);
     const result = Boolean(b.frames_prompt) || ["before_after", "timeline", "splitscreen"].includes(b.layout);
     const ctx = {
       sheet: sheets[handle],
       layout: b.layout,
-      template_id: match.get(id)?.template_id ?? b.template_id,
+      template_id: m?.template_id ?? b.template_id,
       has_person: person,
       synthetic: person || result || b.layout === "texture" ? { people: person && !result, result, setting: false, label_drawn: true } : undefined,
       rulesOnly: true,
@@ -63,7 +66,7 @@ for (const run of fs.readdirSync("pipeline/runs")) {
     const md = path.join(fd, `${id}.md`);
     if (fs.existsSync(md)) {
       const body = fs.readFileSync(md, "utf8").replace(/\n## Scores[\s\S]*$/, "");
-      fs.writeFileSync(md, `${body.trimEnd()}\n\n## Scores\n\n- Minimalist alignment: **${rec.alignment ?? "—"}** (${rec.alignment_band ?? "—"})\n- Win probability: **${rec.win ?? "—"}** (${rec.win_band ?? "—"}; proxy: still running 30+ days)\n- Compliance: **${rec.compliance ?? "—"}**, ${rec.verdict_label}\n- Reviewed by: ${rec.reviewed_by}\n${rec.findings.length ? `- Open findings: ${rec.findings.join("; ")}\n` : ""}`);
+      fs.writeFileSync(md, `${body.trimEnd()}\n\n## Scores\n\n- Minimalist alignment: **${rec.alignment ?? "â€”"}** (${rec.alignment_band ?? "â€”"})\n- Win probability: **${rec.win ?? "â€”"}** (${rec.win_band ?? "â€”"}; proxy: still running 30+ days)\n- Compliance: **${rec.compliance ?? "â€”"}**, ${rec.verdict_label}\n- Reviewed by: ${rec.reviewed_by}\n${rec.findings.length ? `- Open findings: ${rec.findings.join("; ")}\n` : ""}`);
     }
   }
 }

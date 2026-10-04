@@ -46,3 +46,10 @@ Apply after cleansing & toning. Let the serum absorb fully before the next step.
 
 ## Adaptation notes
 Angle: human usage (application close-up). Copy is the page's usage only: 2-3 drops after cleansing & toning and absorb before the next step (F12), PM, and start with every alternate day (F13); the 'after 2 weeks' part of F13 is left out so no time-bound line appears. Kept: hands-on application moment as the visual cue (Chemist at Play), usage told as a short sequence (Foxtale). Dropped: the timed-fix headline, '#1 daily duo', and every acne, blackhead, oil and anti-microbial claim and study stat on the page (F2-F7, F10, F15-F17, F19-F21, F23, F24). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

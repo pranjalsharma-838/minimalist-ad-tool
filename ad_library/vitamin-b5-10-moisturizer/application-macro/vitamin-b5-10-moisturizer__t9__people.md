@@ -46,3 +46,10 @@ Use after cleansing, toning and applying all serums. AM & PM, every day. D-Panth
 
 ## Adaptation notes
 Angle: human usage. Copy is the page's usage only: take a sufficient quantity and massage into face and neck until absorbed, after cleansing, toning and all serums (F13), AM & PM (F14); proof lines are F8 (D-Panthenol USP from BASF, Germany), F3 (lightweight, oil-free) and F11 (16+). Kept: hands-on massage moment as the visual cue (Chemist at Play), usage told as a short sequence (Foxtale). Dropped: the timed-fix headline, '#1 daily duo', and every repair, barrier, wound-healing, radical-scavenging and 12-hour/hydration/irritation stat line on the page. The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

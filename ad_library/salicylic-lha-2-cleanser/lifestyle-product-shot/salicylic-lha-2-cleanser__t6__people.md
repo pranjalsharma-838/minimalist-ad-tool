@@ -49,3 +49,10 @@ Back from a run: a light lather on a wet face. Pour into wet hands, rub into a l
 
 ## Adaptation notes
 Angle: lifestyle (back home after a morning run). The page's own usage carries the moment: apply on a wet face, rub into a light lather, massage in, rinse thoroughly (F13); the proof lines are the formulation facts F3 (BHA + LHA in 2% concentration), F8 (2 mild sulfate-free surfactants) and F12 (15+). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, 'Reduces Sebum & Prevents Breakout' (F2), 'acne fighting' (F3), the sebum/oily-look line (F5), anti-bacterial Zinc (F7, F21), barrier-repair wording (F20) and the 6-wash and 4-6 week stats (F16-F18). The person is AI-generated (High risk, labelled). Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

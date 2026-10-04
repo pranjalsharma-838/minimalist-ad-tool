@@ -48,3 +48,10 @@ Questions on irritation? Our notes on Alpha Arbutin 2%. 3.9 out of 5 stars from 
 
 ## Adaptation notes
 Retry round 1 (judge CLM-05): the skin-type list (F9) was dropped, not reworded. Under an irritation headline and beside the patch-test line, listing 'sensitive' skin reads as a promise that the serum will not irritate sensitive skin, and the page's own caution for extra-sensitive skin (F33, an FAQ) cannot be cited as a claim in this layout, so no skin-type wording remains; the slot now carries the page's age suitability (F11). Concern: irritation (customer words such as 'no irritation or breakout'), answered only by what the page states: the supervised patch-test note (F25) and how to apply (F19). The page makes no 'will not irritate' claim, so none is made. The dryness concern (answered-by is the INCI list) and texture concern (F5 is not about texture) were not used. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, line-art concern icons.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

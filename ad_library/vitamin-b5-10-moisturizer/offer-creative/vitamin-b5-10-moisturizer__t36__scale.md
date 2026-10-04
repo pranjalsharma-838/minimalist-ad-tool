@@ -49,3 +49,10 @@
 
 ## Adaptation notes
 Kept: sticker lockup (Chemist at Play), struck MRP vs price pair and CTA strip (Conscious Chemist), kicker-over-headline arrangement with rating as the kicker (Foxtale). Dropped: promo code, countdown, three-SKU stack. Offer quoted exactly; end date and eligibility are placeholders.
+
+## Scores
+
+- Minimalist alignment: **91** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

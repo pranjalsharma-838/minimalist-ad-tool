@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Concern: irritation (customer words such as 'haven't experienced any irritation or redness'), answered by the page's own wording: 'a daily gentle exfoliant' (F3, quoted without the acne and flawless-skin wording) and the start-slowly schedule (F13: every alternate day, then everyday after 2 weeks). No 'will not irritate' promise is made. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), the active named with its strength in the first label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the acne, blackhead and oil outcomes in F2/F3/F10.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

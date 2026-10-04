@@ -46,3 +46,10 @@ Apply after cleansing & toning, then spread with a gentle circular motion. Use s
 
 ## Adaptation notes
 Angle: human usage. The copy is the page's own usage: 2-3 drops after cleansing & toning, gentle circular motion and sunscreen in the day (F19), AM & PM (F20). Kept: open hand at the moment of use with a single-step headline (Chemist at Play), pack held in the hand against a plain bright backdrop, the pack composited in front of the photo by code (Dot & Key), usage told as short lines (Foxtale). Dropped: the '#1 daily duo' superlative, the dated 5-star review card (reviews only appear in review layouts), the timed-fix headline, any tan/pigmentation promise, and the page's skin-lightening, benchmark and stat wording. The person is AI-generated (High risk, labelled); real in-hand photos would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **78** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

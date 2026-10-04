@@ -45,3 +45,10 @@ Step 1 · Cleanse: AM & PM: light lather on a wet face, then rinse. Step 2 · Se
 
 ## Adaptation notes
 Angle: routine. The cleanser sits first in a morning routine: AM & PM use (F14) with the lather-and-rinse steps (F13), then the serum after cleansing & toning (niacinamide F13), then sunscreen at least 15 minutes before sun exposure (SPF F20). Kept: sequence headline naming where the product sits (Foxtale), 'Step N' labels over each pack (Dot & Key), one usage line per numbered step (Pilgrim). Dropped: 'glow' and 'treat' step names, oily-skin duo concern headline, model, handwritten checklist, any pairing claim, kit saving and every sebum or acne outcome. The rating shown is the cleanser's, named as such.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

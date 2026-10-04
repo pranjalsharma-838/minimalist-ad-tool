@@ -46,3 +46,10 @@ A daily serum with high purity Alpha Arbutin, applied AM and PM after cleansing 
 
 ## Adaptation notes
 Kept: three-panel in-use collage (Foxtale) and an AM/PM daily cadence line (Chemist at Play). Dropped: 10-minute timed fix, tan/brightening promises, seasonal kicker, model wearing a product. Ingredient and strength lead; nothing about results.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

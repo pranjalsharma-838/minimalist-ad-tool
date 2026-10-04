@@ -46,3 +46,10 @@ A gentle exfoliant with 2% salicylic acid, used in the PM. Start with every alte
 
 ## Adaptation notes
 Angle: lifestyle (an evening in a college hostel room). The page supports the moment: PM use and 'start with every alternate day, then daily' (F13), 2-3 drops after cleansing & toning (F12), and the first half of F3 ('a gentle exfoliant with 2% salicylic acid'; 'daily' appears only together with the F13 start-up direction, per the judge note). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: NEW bubble, 'India's 1st' claim, every acne, blackhead and oil claim (F2, F3 second half, F4, F10, F15-F17, F19, F23), anti-microbial and 'clinically proven' wording (F5-F7, F20, F21) and the 4-week stats. The person is AI-generated (High risk, labelled). Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **95** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

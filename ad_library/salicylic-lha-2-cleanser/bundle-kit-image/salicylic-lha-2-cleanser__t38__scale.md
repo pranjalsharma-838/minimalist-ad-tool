@@ -45,3 +45,10 @@ Zinc, Panthenol (Vitamin B5), Allantoin and more in the cleanser for a hydrating
 
 ## Adaptation notes
 Concern: dryness; answered only by F7 (hydrating and soothing ingredients). Customer words not quoted. Kept: cool staging (Dot & Key), plain card layout (The Derma Co), band under products (Chemist at Play). Dropped: 25% off, 'coolest routine', offer sticker. Labels come from each product's own facts.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

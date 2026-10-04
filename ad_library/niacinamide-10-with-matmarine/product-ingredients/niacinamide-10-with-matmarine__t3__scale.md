@@ -45,3 +45,10 @@ Let the serum absorb fully before the next step of your routine. 4 out of 5 star
 
 ## Adaptation notes
 Kept: ingredient-to-benefit tag cards (Dot & Key), calm editorial scene (Foxtale), highlight-bar headline emphasis (Deconstruct). Dropped: 'ONE serum for bright skin', NEW bubble, emoji, 'zero grease', India's-1st style claims.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

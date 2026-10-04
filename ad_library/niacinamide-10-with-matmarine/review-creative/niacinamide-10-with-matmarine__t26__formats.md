@@ -45,3 +45,11 @@ Niacinamide 10% Face Serum: rating and review are from beminimalist.co, captured
 
 ## Adaptation notes
 Format #26 Review creative: kept the dated verified-review card, buyer attribution and a plain rating line. The rating is verbatim (never rounded) and the review is a verbatim quote chosen for describing use or feel, not a result; dropped bold review titles, '3rd bottle' claims and result quotes. Real review text, so no placeholder. Style fit (stand-in editor): review quote cut to fit the on-image budget; cut only, no word added.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **60**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-21 "I have been using your product since 1 & halfyear…"

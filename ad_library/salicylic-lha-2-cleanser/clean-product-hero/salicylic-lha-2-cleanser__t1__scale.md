@@ -48,3 +48,10 @@
 
 ## Adaptation notes
 Kept: calm catalogue-card message in copy (Pilgrim), one sticker carrying the strength (Dot & Key), single upright hero composition (The Derma Co). Dropped: scattered duplicate packs, 35% off, 'dermat-approved', fruit prop.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

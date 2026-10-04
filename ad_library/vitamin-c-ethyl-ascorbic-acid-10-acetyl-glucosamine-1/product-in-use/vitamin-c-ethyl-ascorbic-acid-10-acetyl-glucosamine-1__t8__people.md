@@ -49,3 +49,10 @@ Take 2-3 drops on your fingertips with the dropper. Tap gently onto the skin, th
 
 ## Adaptation notes
 Angle: human usage. Copy is the page's usage only: take 2-3 drops on the fingertips with the dropper, tap on gently, spread in a circular motion after cleansing and toning (F14), AM & PM (F15); proof lines F5 (Ethyl Ascorbic Acid, 86% pure Vitamin C content) and F12 (16+). Kept: usage told as a short sequence (Foxtale), hands-on moment of use as the visual cue (Chemist at Play). Dropped: the timed-fix headline, '#1 daily duo', de-tan/brighten promises, and the page's brightening, dark-spot, collagen, 'heal' and photo-ageing wording and study stats (F2, F3, F8, F16-F19, F21, F25). The person is AI-generated (High risk, labelled); a real application photo would lower the risk. Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

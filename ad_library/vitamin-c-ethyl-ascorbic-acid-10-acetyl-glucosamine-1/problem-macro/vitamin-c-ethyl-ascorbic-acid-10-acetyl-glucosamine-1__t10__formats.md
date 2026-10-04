@@ -45,3 +45,10 @@ Vitamin C 10% Face Serum: 10% is the Vitamin C strength stated on the page. Take
 
 ## Adaptation notes
 Format #10 Problem macro: both reference structures rely on a skin-problem close-up (fear framing, needs real photos), so the macro is dropped and the format is rebuilt as a lifestyle shot with the brand taglines, as in the 2026-10-04 trending run. Reuses the existing AI lifestyle image from run 2026-10-03-people (t6) for this product. Headline states the active and strength; copy is page usage or suitability only; no result wording. Person is AI-generated: Severe, labelled.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

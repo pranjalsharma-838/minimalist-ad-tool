@@ -45,3 +45,10 @@ Broad spectrum SPF 50, PA++++ for every day. Light texture that spreads easily, 
 
 ## Adaptation notes
 Kept: the competitor's offer-led structure (big offer line, product on display blocks, Shop now CTA). Offer quoted exactly from the live sitewide banner OFFER3 (beminimalist.co, captured 2026-10-02); price is the main size from PRICE1, sale price with MRP struck through. Dropped: the competitor's bundle price and discount code, all urgency ('limited time', 'hurry'; no end date shown on site), emoji, the youthful-skin promise. Other live offers (OFFER1/2/4) not used, to keep one clear offer; OFFER2 'Freebies' has no stated condition on the capture. Retry 2: white-cast claim dropped (CLM-03) and replaced with the F3 finish wording.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -48,3 +48,10 @@ What customers say about Vitamin C 10% Face Serum. 4.1 out of 5 stars from 2,013
 
 ## Adaptation notes
 Angle: social_proof. The review is REV3, a 5-star verified buyer, quoted verbatim and trimmed with … only (the original opens with a repeated title phrase and runs long); it is sensory only (lightweight, absorbs, not sticky) and makes no brightening, spot or result claim. REV2 and REV4 (spots and 'inner shine' results) and REV5 (a negative review) were skipped. Kept: dated verified review card (Dot & Key), 'what customers say' lead-in (Deconstruct), rating line in the footer (Conscious Chemist). Dropped: bold review title, '4.8 by 15,000+' count, hand-held pack. RATING verbatim in the footnote. Source line is name, 'verified buyer', stars and date so it fits the card; the site and capture date are in the footnote's RATING line.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

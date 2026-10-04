@@ -46,3 +46,10 @@ Apply after cleansing & toning. Let it absorb fully before the next step. Niacin
 
 ## Adaptation notes
 Angle: lifestyle (a workday in a Gurugram office). The moment is carried by the page's own usage: 2-3 drops after cleansing & toning, absorb before the next step (F13), AM & PM (F14). Kept: fact lines under the headline (Dot & Key), editorial scene with minimal copy (Foxtale), feature lines beside the pack (Deconstruct). Dropped: 'Brightens'/'Reduces' benefit tags and the NEW bubble, 'India's 1st' claim, and every sebum, pore, barrier and melanin line on the page (F2, F3, F6, F7, F8, F16-F18), plus 'clinically proven' (F6) and the pregnancy line (F12). The person is AI-generated (High risk, labelled). Rating in the footnote slot.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -45,3 +45,10 @@ A simple morning routine: cleanse, then 2-3 drops of Vitamin C 10% Face Serum ta
 
 ## Adaptation notes
 Trending format (#22 How-to / steps): 2 brands. Matches the brand's own 'Glow Boosting Routine' static. The step lines move to the caption (house text budget).
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **79** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

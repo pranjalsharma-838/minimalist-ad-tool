@@ -45,3 +45,10 @@
 
 ## Adaptation notes
 Concern: sticky or greasy feel (customer words such as 'non greasy', 'without any oily feeling'), answered by the page's own facts: lightweight and oil-free (F3, F5), formulated for oily/combination skin (F3) and the consumer-study line on the greasy feel (F17). The study line stays a perception stat: the callout carries an asterisk and the full '97% subjects agreed' sentence with its qualifier sits in the footnote. Kept: concern-first headline order (Re'equil), labels wired to a centred pack (Deconstruct), one detail per label (The Derma Co). Dropped: skin close-ups, '4 problems, 1 solution' count, #1 best-seller strip, and the 'repairs skin' and barrier wording (F2, F15).
+
+## Scores
+
+- Minimalist alignment: **96** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -49,3 +49,11 @@ Made with the stabilised vitamin C derivative Ethyl Ascorbic Acid, which has 86%
 
 ## Adaptation notes
 Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. 'Them' is the page's own comparison (F5): other vitamin C derivatives, an ingredient form, not a brand. Minimalist's Amazon gallery runs a similar table ('vs Other Vitamin C Serums'). Dropped 'India's 1st' and the claims list. CLM-12 expected; basis in the footnote. Risk High: a reviewer confirms the content figures are substantiated.
+
+## Scores
+
+- Minimalist alignment: **93** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **45**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-12 "higher than"; fix: UNLISTED "The serum's strength is 10%, as on the pack."; fix: CLM-12 "vs"; fix: CLM-12 "vs"

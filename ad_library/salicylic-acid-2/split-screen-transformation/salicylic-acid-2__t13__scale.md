@@ -46,3 +46,11 @@ Apply 2-3 drops after cleansing & toning, in the PM.
 
 ## Adaptation notes
 Sensorial angle from the F17 perception study (felt less oily). Perception stat stays a perception stat; time window and 'subjects said' qualifier are in the footnote. Kept: split frame with two time labels (Dr. Sheth's), from-X-to-Y structure (Re'equil, reworded), two-state arrangement (The Derma Co). Dropped: 7-day dark circle claim, 25% off block, ingredient icons, 'greasy to balanced' wording.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

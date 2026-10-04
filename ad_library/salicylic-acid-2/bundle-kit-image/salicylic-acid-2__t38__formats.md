@@ -45,3 +45,10 @@ Wash with Salicylic Acid + LHA 2% Cleanser (AM & PM), apply 2-3 drops of Salicyl
 
 ## Adaptation notes
 Format #38 Bundle / kit: kept the in-a-row routine staging and the plain catalogue-card layout. Dropped the sticker offer, 'coolest routine' wording, fruit and ice props. Each product is named with its strength through the pack lockup; labels use usage lines from each page, no results.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

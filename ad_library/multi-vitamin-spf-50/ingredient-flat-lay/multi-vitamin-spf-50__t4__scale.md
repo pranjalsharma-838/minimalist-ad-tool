@@ -45,3 +45,10 @@ Broad Spectrum SPF 50, PA++++, in a light moisturiser-meets-sunscreen texture. R
 
 ## Adaptation notes
 Kept: pack among simple ingredient-cue props (Dr. Sheth's), tag-card proof points (Dot & Key), minimal two-line headline (Foxtale). SPF 50 is the claim; lab figures are left out. Dropped: 'zero grease', 'pearl glow' and brightening wording (not on page).
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

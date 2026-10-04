@@ -49,3 +49,11 @@ Broad spectrum SPF 50, PA++++. Tested in an independent third-party lab (in-vivo
 
 ## Adaptation notes
 Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. The page names no rival, so this is the TRANSPARENCY version: the labelled SPF 50 (the claim, shown in both columns) plus the published in-vivo lab result (F13, F16) vs a label type that shows the SPF only. Lab results are the main theme (house rule): the labelled value stays the claim and appears first. 'Them' is a label type, never a brand. Risk High: comparison by implication; a reviewer confirms.
+
+## Scores
+
+- Minimalist alignment: **99** (high)
+- Win probability: **75** (medium; proxy: still running 30+ days)
+- Compliance: **40**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-19 "SPF value obtained 56"; fix: CLM-09 "SPF value obtained 56.6, PA rating ++++"; fix: CLM-12 "vs"; fix: CLM-12 "vs"; fix: CLM-12 "vs"

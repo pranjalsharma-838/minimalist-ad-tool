@@ -46,3 +46,11 @@
 
 ## Adaptation notes
 Retry round 1 (judge CLM-15: the Day 1 / 12 hours later / Week 2 frames beside the 12-hour stat (CLM-07: the headline's 'two weeks' had no stat or qualifier on the ad) read as a before/after progression and AI frames are not evidence): frames now carry routine-stage labels only (Day 1 · first use, Week 2 · daily habit, Week 4 · still in the routine) with no result wording, the headline states the routine (strength and AM & PM cadence) instead of a timeline, and the consumer-study stats were removed from the footnote because the frames no longer reflect those studies. The footnote now carries the AI note and the RATING. The 12-hour and 2-week perception stats (F16, F18) and the barrier and skin-repair wording are not used. Kept: three equal labelled frames in a row (Re'equil), qualifier footnote (Chemist at Play), a strength-led headline (Dr. Sheth's). Dropped: result headline, badges, struck price, before/after wording and every skin outcome. The on-image AI-GENERATED — ILLUSTRATIVE mark is drawn by the renderer. Frames are AI illustrations: Severe, not exportable until real photos replace them.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **73** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""

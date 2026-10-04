@@ -49,3 +49,10 @@ Applies when you build your own bundle on beminimalist.co. T&C apply. Build Your
 
 ## Adaptation notes
 Offer quoted exactly from the live sitewide banner OFFER1 ('Build Your Own Bundle — Save an additional up to 15% off', beminimalist.co, captured 2026-10-02), with its condition beside it and 'T&C apply'; price is PRICE2 (30ml, sale price with MRP). No end date was captured, so no urgency wording and no valid-till. Kept: a single offer lockup as the whole message (Chemist at Play), bold offer line as the hook (Foxtale), sale price shown with the MRP (Conscious Chemist). Dropped: fixed bundle price and discount code, countdown, seasonal kicker, brightening and dark-spot claims. Other live offers (OFFER2, 3, 4) not used, to keep one clear offer.
+
+## Scores
+
+- Minimalist alignment: **94** (high)
+- Win probability: **65** (low; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

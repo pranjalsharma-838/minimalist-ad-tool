@@ -49,3 +49,11 @@ This daily cleanser combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Aci
 
 ## Adaptation notes
 Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header ('get both') and one pack as the hero. 'Them' is the ingredient used alone, which the page itself contrasts (F6: LHA, unlike Salicylic Acid, stays on the outer layer). Not a brand. 'Acne fighting' (F3) is not used (CLM-02). Risk High: comparison by format; a reviewer confirms.
+
+## Scores
+
+- Minimalist alignment: **91** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **45**, Fix before review
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: fix: CLM-12 "vs"; fix: CLM-12 "vs"; fix: CLM-12 "vs"; fix: CLM-12 "unlike Salicylic"

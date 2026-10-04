@@ -45,3 +45,10 @@ It penetrates the pore lining and scoops out dirt, debris and sebum. RonaCare Sa
 
 ## Adaptation notes
 Kept: editorial two-stone staging (Foxtale metaphor shot), tag-card proof lines (Dot & Key), highlight emphasis (Deconstruct). Dropped: 'zero grease', 'pearl glow', India's-1st claims, any result wording.
+
+## Scores
+
+- Minimalist alignment: **98** (high)
+- Win probability: **74** (medium; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

@@ -52,3 +52,11 @@ Minimalist ran an in-vitro (lab) test on a skin-identical model, comparing this 
 
 ## Adaptation notes
 Kept from the reference (Deconstruct, 129 days): the side-by-side 'v/s' header and one pack as the hero. Replaced its European-vs-Korean contrast with the page's own published comparison: an in-vitro test vs a benchmark Alpha Arbutin 2% serum (F12, F13). The strength row shows the comparison is like for like (ASCI Chapter IV). The page's derived '25% more reduction' is not used: the two raw results are shown with the method. Dropped 'India's 1st' (superlative) and the claims list. CLM-12 (comparison) is expected for this format; the basis is in the footnote. Risk High: a reviewer confirms the test report is on file.
+
+## Scores
+
+- Minimalist alignment: **95** (high)
+- Win probability: **72** (medium; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: CLM-06 "Melanin reduction"; fix: CLM-12 "benchmark"; fix: CLM-12 "vs"; fix: CLM-12 "Benchmark"; fix: CLM-12 "vs"; fix: CLM-12 "vs"; fix: CLM-12 "vs"

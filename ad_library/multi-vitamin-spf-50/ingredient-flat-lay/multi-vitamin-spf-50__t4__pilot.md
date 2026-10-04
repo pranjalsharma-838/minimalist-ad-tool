@@ -48,3 +48,10 @@ Four UV filters behind a broad spectrum SPF 50. Boosted with Vitamins B3, B5, E 
 
 ## Adaptation notes
 Kept: the ingredient flat-lay structure (pack on a styled surface with ingredient-to-benefit tags beside it). Replaced the competitor's actives with our four UV filters and vitamins from F5, F6, F22-F24. Dropped: the fruit props (they suggest a scent/'natural' story Minimalist avoids; replaced with neutral pebbles), the 'NEW' launch bubble (not a new launch), 'Clinically Proven', 'Dermatologically Tested' and 'No Nasties' (not on our page as claims / fluff), and emoji. Lab SPF 56.6 kept only in the footnote; labelled SPF 50 is the claim. Override: the archetype skill picked layout 'hero' for this ingredient_explainer reference; kept 'hero' as instructed.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **76** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

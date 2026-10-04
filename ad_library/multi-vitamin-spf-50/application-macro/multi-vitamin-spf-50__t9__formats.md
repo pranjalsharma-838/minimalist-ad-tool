@@ -45,3 +45,10 @@ SPF 50 Sunscreen: apply on cleansed face after serums and moisturisers, generous
 
 ## Adaptation notes
 Format #9 Application macro, reuses the existing AI image from run 2026-10-03-people (spf t8, a woman smoothing the face on a balcony). Copy is the page's usage only (F20, F21). Dropped: '#1 daily duo' and every tan / de-tan wording. The person is AI-generated (Severe, labelled); a real photo would lower the risk.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **70** (medium; proxy: still running 30+ days)
+- Compliance: **98**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

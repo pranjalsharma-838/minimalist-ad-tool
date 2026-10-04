@@ -45,3 +45,10 @@ Step 1 · Wash: Light lather on a wet face, then rinse thoroughly. Step 2 · Ser
 
 ## Adaptation notes
 Kept: water-splash scene (Foxtale), 'Step N' labels (Dot & Key), numbered-card ordering (Pilgrim). Reworded step names to avoid Pilgrim's Cleanse/Treat wording. Dropped: seasonal monsoon kicker, model, 'Glow' promises, swatches and handwritten checklist. Textures come from each product's own page facts.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **79** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

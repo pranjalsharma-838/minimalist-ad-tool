@@ -46,3 +46,10 @@ Massage into face and neck until fully absorbed, AM and PM. Lightweight, oil-fre
 
 ## Adaptation notes
 Kept: product-in-hand framing (Chemist at Play), verified-date attribution style as the rating line (Dot & Key), panelled in-use layout idea (Foxtale). Dropped: face and body tan claims, 'no.1 daily duo', 10-minute fix, review card.
+
+## Scores
+
+- Minimalist alignment: **97** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **100**, Ready for human review
+- Reviewed by: AI judge (stand-in, same prompt)

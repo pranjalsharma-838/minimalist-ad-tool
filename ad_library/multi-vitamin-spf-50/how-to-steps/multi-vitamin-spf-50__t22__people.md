@@ -46,3 +46,11 @@
 
 ## Adaptation notes
 Angle: routine journey (timeline). Frame labels come from the page's usage: on a cleansed face, after serums and moisturisers (F20), AM every day (F21), labelled SPF 50 (F2). The footnote carries the page's 'at least 15 minutes before sun exposure' and 'reapply in case of continued sun exposure' (F20), the latter added per the judge note. Kept: headline naming the steps in order (Foxtale), 'Step N' labels beside a person (Dot & Key), numbered frames in a row (Pilgrim). Dropped: 'Glow' and 'Treat' step names, concern headline, happy-model result feel, any claim of protection from sun damage or skin repair (F3, F6), the lab value (F16). No before/after, no visible skin change. Frames are AI-generated (High risk, labelled). Rating in the footnote.
+
+## Scores
+
+- Minimalist alignment: **100** (high)
+- Win probability: **77** (high; proxy: still running 30+ days)
+- Compliance: **20**, Do not publish
+- Reviewed by: AI judge (stand-in, same prompt)
+- Open findings: block: AI-01 ""
