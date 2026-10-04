@@ -3889,3 +3889,86 @@ The lifestyle version passes the rule checks. It's rated Severe because it uses 
 ### Assistant · 2026-10-04 03:32
 
 Tests still pass [redacted] Rendering the new lifestyle version to check it while the judge reviews it.
+
+### Assistant · 2026-10-04 03:41
+
+Both done, and the gallery is updated. Refresh the page in your browser to see it.
+
+- **Spacing:** each Trending row is now compact. The competitor ads are bigger, our version sits right next to them, and each row is only as wide as its content.
+- **Lifestyle shot with the taglines:** the problem close-up ad now uses our AI image of an Indian man back from a run, with a black "Skin Science" tag and "Hide Nothing." under the logo. It uses a person, so it's rated Severe under your rule but stays in the library.
+- **What the judge caught:** it blocked the first headline, "2% BHA + LHA", because the 2% covers both acids combined, not salicylic acid alone. The headline is now "Spotted: oiliness. Meet BHA + LHA", and the product name below shows the correct "Salicylic Acid + LHA 2%". The judge also noted that "Hide Nothing." next to a skin-concern headline could read like a promise; that note is recorded on the ad.
+- **Two checker gaps fixed along the way:** it was scoring a big "2%" line the new design no longer draws, and it wasn't checking tags at all. Both are fixed: it now scores only what's on the image, and tags are checked. The brand's own taglines are allowed without a product-page source.
+
+Want the same lifestyle-plus-tagline treatment on the other Trending ads (offer, badges, social proof)? Each would need a person, so each would also become Severe.
+
+### User · 2026-10-04 03:55
+
+The things which are in bold and bigger, basically the ingredient and its %: the same style of ingredient presentation could be used in many images. Hide Nothing is no issue. What other things are needed, could be improved or are missing?
+
+### Assistant · 2026-10-04 03:56
+
+Two things to do here: put the ingredient and its % in bold, larger type across the images, the way the packs show it, and record that "Hide Nothing." is fine. Then I'll list what's still missing. First, sampling each pack's accent-line colour so the ingredient styling matches the real labels.
+
+### Assistant · 2026-10-04 03:58
+
+"Hide Nothing." is now accepted: if the judge flags it again, the flag stays on record but is marked as accepted by the brand team. Now adding the ingredient block to the renderer.
+
+### User (sent while the assistant was working) · 2026-10-04 04:00
+
+What if a user comes up with ads for sunscreen? What will the top 5 creatives shown be, and how long will they take?
+
+### Assistant · 2026-10-04 04:00
+
+Answer for your sunscreen question is ready (details below). Meanwhile, finishing the budget fixes: range ads whose labels already state the ingredient and % won't repeat it underneath.
+
+### Assistant · 2026-10-04 04:01
+
+The over-count comes from a sub-line that the range layout doesn't actually draw. Correcting the checker to count only text that each layout shows, and cleaning up the refused edit.
+
+### Assistant · 2026-10-04 04:01
+
+All 95 ads fit the budget again (median 14 words on the image), and all 47 tests pass. Adding the same ingredient block to the app's own output, then re-rendering every ad.
+
+### Assistant · 2026-10-04 04:03
+
+All 95 ads are re-rendering with the new ingredient block, about 25 minutes in the background. Here's the rest.
+
+**Ingredient block, as on the packs:** the active in bold, the pack's coloured line, then the % in a light weight (e.g. "Niacinamide" / green line / "10%").
+- **Where it goes:** product, offer and rating ads, ingredient ads, and under each pack in routine and range ads.
+- **Where it's skipped:** when the headline already says it, and on review cards.
+
+**"Hide Nothing.":** recorded as accepted by the brand team. If the judge flags it again, the flag is kept on record and marked accepted.
+
+**If someone asks for sunscreen ads**
+- **Top 5 formats the tool picks** for the SPF 50 Sunscreen, from competitor winners, trends and the product page:
+  1. **Offer** ("Buy 2, Get 3rd Free"): Medium risk. 18 long-running competitor ads, 9 of them sunscreens, and it's trending.
+  2. **Routine bundle** (cleanser + serum + SPF): Low.
+  3. **Clean product shot**: Low.
+  4. **Benefit badges** ("Broad spectrum SPF 50 · PA++++"): Low.
+  5. **Product in hand**: Severe (AI hand); kept, but not exportable.
+- **The library already has 18 sunscreen ads,** which they'd see instantly.
+- **Time:**
+  - **One standard ad in the app:** 3–7 seconds without a key (measured). With a Claude key, the AI writing and judge add an estimated 20–60 seconds (not measured).
+  - **The full top-5 set:** about 30 seconds of scripted work (measured rates). Writing and judging are the slow part: roughly 10–15 minutes the way it ran here with stand-in agents, or an estimated 2–5 minutes with an API key, including one AI hand image.
+
+**What's still needed, or missing**
+- **Needed before real use:**
+  - Real, consented photos for the 40 ads with AI people or hands.
+  - One live run with a Claude key.
+  - Brand and legal answers on comparison ads and on "acne" wording.
+- **Would improve it:**
+  - Real texture shots (gel, oil drops, water), as the brand's statics use; we have none since dropping AI scenes.
+  - Proper cut-outs for the white tubes.
+  - A format picker in the app; it makes only the standard ad.
+  - A Meta-ready export (image + caption + headline per ad).
+  - Weekly refresh of offers, reviews and Trending.
+- **Missing so far:**
+  - Video (19 of Minimalist's 27 active ads are video) and carousels.
+  - Learning from real ad results; it's built but has no data yet.
+  - A test on a second brand.
+
+I'll confirm once the re-render finishes and everything is committed.
+
+### Assistant · 2026-10-04 04:17
+
+All 95 ads re-rendered (289 images), and all still fit the text budget. Eye-checking the side-by-side sheet with the brand's statics:

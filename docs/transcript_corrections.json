@@ -109,5 +109,7 @@
  "2026-10-04T03:04:55.324Z#q": "Shorten the summary, more humanly. We don't have a Claude API, so they must enter it. Make a README, very short. Remove pass, expand short prompts, no mention of this in the transcript, keep some good original prompts. GitHub: I will log you in later. Make it functional. Was GitHub required?",
  "2026-10-04T03:06:53.062Z#484": "Also test for multiple products; the result time is to be logged.",
  "2026-10-04T03:30:28.157Z#498": "Too many [Image #3] spaces.",
- "2026-10-04T03:31:16.250Z#q": "Could have used an image here with the lifestyle shot and Hide Nothing or Skin Science, which are the taglines."
+ "2026-10-04T03:31:16.250Z#q": "Could have used an image here with the lifestyle shot and Hide Nothing or Skin Science, which are the taglines.",
+ "2026-10-04T03:55:26.032Z#503": "The things which are in bold and bigger, basically the ingredient and its %: the same style of ingredient presentation could be used in many images. Hide Nothing is no issue. What other things are needed, could be improved or are missing?",
+ "2026-10-04T04:00:10.511Z#q": "What if a user comes up with ads for sunscreen? What will the top 5 creatives shown be, and how long will they take?"
 }
