@@ -3699,6 +3699,42 @@
       "cutout": "brand_packs/minimalist/assets/cutouts/vitamin-k-retinal-01-eye-cream_render.png",
       "cutout_status": "clean (render on white)",
       "notes": "Verified render: Read: Vitamin K + Retinal / 01% / EYE CREAM / creme contour des yeux with caffeine (3%) + 3 peptides + zerumbone / reduces dark circles, puffiness & fine lines / reduit les cernes, les poches et les ridules / ophthalmologist tested / for all skin types / 14g / 0.49 oz / Minimalist. All identical incl. French accents; lime line, ribbed cap and black base cap identical. Note: pearl tube reads lighter/creamier in the AI render than the grey-khaki real photo (lighting; same hue). Rounds: 1."
+    },
+    {
+      "product_handle": "niacinamide-5-hyaluronic-acid-1",
+      "file": "brand_packs/minimalist/assets/ai_renders/niacinamide-5-hyaluronic-acid-1/round2.png",
+      "type": "pack_shot",
+      "background": "plain_white",
+      "people": "none",
+      "source": "AI re-render of the brand's own pack photo (ChatGPT, label verified word by word + scripts/verify_pack.py)",
+      "preferred": true,
+      "cutout": "brand_packs/minimalist/assets/cutouts/niacinamide-5-hyaluronic-acid-1_render.png",
+      "cutout_status": "clean (render on white)",
+      "notes": "Verified render: Round 2: all label words identical (Niacinamide / 05% / FACE SERUM / with bifida ferment + oat extract + hyaluronic acid / clears, heals & soothes skin / for all skin types / 30ml / 1 fl oz / Minimalist); teal line, black ribbed collar and black bulb, bottle shape and label position match. Glass fixed: shoulder mean RGB about 47,42,39 vs real 47,44,40 (near-black dark brown, no amber). Rounds: 2."
+    },
+    {
+      "product_handle": "salicylic-acid-2",
+      "file": "brand_packs/minimalist/assets/ai_renders/salicylic-acid-2/round2.png",
+      "type": "pack_shot",
+      "background": "plain_white",
+      "people": "none",
+      "source": "AI re-render of the brand's own pack photo (ChatGPT, label verified word by word + scripts/verify_pack.py)",
+      "preferred": true,
+      "cutout": "brand_packs/minimalist/assets/cutouts/salicylic-acid-2_render.png",
+      "cutout_status": "clean (render on white)",
+      "notes": "Verified render: Round 2: all label words identical (Salicylic Acid / 02% / FACE SERUM / with oligopeptide-10 + egcg + horehound extract / reduces oil, acne, blackheads / for acne prone skin / 30ml / 1 fl oz / Minimalist); pink line, black ribbed collar and bulb, shape match. Glass fixed: shoulder mean RGB about 37,34,32 vs real 31,28,26 (near-black, no amber tint). Rounds: 2."
+    },
+    {
+      "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+      "file": "brand_packs/minimalist/assets/ai_renders/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/round2.png",
+      "type": "pack_shot",
+      "background": "plain_white",
+      "people": "none",
+      "source": "AI re-render of the brand's own pack photo (ChatGPT, label verified word by word + scripts/verify_pack.py)",
+      "preferred": true,
+      "cutout": "brand_packs/minimalist/assets/cutouts/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1_render.png",
+      "cutout_status": "clean (render on white)",
+      "notes": "Verified render: Round 2: all label words identical (Vitamin C / 10% / FACE SERUM / with acetyl glucosamine + polyhydroxy acid + centella / brightens & illuminates skin / for all skin types / 30ml / 1 fl oz / Minimalist); orange line, black glass (shoulder RGB 31,31,31 both), ribbed collar match. Correction to round 1 note: the current hires photo (1100x1600) is NOT cropped at the top - it shows the full rounded black bulb above the collar - so the AI bulb is the same as the photo (shape and size match in a top crop), not invented. Rounds: 2."
     }
   ]
 }

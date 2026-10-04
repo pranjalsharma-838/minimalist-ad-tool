@@ -2,15 +2,15 @@
   "product": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
   "source": "brand_packs/minimalist/assets/hires/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1.png",
   "tool": "ChatGPT web (user account), 2026-10-05",
-  "rounds": 1,
-  "accepted": null,
+  "rounds": 2,
+  "accepted": "round2.png",
   "auto_check": {
-    "matches": 397,
+    "matches": 378,
     "inliers": 289,
-    "label_similarity": 0.435
+    "label_similarity": 0.571
   },
-  "visual_read": "All label words identical: Vitamin C / 10% / FACE SERUM / with acetyl glucosamine + polyhydroxy acid + centella / brightens & illuminates skin / for all skin types / 30ml / 1 fl oz / Minimalist; orange line matches. DIFFERENCE: the real photo is cropped at the top (dropper stem runs out of frame, no bulb visible) but the AI render adds a full rounded black rubber bulb and a collar not shown in the real photo, so the dropper/cap cannot be verified as unchanged. Needs a decision or a fuller real pack photo.",
+  "visual_read": "Round 2: all label words identical (Vitamin C / 10% / FACE SERUM / with acetyl glucosamine + polyhydroxy acid + centella / brightens & illuminates skin / for all skin types / 30ml / 1 fl oz / Minimalist); orange line, black glass (shoulder RGB 31,31,31 both), ribbed collar match. Correction to round 1 note: the current hires photo (1100x1600) is NOT cropped at the top - it shows the full rounded black bulb above the collar - so the AI bulb is the same as the photo (shape and size match in a top crop), not invented.",
   "shape": "bottle",
-  "status": "failed",
-  "fix_prompt": "The reference photo is cropped at the top, so do not invent the top of the dropper: either keep the same crop as the reference (dropper stem leaving the frame at the top, no bulb) or tell me before adding the bulb. Everything visible (label text, orange line, black ribbed collar, bottle shape) must remain identical to the reference."
+  "status": "approved",
+  "fix_prompt": null
 }
