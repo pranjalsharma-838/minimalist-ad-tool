@@ -19,8 +19,8 @@ async (shared) => {
     await page.waitForSelector('button[aria-label="Add files and more"]:not([disabled])', { timeout: 40000 });
     await page.waitForTimeout(1500);
     for (let i = 0; i < 3; i++) await page.keyboard.press("Escape");
-    await page.locator('input[type="file"]').nth(0).setInputFiles(j.image);
-    await page.waitForTimeout(4000);
+    // Scene and frame jobs are text-only; only pack-based jobs attach a photo.
+    if (j.image) { await page.locator('input[type="file"]').nth(0).setInputFiles(j.image); await page.waitForTimeout(4000); }
     const box = page.getByRole("textbox").first();
     await box.click();
     await box.fill(j.prompt);

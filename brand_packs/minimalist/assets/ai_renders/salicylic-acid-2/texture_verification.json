@@ -1,0 +1,13 @@
+{
+  "product": "salicylic-acid-2",
+  "accepted": null,
+  "auto_check": {
+    "matches": 382,
+    "inliers": 281,
+    "label_similarity": 0.372
+  },
+  "visual_read": "Label words identical (Salicylic Acid / 02% / FACE SERUM / with oligopeptide-10 + egcg + horehound extract / reduces oil, acne, blackheads / for acne prone skin / 30ml / 1 fl oz / Minimalist), but Glass colour changed: real bottle is near-black (mean RGB about 22,20,18 on the body) but the AI bottle shows a lighter brown amber tint (about 34,23,16), clearly visible on the shoulders and base.",
+  "swatch": "plausible: clear gel suits the product type; no text or objects added",
+  "status": "failed",
+  "fix_prompt": "Re-render the Minimalist Salicylic Acid 02% serum bottle exactly as in the reference photo. The glass must stay the SAME near-black, very dark opaque-looking glass as the real bottle (no brown/amber tint, no orange glow through the glass). Keep every label word, the pink line, the black ribbed dropper collar and black bulb, label size and position, and bottle shape unchanged. Only the background (clean white) and the clear-gel swatch beside it may change; the swatch must stay a clear transparent gel with no text or objects."
+}
