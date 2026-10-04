@@ -1,0 +1,88 @@
+{
+  "ad_type": "testimonial_ugc",
+  "layout": "socialproof",
+  "source_ad_id": "multi-vitamin-spf-50__t28",
+  "product_title": "SPF 50 Sunscreen",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "trend",
+  "ai_label_required": false,
+  "hook_type": "social_proof",
+  "headline": "Rated by 1,890 customers",
+  "proof": {
+    "value": "3.9★",
+    "label": "out of 5, from 1,890 reviews",
+    "source": "beminimalist.co, captured 2 Oct 2026"
+  },
+  "caption": "SPF 50 Sunscreen: broad spectrum SPF 50, PA++++, with a light texture that spreads easily. Rated 3.9 out of 5 from 1,890 reviews on beminimalist.co (captured 2 Oct 2026).",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "headline": [
+      "RATING"
+    ],
+    "caption": [
+      "F2",
+      "F3",
+      "RATING"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "2274657823309888",
+      "brand": "Re'equil",
+      "took": "the star rating and customer count under a single pack; its 'India's most loved' headline and award badges dropped (superlative, no basis)"
+    },
+    {
+      "id": "1418542033483616",
+      "brand": "Foxtale",
+      "took": "the rating as the hero of the ad; its 'Our #1' and 'sold every 30 seconds' claims dropped (no source), and the hand dropped (a model)"
+    }
+  ],
+  "layout_description": "White or studio-grey canvas; the rating set large (3.9★), its count and source beneath; the real tube on the right.",
+  "adaptation_notes": "Trending format (#28 Social-proof creative): 2 brands. Real rating quoted exactly (RATING), never rounded up; superlatives, velocity claims and award badges dropped.",
+  "product_handle": "multi-vitamin-spf-50",
+  "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+  "source_brand": "Re'equil",
+  "status": "needs_retry",
+  "risk_level": "medium",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-13",
+      "span": "Rated by 1,890 customers",
+      "message": "The source shows 1,890 reviews on beminimalist.co, not 1,890 customers; reviews are not necessarily distinct or verified buyers, so the headline states the social proof more strongly than its source does. The rating and source line on the image are fine; only this wording needs to match them.",
+      "fix": "Rated 3.9 out of 5 from 1,890 reviews",
+      "layer": "model"
+    }
+  ]
+}

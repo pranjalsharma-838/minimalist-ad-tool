@@ -1,0 +1,6 @@
+{
+  "findings": [],
+  "rule_hit_review": [],
+  "tone_read": "Sounds like Minimalist: calm and declarative, leading with the active and its strength and using sourcing ('Sourced from Alfa Aesar, USA') as proof instead of hype or a problem hook. It is light on education, since it never says what Alpha Arbutin or Butylresorcinol does, which is a missed opportunity rather than something a reviewer would ask to change.",
+  "language_read": "The concentration is exact and on-format ('2%', matching Alpha Arbutin 2% Face Serum), the benefit is appearance-scoped ('even-looking tone', the vocabulary the rulebook accepts), and 'For all skin types' is backed by the page's skin-type list. The ad rightly leaves out the page's fairness wording ('skin lightening active') and its 'most effective' superlative; the image itself was not provided, so confirm it shows no before/after shade change (CLM-06), the main risk for this active."
+}

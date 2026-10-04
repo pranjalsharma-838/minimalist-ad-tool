@@ -1,0 +1,108 @@
+{
+  "ad_type": "routine_regimen",
+  "layout": "journey",
+  "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+  "product_title": "Vitamin C 10% Face Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [
+    {
+      "label": "Step 1 · Cleanse",
+      "product_handle": "salicylic-lha-2-cleanser",
+      "line": "Lather on a wet face and rinse thoroughly",
+      "cites": [
+        "salicylic-lha-2-cleanser:F13"
+      ]
+    },
+    {
+      "label": "Step 2 · Vitamin C",
+      "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+      "line": "2-3 drops, tapped in gently",
+      "cites": [
+        "F14"
+      ]
+    },
+    {
+      "label": "Step 3 · Protect",
+      "product_handle": "multi-vitamin-spf-50",
+      "line": "SPF 50 as the last step, every morning",
+      "cites": [
+        "multi-vitamin-spf-50:F20",
+        "multi-vitamin-spf-50:F21"
+      ]
+    }
+  ],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "trend",
+  "ai_label_required": false,
+  "hook_type": "statement",
+  "headline": "Your morning routine in three steps",
+  "caption": "A simple morning routine: cleanse, then 2-3 drops of Vitamin C 10% Face Serum tapped in gently, then SPF 50 Sunscreen as the last step.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "headline": [
+      "F15"
+    ],
+    "caption": [
+      "F14",
+      "salicylic-lha-2-cleanser:F13",
+      "multi-vitamin-spf-50:F20"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "1000219876379194",
+      "brand": "Pilgrim",
+      "took": "three packs with numbered steps (Cleanse / Treat / Protect)"
+    },
+    {
+      "id": "2593621517723635",
+      "brand": "Dot & Key",
+      "took": "a routine headline with step labels on the packs; its model and gradient dropped"
+    }
+  ],
+  "layout_description": "White canvas; big routine title; three real packs in a row, each with a black numbered circle, the step in capitals and the product name in grey.",
+  "adaptation_notes": "Trending format (#22 How-to / steps): 2 brands. Matches the brand's own 'Glow Boosting Routine' static. The step lines move to the caption (house text budget).",
+  "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+  "source_brand": "Pilgrim",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": [
+    {
+      "severity": "advisory",
+      "rule_id": "LNG-01",
+      "span": "Vitamin C",
+      "message": "Active named without its concentration.",
+      "fix": "State it as on the pack: 'Niacinamide 10%'.",
+      "layer": "rule"
+    }
+  ]
+}

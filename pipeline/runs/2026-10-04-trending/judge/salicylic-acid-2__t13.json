@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "on_image_text",
+      "span": "Week 2 · still in the routine",
+      "severity": "block",
+      "why": "A Day 1 to Week 2 frame pair beside a 97% headline reads as a before/after, and the footnote says the frames are AI illustrations, so the ad depicts a 2-week change nobody photographed; it also makes a self-reported 'felt less oily' look like a visible, measured result (CLM-08) and implies a timed result (CLM-07). The rulebook rates CLM-15 as fix; my view is that this must not run with these frames.",
+      "fix": "Use real, consented, unretouched photos from the 2-week study with the qualifier, or drop the Day 1 / Week 2 frames and pair the stat with a pack or texture shot; either way, 'Frames are AI illustrations, not real results.' then goes."
+    },
+    {
+      "rule_id": "CLM-08",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "97% said skin felt less oily throughout the day",
+      "severity": "fix",
+      "why": "The headline drops 'subjects' and has no asterisk, so '97%' can read as 97% of all users, and the 2-week duration appears only in the footnote. The perception wording ('said skin felt') is correctly kept.",
+      "fix": "97% subjects said skin felt less oily throughout the day*, with the footnote opening '*Consumer study:' so the asterisk links the headline to its qualifier."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'after 2 weeks' is the usage instruction ('Start every alternate day; after 2 weeks, use it every day'), taken from the page's usage line, not a promised result."
+    },
+    {
+      "index": 1,
+      "assessment": "agree",
+      "why": "It is a consumer-perception stat, so CLM-08 applies; the footnote wording itself is right (verbatim from the page's study line, self-reported, with the 2-week duration) but it gives no sample size, so confirm n in the study file and add it if available."
+    }
+  ],
+  "tone_read": "Calm and evidence-led: the headline leads with a consumer-study result in the brand's perception wording rather than a fear hook or hype, and the usage line is precise. The Day 1 / Week 2 frames, though, borrow the category's transformation-story format, which is not how Minimalist presents proof.",
+  "language_read": "Concentration is exact ('Salicylic Acid 2% Face Serum') and the stat keeps its self-reported form ('said skin felt less oily'), matching the page's study line. The ad avoids the page's riskier wording ('wards off acne', 'flawless matt looking skin', anti-microbial claims) and has no natural or chemical-free framing."
+}

@@ -1,9 +1,9 @@
 {
-  "built": "2026-10-04T03:06:26.454Z",
+  "built": "2026-10-04T03:27:04.774Z",
   "as_of": "2026-10-04",
   "window_days": 60,
   "min_brands": 2,
-  "still_running": "checked in the Meta Ad Library (competitor_status_2026-10-04.json)",
+  "still_running": "checked live in the Meta Ad Library on 4 Oct 2026",
   "counts": {
     "statics": 66,
     "started_in_window": 34,

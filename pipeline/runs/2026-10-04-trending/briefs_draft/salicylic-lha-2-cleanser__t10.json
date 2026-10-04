@@ -1,0 +1,70 @@
+{
+  "ad_type": "problem_solution",
+  "layout": "callouts",
+  "source_ad_id": "salicylic-lha-2-cleanser__t10",
+  "product_title": "Salicylic Acid + LHA 2% Cleanser",
+  "subhead": "Lather on a wet face, rinse thoroughly.",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [
+    {
+      "text": "Salicylic Acid (BHA) reduces the oily look",
+      "cites": [
+        "F5"
+      ]
+    },
+    {
+      "text": "LHA gently exfoliates the outer layer",
+      "cites": [
+        "F6"
+      ]
+    }
+  ],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "trend",
+  "ai_label_required": false,
+  "hook_type": "contrast",
+  "headline": "Spotted: oiliness. Solution: BHA + LHA",
+  "caption": "Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Pour into wet hands, rub into a light lather, massage into the face and rinse thoroughly. AM & PM, every day.",
+  "citations": {
+    "subhead": [
+      "F13"
+    ],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "headline": [
+      "F11",
+      "F3"
+    ],
+    "caption": [
+      "F3",
+      "F13",
+      "F14"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "1778713726796593",
+      "brand": "The Derma Co",
+      "took": "the 'Spotted: … / Solution: …' headline pair"
+    },
+    {
+      "id": "1587965372880796",
+      "brand": "Conscious Chemist",
+      "took": "a one-line 'do this' instruction; its pimple close-up and timed claim dropped"
+    }
+  ],
+  "layout_description": "White canvas; the 'Spotted / Solution' headline; two thin callout lines pointing at the real pack (what each acid does); one grey how-to line. No skin imagery.",
+  "adaptation_notes": "Trending format (#10 Problem macro): 2 brands. Both references rely on an extreme skin-problem close-up; that is fear framing the brand avoids and would need real photos, so the macro is dropped and the structure kept as calm callouts with the pack. No acne wording (CLM-02)."
+}

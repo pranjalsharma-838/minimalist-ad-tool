@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "Stock up on Vitamin B5 10% Moisturizer Offer as on beminimalist.co, 2 Oct 2026.",
+      "severity": "fix",
+      "why": "This closing line is a template glitch: it repeats the headline a third time, runs it into a fragment ('Moisturizer Offer as on'), and restates the date already given in the first sentence. Broken copy like this would not pass a brand review.",
+      "fix": "Delete it; the first sentence already carries the offer, the site, the date and 'T&C apply'."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "A calm offer ad: no countdown, 'hurry' or scarcity wording, and the free item's condition and 'T&C apply' are stated. But 'Stock up' three times and 'offer as captured on 2 Oct 2026' (internal tooling language; 'as on 2 Oct 2026' reads naturally) make the copy feel machine-assembled rather than clean and declarative.",
+  "language_read": "The product line is accurate to the page ('a lightweight, oil-free everyday moisturizer with 10% Vitamin B5 (Panthenol)'), with the concentration on-format and the active named precisely. There are no efficacy claims to hedge and no natural or chemical-free framing, and the offer wording matches the captured 'Buy 2, Get 3rd Free' exactly."
+}

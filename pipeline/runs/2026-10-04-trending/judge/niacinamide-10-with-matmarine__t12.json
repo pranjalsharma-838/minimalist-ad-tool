@@ -1,0 +1,25 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-15",
+      "dimension": "policy",
+      "field": "footnote",
+      "span": "AI illustrations, not real results",
+      "severity": "block",
+      "why": "The footnote says the visuals are AI illustrations standing in for results, so the ad shows skin outcomes nobody photographed, and a small-print disclaimer does not undo what the image shows (if the frames show clearer skin beside 'acne-prone', they also imply acne clearing, CLM-02). The rulebook rates CLM-15 as fix; my view is that this must not run until real evidence replaces the frames.",
+      "fix": "Replace the AI frames with real, consented, unretouched study photos carrying the study qualifier, or drop the result imagery and show the pack or texture instead; then rewrite or remove this footnote."
+    },
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "policy",
+      "field": "footnote",
+      "span": "Real, consented study photos are required before any use.",
+      "severity": "fix",
+      "why": "This is an internal production instruction, not consumer copy, and it states outright that the creative is not cleared to run as built. Publishing it would print a team note on a paid ad and flag the visuals as placeholders.",
+      "fix": "Remove it from the creative, and resolve the imagery first (see the CLM-15 finding)."
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "The copy is on-voice: calm, led by the active and its strength, and it names the concern the clinical way ('oily, acne-prone skin') with no problem hook or hype. The visual is what clashes with the brand: AI-made 'results' under a 'Hide Nothing.' sign-off undercut the transparency that line promises.",
+  "language_read": "Concentration is exact and on-format ('10% Niacinamide', matching Niacinamide 10% Face Serum), and the supporting actives (Matmarine, Zinc) are named precisely and appear on the product page. There are no efficacy verbs to hedge and no natural or chemical-free framing, and the ad rightly skips the page's 'clinically proven' and complexion claims."
+}

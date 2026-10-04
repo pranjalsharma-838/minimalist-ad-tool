@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "UNLISTED",
+      "dimension": "language",
+      "field": "primary_text",
+      "span": "rinse thoroughly Step 2",
+      "severity": "advisory",
+      "why": "The step list runs together with no full stops or line breaks, and it repeats the routine the opening sentence has just given, so the primary text reads as machine-joined.",
+      "fix": "Keep one version: either the opening sentence alone, or the three steps on separate lines, each ending in a full stop ('Step 1 · Cleanse: Lather on a wet face and rinse thoroughly.')."
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "'Vitamin C' here is the step label 'Step 2 · Vitamin C'; the same image names the product with its strength twice ('Vitamin C 10% Face Serum'), as does the primary text."
+    }
+  ],
+  "tone_read": "Calm and instructional with no hype or problem hook: it teaches where the serum sits in a routine (after cleansing, before SPF), which suits the education-first voice. The only tone issue is mechanical: the primary text repeats the routine and runs the steps together, flagged above.",
+  "language_read": "The serum is named with its exact strength ('Vitamin C 10% Face Serum'), the step labels avoid 'Treat', and there are no efficacy claims, hype words or natural framing. The cleanser's '2%' and the sunscreen's 'SPF 50' are not in the attached facts, which cover only the serum; they match Minimalist's product names, but check them against those product pages."
+}

@@ -1,0 +1,66 @@
+{
+  "ad_type": "offer_promo",
+  "layout": "offer",
+  "source_ad_id": "vitamin-b5-10-moisturizer__t36",
+  "product_title": "Vitamin B5 10% Moisturizer",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": {
+    "line": "Buy 2, Get 3rd Free",
+    "condition": "On beminimalist.co. T&C apply.",
+    "valid_till": ""
+  },
+  "footnote": "Offer as on beminimalist.co, 2 Oct 2026. T&C apply.",
+  "cta": "Shop the offer",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "trend",
+  "ai_label_required": false,
+  "hook_type": "offer",
+  "headline": "Stock up on Vitamin B5 10% Moisturizer",
+  "caption": "Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Stock up on Vitamin B5 10% Moisturizer: a lightweight, oil-free everyday moisturizer with 10% Vitamin B5 (Panthenol).",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "OFFER3"
+    ],
+    "headline": [
+      "F1"
+    ],
+    "caption": [
+      "OFFER3",
+      "F1",
+      "F3",
+      "F5"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "1101473269058810",
+      "brand": "Re'equil",
+      "took": "the offer as one boxed line in plain words"
+    },
+    {
+      "id": "1393840196150399",
+      "brand": "Conscious Chemist",
+      "took": "a replenishment hook ('stock up'), kept in the caption; its expiry badge dropped (no end date captured)"
+    },
+    {
+      "id": "1414040904207915",
+      "brand": "The Derma Co",
+      "took": "the pack alone as the hero; the rain scene, limited-time sticker and code pill dropped"
+    }
+  ],
+  "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left; the offer in plain words as the title ('Buy 2, Get 3rd Free') with its condition in one small grey line; the real pack large on the right; quiet 'Shop the offer →'.",
+  "adaptation_notes": "Trending format (#36 Offer creative): 5 brands launched offer creatives in the last 60 days and still run them. Recreated in the brand's static offer style ('Three products, At the cost of two'): one plain offer line + one condition line. The live offer is quoted exactly (OFFER3); no urgency because no end date was captured."
+}

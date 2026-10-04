@@ -1,0 +1,89 @@
+{
+  "ad_type": "product_hero",
+  "layout": "badges",
+  "source_ad_id": "alpha-arbutin-2__t2",
+  "product_title": "Alpha Arbutin 2% Face Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": false,
+  "photography_needed": "",
+  "angle": "trend",
+  "ai_label_required": false,
+  "hook_type": "ingredient",
+  "headline": "2% Alpha Arbutin for an even-looking tone",
+  "badges": [
+    {
+      "text": "Sourced from Alfa Aesar, USA",
+      "cites": [
+        "F8"
+      ]
+    },
+    {
+      "text": "For all skin types",
+      "cites": [
+        "F9"
+      ]
+    }
+  ],
+  "caption": "Alpha Arbutin 2% Face Serum, with Butylresorcinol and Ferulic Acid. Apply 2-3 drops after cleansing & toning, AM & PM; use sunscreen during the day.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [],
+    "headline": [
+      "F1",
+      "F2"
+    ],
+    "caption": [
+      "F3",
+      "F7",
+      "F19",
+      "F20"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "1689296475500089",
+      "brand": "Deconstruct",
+      "took": "one plain promise headline over a single pack"
+    },
+    {
+      "id": "1420890446893063",
+      "brand": "Pilgrim",
+      "took": "a short credential strip (here the sourcing fact and skin types); its water and sun-flare scene dropped"
+    }
+  ],
+  "layout_description": "White canvas; headline and two outlined badges stacked on the left; the real pack large on the right.",
+  "adaptation_notes": "Trending format (#2 Product + benefit badges): 2 brands. Three icon benefits cut to two badges (house text budget). 'Even-looking tone' stays hedged; no lightening or dark-spot removal wording (CLM-06, CLM-04).",
+  "product_handle": "alpha-arbutin-2",
+  "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+  "source_brand": "Deconstruct",
+  "status": "approved_for_image_step",
+  "risk_level": "low",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "LIMITED_CHECK",
+    "label": "Ready for human review (limited check)",
+    "detail": "No rule hits. The model layer did NOT run, so implied claims and overall tone were not assessed — the reviewer must read for those."
+  },
+  "coverage": {
+    "rules": true,
+    "model": false,
+    "model_error": null,
+    "rules_version": "0.3"
+  },
+  "findings": []
+}

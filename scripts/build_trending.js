@@ -33,7 +33,7 @@ const trends = [...groups.entries()].map(([id, xs]) => ({ template_id: id, name:
 
 const out = {
   built: new Date().toISOString(), as_of: asOf.toISOString().slice(0, 10), window_days: DAYS, min_brands: MIN_BRANDS,
-  still_running: status ? `checked in the Meta Ad Library (${statusFile})` : "assumed: running when captured (2026-10-02); run the status check to confirm",
+  still_running: status ? `checked live in the Meta Ad Library on ${new Date(statusFile.slice(18, 28)).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}` : "assumed: running when captured (2 Oct 2026); run the status check to confirm",
   counts: { statics: ads.filter((a) => a.format !== "video").length, started_in_window: recent.length, still_running: live.length, stopped: recent.length - live.length },
   trends,
 };

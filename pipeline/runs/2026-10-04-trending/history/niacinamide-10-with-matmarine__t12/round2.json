@@ -1,0 +1,100 @@
+{
+  "ad_type": "before_after",
+  "layout": "before_after",
+  "source_ad_id": "niacinamide-10-with-matmarine__t12",
+  "product_title": "Niacinamide 10% Face Serum",
+  "subhead": "",
+  "tag": "",
+  "proof_points": [],
+  "actives": [],
+  "steps": [],
+  "stat": null,
+  "callouts": [],
+  "specs": [],
+  "range": [],
+  "offer": null,
+  "footnote": "AI illustrations, not real results. Real, consented study photos are required before any use.",
+  "cta": "Shop now",
+  "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+  "needs_real_photography": true,
+  "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+  "angle": "trend",
+  "ai_label_required": true,
+  "hook_type": "statement",
+  "headline": "10% Niacinamide for oily, acne-prone skin",
+  "caption": "Niacinamide 10% Face Serum, with Matmarine and Zinc. Apply 2-3 drops after cleansing & toning, AM & PM.",
+  "frames_prompt": "Reused AI illustration frames (before/after skin crops) from run 2026-10-03-scale; no product, no text.",
+  "citations": {
+    "subhead": [],
+    "tag": [],
+    "proof_points": [],
+    "footnote": [
+      "F13"
+    ],
+    "headline": [
+      "F1",
+      "F10"
+    ],
+    "caption": [
+      "F5",
+      "F13",
+      "F14"
+    ]
+  },
+  "blend_sources": [
+    {
+      "id": "2577485959347287",
+      "brand": "The Derma Co",
+      "took": "stacked before/after crops as the layout"
+    },
+    {
+      "id": "1079958907863521",
+      "brand": "Pilgrim",
+      "took": "labelled BEFORE / AFTER frames beside the pack"
+    },
+    {
+      "id": "1550169393471299",
+      "brand": "Dr. Sheth's",
+      "took": "the pack as the anchor between the frames; its timed claim ('in 15 days') and struck price dropped"
+    }
+  ],
+  "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; calm headline with no result wording.",
+  "adaptation_notes": "Trending format (#12 Before / after): 3 brands. Kept the labelled stacked frames; dropped every result claim and time frame (the page has no before/after study for this). Severe: AI frames stand in for photos that must be real, consented study photos.",
+  "product_handle": "niacinamide-10-with-matmarine",
+  "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+  "source_brand": "The Derma Co",
+  "status": "needs_retry",
+  "risk_level": "severe",
+  "warnings": [],
+  "hard_failures": [],
+  "verdict": {
+    "code": "NEEDS_CHANGES",
+    "label": "Fix before review",
+    "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+  },
+  "coverage": {
+    "rules": true,
+    "model": true,
+    "model_error": null,
+    "rules_version": "0.3",
+    "model_name": "stand-in (same prompt)"
+  },
+  "findings": [
+    {
+      "severity": "fix",
+      "rule_id": "CLM-15",
+      "span": "AI illustrations, not real results",
+      "message": "The footnote says the visuals are AI illustrations standing in for results, so the ad shows skin outcomes nobody photographed, and a small-print disclaimer does not undo what the image shows (if the frames show clearer skin beside 'acne-prone', they also imply acne clearing, CLM-02). The rulebook rates CLM-15 as fix; my view is that this must not run until real evidence replaces the frames.",
+      "fix": "Replace the AI frames with real, consented, unretouched study photos carrying the study qualifier, or drop the result imagery and show the pack or texture instead; then rewrite or remove this footnote.",
+      "layer": "model"
+    },
+    {
+      "severity": "fix",
+      "rule_id": "UNLISTED",
+      "span": "Real, consented study photos are required before any use.",
+      "message": "This is an internal production instruction, not consumer copy, and it states outright that the creative is not cleared to run as built. Publishing it would print a team note on a paid ad and flag the visuals as placeholders.",
+      "fix": "Remove it from the creative, and resolve the imagery first (see the CLM-15 finding).",
+      "layer": "model"
+    }
+  ]
+}

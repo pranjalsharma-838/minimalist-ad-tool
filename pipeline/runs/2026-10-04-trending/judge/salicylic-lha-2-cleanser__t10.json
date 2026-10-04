@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "rule_id": "LNG-04",
+      "dimension": "language",
+      "field": "headline",
+      "span": "Solution: BHA + LHA",
+      "severity": "advisory",
+      "why": "'Solution' presents the cleanser as solving oiliness outright, while the image line and the product page scope it to 'reduces the oily look'. The headline also names the actives without their 2% (LNG-01), which is the brand's signature.",
+      "fix": "Spotted: oiliness. Formulated with BHA + LHA 2%"
+    }
+  ],
+  "rule_hit_review": [
+    {
+      "index": 0,
+      "assessment": "likely_false_positive",
+      "why": "On the image, 'Salicylic Acid' appears in a mechanism line and in the pack name 'Salicylic Acid + LHA 2% Cleanser', which carries the 2% on the same image. That 2% is the combined BHA + LHA strength and the page gives no separate Salicylic Acid figure, so adding one would invent a number."
+    }
+  ],
+  "tone_read": "Mostly on-voice: the image explains what each active does ('reduces the oily look', 'gently exfoliates the outer layer') in calm, mechanism-led lines, which is the brand's education-first style. The 'Spotted: oiliness.' headline is a trend-format hook that names the concern without agitating it, so it stays within bounds, though it is punchier than Minimalist's usual register.",
+  "language_read": "Concentration is given as the page gives it ('BHA + LHA in 2% concentration'), the ingredient lines are appearance-hedged, and the page's 'Prevents Breakout' and 'acne fighting' wording is rightly left out. The weak spots are both in the headline: 'Solution' is unhedged, and the actives appear there without their 2%."
+}

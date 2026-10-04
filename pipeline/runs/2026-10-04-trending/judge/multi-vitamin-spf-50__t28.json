@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "rule_id": "CLM-13",
+      "dimension": "policy",
+      "field": "headline",
+      "span": "Rated by 1,890 customers",
+      "severity": "fix",
+      "why": "The source shows 1,890 reviews on beminimalist.co, not 1,890 customers; reviews are not necessarily distinct or verified buyers, so the headline states the social proof more strongly than its source does. The rating and source line on the image are fine; only this wording needs to match them.",
+      "fix": "Rated 3.9 out of 5 from 1,890 reviews"
+    }
+  ],
+  "rule_hit_review": [],
+  "tone_read": "Calm and transparent: showing an unrounded 3.9 rating with its source and date fits the 'Hide Nothing.' line and carries no hype, urgency or fear. It is less education-first than Minimalist usually is (it leads with social proof and names none of the UV filters or vitamins), and 'captured 2 Oct 2026' reads like internal tooling language where 'as of 2 Oct 2026' would read naturally.",
+  "language_read": "The protection claim is exact and in the accepted form ('broad spectrum SPF 50, PA++++'), matching the product's labelled SPF, with no sunblock, waterproof or 'complete protection' wording. 'a light texture that spreads easily' is on the product page and there is no natural or chemical-free framing; the only wording problem is 'customers' standing in for 'reviews' in the headline."
+}

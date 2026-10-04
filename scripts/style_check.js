@@ -11,7 +11,7 @@ import path from "node:path";
 import { leanBrief } from "../lib/brief_check.js";
 import { wrap } from "../public/render.js";
 
-const RUNS = /^2026-10-0[34]-(pilot|scale|transformation|angles|people|usvsthem)$/;
+const RUNS = /^2026-10-0[34]-(pilot|scale|transformation|angles|people|usvsthem|trending)$/;
 const runs = process.argv.slice(2).length ? process.argv.slice(2) : fs.readdirSync("pipeline/runs").filter((r) => RUNS.test(r));
 // A word = a run of letters/digits; "1,491", "2-3" and "40-50%" count once, a lone "+" or "&" not at all.
 export const words = (s) => (String(s || "").match(/[\p{L}\p{N}][\p{L}\p{N}%₹+'’.,-]*/gu) || []).length;

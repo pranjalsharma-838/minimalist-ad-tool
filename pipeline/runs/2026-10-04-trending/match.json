@@ -1,0 +1,158 @@
+[
+  {
+    "id": "vitamin-b5-10-moisturizer__t36",
+    "brand": "Conscious Chemist",
+    "ad_type": "offer_promo",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "template_id": 36,
+    "template_name": "Offer creative",
+    "risk": "medium",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "Conscious Chemist 1393840196150399 (16d)",
+      "The Derma Co 1414040904207915 (18d)",
+      "Re'equil 1101473269058810 (27d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Conscious Chemist",
+      "Deconstruct",
+      "The Derma Co",
+      "Dr. Sheth's",
+      "Re'equil"
+    ]
+  },
+  {
+    "id": "niacinamide-10-with-matmarine__t12",
+    "brand": "The Derma Co",
+    "ad_type": "before_after",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_title": "Niacinamide 10% Face Serum",
+    "template_id": 12,
+    "template_name": "Before / after",
+    "risk": "medium",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "The Derma Co 2577485959347287 (18d)",
+      "Pilgrim 1079958907863521 (32d)",
+      "Dr. Sheth's 1550169393471299 (39d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "The Derma Co",
+      "Dr. Sheth's",
+      "Pilgrim"
+    ]
+  },
+  {
+    "id": "salicylic-acid-2__t13",
+    "brand": "Deconstruct",
+    "ad_type": "before_after",
+    "product_handle": "salicylic-acid-2",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "template_id": 13,
+    "template_name": "Split-screen transformation",
+    "risk": "medium",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "Deconstruct 2950827325263069 (29d)",
+      "Dr. Sheth's 1290012680862234 (34d)",
+      "The Derma Co 2307135286779864 (38d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Deconstruct",
+      "The Derma Co",
+      "Dr. Sheth's"
+    ]
+  },
+  {
+    "id": "salicylic-lha-2-cleanser__t10",
+    "brand": "The Derma Co",
+    "ad_type": "problem_solution",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "template_id": 10,
+    "template_name": "Problem macro",
+    "risk": "medium",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "The Derma Co 1778713726796593 (18d)",
+      "Conscious Chemist 1587965372880796 (23d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Conscious Chemist",
+      "The Derma Co"
+    ],
+    "risk_note": "Skin-problem close-up dropped (fear framing; it would need real photos): rendered as calm callouts with the pack, no skin imagery."
+  },
+  {
+    "id": "alpha-arbutin-2__t2",
+    "brand": "Deconstruct",
+    "ad_type": "product_hero",
+    "product_handle": "alpha-arbutin-2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "template_id": 2,
+    "template_name": "Product + benefit badges",
+    "risk": "low",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "Deconstruct 1689296475500089 (31d)",
+      "Pilgrim 1420890446893063 (34d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Deconstruct",
+      "Pilgrim"
+    ]
+  },
+  {
+    "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+    "brand": "Pilgrim",
+    "ad_type": "routine_regimen",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_title": "Vitamin C 10% Face Serum",
+    "template_id": 22,
+    "template_name": "How-to / steps",
+    "risk": "low",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "Pilgrim 1000219876379194 (34d)",
+      "Dot & Key 2593621517723635 (53d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Dot & Key",
+      "Pilgrim"
+    ]
+  },
+  {
+    "id": "multi-vitamin-spf-50__t28",
+    "brand": "Re'equil",
+    "ad_type": "testimonial_ugc",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_title": "SPF 50 Sunscreen",
+    "template_id": 28,
+    "template_name": "Social-proof creative",
+    "risk": "medium",
+    "match_method": "trending now (research/trending.json)",
+    "angle": "trend",
+    "blend_refs": [
+      "Re'equil 2274657823309888 (27d)",
+      "Foxtale 1418542033483616 (33d)"
+    ],
+    "trend": true,
+    "trend_brands": [
+      "Foxtale",
+      "Re'equil"
+    ]
+  }
+]

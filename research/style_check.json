@@ -891,6 +891,83 @@
   "issues": []
  },
  {
+  "run": "2026-10-04-trending",
+  "id": "alpha-arbutin-2__t2",
+  "layout": "badges",
+  "on_image_words": 16,
+  "headline_words": 7,
+  "footnote_chars": 0,
+  "caption_words": 23,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "multi-vitamin-spf-50__t28",
+  "layout": "socialproof",
+  "on_image_words": 4,
+  "headline_words": 4,
+  "footnote_chars": 0,
+  "caption_words": 35,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "niacinamide-10-with-matmarine__t12",
+  "layout": "before_after",
+  "on_image_words": 6,
+  "headline_words": 6,
+  "footnote_chars": 35,
+  "caption_words": 16,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "salicylic-acid-2__t13",
+  "layout": "splitscreen",
+  "on_image_words": 20,
+  "headline_words": 10,
+  "footnote_chars": 156,
+  "caption_words": 25,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "salicylic-lha-2-cleanser__t10",
+  "layout": "callouts",
+  "on_image_words": 25,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 30,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "vitamin-b5-10-moisturizer__t36",
+  "layout": "offer",
+  "on_image_words": 10,
+  "headline_words": 5,
+  "footnote_chars": 0,
+  "caption_words": 51,
+  "within": true,
+  "issues": []
+ },
+ {
+  "run": "2026-10-04-trending",
+  "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+  "layout": "journey",
+  "on_image_words": 16,
+  "headline_words": 6,
+  "footnote_chars": 0,
+  "caption_words": 56,
+  "within": true,
+  "issues": []
+ },
+ {
   "run": "2026-10-04-usvsthem",
   "id": "alpha-arbutin-2__t17",
   "layout": "usvsthem",

@@ -1,6 +1,6 @@
 # Trending now: formats several brands launched recently and still run
 
-As of 2026-10-04. Competitor static ads (10 Indian skincare brands, Meta Ad Library) that **started in the last 60 days** and are **still running** (checked in the Meta Ad Library (competitor_status_2026-10-04.json)). A format is trending when **at least 2 brands** are running it. Built by `scripts/build_trending.js`; the Minimalist recreations are in run `2026-10-04-trending` and at the top of `ad_library/index.html`.
+As of 2026-10-04. Competitor static ads (10 Indian skincare brands, Meta Ad Library) that **started in the last 60 days** and are **still running** (checked live in the Meta Ad Library on 4 Oct 2026). A format is trending when **at least 2 brands** are running it. Built by `scripts/build_trending.js`; the Minimalist recreations are in run `2026-10-04-trending` and at the top of `ad_library/index.html`.
 
 34 of 66 statics started in the window; 33 are still running (1 stopped since the capture).
 

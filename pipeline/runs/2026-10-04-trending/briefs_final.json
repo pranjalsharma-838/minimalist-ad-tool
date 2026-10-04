@@ -1,0 +1,726 @@
+[
+  {
+    "ad_type": "product_hero",
+    "layout": "badges",
+    "source_ad_id": "alpha-arbutin-2__t2",
+    "product_title": "Alpha Arbutin 2% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "trend",
+    "ai_label_required": false,
+    "hook_type": "ingredient",
+    "headline": "2% Alpha Arbutin for an even-looking tone",
+    "badges": [
+      {
+        "text": "Sourced from Alfa Aesar, USA",
+        "cites": [
+          "F8"
+        ]
+      },
+      {
+        "text": "For all skin types",
+        "cites": [
+          "F9"
+        ]
+      }
+    ],
+    "caption": "Alpha Arbutin 2% Face Serum, with Butylresorcinol and Ferulic Acid. Apply 2-3 drops after cleansing & toning, AM & PM; use sunscreen during the day.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "headline": [
+        "F1",
+        "F2"
+      ],
+      "caption": [
+        "F3",
+        "F7",
+        "F19",
+        "F20"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "1689296475500089",
+        "brand": "Deconstruct",
+        "took": "one plain promise headline over a single pack"
+      },
+      {
+        "id": "1420890446893063",
+        "brand": "Pilgrim",
+        "took": "a short credential strip (here the sourcing fact and skin types); its water and sun-flare scene dropped"
+      }
+    ],
+    "layout_description": "White canvas; headline and two outlined badges stacked on the left; the real pack large on the right.",
+    "adaptation_notes": "Trending format (#2 Product + benefit badges): 2 brands. Three icon benefits cut to two badges (house text budget). 'Even-looking tone' stays hedged; no lightening or dark-spot removal wording (CLM-06, CLM-04).",
+    "product_handle": "alpha-arbutin-2",
+    "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
+    "source_brand": "Deconstruct",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "testimonial_ugc",
+    "layout": "socialproof",
+    "source_ad_id": "multi-vitamin-spf-50__t28",
+    "product_title": "SPF 50 Sunscreen",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "trend",
+    "ai_label_required": false,
+    "hook_type": "social_proof",
+    "headline": "Rated across 1,890 reviews",
+    "proof": {
+      "value": "3.9★",
+      "label": "out of 5",
+      "source": "beminimalist.co, captured 2 Oct 2026"
+    },
+    "caption": "out of 5, from 1,890 reviews. SPF 50 Sunscreen: broad spectrum SPF 50, PA++++, with a light texture that spreads easily. Rated 3.9 out of 5 from 1,890 reviews on beminimalist.co (captured 2 Oct 2026).",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "headline": [
+        "RATING"
+      ],
+      "caption": [
+        "F2",
+        "F3",
+        "RATING"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "2274657823309888",
+        "brand": "Re'equil",
+        "took": "the star rating and customer count under a single pack; its 'India's most loved' headline and award badges dropped (superlative, no basis)"
+      },
+      {
+        "id": "1418542033483616",
+        "brand": "Foxtale",
+        "took": "the rating as the hero of the ad; its 'Our #1' and 'sold every 30 seconds' claims dropped (no source), and the hand dropped (a model)"
+      }
+    ],
+    "layout_description": "White or studio-grey canvas; the rating set large (3.9★), its count and source beneath; the real tube on the right.",
+    "adaptation_notes": "Trending format (#28 Social-proof creative): 2 brands. Real rating quoted exactly (RATING), never rounded up; superlatives, velocity claims and award badges dropped. Round 2 (judge): '1,890 customers' replaced by '1,890 reviews' (the source counts reviews, not people).",
+    "product_handle": "multi-vitamin-spf-50",
+    "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
+    "source_brand": "Re'equil",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed",
+    "style_edits": [
+      {
+        "field": "proof.label",
+        "from": "out of 5, from 1,890 reviews",
+        "to": "out of 5",
+        "why": "the review count is already in the headline; said once"
+      }
+    ]
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "before_after",
+    "source_ad_id": "niacinamide-10-with-matmarine__t12",
+    "product_title": "Niacinamide 10% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "AI illustrations, not real results.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched before/after photos from a documented study of this product (same person, light and framing), with the study's claim and duration on file.",
+    "angle": "trend",
+    "ai_label_required": true,
+    "hook_type": "statement",
+    "headline": "10% Niacinamide for oily, acne-prone skin",
+    "caption": "Niacinamide 10% Face Serum, with Matmarine and Zinc. Apply 2-3 drops after cleansing & toning, AM & PM.",
+    "frames_prompt": "Reused AI illustration frames (before/after skin crops) from run 2026-10-03-scale; no product, no text.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F13"
+      ],
+      "headline": [
+        "F1",
+        "F10"
+      ],
+      "caption": [
+        "F5",
+        "F13",
+        "F14"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "2577485959347287",
+        "brand": "The Derma Co",
+        "took": "stacked before/after crops as the layout"
+      },
+      {
+        "id": "1079958907863521",
+        "brand": "Pilgrim",
+        "took": "labelled BEFORE / AFTER frames beside the pack"
+      },
+      {
+        "id": "1550169393471299",
+        "brand": "Dr. Sheth's",
+        "took": "the pack as the anchor between the frames; its timed claim ('in 15 days') and struck price dropped"
+      }
+    ],
+    "layout_description": "White canvas; BEFORE and AFTER frames stacked on the left (AI illustrations with the AI mark until real study photos replace them); the real pack on the right; calm headline with no result wording.",
+    "adaptation_notes": "Trending format (#12 Before / after): 3 brands. Kept the labelled stacked frames; dropped every result claim and time frame (the page has no before/after study for this). Severe: AI frames stand in for photos that must be real, consented study photos. Round 2 (judge): the internal production note left the footnote (it stays in photography_needed). CLM-15 stays: before/after framing is the format, hence Severe.",
+    "product_handle": "niacinamide-10-with-matmarine",
+    "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
+    "source_brand": "The Derma Co",
+    "status": "kept_with_warnings",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-15",
+        "span": "AI illustrations, not real results",
+        "message": "The footnote says the visuals are AI illustrations standing in for results, so the ad shows skin outcomes nobody photographed, and a small-print disclaimer does not undo what the image shows (if the frames show clearer skin beside 'acne-prone', they also imply acne clearing, CLM-02). The rulebook rates CLM-15 as fix; my view is that this must not run until real evidence replaces the frames.",
+        "fix": "Replace the AI frames with real, consented, unretouched study photos carrying the study qualifier, or drop the result imagery and show the pack or texture instead; then rewrite or remove this footnote.",
+        "layer": "model"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "before_after",
+    "layout": "splitscreen",
+    "source_ad_id": "salicylic-acid-2__t13",
+    "product_title": "Salicylic Acid 2% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "*Consumer study: 97% subjects said skin felt less oily throughout the day after using this serum for 2 weeks. Frames are AI illustrations, not real results.",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": true,
+    "photography_needed": "Real, consented, unretouched photos of one person at day 1 and week 2 of the routine (same light and framing) to replace the AI frames.",
+    "angle": "trend",
+    "ai_label_required": true,
+    "hook_type": "stat",
+    "headline": "97% subjects said skin felt less oily throughout the day*",
+    "frames": [
+      {
+        "label": "Day 1 · first use",
+        "cites": [
+          "F12"
+        ]
+      },
+      {
+        "label": "Week 2 · still in the routine",
+        "cites": [
+          "F13"
+        ]
+      }
+    ],
+    "caption": "Salicylic Acid 2% Face Serum: apply 2-3 drops after cleansing & toning, in the PM. Start every alternate day; after 2 weeks, use it every day.",
+    "frames_prompt": "Reused AI illustration frames (same person, two routine stages) from run 2026-10-03-scale; no product, no text.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "F17"
+      ],
+      "headline": [
+        "F17"
+      ],
+      "caption": [
+        "F12",
+        "F13"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "2950827325263069",
+        "brand": "Deconstruct",
+        "took": "one frame split in two, with a time point on each half"
+      },
+      {
+        "id": "1290012680862234",
+        "brand": "Dr. Sheth's",
+        "took": "a label on each half (here routine stages, never results); its timed claim box and discount block dropped"
+      },
+      {
+        "id": "2307135286779864",
+        "brand": "The Derma Co",
+        "took": "the study line as the headline instead of a promise"
+      }
+    ],
+    "layout_description": "White canvas; two AI-illustrated frames side by side labelled by routine stage under each; the real pack in its own column on the right; the study stat as the headline with its qualifier in the footnote.",
+    "adaptation_notes": "Trending format (#13 Split-screen transformation): 3 brands. Frames carry routine-stage labels only, no result wording; the consumer-perception stat (F17) is quoted exactly with its qualifier. Severe (AI frames). Round 2 (judge): the stat now reads exactly as the study ('subjects') with an asterisk tied to its qualifier. CLM-15 stays (the format), hence Severe.",
+    "product_handle": "salicylic-acid-2",
+    "product_url": "https://beminimalist.co/products/salicylic-acid-2",
+    "source_brand": "Deconstruct",
+    "status": "kept_with_warnings",
+    "risk_level": "severe",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "NEEDS_CHANGES",
+      "label": "Fix before review",
+      "detail": "Change the flagged lines, or attach the substantiation a reviewer would need to accept them."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "fix",
+        "rule_id": "CLM-15",
+        "span": "Week 2 · still in the routine",
+        "message": "A Day 1 to Week 2 frame pair beside a 97% headline reads as a before/after, and the footnote says the frames are AI illustrations, so the ad depicts a 2-week change nobody photographed; it also makes a self-reported 'felt less oily' look like a visible, measured result (CLM-08) and implies a timed result (CLM-07). The rulebook rates CLM-15 as fix; my view is that this must not run with these frames.",
+        "fix": "Use real, consented, unretouched photos from the 2-week study with the qualifier, or drop the Day 1 / Week 2 frames and pair the stat with a pack or texture shot; either way, 'Frames are AI illustrations, not real results.' then goes.",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "97% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-07",
+        "span": "after 2 weeks",
+        "message": "A time-bound result needs a study of that duration, with the qualifier shown on the creative.",
+        "fix": "Keep the timeframe only if it comes from a study you can cite, and put the qualifier in the footnote (e.g. '*Consumer perception study, 4 weeks'). Otherwise remove the timeframe.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F13). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "CLM-08",
+        "span": "97% subjects",
+        "message": "Statistics need their study qualifier on the creative and must not be worded more strongly than the study.",
+        "fix": "Quote the stat exactly as the study states it ('90% subjects said…') and add a footnote: study type (consumer perception / in-vivo / in-vitro), duration, and n if known.",
+        "layer": "rule",
+        "note": "Wording appears on the product page (F17). Severity lowered one step: the brand has published it, but a reviewer must still confirm substantiation is on file."
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "best of all rounds (kept with its warnings — best briefs are never dropped)"
+  },
+  {
+    "ad_type": "problem_solution",
+    "layout": "callouts",
+    "source_ad_id": "salicylic-lha-2-cleanser__t10",
+    "product_title": "Salicylic Acid + LHA 2% Cleanser",
+    "subhead": "Lather on a wet face, rinse thoroughly.",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [
+      {
+        "text": "Salicylic Acid (BHA) reduces the oily look",
+        "cites": [
+          "F5"
+        ]
+      },
+      {
+        "text": "LHA gently exfoliates the outer layer",
+        "cites": [
+          "F6"
+        ]
+      }
+    ],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "trend",
+    "ai_label_required": false,
+    "hook_type": "contrast",
+    "headline": "Spotted: oiliness. Solution: BHA + LHA",
+    "caption": "Salicylic Acid + LHA 2% Cleanser: BHA + LHA in 2% concentration. Pour into wet hands, rub into a light lather, massage into the face and rinse thoroughly. AM & PM, every day.",
+    "citations": {
+      "subhead": [
+        "F13"
+      ],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "headline": [
+        "F11",
+        "F3"
+      ],
+      "caption": [
+        "F3",
+        "F13",
+        "F14"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "1778713726796593",
+        "brand": "The Derma Co",
+        "took": "the 'Spotted: … / Solution: …' headline pair"
+      },
+      {
+        "id": "1587965372880796",
+        "brand": "Conscious Chemist",
+        "took": "a one-line 'do this' instruction; its pimple close-up and timed claim dropped"
+      }
+    ],
+    "layout_description": "White canvas; the 'Spotted / Solution' headline; two thin callout lines pointing at the real pack (what each acid does); one grey how-to line. No skin imagery.",
+    "adaptation_notes": "Trending format (#10 Problem macro): 2 brands. Both references rely on an extreme skin-problem close-up; that is fear framing the brand avoids and would need real photos, so the macro is dropped and the structure kept as calm callouts with the pack. No acne wording (CLM-02).",
+    "product_handle": "salicylic-lha-2-cleanser",
+    "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
+    "source_brand": "The Derma Co",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-04",
+        "span": "Solution: BHA + LHA",
+        "message": "'Solution' presents the cleanser as solving oiliness outright, while the image line and the product page scope it to 'reduces the oily look'. The headline also names the actives without their 2% (LNG-01), which is the brand's signature.",
+        "fix": "Spotted: oiliness. Formulated with BHA + LHA 2%",
+        "layer": "model"
+      },
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Salicylic Acid",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  },
+  {
+    "ad_type": "offer_promo",
+    "layout": "offer",
+    "source_ad_id": "vitamin-b5-10-moisturizer__t36",
+    "product_title": "Vitamin B5 10% Moisturizer",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": {
+      "line": "Buy 2, Get 3rd Free",
+      "condition": "On beminimalist.co. T&C apply.",
+      "valid_till": ""
+    },
+    "footnote": "",
+    "cta": "Shop the offer",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "trend",
+    "ai_label_required": false,
+    "hook_type": "offer",
+    "headline": "Stock up on Vitamin B5 10% Moisturizer",
+    "caption": "Offer as on beminimalist.co, 2 Oct 2026. T&C apply. Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Stock up on Vitamin B5 10% Moisturizer: a lightweight, oil-free everyday moisturizer with 10% Vitamin B5 (Panthenol).",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [
+        "OFFER3"
+      ],
+      "headline": [
+        "F1"
+      ],
+      "caption": [
+        "OFFER3",
+        "F1",
+        "F3",
+        "F5"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "1101473269058810",
+        "brand": "Re'equil",
+        "took": "the offer as one boxed line in plain words"
+      },
+      {
+        "id": "1393840196150399",
+        "brand": "Conscious Chemist",
+        "took": "a replenishment hook ('stock up'), kept in the caption; its expiry badge dropped (no end date captured)"
+      },
+      {
+        "id": "1414040904207915",
+        "brand": "The Derma Co",
+        "took": "the pack alone as the hero; the rain scene, limited-time sticker and code pill dropped"
+      }
+    ],
+    "layout_description": "White canvas. Wordmark + 'Hide Nothing.' top-left; the offer in plain words as the title ('Buy 2, Get 3rd Free') with its condition in one small grey line; the real pack large on the right; quiet 'Shop the offer →'.",
+    "adaptation_notes": "Trending format (#36 Offer creative): 5 brands launched offer creatives in the last 60 days and still run them. Recreated in the brand's static offer style ('Three products, At the cost of two'): one plain offer line + one condition line. The live offer is quoted exactly (OFFER3); no urgency because no end date was captured.",
+    "product_handle": "vitamin-b5-10-moisturizer",
+    "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
+    "source_brand": "Conscious Chemist",
+    "status": "approved_for_image_step",
+    "risk_level": "medium",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [],
+    "rounds_tried": 3,
+    "kept_because": "passed",
+    "style_edits": [
+      {
+        "field": "footnote",
+        "from": "Offer as on beminimalist.co, 2 Oct 2026. T&C apply.",
+        "to": "",
+        "why": "T&C apply already sits in the offer's condition line on the creative; once is enough"
+      }
+    ]
+  },
+  {
+    "ad_type": "routine_regimen",
+    "layout": "journey",
+    "source_ad_id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22",
+    "product_title": "Vitamin C 10% Face Serum",
+    "subhead": "",
+    "tag": "",
+    "proof_points": [],
+    "actives": [],
+    "steps": [
+      {
+        "label": "Step 1 · Cleanse",
+        "product_handle": "salicylic-lha-2-cleanser",
+        "line": "Lather on a wet face and rinse thoroughly",
+        "cites": [
+          "salicylic-lha-2-cleanser:F13"
+        ]
+      },
+      {
+        "label": "Step 2 · Vitamin C",
+        "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+        "line": "2-3 drops, tapped in gently",
+        "cites": [
+          "F14"
+        ]
+      },
+      {
+        "label": "Step 3 · Protect",
+        "product_handle": "multi-vitamin-spf-50",
+        "line": "SPF 50 as the last step, every morning",
+        "cites": [
+          "multi-vitamin-spf-50:F20",
+          "multi-vitamin-spf-50:F21"
+        ]
+      }
+    ],
+    "stat": null,
+    "callouts": [],
+    "specs": [],
+    "range": [],
+    "offer": null,
+    "footnote": "",
+    "cta": "Shop now",
+    "image_prompt": "Empty background scene only: a pure white seamless paper backdrop, soft daylight from the upper left, a faint grey contact-shadow area on the right. Square 1080x1080. Keep the right 45% of the frame as an empty space, evenly lit, for a pack photo placed later, and keep the left half as a calm empty area for copy. No product, no bottle, no packaging, no text, no letters, no logos, no people, no faces, no skin, no hands.",
+    "needs_real_photography": false,
+    "photography_needed": "",
+    "angle": "trend",
+    "ai_label_required": false,
+    "hook_type": "statement",
+    "headline": "Your morning routine in three steps",
+    "caption": "A simple morning routine: cleanse, then 2-3 drops of Vitamin C 10% Face Serum tapped in gently, then SPF 50 Sunscreen as the last step.",
+    "citations": {
+      "subhead": [],
+      "tag": [],
+      "proof_points": [],
+      "footnote": [],
+      "headline": [
+        "F15"
+      ],
+      "caption": [
+        "F14",
+        "salicylic-lha-2-cleanser:F13",
+        "multi-vitamin-spf-50:F20"
+      ]
+    },
+    "blend_sources": [
+      {
+        "id": "1000219876379194",
+        "brand": "Pilgrim",
+        "took": "three packs with numbered steps (Cleanse / Treat / Protect)"
+      },
+      {
+        "id": "2593621517723635",
+        "brand": "Dot & Key",
+        "took": "a routine headline with step labels on the packs; its model and gradient dropped"
+      }
+    ],
+    "layout_description": "White canvas; big routine title; three real packs in a row, each with a black numbered circle, the step in capitals and the product name in grey.",
+    "adaptation_notes": "Trending format (#22 How-to / steps): 2 brands. Matches the brand's own 'Glow Boosting Routine' static. The step lines move to the caption (house text budget).",
+    "product_handle": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
+    "source_brand": "Pilgrim",
+    "status": "approved_for_image_step",
+    "risk_level": "low",
+    "warnings": [],
+    "hard_failures": [],
+    "verdict": {
+      "code": "READY_FOR_REVIEW",
+      "label": "Ready for human review",
+      "detail": "No blocking or must-fix issues found. This is a pre-screen, not an approval: brand and legal sign-off is still required."
+    },
+    "coverage": {
+      "rules": true,
+      "model": true,
+      "model_error": null,
+      "rules_version": "0.3",
+      "model_name": "stand-in (same prompt)"
+    },
+    "findings": [
+      {
+        "severity": "advisory",
+        "rule_id": "LNG-01",
+        "span": "Vitamin C",
+        "message": "Active named without its concentration.",
+        "fix": "State it as on the pack: 'Niacinamide 10%'.",
+        "layer": "rule"
+      }
+    ],
+    "rounds_tried": 3,
+    "kept_because": "passed"
+  }
+]
