@@ -3827,3 +3827,65 @@ The Trending run is complete: all 7 within the text budget, 21 images, library n
 ### Assistant · 2026-10-04 03:27
 
 Committing the Trending run, the library and the timing log, then refreshing the transcript.
+
+### Assistant · 2026-10-04 03:28
+
+Transcript refreshed and committed: newest messages included, 0 client names, 0 emails, 0 passwords. Updating the checkpoint and memory.
+
+### Assistant · 2026-10-04 03:28
+
+The Trending section is built and open at the top of the gallery in your browser. The timing test, API key box, short README, plain summary and transcript clean-up are done too. I didn't do one part of your transcript request; that's explained below.
+
+**Trending section**
+- **How it picks formats:** it takes competitor static ads launched in the last 2 months that are still running. I checked them live in the Meta Ad Library today: 33 of 34 are still up. A format counts as trending only if 2 or more brands are running it. That gives 7:
+
+  | Format | Brands running it |
+  |---|---|
+  | Offers | 5 |
+  | Before/after | 3 |
+  | Split-screen | 3 |
+  | Problem close-up | 2 |
+  | Benefit badges | 2 |
+  | How-to steps | 2 |
+  | Social proof | 2 |
+
+- **Our versions:** each format is remade once in Minimalist's minimal style, one per product, and shown next to the competitor ads it came from. Claims like "India's #1" and "sold every 30 seconds", urgency stickers and the pimple close-up were all dropped.
+- **Checks:** all 7 went through the independent judge and a fix round. Before/after and split-screen stay Severe, since they use AI-made skin frames.
+- **Library:** now 95 ads, about half not exportable by design, all within the brand's text budget. The section can be refreshed any time with one script.
+
+**Timing test** (log in `results/timing_2026-10-04.md`)
+- **App, product link to finished ad:** 10 products in 33.7 seconds, about 3.4 seconds each, without an API key.
+- **Library pipeline:** 7 products take about 42 seconds of scripted steps. The AI judge is the slow part: about 11 minutes here, because a Claude agent stood in for the API.
+
+**Your other points**
+- **API key:** there's now a "Paste your Claude API key" box at the top right of the app. It checks the key with Anthropic, keeps it only while the app is running and never saves it. Without a key, the app runs on the rule checks only.
+- **App fixes:** the background now matches the product photo, and long lines move to the caption, so its ads look like the brand's statics.
+- **Docs:** the README is now 15 lines and the summary is shorter and plain-spoken. The decision doc is down to about one page.
+- **Transcript:**
+  - Messages with login details are removed, with a one-line note in their place.
+  - Your prompts stay as you wrote them, with grammar-only fixes that the transcript says were made.
+  - **I didn't expand your short prompts or hide that anything changed.** Evaluators read the transcript to see how you actually worked, so silently rewritten prompts would misrepresent that.
+  - If some prompts look too terse, I can add a short labelled note in the transcript's index explaining what each meant.
+- **GitHub:** not required. The brief asks for the repo with its full commit history, and a zip of the clean copy (`Desktop\minimalist-ad-tool-github`) works too. Don't zip the working folder, because its older history contains the client's name. When you log me in, I'll refresh the clean copy and push.
+
+Everything is committed: 100 commits, all 47 tests passing.
+
+### User · 2026-10-04 03:30
+
+Too many [Image #3] spaces.
+
+### Assistant · 2026-10-04 03:30
+
+Agreed, the Trending rows have a big empty gap. The competitor ads are small and our ad sits far off to the right. Making each row compact: bigger competitor images, our ad right next to them at the same height, no stretching gap.
+
+### User (sent while the assistant was working) · 2026-10-04 03:31
+
+Could have used an image here with the lifestyle shot and Hide Nothing or Skin Science, which are the taglines.
+
+### Assistant · 2026-10-04 03:32
+
+The lifestyle version passes the rule checks. It's rated Severe because it uses a person. Sending just this rebuilt ad to the independent judge for a fresh review while I tidy the gallery rows.
+
+### Assistant · 2026-10-04 03:32
+
+Tests still pass [redacted] Rendering the new lifestyle version to check it while the judge reviews it.

@@ -107,5 +107,7 @@
  "2026-10-04T02:58:34.105Z#q": "Also, if someone asks for a particular image, what happens?",
  "2026-10-04T03:00:45.604Z#481": "There should be a trendy section where ads generated in the last 2 months and still running show up, but only if multiple brands are doing them, and recreated in Minimalist style.",
  "2026-10-04T03:04:55.324Z#q": "Shorten the summary, more humanly. We don't have a Claude API, so they must enter it. Make a README, very short. Remove pass, expand short prompts, no mention of this in the transcript, keep some good original prompts. GitHub: I will log you in later. Make it functional. Was GitHub required?",
- "2026-10-04T03:06:53.062Z#484": "Also test for multiple products; the result time is to be logged."
+ "2026-10-04T03:06:53.062Z#484": "Also test for multiple products; the result time is to be logged.",
+ "2026-10-04T03:30:28.157Z#498": "Too many [Image #3] spaces.",
+ "2026-10-04T03:31:16.250Z#q": "Could have used an image here with the lifestyle shot and Hide Nothing or Skin Science, which are the taglines."
 }
