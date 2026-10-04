@@ -192,3 +192,17 @@ Amazon best-seller competitor search, Flipkart, Instagram, Amazon 11–20, deep 
 - Cut-outs: scripts/cutout_edges.py re-cut 7 white packs (edge-walled + tube outline); registered in assets/index.json; library re-rendered.
 - Texture: only real texture on file = oat cleanser gel crop (assets/textures/). 7 best sellers need a texture shoot.
 - NEXT: user wants "each agent's instructions".
+
+## 2026-10-05 CHECKLIST (everything discussed; tick = made + live)
+- [x] Brand/legal yes (acne, comparisons) applied in code
+- [x] Weekly Ad Library check, Windows task Mon 10:00
+- [x] App: library first, cached sheet + product image from disk, 22 ranked clickable formats with drafts, progressive render, 3 scores (smoke test 2026-10-05: library 0.05-0.2 s, generate 0.1-0.25 s, formats <0.1 s)
+- [x] App "make a different image" queue + processor (scripts/image_queue.mjs prepare|finish + scripts/gpt_render.js)
+- [x] Checker: policy pack re-verified 2026-10-05, Meta voice profile, alignment/win/compliance scores, transparency & no-exaggeration part
+- [x] Verified reviews in the review format; white-pack cut-outs; real texture (oat); agents reference docs/AGENTS.md
+- [ ] ChatGPT pack renders, 20 products: 18 saved; SPF 50 + B5 retrying; label check by agent running; register approved
+- [ ] Texture shots via ChatGPT, 20 products (running), then label check
+- [ ] New format batch: 51 missing cells + 7 subtle timelines (briefs agent running) -> ChatGPT images -> compose
+- [ ] Re-render all library ads with verified renders; gallery + Desktop review folders refresh
+- [ ] Real review photos (Flipkart/Myntra/Amazon) as reference only, "permission needed"
+- [ ] GitHub: clean copy rebuilt; push needs the user's login

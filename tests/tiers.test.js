@@ -135,3 +135,15 @@ test("creator ads: voice compared for reference only", async () => {
   const r = await scoreAd({ ad_type: "creator", primary_text: "#ad Been using this Niacinamide 10% serum for a month, my skin feels less oily.", headline: "" }, rules);
   assert.match(r.scores.alignment.parts.find((p) => p.name === "Meta voice match").why, /Creator ad/);
 });
+
+test("transparency & no exaggeration: hype and unbacked numbers cost, the brand's own style doesn't", async () => {
+  const { scoreAd } = await import("../lib/score.js");
+  const part = async (ad) => (await scoreAd({ primary_text: "", footnote: "", cta: "Shop now", ...ad }, { rulesOnly: true })).scores.alignment.parts.find((p) => p.name === "transparency & no exaggeration");
+  const clean = await part({ headline: "Clears pores, gently", on_image_text: "Salicylic Acid 2%" });
+  const hype = await part({ headline: "The ultimate miracle serum", on_image_text: "Flawless skin overnight" });
+  const unbacked = await part({ headline: "93% saw clearer skin", on_image_text: "Salicylic Acid 2%" });
+  const backed = await part({ headline: "93% saw clearer skin", on_image_text: "Salicylic Acid 2%", footnote: "Consumer study, 4 weeks, as published on the product page." });
+  assert.equal(clean.score, 100);
+  assert.ok(hype.score <= 60, hype.why);
+  assert.ok(unbacked.score < backed.score, `${unbacked.why} | ${backed.why}`);
+});

@@ -11,7 +11,9 @@ async (shared) => {
   const jobs = await (await page.request.get("http://127.0.0.1:8765/ai_renders/jobs.json")).json();
   const results = [];
   for (const j of jobs) {
-    const exists = (await page.request.get(`http://127.0.0.1:8765/${j.out.split("assets\\")[1].replace(/\\/g, "/")}`)).ok();
+    // Outputs under the served assets folder can be checked for "already done"; queue outputs (image_requests/) can't.
+    const rel = j.out.split("assets\\")[1];
+    const exists = rel ? (await page.request.get(`http://127.0.0.1:8765/${rel.replace(/\\/g, "/")}`)).ok() : false;
     if (exists) { results.push({ h: j.h, skipped: "exists" }); continue; }
     await page.goto("https://chatgpt.com/");
     await page.waitForSelector('button[aria-label="Add files and more"]:not([disabled])', { timeout: 40000 });
