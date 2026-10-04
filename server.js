@@ -5,6 +5,7 @@
 //   POST /api/generate     {sheet}                         -> {ad, report}  (self-scored)
 //   POST /api/score        {ad, sheet?} | {image}          -> report
 //   GET  /api/status                                       -> which layers are active
+//   POST /api/key          {key} | {clear:true}            -> sets the Claude API key for this session (memory only)
 import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -52,6 +53,21 @@ async function handleApi(req, res, url) {
   }
   if (req.method !== "POST") return send(res, 405, { error: "POST only" });
   const body = await readJson(req);
+  // Claude API key typed into the app (2026-10-04: the people running it bring their own key). It lives only in this
+  // server's memory: never written to disk, never logged, gone on restart. A key in .env still works and is kept.
+  // Only accepted from this machine.
+  if (url.pathname === "/api/key") {
+    if (!["127.0.0.1", "::1", "::ffff:127.0.0.1"].includes(req.socket.remoteAddress)) return send(res, 403, { error: "Keys can only be set from this computer." });
+    if (body.clear) { delete process.env.ANTHROPIC_API_KEY; return send(res, 200, { llm: false }); }
+    const key = String(body.key || "").trim();
+    if (!/^sk-ant-[A-Za-z0-9_-]{20,}$/.test(key)) return send(res, 400, { error: "That doesn't look like an Anthropic API key (it starts with sk-ant-)." });
+    // Check it once against the API (lists models, no tokens used) so a wrong key fails here, not mid-generation.
+    const r = await fetch("https://api.anthropic.com/v1/models", { headers: { "x-api-key": key, "anthropic-version": "2023-06-01" } }).catch(() => null);
+    if (!r) return send(res, 502, { error: "Couldn't reach the Anthropic API from this computer. Check the internet connection and try again." });
+    if (r.status === 401 || r.status === 403) return send(res, 400, { error: "Anthropic rejected this key. Check it was copied in full." });
+    process.env.ANTHROPIC_API_KEY = key;
+    return send(res, 200, { llm: true });
+  }
 
   if (url.pathname === "/api/extract") {
     const sheet = body.manual ? factSheetFromManual(body.manual) : await extractFromUrl(body.url);
@@ -103,6 +119,6 @@ const server = http.createServer(async (req, res) => {
 server.listen(PORT, () => {
   console.log(`Minimalist ad tool running at http://localhost:${PORT}`);
   if (!process.env.ANTHROPIC_API_KEY) {
-    console.log("ANTHROPIC_API_KEY not set: copy is verbatim-from-page and the scorer runs its rule layer only (no model judgment).");
+    console.log("No Claude API key yet: paste one in the app (top right), or put ANTHROPIC_API_KEY in .env. Until then, copy is word-for-word from the product page and the scorer runs its rules only.");
   }
 });

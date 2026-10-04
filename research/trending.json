@@ -1,0 +1,334 @@
+{
+  "built": "2026-10-04T03:06:26.454Z",
+  "as_of": "2026-10-04",
+  "window_days": 60,
+  "min_brands": 2,
+  "still_running": "checked in the Meta Ad Library (competitor_status_2026-10-04.json)",
+  "counts": {
+    "statics": 66,
+    "started_in_window": 34,
+    "still_running": 33,
+    "stopped": 1
+  },
+  "trends": [
+    {
+      "template_id": 36,
+      "name": "Offer creative",
+      "family": "Commercial",
+      "layout": "offer",
+      "brands": [
+        "Conscious Chemist",
+        "Deconstruct",
+        "The Derma Co",
+        "Dr. Sheth's",
+        "Re'equil"
+      ],
+      "ads": [
+        {
+          "id": "1393840196150399",
+          "brand": "Conscious Chemist",
+          "started": "2026-09-18",
+          "days": 16,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1393840196150399.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1393840196150399",
+          "one_line": "Replenishment hook ('Loved it? Stock up') plus Buy 2 Get 2 and expiry badge over a hand reaching into a product shelf."
+        },
+        {
+          "id": "1414040904207915",
+          "brand": "The Derma Co",
+          "started": "2026-09-16",
+          "days": 18,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1414040904207915.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1414040904207915",
+          "one_line": "Gift-with-purchase offer ('buy any, get combo FREE') over a wet pack in a monsoon rain scene, with limited-time sticker and code pill."
+        },
+        {
+          "id": "1101473269058810",
+          "brand": "Re'equil",
+          "started": "2026-09-07",
+          "days": 27,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1101473269058810.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1101473269058810",
+          "one_line": "Boxed 'Buy 2 Get 1 FREE' banner over a three-tube lineup with captions naming which item is free."
+        },
+        {
+          "id": "1411336474460924",
+          "brand": "Deconstruct",
+          "started": "2026-09-01",
+          "days": 33,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1411336474460924.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1411336474460924",
+          "one_line": "Payday sale lockup ('up to 30% off + freebies on combos') in a 3D set above a four-SKU lineup."
+        },
+        {
+          "id": "1366133142166031",
+          "brand": "Dr. Sheth's",
+          "started": "2026-08-28",
+          "days": 37,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1366133142166031.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1366133142166031",
+          "one_line": "'Buy 2 at' price lockup over two sunscreen variants stacked on a plinth with a round test seal; 'for every skin type' framing."
+        },
+        {
+          "id": "952136181261603",
+          "brand": "Dr. Sheth's",
+          "started": "2026-08-27",
+          "days": 38,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/952136181261603.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=952136181261603",
+          "one_line": "'Buy 2 at' pill with struck vs offer price and code above a two-tube duo leaning on a wall with two claim bubbles."
+        },
+        {
+          "id": "1594682718905718",
+          "brand": "Dr. Sheth's",
+          "started": "2026-08-17",
+          "days": 48,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1594682718905718.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1594682718905718",
+          "one_line": "Flat 20% off headline beside a strip of four different Indian skin-tone face crops and an 'every skin type' claim."
+        }
+      ]
+    },
+    {
+      "template_id": 12,
+      "name": "Before / after",
+      "family": "Transformation",
+      "layout": "before_after",
+      "brands": [
+        "The Derma Co",
+        "Dr. Sheth's",
+        "Pilgrim"
+      ],
+      "ads": [
+        {
+          "id": "2577485959347287",
+          "brand": "The Derma Co",
+          "started": "2026-09-16",
+          "days": 18,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/2577485959347287.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=2577485959347287",
+          "one_line": "Full-bleed stacked Before/After forehead crops with a reframing question hook ('that tan that never left?') and code badge."
+        },
+        {
+          "id": "1391126049254669",
+          "brand": "The Derma Co",
+          "started": "2026-09-11",
+          "days": 23,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1391126049254669.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1391126049254669",
+          "one_line": "Side-by-side labelled Before/After acne crops with captions, pack straddling the split and a Buy 2 Get 2 badge."
+        },
+        {
+          "id": "1079958907863521",
+          "brand": "Pilgrim",
+          "started": "2026-09-02",
+          "days": 32,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1079958907863521.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1079958907863521",
+          "one_line": "Labelled BEFORE/AFTER skin-texture crops behind the pack on a stone plinth with spa props and one ingredient callout."
+        },
+        {
+          "id": "1550169393471299",
+          "brand": "Dr. Sheth's",
+          "started": "2026-08-26",
+          "days": 39,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1550169393471299.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1550169393471299",
+          "one_line": "Huge 'fades X in 15 days' headline over unlabelled before/after face crops, pack centred, two molecule ingredient callouts and struck price."
+        }
+      ]
+    },
+    {
+      "template_id": 13,
+      "name": "Split-screen transformation",
+      "family": "Transformation",
+      "layout": "splitscreen",
+      "brands": [
+        "Deconstruct",
+        "The Derma Co",
+        "Dr. Sheth's"
+      ],
+      "ads": [
+        {
+          "id": "2950827325263069",
+          "brand": "Deconstruct",
+          "started": "2026-09-05",
+          "days": 29,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/2950827325263069.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=2950827325263069",
+          "one_line": "Slider line splitting one face into dull vs bright halves, model holding the pack, highlighted day count and a 'Nx better' strip."
+        },
+        {
+          "id": "1290012680862234",
+          "brand": "Dr. Sheth's",
+          "started": "2026-08-31",
+          "days": 34,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1290012680862234.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1290012680862234",
+          "one_line": "One face split by a line with labelled Before/After pins, timed claim box, two ingredient icons and a 25% off block."
+        },
+        {
+          "id": "2307135286779864",
+          "brand": "The Derma Co",
+          "started": "2026-08-27",
+          "days": 38,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/2307135286779864.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=2307135286779864",
+          "one_line": "'2 problems, 2 actives, 1 product' headline over an unlabelled split face, with two ingredient-to-benefit callouts below."
+        }
+      ]
+    },
+    {
+      "template_id": 10,
+      "name": "Problem macro",
+      "family": "Problem",
+      "layout": "callouts",
+      "brands": [
+        "Conscious Chemist",
+        "The Derma Co"
+      ],
+      "ads": [
+        {
+          "id": "1778713726796593",
+          "brand": "The Derma Co",
+          "started": "2026-09-16",
+          "days": 18,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1778713726796593.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1778713726796593",
+          "one_line": "'Spotted: <problem> / Solution: <product>' headline pair around a macro of the problem with the pack overlapping."
+        },
+        {
+          "id": "1587965372880796",
+          "brand": "Conscious Chemist",
+          "started": "2026-09-11",
+          "days": 23,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1587965372880796.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1587965372880796",
+          "one_line": "Extreme close-up of the problem moment (squeezing a pimple) with a 'don't do this, do this' instruction and timed claim."
+        },
+        {
+          "id": "848238494946602",
+          "brand": "The Derma Co",
+          "started": "2026-09-03",
+          "days": 31,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/848238494946602.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=848238494946602",
+          "one_line": "Three labelled circular macros of acne types on a skin-texture background, a 'getting severe? you need X' line and the pack."
+        }
+      ]
+    },
+    {
+      "template_id": 2,
+      "name": "Product + benefit badges",
+      "family": "Product",
+      "layout": "badges",
+      "brands": [
+        "Deconstruct",
+        "Pilgrim"
+      ],
+      "ads": [
+        {
+          "id": "1689296475500089",
+          "brand": "Deconstruct",
+          "started": "2026-09-03",
+          "days": 31,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1689296475500089.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1689296475500089",
+          "one_line": "Bold two-tone promise headline over a single tube on a diagonal ledge with three icon-led benefit lines."
+        },
+        {
+          "id": "1420890446893063",
+          "brand": "Pilgrim",
+          "started": "2026-08-31",
+          "days": 34,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1420890446893063.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1420890446893063",
+          "one_line": "Named duo on a glass disc over water with sun flare, three line-icon benefits down the side and a three-badge credential strip."
+        }
+      ]
+    },
+    {
+      "template_id": 22,
+      "name": "How-to / steps",
+      "family": "Education",
+      "layout": "journey",
+      "brands": [
+        "Dot & Key",
+        "Pilgrim"
+      ],
+      "ads": [
+        {
+          "id": "1000219876379194",
+          "brand": "Pilgrim",
+          "started": "2026-08-31",
+          "days": 34,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1000219876379194.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1000219876379194",
+          "one_line": "Three products pinned on numbered polaroid cards (Cleanse / Treat / Glow) with swatches, washi tape and a handwritten checklist."
+        },
+        {
+          "id": "2593621517723635",
+          "brand": "Dot & Key",
+          "started": "2026-08-12",
+          "days": 53,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/2593621517723635.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=2593621517723635",
+          "one_line": "Skin-type routine headline with Step 1 / Step 2 labels on two packs beside a happy model on a brand-colour gradient."
+        }
+      ]
+    },
+    {
+      "template_id": 28,
+      "name": "Social-proof creative",
+      "family": "Proof",
+      "layout": "socialproof",
+      "brands": [
+        "Foxtale",
+        "Re'equil"
+      ],
+      "ads": [
+        {
+          "id": "2274657823309888",
+          "brand": "Re'equil",
+          "started": "2026-09-07",
+          "days": 27,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/2274657823309888.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=2274657823309888",
+          "one_line": "'India's most loved' headline with award badges above and a star rating + customer count + retailer logos below a single tube."
+        },
+        {
+          "id": "1418542033483616",
+          "brand": "Foxtale",
+          "started": "2026-09-01",
+          "days": 33,
+          "format": "image",
+          "image_file": "research/competitor_ads/images/1418542033483616.jpg",
+          "url": "https://www.facebook.com/ads/library/?id=1418542033483616",
+          "one_line": "'Our #1' headline with a 'sold every 30 seconds' velocity oval, hand lifting a tube from an overflowing basket, quick-commerce footer."
+        }
+      ]
+    }
+  ]
+}

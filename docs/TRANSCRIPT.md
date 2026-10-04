@@ -1,6 +1,6 @@
 # Build transcript
 
-Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** email addresses, passwords and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as "the target brand"; three framing messages are neutral restatements, marked where they appear). The user's messages have had **spelling and grammar corrected; wording and content are otherwise unchanged** (nothing added). **Nothing else was removed**, including the parts that went badly.
+Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** messages that carried login details (each replaced by a one-line note), email addresses and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as "the target brand"; three framing messages are neutral restatements, marked where they appear). The user's messages have had **spelling and grammar corrected; wording and content are otherwise unchanged** (nothing added). **Nothing else was removed**, including the parts that went badly.
 
 ## Start here: where things went wrong, and how they were caught
 
@@ -232,7 +232,7 @@ Git, we will install in the end.
 
 ### User (sent while the assistant was working) · 2026-10-01 19:30
 
-My Gmail ID is [email] and the password is [redacted] for Gmail; use it for the Git account and all the setup.
+*(A message with login details was removed.)*
 
 ### Assistant · 2026-10-01 19:32
 
@@ -333,7 +333,7 @@ Part of my last response was stopped by a safety check, so I'm pausing here rath
 - The decision doc is drafted but not committed. The failure-modes list isn't written yet.
 
 **Still need your action**
-- **Change your Gmail password[redacted] and remove that line from the chat before sharing the transcript.
+- **Change your Gmail password,** and remove that line from the chat before sharing the transcript.
 - Clear Git with IT.
 - Get an Anthropic API key for the live AI layer.
 
@@ -363,7 +363,7 @@ Only the answer-key labeller is still running; once it's done the evaluation can
 
 ### Assistant · 2026-10-01 20:03
 
-All four background agents have now finished. The independent labeller's answer key covers all 49 ads: **12 block, 25 must-fix, 12 pass[redacted] Every flagged phrase was checked against the actual ad text.
+All four background agents have now finished. The independent labeller's answer key covers all 49 ads: **12 block, 25 must-fix, 12 pass**. Every flagged phrase was checked against the actual ad text.
 
 Its judgement calls look reasonable to me, and it named the three labels it was least sure about. One affects my rules directly: it rates creator disclosure on three levels. Visible near the top is fine, buried at the end of the caption is "must fix," and missing entirely is "block." My rule only knows "block," so this is the same problem the judges raised, now confirmed by an independent source.
 
@@ -375,8 +375,7 @@ Everything is ready to score: the answer key, the stand-in AI outputs for all 49
 
 ### User · 2026-10-01 20:03
 
-It should work like the video script and image brief generator we made with image of the PPT we made for the graphic designer, but instead that is passed to ChatGPT for image generation. ID and pass [redacted] the account with Gmail re: [email].
-And pass is: [redacted]
+It should work like the video script and image brief generator we made with image of the PPT we made for the graphic designer, but instead that is passed to ChatGPT for image generation. *(Login details removed.)*
 
 ### Assistant · 2026-10-01 20:03
 
@@ -490,7 +489,7 @@ Verifying the last step first; its result didn't come back.
 
 ### Assistant · 2026-10-01 20:08
 
-The library is gone (the folder and its lock file), the app loads without it, and all 11 checks still pass[redacted] Saving that, then starting the competitor research.
+The library is gone (the folder and its lock file), the app loads without it, and all 11 checks still pass. Saving that, then starting the competitor research.
 
 ### Assistant · 2026-10-01 20:09
 
@@ -514,7 +513,7 @@ Adding the two new must-fix rules (bare "treat" wording, and vague clean-beauty 
 
 ### Assistant · 2026-10-01 20:14
 
-All 14 checks still pass [redacted] 39 rules. Adding checks for the new behaviour, then re-running the evaluation. That will be **run 2**, clearly marked as seen-after-fixing for the sealed set.
+All 14 checks still pass with 39 rules. Adding checks for the new behaviour, then re-running the evaluation. That will be **run 2**, clearly marked as seen-after-fixing for the sealed set.
 
 ### Assistant · 2026-10-01 20:17
 
@@ -629,7 +628,7 @@ Much more believable: **5 ready for the image step, 4 to fix, 3 blocked.** Befor
 
 ### Assistant · 2026-10-01 20:56
 
-The stand-in judge is reviewing the 12 briefs. When it's done, I'll re-run the gate with its findings and build the brief deck. Then we're at the ChatGPT step, and **I'll open the browser for you to log in** (I won't type any password[redacted] After that I'll paste only the approved background prompts.
+The stand-in judge is reviewing the 12 briefs. When it's done, I'll re-run the gate with its findings and build the brief deck. Then we're at the ChatGPT step, and **I'll open the browser for you to log in** (I won't type any password). After that I'll paste only the approved background prompts.
 
 ### Assistant · 2026-10-01 20:59
 
@@ -650,7 +649,7 @@ ChatGPT is open in the browser. Checking whether it's already signed in.
 
 The pipeline has reached the **ChatGPT step**. ChatGPT is open in the automated browser window but **not logged in**.
 
-**Please log in yourself in that window** (it's the Chrome window on the ChatGPT tab). Use the the target brand account, or "Continue with Google" if you prefer. As agreed, I won't enter the password[redacted] **Reply "logged in" when you're done.**
+**Please log in yourself in that window** (it's the Chrome window on the ChatGPT tab). Use the the target brand account, or "Continue with Google" if you prefer. As agreed, I won't enter the password. **Reply "logged in" when you're done.**
 
 Then I'll paste the **6 approved background prompts**, one per new chat, a minute or so apart, and save each image into the run folder. After that I'll place the real Minimalist pack shot and the checked copy on top and re-check each final ad.
 
@@ -658,7 +657,7 @@ Where the rest stands: 6 briefs are flagged to fix before the image step. They'r
 
 ### User · 2026-10-02 14:47
 
-Okay, let's review the work, explained in detail, each part of the solution proposed, the goal. [email] [redacted] Use this and log in via Gmail.
+Okay, let's review the work, explained in detail, each part of the solution proposed, the goal. *(Login details removed.)*
 
 ### Assistant · 2026-10-02 14:49
 
@@ -1393,7 +1392,7 @@ Build a tool that helps a skincare marketing team ship ads faster **without publ
 
 | What you asked | What was done |
 |---|---|
-| "Build it, iterate, keep it shareable" | Built step by step and checked every output by eye. **More than 30 problems were caught and fixed along the way** (e.g. a customer review picked up as a brand claim, "kills bacteria" missed, the gate blocking all 12 briefs because of my own bugs), each locked in with a test. 35 tests now pass [redacted]
+| "Build it, iterate, keep it shareable" | Built step by step and checked every output by eye. **More than 30 problems were caught and fixed along the way** (e.g. a customer review picked up as a brand claim, "kills bacteria" missed, the gate blocking all 12 briefs because of my own bugs), each locked in with a test. 35 tests now pass |
 | "Use our multi-agent system" | Separate agents for research, legal sources, ad collection, blind labelling, stand-in judging, tagging, brief writing and channel collection. Results are checked by me, never just trusted |
 | Git: "install at the end" / "we can't install things" | I pushed back on installing at the end, because the brief requires commit history built up as you go. You chose to keep Git and clear it with IT. I removed the downloaded Claude library, so the app needs no installs |
 | Logging in with shared passwords | Declined. You logged in yourself, and I took over after that. **Both passwords should be changed** |
@@ -1531,43 +1530,9 @@ Message ID: msg_011Cfe3kvrvyqn2R19W1pvZv
 
 ### User · 2026-10-02 20:35
 
-Okay, I'm suggesting an architecture for this, which we'll test on this well-known brand and then reuse for other brands. That is: *(edited for the submission: client framing replaced with a neutral restatement; meaning unchanged)* 
-
-<pasted_content id="6207">
-Build the following multi-agent pipeline, in this order, testing each layer before moving on:
-
-1. Trend agent (global BPC). Knows what's working in beauty and personal care right now, globally and in India. Pulls from live ad libraries (Meta, Google Ads Transparency, TikTok Creative Center) plus trade press. Output is a structured, timestamped trend file — formats, hooks, claim structures, what's saturated. Refreshes on a schedule. Reports market behaviour; does not recommend what Minimalist should make.
-
-2. Indian winner agent. Knows Indian BPC brands, their ads, and which have proven winners. Sources: Meta Ad Library filtered to India, Google Ads Transparency (run duration as a proxy for "not pulled"), the existing 74-ad competitor corpus, and the top-20 Amazon best-seller list — which must be the source of truth for which brands matter, not a hand-picked list. Output: a winner file tagged by whether each format is honestly reproducible or needs assets we don't have.
-
-3. Brand context agent (Minimalist). Everything we know about the brand — voice, claims policy, what's said and not said, what's on pack, what's on site, what's in ad history. Sources: beminimalist.co top-20 catalog + the 294-claim matrix (13 flagged "do not use"), Instagram, and the pending Amazon/Flipkart collectors. The "do not use" list matters more than the "do use" list.
-
-4. Ad archetype selection skill. Not an agent — a routing skill. Takes the user request (product, audience, placement, objective) plus the three context files, and outputs a ranked shortlist of 3–4 archetypes from the format library with a one-line reason each. This is where "what should we make for this request" gets decided. Cheapest place to be wrong; log the ranking and reasons so a human can override before the expensive stages run.
-
-5. Mix-and-match agent. Takes the archetype shortlist and produces 3–4 candidate briefs. Each brief specifies headline direction, supporting copy, product facts used, visual elements needed, assets required. Every claim cites its source in the brand pack. Does not invent facts.
-
-6. Brand agent. Rewrites each brief in Minimalist's voice. Repurposing pass[redacted] not generation pass[redacted] Logs what changed and why. Separate from mix-and-match because "interesting ad" and "sounds like Minimalist" pull in different directions, and combining them makes both worse.
-
-7. Scorer agent. Scores each rewritten brief against the three dimensions using the existing 39-rule standard plus the AI layer. Per-rule results: severity, flagged spans, suggested fixes, verdict. Never says "approved."
-
-8. Image generation. For each brief that survives the scorer, generate 3–4 distinct creatives. Real product photography only — AI-made skin, people, or results are banned by ASCI. Backgrounds and environments around a real product photo are fine. Generated product images are not — fabricated pack shots violate the brand's whole position. Output at required placement size(s).
-
-9. Compliance re-check. Re-score the rendered creatives, same standard, against actual pixels and rendered text. A claim that reads fine in a brief can become the dominant message once it's a headline over a pack shot.
-
-10. Selection. Pick the best creative. Only creatives that passed compliance are eligible. Among those, rank by scorer result plus a "why this one" note from the brand agent. Show the marketer the top 2–3, not just the winner — the tool proposes, the marketer picks. Export disabled if blocked.
-
-The loop. This is the point. Where it fires:
-
-Scorer → Mix-and-match. If the scorer flags anything above threshold, the brief goes back to Agent 5 with flags as hard constraints. Re-runs through 6 and 7. Loop until clean or retry cap.
-
-Compliance → identify which layer to return to (brief, voice, or layout). Not a blind restart.
-
-Retry cap: if a brief fails three times, drop it, log why, try the next archetype from the skill's shortlist.
-
-Every loop iteration is recorded. The transcript should show what was flagged, what changed, whether the change fixed it.
-</pasted_content id="6207">
-
-Do you suggest any changes to this architecture?
+Okay, I'm suggesting an architecture for this, which we'll test on this well-known brand and then reuse for other brands. That is: *(edited for the submission: client framing replaced with a neutral restatement; meaning unchanged)* <pasted_content id="6207">
+Build the following multi-agent pipeline, in this order, testing each layer before moving on: 1. Trend agent (global BPC). Knows what's working in beauty and personal care right now, globally and in India. Pulls from live ad libraries (Meta, Google Ads Transparency, TikTok Creative Center) plus trade press. Output is a structured, timestamped trend file — formats, hooks, claim structures, what's saturated. Refreshes on a schedule. Reports market behaviour; does not recommend what Minimalist should make. 2. Indian winner agent. Knows Indian BPC brands, their ads, and which have proven winners. Sources: Meta Ad Library filtered to India, Google Ads Transparency (run duration as a proxy for "not pulled"), the existing 74-ad competitor corpus, and the top-20 Amazon best-seller list — which must be the source of truth for which brands matter, not a hand-picked list. Output: a winner file tagged by whether each format is honestly reproducible or needs assets we don't have. 3. Brand context agent (Minimalist). Everything we know about the brand — voice, claims policy, what's said and not said, what's on pack, what's on site, what's in ad history. Sources: beminimalist.co top-20 catalog + the 294-claim matrix (13 flagged "do not use"), Instagram, and the pending Amazon/Flipkart collectors. The "do not use" list matters more than the "do use" list. 4. Ad archetype selection skill. Not an agent — a routing skill. Takes the user request (product, audience, placement, objective) plus the three context files, and outputs a ranked shortlist of 3–4 archetypes from the format library with a one-line reason each. This is where "what should we make for this request" gets decided. Cheapest place to be wrong; log the ranking and reasons so a human can override before the expensive stages run. 5. Mix-and-match agent. Takes the archetype shortlist and produces 3–4 candidate briefs. Each brief specifies headline direction, supporting copy, product facts used, visual elements needed, assets required. Every claim cites its source in the brand pack. Does not invent facts. 6. Brand agent. Rewrites each brief in Minimalist's voice. Repurposing Separate from mix-and-match because "interesting ad" and "sounds like Minimalist" pull in different directions, and combining them makes both worse. 7. Scorer agent. Scores each rewritten brief against the three dimensions using the existing 39-rule standard plus the AI layer. Per-rule results: severity, flagged spans, suggested fixes, verdict. Never says "approved." 8. Image generation. For each brief that survives the scorer, generate 3–4 distinct creatives. Real product photography only — AI-made skin, people, or results are banned by ASCI. Backgrounds and environments around a real product photo are fine. Generated product images are not — fabricated pack shots violate the brand's whole position. Output at required placement size(s). 9. Compliance re-check. Re-score the rendered creatives, same standard, against actual pixels and rendered text. A claim that reads fine in a brief can become the dominant message once it's a headline over a pack shot. 10. Selection. Pick the best creative. Only creatives that passed compliance are eligible. Among those, rank by scorer result plus a "why this one" note from the brand agent. Show the marketer the top 2–3, not just the winner — the tool proposes, the marketer picks. Export disabled if blocked. The loop. This is the point. Where it fires: Scorer → Mix-and-match. If the scorer flags anything above threshold, the brief goes back to Agent 5 with flags as hard constraints. Re-runs through 6 and 7. Loop until clean or retry cap. Compliance → identify which layer to return to (brief, voice, or layout). Not a blind restart. Retry cap: if a brief fails three times, drop it, log why, try the next archetype from the skill's shortlist. Every loop iteration is recorded. The transcript should show what was flagged, what changed, whether the change fixed it.
+</pasted_content id="6207"> Do you suggest any changes to this architecture? *(Login details removed.)*
 
 ### Assistant · 2026-10-02 20:36
 
@@ -1575,7 +1540,7 @@ The architecture is sound. Separating "interesting ad" from "sounds like Minimal
 
 ## Changes I'd make
 
-**1. Ranking (stage 10): don't use the compliance score to pick the winner.** The scorer measures *risk*, not *quality*. Rank by "fewest flags" and the blandest creative wins every time. That's failure mode #3 in our docs, "writing for the scorer." Make compliance a **pass[redacted] gate**, and rank the survivors on a separate quality read: brand fit, distinctness, and how closely it matches a proven winner format.
+**1. Ranking (stage 10): don't use the compliance score to pick the winner.** The scorer measures *risk*, not *quality*. Rank by "fewest flags" and the blandest creative wins every time. That's failure mode #3 in our docs, "writing for the scorer." Make compliance a **pass/fail gate**, and rank the survivors on a separate quality read: brand fit, distinctness, and how closely it matches a proven winner format.
 
 **2. The loop (scorer → stage 5): a flagged claim may be removed or replaced, never reworded.** "Loop until clean" teaches the writer to dodge the rules. "Treats acne" becomes "say bye to breakouts", and the claim survives under softer words. Rules:
 - A flagged claim must be **dropped or swapped for a different cited fact**.
@@ -1607,7 +1572,7 @@ The architecture is sound. Separating "interesting ad" from "sounds like Minimal
 
 **9. Keep code-checkable steps as code, not agents.** Fact tracing, number checks, image-prompt checks, the verdict and the asset filter stay as deterministic code. Agents are only for judgement. That's cheaper, repeatable and auditable.
 
-**10. Define a pass [redacted] for each layer up front** ("test each layer before moving on"):
+**10. Define a pass test for each layer up front** ("test each layer before moving on"):
 - the scorer already has the 49-case eval;
 - the others need small answer-key sets: e.g. 5 requests with the archetypes a human would pick, and 5 briefs with known voice problems.
 
@@ -1887,7 +1852,7 @@ Two older tests fail, as expected: they check the old "block everything" behavio
 
 ### Assistant · 2026-10-02 20:59
 
-All 36 tests pass[redacted] Now applying the same change to the compliance gate: a brief is never dropped. It gets a risk level, and only a prompt that asks to draw the product is held back.
+All 36 tests pass. Now applying the same change to the compliance gate: a brief is never dropped. It gets a risk level, and only a prompt that asks to draw the product is held back.
 
 ### Assistant · 2026-10-02 21:00
 
@@ -2364,7 +2329,7 @@ The retry round is with the brief writer. Once it reports back, the next steps a
 
 ### Assistant · 2026-10-03 06:09
 
-All 8 briefs pass [redacted] the rules and the independent judge. Next is the image prompt director: one agent, writing one background prompt per ad.
+All 8 briefs pass both the rules and the independent judge. Next is the image prompt director: one agent, writing one background prompt per ad.
 
 ### Assistant · 2026-10-03 06:10
 
@@ -2400,7 +2365,7 @@ Next, a quick test of the language checker with a good Hindi line and a bad one,
 
 ### Assistant · 2026-10-03 06:19
 
-All 40 tests pass[redacted] including the 3 new language tests. Adding a Windows font that covers Hindi, Tamil, Telugu and Bengali to the renderer:
+All 40 tests pass, including the 3 new language tests. Adding a Windows font that covers Hindi, Tamil, Telugu and Bengali to the renderer:
 
 ### Assistant · 2026-10-03 06:21
 
@@ -2470,11 +2435,11 @@ That one remaining flag is fair: the website doesn't say what the "Freebies" are
 
 ### Assistant · 2026-10-03 06:36
 
-Compose can now build the Hindi and Tamil versions that pass [redacted] checks. Google sign-in is still waiting on your verification step. The image prompt director (28 ads) and the Hindi/Tamil translator are both running. I'll report when they finish.
+Compose can now build the Hindi and Tamil versions that pass their checks. Google sign-in is still waiting on your verification step. The image prompt director (28 ads) and the Hindi/Tamil translator are both running. I'll report when they finish.
 
 ### Assistant · 2026-10-03 06:37
 
-The language checks earned their keep. The Hindi offer ad was blocked at first because "3rd" was written as the word "तीसरा", which the number check caught. All 4 versions (Hindi and Tamil, 2 ads) now pass[redacted] Committing and checking the login:
+The language checks earned their keep. The Hindi offer ad was blocked at first because "3rd" was written as the word "तीसरा", which the number check caught. All 4 versions (Hindi and Tamil, 2 ads) now pass. Committing and checking the login:
 
 ### Assistant · 2026-10-03 06:37
 
@@ -2704,7 +2669,7 @@ Most of the submission is finished; the main thing still running is the scale-ru
 These stay in the library but rank low for Minimalist.
 
 **Your actions:**
-1. Change the ChatGPT account password[redacted] it was typed into chat. The transcript is redacted and never contained it in git.
+1. Change the ChatGPT account password; it was typed into chat. The transcript is redacted and never contained it in git.
 2. When you're ready, tell me what you want clarified about the junk clean-up. Nothing has been deleted.
 
 ### User · 2026-10-03 07:23
@@ -2816,13 +2781,13 @@ I've sent the final submission to the DeepSeek judge. I haven't read anything in
   - Your transformation-journey example, rated Severe and carrying the AI label.
 - **Diagram:** `docs/pipeline_diagram.png` shows every agent, script and check, and how they connect to the final ads.
 - **Docs:** README, one-page decision doc, failure-modes list, evaluation write-up, redacted transcript, and the brief-mapped summary in `docs/SUBMISSION.md`.
-- **Checks:** 78 commits, all 40 tests pass[redacted] nothing left uncommitted.
+- **Checks:** 78 commits, all 40 tests pass, nothing left uncommitted.
 - **the target brand:** no mention remains in the current files. Older commits still contain the old wording; I can only remove that by rewriting the history, so tell me if you want it.
 
 **Running it on a different device:** copy the folder (or clone it), install Node.js 20 or newer, and run `npm start`. Nothing else needs installing; the README covers the optional extras.
 
 **Two things for you:**
-1. Change the ChatGPT account password[redacted] since it was typed into chat. The transcript is clean and the password [redacted] reached the commit history.
+1. Change the ChatGPT account password, since it was typed into chat. The transcript is clean and the password [redacted] reached the commit history.
 2. The junk clean-up is still on hold until you clarify what you wanted to ask about it.
 
 If you'd like, I can read the judge's verdict once it replies and act on its feedback.
@@ -2833,7 +2798,7 @@ Junk clean-up: remove the basic the target brand prompt to something one would u
 
 ### Assistant · 2026-10-03 08:38
 
-I'll treat this as the junk clean-up go-ahead, plus replacing the "basic the target brand prompt" with a proper prompt someone could use to get this kind of pipeline. First I need to pin [redacted] which prompt you mean: likely the opening instructions captured in the transcript, or a stored copy of the original brief. Looking for both:
+I'll treat this as the junk clean-up go-ahead, plus replacing the "basic the target brand prompt" with a proper prompt someone could use to get this kind of pipeline. First I need to pin down which prompt you mean: likely the opening instructions captured in the transcript, or a stored copy of the original brief. Looking for both:
 
 ### User (sent while the assistant was working) · 2026-10-03 08:39
 
@@ -2853,7 +2818,7 @@ Several moments sit mostly in tool calls rather than visible replies, so my firs
 
 ### Assistant · 2026-10-03 08:47
 
-A final targeted pass [redacted] phrases from my own narration:
+A final targeted pass using phrases from my own narration:
 
 ### Assistant · 2026-10-03 08:47
 
@@ -2926,7 +2891,7 @@ The sanitiser works. One wording glitch, "the the target brand", gets an extra r
 
 ### Assistant · 2026-10-03 09:09
 
-Three things are now running in parallel: the blind labelling of the unseen-brand test, the grammar pass[redacted] and the history scan. While they finish, two decisions only you can make for the GitHub copy:
+Three things are now running in parallel: the blind labelling of the unseen-brand test, the grammar pass, and the history scan. While they finish, two decisions only you can make for the GitHub copy:
 
 ### Assistant · 2026-10-03 09:25
 
@@ -3115,7 +3080,7 @@ Next: split, compose and eye-check the 7 updated ads. Then the 23 new ads go thr
 
 ### Assistant · 2026-10-03 10:08
 
-The blind labels are in: **3 block, 9 fix, 0 pass[redacted] The three blocks are an azelaic serum sold "for rosacea and cystic acne", "Clears & Prevents Pimples & Acne", and an explicit "Fairness" claim. Labels like these are what the honest test needs. Per protocol, **I'm committing them before the scorer sees these ads**:
+The blind labels are in: **3 block, 9 fix, 0 pass**. The three blocks are an azelaic serum sold "for rosacea and cystic acne", "Clears & Prevents Pimples & Acne", and an explicit "Fairness" claim. Labels like these are what the honest test needs. Per protocol, **I'm committing them before the scorer sees these ads**:
 
 ### Assistant · 2026-10-03 10:08
 
@@ -3143,7 +3108,7 @@ The test failed only because the layout list isn't exported for tests to use. Ex
 
 ### Assistant · 2026-10-03 10:20
 
-All 41 tests pass[redacted] including the new one, which checks the AI mark on every layout. Recomposing the scale ads and confirming the mark now shows on the two hero ads:
+All 41 tests pass, including the new one, which checks the AI mark on every layout. Recomposing the scale ads and confirming the mark now shows on the two hero ads:
 
 ### Assistant · 2026-10-03 10:25
 
@@ -3199,7 +3164,7 @@ Picked up again after the usage-limit pause. The review fixes and the clean GitH
 
 **Done**
 - **Missing people filled:** all 7 placeholder ads now show AI-generated people or skin, each with the visible AI-GENERATED mark and still not exportable. They are the expert portrait, product-in-use, before/after, routine steps, UGC photo, creator selfie and product-in-hand.
-- **Bug found and fixed:** two of those ads were missing the AI mark. A new test now checks the mark on every layout; all 41 tests pass[redacted]
+- **Bug found and fixed:** two of those ads were missing the AI mark. A new test now checks the mark on every layout; all 41 tests pass.
 - **Risk labels fixed:** the compliance step was marking AI-person ads "low risk, no AI label". Risk can now only go up, so the 6 new person ads are High and the 6 transformation journeys Severe.
 - **The honest test on 12 unseen brands:** blind labels were committed before scoring, then scored once.
   - Rules + AI judge caught **81% of flagged phrases, with no missed blocks**, against 90% on the holdout.
@@ -3286,7 +3251,7 @@ The rendered button and the text the compliance re-check sees must match, so the
 
 ### Assistant · 2026-10-03 14:17
 
-All 41 tests pass[redacted] Re-rendering three ads to check the new look by eye: a person ad with an AI person, a plain product ad and an offer ad.
+All 41 tests pass. Re-rendering three ads to check the new look by eye: a person ad with an AI person, a plain product ad and an offer ad.
 
 ### Assistant · 2026-10-03 14:21
 
@@ -3414,7 +3379,7 @@ What part of the final submission needs work?
 
 ### Assistant · 2026-10-03 18:00
 
-Committed. Step 2 is the docs catch-up. Your newer messages in the transcript also need the same disclosed grammar pass[redacted] finding which ones don't have corrections yet:
+Committed. Step 2 is the docs catch-up. Your newer messages in the transcript also need the same disclosed grammar pass; finding which ones don't have corrections yet:
 
 ### Assistant · 2026-10-03 18:01
 
@@ -3442,7 +3407,7 @@ The docs are committed. Before building the GitHub copy, a quick refresh of the 
 
 ### Assistant · 2026-10-03 18:04
 
-Everything is committed, all 41 tests pass[redacted] and there are no uncommitted files. Now the final clean GitHub copy, starting by removing the dry-run copy built earlier:
+Everything is committed, all 41 tests pass, and there are no uncommitted files. Now the final clean GitHub copy, starting by removing the dry-run copy built earlier:
 
 ### Assistant · 2026-10-03 18:06
 
@@ -3486,7 +3451,7 @@ Now the optional black tag ("Fragrance-free" style) on hero ads. Viewing where t
 
 ### Assistant · 2026-10-03 18:25
 
-All 41 tests pass[redacted] Before re-rendering all 81, a trial on a few ads to compare against Minimalist's own: a plain hero, an offer, an ingredient ad and a people ad.
+All 41 tests pass. Before re-rendering all 81, a trial on a few ads to compare against Minimalist's own: a plain hero, an offer, an ingredient ad and a people ad.
 
 ### User (sent while the assistant was working) · 2026-10-03 18:28
 
@@ -3534,7 +3499,7 @@ Writing the code now: the Us vs Them table layout, the "Hide Nothing." sign-off 
 
 ### Assistant · 2026-10-03 18:47
 
-Renderer changes are in and all 41 tests pass[redacted] Next I'm creating the Us vs Them run: one ad per product, each grounded in the brand's own product-page comparisons.
+Renderer changes are in and all 41 tests pass. Next I'm creating the Us vs Them run: one ad per product, each grounded in the brand's own product-page comparisons.
 
 ### Assistant · 2026-10-03 18:48
 
@@ -3590,7 +3555,7 @@ Now the new risk rule: any ad that uses a model (AI person or hands) becomes Sev
 
 ### Assistant · 2026-10-03 19:12
 
-All 41 tests still pass [redacted] the new design. Rendering one run (8 ads) now to check the new look before re-rendering everything.
+All 41 tests still pass with the new design. Rendering one run (8 ads) now to check the new look before re-rendering everything.
 
 ### Assistant · 2026-10-03 19:15
 
@@ -3683,3 +3648,162 @@ The library is rebuilt: 88 ads, 41 of them not exportable (models, Severe format
 ### Assistant · 2026-10-03 19:40
 
 The gallery now agrees with the composer: 48 not exportable. Updating the submission doc's ad-library section with the final numbers and the new house style.
+
+### Assistant · 2026-10-03 19:41
+
+The diagram renders correctly. Two boxes (Style check, Prompt check) have their last text line touching the border, so I'm giving them more height.
+
+### Assistant · 2026-10-03 19:44
+
+All committed (94 commits, nothing outstanding). Next, the private GitHub copy. Checking what was pushed last time before rebuilding the clean history.
+
+### Assistant · 2026-10-03 19:45
+
+While the clean GitHub history builds in the background, I'm opening the results for you: the side-by-side style comparison and the updated ad gallery.
+
+### Assistant · 2026-10-03 19:45
+
+Updating memory with the current state and the two lasting rules from today: statics only, and minimal design with models rated Severe.
+
+### Assistant · 2026-10-03 20:17
+
+The history scan is too slow, because the email pattern backtracks on the embedded image data. Replacing it with a fast exact-text search for the client name and email domains.
+
+### Assistant · 2026-10-03 20:18
+
+The full clean history is verified: 0 client-name hits and 0 internal emails across all 3.8 GB. Checking what's on GitHub now, then pushing. If a GitHub sign-in window pops up, please approve it.
+
+### Assistant · 2026-10-03 20:23
+
+Sending the follow-up to the DeepSeek reviewer now. I'll read only its new reply.
+
+### Assistant · 2026-10-03 20:25
+
+While DeepSeek replies, I'm updating the checkpoint with where things stand.
+
+### Assistant · 2026-10-03 20:28
+
+Committed. Rebuilding the clean GitHub copy once more so it includes these last two commits (about 12 minutes in the background), then fast-forwarding your Desktop copy.
+
+### Assistant · 2026-10-03 20:33
+
+Yes. Every ad is now held to Minimalist's own style by an automated check, and all 88 pass. It's built from the brand's own long-running static ads, and you can see them side by side with ours in `research/style_compare.png` (open in your browser with the gallery).
+
+**What changed from your feedback today**
+- **Statics only:** video ads are no longer used as evidence, for competitors or for Minimalist. Their own 8 long-running statics (52–98 days) are now the style reference.
+  - Those statics show hands only, never faces.
+  - 3 of our ads had borrowed an idea from a Plum video. Two still had a static ad backing the idea, so they stayed. The third lost its AI portrait and is now a simple rating card.
+- **Minimal design on every ad:** plain white canvas, the real pack large, a short title and one grey line, a small "Shop now →". Prices, ingredient details and how-to lines moved to the post caption, which is still compliance-checked. Ads now carry a median of 15 words on the image.
+- **"Hide Nothing." tagline:** added under the logo on every ad.
+- **Us vs Them:** one per product, compared only against something Minimalist's own page names (a benchmark serum, other vitamin C forms, salicylic acid alone). The independent judge flagged all 7: one blocked because "melanin reduction" reads as skin lightening, six needing fixes. They're kept, but can't go out until someone signs off the proof.
+- **Models = Severe:** 40 ads use an AI person or hands. All are kept but can't be exported.
+
+**Where the library stands:** 88 ads and 268 images. 48 can't be exported yet: the 40 AI-model ads, the comparisons, and ads with open warnings. That's deliberate, and the decision doc now says so.
+
+**Problems caught on the way, all fixed**
+- **Footnote text was being cut off** on two ads, including an AI-illustration note.
+- **"86% pure Vitamin C" read as the serum's strength** on one ad, next to a 10% serum, so it was cut.
+- **The build transcript was missing 40 of your messages:** everything you'd typed while I was mid-task, back to 1 Oct. It now includes them, with disclosed grammar-only fixes.
+
+**DeepSeek's take:** it called this follow-up the clearest evidence of the build improving through review. It asked for six short clarifications, all now in the docs:
+- the transcript gap is logged as a failure mode;
+- the 92% → 88% drop is explained (12 harder, unseen-brand test ads were added);
+- the "15 words" is our median, while the check's limit is the brand's own maximum.
+
+**Pending on your side**
+1. **Push to GitHub.** It needs your sign-in, which this session can't show. Run these in your own PowerShell window. It goes in three steps because GitHub caps a single push at 2 GB; "up to date" on the first two is fine.
+   ```
+   cd "$HOME\Desktop\minimalist-ad-tool-github"
+   $git = "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe"
+   & $git push origin 27089c2:refs/heads/main
+   & $git push origin 64c6419:refs/heads/main
+   & $git push -u origin main
+   ```
+   The copy being pushed is checked: no client name and no internal emails anywhere in its history.
+2. **Change the two passwords** shared earlier in chat.
+3. **Ask the brand team whether Minimalist does comparison ads at all.** If not, the Us vs Them format gets dropped. Its setup can be reused for "old way vs new way" ads.
+
+### User · 2026-10-04 02:57
+
+are parts of deliverables ready?
+
+### Assistant · 2026-10-04 02:58
+
+I'll verify each deliverable's actual state rather than go from memory.
+
+### User (sent while the assistant was working) · 2026-10-04 02:58
+
+also if someone asks for a particular image what happens?
+
+### Assistant · 2026-10-04 02:58
+
+Tests (47/47), the style check (88/88), the app and the scoring API all check out. Checking what the app does when someone asks for a specific image, so I can answer your second question accurately.
+
+### Assistant · 2026-10-04 02:59
+
+Mostly yes. Five of the six deliverables are ready, and I checked each one just now rather than going from memory. The decision doc needs a trim, and there are two finishing steps.
+
+| Deliverable | Status | What's left |
+|---|---|---|
+| **Working app** | Ready. It starts with `npm start` (nothing to install), the page loads, and a test ad, "Cures acne in 3 days", came back **Blocked**. All 47 tests pass. | Without an Anthropic API key, the AI judge doesn't run live; its results so far come from a stand-in. |
+| **Commit history** | Ready on your machine: 96 commits, nothing outstanding. The GitHub copy is prepared and checked for no client name and no internal emails. | **Not on GitHub yet.** It needs your sign-in: the 3 push commands from my last message, run in your own PowerShell window. |
+| **Transcript** | Ready, including the 40 mid-task messages it had been missing. | One last refresh right before you send, so this conversation's latest messages are in it (a couple of minutes). |
+| **Prompts as files** | Ready: 11 files, including the reusable "build this pipeline for any brand" prompt and the new style-editor prompt. | — |
+| **One-page decision doc** | The content is final. | **About 980 words, closer to two pages than one.** It needs a trim to fit one page. |
+| **Failure-modes list** | Ready: 3 design-caused failure modes with before- and after-launch actions, plus what we actually saw, including today's incidents. | — |
+| *Extra: ad library* | Ready: 88 ads, 268 images, a description per ad, and the gallery. All 88 pass the text-budget check. | — |
+
+**If someone asks for a particular image**, what happens depends on what they want:
+- **An ad we already made** (say, the SPF offer ad): open `ad_library/index.html` and filter by product or risk. Each ad comes in square, 4:5 and 9:16, with Hindi or Tamil where made. A description file sits next to it with the copy, caption, sources, risk, and whether it can be exported.
+- **A new ad for a product:** in the app, paste the product page link. It writes copy where every line traces to that page, builds the ad with the real pack photo and checks it. You can edit the text, re-check, and download the PNG with a review ticket. The app makes one standard layout only.
+- **A specific kind of ad** (a routine ad, Us vs Them, a lifestyle shot): someone runs the pipeline with the product, format and angle requested. It's not a button in the app. The same safety rules apply to every request:
+  - the product photo is always real, and a request to AI-draw the product is the one thing refused;
+  - a claim the page can't support is left out, never invented;
+  - nothing else is refused, but it's rated: people mean Severe and not exportable until real photos replace them, before/after means Severe, comparisons mean High.
+- **Checking someone else's image** ("Score any ad" tab): paste the ad's text and get a verdict with every flagged phrase, the reason and a fix. Uploading the image itself also works, but only with an API key.
+
+Want me to trim the decision doc to one page and refresh the transcript now? After that, the only steps left are yours: the GitHub push and changing the two passwords shared earlier in chat.
+
+### User · 2026-10-04 03:00
+
+there should be a trendy section where ads generated in lasg 2 months an dstill runnign show up, but only if multple brands are doing them n drecreated minimaliist style
+
+### Assistant · 2026-10-04 03:01
+
+The new section needs three things: competitor statics launched in the last 2 months that are still active, grouped into formats that at least two brands are running, then recreated for Minimalist in the minimal house style. Checking first what our competitor data holds for that window.
+
+### Assistant · 2026-10-04 03:04
+
+While the live-status check runs, I'm writing the script that builds the trend list from the data, so the section can be refreshed any time.
+
+### User (sent while the assistant was working) · 2026-10-04 03:04
+
+shorten summary more humanly, we dont have claude api so they must enter it, make a read me very short, remove pass expaand short prompts, no mention of this ins transcript keep some good original prompts, github i will log u in latrer, make it functional, was github reqired
+
+### User · 2026-10-04 03:06
+
+also test for multiple products result time to be logged
+
+### Assistant · 2026-10-04 03:10
+
+Added the server side of the API key box: the key is checked with Anthropic, kept in memory only and never saved. Now adding the box itself to the app's page.
+
+### Assistant · 2026-10-04 03:12
+
+The timing test is running on 10 products. Meanwhile, writing the very short README.
+
+### Assistant · 2026-10-04 03:13
+
+The README is now 15 lines. Next, the transcript: messages that contained login details will be removed entirely, with a one-line note saying so, instead of showing the redacted text.
+
+### Assistant · 2026-10-04 03:15
+
+Both app fixes are in. Re-running the tests, then repeating the 10-product timing test so the logged times reflect the final app.
+
+### Assistant · 2026-10-04 03:15
+
+All 47 tests still pass. Now the one remaining transcript message that mixes a real request with login details: keeping the request and removing just the login part.
+
+### Assistant · 2026-10-04 03:16
+
+My first attempt didn't apply cleanly, and it wrongly trimmed your latest message. Redoing the fix properly, by editing the exact lines.

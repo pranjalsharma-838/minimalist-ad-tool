@@ -9,7 +9,14 @@
 <body>
   <header class="top">
     <div class="brand">Ad Desk <span class="sub">internal prototype</span></div>
-    <div id="status" class="status">checking…</div>
+    <div class="topright">
+      <div id="status" class="status">checking…</div>
+      <form id="keyform" class="keyform" autocomplete="off">
+        <input id="apikey" type="password" placeholder="Paste your Claude API key (sk-ant-…)" aria-label="Claude API key" />
+        <button type="submit">Use key</button>
+        <span id="keymsg" class="keymsg"></span>
+      </form>
+    </div>
   </header>
 
   <nav class="tabs" role="tablist">

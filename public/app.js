@@ -10,14 +10,29 @@ async function api(path, body) {
   return j;
 }
 
-// ---------- status ----------
-api("/api/status").then((s) => {
-  $("#status").innerHTML = `Rules v${esc(s.rulesVersion)} · Model judgment: <b class="${s.llm ? "on" : "off"}">${s.llm ? "on" : "off (rules only)"}</b>`;
-  if (!s.llm) {
-    $("#mode").value = "verbatim";
-    $("#mode").querySelector('[value="model"]').disabled = true;
+// ---------- status + Claude API key ----------
+// Without a key the app still works (copy word for word from the page, rules-only check). With one, the writer and
+// the AI judge run live. The key is sent only to this local server, which keeps it in memory for the session.
+function showStatus(s) {
+  $("#status").innerHTML = `Rules v${esc(s.rulesVersion)} · AI judge: <b class="${s.llm ? "on" : "off"}">${s.llm ? "on" : "off (rules only)"}</b>`;
+  $("#mode").querySelector('[value="model"]').disabled = !s.llm;
+  if (!s.llm) $("#mode").value = "verbatim";
+  $("#keyform").style.display = s.llm ? "none" : "";
+}
+api("/api/status").then(showStatus).catch(() => ($("#status").textContent = "server not reachable"));
+$("#keyform").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  $("#keymsg").textContent = "checking…";
+  try {
+    await api("/api/key", { key: $("#apikey").value });
+    $("#apikey").value = "";
+    $("#keymsg").textContent = "";
+    showStatus(await api("/api/status"));
+    $("#mode").value = "model";
+  } catch (err) {
+    $("#keymsg").textContent = err.message;
   }
-}).catch(() => ($("#status").textContent = "server not reachable"));
+});
 
 // ---------- tabs ----------
 document.querySelectorAll(".tab").forEach((b) =>
@@ -86,7 +101,18 @@ export function renderReport(report, el) {
 }
 
 // ---------- generate flow ----------
-let sheet = null, current = null, imageDataUrl = "";
+let sheet = null, current = null, imageDataUrl = "", canvasColour = "";
+// Minimal look (2026-10-04): the ad's background takes the pack photo's own studio colour (its corner pixel), so a
+// pack shot with a grey backdrop blends in instead of showing as a grey box on white.
+async function cornerColour(src) {
+  try {
+    const img = new Image(); img.src = src; await img.decode();
+    const c = document.createElement("canvas"); c.width = img.naturalWidth; c.height = img.naturalHeight;
+    const x = c.getContext("2d"); x.drawImage(img, 0, 0);
+    const [r, g, b, a] = x.getImageData(2, 2, 1, 1).data;
+    return a > 200 ? `rgb(${r},${g},${b})` : "";
+  } catch { return ""; }
+}
 
 $("#manual-toggle").onclick = () => $("#manual-form").classList.toggle("hidden");
 
@@ -135,7 +161,7 @@ async function toDataUrl(src) {
 
 function drawPreview() {
   // The product photo is inlined as a data URL so PNG export works (an SVG drawn to canvas can't load external images).
-  $("#preview").innerHTML = renderAdSvg({ ...current.spec, imageHref: imageDataUrl });
+  $("#preview").innerHTML = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, canvas: canvasColour });
   const blocked = current.report.verdict.code === "BLOCKED";
   $("#dl-png").disabled = blocked;
   $("#export-note").textContent = blocked
@@ -162,6 +188,7 @@ $("#generate").onclick = async () => {
     if (out.refused) return ($("#extract-msg").innerHTML = `<div class="refusal">${esc(out.reason)}</div>`);
     current = out;
     imageDataUrl = await toDataUrl(out.spec.imageSrc);
+    canvasColour = imageDataUrl ? await cornerColour(imageDataUrl) : "";
     fillEditor(out.copy);
     $("#gen-result").classList.remove("hidden");
     $("#extract-msg").textContent = "";
@@ -190,7 +217,7 @@ $("#recheck").onclick = async () => {
 
 $("#dl-png").onclick = async () => {
   if (current.report.verdict.code === "BLOCKED") return;
-  const svg = renderAdSvg({ ...current.spec, imageHref: imageDataUrl });
+  const svg = renderAdSvg({ ...current.spec, imageHref: imageDataUrl, canvas: canvasColour });
   const img = new Image();
   img.src = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
   await img.decode();

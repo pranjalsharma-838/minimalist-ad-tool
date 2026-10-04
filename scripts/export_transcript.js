@@ -84,8 +84,11 @@ About 23 of the ~95 commits are fixes to something the agent got wrong (a few mo
 const redact = (t) => String(t)
   .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g, "[email]")
   .replace(/\b(sk-ant-[\w-]{10,}|sk-[\w-]{16,}|AIza[\w-]{20,}|ghp_[\w]{20,})/g, "[key]")
-  // "pass it to …", "pass on …" are verbs, not credentials (2026-10-04: "pass it to it" was shown as "pass [redacted]").
-  .replace(/\b(password|passwd|pwd|pass ?code|passcode|pass|otp|pin)\b(\s*(is|:|=|-)?\s*(is|:|=)?\s*)(?!(?:it|on|to|the|this|that|them|through|along|over)\b)(\S+)/gi, "$1$2[redacted]")
+  // A word after "password is / pass:" is always redacted. A bare word after "pass" only when it looks like a secret
+  // (digit or symbol) or the message is about logging in. "pass it to ..." and "remove pass expand ..." are not
+  // credentials (2026-10-04: both had been shown as "pass [redacted]").
+  .replace(/\b(password|passwd|pwd|pass ?code|passcode|pass|otp|pin)\b(\s*(?:is|:|=|-)\s*(?:is|:|=)?\s*)(\S+)/gi, "$1$2[redacted]")
+  .replace(/\b(password|passwd|pwd|passcode|pass|otp|pin)\b(\s+)(?!(?:it|on|to|the|this|that|them|through|along|over|is)\b)(?!\[redacted\])(\S+)/gi, (m, w, sp, tok, off, all) => (/[\d@#$%!&*]/.test(tok) || /@|\[email\]|\b(id|login|log in|account|gmail|username)\b/i.test(all) ? `${w}${sp}[redacted]` : m))
   // First export leaked a bare password typed right after an email address, and a "letters@digits" style
   // password: redact a non-word token after [email], and any letters+symbol+digits token anywhere.
   .replace(/\[email\](\s+)(?!USE\b|and\b|or\b|for\b)(\S*[\d@#$%!&*]\S*)/g, "[email]$1[redacted]")
@@ -96,7 +99,17 @@ const redact = (t) => String(t)
   .replace(/\b(id|user(name)?|login)\s*[:=]\s*\S+\s+(and\s+)?(pw|password|pass)\s*[:=]?\s*\S+/gi, "[credentials redacted]")
   .replace(/\b[A-Za-z0-9+/]{40,}={0,2}\b/g, "[long-token]");
 const textOf = (c) => typeof c === "string" ? c : Array.isArray(c) ? c.filter((p) => p.type === "text").map((p) => p.text).join("\n") : "";
-const out = ["# Build transcript", "", "Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** email addresses, passwords and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as \"the target brand\"; three framing messages are neutral restatements, marked where they appear). **Nothing else was removed**, including the parts that went badly.", "", START_HERE];
+// User decision (2026-10-04): a user message that carried login details is removed whole, not shown redacted.
+// Credential fragments as they look after redaction ("[email] [redacted]", "password is [redacted]", "[credentials redacted]").
+const CRED_FRAG = () => /\[email\]\s*(and\s+)?((the\s+)?pass(word)?\s*(is|:|=)?\s*)?\[redacted\][^.?!\n]*[.?!]?|\b((id|and)\s+(and\s+)?)?(pass(word)?|pwd|passcode|otp)\b\s*(is\s*:?|:|=)?\s*\[redacted\][^.?!\n]*[.?!]?|\[credentials redacted\][^.?!\n]*[.?!]?/gi;
+const REMOVED = "*(A message with login details was removed.)*";
+// A message that is mostly login details is removed whole; in a longer one only the login part goes, with a note.
+const scrubUser = (t) => {
+  if (!CRED_FRAG().test(t)) return t;
+  const rest = t.replace(CRED_FRAG(), "").replace(/\s{2,}/g, " ").trim();
+  return rest.replace(/[^A-Za-z]/g, "").length < 25 ? REMOVED : `${rest} *(Login details removed.)*`;
+};
+const out = ["# Build transcript", "", "Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** messages that carried login details (each replaced by a one-line note), email addresses and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as \"the target brand\"; three framing messages are neutral restatements, marked where they appear). **Nothing else was removed**, including the parts that went badly.", "", START_HERE];
 let n = 0;
 for (const f of files) {
   for (const line of fs.readFileSync(f, "utf8").split("\n")) {
@@ -113,7 +126,7 @@ for (const f of files) {
       const c = CORR[key];
       if (c && c.length <= Math.max(redact(q).length * 1.15, redact(q).length + 25)) q = c;
       else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
-      out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", redact(q), "");
+      out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", scrubUser(redact(q)), "");
       continue;
     }
     const role = e.message?.role || e.type;
@@ -131,7 +144,7 @@ for (const f of files) {
       if (c && c.length <= Math.max(redact(t).length * 1.15, redact(t).length + 25)) t = c;
       else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
     }
-    out.push(`### ${role === "user" ? "User" : "Assistant"}${e.timestamp ? ` · ${e.timestamp.slice(0, 16).replace("T", " ")}` : ""}`, "", redact(t), "");
+    out.push(`### ${role === "user" ? "User" : "Assistant"}${e.timestamp ? ` · ${e.timestamp.slice(0, 16).replace("T", " ")}` : ""}`, "", role === "user" ? scrubUser(redact(t)) : redact(t), "");
     n++;
   }
 }

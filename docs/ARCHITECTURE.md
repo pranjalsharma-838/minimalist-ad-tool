@@ -20,6 +20,7 @@ request ─► [1 Brand context] ─┴► [2 Winners] ─► [3 Trends] ─► 
 | L | Live data | Scripts: `collect_offers.js`, `collect_reviews.js`, `collect_marketplace_reviews.js`, `mine_customer_language.js` | site/Yotpo/Amazon → PRICE*, OFFER*, RATING, REV* facts; competitor map; concern map | Built (Nykaa 403, Flipkart markup unparsed) |
 | 2 | Winners | Winner agent → `research/winners.json` | 74 competitor ads → template tags, 57 winners (30+ days); **statics only** count (51 winners): the 6 video winners are ignored by the code (user rule 2026-10-04) | Built |
 | 3 | Trends | `scripts/build_trends.js` | winners → winner share + breadth per format | v1 (India Meta only) |
+| 3b | Trending now | `scripts/build_trending.js` + a live-status check | competitor statics started in the last 60 days, still running, grouped by format; kept when ≥ 2 brands → recreated in Minimalist's style (run `<date>-trending`), shown first in the gallery | Built (7 formats on 2026-10-04) |
 | A | Asset library | Agent `minimalist-asset-library` | galleries → labelled assets, 13 clean cut-outs | Built |
 | R | Own results | `scripts/results_ingest.js` + `results/ledger.csv` | our ad results → score per format/angle/hook; 35% of the archetype score once a format has ≥ 3,000 impressions | Built, waiting for live data |
 | 4 | Archetype selection | Skill + `lib/archetype.js` | winners, trends, facts, objective, own results, variety penalty → ranked shortlist with risk. Never removes a format | Built |

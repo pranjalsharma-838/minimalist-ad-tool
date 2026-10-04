@@ -1,0 +1,11 @@
+product,result,verdict,layout_ok,extract_ms,generate_and_score_ms,render_ms,png_ms,total_ms
+"salicylic-lha-2-cleanser","ok","Ready for human review (limited check)","true","3192","54","2136","1335","6723"
+"multi-vitamin-spf-50","ok","Ready for human review (limited check)","true","1666","5","626","1286","3589"
+"vitamin-b5-10-moisturizer","ok","Ready for human review (limited check)","true","1138","4","1255","1406","3819"
+"niacinamide-10-with-matmarine","ok","Ready for human review (limited check)","true","966","3","444","1342","2763"
+"vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1","ok","Do not publish","true","994","3","373","1364","2743"
+"salicylic-acid-2","ok","Ready for human review (limited check)","true","952","5","375","1406","2746"
+"alpha-arbutin-2","ok","Fix before review","true","1065","4","468","1334","2877"
+"marula-05-moisturizer","ok","Fix before review","true","1019","4","490","1376","2901"
+"niacinamide-5-hyaluronic-acid-1","ok","Ready for human review (limited check)","true","1002","3","378","1277","2666"
+"vitamin-c-e-ferulic-16","ok","Ready for human review (limited check)","true","918","2","434","1482","2844"

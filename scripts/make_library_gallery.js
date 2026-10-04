@@ -31,6 +31,18 @@ const ads = mains.map((png) => {
   };
 }).sort((a, b) => a.product.localeCompare(b.product) || a.format.localeCompare(b.format));
 const products = [...new Set(ads.map((a) => a.product))];
+// "Trending now" (user request 2026-10-04): formats several brands launched in the last 60 days and still run
+// (research/trending.json, scripts/build_trending.js), each next to our Minimalist recreation (run "trending").
+const TR = fs.existsSync("research/trending.json") ? JSON.parse(fs.readFileSync("research/trending.json", "utf8")) : null;
+const tid = (a) => Number((a.format.match(/^#(\d+)/) || [])[1]);
+const trendRow = (t) => {
+  const ours = ads.filter((a) => a.run === "trending" && tid(a) === t.template_id);
+  const refs = t.ads.filter((x, i, all) => all.findIndex((y) => y.brand === x.brand) === i).slice(0, 4);
+  return `<div class="trow"><div class="tinfo"><h3>#${t.template_id} ${esc(t.name)}</h3><p><b>${t.brands.length} brands</b> · ${t.ads.length} ads · newest ${t.ads[0].days} days ago</p><p class="tb">${esc(t.brands.join(", "))}</p></div>
+  <div class="trefs">${refs.map((x) => `<a href="${esc(x.url)}" target="_blank" title="${esc(x.one_line)}"><img loading="lazy" src="../${esc(x.image_file)}" alt="${esc(x.brand)}"><span>${esc(x.brand)} · ${x.days}d</span></a>`).join("")}</div>
+  <div class="tarrow">→</div><div class="tours">${ours.length ? ours.map((a) => `<a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a><span><span class="risk ${a.risk}">${a.risk}</span> ${a.exportable ? "exportable after review" : "not exportable"} · <a href="${esc(a.md)}" target="_blank">description</a></span>`).join("") : "<span>not made yet</span>"}</div></div>`;
+};
+const trending = TR && TR.trends.length ? `<section class="trend"><h2>Trending now</h2><p>Formats that at least ${TR.min_brands} competitor brands launched in the last ${TR.window_days} days and are still running (statics only; ${esc(TR.still_running)}). Left: their ads. Right: our version in Minimalist's minimal style, built from those references, never copying them.</p>${TR.trends.map(trendRow).join("")}</section>` : "";
 const card = (a) => `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}">
   <a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a>
   <div class="meta">
@@ -57,8 +69,15 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:
 .risk{color:#fff;border-radius:6px;padding:1px 7px;text-transform:uppercase;font-weight:700;letter-spacing:.5px}
 .risk.low{background:var(--low)}.risk.medium{background:var(--medium)}.risk.high{background:var(--high)}.risk.severe{background:var(--severe)}
 .aib{background:#111;color:#fff;border-radius:6px;padding:1px 7px;font-weight:700}.ok{color:var(--low)}.no{color:var(--severe);font-weight:700}.run{margin-left:auto;color:var(--muted)}
+.trend{max-width:1400px;margin:8px auto 4px;padding:0 24px}.trend h2{margin:8px 0 4px;font-size:22px}.trend>p{margin:0 0 12px;color:var(--muted)}
+.trow{display:grid;grid-template-columns:220px 1fr 28px 260px;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;margin:0 0 12px}
+.tinfo h3{margin:0 0 4px;font-size:16px}.tinfo p{margin:0;font-size:13px;color:var(--muted)}.tb{margin-top:4px!important}
+.trefs{display:flex;gap:8px;overflow-x:auto}.trefs a{flex:0 0 auto;text-decoration:none;color:var(--muted);font-size:12px;text-align:center}.trefs img{display:block;height:130px;width:auto;border-radius:8px;border:1px solid var(--line);background:#eee}
+.tarrow{font-size:24px;color:var(--muted);text-align:center}.tours{display:flex;flex-direction:column;gap:6px;font-size:12px}.tours img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+@media (max-width:900px){.trow{grid-template-columns:1fr}.tarrow{display:none}}
 </style></head><body>
 <header><h1>Ad library review</h1><p>${ads.length} ads · internal test (Minimalist is the test brand) · every claim cites a source; the product is the real pack shot, never AI-drawn. Click an image for full size; 4:5 / 9:16 / language versions and each ad's description are linked under it.</p></header>
+${trending}
 <div class="filters" id="f"><button class="on" data-p="*">All products</button>${products.map((p) => `<button data-p="${esc(p)}">${esc(p)}</button>`).join("")}
 <span style="width:16px"></span><button class="on" data-r="*">All risk</button>${["low", "medium", "high", "severe"].map((r) => `<button data-r="${r}">${r}</button>`).join("")}<span style="width:16px"></span><button class="on" data-a="*">All imagery</button><button data-a="yes">AI-generated people (${ads.filter((a) => a.ai).length})</button><button data-a="no">No AI people</button></div>
 <main id="g">${ads.map(card).join("\n")}</main>

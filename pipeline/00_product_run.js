@@ -67,6 +67,16 @@ function blendRefs(t) {
   }
   return out;
 }
+// Trending now (user request 2026-10-04): a PAIRS entry with "trend": true blends the recent ads of that format that
+// several brands launched in the last 60 days and still run (research/trending.json, scripts/build_trending.js),
+// one per brand, newest first, instead of the 30+-day winners.
+const TRENDING = fs.existsSync("research/trending.json") ? JSON.parse(fs.readFileSync("research/trending.json", "utf8")) : null;
+function trendRefs(t) {
+  const tr = TRENDING?.trends.find((x) => x.template_id === t.id);
+  const out = [], brands = new Set();
+  for (const a of tr?.ads || []) { if (out.length >= 3 || brands.has(a.brand)) continue; brands.add(a.brand); out.push({ id: a.id, brand: a.brand, days_running: a.days, template_id: t.id, template_name: t.name, one_line: a.one_line }); }
+  return { refs: out, tr };
+}
 // Add-ons (a) balancing + (d) situation-first: angles are spread evenly across the run (least-used first,
 // among the angles this product's facts can support). Offer formats are always "offer_value".
 const ANGLES = {
@@ -91,6 +101,7 @@ ANGLES.routine_journey = "Routine journey: 3 frames of the SAME Indian person go
 // Us vs Them (user review 2026-10-04: "us vs them is missing"; Minimalist's own Amazon gallery has a "vs Other
 // Vitamin C Serums" table). Requested via PAIRS only.
 ANGLES.comparison = "Us vs Them (layout \"usvsthem\"): compare THIS product with a 'them' that the product page itself names — a benchmark product in a published test, another form of the ingredient, or the ingredient used alone. Every row cites the page fact behind both sides; the footnote states the basis (what was compared, how, source). If the page names no comparison, compare TRANSPARENCY instead: what this pack states (the active's strength, a published lab result) vs a label type that doesn't state it — 'them' is then a label type, never a brand, and the footnote says so. Never name or picture another brand, never say others hide, fake or harm, never use 'other brands' or 'competitors'. Lean: 1–3 rows, values of 1–3 words.";
+ANGLES.trend = "Trending now: several brands launched this format in the last 60 days and still run it (the references below are those ads). Recreate the FORMAT for Minimalist in its minimal house style: white canvas, the real pack as the hero, 0-15 words on the image, details in the caption. Take one element from each reference (hook device, layout or proof device), never their wording. Use only what the product page supports. If a reference relies on a skin-problem close-up, a fear hook or a result photo, keep the structure and drop that element (say so in adaptation_notes).";
 const PERSON_FORMAT = (t) => /REAL PHOTO:(people|endorser)/.test(t.source);
 const PERSON_NOTE = "This format shows a PERSON. The person image will be AI-generated and carry the visible AI-GENERATED — ILLUSTRATIVE mark: set ai_label_required: true. Describe the person scene in person_prompt (an adult in the moment the angle names — e.g. morning bathroom counter, commute in sun, fingertips applying a few drops — with NO product, bottle or packaging in their hands or in frame, no text, no brand names, no visible skin-result claims). The real pack shot is composited beside the person by code.";
 const PAIRS = process.env.PAIRS ? JSON.parse(fs.readFileSync(process.env.PAIRS, "utf8")) : null;
@@ -112,12 +123,14 @@ for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
   const pick = rankArchetypes({ product_handle: h, sheet, objective: "sales", top: Number(per), used });
   // PAIRS mode: exactly the requested (product, format, angle) cells; otherwise the archetype shortlist.
   const myPairs = PAIRS ? PAIRS.filter((p) => p.handle === h) : null;
-  const chosen = myPairs ? myPairs.map((p) => ({ ...pick.full_ranking.find((r) => r.id === p.template_id), forcedAngle: p.angle, forcePerson: Boolean(p.person), casting: p.casting || "" })) : pick.shortlist;
+  const chosen = myPairs ? myPairs.map((p) => ({ ...pick.full_ranking.find((r) => r.id === p.template_id), forcedAngle: p.angle, forcePerson: Boolean(p.person), casting: p.casting || "", trend: Boolean(p.trend) })) : pick.shortlist;
   for (const r of chosen) used[r.id] = (used[r.id] || 0) + 1;
   for (const r of chosen) {
     const t = TEMPLATES.find((x) => x.id === r.id);
     const id = `${h}__t${r.id}`;
-    const refs = blendRefs(t);
+    const trend = r.trend ? trendRefs(t) : null;
+    const refs = trend ? trend.refs : blendRefs(t);
+    if (trend) r.why = `Trending now: ${trend.tr?.brands.length || 0} brands launched this format in the last ${TRENDING.window_days} days and still run it (${trend.tr?.ads.length || 0} ads; ${TRENDING.still_running})`;
     const example = refs.length ? rawById.get(String(refs[0].id)) : ads.filter((a) => t.competitor_types.includes(a.ad_type)).sort((a, b) => b.days_running - a.days_running)[0];
     const angle = r.forcedAngle || pickAngle(t, sheet);
     const refBlock = refs.map((w, i) => { const a = rawById.get(String(w.id)) || {}; return `${"ABC"[i]}. ${w.brand} · ${w.days_running} days · id ${w.id} · #${w.template_id} ${w.template_name}\n   What it is: ${w.one_line}\n   Headline: ${a.headline || ""} | On image: ${(a.on_image_text || "").slice(0, 160)}`; }).join("\n");
@@ -149,7 +162,7 @@ for (const h of PAIRS ? [...new Set(PAIRS.map((p) => p.handle))] : handles) {
       ...comps.flatMap(([c, s]) => ["", `## Companion product: ${s.title} (handle "${c}"; cite as "${c}:F<n>"; journey/range layouts only)`, factLines(s, `${c}:`).split("\n").slice(0, 12).join("\n")]),
     ].join("\n");
     fs.writeFileSync(path.join(runDir, "brief_inputs", `${id}.md`), md);
-    match.push({ id, brand: example?.brand || "", ad_type: t.competitor_types[0], product_handle: h, product_title: sheet.title, template_id: t.id, template_name: t.name, risk: r.risk, match_method: "archetype skill", angle, blend_refs: refs.map((w) => `${w.brand} ${w.id} (${w.days_running}d)`) });
+    match.push({ id, brand: example?.brand || "", ad_type: t.competitor_types[0], product_handle: h, product_title: sheet.title, template_id: t.id, template_name: t.name, risk: r.risk, match_method: trend ? "trending now (research/trending.json)" : "archetype skill", angle, blend_refs: refs.map((w) => `${w.brand} ${w.id} (${w.days_running}d)`), ...(trend ? { trend: true, trend_brands: trend.tr?.brands || [] } : {}) });
     console.log(`${id}: #${t.id} ${t.name} [${t.layout}] risk ${r.risk_label}`);
   }
 }
