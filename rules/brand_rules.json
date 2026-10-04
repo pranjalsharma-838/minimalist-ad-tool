@@ -46,7 +46,7 @@
       "dimension": "policy",
       "title": "Acne / hair-fall prevention or elimination claim",
       "severity": "fix",
-      "rationale": "'Prevents acne' or 'stops hair fall' sits on the cosmetic/drug line. Minimalist's own pages use some of this wording, so it is 'fix' with a legal question, not an automatic block.",
+      "rationale": "'Prevents acne' or 'stops hair fall' sits on the cosmetic/drug line. Minimalist's own pages use some of this wording, so it is 'fix' with a legal question, not an automatic block. Update 2026-10-04: brand/legal accepted acne wording on a cosmetic (DEC-01 in rules/brand_decisions.json), so plain acne wording ('fights breakouts', 'anti-acne', 'reduces acne') is recorded as advisory. Prevent/stop, 'acne-free' style promises and all hair-fall claims stay 'fix'.",
       "patterns": [
         "\\b(prevent(s|ing)?|stop(s|ping)?|clear(s|ing)?|get rid of|banish(es)?|fight(s|ing)?|combat(s|ing)?|tackl(e|es|ing))\\s+(\\w+\\s+){0,2}(acne|breakouts?|pimples?|zits|hair\\s?fall|hair loss)\\b",
         "\\banti-?acne\\b",

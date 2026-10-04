@@ -240,7 +240,7 @@
         "claim"
       ],
       "claim_risk": "high",
-      "claim_risk_note": "Comparative claim (ASCI Chapter IV): 'them' must be an unnamed benchmark, ingredient or product type the brand's page itself names, compared like-for-like with the basis on the creative; a reviewer confirms the proof is on file before use.",
+      "claim_risk_note": "Comparative claim (ASCI Chapter IV): 'them' must be an unnamed benchmark, ingredient or product type the brand's page itself names, compared like-for-like with the basis on the creative; a reviewer confirms the proof is on file before use. Brand team confirmed comparison ads are in scope (DEC-02, 2026-10-04); the risk stays High because each comparison still needs its proof on file.",
       "competitor_types": [
         "comparison"
       ]

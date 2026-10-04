@@ -1,28 +1,29 @@
 # Eval results
 
-Generated 2026-10-03T18:52:41.889Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
+Generated 2026-10-04T14:58:07.140Z. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).
 Model layer: outputs in eval/sim_model/ were produced by Claude Code subagents given the exact rendered prompt (eval/rendered/), because no API key was available. They pass through the app's real validation code. This approximates, but is not, the production API path.
+Brand/legal decisions (rules/brand_decisions.json): 1 of 1 reviewer label(s) adjusted in memory to match a later decision; eval/labels.json itself is unchanged.
 How far each split generalises (see eval/README.md): tuning = read while writing the rules (optimistic); holdout = same Meta capture, hash-split and sealed until the rules were frozen (held out, but in-distribution); synthetic = adversarial edge cases written during the build (not independent of the builder); ood = brands never seen in the build + a different channel (Amazon.in listings), labelled blind and committed before scoring (the closest to 'ads you have not seen').
 
 ### Rules only
 
 | split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tuning | 20 | 15 | 0 | 3 | 0 | 0 | 2 | 29/35 (83%) | 10 | 0 |
+| tuning | 20 | 15 | 0 | 3 | 0 | 0 | 2 | 28/34 (82%) | 10 | 0 |
 | holdout | 13 | 10 | 1 | 1 | 0 | 0 | 1 | 15/29 (52%) | 5 | 0 |
 | synthetic | 16 | 8 | 3 | 3 | 0 | 0 | 2 | 4/14 (29%) | 2 | 0 |
 | ood | 12 | 6 | 0 | 3 | 0 | 3 | 0 | 23/54 (43%) | 9 | 0 |
-| ALL | 61 | 39 | 4 | 10 | 0 | 3 | 5 | 71/132 (54%) | 26 | 0 |
+| ALL | 61 | 39 | 4 | 10 | 0 | 3 | 5 | 70/131 (53%) | 26 | 0 |
 
 ### Rules + model (stand-in)
 
 | split | n | agree | missed risk (block→pass/fix) | under (fix→pass) | over-block (pass→block) | over-severity (fix→block) | over (pass→fix) | phrase recall | extra flags | model findings dropped |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tuning | 20 | 16 | 0 | 0 | 0 | 1 | 3 | 32/35 (91%) | 16 | 4 |
+| tuning | 20 | 16 | 0 | 0 | 0 | 1 | 3 | 31/34 (91%) | 15 | 4 |
 | holdout | 13 | 11 | 0 | 0 | 0 | 1 | 1 | 26/29 (90%) | 10 | 1 |
 | synthetic | 16 | 13 | 1 | 0 | 0 | 0 | 2 | 14/14 (100%) | 2 | 0 |
-| ood | 12 | 8 | 0 | 0 | 0 | 4 | 0 | 44/54 (81%) | 17 | 3 |
-| ALL | 61 | 48 | 1 | 0 | 0 | 6 | 6 | 116/132 (88%) | 45 | 8 |
+| ood | 12 | 8 | 0 | 0 | 0 | 4 | 0 | 44/54 (81%) | 16 | 3 |
+| ALL | 61 | 48 | 1 | 0 | 0 | 6 | 6 | 115/131 (88%) | 43 | 8 |
 
 ## Per-case disagreements (rules + model)
 - **meta_3043932412484720** (tuning, Minimalistinc): reviewer **pass**, tool **fix**

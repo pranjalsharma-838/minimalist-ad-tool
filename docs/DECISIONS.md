@@ -5,7 +5,7 @@
 ## 1. The standard
 
 `rules/brand_rules.json`: **43 rules**, each with a severity, a rationale and its sources.
-- **32 claims rules** come from 66 law and platform sources, 60 checked against the original text. Open legal questions (such as "acne" on a cosmetic) are *fix, ask legal*, never *block*.
+- **32 claims rules** come from 66 law and platform sources, 60 checked against the original text. Open legal questions are *fix, ask legal*, never *block*. Answers go in `rules/brand_decisions.json` and are applied in code. The first two arrived on 4 Oct: acne wording is fine, and comparisons are in.
 - **11 tone and language rules** come from the brand's own philosophy (no fluff, no fear) and its counted copy (56 of 60 titles lead with a concentration). Where Minimalist's live copy breaks its philosophy or the law, the rules side with the philosophy and the law.
 - **Voice is soft, law is hard.** An off-voice ad costs a revision; an illegal claim costs a recall. Only fear hooks reach *fix*.
 - **Ad type changes tone, never law:** tone rules relax for creator ads; legal rules never do.
@@ -30,7 +30,7 @@ The brief prefers one deep feature; the brand team also wanted a working ad libr
 
 ## 4. The decision I was least sure about
 
-**Does a claim on Minimalist's own product page count as proof?** If yes, ads repeat "Reduces Acne" at scale. If no, the tool flags the brand's own copy everywhere and gets ignored. **Resolution:** being on the page lowers severity one step for proof-type rules (time frames, stats, acne wording), never for block-level ones (cures, guarantees, fairness). The page proves the brand said it, not that it's legal. The tension is real: the judge flagged the page's own "reduces sebum" once and passed it another time.
+**Does a claim on Minimalist's own product page count as proof?** If yes, ads repeat "Reduces Acne" at scale. If no, the tool flags the brand's own copy everywhere and gets ignored. **Resolution:** being on the page lowers severity one step for proof-type rules (time frames, stats, acne wording), never for block-level ones (cures, guarantees, fairness). The page proves the brand said it, not that it's legal. The tension is real: the judge flagged the page's own "reduces sebum" once and passed it another time. Since legal accepted acne wording (4 Oct), "Reduces Acne" itself is only a note. The page rule still matters for time frames and stats.
 
 ## Worth questioning in the brief
 

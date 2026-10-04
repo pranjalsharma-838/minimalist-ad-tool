@@ -142,6 +142,27 @@ test("second gate run false blocks stay fixed", () => {
   assert.ok(!r3.some((f) => f.rule_id === "CLM-20" && /LHA/.test(f.span)), "no match across a line break");
 });
 
+test("brand/legal decision DEC-01: acne wording accepted, drug, prevention and elimination wording still flagged", async () => {
+  const sev = (text, id = "CLM-02") => runRules({ ad_type: "brand", headline: "", primary_text: text, on_image_text: "", footnote: "", cta: "" }).find((f) => f.rule_id === id);
+  for (const ok of ["Fights breakouts with 2% Salicylic Acid", "Anti-acne face wash", "Reduces acne and excess oil"]) {
+    const f = sev(ok);
+    assert.equal(f?.severity, "advisory", ok);
+    assert.equal(f?.decision, "DEC-01", ok);
+  }
+  for (const still of ["Prevents breakouts", "Get acne-free skin", "Reduces acne for good", "Tackles hairfall right at the roots"]) {
+    assert.equal(sev(still)?.severity, "fix", still);
+  }
+  assert.equal(sev("Treats acne and prevents breakouts", "CLM-01")?.severity, "block", "a treatment claim is untouched");
+  // The judge's findings get the same decisions (and the tagline one).
+  const { scoreAd } = await import("../lib/score.js");
+  const ad = { headline: "Breakout-busting formula", primary_text: "", on_image_text: "Hide Nothing.", footnote: "", cta: "" };
+  const r = await scoreAd(ad, { injectModelData: { findings: [
+    { rule_id: "CLM-02", dimension: "policy", field: "headline", span: "Breakout-busting", severity: "fix", why: "acne", fix: "" },
+    { rule_id: "UNLISTED", dimension: "language", field: "on_image_text", span: "Hide Nothing.", severity: "fix", why: "vague", fix: "" },
+  ], rule_hit_review: [], tone_read: "", language_read: "" } });
+  assert.deepEqual(r.findings.filter((f) => f.layer === "model").map((f) => [f.severity, f.decision]), [["advisory", "DEC-01"], ["advisory", "DEC-03"]]);
+});
+
 test("creator ads: tone relaxed, disclosure required", () => {
   const noTag = runRules({ ad_type: "creator", primary_text: "Obsessed with this serum!! 😍✨", headline: "", on_image_text: "", footnote: "", cta: "" });
   assert.ok(noTag.some((f) => f.rule_id === "CRE-01"));

@@ -39,4 +39,4 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 - **The AI judge hasn't run live,** and it isn't fully consistent from run to run, so a person always reviews.
 - **Customer-review language** comes from the brand site and Amazon only (Flipkart isn't parsed, and Nykaa blocks scripts).
 - **The rules are India-first;** another market needs its own rule set.
-- **An open question for the brand team:** does Minimalist want comparison ("Us vs Them") ads at all? The judge flagged all 7 we made.
+- **Brand and legal answers (4 Oct):** comparison ads are in, and acne wording is fine on a cosmetic. Both are recorded in `rules/brand_decisions.json` and applied automatically. The 7 comparison ads still can't be exported until someone attaches the proof behind each comparison.

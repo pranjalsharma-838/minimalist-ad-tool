@@ -45,11 +45,15 @@
 |---|---|---|---|---|
 | post-fix | 8/12 | 4 | 17 (was 25) | unchanged (90% recall, 11/13) |
 
-The remaining over-severity comes mostly from acne wording. The regulatory file marks this as an open legal question; the reviewer used *fix*, and the rules plus judge used *block*.
+The remaining over-severity comes from absolute and safety wording ("zero white cast", "100% natural", "safe for all skin types") and one "Treats Hyperpigmentation". The rules block these and the reviewer rated them *fix*. (An earlier version of this line blamed acne wording. Re-checked on 2026-10-04: none of the four is.)
 
 **How the headline numbers relate** (asked in external review, 2026-10-04):
 - **92% → 88%:** an earlier version of this file reported **92%** phrase recall. That covered the **49 cases** that existed then (tuning, holdout, synthetic: 72 of 78 phrases). Adding the **12 unseen-brand cases** (81%, 44 of 54) brings all **61 cases** to **88%** (116 of 132). The drop comes from a harder test set, not a weaker scorer.
 - **The 2026-10-04 rule change** (CLM-12 now also catches "vs", "unlike X", "higher than") changed no result on any split: same cases, same numbers.
+- **The 2026-10-04 brand/legal answer on acne wording** (`rules/brand_decisions.json`, DEC-01): one reviewer label rested only on that open question ("clearing active breakouts", fix). It is now adjusted in memory to advisory; the blind label file is untouched. Results:
+  - holdout stays at 90% and unseen brands at 81%, with no missed blocks;
+  - all cases: 115 of 131 (88%);
+  - extra flags drop from 45 to 43.
 - **What counts as generalisation evidence:** the scorer catching all 7 of our own Us vs Them ads is a self-consistency check. The evidence that it generalises is the OOD split above: other brands, another channel, labelled blind, scored once.
 
 Full per-case output:

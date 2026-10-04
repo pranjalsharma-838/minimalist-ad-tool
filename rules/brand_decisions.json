@@ -1,0 +1,44 @@
+{
+  "version": "2026-10-04",
+  "about": "Answers from the brand and legal team to the rulebook's open questions. lib/decisions.js applies each one in code and names it on the finding. A decided finding stays on the report as advisory; nothing is deleted. The rules themselves (brand_rules.json) are unchanged, so a decision can be reversed by deleting its entry.",
+  "decisions": [
+    {
+      "id": "DEC-01",
+      "date": "2026-10-04",
+      "question": "Is 'acne' wording acceptable on a cosmetic in India? (open legal question Q1 in research/regulatory_sources.md)",
+      "answer": "Yes.",
+      "scope": "Acne wording: 'anti-acne', 'acne control', 'reduces acne', 'fights breakouts', 'clears breakouts', 'for acne-prone skin'. Still flagged: treat / cure / heal (drug claim, CLM-01, block), prevent / stop (the statute's own 'prevention' wording), elimination promises ('acne-free', 'no more acne', 'say goodbye to breakouts'), anti-bacterial claims, and every hair-fall claim, which the answer did not cover.",
+      "match": {
+        "rules": ["CLM-02"],
+        "span": "\\b(acne|breakouts?|pimples?|zits)\\b",
+        "unless": "\\b(prevent\\w*|stop\\w*|get rid|rid of|banish\\w*|eliminat\\w*|eradicat\\w*|remov\\w*|free|goodbye|bye|no more|anymore|for good|gone|never|forever|permanent\\w*|treat\\w*|cur(e|es|ed|ing)|heal\\w*|relie\\w*|bacteri\\w*|germs?|microb\\w*|hair)\\b"
+      },
+      "effect": "advisory",
+      "note": "Acne wording accepted by brand/legal (DEC-01, 2026-10-04). Treat/cure, prevent/stop and 'acne-free' style promises are still flagged.",
+      "eval_relabels": [
+        { "id": "meta_1339515484419819", "phrase": "clearing active breakouts", "from": "fix", "to": "advisory", "why": "The reviewer's only reason was open question Q1 ('arguably acne mitigation'), which DEC-01 answers." }
+      ]
+    },
+    {
+      "id": "DEC-02",
+      "date": "2026-10-04",
+      "question": "Does Minimalist run comparison ('Us vs Them') ads?",
+      "answer": "Yes.",
+      "scope": "Keeps the Us vs Them format (template 17). It changes no rule: each comparison still needs like-for-like proof on file and its basis on the creative (CLM-12, ASCI Chapter IV), so comparison ads stay High risk and stay non-exportable until a reviewer attaches that proof.",
+      "effect": "none"
+    },
+    {
+      "id": "DEC-03",
+      "date": "2026-10-04",
+      "question": "Can the brand's taglines ('Hide Nothing.', 'Skin Science') appear on the creative?",
+      "answer": "Yes ('hide nothing is no issue').",
+      "scope": "A judge finding whose whole quote is one of the taglines is kept for the record but not acted on. The taglines also need no citation as a tag (lib/brief_check.js).",
+      "match": {
+        "layer": "model",
+        "exact_span": ["hide nothing.", "hide nothing", "skin science"]
+      },
+      "effect": "advisory",
+      "note": "Brand tagline: accepted by the brand team (DEC-03, 2026-10-04)."
+    }
+  ]
+}

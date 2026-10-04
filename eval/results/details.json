@@ -188,8 +188,8 @@
       "advertiser": "The Derma Co.",
       "label": "block",
       "tool": "block",
-      "phrases_total": 3,
-      "phrases_caught": 3,
+      "phrases_total": 2,
+      "phrases_caught": 2,
       "missed_phrases": [],
       "extra_flags": [
         "[fix] TON-01 \"Say no to\" (rule)"
@@ -1059,12 +1059,11 @@
       "advertiser": "The Derma Co.",
       "label": "block",
       "tool": "block",
-      "phrases_total": 3,
-      "phrases_caught": 3,
+      "phrases_total": 2,
+      "phrases_caught": 2,
       "missed_phrases": [],
       "extra_flags": [
-        "[fix] TON-01 \"Say no to\" (rule)",
-        "[fix] CLM-02 \"Say no to acne & acne marks\" (model)"
+        "[fix] TON-01 \"Say no to\" (rule)"
       ],
       "dropped_model_findings": 0
     },
@@ -1565,7 +1564,6 @@
       "extra_flags": [
         "[block] CLM-01 \"antibacterial\" (rule)",
         "[block] CLM-05 \"non-toxic\" (rule)",
-        "[fix] CLM-02 \"Reduce Redness, Excess Oil & Breakout\" (model)",
         "[fix] CLM-11 \"highest-quality ingredients\" (model)"
       ],
       "dropped_model_findings": 0

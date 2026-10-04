@@ -9,12 +9,16 @@
 //   4. extra flags   — tool block/fix findings the reviewer didn't list    (reviewed by hand: FP or reviewer miss?)
 import fs from "node:fs";
 import { scoreAd } from "../lib/score.js";
+import { relabel } from "../lib/decisions.js";
 
 // The out-of-distribution set (unseen brands, Amazon.in listing copy; scripts/build_ood_eval.js) is kept in its
 // own files so rebuilding the original cases never drops it. Its labels were committed before it was scored.
 const readIf = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : []);
 const cases = [...readIf("eval/cases.json"), ...readIf("eval/cases_ood.json")];
-const labels = new Map([...readIf("eval/labels.json"), ...readIf("eval/labels_ood.json")].map((l) => [l.id, l]));
+// Labels written before a brand/legal decision are adjusted in memory for it (rules/brand_decisions.json); the blind
+// label files themselves are never edited.
+const relabelled = relabel([...readIf("eval/labels.json"), ...readIf("eval/labels_ood.json")]);
+const labels = new Map(relabelled.labels.map((l) => [l.id, l]));
 const toLevel = (code) => ({ BLOCKED: "block", NEEDS_CHANGES: "fix" })[code] || "pass";
 const RANK = { pass: 0, fix: 1, block: 2, advisory: 0 };
 const FIELDS = ["headline", "primary_text", "on_image_text", "footnote", "cta"];
@@ -89,6 +93,7 @@ const md = [
   "",
   `Generated ${new Date().toISOString()}. Labels: eval/labels.json (independent reviewer agent; saw research files and ads only, not rules/code).`,
   "Model layer: outputs in eval/sim_model/ were produced by Claude Code subagents given the exact rendered prompt (eval/rendered/), because no API key was available. They pass through the app's real validation code. This approximates, but is not, the production API path.",
+  `Brand/legal decisions (rules/brand_decisions.json): ${relabelled.applied} of ${relabelled.total} reviewer label(s) adjusted in memory to match a later decision; eval/labels.json itself is unchanged.`,
   "How far each split generalises (see eval/README.md): tuning = read while writing the rules (optimistic); holdout = same Meta capture, hash-split and sealed until the rules were frozen (held out, but in-distribution); synthetic = adversarial edge cases written during the build (not independent of the builder); ood = brands never seen in the build + a different channel (Amazon.in listings), labelled blind and committed before scoring (the closest to 'ads you have not seen').",
   "",
   summarize(rulesOnly, "Rules only"),
