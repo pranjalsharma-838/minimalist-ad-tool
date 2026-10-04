@@ -1,0 +1,16 @@
+{
+  "product": "niacinamide-5-hyaluronic-acid-1",
+  "source": "brand_packs/minimalist/assets/hires/niacinamide-5-hyaluronic-acid-1.png",
+  "tool": "ChatGPT web (user account), 2026-10-05",
+  "rounds": 1,
+  "accepted": null,
+  "auto_check": {
+    "matches": 407,
+    "inliers": 297,
+    "label_similarity": 0.535
+  },
+  "visual_read": "All label words identical: Niacinamide / 05% / FACE SERUM / with bifida ferment + oat extract + hyaluronic acid / clears, heals & soothes skin / for all skin types / 30ml / 1 fl oz / Minimalist. DIFFERENCE: bottle glass colour. Real bottle is very dark neutral brown/near-black; AI bottle is clearly lighter, translucent amber-brown (measured glass approx RGB 34,29,24 real vs 53,30,14 AI). Teal line and cap match.",
+  "shape": "bottle",
+  "status": "failed",
+  "fix_prompt": "Keep this exact pack unchanged but fix the bottle glass colour: the glass must be a very dark, almost black brown (like the reference photo), NOT amber or orange-brown and not translucent - at the neck and shoulders it should look near-black with only a faint brown tint. All label text, the teal line, black ribbed dropper cap and bottle shape stay exactly as in the reference."
+}
