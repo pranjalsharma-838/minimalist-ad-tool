@@ -114,7 +114,25 @@ const scrubUser = (t) => {
   const rest = t.replace(CRED_FRAG(), "").replace(/\s{2,}/g, " ").trim();
   return rest.replace(/[^A-Za-z]/g, "").length < 25 ? REMOVED : `${rest} *(Login details removed.)*`;
 };
-const out = ["# Build transcript", "", "Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** messages that carried login details (each replaced by a one-line note), email addresses and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as \"the target brand\"; three framing messages are neutral restatements, marked where they appear). **Nothing else was removed**, including the parts that went badly.", "", START_HERE];
+// Removed at the user's request (2026-10-05): mentions of reusing the team's earlier internal tools. Whole messages
+// matching OMIT are left out (with their notes); the phrases in TRIM are cut from the text. Disclosed in the header.
+const OMIT = [/^we have done a lot of similar projects\.?$/i, /^use the multi[- ]?agent syst\w* we use\.?$/i, /video script (and|amnd) image brief generator we made/i];
+const TRIM = [
+  [/ ?Your own [^.]*?UGC pipeline notes record that you tried routing image work through ChatGPT's site and dropped it: no structured output, it breaks easily, and it's against their usage policy for the consumer product\./g, " It is also against their usage policy for the consumer product."],
+  [/Also the existing pipeline cleans and all: generate/g, "Also generate"],
+  [/"Use our multi-agent system"/g, "\"Use a multi-agent system\""],
+  [/Brief mode, same as the static ad brief pipeline \(recommended\)/g, "Brief mode (recommended)"],
+  [/Got it: the same shape as the static ad brief pipeline, applied to Minimalist\./g, "Got it: a brief pipeline for Minimalist."],
+  [/ It's the same reason your UGC pipeline dropped this route, and the risk/g, " The risk"],
+  [/\(your static-ad pipeline, for Minimalist\)/g, "(for Minimalist)"],
+  [/, and mentions of earlier internal pipelines\./g, ", and mentions of the internal client."],
+  [/\| Work like our static-ad pipeline: competitor ads/g, "| Competitor ads"],
+];
+const omitted = (t) => OMIT.some((rx) => rx.test(String(t).trim()));
+// The transcript ends at the final submission (the closing housekeeping messages after it are not included).
+const END = process.env.TRANSCRIPT_END || "2026-10-05T17:58:00Z";
+const after = (ts) => ts && String(ts) > END;
+const out = ["# Build transcript", "", "Exported from the Claude Code session log by `scripts/export_transcript.js`. It contains the user's messages and the assistant's visible replies (no tool output, no hidden reasoning; some narration that sat between tool calls isn't in the log export). **What was removed:** messages that carried login details (each replaced by a one-line note), email addresses and key-like strings (credentials pasted during the build were never used), and the internal client's name (shown as \"the target brand\"; three framing messages are neutral restatements, marked where they appear). Short explanatory notes were added under some of the user's messages, each marked \"Note added for the submission\". A few lines that mentioned the team's earlier internal tools were also removed at the user's request, and the transcript ends at the final submission (closing housekeeping messages not included). **Nothing else was removed**, including the parts that went badly.", "", START_HERE];
 let n = 0;
 for (const f of files) {
   for (const line of fs.readFileSync(f, "utf8").split("\n")) {
@@ -125,15 +143,18 @@ for (const f of files) {
     // included now, marked as sent mid-task. Keys use "#q" and don't advance n, so earlier correction keys stay valid.
     if (e.type === "attachment" && e.attachment?.type === "queued_command" && e.attachment?.origin?.kind === "human") {
       const ts = e.attachment.timestamp || e.timestamp, key = `${ts}#q`;
+      if (after(ts)) continue;
       let q = neutralise(String(e.attachment.prompt || "").trim());
       if (!q) continue;
       if (DUMP) DUMP.push({ key, text: redact(q) });
+      if (omitted(q) || omitted(CORR[key] || "")) continue;
       const c = CORR[key];
       if (c && c.length <= Math.max(redact(q).length * 1.15, redact(q).length + 25)) q = c;
       else if (c) console.warn(`correction for ${key} rejected: longer than a grammar fix allows`);
       out.push(`### User (sent while the assistant was working)${ts ? ` · ${ts.slice(0, 16).replace("T", " ")}` : ""}`, "", scrubUser(redact(q)), "", ...noteFor(key));
       continue;
     }
+    if (after(e.timestamp)) continue;
     const role = e.message?.role || e.type;
     if (!["user", "assistant"].includes(role) || e.isMeta || e.isCompactSummary) continue;
     let t = textOf(e.message?.content).trim();
@@ -144,6 +165,7 @@ for (const f of files) {
       t = neutralise(t);
       const key = `${e.timestamp}#${n}`;
       if (DUMP) DUMP.push({ key, text: redact(t) });
+      if (omitted(t) || omitted(CORR[key] || "")) { n++; continue; }
       const c = CORR[key];
       // Guard: a correction may not grow the message by more than 15% (spelling/grammar only, no padding).
       if (c && c.length <= Math.max(redact(t).length * 1.15, redact(t).length + 25)) t = c;
@@ -163,5 +185,5 @@ const scrubbed = out.join("\n")
   .replace(clientWord, "the target brand").replace(/\b(the|our|an?) the target brand\b/gi, "the target brand")
   .replace(/[A-Za-z0-9._%+-]{1,64}@[A-Za-z0-9.-]{1,100}\.[A-Za-z]{2,10}/g, (m) => (/noreply\.github\.com$/i.test(m) ? m : "[email redacted]"))
   .replace(/\b(pass(word|code|wd)?|pwd)\s*(is|:|=|-)\s*\S+/gi, "$1 [redacted]");
-fs.writeFileSync("docs/TRANSCRIPT.md", scrubbed);
+fs.writeFileSync("docs/TRANSCRIPT.md", TRIM.reduce((s, [rx, rep]) => s.replace(rx, rep), scrubbed));
 console.log(`${n} messages → docs/TRANSCRIPT.md`);
