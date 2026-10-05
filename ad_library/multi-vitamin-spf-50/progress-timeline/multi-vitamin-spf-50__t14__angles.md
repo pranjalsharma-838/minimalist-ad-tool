@@ -51,6 +51,5 @@ The page has no timed study (the only study is the SPF lab test, F13-F18), so fr
 
 - Minimalist alignment: **100** (high)
 - Win probability: **73** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

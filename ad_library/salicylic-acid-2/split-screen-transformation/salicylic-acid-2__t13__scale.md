@@ -51,6 +51,5 @@ Sensorial angle from the F17 perception study (felt less oily). Perception stat 
 
 - Minimalist alignment: **99** (high)
 - Win probability: **76** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **96**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

@@ -51,6 +51,5 @@ Angle: routine journey (timeline). Frame labels come straight from the page's us
 
 - Minimalist alignment: **95** (high)
 - Win probability: **77** (high; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

@@ -50,6 +50,5 @@ Format #12 Before / after: kept the labelled before/after frames beside the pack
 
 - Minimalist alignment: **95** (high)
 - Win probability: **74** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

@@ -7,11 +7,10 @@
   "alignment_band": "high",
   "win": 74,
   "win_band": "medium",
-  "compliance": 20,
-  "verdict": "BLOCKED",
-  "verdict_label": "Do not publish",
+  "compliance": 60,
+  "verdict": "NEEDS_CHANGES",
+  "verdict_label": "Fix before review",
   "findings": [
-    "block: AI-01 \"\"",
     "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
   ],
   "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -130,5 +129,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T16:34:14.760Z"
+  "scored_at": "2026-10-05T16:43:53.006Z"
 }

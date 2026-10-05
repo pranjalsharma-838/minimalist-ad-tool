@@ -55,6 +55,6 @@ Retry round 1 (judge CLM-15: the Day 1 / After 6 washes / Week 4 frames beside t
 
 - Minimalist alignment: **100** (high)
 - Win probability: **73** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **60**, Fix before review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""; fix: CLM-15 "Week 4"
+- Open findings: fix: CLM-15 "Week 4"

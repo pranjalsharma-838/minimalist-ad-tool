@@ -38,13 +38,16 @@ test("AI-01: synthetic content needs a label; AI results and AI testimonials are
   assert.ok(!ids({ ...ad, footnote: "AI-generated — illustrative" }, { synthetic: { people: true } }).includes("AI-01"));
   assert.ok(!ids(ad, { synthetic: { people: true, label_drawn: true } }).includes("AI-01"));
   const result = hits(ad, { synthetic: { result: true, label_drawn: true } }).find((f) => f.rule_id === "AI-01");
-  assert.equal(result.severity, "block", "an AI result image is prohibited even with a label");
+  assert.equal(result.severity, "advisory", "DEC-07: an AI result image is a warning (Severe risk), not a block");
+  assert.equal(result.decision, "DEC-07");
   const testimonial = hits({ ...ad, on_image_text: "I've used it for 4 weeks and my skin feels calmer" }, { synthetic: { people: true, label_drawn: true } }).find((f) => f.rule_id === "AI-01");
-  assert.equal(testimonial.severity, "block");
+  assert.equal(testimonial.severity, "advisory");
 });
 
-test("AI-01 flows into the verdict and the compliance gate", async () => {
+test("AI-01 is a warning on the report, never a block (DEC-07); an unlabelled AI image still needs its label", async () => {
   const r = await scoreAd({ on_image_text: "Niacinamide 10%", primary_text: "A daily serum for oily skin." }, { rulesOnly: true, synthetic: { result: true } });
-  assert.equal(r.verdict.code, "BLOCKED");
-  assert.equal(r.scores.compliance.export_allowed, false);
+  assert.notEqual(r.verdict.code, "BLOCKED");
+  assert.ok(r.findings.some((f) => f.rule_id === "AI-01" && f.severity === "advisory"));
+  const u = await scoreAd({ on_image_text: "Niacinamide 10%", primary_text: "A daily serum for oily skin." }, { rulesOnly: true, synthetic: { people: true } });
+  assert.equal(u.verdict.code, "NEEDS_CHANGES", "no AI label on the creative: fix before review");
 });

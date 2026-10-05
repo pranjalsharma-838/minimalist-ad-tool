@@ -51,6 +51,6 @@ Trending format (#13 Split-screen transformation): 3 brands. Frames carry routin
 
 - Minimalist alignment: **99** (high)
 - Win probability: **75** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **60**, Fix before review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""; fix: CLM-15 "Week 2 · still in the routine"
+- Open findings: fix: CLM-15 "Week 2 · still in the routine"

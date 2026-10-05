@@ -51,6 +51,5 @@ Concern: sticky/greasy feel; answered only by F8 'no sticky residue'. Kept: stac
 
 - Minimalist alignment: **99** (high)
 - Win probability: **71** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

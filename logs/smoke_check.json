@@ -1,0 +1,140 @@
+{
+  "at": "2026-10-05T16:46:47.541Z",
+  "product": "alpha-arbutin-2",
+  "results": [
+    {
+      "name": "status",
+      "ok": true,
+      "ms": 81,
+      "detail": {
+        "openai": false,
+        "studio": true,
+        "llm": false,
+        "rulesVersion": "0.4"
+      }
+    },
+    {
+      "name": "page loads",
+      "ok": true,
+      "ms": 6,
+      "detail": "ok"
+    },
+    {
+      "name": "extract a product page",
+      "ok": true,
+      "ms": 3024,
+      "detail": "49 facts"
+    },
+    {
+      "name": "build new ads (generate)",
+      "ok": true,
+      "ms": 258,
+      "detail": {
+        "formats": 20,
+        "ready": 15,
+        "waiting": 5,
+        "audiences": [
+          "People with sensitive skin",
+          "People with oily or acne-prone skin",
+          "People with dry skin"
+        ],
+        "copy_log": []
+      }
+    },
+    {
+      "name": "new formats present (journey, in hand)",
+      "ok": true,
+      "ms": 0,
+      "detail": "ok"
+    },
+    {
+      "name": "rebuild after an edit (formats)",
+      "ok": true,
+      "ms": 94,
+      "detail": "20 formats"
+    },
+    {
+      "name": "re-check one ad (rescore)",
+      "ok": true,
+      "ms": 7,
+      "detail": {
+        "format": "offer",
+        "verdict": "LIMITED_CHECK",
+        "judge": "rules only",
+        "scores": [
+          "alignment",
+          "win",
+          "compliance",
+          "assessed_with",
+          "rule"
+        ]
+      }
+    },
+    {
+      "name": "score any ad (checker)",
+      "ok": true,
+      "ms": 14,
+      "detail": {
+        "verdict": "BLOCKED",
+        "rules": [
+          "CLM-01",
+          "CLM-03",
+          "CLM-07",
+          "TON-01"
+        ]
+      }
+    },
+    {
+      "name": "library: this product",
+      "ok": true,
+      "ms": 55,
+      "detail": "118350 bytes"
+    },
+    {
+      "name": "library: all final ads",
+      "ok": true,
+      "ms": 1069,
+      "detail": {
+        "ads": 433,
+        "blocked": 1,
+        "ai": 188
+      }
+    },
+    {
+      "name": "library image served",
+      "ok": true,
+      "ms": 1035,
+      "detail": "/library/2-hyaluronic-acid/application-macro/2-hyaluronic-acid__t9__g2.png"
+    },
+    {
+      "name": "image library search",
+      "ok": true,
+      "ms": 138,
+      "detail": "51 images"
+    },
+    {
+      "name": "product image (pack)",
+      "ok": true,
+      "ms": 4,
+      "detail": "image/png"
+    },
+    {
+      "name": "image requests for this product",
+      "ok": true,
+      "ms": 11,
+      "detail": "5 requests"
+    },
+    {
+      "name": "gallery file",
+      "ok": true,
+      "ms": 4,
+      "detail": "433 cards"
+    },
+    {
+      "name": "path traversal refused",
+      "ok": true,
+      "ms": 3,
+      "detail": 404
+    }
+  ]
+}

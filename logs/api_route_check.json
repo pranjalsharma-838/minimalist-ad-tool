@@ -1,5 +1,5 @@
 {
-  "started": "2026-10-05T13:04:22.235Z",
+  "started": "2026-10-05T16:46:57.788Z",
   "steps": [
     {
       "step": "queued before the render ran",
@@ -21,7 +21,7 @@
     },
     {
       "step": "other images",
-      "ms": 2263,
+      "ms": 1557,
       "results": [
         {
           "format": "person",

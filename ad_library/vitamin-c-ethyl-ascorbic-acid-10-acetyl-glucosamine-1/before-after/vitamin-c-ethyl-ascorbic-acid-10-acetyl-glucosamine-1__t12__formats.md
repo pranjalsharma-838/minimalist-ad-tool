@@ -50,6 +50,6 @@ Format #12 Before / after: kept the labelled stacked frames beside the pack. Dro
 
 - Minimalist alignment: **100** (high)
 - Win probability: **74** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **60**, Fix before review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""; fix: CLM-15 "The two frames are AI illustrations, not results."
+- Open findings: fix: CLM-15 "The two frames are AI illustrations, not results."

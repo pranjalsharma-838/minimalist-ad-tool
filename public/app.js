@@ -427,7 +427,15 @@ function setSelectCounts(sel, counts) {
 
 // Ads that are not ready stay in the library with a plain warning (user, 2026-10-05: "bring back and give warning").
 const WARN_WHY = {
-  "AI-01": "AI-made result image: banned by India's ASCI rule on AI content, even with a label. Needs real, consented photos.",
+  "CLM-01": "Disease or drug claim (treat, cure, heal): not allowed on a cosmetic.",
+  "CLM-03": "Guarantee or absolute result: not allowed.",
+  "CLM-05": "Safety absolute ('chemical-free', 'no side effects'): not allowed.",
+  "CLM-06": "Fairness or skin-lightening claim: not allowed.",
+  "CLM-10": "Claims a regulator's approval: not allowed.",
+  "CLM-20": "Concentration doesn't match the product.",
+  "OFR-01": "Price or discount doesn't match the site.",
+  "CRE-01": "Creator ad without a paid-partnership label.",
+  "AI-01": "AI-made image (Severe): India's ASCI rule on AI content prohibits AI result images even with a label, from about late December 2026. Replace with real, consented photos before use.",
   "CLM-12": "Comparison: attach the proof behind it (what was compared, how, source) before use.",
   "CLM-21": "Customer quote with their name: customer consent needed to show the name.",
   "CLM-24": "Body-function wording: describe the visible result instead.",
@@ -436,9 +444,12 @@ const WARN_WHY = {
 };
 function adWarning(a) {
   const v = a.scores?.verdict;
+  // AI-made images are never blocked (DEC-07) but always carry a fair warning and their Severe rating.
+  if ((!v || v === "READY_FOR_REVIEW") && (a.ai || (a.scores?.findings || []).some((f) => /AI-01/.test(String(f))))) return `<span class="warnbox fix"><b>Warning: AI-made image (Severe)</b> ${esc(WARN_WHY["AI-01"].replace(/^AI-made image \(Severe\): /, ""))}</span>`;
   if (!v || v === "READY_FOR_REVIEW") return "";
   const ids = [...new Set((a.scores.findings || []).map((f) => (String(f).match(/\b([A-Z]{2,4}-\d{2})\b/) || [])[1]).filter(Boolean))];
-  const why = ids.map((id) => WARN_WHY[id]).filter(Boolean)[0] || "Open findings: see the description.";
+  const lead = (a?.scores?.findings || []).map(String).find((f) => /^block/.test(f)) || (a?.scores?.findings || []).map(String)[0] || "", lid = (lead.match(/\b([A-Z]{2,4}-\d{2})\b/) || [])[1], q = (lead.match(/"([^"]+)"/) || [])[1];
+  const why = `${(lid && WARN_WHY[lid]) || ids.map((id) => WARN_WHY[id]).filter(Boolean)[0] || (lid ? `Rule ${lid}.` : "See the description.")}${q ? ` Flagged words: "${q}".` : ""}${lid ? ` (${lid})` : ""}`;
   return `<span class="warnbox ${v === "BLOCKED" ? "blocked" : "fix"}"><b>${v === "BLOCKED" ? "Blocked, do not use" : "Needs a fix before use"}</b> ${esc(why)}</span>`;
 }
 function adCard(a, i, flat) {

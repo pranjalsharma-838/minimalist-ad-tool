@@ -51,6 +51,6 @@ Trending format (#12 Before / after): 3 brands. Kept the labelled stacked frames
 
 - Minimalist alignment: **100** (high)
 - Win probability: **74** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **60**, Fix before review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""; fix: CLM-15 "AI illustrations, not real results"
+- Open findings: fix: CLM-15 "AI illustrations, not real results"

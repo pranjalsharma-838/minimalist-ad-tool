@@ -58,6 +58,6 @@ User request 2026-10-03: transformation-journey format (progress frames rather t
 
 - Minimalist alignment: **98** (high)
 - Win probability: **72** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **35**, Fix before review
 - Reviewed by: rules only (no AI judge review on file)
-- Open findings: block: AI-01 ""; fix: CLM-08 "97% subjects"; fix: CLM-07 "after 2 weeks"; fix: CLM-08 "90% subjects"; fix: CLM-07 "in 4 weeks"; fix: CLM-08 "97% subjects"; fix: CLM-07 "after 2 weeks"; fix: CLM-07 "in 4 weeks"
+- Open findings: fix: CLM-08 "97% subjects"; fix: CLM-07 "after 2 weeks"; fix: CLM-08 "90% subjects"; fix: CLM-07 "in 4 weeks"; fix: CLM-08 "97% subjects"; fix: CLM-07 "after 2 weeks"; fix: CLM-07 "in 4 weeks"

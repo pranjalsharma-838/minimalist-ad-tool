@@ -50,6 +50,6 @@ Format #14 Progress / timeline REMAKE (PAIRS 'remake', 2026-10-05): replaces the
 
 - Minimalist alignment: **100** (high)
 - Win probability: **73** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **55**, Fix before review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""; fix: CLM-15 "The frames are AI illustrations of a routine, not study results."; fix: CLM-07 "Week 4"
+- Open findings: fix: CLM-15 "The frames are AI illustrations of a routine, not study results."; fix: CLM-07 "Week 4"

@@ -50,6 +50,5 @@ Format #12 Before / after: copy is the product and its usage only (no result wor
 
 - Minimalist alignment: **99** (high)
 - Win probability: **74** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""

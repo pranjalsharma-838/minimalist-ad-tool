@@ -8,12 +8,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -127,7 +125,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.339Z"
+    "scored_at": "2026-10-05T16:43:51.852Z"
   },
   "alpha-arbutin-2__t15__angles": {
     "id": "alpha-arbutin-2__t15__angles",
@@ -258,7 +256,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.450Z"
+    "scored_at": "2026-10-05T16:43:51.900Z"
   },
   "alpha-arbutin-2__t22__angles": {
     "id": "alpha-arbutin-2__t22__angles",
@@ -389,7 +387,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.477Z"
+    "scored_at": "2026-10-05T16:43:51.911Z"
   },
   "alpha-arbutin-2__t9__angles": {
     "id": "alpha-arbutin-2__t9__angles",
@@ -520,7 +518,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.494Z"
+    "scored_at": "2026-10-05T16:43:51.921Z"
   },
   "multi-vitamin-spf-50__t14__angles": {
     "id": "multi-vitamin-spf-50__t14__angles",
@@ -531,12 +529,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -650,7 +646,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.514Z"
+    "scored_at": "2026-10-05T16:43:51.929Z"
   },
   "multi-vitamin-spf-50__t26__angles": {
     "id": "multi-vitamin-spf-50__t26__angles",
@@ -781,7 +777,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.565Z"
+    "scored_at": "2026-10-05T16:43:51.959Z"
   },
   "niacinamide-10-with-matmarine__t14__angles": {
     "id": "niacinamide-10-with-matmarine__t14__angles",
@@ -792,12 +788,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -911,7 +905,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.590Z"
+    "scored_at": "2026-10-05T16:43:51.970Z"
   },
   "niacinamide-10-with-matmarine__t9__angles": {
     "id": "niacinamide-10-with-matmarine__t9__angles",
@@ -1042,7 +1036,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.602Z"
+    "scored_at": "2026-10-05T16:43:51.978Z"
   },
   "salicylic-acid-2__t15__angles": {
     "id": "salicylic-acid-2__t15__angles",
@@ -1173,7 +1167,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.618Z"
+    "scored_at": "2026-10-05T16:43:51.987Z"
   },
   "salicylic-acid-2__t36__angles": {
     "id": "salicylic-acid-2__t36__angles",
@@ -1304,7 +1298,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.633Z"
+    "scored_at": "2026-10-05T16:43:51.996Z"
   },
   "salicylic-acid-2__t8__angles": {
     "id": "salicylic-acid-2__t8__angles",
@@ -1435,7 +1429,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.647Z"
+    "scored_at": "2026-10-05T16:43:52.004Z"
   },
   "salicylic-lha-2-cleanser__t14__angles": {
     "id": "salicylic-lha-2-cleanser__t14__angles",
@@ -1446,11 +1440,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"Week 4\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -1566,7 +1559,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.660Z"
+    "scored_at": "2026-10-05T16:43:52.010Z"
   },
   "salicylic-lha-2-cleanser__t22__angles": {
     "id": "salicylic-lha-2-cleanser__t22__angles",
@@ -1697,7 +1690,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.678Z"
+    "scored_at": "2026-10-05T16:43:52.020Z"
   },
   "salicylic-lha-2-cleanser__t8__angles": {
     "id": "salicylic-lha-2-cleanser__t8__angles",
@@ -1828,7 +1821,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.697Z"
+    "scored_at": "2026-10-05T16:43:52.026Z"
   },
   "salicylic-lha-2-cleanser__t9__angles": {
     "id": "salicylic-lha-2-cleanser__t9__angles",
@@ -1959,7 +1952,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.709Z"
+    "scored_at": "2026-10-05T16:43:52.033Z"
   },
   "vitamin-b5-10-moisturizer__t14__angles": {
     "id": "vitamin-b5-10-moisturizer__t14__angles",
@@ -1970,12 +1963,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -2089,7 +2080,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.723Z"
+    "scored_at": "2026-10-05T16:43:52.039Z"
   },
   "vitamin-b5-10-moisturizer__t15__angles": {
     "id": "vitamin-b5-10-moisturizer__t15__angles",
@@ -2220,7 +2211,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.736Z"
+    "scored_at": "2026-10-05T16:43:52.046Z"
   },
   "vitamin-b5-10-moisturizer__t26__angles": {
     "id": "vitamin-b5-10-moisturizer__t26__angles",
@@ -2351,7 +2342,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.748Z"
+    "scored_at": "2026-10-05T16:43:52.052Z"
   },
   "vitamin-b5-10-moisturizer__t8__angles": {
     "id": "vitamin-b5-10-moisturizer__t8__angles",
@@ -2482,7 +2473,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.760Z"
+    "scored_at": "2026-10-05T16:43:52.058Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14__angles": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14__angles",
@@ -2493,12 +2484,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -2612,7 +2601,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.770Z"
+    "scored_at": "2026-10-05T16:43:52.063Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26__angles": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t26__angles",
@@ -2743,7 +2732,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.781Z"
+    "scored_at": "2026-10-05T16:43:52.072Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t3__angles": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t3__angles",
@@ -2874,7 +2863,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.795Z"
+    "scored_at": "2026-10-05T16:43:52.078Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36__angles": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t36__angles",
@@ -3005,7 +2994,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.810Z"
+    "scored_at": "2026-10-05T16:43:52.085Z"
   },
   "alpha-arbutin-2__t22__people": {
     "id": "alpha-arbutin-2__t22__people",
@@ -3016,12 +3005,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -3138,7 +3125,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.858Z"
+    "scored_at": "2026-10-05T16:43:52.106Z"
   },
   "alpha-arbutin-2__t6__people": {
     "id": "alpha-arbutin-2__t6__people",
@@ -3266,7 +3253,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.872Z"
+    "scored_at": "2026-10-05T16:43:52.115Z"
   },
   "alpha-arbutin-2__t7__people": {
     "id": "alpha-arbutin-2__t7__people",
@@ -3397,7 +3384,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.888Z"
+    "scored_at": "2026-10-05T16:43:52.124Z"
   },
   "multi-vitamin-spf-50__t22__people": {
     "id": "multi-vitamin-spf-50__t22__people",
@@ -3408,12 +3395,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -3530,7 +3515,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.900Z"
+    "scored_at": "2026-10-05T16:43:52.131Z"
   },
   "multi-vitamin-spf-50__t6__people": {
     "id": "multi-vitamin-spf-50__t6__people",
@@ -3658,7 +3643,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.912Z"
+    "scored_at": "2026-10-05T16:43:52.137Z"
   },
   "multi-vitamin-spf-50__t8__people": {
     "id": "multi-vitamin-spf-50__t8__people",
@@ -3789,7 +3774,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.922Z"
+    "scored_at": "2026-10-05T16:43:52.143Z"
   },
   "niacinamide-10-with-matmarine__t22__people": {
     "id": "niacinamide-10-with-matmarine__t22__people",
@@ -3800,12 +3785,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -3922,7 +3905,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.938Z"
+    "scored_at": "2026-10-05T16:43:52.148Z"
   },
   "niacinamide-10-with-matmarine__t6__people": {
     "id": "niacinamide-10-with-matmarine__t6__people",
@@ -4050,7 +4033,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.952Z"
+    "scored_at": "2026-10-05T16:43:52.155Z"
   },
   "niacinamide-10-with-matmarine__t8__people": {
     "id": "niacinamide-10-with-matmarine__t8__people",
@@ -4181,7 +4164,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.962Z"
+    "scored_at": "2026-10-05T16:43:52.161Z"
   },
   "salicylic-acid-2__t22__people": {
     "id": "salicylic-acid-2__t22__people",
@@ -4192,12 +4175,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -4314,7 +4295,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.976Z"
+    "scored_at": "2026-10-05T16:43:52.166Z"
   },
   "salicylic-acid-2__t6__people": {
     "id": "salicylic-acid-2__t6__people",
@@ -4442,7 +4423,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:12.988Z"
+    "scored_at": "2026-10-05T16:43:52.174Z"
   },
   "salicylic-acid-2__t9__people": {
     "id": "salicylic-acid-2__t9__people",
@@ -4573,7 +4554,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.001Z"
+    "scored_at": "2026-10-05T16:43:52.182Z"
   },
   "salicylic-lha-2-cleanser__t22__people": {
     "id": "salicylic-lha-2-cleanser__t22__people",
@@ -4584,12 +4565,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -4706,7 +4685,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.014Z"
+    "scored_at": "2026-10-05T16:43:52.189Z"
   },
   "salicylic-lha-2-cleanser__t6__people": {
     "id": "salicylic-lha-2-cleanser__t6__people",
@@ -4834,7 +4813,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.026Z"
+    "scored_at": "2026-10-05T16:43:52.194Z"
   },
   "salicylic-lha-2-cleanser__t7__people": {
     "id": "salicylic-lha-2-cleanser__t7__people",
@@ -4965,7 +4944,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.040Z"
+    "scored_at": "2026-10-05T16:43:52.199Z"
   },
   "vitamin-b5-10-moisturizer__t22__people": {
     "id": "vitamin-b5-10-moisturizer__t22__people",
@@ -4976,12 +4955,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -5098,7 +5075,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.052Z"
+    "scored_at": "2026-10-05T16:43:52.205Z"
   },
   "vitamin-b5-10-moisturizer__t6__people": {
     "id": "vitamin-b5-10-moisturizer__t6__people",
@@ -5226,7 +5203,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.062Z"
+    "scored_at": "2026-10-05T16:43:52.212Z"
   },
   "vitamin-b5-10-moisturizer__t9__people": {
     "id": "vitamin-b5-10-moisturizer__t9__people",
@@ -5357,7 +5334,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.074Z"
+    "scored_at": "2026-10-05T16:43:52.219Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22__people": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22__people",
@@ -5368,12 +5345,10 @@
     "alignment_band": "high",
     "win": 77,
     "win_band": "high",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -5490,7 +5465,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.085Z"
+    "scored_at": "2026-10-05T16:43:52.226Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6__people": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t6__people",
@@ -5618,7 +5593,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.097Z"
+    "scored_at": "2026-10-05T16:43:52.231Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8__people": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t8__people",
@@ -5749,7 +5724,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.109Z"
+    "scored_at": "2026-10-05T16:43:52.236Z"
   },
   "multi-vitamin-spf-50__t2__pilot": {
     "id": "multi-vitamin-spf-50__t2__pilot",
@@ -5880,7 +5855,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.141Z"
+    "scored_at": "2026-10-05T16:43:52.247Z"
   },
   "multi-vitamin-spf-50__t36__pilot": {
     "id": "multi-vitamin-spf-50__t36__pilot",
@@ -6011,7 +5986,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.157Z"
+    "scored_at": "2026-10-05T16:43:52.254Z"
   },
   "multi-vitamin-spf-50__t38__pilot": {
     "id": "multi-vitamin-spf-50__t38__pilot",
@@ -6142,7 +6117,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.171Z"
+    "scored_at": "2026-10-05T16:43:52.261Z"
   },
   "multi-vitamin-spf-50__t4__pilot": {
     "id": "multi-vitamin-spf-50__t4__pilot",
@@ -6273,7 +6248,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.193Z"
+    "scored_at": "2026-10-05T16:43:52.266Z"
   },
   "niacinamide-10-with-matmarine__t1__pilot": {
     "id": "niacinamide-10-with-matmarine__t1__pilot",
@@ -6404,7 +6379,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.205Z"
+    "scored_at": "2026-10-05T16:43:52.276Z"
   },
   "niacinamide-10-with-matmarine__t3__pilot": {
     "id": "niacinamide-10-with-matmarine__t3__pilot",
@@ -6535,7 +6510,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.218Z"
+    "scored_at": "2026-10-05T16:43:52.282Z"
   },
   "niacinamide-10-with-matmarine__t36__pilot": {
     "id": "niacinamide-10-with-matmarine__t36__pilot",
@@ -6666,7 +6641,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.229Z"
+    "scored_at": "2026-10-05T16:43:52.290Z"
   },
   "niacinamide-10-with-matmarine__t38__pilot": {
     "id": "niacinamide-10-with-matmarine__t38__pilot",
@@ -6797,7 +6772,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.244Z"
+    "scored_at": "2026-10-05T16:43:52.297Z"
   },
   "alpha-arbutin-2__t23__scale": {
     "id": "alpha-arbutin-2__t23__scale",
@@ -6928,7 +6903,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.299Z"
+    "scored_at": "2026-10-05T16:43:52.315Z"
   },
   "alpha-arbutin-2__t36__scale": {
     "id": "alpha-arbutin-2__t36__scale",
@@ -7059,7 +7034,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.312Z"
+    "scored_at": "2026-10-05T16:43:52.321Z"
   },
   "alpha-arbutin-2__t44__scale": {
     "id": "alpha-arbutin-2__t44__scale",
@@ -7187,7 +7162,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.326Z"
+    "scored_at": "2026-10-05T16:43:52.328Z"
   },
   "alpha-arbutin-2__t8__scale": {
     "id": "alpha-arbutin-2__t8__scale",
@@ -7318,7 +7293,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.340Z"
+    "scored_at": "2026-10-05T16:43:52.335Z"
   },
   "multi-vitamin-spf-50__t26__scale": {
     "id": "multi-vitamin-spf-50__t26__scale",
@@ -7449,7 +7424,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.351Z"
+    "scored_at": "2026-10-05T16:43:52.342Z"
   },
   "multi-vitamin-spf-50__t36__scale": {
     "id": "multi-vitamin-spf-50__t36__scale",
@@ -7580,7 +7555,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.368Z"
+    "scored_at": "2026-10-05T16:43:52.350Z"
   },
   "multi-vitamin-spf-50__t38__scale": {
     "id": "multi-vitamin-spf-50__t38__scale",
@@ -7711,7 +7686,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.383Z"
+    "scored_at": "2026-10-05T16:43:52.359Z"
   },
   "multi-vitamin-spf-50__t4__scale": {
     "id": "multi-vitamin-spf-50__t4__scale",
@@ -7842,7 +7817,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.394Z"
+    "scored_at": "2026-10-05T16:43:52.366Z"
   },
   "niacinamide-10-with-matmarine__t12__scale": {
     "id": "niacinamide-10-with-matmarine__t12__scale",
@@ -7853,12 +7828,10 @@
     "alignment_band": "high",
     "win": 71,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -7975,7 +7948,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.406Z"
+    "scored_at": "2026-10-05T16:43:52.372Z"
   },
   "niacinamide-10-with-matmarine__t25__scale": {
     "id": "niacinamide-10-with-matmarine__t25__scale",
@@ -8106,7 +8079,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.419Z"
+    "scored_at": "2026-10-05T16:43:52.377Z"
   },
   "niacinamide-10-with-matmarine__t3__scale": {
     "id": "niacinamide-10-with-matmarine__t3__scale",
@@ -8237,7 +8210,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.430Z"
+    "scored_at": "2026-10-05T16:43:52.383Z"
   },
   "niacinamide-10-with-matmarine__t48__scale": {
     "id": "niacinamide-10-with-matmarine__t48__scale",
@@ -8368,7 +8341,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.443Z"
+    "scored_at": "2026-10-05T16:43:52.393Z"
   },
   "salicylic-acid-2__t13__scale": {
     "id": "salicylic-acid-2__t13__scale",
@@ -8379,12 +8352,10 @@
     "alignment_band": "high",
     "win": 76,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -8501,7 +8472,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.457Z"
+    "scored_at": "2026-10-05T16:43:52.402Z"
   },
   "salicylic-acid-2__t30__scale": {
     "id": "salicylic-acid-2__t30__scale",
@@ -8629,7 +8600,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.471Z"
+    "scored_at": "2026-10-05T16:43:52.410Z"
   },
   "salicylic-acid-2__t31__scale": {
     "id": "salicylic-acid-2__t31__scale",
@@ -8760,7 +8731,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.484Z"
+    "scored_at": "2026-10-05T16:43:52.415Z"
   },
   "salicylic-acid-2__t5__scale": {
     "id": "salicylic-acid-2__t5__scale",
@@ -8891,7 +8862,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.496Z"
+    "scored_at": "2026-10-05T16:43:52.420Z"
   },
   "salicylic-lha-2-cleanser__t1__scale": {
     "id": "salicylic-lha-2-cleanser__t1__scale",
@@ -9022,7 +8993,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.508Z"
+    "scored_at": "2026-10-05T16:43:52.426Z"
   },
   "salicylic-lha-2-cleanser__t2__scale": {
     "id": "salicylic-lha-2-cleanser__t2__scale",
@@ -9153,7 +9124,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.519Z"
+    "scored_at": "2026-10-05T16:43:52.432Z"
   },
   "salicylic-lha-2-cleanser__t36__scale": {
     "id": "salicylic-lha-2-cleanser__t36__scale",
@@ -9284,7 +9255,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.532Z"
+    "scored_at": "2026-10-05T16:43:52.437Z"
   },
   "salicylic-lha-2-cleanser__t38__scale": {
     "id": "salicylic-lha-2-cleanser__t38__scale",
@@ -9415,7 +9386,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.545Z"
+    "scored_at": "2026-10-05T16:43:52.443Z"
   },
   "vitamin-b5-10-moisturizer__t22__scale": {
     "id": "vitamin-b5-10-moisturizer__t22__scale",
@@ -9546,7 +9517,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.558Z"
+    "scored_at": "2026-10-05T16:43:52.448Z"
   },
   "vitamin-b5-10-moisturizer__t36__scale": {
     "id": "vitamin-b5-10-moisturizer__t36__scale",
@@ -9677,7 +9648,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.571Z"
+    "scored_at": "2026-10-05T16:43:52.454Z"
   },
   "vitamin-b5-10-moisturizer__t38__scale": {
     "id": "vitamin-b5-10-moisturizer__t38__scale",
@@ -9808,7 +9779,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.585Z"
+    "scored_at": "2026-10-05T16:43:52.459Z"
   },
   "vitamin-b5-10-moisturizer__t7__scale": {
     "id": "vitamin-b5-10-moisturizer__t7__scale",
@@ -9939,7 +9910,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.597Z"
+    "scored_at": "2026-10-05T16:43:52.464Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1__scale": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t1__scale",
@@ -10070,7 +10041,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.608Z"
+    "scored_at": "2026-10-05T16:43:52.470Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15__scale": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t15__scale",
@@ -10201,7 +10172,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.620Z"
+    "scored_at": "2026-10-05T16:43:52.477Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28__scale": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28__scale",
@@ -10332,7 +10303,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.633Z"
+    "scored_at": "2026-10-05T16:43:52.483Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t38__scale": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t38__scale",
@@ -10463,7 +10434,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.647Z"
+    "scored_at": "2026-10-05T16:43:52.490Z"
   },
   "salicylic-acid-2__t14__transformation": {
     "id": "salicylic-acid-2__t14__transformation",
@@ -10474,11 +10445,10 @@
     "alignment_band": "high",
     "win": 72,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 35,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-08 \"97% subjects\"",
       "fix: CLM-07 \"after 2 weeks\"",
       "fix: CLM-08 \"90% subjects\"",
@@ -10600,7 +10570,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.687Z"
+    "scored_at": "2026-10-05T16:43:52.503Z"
   },
   "alpha-arbutin-2__t2__trending": {
     "id": "alpha-arbutin-2__t2__trending",
@@ -10731,7 +10701,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.737Z"
+    "scored_at": "2026-10-05T16:43:52.520Z"
   },
   "multi-vitamin-spf-50__t28__trending": {
     "id": "multi-vitamin-spf-50__t28__trending",
@@ -10862,7 +10832,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.751Z"
+    "scored_at": "2026-10-05T16:43:52.528Z"
   },
   "niacinamide-10-with-matmarine__t12__trending": {
     "id": "niacinamide-10-with-matmarine__t12__trending",
@@ -10873,11 +10843,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"AI illustrations, not real results\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -10996,7 +10965,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.766Z"
+    "scored_at": "2026-10-05T16:43:52.534Z"
   },
   "salicylic-acid-2__t13__trending": {
     "id": "salicylic-acid-2__t13__trending",
@@ -11007,11 +10976,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"Week 2 · still in the routine\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -11130,7 +11098,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.784Z"
+    "scored_at": "2026-10-05T16:43:52.542Z"
   },
   "salicylic-lha-2-cleanser__t10__trending": {
     "id": "salicylic-lha-2-cleanser__t10__trending",
@@ -11261,7 +11229,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.796Z"
+    "scored_at": "2026-10-05T16:43:52.547Z"
   },
   "vitamin-b5-10-moisturizer__t36__trending": {
     "id": "vitamin-b5-10-moisturizer__t36__trending",
@@ -11392,7 +11360,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.809Z"
+    "scored_at": "2026-10-05T16:43:52.555Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22__trending": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t22__trending",
@@ -11523,7 +11491,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.823Z"
+    "scored_at": "2026-10-05T16:43:52.563Z"
   },
   "alpha-arbutin-2__t17__usvsthem": {
     "id": "alpha-arbutin-2__t17__usvsthem",
@@ -11659,7 +11627,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.873Z"
+    "scored_at": "2026-10-05T16:43:52.581Z"
   },
   "multi-vitamin-spf-50__t17__usvsthem": {
     "id": "multi-vitamin-spf-50__t17__usvsthem",
@@ -11793,7 +11761,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.886Z"
+    "scored_at": "2026-10-05T16:43:52.589Z"
   },
   "niacinamide-10-with-matmarine__t17__usvsthem": {
     "id": "niacinamide-10-with-matmarine__t17__usvsthem",
@@ -11924,7 +11892,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.906Z"
+    "scored_at": "2026-10-05T16:43:52.595Z"
   },
   "salicylic-acid-2__t17__usvsthem": {
     "id": "salicylic-acid-2__t17__usvsthem",
@@ -12055,7 +12023,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.917Z"
+    "scored_at": "2026-10-05T16:43:52.600Z"
   },
   "salicylic-lha-2-cleanser__t17__usvsthem": {
     "id": "salicylic-lha-2-cleanser__t17__usvsthem",
@@ -12188,7 +12156,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.932Z"
+    "scored_at": "2026-10-05T16:43:52.609Z"
   },
   "vitamin-b5-10-moisturizer__t17__usvsthem": {
     "id": "vitamin-b5-10-moisturizer__t17__usvsthem",
@@ -12320,7 +12288,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.947Z"
+    "scored_at": "2026-10-05T16:43:52.615Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t17__usvsthem": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t17__usvsthem",
@@ -12452,7 +12420,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:13.962Z"
+    "scored_at": "2026-10-05T16:43:52.622Z"
   },
   "alpha-arbutin-2__t10__formats": {
     "id": "alpha-arbutin-2__t10__formats",
@@ -12583,7 +12551,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.016Z"
+    "scored_at": "2026-10-05T16:43:52.639Z"
   },
   "alpha-arbutin-2__t12__formats": {
     "id": "alpha-arbutin-2__t12__formats",
@@ -12594,11 +12562,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -12717,7 +12684,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.030Z"
+    "scored_at": "2026-10-05T16:43:52.646Z"
   },
   "alpha-arbutin-2__t14__formats": {
     "id": "alpha-arbutin-2__t14__formats",
@@ -12728,11 +12695,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -12849,7 +12815,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.052Z"
+    "scored_at": "2026-10-05T16:43:52.651Z"
   },
   "alpha-arbutin-2__t21__formats": {
     "id": "alpha-arbutin-2__t21__formats",
@@ -12977,7 +12943,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.062Z"
+    "scored_at": "2026-10-05T16:43:52.658Z"
   },
   "alpha-arbutin-2__t26__formats": {
     "id": "alpha-arbutin-2__t26__formats",
@@ -13108,7 +13074,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.076Z"
+    "scored_at": "2026-10-05T16:43:52.663Z"
   },
   "alpha-arbutin-2__t3__formats": {
     "id": "alpha-arbutin-2__t3__formats",
@@ -13239,7 +13205,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.087Z"
+    "scored_at": "2026-10-05T16:43:52.668Z"
   },
   "alpha-arbutin-2__t31__formats": {
     "id": "alpha-arbutin-2__t31__formats",
@@ -13370,7 +13336,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.101Z"
+    "scored_at": "2026-10-05T16:43:52.674Z"
   },
   "alpha-arbutin-2__t38__formats": {
     "id": "alpha-arbutin-2__t38__formats",
@@ -13501,7 +13467,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.114Z"
+    "scored_at": "2026-10-05T16:43:52.679Z"
   },
   "alpha-arbutin-2__t4__formats": {
     "id": "alpha-arbutin-2__t4__formats",
@@ -13632,7 +13598,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.127Z"
+    "scored_at": "2026-10-05T16:43:52.684Z"
   },
   "multi-vitamin-spf-50__t10__formats": {
     "id": "multi-vitamin-spf-50__t10__formats",
@@ -13763,7 +13729,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.138Z"
+    "scored_at": "2026-10-05T16:43:52.691Z"
   },
   "multi-vitamin-spf-50__t12__formats": {
     "id": "multi-vitamin-spf-50__t12__formats",
@@ -13774,11 +13740,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -13897,7 +13862,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.149Z"
+    "scored_at": "2026-10-05T16:43:52.697Z"
   },
   "multi-vitamin-spf-50__t14__formats": {
     "id": "multi-vitamin-spf-50__t14__formats",
@@ -13908,11 +13873,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -14029,7 +13993,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.163Z"
+    "scored_at": "2026-10-05T16:43:52.704Z"
   },
   "multi-vitamin-spf-50__t15__formats": {
     "id": "multi-vitamin-spf-50__t15__formats",
@@ -14160,7 +14124,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.176Z"
+    "scored_at": "2026-10-05T16:43:52.710Z"
   },
   "multi-vitamin-spf-50__t21__formats": {
     "id": "multi-vitamin-spf-50__t21__formats",
@@ -14288,7 +14252,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.197Z"
+    "scored_at": "2026-10-05T16:43:52.717Z"
   },
   "multi-vitamin-spf-50__t3__formats": {
     "id": "multi-vitamin-spf-50__t3__formats",
@@ -14419,7 +14383,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.214Z"
+    "scored_at": "2026-10-05T16:43:52.724Z"
   },
   "multi-vitamin-spf-50__t31__formats": {
     "id": "multi-vitamin-spf-50__t31__formats",
@@ -14550,7 +14514,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.226Z"
+    "scored_at": "2026-10-05T16:43:52.730Z"
   },
   "multi-vitamin-spf-50__t9__formats": {
     "id": "multi-vitamin-spf-50__t9__formats",
@@ -14681,7 +14645,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.238Z"
+    "scored_at": "2026-10-05T16:43:52.736Z"
   },
   "niacinamide-10-with-matmarine__t10__formats": {
     "id": "niacinamide-10-with-matmarine__t10__formats",
@@ -14812,7 +14776,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.249Z"
+    "scored_at": "2026-10-05T16:43:52.741Z"
   },
   "niacinamide-10-with-matmarine__t14__formats": {
     "id": "niacinamide-10-with-matmarine__t14__formats",
@@ -14823,11 +14787,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -14944,7 +14907,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.260Z"
+    "scored_at": "2026-10-05T16:43:52.748Z"
   },
   "niacinamide-10-with-matmarine__t15__formats": {
     "id": "niacinamide-10-with-matmarine__t15__formats",
@@ -15075,7 +15038,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.272Z"
+    "scored_at": "2026-10-05T16:43:52.754Z"
   },
   "niacinamide-10-with-matmarine__t2__formats": {
     "id": "niacinamide-10-with-matmarine__t2__formats",
@@ -15206,7 +15169,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.284Z"
+    "scored_at": "2026-10-05T16:43:52.760Z"
   },
   "niacinamide-10-with-matmarine__t21__formats": {
     "id": "niacinamide-10-with-matmarine__t21__formats",
@@ -15334,7 +15297,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.296Z"
+    "scored_at": "2026-10-05T16:43:52.767Z"
   },
   "niacinamide-10-with-matmarine__t26__formats": {
     "id": "niacinamide-10-with-matmarine__t26__formats",
@@ -15465,7 +15428,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.310Z"
+    "scored_at": "2026-10-05T16:43:52.774Z"
   },
   "niacinamide-10-with-matmarine__t31__formats": {
     "id": "niacinamide-10-with-matmarine__t31__formats",
@@ -15596,7 +15559,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.322Z"
+    "scored_at": "2026-10-05T16:43:52.780Z"
   },
   "niacinamide-10-with-matmarine__t4__formats": {
     "id": "niacinamide-10-with-matmarine__t4__formats",
@@ -15727,7 +15690,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.334Z"
+    "scored_at": "2026-10-05T16:43:52.788Z"
   },
   "salicylic-acid-2__t10__formats": {
     "id": "salicylic-acid-2__t10__formats",
@@ -15858,7 +15821,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.351Z"
+    "scored_at": "2026-10-05T16:43:52.796Z"
   },
   "salicylic-acid-2__t12__formats": {
     "id": "salicylic-acid-2__t12__formats",
@@ -15869,11 +15832,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -15992,7 +15954,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.363Z"
+    "scored_at": "2026-10-05T16:43:52.801Z"
   },
   "salicylic-acid-2__t14__formats": {
     "id": "salicylic-acid-2__t14__formats",
@@ -16003,11 +15965,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -16124,7 +16085,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.377Z"
+    "scored_at": "2026-10-05T16:43:52.808Z"
   },
   "salicylic-acid-2__t2__formats": {
     "id": "salicylic-acid-2__t2__formats",
@@ -16255,7 +16216,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.393Z"
+    "scored_at": "2026-10-05T16:43:52.814Z"
   },
   "salicylic-acid-2__t21__formats": {
     "id": "salicylic-acid-2__t21__formats",
@@ -16383,7 +16344,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.412Z"
+    "scored_at": "2026-10-05T16:43:52.824Z"
   },
   "salicylic-acid-2__t26__formats": {
     "id": "salicylic-acid-2__t26__formats",
@@ -16514,7 +16475,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.427Z"
+    "scored_at": "2026-10-05T16:43:52.829Z"
   },
   "salicylic-acid-2__t3__formats": {
     "id": "salicylic-acid-2__t3__formats",
@@ -16645,7 +16606,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.443Z"
+    "scored_at": "2026-10-05T16:43:52.835Z"
   },
   "salicylic-acid-2__t38__formats": {
     "id": "salicylic-acid-2__t38__formats",
@@ -16776,7 +16737,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.461Z"
+    "scored_at": "2026-10-05T16:43:52.841Z"
   },
   "salicylic-acid-2__t4__formats": {
     "id": "salicylic-acid-2__t4__formats",
@@ -16907,7 +16868,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.475Z"
+    "scored_at": "2026-10-05T16:43:52.847Z"
   },
   "salicylic-lha-2-cleanser__t12__formats": {
     "id": "salicylic-lha-2-cleanser__t12__formats",
@@ -16918,11 +16879,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -17041,7 +17001,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.492Z"
+    "scored_at": "2026-10-05T16:43:52.852Z"
   },
   "salicylic-lha-2-cleanser__t14__formats": {
     "id": "salicylic-lha-2-cleanser__t14__formats",
@@ -17052,11 +17012,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -17173,7 +17132,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.512Z"
+    "scored_at": "2026-10-05T16:43:52.860Z"
   },
   "salicylic-lha-2-cleanser__t15__formats": {
     "id": "salicylic-lha-2-cleanser__t15__formats",
@@ -17304,7 +17263,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.528Z"
+    "scored_at": "2026-10-05T16:43:52.866Z"
   },
   "salicylic-lha-2-cleanser__t21__formats": {
     "id": "salicylic-lha-2-cleanser__t21__formats",
@@ -17432,7 +17391,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.540Z"
+    "scored_at": "2026-10-05T16:43:52.873Z"
   },
   "salicylic-lha-2-cleanser__t26__formats": {
     "id": "salicylic-lha-2-cleanser__t26__formats",
@@ -17565,7 +17524,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.563Z"
+    "scored_at": "2026-10-05T16:43:52.882Z"
   },
   "salicylic-lha-2-cleanser__t3__formats": {
     "id": "salicylic-lha-2-cleanser__t3__formats",
@@ -17696,7 +17655,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.585Z"
+    "scored_at": "2026-10-05T16:43:52.888Z"
   },
   "salicylic-lha-2-cleanser__t31__formats": {
     "id": "salicylic-lha-2-cleanser__t31__formats",
@@ -17827,7 +17786,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.600Z"
+    "scored_at": "2026-10-05T16:43:52.897Z"
   },
   "salicylic-lha-2-cleanser__t4__formats": {
     "id": "salicylic-lha-2-cleanser__t4__formats",
@@ -17958,7 +17917,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.615Z"
+    "scored_at": "2026-10-05T16:43:52.902Z"
   },
   "vitamin-b5-10-moisturizer__t10__formats": {
     "id": "vitamin-b5-10-moisturizer__t10__formats",
@@ -18089,7 +18048,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.634Z"
+    "scored_at": "2026-10-05T16:43:52.911Z"
   },
   "vitamin-b5-10-moisturizer__t12__formats": {
     "id": "vitamin-b5-10-moisturizer__t12__formats",
@@ -18100,11 +18059,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -18223,7 +18181,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.645Z"
+    "scored_at": "2026-10-05T16:43:52.922Z"
   },
   "vitamin-b5-10-moisturizer__t14__formats": {
     "id": "vitamin-b5-10-moisturizer__t14__formats",
@@ -18234,11 +18192,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -18355,7 +18312,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.659Z"
+    "scored_at": "2026-10-05T16:43:52.931Z"
   },
   "vitamin-b5-10-moisturizer__t2__formats": {
     "id": "vitamin-b5-10-moisturizer__t2__formats",
@@ -18486,7 +18443,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.673Z"
+    "scored_at": "2026-10-05T16:43:52.940Z"
   },
   "vitamin-b5-10-moisturizer__t21__formats": {
     "id": "vitamin-b5-10-moisturizer__t21__formats",
@@ -18614,7 +18571,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.688Z"
+    "scored_at": "2026-10-05T16:43:52.946Z"
   },
   "vitamin-b5-10-moisturizer__t3__formats": {
     "id": "vitamin-b5-10-moisturizer__t3__formats",
@@ -18745,7 +18702,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.710Z"
+    "scored_at": "2026-10-05T16:43:52.954Z"
   },
   "vitamin-b5-10-moisturizer__t31__formats": {
     "id": "vitamin-b5-10-moisturizer__t31__formats",
@@ -18876,7 +18833,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.725Z"
+    "scored_at": "2026-10-05T16:43:52.975Z"
   },
   "vitamin-b5-10-moisturizer__t4__formats": {
     "id": "vitamin-b5-10-moisturizer__t4__formats",
@@ -19007,7 +18964,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.735Z"
+    "scored_at": "2026-10-05T16:43:52.986Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t10__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t10__formats",
@@ -19138,7 +19095,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.747Z"
+    "scored_at": "2026-10-05T16:43:52.995Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t12__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t12__formats",
@@ -19149,11 +19106,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -19272,7 +19228,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.760Z"
+    "scored_at": "2026-10-05T16:43:53.006Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t14__formats",
@@ -19283,11 +19239,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -19404,7 +19359,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.773Z"
+    "scored_at": "2026-10-05T16:43:53.019Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t2__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t2__formats",
@@ -19535,7 +19490,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.784Z"
+    "scored_at": "2026-10-05T16:43:53.027Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t21__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t21__formats",
@@ -19663,7 +19618,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.795Z"
+    "scored_at": "2026-10-05T16:43:53.035Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t31__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t31__formats",
@@ -19794,7 +19749,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.807Z"
+    "scored_at": "2026-10-05T16:43:53.043Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t4__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t4__formats",
@@ -19925,7 +19880,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.821Z"
+    "scored_at": "2026-10-05T16:43:53.051Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t9__formats": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t9__formats",
@@ -20056,7 +20011,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.835Z"
+    "scored_at": "2026-10-05T16:43:53.059Z"
   },
   "hair-growth-actives-18__t10__g1": {
     "id": "hair-growth-actives-18__t10__g1",
@@ -20187,7 +20142,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.915Z"
+    "scored_at": "2026-10-05T16:43:53.081Z"
   },
   "hair-growth-actives-18__t12__g1": {
     "id": "hair-growth-actives-18__t12__g1",
@@ -20198,12 +20153,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -20320,7 +20273,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.926Z"
+    "scored_at": "2026-10-05T16:43:53.141Z"
   },
   "hair-growth-actives-18__t14__g1": {
     "id": "hair-growth-actives-18__t14__g1",
@@ -20331,12 +20284,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -20450,7 +20401,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.940Z"
+    "scored_at": "2026-10-05T16:43:53.156Z"
   },
   "hair-growth-actives-18__t15__g1": {
     "id": "hair-growth-actives-18__t15__g1",
@@ -20581,7 +20532,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.952Z"
+    "scored_at": "2026-10-05T16:43:53.168Z"
   },
   "hair-growth-actives-18__t17__g1": {
     "id": "hair-growth-actives-18__t17__g1",
@@ -20713,7 +20664,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.965Z"
+    "scored_at": "2026-10-05T16:43:53.176Z"
   },
   "hair-growth-actives-18__t2__g1": {
     "id": "hair-growth-actives-18__t2__g1",
@@ -20844,7 +20795,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.977Z"
+    "scored_at": "2026-10-05T16:43:53.183Z"
   },
   "hair-growth-actives-18__t21__g1": {
     "id": "hair-growth-actives-18__t21__g1",
@@ -20972,7 +20923,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:14.989Z"
+    "scored_at": "2026-10-05T16:43:53.193Z"
   },
   "hair-growth-actives-18__t22__g1": {
     "id": "hair-growth-actives-18__t22__g1",
@@ -21103,7 +21054,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.000Z"
+    "scored_at": "2026-10-05T16:43:53.206Z"
   },
   "hair-growth-actives-18__t26__g1": {
     "id": "hair-growth-actives-18__t26__g1",
@@ -21234,7 +21185,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.013Z"
+    "scored_at": "2026-10-05T16:43:53.214Z"
   },
   "hair-growth-actives-18__t3__g1": {
     "id": "hair-growth-actives-18__t3__g1",
@@ -21365,7 +21316,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.025Z"
+    "scored_at": "2026-10-05T16:43:53.224Z"
   },
   "hair-growth-actives-18__t31__g1": {
     "id": "hair-growth-actives-18__t31__g1",
@@ -21496,7 +21447,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.036Z"
+    "scored_at": "2026-10-05T16:43:53.231Z"
   },
   "hair-growth-actives-18__t36__g1": {
     "id": "hair-growth-actives-18__t36__g1",
@@ -21627,7 +21578,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.050Z"
+    "scored_at": "2026-10-05T16:43:53.239Z"
   },
   "hair-growth-actives-18__t38__g1": {
     "id": "hair-growth-actives-18__t38__g1",
@@ -21758,7 +21709,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.062Z"
+    "scored_at": "2026-10-05T16:43:53.247Z"
   },
   "hair-growth-actives-18__t4__g1": {
     "id": "hair-growth-actives-18__t4__g1",
@@ -21889,7 +21840,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.077Z"
+    "scored_at": "2026-10-05T16:43:53.257Z"
   },
   "hair-growth-actives-18__t6__g1": {
     "id": "hair-growth-actives-18__t6__g1",
@@ -22017,7 +21968,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.091Z"
+    "scored_at": "2026-10-05T16:43:53.265Z"
   },
   "hair-growth-actives-18__t8__g1": {
     "id": "hair-growth-actives-18__t8__g1",
@@ -22148,7 +22099,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.101Z"
+    "scored_at": "2026-10-05T16:43:53.271Z"
   },
   "hair-growth-actives-18__t9__g1": {
     "id": "hair-growth-actives-18__t9__g1",
@@ -22279,7 +22230,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.114Z"
+    "scored_at": "2026-10-05T16:43:53.277Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t10__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t10__g1",
@@ -22410,7 +22361,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.127Z"
+    "scored_at": "2026-10-05T16:43:53.281Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t12__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t12__g1",
@@ -22421,12 +22372,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -22543,7 +22492,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.139Z"
+    "scored_at": "2026-10-05T16:43:53.287Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t14__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t14__g1",
@@ -22554,12 +22503,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -22673,7 +22620,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.151Z"
+    "scored_at": "2026-10-05T16:43:53.292Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t15__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t15__g1",
@@ -22804,7 +22751,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.166Z"
+    "scored_at": "2026-10-05T16:43:53.297Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t17__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t17__g1",
@@ -22935,7 +22882,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.187Z"
+    "scored_at": "2026-10-05T16:43:53.304Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t2__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t2__g1",
@@ -23066,7 +23013,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.200Z"
+    "scored_at": "2026-10-05T16:43:53.315Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t21__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t21__g1",
@@ -23194,7 +23141,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.211Z"
+    "scored_at": "2026-10-05T16:43:53.323Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t22__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t22__g1",
@@ -23325,7 +23272,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.222Z"
+    "scored_at": "2026-10-05T16:43:53.328Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t26__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t26__g1",
@@ -23456,7 +23403,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.237Z"
+    "scored_at": "2026-10-05T16:43:53.335Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t3__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t3__g1",
@@ -23587,7 +23534,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.248Z"
+    "scored_at": "2026-10-05T16:43:53.341Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t31__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t31__g1",
@@ -23718,7 +23665,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.258Z"
+    "scored_at": "2026-10-05T16:43:53.347Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t36__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t36__g1",
@@ -23849,7 +23796,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.270Z"
+    "scored_at": "2026-10-05T16:43:53.352Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t38__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t38__g1",
@@ -23980,7 +23927,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.284Z"
+    "scored_at": "2026-10-05T16:43:53.358Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t4__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t4__g1",
@@ -24111,7 +24058,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.297Z"
+    "scored_at": "2026-10-05T16:43:53.363Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t6__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t6__g1",
@@ -24239,7 +24186,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.309Z"
+    "scored_at": "2026-10-05T16:43:53.368Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t8__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t8__g1",
@@ -24370,7 +24317,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.320Z"
+    "scored_at": "2026-10-05T16:43:53.374Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t9__g1": {
     "id": "niacinamide-5-hyaluronic-acid-1__t9__g1",
@@ -24501,7 +24448,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.331Z"
+    "scored_at": "2026-10-05T16:43:53.385Z"
   },
   "oat-extract-06-gentle-cleanser__t10__g1": {
     "id": "oat-extract-06-gentle-cleanser__t10__g1",
@@ -24632,7 +24579,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.342Z"
+    "scored_at": "2026-10-05T16:43:53.399Z"
   },
   "oat-extract-06-gentle-cleanser__t12__g1": {
     "id": "oat-extract-06-gentle-cleanser__t12__g1",
@@ -24643,12 +24590,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -24765,7 +24710,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.353Z"
+    "scored_at": "2026-10-05T16:43:53.407Z"
   },
   "oat-extract-06-gentle-cleanser__t14__g1": {
     "id": "oat-extract-06-gentle-cleanser__t14__g1",
@@ -24776,12 +24721,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -24895,7 +24838,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.364Z"
+    "scored_at": "2026-10-05T16:43:53.422Z"
   },
   "oat-extract-06-gentle-cleanser__t15__g1": {
     "id": "oat-extract-06-gentle-cleanser__t15__g1",
@@ -25026,7 +24969,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.375Z"
+    "scored_at": "2026-10-05T16:43:53.432Z"
   },
   "oat-extract-06-gentle-cleanser__t17__g1": {
     "id": "oat-extract-06-gentle-cleanser__t17__g1",
@@ -25157,7 +25100,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.389Z"
+    "scored_at": "2026-10-05T16:43:53.444Z"
   },
   "oat-extract-06-gentle-cleanser__t2__g1": {
     "id": "oat-extract-06-gentle-cleanser__t2__g1",
@@ -25288,7 +25231,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.401Z"
+    "scored_at": "2026-10-05T16:43:53.456Z"
   },
   "oat-extract-06-gentle-cleanser__t21__g1": {
     "id": "oat-extract-06-gentle-cleanser__t21__g1",
@@ -25416,7 +25359,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.414Z"
+    "scored_at": "2026-10-05T16:43:53.468Z"
   },
   "oat-extract-06-gentle-cleanser__t22__g1": {
     "id": "oat-extract-06-gentle-cleanser__t22__g1",
@@ -25547,7 +25490,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.427Z"
+    "scored_at": "2026-10-05T16:43:53.479Z"
   },
   "oat-extract-06-gentle-cleanser__t26__g1": {
     "id": "oat-extract-06-gentle-cleanser__t26__g1",
@@ -25678,7 +25621,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.438Z"
+    "scored_at": "2026-10-05T16:43:53.488Z"
   },
   "oat-extract-06-gentle-cleanser__t3__g1": {
     "id": "oat-extract-06-gentle-cleanser__t3__g1",
@@ -25809,7 +25752,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.449Z"
+    "scored_at": "2026-10-05T16:43:53.495Z"
   },
   "oat-extract-06-gentle-cleanser__t31__g1": {
     "id": "oat-extract-06-gentle-cleanser__t31__g1",
@@ -25940,7 +25883,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.460Z"
+    "scored_at": "2026-10-05T16:43:53.502Z"
   },
   "oat-extract-06-gentle-cleanser__t36__g1": {
     "id": "oat-extract-06-gentle-cleanser__t36__g1",
@@ -26071,7 +26014,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.475Z"
+    "scored_at": "2026-10-05T16:43:53.516Z"
   },
   "oat-extract-06-gentle-cleanser__t38__g1": {
     "id": "oat-extract-06-gentle-cleanser__t38__g1",
@@ -26202,7 +26145,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.488Z"
+    "scored_at": "2026-10-05T16:43:53.527Z"
   },
   "oat-extract-06-gentle-cleanser__t4__g1": {
     "id": "oat-extract-06-gentle-cleanser__t4__g1",
@@ -26333,7 +26276,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.498Z"
+    "scored_at": "2026-10-05T16:43:53.535Z"
   },
   "oat-extract-06-gentle-cleanser__t6__g1": {
     "id": "oat-extract-06-gentle-cleanser__t6__g1",
@@ -26461,7 +26404,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.509Z"
+    "scored_at": "2026-10-05T16:43:53.543Z"
   },
   "oat-extract-06-gentle-cleanser__t8__g1": {
     "id": "oat-extract-06-gentle-cleanser__t8__g1",
@@ -26592,7 +26535,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.522Z"
+    "scored_at": "2026-10-05T16:43:53.550Z"
   },
   "oat-extract-06-gentle-cleanser__t9__g1": {
     "id": "oat-extract-06-gentle-cleanser__t9__g1",
@@ -26723,7 +26666,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.533Z"
+    "scored_at": "2026-10-05T16:43:53.558Z"
   },
   "pha-3-biotic-toner__t10__g1": {
     "id": "pha-3-biotic-toner__t10__g1",
@@ -26854,7 +26797,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.545Z"
+    "scored_at": "2026-10-05T16:43:53.567Z"
   },
   "pha-3-biotic-toner__t12__g1": {
     "id": "pha-3-biotic-toner__t12__g1",
@@ -26865,12 +26808,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -26987,7 +26928,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.556Z"
+    "scored_at": "2026-10-05T16:43:53.575Z"
   },
   "pha-3-biotic-toner__t14__g1": {
     "id": "pha-3-biotic-toner__t14__g1",
@@ -26998,12 +26939,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -27117,7 +27056,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.567Z"
+    "scored_at": "2026-10-05T16:43:53.585Z"
   },
   "pha-3-biotic-toner__t15__g1": {
     "id": "pha-3-biotic-toner__t15__g1",
@@ -27248,7 +27187,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.577Z"
+    "scored_at": "2026-10-05T16:43:53.596Z"
   },
   "pha-3-biotic-toner__t17__g1": {
     "id": "pha-3-biotic-toner__t17__g1",
@@ -27380,7 +27319,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.588Z"
+    "scored_at": "2026-10-05T16:43:53.607Z"
   },
   "pha-3-biotic-toner__t2__g1": {
     "id": "pha-3-biotic-toner__t2__g1",
@@ -27511,7 +27450,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.598Z"
+    "scored_at": "2026-10-05T16:43:53.617Z"
   },
   "pha-3-biotic-toner__t21__g1": {
     "id": "pha-3-biotic-toner__t21__g1",
@@ -27639,7 +27578,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.610Z"
+    "scored_at": "2026-10-05T16:43:53.628Z"
   },
   "pha-3-biotic-toner__t22__g1": {
     "id": "pha-3-biotic-toner__t22__g1",
@@ -27770,7 +27709,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.621Z"
+    "scored_at": "2026-10-05T16:43:53.637Z"
   },
   "pha-3-biotic-toner__t26__g1": {
     "id": "pha-3-biotic-toner__t26__g1",
@@ -27901,7 +27840,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.637Z"
+    "scored_at": "2026-10-05T16:43:53.649Z"
   },
   "pha-3-biotic-toner__t3__g1": {
     "id": "pha-3-biotic-toner__t3__g1",
@@ -28032,7 +27971,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.648Z"
+    "scored_at": "2026-10-05T16:43:53.658Z"
   },
   "pha-3-biotic-toner__t31__g1": {
     "id": "pha-3-biotic-toner__t31__g1",
@@ -28163,7 +28102,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.659Z"
+    "scored_at": "2026-10-05T16:43:53.666Z"
   },
   "pha-3-biotic-toner__t36__g1": {
     "id": "pha-3-biotic-toner__t36__g1",
@@ -28294,7 +28233,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.670Z"
+    "scored_at": "2026-10-05T16:43:53.675Z"
   },
   "pha-3-biotic-toner__t38__g1": {
     "id": "pha-3-biotic-toner__t38__g1",
@@ -28425,7 +28364,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.679Z"
+    "scored_at": "2026-10-05T16:43:53.731Z"
   },
   "pha-3-biotic-toner__t4__g1": {
     "id": "pha-3-biotic-toner__t4__g1",
@@ -28556,7 +28495,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.690Z"
+    "scored_at": "2026-10-05T16:43:53.742Z"
   },
   "pha-3-biotic-toner__t6__g1": {
     "id": "pha-3-biotic-toner__t6__g1",
@@ -28684,7 +28623,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.701Z"
+    "scored_at": "2026-10-05T16:43:53.755Z"
   },
   "pha-3-biotic-toner__t8__g1": {
     "id": "pha-3-biotic-toner__t8__g1",
@@ -28815,7 +28754,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.713Z"
+    "scored_at": "2026-10-05T16:43:53.767Z"
   },
   "pha-3-biotic-toner__t9__g1": {
     "id": "pha-3-biotic-toner__t9__g1",
@@ -28946,7 +28885,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.724Z"
+    "scored_at": "2026-10-05T16:43:53.778Z"
   },
   "retinol-0-3-q10__t10__g1": {
     "id": "retinol-0-3-q10__t10__g1",
@@ -29077,7 +29016,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.734Z"
+    "scored_at": "2026-10-05T16:43:53.790Z"
   },
   "retinol-0-3-q10__t12__g1": {
     "id": "retinol-0-3-q10__t12__g1",
@@ -29088,12 +29027,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -29210,7 +29147,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.745Z"
+    "scored_at": "2026-10-05T16:43:53.800Z"
   },
   "retinol-0-3-q10__t14__g1": {
     "id": "retinol-0-3-q10__t14__g1",
@@ -29221,12 +29158,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -29340,7 +29275,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.756Z"
+    "scored_at": "2026-10-05T16:43:53.815Z"
   },
   "retinol-0-3-q10__t15__g1": {
     "id": "retinol-0-3-q10__t15__g1",
@@ -29471,7 +29406,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.768Z"
+    "scored_at": "2026-10-05T16:43:53.826Z"
   },
   "retinol-0-3-q10__t17__g1": {
     "id": "retinol-0-3-q10__t17__g1",
@@ -29602,7 +29537,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.778Z"
+    "scored_at": "2026-10-05T16:43:53.839Z"
   },
   "retinol-0-3-q10__t2__g1": {
     "id": "retinol-0-3-q10__t2__g1",
@@ -29733,7 +29668,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.789Z"
+    "scored_at": "2026-10-05T16:43:53.851Z"
   },
   "retinol-0-3-q10__t21__g1": {
     "id": "retinol-0-3-q10__t21__g1",
@@ -29861,7 +29796,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.800Z"
+    "scored_at": "2026-10-05T16:43:53.864Z"
   },
   "retinol-0-3-q10__t22__g1": {
     "id": "retinol-0-3-q10__t22__g1",
@@ -29992,7 +29927,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.810Z"
+    "scored_at": "2026-10-05T16:43:53.877Z"
   },
   "retinol-0-3-q10__t26__g1": {
     "id": "retinol-0-3-q10__t26__g1",
@@ -30123,7 +30058,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.820Z"
+    "scored_at": "2026-10-05T16:43:53.889Z"
   },
   "retinol-0-3-q10__t3__g1": {
     "id": "retinol-0-3-q10__t3__g1",
@@ -30254,7 +30189,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.830Z"
+    "scored_at": "2026-10-05T16:43:53.897Z"
   },
   "retinol-0-3-q10__t31__g1": {
     "id": "retinol-0-3-q10__t31__g1",
@@ -30385,7 +30320,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.842Z"
+    "scored_at": "2026-10-05T16:43:53.910Z"
   },
   "retinol-0-3-q10__t36__g1": {
     "id": "retinol-0-3-q10__t36__g1",
@@ -30516,7 +30451,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.854Z"
+    "scored_at": "2026-10-05T16:43:53.925Z"
   },
   "retinol-0-3-q10__t38__g1": {
     "id": "retinol-0-3-q10__t38__g1",
@@ -30647,7 +30582,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.866Z"
+    "scored_at": "2026-10-05T16:43:53.935Z"
   },
   "retinol-0-3-q10__t4__g1": {
     "id": "retinol-0-3-q10__t4__g1",
@@ -30778,7 +30713,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.878Z"
+    "scored_at": "2026-10-05T16:43:53.946Z"
   },
   "retinol-0-3-q10__t6__g1": {
     "id": "retinol-0-3-q10__t6__g1",
@@ -30906,7 +30841,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.889Z"
+    "scored_at": "2026-10-05T16:43:53.955Z"
   },
   "retinol-0-3-q10__t8__g1": {
     "id": "retinol-0-3-q10__t8__g1",
@@ -31037,7 +30972,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.900Z"
+    "scored_at": "2026-10-05T16:43:53.963Z"
   },
   "retinol-0-3-q10__t9__g1": {
     "id": "retinol-0-3-q10__t9__g1",
@@ -31168,7 +31103,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.911Z"
+    "scored_at": "2026-10-05T16:43:53.974Z"
   },
   "vitamin-c-e-ferulic-16__t10__g1": {
     "id": "vitamin-c-e-ferulic-16__t10__g1",
@@ -31299,7 +31234,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.923Z"
+    "scored_at": "2026-10-05T16:43:53.982Z"
   },
   "vitamin-c-e-ferulic-16__t12__g1": {
     "id": "vitamin-c-e-ferulic-16__t12__g1",
@@ -31310,12 +31245,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -31432,7 +31365,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.935Z"
+    "scored_at": "2026-10-05T16:43:53.990Z"
   },
   "vitamin-c-e-ferulic-16__t14__g1": {
     "id": "vitamin-c-e-ferulic-16__t14__g1",
@@ -31443,12 +31376,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 96,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -31562,7 +31493,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.948Z"
+    "scored_at": "2026-10-05T16:43:54.000Z"
   },
   "vitamin-c-e-ferulic-16__t15__g1": {
     "id": "vitamin-c-e-ferulic-16__t15__g1",
@@ -31693,7 +31624,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.959Z"
+    "scored_at": "2026-10-05T16:43:54.008Z"
   },
   "vitamin-c-e-ferulic-16__t17__g1": {
     "id": "vitamin-c-e-ferulic-16__t17__g1",
@@ -31824,7 +31755,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.971Z"
+    "scored_at": "2026-10-05T16:43:54.018Z"
   },
   "vitamin-c-e-ferulic-16__t2__g1": {
     "id": "vitamin-c-e-ferulic-16__t2__g1",
@@ -31955,7 +31886,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.986Z"
+    "scored_at": "2026-10-05T16:43:54.026Z"
   },
   "vitamin-c-e-ferulic-16__t21__g1": {
     "id": "vitamin-c-e-ferulic-16__t21__g1",
@@ -32083,7 +32014,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:15.999Z"
+    "scored_at": "2026-10-05T16:43:54.033Z"
   },
   "vitamin-c-e-ferulic-16__t22__g1": {
     "id": "vitamin-c-e-ferulic-16__t22__g1",
@@ -32214,7 +32145,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.010Z"
+    "scored_at": "2026-10-05T16:43:54.043Z"
   },
   "vitamin-c-e-ferulic-16__t26__g1": {
     "id": "vitamin-c-e-ferulic-16__t26__g1",
@@ -32345,7 +32276,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.023Z"
+    "scored_at": "2026-10-05T16:43:54.056Z"
   },
   "vitamin-c-e-ferulic-16__t3__g1": {
     "id": "vitamin-c-e-ferulic-16__t3__g1",
@@ -32476,7 +32407,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.035Z"
+    "scored_at": "2026-10-05T16:43:54.068Z"
   },
   "vitamin-c-e-ferulic-16__t31__g1": {
     "id": "vitamin-c-e-ferulic-16__t31__g1",
@@ -32607,7 +32538,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.050Z"
+    "scored_at": "2026-10-05T16:43:54.080Z"
   },
   "vitamin-c-e-ferulic-16__t36__g1": {
     "id": "vitamin-c-e-ferulic-16__t36__g1",
@@ -32738,7 +32669,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.060Z"
+    "scored_at": "2026-10-05T16:43:54.093Z"
   },
   "vitamin-c-e-ferulic-16__t38__g1": {
     "id": "vitamin-c-e-ferulic-16__t38__g1",
@@ -32869,7 +32800,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.072Z"
+    "scored_at": "2026-10-05T16:43:54.105Z"
   },
   "vitamin-c-e-ferulic-16__t4__g1": {
     "id": "vitamin-c-e-ferulic-16__t4__g1",
@@ -33000,7 +32931,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.082Z"
+    "scored_at": "2026-10-05T16:43:54.118Z"
   },
   "vitamin-c-e-ferulic-16__t6__g1": {
     "id": "vitamin-c-e-ferulic-16__t6__g1",
@@ -33128,7 +33059,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.096Z"
+    "scored_at": "2026-10-05T16:43:54.128Z"
   },
   "vitamin-c-e-ferulic-16__t8__g1": {
     "id": "vitamin-c-e-ferulic-16__t8__g1",
@@ -33259,7 +33190,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.106Z"
+    "scored_at": "2026-10-05T16:43:54.138Z"
   },
   "vitamin-c-e-ferulic-16__t9__g1": {
     "id": "vitamin-c-e-ferulic-16__t9__g1",
@@ -33390,7 +33321,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.117Z"
+    "scored_at": "2026-10-05T16:43:54.148Z"
   },
   "2-hyaluronic-acid__t10__g2": {
     "id": "2-hyaluronic-acid__t10__g2",
@@ -33521,7 +33452,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.185Z"
+    "scored_at": "2026-10-05T16:43:54.188Z"
   },
   "2-hyaluronic-acid__t12__g2": {
     "id": "2-hyaluronic-acid__t12__g2",
@@ -33532,12 +33463,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -33654,7 +33583,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.199Z"
+    "scored_at": "2026-10-05T16:43:54.197Z"
   },
   "2-hyaluronic-acid__t14__g2": {
     "id": "2-hyaluronic-acid__t14__g2",
@@ -33665,12 +33594,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -33784,7 +33711,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.221Z"
+    "scored_at": "2026-10-05T16:43:54.208Z"
   },
   "2-hyaluronic-acid__t15__g2": {
     "id": "2-hyaluronic-acid__t15__g2",
@@ -33915,7 +33842,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.232Z"
+    "scored_at": "2026-10-05T16:43:54.214Z"
   },
   "2-hyaluronic-acid__t17__g2": {
     "id": "2-hyaluronic-acid__t17__g2",
@@ -34050,7 +33977,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.243Z"
+    "scored_at": "2026-10-05T16:43:54.225Z"
   },
   "2-hyaluronic-acid__t2__g2": {
     "id": "2-hyaluronic-acid__t2__g2",
@@ -34181,7 +34108,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.254Z"
+    "scored_at": "2026-10-05T16:43:54.234Z"
   },
   "2-hyaluronic-acid__t21__g2": {
     "id": "2-hyaluronic-acid__t21__g2",
@@ -34309,7 +34236,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.266Z"
+    "scored_at": "2026-10-05T16:43:54.243Z"
   },
   "2-hyaluronic-acid__t22__g2": {
     "id": "2-hyaluronic-acid__t22__g2",
@@ -34440,7 +34367,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.276Z"
+    "scored_at": "2026-10-05T16:43:54.252Z"
   },
   "2-hyaluronic-acid__t26__g2": {
     "id": "2-hyaluronic-acid__t26__g2",
@@ -34571,7 +34498,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.290Z"
+    "scored_at": "2026-10-05T16:43:54.263Z"
   },
   "2-hyaluronic-acid__t3__g2": {
     "id": "2-hyaluronic-acid__t3__g2",
@@ -34702,7 +34629,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.300Z"
+    "scored_at": "2026-10-05T16:43:54.272Z"
   },
   "2-hyaluronic-acid__t31__g2": {
     "id": "2-hyaluronic-acid__t31__g2",
@@ -34833,7 +34760,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.311Z"
+    "scored_at": "2026-10-05T16:43:54.282Z"
   },
   "2-hyaluronic-acid__t36__g2": {
     "id": "2-hyaluronic-acid__t36__g2",
@@ -34964,7 +34891,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.321Z"
+    "scored_at": "2026-10-05T16:43:54.293Z"
   },
   "2-hyaluronic-acid__t38__g2": {
     "id": "2-hyaluronic-acid__t38__g2",
@@ -35095,7 +35022,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.333Z"
+    "scored_at": "2026-10-05T16:43:54.301Z"
   },
   "2-hyaluronic-acid__t4__g2": {
     "id": "2-hyaluronic-acid__t4__g2",
@@ -35226,7 +35153,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.347Z"
+    "scored_at": "2026-10-05T16:43:54.311Z"
   },
   "2-hyaluronic-acid__t6__g2": {
     "id": "2-hyaluronic-acid__t6__g2",
@@ -35354,7 +35281,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.356Z"
+    "scored_at": "2026-10-05T16:43:54.320Z"
   },
   "2-hyaluronic-acid__t8__g2": {
     "id": "2-hyaluronic-acid__t8__g2",
@@ -35485,7 +35412,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.366Z"
+    "scored_at": "2026-10-05T16:43:54.327Z"
   },
   "2-hyaluronic-acid__t9__g2": {
     "id": "2-hyaluronic-acid__t9__g2",
@@ -35616,7 +35543,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.374Z"
+    "scored_at": "2026-10-05T16:43:54.335Z"
   },
   "aha-25-pha-5-bha-2__t10__g2": {
     "id": "aha-25-pha-5-bha-2__t10__g2",
@@ -35747,7 +35674,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.384Z"
+    "scored_at": "2026-10-05T16:43:54.344Z"
   },
   "aha-25-pha-5-bha-2__t12__g2": {
     "id": "aha-25-pha-5-bha-2__t12__g2",
@@ -35758,12 +35685,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -35880,7 +35805,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.392Z"
+    "scored_at": "2026-10-05T16:43:54.351Z"
   },
   "aha-25-pha-5-bha-2__t14__g2": {
     "id": "aha-25-pha-5-bha-2__t14__g2",
@@ -35891,12 +35816,10 @@
     "alignment_band": "high",
     "win": 73,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -36010,7 +35933,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.404Z"
+    "scored_at": "2026-10-05T16:43:54.359Z"
   },
   "aha-25-pha-5-bha-2__t15__g2": {
     "id": "aha-25-pha-5-bha-2__t15__g2",
@@ -36141,7 +36064,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.416Z"
+    "scored_at": "2026-10-05T16:43:54.365Z"
   },
   "aha-25-pha-5-bha-2__t17__g2": {
     "id": "aha-25-pha-5-bha-2__t17__g2",
@@ -36274,7 +36197,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.425Z"
+    "scored_at": "2026-10-05T16:43:54.375Z"
   },
   "aha-25-pha-5-bha-2__t2__g2": {
     "id": "aha-25-pha-5-bha-2__t2__g2",
@@ -36405,7 +36328,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.435Z"
+    "scored_at": "2026-10-05T16:43:54.383Z"
   },
   "aha-25-pha-5-bha-2__t21__g2": {
     "id": "aha-25-pha-5-bha-2__t21__g2",
@@ -36533,7 +36456,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.444Z"
+    "scored_at": "2026-10-05T16:43:54.391Z"
   },
   "aha-25-pha-5-bha-2__t22__g2": {
     "id": "aha-25-pha-5-bha-2__t22__g2",
@@ -36664,7 +36587,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.452Z"
+    "scored_at": "2026-10-05T16:43:54.398Z"
   },
   "aha-25-pha-5-bha-2__t26__g2": {
     "id": "aha-25-pha-5-bha-2__t26__g2",
@@ -36795,7 +36718,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.463Z"
+    "scored_at": "2026-10-05T16:43:54.405Z"
   },
   "aha-25-pha-5-bha-2__t3__g2": {
     "id": "aha-25-pha-5-bha-2__t3__g2",
@@ -36926,7 +36849,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.474Z"
+    "scored_at": "2026-10-05T16:43:54.411Z"
   },
   "aha-25-pha-5-bha-2__t31__g2": {
     "id": "aha-25-pha-5-bha-2__t31__g2",
@@ -37057,7 +36980,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.485Z"
+    "scored_at": "2026-10-05T16:43:54.418Z"
   },
   "aha-25-pha-5-bha-2__t36__g2": {
     "id": "aha-25-pha-5-bha-2__t36__g2",
@@ -37188,7 +37111,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.497Z"
+    "scored_at": "2026-10-05T16:43:54.426Z"
   },
   "aha-25-pha-5-bha-2__t38__g2": {
     "id": "aha-25-pha-5-bha-2__t38__g2",
@@ -37319,7 +37242,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.508Z"
+    "scored_at": "2026-10-05T16:43:54.437Z"
   },
   "aha-25-pha-5-bha-2__t4__g2": {
     "id": "aha-25-pha-5-bha-2__t4__g2",
@@ -37450,7 +37373,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.521Z"
+    "scored_at": "2026-10-05T16:43:54.452Z"
   },
   "aha-25-pha-5-bha-2__t6__g2": {
     "id": "aha-25-pha-5-bha-2__t6__g2",
@@ -37578,7 +37501,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.532Z"
+    "scored_at": "2026-10-05T16:43:54.462Z"
   },
   "aha-25-pha-5-bha-2__t8__g2": {
     "id": "aha-25-pha-5-bha-2__t8__g2",
@@ -37709,7 +37632,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.540Z"
+    "scored_at": "2026-10-05T16:43:54.468Z"
   },
   "aha-25-pha-5-bha-2__t9__g2": {
     "id": "aha-25-pha-5-bha-2__t9__g2",
@@ -37840,7 +37763,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.551Z"
+    "scored_at": "2026-10-05T16:43:54.476Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t10__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t10__g2",
@@ -37971,7 +37894,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.563Z"
+    "scored_at": "2026-10-05T16:43:54.483Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t12__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t12__g2",
@@ -37982,12 +37905,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -38104,7 +38025,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.580Z"
+    "scored_at": "2026-10-05T16:43:54.490Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t14__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t14__g2",
@@ -38115,12 +38036,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -38234,7 +38153,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.591Z"
+    "scored_at": "2026-10-05T16:43:54.495Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t15__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t15__g2",
@@ -38365,7 +38284,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.603Z"
+    "scored_at": "2026-10-05T16:43:54.502Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t17__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t17__g2",
@@ -38498,7 +38417,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.622Z"
+    "scored_at": "2026-10-05T16:43:54.513Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t2__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t2__g2",
@@ -38629,7 +38548,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.632Z"
+    "scored_at": "2026-10-05T16:43:54.519Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t21__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t21__g2",
@@ -38757,7 +38676,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.642Z"
+    "scored_at": "2026-10-05T16:43:54.527Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t22__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t22__g2",
@@ -38888,7 +38807,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.653Z"
+    "scored_at": "2026-10-05T16:43:54.539Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t26__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t26__g2",
@@ -39019,7 +38938,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.666Z"
+    "scored_at": "2026-10-05T16:43:54.546Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t3__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t3__g2",
@@ -39150,7 +39069,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.674Z"
+    "scored_at": "2026-10-05T16:43:54.552Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t31__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t31__g2",
@@ -39281,7 +39200,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.685Z"
+    "scored_at": "2026-10-05T16:43:54.560Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t36__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t36__g2",
@@ -39412,7 +39331,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.695Z"
+    "scored_at": "2026-10-05T16:43:54.568Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t38__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t38__g2",
@@ -39543,7 +39462,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.714Z"
+    "scored_at": "2026-10-05T16:43:54.577Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t4__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t4__g2",
@@ -39674,7 +39593,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.771Z"
+    "scored_at": "2026-10-05T16:43:54.585Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t6__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t6__g2",
@@ -39802,7 +39721,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.783Z"
+    "scored_at": "2026-10-05T16:43:54.592Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t8__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t8__g2",
@@ -39933,7 +39852,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.793Z"
+    "scored_at": "2026-10-05T16:43:54.598Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t9__g2": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t9__g2",
@@ -40064,7 +39983,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.805Z"
+    "scored_at": "2026-10-05T16:43:54.605Z"
   },
   "light-fluid-spf-50-sunscreen__t10__g2": {
     "id": "light-fluid-spf-50-sunscreen__t10__g2",
@@ -40195,7 +40114,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.818Z"
+    "scored_at": "2026-10-05T16:43:54.612Z"
   },
   "light-fluid-spf-50-sunscreen__t12__g2": {
     "id": "light-fluid-spf-50-sunscreen__t12__g2",
@@ -40206,12 +40125,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -40328,7 +40245,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.832Z"
+    "scored_at": "2026-10-05T16:43:54.623Z"
   },
   "light-fluid-spf-50-sunscreen__t14__g2": {
     "id": "light-fluid-spf-50-sunscreen__t14__g2",
@@ -40339,12 +40256,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -40458,7 +40373,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.847Z"
+    "scored_at": "2026-10-05T16:43:54.629Z"
   },
   "light-fluid-spf-50-sunscreen__t15__g2": {
     "id": "light-fluid-spf-50-sunscreen__t15__g2",
@@ -40589,7 +40504,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.860Z"
+    "scored_at": "2026-10-05T16:43:54.635Z"
   },
   "light-fluid-spf-50-sunscreen__t17__g2": {
     "id": "light-fluid-spf-50-sunscreen__t17__g2",
@@ -40722,7 +40637,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.873Z"
+    "scored_at": "2026-10-05T16:43:54.647Z"
   },
   "light-fluid-spf-50-sunscreen__t2__g2": {
     "id": "light-fluid-spf-50-sunscreen__t2__g2",
@@ -40853,7 +40768,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.888Z"
+    "scored_at": "2026-10-05T16:43:54.657Z"
   },
   "light-fluid-spf-50-sunscreen__t21__g2": {
     "id": "light-fluid-spf-50-sunscreen__t21__g2",
@@ -40981,7 +40896,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.909Z"
+    "scored_at": "2026-10-05T16:43:54.666Z"
   },
   "light-fluid-spf-50-sunscreen__t22__g2": {
     "id": "light-fluid-spf-50-sunscreen__t22__g2",
@@ -41112,7 +41027,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.924Z"
+    "scored_at": "2026-10-05T16:43:54.675Z"
   },
   "light-fluid-spf-50-sunscreen__t26__g2": {
     "id": "light-fluid-spf-50-sunscreen__t26__g2",
@@ -41243,7 +41158,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.935Z"
+    "scored_at": "2026-10-05T16:43:54.684Z"
   },
   "light-fluid-spf-50-sunscreen__t3__g2": {
     "id": "light-fluid-spf-50-sunscreen__t3__g2",
@@ -41374,7 +41289,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.948Z"
+    "scored_at": "2026-10-05T16:43:54.694Z"
   },
   "light-fluid-spf-50-sunscreen__t31__g2": {
     "id": "light-fluid-spf-50-sunscreen__t31__g2",
@@ -41505,7 +41420,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.960Z"
+    "scored_at": "2026-10-05T16:43:54.707Z"
   },
   "light-fluid-spf-50-sunscreen__t36__g2": {
     "id": "light-fluid-spf-50-sunscreen__t36__g2",
@@ -41636,7 +41551,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.973Z"
+    "scored_at": "2026-10-05T16:43:54.719Z"
   },
   "light-fluid-spf-50-sunscreen__t38__g2": {
     "id": "light-fluid-spf-50-sunscreen__t38__g2",
@@ -41767,7 +41682,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.985Z"
+    "scored_at": "2026-10-05T16:43:54.731Z"
   },
   "light-fluid-spf-50-sunscreen__t4__g2": {
     "id": "light-fluid-spf-50-sunscreen__t4__g2",
@@ -41898,7 +41813,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:16.997Z"
+    "scored_at": "2026-10-05T16:43:54.743Z"
   },
   "light-fluid-spf-50-sunscreen__t6__g2": {
     "id": "light-fluid-spf-50-sunscreen__t6__g2",
@@ -42026,7 +41941,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.010Z"
+    "scored_at": "2026-10-05T16:43:54.753Z"
   },
   "light-fluid-spf-50-sunscreen__t8__g2": {
     "id": "light-fluid-spf-50-sunscreen__t8__g2",
@@ -42157,7 +42072,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.023Z"
+    "scored_at": "2026-10-05T16:43:54.767Z"
   },
   "light-fluid-spf-50-sunscreen__t9__g2": {
     "id": "light-fluid-spf-50-sunscreen__t9__g2",
@@ -42288,7 +42203,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.035Z"
+    "scored_at": "2026-10-05T16:43:54.777Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t10__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t10__g2",
@@ -42419,7 +42334,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.047Z"
+    "scored_at": "2026-10-05T16:43:54.789Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t12__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t12__g2",
@@ -42430,12 +42345,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -42552,7 +42465,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.058Z"
+    "scored_at": "2026-10-05T16:43:54.799Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t14__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t14__g2",
@@ -42563,12 +42476,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -42682,7 +42593,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.071Z"
+    "scored_at": "2026-10-05T16:43:54.812Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t15__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t15__g2",
@@ -42813,7 +42724,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.082Z"
+    "scored_at": "2026-10-05T16:43:54.823Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t17__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t17__g2",
@@ -42947,7 +42858,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.098Z"
+    "scored_at": "2026-10-05T16:43:54.832Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t2__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t2__g2",
@@ -43078,7 +42989,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.110Z"
+    "scored_at": "2026-10-05T16:43:54.843Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t21__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t21__g2",
@@ -43206,7 +43117,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.121Z"
+    "scored_at": "2026-10-05T16:43:54.851Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t22__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t22__g2",
@@ -43337,7 +43248,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.131Z"
+    "scored_at": "2026-10-05T16:43:54.862Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t26__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t26__g2",
@@ -43468,7 +43379,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.146Z"
+    "scored_at": "2026-10-05T16:43:54.872Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t3__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t3__g2",
@@ -43599,7 +43510,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.161Z"
+    "scored_at": "2026-10-05T16:43:54.884Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t31__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t31__g2",
@@ -43730,7 +43641,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.173Z"
+    "scored_at": "2026-10-05T16:43:54.896Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t36__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t36__g2",
@@ -43861,7 +43772,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.184Z"
+    "scored_at": "2026-10-05T16:43:54.906Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t38__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t38__g2",
@@ -43992,7 +43903,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.196Z"
+    "scored_at": "2026-10-05T16:43:54.918Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t4__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t4__g2",
@@ -44123,7 +44034,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.208Z"
+    "scored_at": "2026-10-05T16:43:54.930Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t6__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t6__g2",
@@ -44251,7 +44162,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.222Z"
+    "scored_at": "2026-10-05T16:43:54.939Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t8__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t8__g2",
@@ -44382,7 +44293,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.240Z"
+    "scored_at": "2026-10-05T16:43:54.948Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t9__g2": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t9__g2",
@@ -44513,7 +44424,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.252Z"
+    "scored_at": "2026-10-05T16:43:54.957Z"
   },
   "spf-60-silymarin__t10__g2": {
     "id": "spf-60-silymarin__t10__g2",
@@ -44644,7 +44555,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.262Z"
+    "scored_at": "2026-10-05T16:43:54.965Z"
   },
   "spf-60-silymarin__t12__g2": {
     "id": "spf-60-silymarin__t12__g2",
@@ -44655,12 +44566,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -44777,7 +44686,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.273Z"
+    "scored_at": "2026-10-05T16:43:54.976Z"
   },
   "spf-60-silymarin__t14__g2": {
     "id": "spf-60-silymarin__t14__g2",
@@ -44788,12 +44697,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -44907,7 +44814,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.282Z"
+    "scored_at": "2026-10-05T16:43:54.985Z"
   },
   "spf-60-silymarin__t15__g2": {
     "id": "spf-60-silymarin__t15__g2",
@@ -45038,7 +44945,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.294Z"
+    "scored_at": "2026-10-05T16:43:54.994Z"
   },
   "spf-60-silymarin__t17__g2": {
     "id": "spf-60-silymarin__t17__g2",
@@ -45171,7 +45078,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.306Z"
+    "scored_at": "2026-10-05T16:43:55.002Z"
   },
   "spf-60-silymarin__t2__g2": {
     "id": "spf-60-silymarin__t2__g2",
@@ -45302,7 +45209,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.318Z"
+    "scored_at": "2026-10-05T16:43:55.012Z"
   },
   "spf-60-silymarin__t21__g2": {
     "id": "spf-60-silymarin__t21__g2",
@@ -45430,7 +45337,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.330Z"
+    "scored_at": "2026-10-05T16:43:55.021Z"
   },
   "spf-60-silymarin__t22__g2": {
     "id": "spf-60-silymarin__t22__g2",
@@ -45561,7 +45468,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.342Z"
+    "scored_at": "2026-10-05T16:43:55.033Z"
   },
   "spf-60-silymarin__t26__g2": {
     "id": "spf-60-silymarin__t26__g2",
@@ -45692,7 +45599,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.369Z"
+    "scored_at": "2026-10-05T16:43:55.043Z"
   },
   "spf-60-silymarin__t3__g2": {
     "id": "spf-60-silymarin__t3__g2",
@@ -45823,7 +45730,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.378Z"
+    "scored_at": "2026-10-05T16:43:55.052Z"
   },
   "spf-60-silymarin__t31__g2": {
     "id": "spf-60-silymarin__t31__g2",
@@ -45954,7 +45861,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.389Z"
+    "scored_at": "2026-10-05T16:43:55.060Z"
   },
   "spf-60-silymarin__t36__g2": {
     "id": "spf-60-silymarin__t36__g2",
@@ -46085,7 +45992,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.400Z"
+    "scored_at": "2026-10-05T16:43:55.073Z"
   },
   "spf-60-silymarin__t38__g2": {
     "id": "spf-60-silymarin__t38__g2",
@@ -46216,7 +46123,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.412Z"
+    "scored_at": "2026-10-05T16:43:55.084Z"
   },
   "spf-60-silymarin__t4__g2": {
     "id": "spf-60-silymarin__t4__g2",
@@ -46347,7 +46254,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.423Z"
+    "scored_at": "2026-10-05T16:43:55.094Z"
   },
   "spf-60-silymarin__t6__g2": {
     "id": "spf-60-silymarin__t6__g2",
@@ -46475,7 +46382,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.433Z"
+    "scored_at": "2026-10-05T16:43:55.106Z"
   },
   "spf-60-silymarin__t8__g2": {
     "id": "spf-60-silymarin__t8__g2",
@@ -46606,7 +46513,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.447Z"
+    "scored_at": "2026-10-05T16:43:55.116Z"
   },
   "spf-60-silymarin__t9__g2": {
     "id": "spf-60-silymarin__t9__g2",
@@ -46737,7 +46644,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.459Z"
+    "scored_at": "2026-10-05T16:43:55.127Z"
   },
   "vitamin-k-retinal-01-eye-cream__t10__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t10__g2",
@@ -46868,7 +46775,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.470Z"
+    "scored_at": "2026-10-05T16:43:55.134Z"
   },
   "vitamin-k-retinal-01-eye-cream__t12__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t12__g2",
@@ -46879,12 +46786,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -47001,7 +46906,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.482Z"
+    "scored_at": "2026-10-05T16:43:55.143Z"
   },
   "vitamin-k-retinal-01-eye-cream__t14__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t14__g2",
@@ -47012,12 +46917,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
-    "findings": [
-      "block: AI-01 \"\""
-    ],
+    "compliance": 98,
+    "verdict": "READY_FOR_REVIEW",
+    "verdict_label": "Ready for human review",
+    "findings": [],
     "reviewed_by": "AI judge (stand-in, same prompt)",
     "parts": {
       "alignment": [
@@ -47131,7 +47034,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.494Z"
+    "scored_at": "2026-10-05T16:43:55.192Z"
   },
   "vitamin-k-retinal-01-eye-cream__t15__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t15__g2",
@@ -47262,7 +47165,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.505Z"
+    "scored_at": "2026-10-05T16:43:55.202Z"
   },
   "vitamin-k-retinal-01-eye-cream__t17__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t17__g2",
@@ -47395,7 +47298,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.516Z"
+    "scored_at": "2026-10-05T16:43:55.215Z"
   },
   "vitamin-k-retinal-01-eye-cream__t2__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t2__g2",
@@ -47526,7 +47429,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.526Z"
+    "scored_at": "2026-10-05T16:43:55.224Z"
   },
   "vitamin-k-retinal-01-eye-cream__t21__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t21__g2",
@@ -47654,7 +47557,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.539Z"
+    "scored_at": "2026-10-05T16:43:55.231Z"
   },
   "vitamin-k-retinal-01-eye-cream__t22__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t22__g2",
@@ -47785,7 +47688,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.553Z"
+    "scored_at": "2026-10-05T16:43:55.242Z"
   },
   "vitamin-k-retinal-01-eye-cream__t26__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t26__g2",
@@ -47916,7 +47819,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.565Z"
+    "scored_at": "2026-10-05T16:43:55.252Z"
   },
   "vitamin-k-retinal-01-eye-cream__t3__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t3__g2",
@@ -48047,7 +47950,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.575Z"
+    "scored_at": "2026-10-05T16:43:55.262Z"
   },
   "vitamin-k-retinal-01-eye-cream__t31__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t31__g2",
@@ -48178,7 +48081,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.588Z"
+    "scored_at": "2026-10-05T16:43:55.273Z"
   },
   "vitamin-k-retinal-01-eye-cream__t36__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t36__g2",
@@ -48309,7 +48212,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.600Z"
+    "scored_at": "2026-10-05T16:43:55.282Z"
   },
   "vitamin-k-retinal-01-eye-cream__t38__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t38__g2",
@@ -48440,7 +48343,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.612Z"
+    "scored_at": "2026-10-05T16:43:55.290Z"
   },
   "vitamin-k-retinal-01-eye-cream__t4__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t4__g2",
@@ -48571,7 +48474,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.640Z"
+    "scored_at": "2026-10-05T16:43:55.297Z"
   },
   "vitamin-k-retinal-01-eye-cream__t6__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t6__g2",
@@ -48699,7 +48602,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.657Z"
+    "scored_at": "2026-10-05T16:43:55.307Z"
   },
   "vitamin-k-retinal-01-eye-cream__t8__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t8__g2",
@@ -48830,7 +48733,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.670Z"
+    "scored_at": "2026-10-05T16:43:55.315Z"
   },
   "vitamin-k-retinal-01-eye-cream__t9__g2": {
     "id": "vitamin-k-retinal-01-eye-cream__t9__g2",
@@ -48961,7 +48864,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.682Z"
+    "scored_at": "2026-10-05T16:43:55.323Z"
   },
   "marula-05-moisturizer__t10__marula": {
     "id": "marula-05-moisturizer__t10__marula",
@@ -49092,7 +48995,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.736Z"
+    "scored_at": "2026-10-05T16:43:55.350Z"
   },
   "marula-05-moisturizer__t12__marula": {
     "id": "marula-05-moisturizer__t12__marula",
@@ -49103,11 +49006,10 @@
     "alignment_band": "high",
     "win": 74,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 60,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The two frames are AI illustrations, not results.\""
     ],
     "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -49226,7 +49128,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.748Z"
+    "scored_at": "2026-10-05T16:43:55.361Z"
   },
   "marula-05-moisturizer__t14__marula": {
     "id": "marula-05-moisturizer__t14__marula",
@@ -49237,11 +49139,10 @@
     "alignment_band": "high",
     "win": 75,
     "win_band": "medium",
-    "compliance": 20,
-    "verdict": "BLOCKED",
-    "verdict_label": "Do not publish",
+    "compliance": 55,
+    "verdict": "NEEDS_CHANGES",
+    "verdict_label": "Fix before review",
     "findings": [
-      "block: AI-01 \"\"",
       "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
       "fix: CLM-07 \"Week 4\""
     ],
@@ -49358,7 +49259,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.761Z"
+    "scored_at": "2026-10-05T16:43:55.368Z"
   },
   "marula-05-moisturizer__t15__marula": {
     "id": "marula-05-moisturizer__t15__marula",
@@ -49489,7 +49390,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.775Z"
+    "scored_at": "2026-10-05T16:43:55.380Z"
   },
   "marula-05-moisturizer__t17__marula": {
     "id": "marula-05-moisturizer__t17__marula",
@@ -49621,7 +49522,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.790Z"
+    "scored_at": "2026-10-05T16:43:55.393Z"
   },
   "marula-05-moisturizer__t2__marula": {
     "id": "marula-05-moisturizer__t2__marula",
@@ -49752,7 +49653,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.803Z"
+    "scored_at": "2026-10-05T16:43:55.407Z"
   },
   "marula-05-moisturizer__t21__marula": {
     "id": "marula-05-moisturizer__t21__marula",
@@ -49880,7 +49781,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.818Z"
+    "scored_at": "2026-10-05T16:43:55.416Z"
   },
   "marula-05-moisturizer__t22__marula": {
     "id": "marula-05-moisturizer__t22__marula",
@@ -50011,7 +49912,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.833Z"
+    "scored_at": "2026-10-05T16:43:55.424Z"
   },
   "marula-05-moisturizer__t26__marula": {
     "id": "marula-05-moisturizer__t26__marula",
@@ -50142,7 +50043,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.846Z"
+    "scored_at": "2026-10-05T16:43:55.433Z"
   },
   "marula-05-moisturizer__t3__marula": {
     "id": "marula-05-moisturizer__t3__marula",
@@ -50273,7 +50174,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.857Z"
+    "scored_at": "2026-10-05T16:43:55.441Z"
   },
   "marula-05-moisturizer__t31__marula": {
     "id": "marula-05-moisturizer__t31__marula",
@@ -50404,7 +50305,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.869Z"
+    "scored_at": "2026-10-05T16:43:55.448Z"
   },
   "marula-05-moisturizer__t36__marula": {
     "id": "marula-05-moisturizer__t36__marula",
@@ -50535,7 +50436,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.879Z"
+    "scored_at": "2026-10-05T16:43:55.457Z"
   },
   "marula-05-moisturizer__t38__marula": {
     "id": "marula-05-moisturizer__t38__marula",
@@ -50666,7 +50567,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.891Z"
+    "scored_at": "2026-10-05T16:43:55.467Z"
   },
   "marula-05-moisturizer__t4__marula": {
     "id": "marula-05-moisturizer__t4__marula",
@@ -50797,7 +50698,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.901Z"
+    "scored_at": "2026-10-05T16:43:55.474Z"
   },
   "marula-05-moisturizer__t6__marula": {
     "id": "marula-05-moisturizer__t6__marula",
@@ -50925,7 +50826,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.911Z"
+    "scored_at": "2026-10-05T16:43:55.481Z"
   },
   "marula-05-moisturizer__t8__marula": {
     "id": "marula-05-moisturizer__t8__marula",
@@ -51056,7 +50957,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.923Z"
+    "scored_at": "2026-10-05T16:43:55.488Z"
   },
   "marula-05-moisturizer__t9__marula": {
     "id": "marula-05-moisturizer__t9__marula",
@@ -51187,7 +51088,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:17.947Z"
+    "scored_at": "2026-10-05T16:43:55.494Z"
   },
   "2-hyaluronic-acid__t24__proof": {
     "id": "2-hyaluronic-acid__t24__proof",
@@ -51318,7 +51219,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.076Z"
+    "scored_at": "2026-10-05T16:43:55.526Z"
   },
   "2-hyaluronic-acid__t25__proof": {
     "id": "2-hyaluronic-acid__t25__proof",
@@ -51449,7 +51350,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.089Z"
+    "scored_at": "2026-10-05T16:43:55.533Z"
   },
   "aha-25-pha-5-bha-2__t24__proof": {
     "id": "aha-25-pha-5-bha-2__t24__proof",
@@ -51580,7 +51481,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.101Z"
+    "scored_at": "2026-10-05T16:43:55.542Z"
   },
   "aha-25-pha-5-bha-2__t25__proof": {
     "id": "aha-25-pha-5-bha-2__t25__proof",
@@ -51711,7 +51612,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.114Z"
+    "scored_at": "2026-10-05T16:43:55.549Z"
   },
   "alpha-arbutin-2__t24__proof": {
     "id": "alpha-arbutin-2__t24__proof",
@@ -51842,7 +51743,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.123Z"
+    "scored_at": "2026-10-05T16:43:55.558Z"
   },
   "alpha-arbutin-2__t25__proof": {
     "id": "alpha-arbutin-2__t25__proof",
@@ -51973,7 +51874,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.138Z"
+    "scored_at": "2026-10-05T16:43:55.564Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t24__proof": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t24__proof",
@@ -52104,7 +52005,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.157Z"
+    "scored_at": "2026-10-05T16:43:55.568Z"
   },
   "glycolic-acid-08-exfoliating-liquid-toner__t25__proof": {
     "id": "glycolic-acid-08-exfoliating-liquid-toner__t25__proof",
@@ -52235,7 +52136,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.171Z"
+    "scored_at": "2026-10-05T16:43:55.575Z"
   },
   "hair-growth-actives-18__t24__proof": {
     "id": "hair-growth-actives-18__t24__proof",
@@ -52366,7 +52267,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.181Z"
+    "scored_at": "2026-10-05T16:43:55.581Z"
   },
   "hair-growth-actives-18__t25__proof": {
     "id": "hair-growth-actives-18__t25__proof",
@@ -52497,7 +52398,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.193Z"
+    "scored_at": "2026-10-05T16:43:55.590Z"
   },
   "light-fluid-spf-50-sunscreen__t24__proof": {
     "id": "light-fluid-spf-50-sunscreen__t24__proof",
@@ -52628,7 +52529,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.206Z"
+    "scored_at": "2026-10-05T16:43:55.595Z"
   },
   "light-fluid-spf-50-sunscreen__t25__proof": {
     "id": "light-fluid-spf-50-sunscreen__t25__proof",
@@ -52759,7 +52660,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.222Z"
+    "scored_at": "2026-10-05T16:43:55.599Z"
   },
   "marula-05-moisturizer__t24__proof": {
     "id": "marula-05-moisturizer__t24__proof",
@@ -52890,7 +52791,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.237Z"
+    "scored_at": "2026-10-05T16:43:55.606Z"
   },
   "marula-05-moisturizer__t25__proof": {
     "id": "marula-05-moisturizer__t25__proof",
@@ -53021,7 +52922,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.249Z"
+    "scored_at": "2026-10-05T16:43:55.614Z"
   },
   "multi-vitamin-spf-50__t24__proof": {
     "id": "multi-vitamin-spf-50__t24__proof",
@@ -53152,7 +53053,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.262Z"
+    "scored_at": "2026-10-05T16:43:55.621Z"
   },
   "multi-vitamin-spf-50__t25__proof": {
     "id": "multi-vitamin-spf-50__t25__proof",
@@ -53283,7 +53184,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.279Z"
+    "scored_at": "2026-10-05T16:43:55.628Z"
   },
   "niacinamide-10-with-matmarine__t24__proof": {
     "id": "niacinamide-10-with-matmarine__t24__proof",
@@ -53414,7 +53315,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.289Z"
+    "scored_at": "2026-10-05T16:43:55.637Z"
   },
   "niacinamide-10-with-matmarine__t25__proof": {
     "id": "niacinamide-10-with-matmarine__t25__proof",
@@ -53545,7 +53446,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.300Z"
+    "scored_at": "2026-10-05T16:43:55.644Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t24__proof": {
     "id": "niacinamide-5-hyaluronic-acid-1__t24__proof",
@@ -53676,7 +53577,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.309Z"
+    "scored_at": "2026-10-05T16:43:55.650Z"
   },
   "niacinamide-5-hyaluronic-acid-1__t25__proof": {
     "id": "niacinamide-5-hyaluronic-acid-1__t25__proof",
@@ -53807,7 +53708,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.323Z"
+    "scored_at": "2026-10-05T16:43:55.661Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t24__proof": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t24__proof",
@@ -53938,7 +53839,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.333Z"
+    "scored_at": "2026-10-05T16:43:55.667Z"
   },
   "nonapeptide-aha-06-underarm-roll-on__t25__proof": {
     "id": "nonapeptide-aha-06-underarm-roll-on__t25__proof",
@@ -54071,7 +53972,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.344Z"
+    "scored_at": "2026-10-05T16:43:55.676Z"
   },
   "oat-extract-06-gentle-cleanser__t24__proof": {
     "id": "oat-extract-06-gentle-cleanser__t24__proof",
@@ -54202,7 +54103,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.355Z"
+    "scored_at": "2026-10-05T16:43:55.681Z"
   },
   "oat-extract-06-gentle-cleanser__t25__proof": {
     "id": "oat-extract-06-gentle-cleanser__t25__proof",
@@ -54333,7 +54234,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.370Z"
+    "scored_at": "2026-10-05T16:43:55.687Z"
   },
   "pha-3-biotic-toner__t24__proof": {
     "id": "pha-3-biotic-toner__t24__proof",
@@ -54464,7 +54365,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.381Z"
+    "scored_at": "2026-10-05T16:43:55.693Z"
   },
   "pha-3-biotic-toner__t25__proof": {
     "id": "pha-3-biotic-toner__t25__proof",
@@ -54595,7 +54496,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.392Z"
+    "scored_at": "2026-10-05T16:43:55.698Z"
   },
   "retinol-0-3-q10__t24__proof": {
     "id": "retinol-0-3-q10__t24__proof",
@@ -54726,7 +54627,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.402Z"
+    "scored_at": "2026-10-05T16:43:55.704Z"
   },
   "retinol-0-3-q10__t25__proof": {
     "id": "retinol-0-3-q10__t25__proof",
@@ -54857,7 +54758,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.413Z"
+    "scored_at": "2026-10-05T16:43:55.710Z"
   },
   "salicylic-acid-2__t24__proof": {
     "id": "salicylic-acid-2__t24__proof",
@@ -54988,7 +54889,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.424Z"
+    "scored_at": "2026-10-05T16:43:55.714Z"
   },
   "salicylic-acid-2__t25__proof": {
     "id": "salicylic-acid-2__t25__proof",
@@ -55119,7 +55020,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.438Z"
+    "scored_at": "2026-10-05T16:43:55.720Z"
   },
   "salicylic-lha-2-cleanser__t24__proof": {
     "id": "salicylic-lha-2-cleanser__t24__proof",
@@ -55250,7 +55151,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.449Z"
+    "scored_at": "2026-10-05T16:43:55.725Z"
   },
   "salicylic-lha-2-cleanser__t25__proof": {
     "id": "salicylic-lha-2-cleanser__t25__proof",
@@ -55381,7 +55282,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.462Z"
+    "scored_at": "2026-10-05T16:43:55.730Z"
   },
   "spf-60-silymarin__t24__proof": {
     "id": "spf-60-silymarin__t24__proof",
@@ -55512,7 +55413,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.471Z"
+    "scored_at": "2026-10-05T16:43:55.735Z"
   },
   "spf-60-silymarin__t25__proof": {
     "id": "spf-60-silymarin__t25__proof",
@@ -55643,7 +55544,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.482Z"
+    "scored_at": "2026-10-05T16:43:55.741Z"
   },
   "vitamin-b5-10-moisturizer__t24__proof": {
     "id": "vitamin-b5-10-moisturizer__t24__proof",
@@ -55774,7 +55675,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.493Z"
+    "scored_at": "2026-10-05T16:43:55.746Z"
   },
   "vitamin-b5-10-moisturizer__t25__proof": {
     "id": "vitamin-b5-10-moisturizer__t25__proof",
@@ -55905,7 +55806,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.506Z"
+    "scored_at": "2026-10-05T16:43:55.751Z"
   },
   "vitamin-c-e-ferulic-16__t24__proof": {
     "id": "vitamin-c-e-ferulic-16__t24__proof",
@@ -56036,7 +55937,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.516Z"
+    "scored_at": "2026-10-05T16:43:55.757Z"
   },
   "vitamin-c-e-ferulic-16__t25__proof": {
     "id": "vitamin-c-e-ferulic-16__t25__proof",
@@ -56167,7 +56068,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.526Z"
+    "scored_at": "2026-10-05T16:43:55.761Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t24__proof": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t24__proof",
@@ -56298,7 +56199,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.536Z"
+    "scored_at": "2026-10-05T16:43:55.769Z"
   },
   "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25__proof": {
     "id": "vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25__proof",
@@ -56429,7 +56330,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.551Z"
+    "scored_at": "2026-10-05T16:43:55.779Z"
   },
   "vitamin-k-retinal-01-eye-cream__t24__proof": {
     "id": "vitamin-k-retinal-01-eye-cream__t24__proof",
@@ -56560,7 +56461,7 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.567Z"
+    "scored_at": "2026-10-05T16:43:55.785Z"
   },
   "vitamin-k-retinal-01-eye-cream__t25__proof": {
     "id": "vitamin-k-retinal-01-eye-cream__t25__proof",
@@ -56691,6 +56592,6 @@
         }
       ]
     },
-    "scored_at": "2026-10-05T16:34:18.577Z"
+    "scored_at": "2026-10-05T16:43:55.795Z"
   }
 }

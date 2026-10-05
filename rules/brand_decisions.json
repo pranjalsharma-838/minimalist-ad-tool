@@ -75,6 +75,21 @@
                                     },
                           "effect":  "advisory",
                           "note":  "Pregnancy/lactation safety as stated on the listing accepted by the brand (DEC-06, 2026-10-05)."
+                      },
+                      {
+                          "id":  "DEC-07",
+                          "date":  "2026-10-05",
+                          "question":  "Should AI-made images (people, result frames, before/after, progress) block an ad?",
+                          "answer":  "No. Make them, show a clear warning and keep the Severe risk rating.",
+                          "scope":  "Every AI-01 finding: AI result images and AI people. The AI label is still drawn on every such image, and Severe-risk ads still need real, consented photos before export.",
+                          "match":  {
+                                        "rules":  [
+                                                      "AI-01"
+                                                  ],
+                                        "layer":  "model"
+                                    },
+                          "effect":  "advisory",
+                          "note":  "AI-made image: shown with a warning and rated Severe (DEC-07, 2026-10-05). India\u0027s ASCI rule on AI content (in force from about late December 2026) prohibits AI result images even with a label, so replace with real, consented photos before use."
                       }
                   ],
     "policy_notes":  [

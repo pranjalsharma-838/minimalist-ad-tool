@@ -7,11 +7,10 @@
   "alignment_band": "high",
   "win": 73,
   "win_band": "medium",
-  "compliance": 20,
-  "verdict": "BLOCKED",
-  "verdict_label": "Do not publish",
+  "compliance": 60,
+  "verdict": "NEEDS_CHANGES",
+  "verdict_label": "Fix before review",
   "findings": [
-    "block: AI-01 \"\"",
     "fix: CLM-15 \"Week 4\""
   ],
   "reviewed_by": "AI judge (stand-in, same prompt)",
@@ -127,5 +126,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T16:34:12.660Z"
+  "scored_at": "2026-10-05T16:43:52.010Z"
 }

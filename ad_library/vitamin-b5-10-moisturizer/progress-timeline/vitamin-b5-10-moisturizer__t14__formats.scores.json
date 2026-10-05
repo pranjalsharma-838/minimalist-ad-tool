@@ -7,11 +7,10 @@
   "alignment_band": "high",
   "win": 75,
   "win_band": "medium",
-  "compliance": 20,
-  "verdict": "BLOCKED",
-  "verdict_label": "Do not publish",
+  "compliance": 55,
+  "verdict": "NEEDS_CHANGES",
+  "verdict_label": "Fix before review",
   "findings": [
-    "block: AI-01 \"\"",
     "fix: CLM-15 \"The frames are AI illustrations of a routine, not study results.\"",
     "fix: CLM-07 \"Week 4\""
   ],
@@ -128,5 +127,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T16:34:14.659Z"
+  "scored_at": "2026-10-05T16:43:52.931Z"
 }

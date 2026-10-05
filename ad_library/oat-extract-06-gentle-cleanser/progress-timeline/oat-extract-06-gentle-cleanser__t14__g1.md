@@ -50,6 +50,5 @@ Format #14 Progress / timeline: REMAKE: subtle, the real pack in every frame (pa
 
 - Minimalist alignment: **95** (high)
 - Win probability: **73** (medium; proxy: still running 30+ days)
-- Compliance: **20**, Do not publish
+- Compliance: **96**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)
-- Open findings: block: AI-01 ""
