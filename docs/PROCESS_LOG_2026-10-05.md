@@ -47,3 +47,7 @@ Kojic + Mandelic Body Lotion (never used before): page read, audience found ("Pe
 ## Tests
 
 141 tests, all passing (`logs/tests_2026-10-05.txt`).
+
+## Late change: OpenAI first, ChatGPT as backup
+
+With an OpenAI key the app server makes the images (up to 4 at once, 2 attempts each) and writes a heartbeat; while it is fresh the ChatGPT worker only takes hand-overs. A request that fails twice on the API is handed to the ChatGPT window automatically (if one is running). Checked by `tests/image_routes.test.js` (142 tests pass) and the smoke check (16/16).

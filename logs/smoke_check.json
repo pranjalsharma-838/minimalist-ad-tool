@@ -1,11 +1,11 @@
 {
-  "at": "2026-10-05T16:46:47.541Z",
+  "at": "2026-10-05T17:21:35.264Z",
   "product": "alpha-arbutin-2",
   "results": [
     {
       "name": "status",
       "ok": true,
-      "ms": 81,
+      "ms": 114,
       "detail": {
         "openai": false,
         "studio": true,
@@ -16,19 +16,19 @@
     {
       "name": "page loads",
       "ok": true,
-      "ms": 6,
+      "ms": 10,
       "detail": "ok"
     },
     {
       "name": "extract a product page",
       "ok": true,
-      "ms": 3024,
+      "ms": 4472,
       "detail": "49 facts"
     },
     {
       "name": "build new ads (generate)",
       "ok": true,
-      "ms": 258,
+      "ms": 905,
       "detail": {
         "formats": 20,
         "ready": 15,
@@ -50,13 +50,13 @@
     {
       "name": "rebuild after an edit (formats)",
       "ok": true,
-      "ms": 94,
+      "ms": 173,
       "detail": "20 formats"
     },
     {
       "name": "re-check one ad (rescore)",
       "ok": true,
-      "ms": 7,
+      "ms": 19,
       "detail": {
         "format": "offer",
         "verdict": "LIMITED_CHECK",
@@ -73,7 +73,7 @@
     {
       "name": "score any ad (checker)",
       "ok": true,
-      "ms": 14,
+      "ms": 17,
       "detail": {
         "verdict": "BLOCKED",
         "rules": [
@@ -87,13 +87,13 @@
     {
       "name": "library: this product",
       "ok": true,
-      "ms": 55,
+      "ms": 46,
       "detail": "118350 bytes"
     },
     {
       "name": "library: all final ads",
       "ok": true,
-      "ms": 1069,
+      "ms": 1483,
       "detail": {
         "ads": 433,
         "blocked": 1,
@@ -103,37 +103,37 @@
     {
       "name": "library image served",
       "ok": true,
-      "ms": 1035,
+      "ms": 610,
       "detail": "/library/2-hyaluronic-acid/application-macro/2-hyaluronic-acid__t9__g2.png"
     },
     {
       "name": "image library search",
       "ok": true,
-      "ms": 138,
+      "ms": 486,
       "detail": "51 images"
     },
     {
       "name": "product image (pack)",
       "ok": true,
-      "ms": 4,
+      "ms": 9,
       "detail": "image/png"
     },
     {
       "name": "image requests for this product",
       "ok": true,
-      "ms": 11,
-      "detail": "5 requests"
+      "ms": 21,
+      "detail": "10 requests"
     },
     {
       "name": "gallery file",
       "ok": true,
-      "ms": 4,
+      "ms": 9,
       "detail": "433 cards"
     },
     {
       "name": "path traversal refused",
       "ok": true,
-      "ms": 3,
+      "ms": 5,
       "detail": 404
     }
   ]

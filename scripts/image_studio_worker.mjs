@@ -18,6 +18,7 @@ import { launch, sleep } from "../lib/cdp.js";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const Q = () => (process.env.STUDIO_QUEUE_DIR ? path.resolve(process.env.STUDIO_QUEUE_DIR) : path.join(ROOT, "image_requests"));
+export const queuePath = Q;
 const DRY = () => process.env.STUDIO_DRY === "1";
 const PROFILE = process.env.STUDIO_PROFILE || path.join(process.env.LOCALAPPDATA || path.join(os.homedir(), ".config"), "MinimalistImageStudio");
 const POLL_MS = Number(process.env.STUDIO_POLL_MS || 10000);
@@ -51,7 +52,11 @@ export function setRequest(id, patch) {
 const withTimeout = (p, ms, what) => Promise.race([p, new Promise((_, rej) => setTimeout(() => rej(new Error(`${what} timed out after ${Math.round(ms / 1000)}s`)), ms).unref())]);
 
 // ---------- the queue ----------
-export function listQueued() {
+// OpenAI is the main route when a key is set (user, 2026-10-05): the app server writes api.heartbeat while it makes
+// images through the OpenAI API. While that is fresh, this ChatGPT worker only takes requests handed to it as the
+// backup (route "chatgpt": the API failed twice on them).
+export const apiActive = () => { try { return Date.now() - fs.statSync(path.join(Q(), "api.heartbeat")).mtimeMs < 30000; } catch { return false; } };
+export function listQueued({ forChatGPT = false } = {}) {
   const dir = Q();
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir)
@@ -61,6 +66,8 @@ export function listQueued() {
     // A request that waits for the product render ("after") is held until that render has a result (user, 2026-10-05:
     // "after the product image is rendered correctly we send the request for rest of the images").
     .filter((r) => !r.after || !fs.existsSync(path.join(dir, `${r.after}.json`)) || fs.existsSync(path.join(dir, `${r.after}.result.json`)))
+    // with the OpenAI route live, ChatGPT only takes the hand-overs; the API route never takes them back
+    .filter((r) => (forChatGPT ? !apiActive() || r.route === "chatgpt" : r.route !== "chatgpt"))
     // Newest first: the Build the user is looking at right now gets its images before older, abandoned builds.
     .sort((a, b) => String(b.requested_at).localeCompare(String(a.requested_at)));
 }
@@ -176,6 +183,15 @@ function failRequest(req, why) {
 }
 
 // A request gets two attempts; between them the browser tab (or window) is restarted. Never throws.
+// The API failed twice on this request: hand it to the ChatGPT window, if one is running (its heartbeat is fresh).
+export function handToChatGPT(req) {
+  let alive = false; try { alive = Date.now() - fs.statSync(path.join(Q(), "worker.heartbeat")).mtimeMs < 90000; } catch { /* no worker */ }
+  if (!alive || req.route === "chatgpt") return false;
+  try { fs.rmSync(path.join(Q(), `${req.id}.result.json`), { force: true }); } catch { /* none */ }
+  setRequest(req.id, { status: "queued", route: "chatgpt", worker: undefined, progress: "OpenAI failed twice; handed to the ChatGPT window" });
+  log(`[${req.id}] handed to the ChatGPT window (backup)`);
+  return true;
+}
 export async function handleRequest(req, studio) {
   let last = "";
   for (let attempt = 1; attempt <= 2; attempt++) {
@@ -393,7 +409,7 @@ async function main() {
     try {
       let i;
       while ((i = slot()) >= 0) {
-        const next = listQueued().find((r) => !taken.has(r.id));
+        const next = listQueued({ forChatGPT: true }).find((r) => !taken.has(r.id));
         if (!next) break;
         if (!tabs[i]) { tabs[i] = createStudio({ attachPort: () => studio.port }); try { await withTimeout(tabs[i].open(), 60000, "opening a ChatGPT tab"); } catch (e) { log(`could not open tab ${i + 1}: ${e.message}`); tabs[i] = null; break; } }
         if (!DRY() && !(await withTimeout(tabs[i].ready(), 45000, "checking the ChatGPT tab").catch(() => false))) { if (Date.now() - lastSignInNote > 60000) { log(SIGN_IN_MSG); lastSignInNote = Date.now(); } break; }

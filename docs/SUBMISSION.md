@@ -36,6 +36,7 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 
 - API keys go in `.env` or the app's settings box. The box keeps them in the server's memory only (they are not written to disk), and a key can only be set from the computer the app runs on.
 - With a Claude key, the ad's copy and the product-page facts go to Anthropic. With an OpenAI key, the image prompt and the real pack photo go to OpenAI. Nothing else leaves the machine.
+- **Images: OpenAI first, ChatGPT as backup.** With an OpenAI key, images are made through the OpenAI API (up to 4 at once, 2 attempts each) and the ChatGPT window stays idle; a request that still fails is handed to the ChatGPT window automatically, if one is running.
 - Without keys the app still runs: copy is taken word for word from the page, only the rules run, and images come from the ChatGPT window you sign into yourself (`npm run studio`).
 ## The deliverables
 

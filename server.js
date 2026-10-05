@@ -20,6 +20,8 @@
 //   GET  /api/status                                           -> which layers are active
 //   POST /api/key              {key} | {clear:true}            -> sets the Claude API key for this session (memory only)
 import http from "node:http";
+import fs2 from "node:fs";
+import path2 from "node:path";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -222,13 +224,18 @@ const server = http.createServer(async (req, res) => {
 // Image requests: made here through the OpenAI Images API whenever an OpenAI key is set (checked each time, so a key pasted later works).
 let apiBusy = false;
 setInterval(async () => {
-  if (apiBusy || !process.env.OPENAI_API_KEY) return;
+  if (!process.env.OPENAI_API_KEY) return;
+  // heartbeat first, also while a batch is still running, so the ChatGPT worker keeps to its backup role
+  try { const W0 = await import("./scripts/image_studio_worker.mjs"); fs2.mkdirSync(W0.queuePath(), { recursive: true }); fs2.writeFileSync(path2.join(W0.queuePath(), "api.heartbeat"), new Date().toISOString()); } catch { /* never stop */ }
+  if (apiBusy) return;
   apiBusy = true;
   try {
     const W = await import("./scripts/image_studio_worker.mjs"), { createApiStudio } = await import("./lib/image_api.js");
     // Up to 4 images at once (user, 2026-10-05: "all shoot parallely"); the product render still comes first, because
     // the queue holds a build's other images until it has a result.
-    await Promise.all(W.listQueued().slice(0, 4).map((r) => W.handleRequest(r, createApiStudio())));
+    // OpenAI is the main route: mark it live for the ChatGPT worker, make up to 4 images at once (each gets 2 attempts),
+    // and hand any request that still fails to the ChatGPT window as the backup.
+    await Promise.all(W.listQueued().slice(0, 4).map(async (r) => { if ((await W.handleRequest(r, createApiStudio())) === "failed") W.handToChatGPT(r); }));
   } catch (e) { console.log(`image requests: ${e.message.replace(/sk-[A-Za-z0-9_-]+/g, "[key]")}`); }
   apiBusy = false;
 }, 5000).unref();
