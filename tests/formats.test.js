@@ -120,7 +120,7 @@ test("people and before/after photos carry the AI mark and Severe risk, like the
   assert.equal(ba.spec.aiLabel, true);
   assert.deepEqual(ba.layout, []);
   assert.equal(buildFormat("before_after", copy, { ...s, url: "https://beminimalist.co/products/no-such-product" }).meta.status, "needs_input", "no AI frames and no upload: still asks for the photos");
-  assert.equal(buildFormat("timeline", copy, s).notFit.length > 10, true, "no AI progress frames for this product: not offered, with a reason");
+  assert.equal(buildFormat("timeline", copy, { ...s, url: "https://beminimalist.co/products/no-such-product" }).notFit.length > 10, true, "no AI progress frames for this product: not offered, with a reason");
 });
 
 // User, 2026-10-05: ads made in the app use our AI images, without asking for uploads.
