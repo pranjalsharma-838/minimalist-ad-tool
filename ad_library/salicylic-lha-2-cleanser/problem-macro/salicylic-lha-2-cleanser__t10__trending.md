@@ -49,7 +49,7 @@ Trending format (#10 Problem macro): 2 brands. Both references rely on an extrem
 
 ## Scores
 
-- Minimalist alignment: **95** (high)
+- Minimalist alignment: **99** (high)
 - Win probability: **67** (low; proxy: still running 30+ days)
 - Compliance: **98**, Ready for human review
 - Reviewed by: AI judge (stand-in, same prompt)

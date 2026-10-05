@@ -1,5 +1,5 @@
 {
-    "version":  "2026-10-04",
+    "version":  "2026-10-05",
     "about":  "Answers from the brand and legal team to the rulebook\u0027s open questions. lib/decisions.js applies each one in code and names it on the finding. A decided finding stays on the report as advisory; nothing is deleted. The rules themselves (brand_rules.json) are unchanged, so a decision can be reversed by deleting its entry.",
     "decisions":  [
                       {
@@ -59,6 +59,22 @@
                           "answer":  "Low (user decision).",
                           "scope":  "Texture shots made by ChatGPT from the label-verified pack: the pack is unchanged and checked word by word; only the swatch is AI. Risk Low; the small AI-generated - illustrative mark stays for transparency. AI people, hands, skin or result images stay Severe.",
                           "effect":  "none"
+                      },
+                      {
+                          "id":  "DEC-06",
+                          "date":  "2026-10-05",
+                          "question":  "Can a pregnancy / lactation safety line that the product page itself states (e.g. \"Pregnancy/Lactation: Safe\") appear on an ad?",
+                          "answer":  "Yes.",
+                          "scope":  "Pregnancy and lactation safety wording as stated on the product listing. Baby / infant safety and age claims are not covered.",
+                          "match":  {
+                                        "rules":  [
+                                                      "CLM-17"
+                                                  ],
+                                        "span":  "\\b(pregnan\\w*|lactat\\w*|breast-?feeding)\\b",
+                                        "unless":  "\\b(bab(y|ies)|infant|newborn|child\\w*|kids?)\\b"
+                                    },
+                          "effect":  "advisory",
+                          "note":  "Pregnancy/lactation safety as stated on the listing accepted by the brand (DEC-06, 2026-10-05)."
                       }
                   ],
     "policy_notes":  [

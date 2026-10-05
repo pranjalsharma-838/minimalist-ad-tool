@@ -61,7 +61,8 @@ async function handleApi(req, res, url) {
   const q = (k) => url.searchParams.get(k) || "";
   if (url.pathname === "/api/status") {
     const { judgeAvailable } = await lazy("./lib/judge.js");
-    return send(res, 200, { openai: Boolean(process.env.OPENAI_API_KEY), llm: judgeAvailable(), rulesVersion: (await lazy("./lib/rules.js")).RULES.version });
+    const { studioAvailable } = await lazy("./lib/library.js");
+    return send(res, 200, { openai: Boolean(process.env.OPENAI_API_KEY), studio: studioAvailable(), llm: judgeAvailable(), rulesVersion: (await lazy("./lib/rules.js")).RULES.version });
   }
   if (req.method === "GET") {
     if (url.pathname === "/api/image") {

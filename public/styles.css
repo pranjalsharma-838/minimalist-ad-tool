@@ -287,3 +287,9 @@ dialog.settings { padding: 24px 28px; min-width: min(420px, 90vw); }
 
 /* ads waiting for their new image are not shown at all (no placeholder tiles) */
 #strip .thumb[hidden] { display: none !important; }
+
+/* loading status for ads still being made */
+.loading-list { list-style: none; padding: 0; margin: 6px 0 0; display: grid; gap: 4px; font-size: 13px; }
+.loading-list li { display: flex; align-items: center; gap: 8px; }
+.loading-list .spin { width: 12px; height: 12px; border: 2px solid #ccc; border-top-color: #111; border-radius: 50%; animation: spin 0.9s linear infinite; flex: none; }
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -3,7 +3,7 @@
   "run": "2026-10-04-trending",
   "handle": "salicylic-lha-2-cleanser",
   "layout": "hero",
-  "alignment": 95,
+  "alignment": 99,
   "alignment_band": "high",
   "win": 67,
   "win_band": "low",
@@ -16,8 +16,8 @@
     "alignment": [
       {
         "name": "tone & language rules",
-        "score": 85,
-        "why": "1 claim(s) that contradict the brand's stated philosophy: CLM-03 advisory \"Hide Nothing.\" (−15 each; their legal weight is in compliance)."
+        "score": 100,
+        "why": "No tone or language rule hits (TON-*, LNG-*) and nothing against the brand's stated philosophy. Other policy findings count in compliance, not here."
       },
       {
         "name": "Meta voice match",
@@ -127,5 +127,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T12:17:25.953Z"
+  "scored_at": "2026-10-05T16:34:13.796Z"
 }

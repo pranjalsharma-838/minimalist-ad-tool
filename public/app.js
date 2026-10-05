@@ -429,7 +429,7 @@ function setSelectCounts(sel, counts) {
 const WARN_WHY = {
   "AI-01": "AI-made result image: banned by India's ASCI rule on AI content, even with a label. Needs real, consented photos.",
   "CLM-12": "Comparison: attach the proof behind it (what was compared, how, source) before use.",
-  "CLM-21": "Customer quote: show it as one person's experience ('results vary').",
+  "CLM-21": "Customer quote with their name: customer consent needed to show the name.",
   "CLM-24": "Body-function wording: describe the visible result instead.",
   "CLM-01": "Lab result worded like a medical claim: needs legal sign-off.",
   "CLM-19": "SPF figure differs from the pack: use the labelled SPF.",
@@ -750,6 +750,14 @@ function updatePendingNote() {
   if (!note) { note = document.createElement("p"); note.id = "pending-note"; note.className = "hint"; $("#strip").after(note); }
   const making = formats.filter((f) => f.pending && !["failed", "unavailable"].includes(f.pending.state)).length;
   const forRender = formats.some((f) => f.pending && /product render/.test(f.pending.text || ""));
+  // A loading status for every ad still being made (user, 2026-10-05): its name and where its image is (queued, drawing,
+  // label check round n of 3). No empty tile is shown; each ad appears in the grid when ready.
+  const rows = formats.filter((f) => f.pending && !["failed", "unavailable"].includes(f.pending.state)).map((f) => `<li><span class="spin"></span><b>${esc(f.label)}</b> <span class="hint">${esc(f.pending.progress || (f.pending.text || "").replace(/…$/, "") || "Queued")}</span></li>`);
+  // Nothing can make images right now (no OpenAI key, no ChatGPT window running): ask for the keys instead of waiting.
+  const noStudio = formats.some((f) => f.pending?.state === "no_studio");
+  if (noStudio) { note.innerHTML = `<div class="warnbox fix"><b>${making} ads need new images, and nothing is set up to make them.</b> Add your OpenAI API key (images) and your Claude API key (copy and the AI judge), or run <code>npm run studio</code> and sign in to ChatGPT. <button type="button" class="ghost" id="ask-keys">Add API keys</button></div>`; $("#ask-keys").onclick = () => $("#settings").showModal(); return; }
+  note.innerHTML = !making ? "" : `<p>${esc(forRender ? `Making the label-checked product render first (ChatGPT, checked against the real pack, up to 3 tries; 1–3 minutes). ${making} ads appear here once it passes.` : `${making} more ad${making > 1 ? "s are" : " is"} being made, up to 3 at a time. Each appears here when its image is ready.`)}</p><ul class="loading-list">${rows.join("")}</ul>`;
+  return;
   note.textContent = !making ? "" : forRender ? `Making the label-checked product render first (ChatGPT, checked against the real pack, up to 3 tries; 1–3 minutes). ${making} ads appear here once it passes.` : `${making} more ad${making > 1 ? "s are" : " is"} being made: each appears here when its new image is ready (about a minute each).`;
 }
 
@@ -958,8 +966,8 @@ function fillEditor(c) {
 
 // One honest status line: ready / still being made / needing typed input are three different things.
 function progressLine() {
-  const ready = formats.filter((f) => f.status === "ready").length, making = formats.filter((f) => f.pending).length, input = formats.filter((f) => !f.pending && f.status !== "ready").length;
-  $("#gen-progress").textContent = [`${ready} ready`, making ? `${making} being made` : "", input ? `${input} need input` : ""].filter(Boolean).join(", ") + `.${llm ? "" : " Rules-only check (add a Claude API key for the AI judge)."}`;
+  const ready = formats.filter((f) => f.status === "ready").length, waitKeys = formats.filter((f) => f.pending?.state === "no_studio").length, making = formats.filter((f) => f.pending).length - waitKeys, input = formats.filter((f) => !f.pending && f.status !== "ready").length;
+  $("#gen-progress").textContent = [`${ready} ready`, making ? `${making} being made` : "", waitKeys ? `${waitKeys} waiting for an API key` : "", input ? `${input} need input` : ""].filter(Boolean).join(", ") + `.${llm ? "" : " Rules-only check (add a Claude API key for the AI judge)."}`;
   // Nothing ready yet: no big preview or scores for an ad that can't be seen (no placeholder), just the waiting line.
   document.querySelector("#gen-result .result")?.classList.toggle("hidden", !ready);
   if (ready && fmtOf(selected)?.pending) select(formats.find((f) => f.status === "ready").id);
@@ -1012,7 +1020,24 @@ function pollImages() {
 }
 
 $("#settings-btn").onclick = () => $("#settings").showModal();
+// Keys are required to build (user, 2026-10-05: "if api keys not entered throw an error and ask for keys"): a Claude key
+// for the copy and the AI judge, and an OpenAI key for images (a signed-in ChatGPT window, npm run studio, also makes
+// images). Missing keys stop the build with an error and open the key box. "Continue without" is an explicit choice.
+let keysWaived = false;
+async function missingKeys() {
+  const s = await api("/api/status").catch(() => ({}));
+  showStatus(s);
+  return [!s.llm ? "Claude API key (writes the copy, runs the AI judge)" : "", !s.openai && !s.studio ? "OpenAI API key (makes the images)" : ""].filter(Boolean);
+}
 $("#generate").onclick = async () => {
+  const miss = keysWaived ? [] : await missingKeys();
+  if (miss.length) {
+    $("#extract-msg").innerHTML = `<div class="warnbox blocked"><b>Can't build yet: API key${miss.length > 1 ? "s" : ""} missing.</b> ${miss.map(esc).join("; ")}. <button type="button" class="ghost" id="ask-keys2">Add API keys</button> <a href="#" id="waive-keys">Continue without them</a> <span class="hint">(copy word for word from the page, rules-only check${miss.some((m) => /OpenAI/.test(m)) ? ", no new images" : ""})</span></div>`;
+    $("#ask-keys2").onclick = () => $("#settings").showModal();
+    $("#waive-keys").onclick = (e) => { e.preventDefault(); keysWaived = true; $("#generate").click(); };
+    $("#settings").showModal();
+    return;
+  }
   const t0 = performance.now();
   gen++;
   inputs = {}; uploads = {}; aiValues = {}; selected = ""; renderSeen = false;
