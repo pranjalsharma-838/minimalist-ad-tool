@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -50,76 +50,18 @@
       </form>
       <div id="extract-msg" class="msg"></div>
 
-      <!-- EXISTING: the product's ads already in the library (shown first, nothing is generated) -->
-      <section id="library" class="library hidden" aria-label="Existing ads">
-        <div class="sechead">
-          <h2><span class="tag existing">Existing</span> Ads already in the library <span id="lib-count" class="hint"></span></h2>
-          <fieldset class="modes" id="lib-mode"><legend class="sr">Which ads</legend>
-            <label class="fchip"><input type="radio" name="libmode" value="p" /> This product</label>
-            <label class="fchip"><input type="radio" name="libmode" value="all" /> All ads</label>
-          </fieldset>
+      <section id="gen-controls" class="newbox hidden" aria-label="Build new ads">
+        <div class="row buildrow">
+          <button id="generate" class="primary big">Build new ads</button>
+          <label class="inline small">Copy
+            <select id="mode">
+              <option value="model">Model-written, cited to facts</option>
+              <option value="verbatim">Word for word from the page (no model)</option>
+            </select>
+          </label>
         </div>
-        <form id="lib-filters" class="filters" autocomplete="off" aria-label="Filter the existing ads">
-          <div class="frow">
-            <label class="fgrow">Search<input id="f-q" type="search" placeholder="Headline, caption, format or product" /></label>
-            <label id="f-product-wrap">Product<select id="f-product"><option value="">All products</option></select></label>
-            <label>Format<select id="f-fmt"><option value="">All formats</option></select></label>
-            <label>Sort by<select id="f-sort"></select></label>
-          </div>
-          <div class="frow">
-            <fieldset class="fset" id="f-verdict"><legend>Verdict</legend></fieldset>
-            <fieldset class="fset" id="f-risk"><legend>Risk</legend></fieldset>
-            <fieldset class="fset" id="f-size"><legend>Size available (has every ticked size)</legend></fieldset>
-          </div>
-          <div class="frow">
-            <label>Exportable<select id="f-exp"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></label>
-            <label>AI people<select id="f-ai"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></label>
-            <label class="slider">Minimum alignment score: <output id="f-align-out" for="f-align">any</output><input id="f-align" type="range" min="0" max="100" step="5" value="0" /></label>
-            <label class="slider">Minimum win score: <output id="f-win-out" for="f-win">any</output><input id="f-win" type="range" min="0" max="100" step="5" value="0" /></label>
-          </div>
-          <div class="fcount"><span id="lib-shown" class="count" role="status" aria-live="polite"></span><button type="button" id="f-clear" class="ghost">Clear filters</button></div>
-        </form>
-        <div id="lib-body"></div>
+        <p class="hint">Builds every format that fits this product from the product page, the captured offers and reviews, and the real pack photo. New ads appear below, above the existing library.</p>
       </section>
-
-      <!-- This product's images (real, cut-outs, verified renders, requests); the full searchable list is the Image library tab -->
-      <details id="prod-images" class="library hidden" aria-label="Images for this product">
-        <summary><b>Images for this product</b> <span id="pi-count" class="hint"></span></summary>
-        <div id="pi-body" class="img-grid"></div>
-        <p class="row"><button type="button" id="pi-open" class="ghost">Open in the Image library</button></p>
-      </details>
-
-      <details id="facts" class="facts hidden">
-        <summary>Product facts the generator may use</summary>
-        <div id="facts-body"></div>
-      </details>
-
-      <section id="gen-controls" class="newbox hidden" aria-label="Make new ads">
-        <div class="sechead"><h2><span class="tag new">New</span> Make new ads</h2></div>
-        <div class="choices">
-          <div class="choice">
-            <h3>Build from existing assets</h3>
-            <p class="hint">Every format that fits this product, ranked, from the product page, the captured offers and reviews, and the real pack photo. The first appears in a second or two; the rest fill in as they're checked.</p>
-            <div class="row">
-              <label class="inline">Copy
-                <select id="mode">
-                  <option value="model">Model-written, cited to facts</option>
-                  <option value="verbatim">Word for word from the page (no model)</option>
-                </select>
-              </label>
-              <button id="generate">Build new ads</button>
-            </div>
-          </div>
-          <div class="choice">
-            <h3>Make a different image</h3>
-            <p class="hint">Describe the picture. The request goes to the image studio (your ChatGPT, the pack label checked word for word, up to 3 rounds); this app never draws the product itself.</p>
-            <textarea id="img-prompt" rows="3" placeholder="e.g. The bottle on a bathroom shelf in soft morning light, plain white tiles, nothing else"></textarea>
-            <div class="row"><button id="img-queue" class="ghost">Queue for the image studio</button><span id="img-msg" class="hint"></span></div>
-            <div id="img-requests"></div>
-          </div>
-        </div>
-      </section>
-
       <div id="gen-result" class="hidden">
         <div class="sechead">
           <h2><span class="tag new">New</span> Formats for this product, best first</h2>
@@ -154,6 +96,51 @@
           </div>
         </div>
       </div>
+      <!-- EXISTING: the product's ads already in the library (shown first, nothing is generated) -->
+      <section id="library" class="library hidden" aria-label="Existing ads">
+        <div class="sechead">
+          <h2><span class="tag existing">Existing</span> Existing ads in the library <span id="lib-count" class="hint"></span></h2>
+          <fieldset class="modes" id="lib-mode"><legend class="sr">Which ads</legend>
+            <label class="fchip"><input type="radio" name="libmode" value="p" /> This product</label>
+            <label class="fchip"><input type="radio" name="libmode" value="all" /> All ads</label>
+          </fieldset>
+        </div>
+        <form id="lib-filters" class="filters" autocomplete="off" aria-label="Filter the existing ads">
+          <div class="frow">
+            <label class="fgrow">Search<input id="f-q" type="search" placeholder="Headline, caption, format or product" /></label>
+            <label id="f-product-wrap">Product<select id="f-product"><option value="">All products</option></select></label>
+            <label>Format<select id="f-fmt"><option value="">All formats</option></select></label>
+            <label>Sort by<select id="f-sort"></select></label>
+          </div>
+          <div class="frow">
+            <fieldset class="fset" id="f-verdict"><legend>Verdict</legend></fieldset>
+            <fieldset class="fset" id="f-risk"><legend>Risk</legend></fieldset>
+            <fieldset class="fset" id="f-size"><legend>Size available (has every ticked size)</legend></fieldset>
+          </div>
+          <div class="frow">
+            <label>Exportable<select id="f-exp"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+            <label>AI people<select id="f-ai"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></label>
+            <label class="slider">Minimum alignment score: <output id="f-align-out" for="f-align">any</output><input id="f-align" type="range" min="0" max="100" step="5" value="0" /></label>
+            <label class="slider">Minimum win score: <output id="f-win-out" for="f-win">any</output><input id="f-win" type="range" min="0" max="100" step="5" value="0" /></label>
+          </div>
+          <div class="fcount"><span id="lib-shown" class="count" role="status" aria-live="polite"></span><button type="button" id="f-clear" class="ghost">Clear filters</button></div>
+        </form>
+        <div id="lib-body"></div>
+      </section>
+
+      <details id="facts" class="facts hidden">
+        <summary>Product facts the generator may use</summary>
+        <div id="facts-body"></div>
+      </details>
+
+      <details id="img-studio" class="facts hidden">
+        <summary>Make a different image (prompt)</summary>
+        <p class="hint">Describe the picture. The request goes to the image studio (your ChatGPT, the pack label checked word for word, up to 3 rounds); this app never draws the product itself.</p>
+        <textarea id="img-prompt" rows="3" placeholder="e.g. The bottle on a bathroom shelf in soft morning light, plain white tiles, nothing else"></textarea>
+        <div class="row"><button id="img-queue" class="ghost">Queue for the image studio</button><span id="img-msg" class="hint"></span></div>
+        <div id="img-requests"></div>
+      </details>
+      <p class="hint"><a href="#" id="pi-open">See this product's images in the Image library</a></p>
     </section>
 
     <!-- SCORE -->

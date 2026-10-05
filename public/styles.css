@@ -225,3 +225,7 @@ table.results tbody tr.brow:hover { background: var(--bg); }
 .bfind { margin: 0; padding-left: 16px; min-width: 220px; }
 .bopen { padding: 3px 10px; font-size: 12px; }
 .bpreview { max-width: 280px; max-height: 280px; border: 1px solid var(--line); border-radius: 4px; }
+/* build-first layout (2026-10-05) */
+.buildrow{align-items:center;gap:16px}
+button.big{font-size:1.15rem;padding:14px 28px;font-weight:700}
+#gen-controls{margin:14px 0}

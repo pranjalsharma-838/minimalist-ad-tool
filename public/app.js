@@ -1,4 +1,4 @@
-import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
+﻿import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
 import {
   VERDICTS, RISKS, SIZES, IMG_TYPES, IMG_GROUPS, IMG_SORTS,
   adDefaults, cleanAdState, filterAds, sortAds, adSortsFor, defaultAdSort, adFacetCounts, adOptions, activeAdFilters, countText,
@@ -202,6 +202,7 @@ function showSheet(s, refusal, cached) {
   $("#facts-body").innerHTML = `<p class="hint">${esc(s.title)} · actives from pack title: ${s.actives.map((a) => esc(a.pct + " " + a.name)).join(", ") || "none"} · source: ${s.source}${cached ? ` · page read ${esc(new Date(cached).toLocaleDateString())} (saved copy; tick "Re-read" to refresh)` : ""}. Greyed rows (testimonials, FAQ answers, full INCI) cannot be cited as claims; prices, offers, the rating and reviews are quoted only by the offer, price, rating and quote formats.</p><table>${rows}</table>`;
   $("#facts").classList.remove("hidden");
   $("#gen-controls").classList.toggle("hidden", Boolean(refusal));
+  $("#img-studio").classList.remove("hidden");
   $("#extract-msg").innerHTML = refusal ? `<div class="refusal"><b>Generator won't write this one.</b> ${esc(refusal)}</div>` : `${esc(s.title)}: ${s.facts.length} facts.`;
   loadRequests();
 }
@@ -213,7 +214,7 @@ $("#extract-form").onsubmit = async (e) => {
   $("#gen-result").classList.add("hidden");
   $("#extract-msg").textContent = "Opening product…";
   // Library first: the existing ads show while the facts load (nothing is generated).
-  if (handle) { loadLibrary(handle); loadProductImages(handle); }
+  if (handle) loadLibrary(handle);
   try {
     const { sheet: s, refusal, cached } = await api("/api/extract", { url, refresh: $("#refresh").checked });
     showSheet(s, refusal, cached);
@@ -228,7 +229,6 @@ $("#manual-form").onsubmit = async (e) => {
   const manual = Object.fromEntries(new FormData(e.target));
   handle = "";
   if (libMode === "p") { $("#library").classList.add("hidden"); libVisible = false; syncHash(); }
-  $("#prod-images").classList.add("hidden");
   const { sheet: s, refusal } = await api("/api/extract", { manual });
   showSheet(s, refusal);
 };
@@ -334,7 +334,7 @@ function renderLibrary() {
   $("#lib-shown").textContent = libAds.length ? `${countText(sorted.length, libAds.length)}${libMode === "p" ? " for this product" : ""}` : "";
   $("#f-clear").disabled = !activeAdFilters(adState, libMode) && !adState.sort;
   let html;
-  if (!libAds.length) html = `<p class="hint">${libMode === "p" ? "No ads for this product in the library yet. Make new ones below." : "No ads in the library yet."}</p>`;
+  if (!libAds.length) html = `<p class="hint">${libMode === "p" ? "No ads for this product in the library yet. Click Build new ads above." : "No ads in the library yet."}</p>`;
   else if (!sorted.length) html = `<p class="hint empty-note">No ads match these filters. <button type="button" class="ghost" data-clear>Clear filters</button></p>`;
   else if (!grouped) html = `<div class="lib-cards">${sorted.map((a, i) => adCard(a, i, true)).join("")}</div>`;
   else {
@@ -439,7 +439,7 @@ async function loadRequests() {
   }).join("");
   // A request that just finished adds its image to this product's image list.
   const finished = requests.filter((r) => ["done", "needs_review"].includes(r.status)).map((r) => r.id).join();
-  if (finished !== lastFinished) { lastFinished = finished; if (handle) loadProductImages(handle); }
+  lastFinished = finished;
   if (requests.some((r) => !["done", "failed", "needs_review"].includes(r.status))) pollTimer = setTimeout(loadRequests, 10000);
 }
 let lastFinished = "";
@@ -496,16 +496,7 @@ function openImage(e) {
   $("#viewer").showModal();
 }
 
-// This product's images, under the product (first 24; the Image library tab has all of them and the search).
-let productImages = [];
-async function loadProductImages(h) {
-  try { productImages = await api(`/api/images?handle=${encodeURIComponent(h)}`); } catch { productImages = []; }
-  $("#prod-images").classList.toggle("hidden", !productImages.length);
-  $("#pi-count").textContent = productImages.length ? `(${productImages.length})` : "";
-  $("#pi-body").innerHTML = productImages.slice(0, 24).map(imgCard).join("");
-  $("#pi-body").querySelectorAll(".img-card").forEach((b) => (b.onclick = () => openImage(productImages[b.dataset.i])));
-}
-$("#pi-open").onclick = async () => { imgState = { ...imgDefaults(), product: handle }; showTab("images"); await imgReady; };
+$("#pi-open").onclick = async (ev) => { ev.preventDefault(); imgState = { ...imgDefaults(), product: handle }; showTab("images"); await imgReady; };
 
 // The whole list is fetched once per visit to the tab; type chips, product, "usable in ads", search and sort all filter it here (filters.js).
 let imgAll = [], imgState = imgDefaults(), imgList = [], imgShown = 0, imgInit = false, imgTimer = null;
@@ -1113,7 +1104,6 @@ async function applyHash() {
   if (p.lib === "all") await openLibrary("all", { state: p.ads });
   else if (p.lib === "p") {
     $("#url").value = `https://beminimalist.co/products/${p.h}`;
-    loadProductImages(p.h);
     await openLibrary("p", { h: p.h, state: p.ads });
   }
   if (p.tab !== currentTab) showTab(p.tab);
