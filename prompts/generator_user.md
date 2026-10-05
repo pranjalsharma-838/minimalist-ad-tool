@@ -4,5 +4,5 @@ Page: {{URL}}
 
 Product facts (cite by id). Facts labelled [testimonial] or [faq] may NOT be cited for claims:
 {{FACTS}}
-{{REVISION}}
+{{AVOID}}{{REVISION}}
 Write the ad copy.

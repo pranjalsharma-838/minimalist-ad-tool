@@ -1,4 +1,4 @@
-﻿import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
+import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
 import {
   VERDICTS, RISKS, SIZES, IMG_TYPES, IMG_GROUPS, IMG_SORTS,
   adDefaults, cleanAdState, filterAds, sortAds, adSortsFor, defaultAdSort, adFacetCounts, adOptions, activeAdFilters, countText,
@@ -189,6 +189,16 @@ let sheet = null, handle = "";
 let copy = null, mode = "", log = [];
 let formats = [], items = {}, notShown = [], selected = "";
 let inputs = {}, uploads = {}, aiValues = {};
+// One number per Build per product (kept in this browser): the server rotates facts, headlines and images by it, so a new Build is never a repeat.
+let variant = 0;
+const nextVariant = () => {
+  const key = `minimalist:variant:${handle || "manual"}`;
+  let n = 0;
+  try { n = Number(localStorage.getItem(key)) || 0; } catch { /* private window: counts for this page only */ }
+  n = Math.max(n, variant) + 1;
+  try { localStorage.setItem(key, String(n)); } catch { /* ignore */ }
+  return n;
+};
 let gen = 0; // bumps on every new build or edit, so late answers from an older one are dropped
 
 $("#manual-toggle").onclick = () => $("#manual-form").classList.toggle("hidden");
@@ -754,7 +764,7 @@ async function rescoreOne(id, { rulesOnly = !llm } = {}) {
   updateThumbInfo(id);
   if (id === selected) $("#needs-msg") && ($("#needs-msg").textContent = "Checking…");
   try {
-    const out = await api("/api/rescore", { copy, sheet, format: id, inputs, rulesOnly });
+    const out = await api("/api/rescore", { copy, sheet, format: id, inputs, rulesOnly, variant });
     if (myGen !== gen) return;
     const i = formats.findIndex((f) => f.id === id);
     formats[i] = { ...out.meta, rank: formats[i].rank };
@@ -800,6 +810,7 @@ async function showBuild(out, t0) {
   formats.forEach((f, i) => (f.rank = i + 1));
   if (!fmtOf(selected)) selected =out.format || formats.find((f) => f.status === "ready")?.id || formats[0].id;
   $("#gen-result").classList.remove("hidden");
+  if ($("#variant-tag")) $("#variant-tag").textContent = variant ? `Variant ${variant}` : "";
   renderStrip();
   await drawMain();
   await drawThumb(selected);
@@ -819,7 +830,8 @@ $("#generate").onclick = async () => {
   inputs = {}; uploads = {}; aiValues = {}; selected = "";
   $("#extract-msg").textContent = $("#mode").value === "model" ? "Writing the copy (the model takes a few seconds), then building every format…" : "Building every format…";
   try {
-    const out = await api("/api/generate", { sheet, mode: $("#mode").value });
+    variant = nextVariant();
+    const out = await api("/api/generate", { sheet, mode: $("#mode").value, variant });
     if (out.refused) return ($("#extract-msg").innerHTML = `<div class="refusal">${esc(out.reason)}</div>`);
     copy = out.copy; mode = out.mode; log = out.log || [];
     fillEditor(copy);
@@ -842,7 +854,7 @@ $("#recheck").onclick = async () => {
   log.push({ step: "marketer edited copy and re-checked every format" });
   gen++;
   try {
-    await showBuild(await api("/api/formats", { copy, sheet, inputs }));
+    await showBuild(await api("/api/formats", { copy, sheet, inputs, variant }));
   } catch (err) { $("#export-note").textContent = err.message; }
 };
 

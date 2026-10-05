@@ -7,9 +7,9 @@
 //   GET  /api/image?src=       (Shopify CDN only)              -> image bytes (same-origin, so PNG export isn't blocked)
 //   GET  /api/pack?handle=     -> the product visual from the asset library (verified render cut-out / cut-out / render)
 //   GET  /api/texture?handle=  -> the product's real texture / close-up photo from the asset library
-//   POST /api/generate         {sheet, mode?, format?, inputs?} -> copy + every format (ranked, rules-checked) + first one
+//   POST /api/generate         {sheet, mode?, format?, inputs?, variant?} -> copy + every format (ranked, rules-checked) + first one
 //   POST /api/formats          {copy, sheet, inputs?}          -> every format again, rules-checked (after an edit)
-//   POST /api/rescore          {copy, sheet, format, inputs?, rulesOnly?} -> one format, with the AI judge when a key is set
+//   POST /api/rescore          {copy, sheet, format, inputs?, rulesOnly?, variant?} -> one format, with the AI judge when a key is set
 //   POST /api/draft            {copy, sheet, format, inputs?}  -> AI-written missing lines, cited and code-checked
 //   POST /api/score            {ad, sheet?} | {image}          -> report
 //   POST /api/image-request    {handle, prompt, sheet}         -> queues a request for the image studio (no image API)
@@ -156,16 +156,16 @@ async function handleApi(req, res, url) {
   }
   if (url.pathname === "/api/generate") {
     const { generateAd } = await lazy("./lib/generate.js");
-    return send(res, 200, await generateAd(body.sheet, { mode: body.mode, format: body.format, inputs: body.inputs }));
+    return send(res, 200, await generateAd(body.sheet, { mode: body.mode, format: body.format, inputs: body.inputs, variant: body.variant }));
   }
   if (url.pathname === "/api/formats") {
     const { allFormats } = await lazy("./lib/generate.js");
-    return send(res, 200, await allFormats(body.copy, body.sheet, body.inputs || {}));
+    return send(res, 200, await allFormats(body.copy, body.sheet, { ...(body.inputs || {}), variant: Number(body.variant) || 0 }));
   }
   if (url.pathname === "/api/rescore") {
     // One format: re-render spec, re-check layout, score (rules + AI judge when a key is set) against the same page.
     const { formatItem } = await lazy("./lib/generate.js");
-    return send(res, 200, await formatItem(body.copy, body.sheet, body.format || "hero", body.inputs || {}, { rulesOnly: Boolean(body.rulesOnly) }));
+    return send(res, 200, await formatItem(body.copy, body.sheet, body.format || "hero", { ...(body.inputs || {}), variant: Number(body.variant) || 0 }, { rulesOnly: Boolean(body.rulesOnly) }));
   }
   if (url.pathname === "/api/draft") {
     const { draftLines } = await lazy("./lib/app_draft.js");
