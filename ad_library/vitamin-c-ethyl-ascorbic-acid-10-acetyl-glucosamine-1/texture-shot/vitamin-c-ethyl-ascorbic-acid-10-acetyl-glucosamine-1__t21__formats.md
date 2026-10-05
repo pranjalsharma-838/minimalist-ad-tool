@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly. Use AM & PM. 10% is the Vitamin C strength stated on the page.
+Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly. Use AM & PM. Vitamin C 10%.
 
 ## Facts cited (from the product page)
 ```json

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Niacinamide 10% Face Serum: 10% is the Niacinamide strength stated on the page; the Niacinamide comes from Lonza, Switzerland and Matmarine from Lipotec USA. Apply 2-3 drops after cleansing & toning, AM & PM.
+Niacinamide 10% Face Serum: Niacinamide 10%; the Niacinamide comes from Lonza, Switzerland and Matmarine from Lipotec USA. Apply 2-3 drops after cleansing & toning, AM & PM.
 
 ## Facts cited (from the product page)
 ```json

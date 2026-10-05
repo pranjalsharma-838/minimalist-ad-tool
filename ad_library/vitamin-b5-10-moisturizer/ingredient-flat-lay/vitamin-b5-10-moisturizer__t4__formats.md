@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Vitamin B5 10% Moisturizer: a very high concentration of Vitamin B5 / Panthenol (10%, as stated on the page) for oil-free moisturization and repairing skin. The D-Panthenol USP is sourced from BASF, Germany.
+Vitamin B5 10% Moisturizer: a very high concentration of Vitamin B5 / Panthenol (10%) for oil-free moisturization and repairing skin. The D-Panthenol USP is sourced from BASF, Germany.
 
 ## Facts cited (from the product page)
 ```json

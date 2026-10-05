@@ -1,5 +1,5 @@
 // Keeps only the final, good ads in ad_library/ (user, 2026-10-05: "library will have the final good ad images only").
-// Kept: verdict READY_FOR_REVIEW (ad_library/scores.json) AND exportable (the compose step's finals/summary.json).
+// Kept: verdict READY_FOR_REVIEW (ad_library/scores.json), with or without AI people (those stay marked, not exportable).
 // Everything else — blocked, needs-fix, not exportable, stray non-ad files — moves to ad_library_archive/ with the same
 // path. Nothing is deleted. Re-run after scripts/score_library.js; then re-run score_library and make_library_gallery.
 // Usage: node scripts/curate_library.js [--dry]
@@ -14,7 +14,10 @@ const SUMMARY = new Map(fs.readdirSync("pipeline/runs").flatMap((r) => {
   const f = path.join("pipeline/runs", r, "finals", "summary.json");
   return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")).map((x) => [`${x.id}__${r.replace(/^\d{4}-\d{2}-\d{2}-?/, "")}`, x]) : [];
 }));
-const good = (id) => byId.get(id)?.verdict === "READY_FOR_REVIEW" && SUMMARY.get(id)?.exportable !== false;
+// AI-image ads that pass every check stay too (user, 2026-10-05: "final ads still miss the ai generated ones"); they carry the AI mark and are not exportable until real photos replace the AI people.
+// Later the same day: every scored ad comes back, the blocked and needs-fix ones with a visible warning in the app
+// and gallery (user: "fix and bring back and give warning"). Only stray non-ad files are moved out now.
+const good = (id) => Boolean(byId.get(id)?.verdict);
 
 const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]));
 let kept = new Set(), moved = 0, ads = new Set();

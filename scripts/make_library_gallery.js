@@ -54,15 +54,19 @@ const scoreRow = (a) => {
   if (!s) return "";
   return `<p class="scores" title="Reviewed by: ${esc(s.reviewed_by)}"><b>Align ${s.alignment ?? "—"}</b> · <b>Win ${s.win ?? "—"}</b> · <b>Compliance ${s.compliance ?? "—"}</b> <span class="v">${esc(s.verdict_label)}</span></p>`;
 };
+// Not-ready ads stay in the gallery with a plain warning (user, 2026-10-05: "bring back and give warning").
+const WARN_WHY = { "AI-01": "AI-made result image: banned by India's ASCI rule on AI content, even with a label. Needs real, consented photos.", "CLM-12": "Comparison: attach the proof behind it (what was compared, how, source) before use.", "CLM-21": "Customer quote: show it as one person's experience ('results vary').", "CLM-24": "Body-function wording: describe the visible result instead.", "CLM-01": "Lab result worded like a medical claim: needs legal sign-off.", "CLM-19": "SPF figure differs from the pack: use the labelled SPF." };
+const warnRow = (s) => { if (!s.verdict || s.verdict === "READY_FOR_REVIEW") return ""; const ids = [...new Set((s.findings || []).map((f) => (String(f).match(/\b([A-Z]{2,4}-\d{2})\b/) || [])[1]).filter(Boolean))]; const why = ids.map((i) => WARN_WHY[i]).filter(Boolean)[0] || "Open findings: see the description."; return `<p class="warn ${s.verdict === "BLOCKED" ? "blocked" : "fix"}"><b>${s.verdict === "BLOCKED" ? "Blocked, do not use" : "Needs a fix before use"}</b> ${esc(why)}</p>`; };
 const card = (a) => { const s = SCORES[path.basename(a.png, ".png")] || {}; return `<article class="card" data-product="${esc(a.product)}" data-risk="${a.risk}" data-ai="${a.ai ? "yes" : "no"}" data-format="${esc(a.format)}" data-verdict="${s.verdict || ""}" data-export="${a.exportable ? "yes" : "no"}" data-align="${s.alignment ?? ""}" data-win="${s.win ?? ""}" data-comp="${s.compliance ?? ""}" data-text="${esc(`${a.title} ${a.format} ${a.product} ${a.angle || ""}`.toLowerCase())}">
   <a href="${esc(a.png)}" target="_blank"><img loading="lazy" src="${esc(a.png)}" alt="${esc(a.title)}"></a>
   <div class="meta">
-    <div class="row"><span class="risk ${a.risk}">${a.risk}</span>${a.exportable ? '<span class="ok">exportable after review</span>' : '<span class="no">not exportable</span>'}${a.ai ? '<span class="aib">AI people</span>' : ""}<span class="run">${esc(a.run)}</span></div>
+    <div class="row"><span class="risk ${a.risk}">${a.risk}</span>${a.exportable ? '<span class="ok">exportable after review</span>' : '<span class="no">not exportable</span>'}${a.ai ? '<span class="aib">AI image</span>' : ""}<span class="run">${esc(a.run)}</span></div>
     <h3>${esc(a.format)}</h3>
     <p class="prod">${esc(a.product)}</p>
     ${a.angle && a.angle !== "— · hook: —" ? `<p class="angle">${esc(a.angle)}</p>` : ""}
     ${scoreRow(a)}
-    <p class="links">Download: <a href="${esc(a.png)}" download>1:1</a>${a.extras.map((x) => ` · <a href="${esc(x.f)}" download>${esc(x.tag)}</a>`).join("")} · <a href="${esc(a.md)}" target="_blank">description</a></p>
+    ${warnRow(s)}
+    ${s.verdict === "BLOCKED" ? "<p class=\"links\">" : `<p class="links">Download:`} ${s.verdict === "BLOCKED" ? "" : `<a href="${esc(a.png)}" download>1:1</a>${a.extras.map((x) => ` · <a href="${esc(x.f)}" download>${esc(x.tag)}</a>`).join("")} · `}<a href="${esc(a.md)}" target="_blank">description</a></p>
   </div>
 </article>`; };
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -81,6 +85,7 @@ main{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:
 .links a{color:var(--ink)}.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;font-size:12px}
 .risk{color:#fff;border-radius:6px;padding:1px 7px;text-transform:uppercase;font-weight:700;letter-spacing:.5px}
 .risk.low{background:var(--low)}.risk.medium{background:var(--medium)}.risk.high{background:var(--high)}.risk.severe{background:var(--severe)}
+.warn{margin:6px 0 0;font-size:12px;line-height:1.35;padding:6px 8px;border-radius:6px}.warn b{display:block}.warn.fix{background:#FFF4E0;color:#7A4B00}.warn.blocked{background:#FDE8E8;color:#8A1C1C}
 .aib{background:#111;color:#fff;border-radius:6px;padding:1px 7px;font-weight:700}.ok{color:var(--low)}.no{color:var(--severe);font-weight:700}.run{margin-left:auto;color:var(--muted)}
 .trend{max-width:1400px;margin:8px auto 4px;padding:0 24px}.trend h2{margin:8px 0 4px;font-size:22px}.trend>p{margin:0 0 12px;color:var(--muted)}
 .trow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;width:fit-content;max-width:100%;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;margin:0 0 10px}
@@ -101,14 +106,16 @@ ${trending}
 <select id="fa" aria-label="AI people"><option value="">Any imagery</option><option value="no">No AI people</option><option value="yes">AI people (Severe)</option></select>
 <label>Min alignment <input id="ma" type="range" min="0" max="100" step="5" value="0"><b id="mav">0</b></label>
 <label>Min win <input id="mw" type="range" min="0" max="100" step="5" value="0"><b id="mwv">0</b></label>
-<select id="so" aria-label="Sort"><option value="">Sort: product</option><option value="align">Best alignment</option><option value="win">Best win</option><option value="comp">Best compliance</option></select>
+<select id="so" aria-label="Sort"><option value="">Sort: mixed (random)</option><option value="product">Product A to Z</option><option value="align">Best alignment</option><option value="win">Best win</option><option value="comp">Best compliance</option></select>
 <button id="clr" type="button">Clear</button><span id="cnt"></span></div>
 <main id="g">${ads.map(card).join("\n")}</main>
 <script>
 const $=id=>document.getElementById(id),g=$("g"),cards=[...document.querySelectorAll(".card")];
+// Mixed order by default (user, 2026-10-05: "randomise the library"): shuffled once per visit.
+const mixed=cards.map(c=>[Math.random(),c]).sort((a,b)=>a[0]-b[0]).map(x=>x[1]);
 function apply(){const q=$("q").value.trim().toLowerCase(),ma=+$("ma").value,mw=+$("mw").value;$("mav").textContent=ma;$("mwv").textContent=mw;let n=0;
 for(const c of cards){const d=c.dataset;const ok=(!q||d.text.includes(q))&&(!$("fp").value||d.product===$("fp").value)&&(!$("ff").value||d.format===$("ff").value)&&(!$("fv").value||d.verdict===$("fv").value)&&(!$("fr").value||d.risk===$("fr").value)&&(!$("fe").value||d.export===$("fe").value)&&(!$("fa").value||d.ai===$("fa").value)&&(+d.align||0)>=ma&&(+d.win||0)>=mw;c.style.display=ok?"":"none";if(ok)n++}
-const k={align:"align",win:"win",comp:"comp"}[$("so").value];if(k)cards.slice().sort((a,b)=>(+b.dataset[k]||0)-(+a.dataset[k]||0)).forEach(c=>g.appendChild(c));else cards.forEach(c=>g.appendChild(c));
+const k={align:"align",win:"win",comp:"comp"}[$("so").value];if(k)cards.slice().sort((a,b)=>(+b.dataset[k]||0)-(+a.dataset[k]||0)).forEach(c=>g.appendChild(c));else if($("so").value==="product")cards.forEach(c=>g.appendChild(c));else mixed.forEach(c=>g.appendChild(c));
 $("cnt").textContent=n+" of "+cards.length+" ads";location.hash=new URLSearchParams([...document.querySelectorAll("#f input,#f select")].filter(e=>e.id&&e.value&&e.value!=="0").map(e=>[e.id,e.value])).toString()}
 document.querySelectorAll("#f input,#f select").forEach(e=>e.addEventListener("input",apply));
 $("clr").onclick=()=>{document.querySelectorAll("#f input,#f select").forEach(e=>e.value=e.type==="range"?0:"");apply()};

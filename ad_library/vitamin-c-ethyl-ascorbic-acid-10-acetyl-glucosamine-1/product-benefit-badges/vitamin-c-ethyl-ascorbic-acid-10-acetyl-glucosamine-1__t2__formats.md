@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative, and contains 1% Acetyl Glucosamine; 10% is the Vitamin C strength stated on the page. Use AM & PM after cleansing and toning.
+Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative, and contains 1% Acetyl Glucosamine; Vitamin C 10%. Use AM & PM after cleansing and toning.
 
 ## Facts cited (from the product page)
 ```json

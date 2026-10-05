@@ -1,1 +1,10 @@
-{"findings":[{"rule_id":"CLM-21","dimension":"policy","field":"on_image_text","span":"Like the texture. I like the texture of the serum…","severity":"fix","why":"A single customer review is used as the creative. It is trimmed from a 4-star review that goes on to say the reviewer has not seen much effect yet, so it must not be presented as typical and the trim should not mislead.","fix":"Show the review in full, or lead with the overall rating alone and keep any single review clearly marked as one customer's view."}],"rule_hit_review":[],"tone_read":"Plain, factual social proof with no hype or fear, and the rating shown is a modest 3.9, which suits a brand that does not overclaim. The raw captured-on and verified-buyer metadata in the copy reads like a data note, not an ad.","language_read":"The 2% concentration is stated exactly and no efficacy language is used. The rating and review count match the page capture (3.9, 1,800 reviews) and the source is named in the primary text."}
+{
+    "findings":  [
+
+                 ],
+    "rule_hit_review":  [
+
+                        ],
+    "tone_read":  "Calm, rating-only proof ad with no fear or hype; the 3.9 of 5 figure is honest and sourced to beminimalist.co.",
+    "language_read":  "Strength 2% is in the product name and the only claim is a sourced rating. Caption is now clean."
+}

@@ -26,7 +26,7 @@
 - CTA: Shop the offer · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Offer as on beminimalist.co, 2 Oct 2026. T&C apply. Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Stock up on Vitamin B5 10% Moisturizer: a lightweight, oil-free everyday moisturizer with 10% Vitamin B5 (Panthenol). Stock up on Vitamin B5 10% Moisturizer.
+Offer T&C apply. Buy 2, Get 3rd Free on beminimalist.co (T&C apply). Stock up on Vitamin B5 10% Moisturizer: a lightweight, oil-free everyday moisturizer with 10% Vitamin B5 (Panthenol). Stock up on Vitamin B5 10% Moisturizer.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - footnote: "Offer as on beminimalist.co, 2 Oct 2026. T&C apply." → "" (T&C apply already sits in the offer's condition line on the creative; once is enough)

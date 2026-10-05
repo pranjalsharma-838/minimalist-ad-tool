@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Marula Oil 5% Face Moisturizer: an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E, and multiple hydrators including Hyaluronic Acid, Saccharide Isomerate and Glycerin. Rating: 4.2 out of 5 stars from 388 reviews on beminimalist.co, captured 2026-10-02.
+Marula Oil 5% Face Moisturizer: an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E, and multiple hydrators including Hyaluronic Acid, Saccharide Isomerate and Glycerin. Rating: 4.2 out of 5 stars from 388 reviews on beminimalist.co.
 
 ## Facts cited (from the product page)
 ```json

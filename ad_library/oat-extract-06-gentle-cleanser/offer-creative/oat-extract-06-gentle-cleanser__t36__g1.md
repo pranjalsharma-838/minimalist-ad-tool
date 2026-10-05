@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-The 3rd product is free when you buy 2. T&C apply. As on beminimalist.co, 2026-10-02. T&C apply. B12 + Oat Extract 6.5% Gentle Cleanser: massage onto wet skin, then rinse off; use AM & PM. Offer: "Buy 2, Get 3rd Free", beminimalist.co homepage, captured 2026-10-02; terms on the offer page. 6.5% B12 + Oat Extract.
+The 3rd product is free when you buy 2. T&C apply. B12 + Oat Extract 6.5% Gentle Cleanser: massage onto wet skin, then rinse off; use AM & PM. Offer: "Buy 2, Get 3rd Free", terms on the offer page. 6.5% B12 + Oat Extract.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - footnote: "As on beminimalist.co, 2026-10-02. T&C apply." → "T&C apply." (footnote cut to the T&C line to fit the 20-word budget; capture date stays in the caption)

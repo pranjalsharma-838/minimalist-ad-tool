@@ -60,12 +60,14 @@ test("sorting: best alignment, best win, newest, product; unscored last; input u
   assert.equal(ids(sortAds(SAMPLE, "new", "all")), "bcda"); // runs 10-03, 10-02, then a and d share 10-01 (tie: product A to Z)
   assert.equal(ids(sortAds(SAMPLE, "product", "all")), "dcba"); // Alpha Arbutin, then Niacinamide; within a product by format name
   assert.equal(ids(SAMPLE), before);
-  // "fmt" (grouped by format) is the default for one product's library only
-  assert.equal(defaultAdSort("p"), "fmt");
-  assert.equal(defaultAdSort("all"), "align");
+  // "mixed" (random, stable while filtering) is the default everywhere (user, 2026-10-05: "randomise the library")
+  assert.equal(defaultAdSort("p"), "mixed");
+  assert.equal(defaultAdSort("all"), "mixed");
+  assert.equal(new Set(sortAds(SAMPLE, "mixed", "p").map((a) => a.id)).size, SAMPLE.length);
+  assert.equal(ids(sortAds(SAMPLE, "mixed", "p")), ids(sortAds(SAMPLE, "mixed", "p")), "the shuffle stays put between calls");
   assert.equal(ids(sortAds(SAMPLE, "fmt", "p")), "bdca");
-  assert.equal(ids(sortAds(SAMPLE, "", "p")), "bdca");
-  assert.equal(ids(sortAds(SAMPLE, "fmt", "all")), ids(sortAds(SAMPLE, "align", "all")));
+  assert.equal(ids(sortAds(SAMPLE, "", "p")), ids(sortAds(SAMPLE, "mixed", "p")), "no sort chosen = mixed");
+  assert.equal(ids(sortAds(SAMPLE, "fmt", "all")), ids(sortAds(SAMPLE, "mixed", "all")), "format grouping is for one product only");
 });
 
 test("option counts ignore the filter they belong to, so every option shows what ticking it would give", () => {
@@ -107,7 +109,7 @@ test("URL hash round-trips and leaves out defaults", () => {
   assert.equal(back.lib, "all"); assert.equal(back.tab, "generate");
   assert.deepEqual(back.ads, ads);
   // one product's view: the handle is kept; the product filter and the grouped default sort are not written
-  const p = buildHash({ lib: "p", h: "alpha-arbutin-2", ads: { ...adDefaults(), product: "ignored", sort: "fmt", risk: ["high"] } });
+  const p = buildHash({ lib: "p", h: "alpha-arbutin-2", ads: { ...adDefaults(), product: "ignored", sort: "mixed", risk: ["high"] } });
   assert.equal(p, "#lib=p&h=alpha-arbutin-2&risk=high");
   assert.equal(parseHash(p).h, "alpha-arbutin-2");
   // the image tab and its filters
@@ -186,9 +188,9 @@ test("filters work on the real ad library and the real image list", () => {
   assert.equal(filterAds(ads, { ...adDefaults(), verdict: ["ready", "fix", "blocked"] }).length, count);
   const risk = adFacetCounts(ads, adDefaults(), "risk");
   assert.equal(Object.values(risk).reduce((a, b) => a + b, 0), count);
-  // The curated library (scripts/curate_library.js) holds only good, exportable ads: nothing Severe, nothing blocked.
-  assert.equal(filterAds(ads, { ...adDefaults(), risk: ["severe"] }).length, 0);
-  assert.ok(ads.every((a) => a.exportable !== false), "a not-exportable ad is still in the library");
+  // Every scored ad is in the library, not-ready ones included (they carry a warning in the app).
+  const sev = filterAds(ads, { ...adDefaults(), risk: ["severe"] });
+  assert.ok(sev.every((a) => a.risk === "severe"));
   assert.ok(filterAds(ads, { ...adDefaults(), exp: "yes", ai: "yes" }).every((a) => a.exportable && a.ai));
   const top = sortAds(filterAds(ads, { ...adDefaults(), align: 90 }), "align", "all");
   assert.ok(top.length > 0 && top.every((a) => a.scores.alignment >= 90));

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face with a gentle circular motion, AM & PM. Use sunscreen during the day. 2% is the Alpha Arbutin strength stated on the page.
+Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face with a gentle circular motion, AM & PM. Use sunscreen during the day. Alpha Arbutin 2%.
 
 ## Facts cited (from the product page)
 ```json

@@ -234,7 +234,8 @@ function chromeEnd(spec, parts, bottom, cta) {
 // Contact-shadow base: the photo is "meet"-fitted, so the visible bottom is approximated by the box bottom.
 function pack(spec, href, x, y, w, h) {
   if (!href) return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" fill="none" stroke="${C.rule}" stroke-dasharray="6 6"/>`;
-  const img = `<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="xMidYMid meet"`;
+  // A pack cut out in the app (tight crop) stands on the bottom of its box, so the contact shadow is right under it.
+  const img = `<image href="${esc(href)}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="${(spec.groundedHrefs || []).includes(href) ? "xMidYMax" : "xMidYMid"} meet"`;
   // On the white canvas a clean cut-out always gets its soft shadow, like the statics' studio shots.
   if ((spec.cutoutHrefs || []).includes(href)) {
     const dx = spec.shadowDx ?? 12;

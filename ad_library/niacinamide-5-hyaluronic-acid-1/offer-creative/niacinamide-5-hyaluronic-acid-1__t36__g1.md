@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Niacinamide 5% Face Serum: 2-3 drops after cleansing & toning; use AM & PM. Offer: "Buy 2, Get 3rd Free", beminimalist.co homepage, captured 2026-10-02; terms on the offer page. 5% Niacinamide. As on beminimalist.co, 2026-10-02.
+Niacinamide 5% Face Serum: 2-3 drops after cleansing & toning; use AM & PM. Offer: "Buy 2, Get 3rd Free", terms on the offer page. 5% Niacinamide. As on beminimalist.co, 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

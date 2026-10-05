@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-B12 + Oat Extract 6.5% Gentle Cleanser: strength and details as stated on the product page. Strength and details as stated on the product page.
+B12 + Oat Extract 6.5% Gentle Cleanser. Strength and details as stated on the product page.
 
 ## Facts cited (from the product page)
 ```json

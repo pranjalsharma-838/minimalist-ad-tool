@@ -1,1 +1,18 @@
-{"findings":[{"rule_id":"CLM-24","dimension":"policy","field":"primary_text","span":"Butylresorcinol: A tyrosinase inhibitor.","severity":"fix","why":"Calling an ingredient a tyrosinase inhibitor describes changing a body process (melanin pathway), which is a grey area for structure/function claims. It is on the product page, but the page is not legal clearance.","fix":"Keep the ingredient name and describe the benefit in appearance terms, for example 'Butylresorcinol: paired with Alpha Arbutin to help reduce the look of dark spots', or send to legal to accept the mechanism wording."}],"rule_hit_review":[],"tone_read":"Educational and ingredient-led with no fear, hype or emoji, which is the closest to the Minimalist voice. The 'stated on the page' sentence is internal-sounding.","language_read":"Concentration is stated exactly (2% Alpha Arbutin) and the supplier is named, which matches the brand's precise purity style. Butylresorcinol and Ferulic Acid carry no strength, but the page gives none to use."}
+{
+    "findings":  [
+                     {
+                         "rule_id":  "LNG-05",
+                         "dimension":  "language",
+                         "field":  "primary_text",
+                         "span":  "High purity",
+                         "severity":  "advisory",
+                         "why":  "\u0027High purity\u0027 is a vague purity claim; the brand states grade or source precisely.",
+                         "fix":  "Keep the source only: 2% Alpha Arbutin, sourced from Alfa Aesar, USA."
+                     }
+                 ],
+    "rule_hit_review":  [
+
+                        ],
+    "tone_read":  "Educational and ingredient-led with no hype or fear.",
+    "language_read":  "Strength is stated in the right format and actives are named precisely. Only the vague high purity wording departs from brand habit."
+}

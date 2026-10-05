@@ -52,7 +52,10 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
     // shadow). Layouts that put the pack over a photo use the real cut-out instead (spec.realCutHref).
     if (pref && fs.existsSync(pref.file)) {
       if (real) spec.realCutHref = spec.realCutHref || dataUrl(fs.readFileSync(real.cutout), "image/png");
-      return dataUrl(fs.readFileSync(pref.file), "image/png");
+      // <render>_white.png (scripts/whiten_renders.py): the same render with its 253-254 backdrop lifted to pure white,
+      // so no faint box shows on the white canvas (user, 2026-10-05: "poor product rendering in a few").
+      const white = pref.file.replace(/\.png$/, "_white.png");
+      return dataUrl(fs.readFileSync(fs.existsSync(white) ? white : pref.file), "image/png");
     }
     const a = real;
     if (!a) return "";

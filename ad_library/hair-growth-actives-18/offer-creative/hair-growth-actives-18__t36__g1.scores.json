@@ -22,7 +22,7 @@
       {
         "name": "Meta voice match",
         "score": 100,
-        "why": "Measured against 10 long-running brand copies and 8 top statics (meta_voice_profile.json, built 2026-10-05): sentence length 100 — median 4 words per sentence vs the brand's 7 (middle half 4–9); exclamation marks 100 — 0 per 100 words vs the brand's 0.6; emoji 100 — 0 per 100 words vs the brand's 0.6; hype words 100 — none (0/100 words vs the brand's 0.2); fear / problem words 100 — none (0/100 words vs the brand's 0.4); ingredient / % first 100 — opens with an active or a concentration (as the brand does in 37% of its openers); hook type 100 — opening hook reads as \"ingredient led\" (20% of the brand's long-running copies)."
+        "why": "Measured against 10 long-running brand copies and 8 top statics (meta_voice_profile.json, built 2026-10-05): sentence length 100 — median 5 words per sentence vs the brand's 7 (middle half 4–9); exclamation marks 100 — 0 per 100 words vs the brand's 0.6; emoji 100 — 0 per 100 words vs the brand's 0.6; hype words 100 — none (0/100 words vs the brand's 0.2); fear / problem words 100 — none (0/100 words vs the brand's 0.4); ingredient / % first 100 — opens with an active or a concentration (as the brand does in 37% of its openers); hook type 100 — opening hook reads as \"ingredient led\" (20% of the brand's long-running copies)."
       },
       {
         "name": "transparency & no exaggeration",
@@ -127,5 +127,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T08:19:42.263Z"
+  "scored_at": "2026-10-05T12:17:26.688Z"
 }

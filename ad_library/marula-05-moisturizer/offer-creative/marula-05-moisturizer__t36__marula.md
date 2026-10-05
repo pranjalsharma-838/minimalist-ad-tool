@@ -26,7 +26,7 @@
 - CTA: Shop the offer · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Buy 2, Get 3rd Free on beminimalist.co (offer as captured on 2 Oct 2026; T&C apply). Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E. Stock up on Marula Oil 5% Moisturizer.
+Buy 2, Get 3rd Free on beminimalist.co (T&C apply). Marula Oil 5% Face Moisturizer is an everyday moisturizing cream with 5% Marula Oil, paired with Vitamin F and Vitamin E. Stock up on Marula Oil 5% Moisturizer.
 
 ## Facts cited (from the product page)
 ```json

@@ -271,3 +271,19 @@ dialog.settings { padding: 24px 28px; min-width: min(420px, 90vw); }
 .settings .topright { align-items: flex-start; margin-top: 12px; }
 .settings .keyform { justify-content: flex-start; margin: 10px 0; }
 @media (max-width: 600px) { .top, .tabs, main { padding-left: 16px; padding-right: 16px; } .strip { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; } .row input[type=url] { min-width: 0; flex-basis: 100%; } }
+
+/* warning on library ads that are not ready (blocked / needs a fix) */
+.warnbox { display: block; font-size: 12px; line-height: 1.35; padding: 6px 8px; border-radius: 6px; margin: 4px 0; }
+.warnbox b { display: block; }
+.warnbox.fix { background: #FFF4E0; color: #7A4B00; }
+.warnbox.blocked { background: #FDE8E8; color: #8A1C1C; }
+@media (prefers-color-scheme: dark) { .warnbox.fix { background: #3A2A10; color: #FFD9A0; } .warnbox.blocked { background: #3A1414; color: #FFB3B3; } }
+
+/* reviewer sign-off before download */
+.signoff { margin: 8px 0; padding: 8px 10px; border: 1px solid var(--line, #ddd); border-radius: 8px; }
+.signoff summary { cursor: pointer; font-weight: 600; }
+.signline { display: flex; gap: 8px; align-items: flex-start; margin: 4px 0; font-size: 13px; }
+.signline input[type=text] { flex: 1; padding: 4px 6px; }
+
+/* ads waiting for their new image are not shown at all (no placeholder tiles) */
+#strip .thumb[hidden] { display: none !important; }

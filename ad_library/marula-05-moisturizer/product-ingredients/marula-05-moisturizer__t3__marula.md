@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Use Marula Oil 5% Face Moisturizer after cleansing, toning and applying all serums, AM & PM. 5% is the Marula Oil strength stated on the page. Vitamin F and Vitamin E: Suited to dry, stressed and sensitive skin. 5% Marula Oil: Softens and nourishes the skin. Hyaluronic Acid: A humectant that hydrates and softens skin.
+Use Marula Oil 5% Face Moisturizer after cleansing, toning and applying all serums, AM & PM. Marula Oil 5%. Vitamin F and Vitamin E: Suited to dry, stressed and sensitive skin. 5% Marula Oil: Softens and nourishes the skin. Hyaluronic Acid: A humectant that hydrates and softens skin.
 
 ## Facts cited (from the product page)
 ```json

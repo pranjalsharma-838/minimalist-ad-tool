@@ -13,7 +13,7 @@ None of these are bugs. Each is what happens when the tool does exactly what it 
   - The verdict's best value is "Ready for human review". It is never "approved".
   - A rules-only check is grey, not green.
   - Every export carries a review ticket listing which fact each line cites.
-  - Add: reviewer sign-off per claim line in the ticket, not one tick per ad.
+  - Built (5 Oct): download stays off until a named reviewer ticks every line on the image and in the caption as checked against its source; the ticket records who signed and which lines, and any edit clears the sign-off.
 - *After launch:* legal re-reviews a random 10% of passed ads each month, and every miss becomes a new rule plus a regression test. Track the reviewer override rate. If it falls toward zero, that's a warning sign, not a success.
 
 ## 2. The standard is wrong, or goes stale, and the tool enforces it confidently
@@ -25,7 +25,7 @@ None of these are bugs. Each is what happens when the tool does exactly what it 
 
 A confident tool enforcing the wrong line fails two ways. It blocks good ads, and the team routes around it. Or it passes ads that are now non-compliant.
 
-A design-caused version of this, which is my own choice working as intended: a claim on Minimalist's own product page gets its severity lowered one step (DECISIONS §5). If that page line is itself risky (e.g. "Reduces Acne"), the generator repeats it in every ad built from that page, one level softer than it should be, at scale. *Before launch:* legal reviews the product pages the generator reads, not just the ads. *After launch:* any page line that legal later rejects is added to a page-level deny list, and every ad built from it is re-scored.
+A design-caused version of this, which is my own choice working as intended: a claim on Minimalist's own product page gets its severity lowered one step (DECISIONS §5). If that page line is itself risky (e.g. "Reduces Acne"), the generator repeats it in every ad built from that page, one level softer than it should be, at scale. *Before launch:* legal reviews the product pages the generator reads, not just the ads. *Decision (5 Oct):* the brand chose to keep listing claims lenient for every claim type. A page deny list exists in `lib/rules.js` but is empty; any claim type legal rejects can be added there, and every ad built from it is re-scored.
 
 **What I'd do:**
 - *Before launch:* legal signs off the rulebook and answers the 11 open questions, each recorded in `rules/brand_decisions.json` like the acne one. Rules and decisions are versioned, and every report shows both versions. The catalog check reads the live Shopify feed instead of a snapshot.

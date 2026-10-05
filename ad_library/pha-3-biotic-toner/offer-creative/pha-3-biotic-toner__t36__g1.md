@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Polyhydroxy Acid (PHA) 3% Face Toner: a few drops into palms, pressed in; use AM & PM. Offer: "Buy 2, Get 3rd Free", beminimalist.co homepage, captured 2026-10-02; terms on the offer page. Polyhydroxy Acid (PHA) 3%. As on beminimalist.co, 2026-10-02.
+Polyhydroxy Acid (PHA) 3% Face Toner: a few drops into palms, pressed in; use AM & PM. Offer: "Buy 2, Get 3rd Free", terms on the offer page. Polyhydroxy Acid (PHA) 3%. As on beminimalist.co, 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

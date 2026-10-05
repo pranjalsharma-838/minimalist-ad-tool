@@ -24,6 +24,7 @@ export const VERDICTS = [
 export const RISKS = [{ key: "low", label: "Low" }, { key: "medium", label: "Medium" }, { key: "high", label: "High" }, { key: "severe", label: "Severe" }];
 export const SIZES = [{ key: "4x5", label: "4:5" }, { key: "9x16", label: "9:16" }, { key: "hi", label: "Hindi" }, { key: "ta", label: "Tamil" }];
 export const AD_SORTS = [
+  { key: "mixed", label: "Mixed (random)" },
   { key: "fmt", label: "Format, then newest", modes: ["p"] },
   { key: "align", label: "Best alignment score" },
   { key: "win", label: "Best win score" },
@@ -31,7 +32,10 @@ export const AD_SORTS = [
   { key: "product", label: "Product A to Z" },
 ];
 // "p" = one product's library, "all" = every product.
-export const defaultAdSort = (mode) => (mode === "all" ? "align" : "fmt");
+// Mixed by default (user, 2026-10-05: "randomise the library"): a shuffle that stays put while you filter, new per visit.
+export const defaultAdSort = () => "mixed";
+const SEED = Math.floor(Math.random() * 2 ** 31);
+const mix = (s) => { let h = SEED; for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 2654435761) >>> 0; return h; };
 export const adSortsFor = (mode) => AD_SORTS.filter((s) => !s.modes || s.modes.includes(mode));
 
 export const adDefaults = () => ({ product: "", fmt: "", verdict: [], exp: "", risk: [], ai: "", align: 0, win: 0, size: [], q: "", sort: "" });
@@ -96,6 +100,7 @@ const byFmt = (a, b) => cmp(a.fmt_title, b.fmt_title);
 const byNewest = (a, b) => cmp(b.run, a.run);
 const byId = (a, b) => cmp(a.id, b.id);
 const AD_ORDER = {
+  mixed: (a, b) => mix(a.id) - mix(b.id),
   fmt: by(byFmt, byProduct, byNewest, byId),
   align: by(scoreDesc("alignment"), scoreDesc("win"), byProduct, byId),
   win: by(scoreDesc("win"), scoreDesc("alignment"), byProduct, byId),

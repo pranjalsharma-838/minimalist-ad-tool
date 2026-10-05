@@ -287,14 +287,23 @@ Each ad has a description file (`<id>.md`) next to it: product, format, angle, b
 | SPF 50 Sunscreen | Social-proof creative | medium | [multi-vitamin-spf-50__t28__trending.png](multi-vitamin-spf-50/social-proof-creative/multi-vitamin-spf-50__t28__trending.png) |
 | SPF 50 Sunscreen | Stat-led creative | low | [multi-vitamin-spf-50__t25__proof.png](multi-vitamin-spf-50/stat-led-creative/multi-vitamin-spf-50__t25__proof.png) |
 | SPF 50 Sunscreen | Texture shot | low | [multi-vitamin-spf-50__t21__formats.png](multi-vitamin-spf-50/texture-shot/multi-vitamin-spf-50__t21__formats.png) |
+| SPF 60 Sunscreen | Application macro | severe | [spf-60-silymarin__t9__g2.png](spf-60-silymarin/application-macro/spf-60-silymarin__t9__g2.png) |
 | SPF 60 Sunscreen | Before / after | severe | [spf-60-silymarin__t12__g2.png](spf-60-silymarin/before-after/spf-60-silymarin__t12__g2.png) |
+| SPF 60 Sunscreen | Bundle / kit image | low | [spf-60-silymarin__t38__g2.png](spf-60-silymarin/bundle-kit-image/spf-60-silymarin__t38__g2.png) |
 | SPF 60 Sunscreen | Clinical / science visual | low | [spf-60-silymarin__t24__proof.png](spf-60-silymarin/clinical-science-visual/spf-60-silymarin__t24__proof.png) |
 | SPF 60 Sunscreen | Comparison image (Us vs Them) | high | [spf-60-silymarin__t17__g2.png](spf-60-silymarin/comparison-image-us-vs-them/spf-60-silymarin__t17__g2.png) |
+| SPF 60 Sunscreen | Creator selfie | severe | [spf-60-silymarin__t31__g2.png](spf-60-silymarin/creator-selfie/spf-60-silymarin__t31__g2.png) |
 | SPF 60 Sunscreen | How-to / steps | low | [spf-60-silymarin__t22__g2.png](spf-60-silymarin/how-to-steps/spf-60-silymarin__t22__g2.png) |
+| SPF 60 Sunscreen | Ingredient flat lay | low | [spf-60-silymarin__t4__g2.png](spf-60-silymarin/ingredient-flat-lay/spf-60-silymarin__t4__g2.png) |
+| SPF 60 Sunscreen | Lifestyle product shot | severe | [spf-60-silymarin__t6__g2.png](spf-60-silymarin/lifestyle-product-shot/spf-60-silymarin__t6__g2.png) |
+| SPF 60 Sunscreen | Offer creative | medium | [spf-60-silymarin__t36__g2.png](spf-60-silymarin/offer-creative/spf-60-silymarin__t36__g2.png) |
 | SPF 60 Sunscreen | Problem macro | severe | [spf-60-silymarin__t10__g2.png](spf-60-silymarin/problem-macro/spf-60-silymarin__t10__g2.png) |
 | SPF 60 Sunscreen | Problem → product | low | [spf-60-silymarin__t15__g2.png](spf-60-silymarin/problem-product/spf-60-silymarin__t15__g2.png) |
 | SPF 60 Sunscreen | Product + benefit badges | low | [spf-60-silymarin__t2__g2.png](spf-60-silymarin/product-benefit-badges/spf-60-silymarin__t2__g2.png) |
+| SPF 60 Sunscreen | Product + ingredients | low | [spf-60-silymarin__t3__g2.png](spf-60-silymarin/product-ingredients/spf-60-silymarin__t3__g2.png) |
+| SPF 60 Sunscreen | Product-in-use | severe | [spf-60-silymarin__t8__g2.png](spf-60-silymarin/product-in-use/spf-60-silymarin__t8__g2.png) |
 | SPF 60 Sunscreen | Progress / timeline | severe | [spf-60-silymarin__t14__g2.png](spf-60-silymarin/progress-timeline/spf-60-silymarin__t14__g2.png) |
+| SPF 60 Sunscreen | Review creative | low | [spf-60-silymarin__t26__g2.png](spf-60-silymarin/review-creative/spf-60-silymarin__t26__g2.png) |
 | SPF 60 Sunscreen | Stat-led creative | low | [spf-60-silymarin__t25__proof.png](spf-60-silymarin/stat-led-creative/spf-60-silymarin__t25__proof.png) |
 | SPF 60 Sunscreen | Texture shot | low | [spf-60-silymarin__t21__g2.png](spf-60-silymarin/texture-shot/spf-60-silymarin__t21__g2.png) |
 | Salicylic Acid + LHA 2% Cleanser | Application macro | severe | [salicylic-lha-2-cleanser__t9__angles.png](salicylic-lha-2-cleanser/application-macro/salicylic-lha-2-cleanser__t9__angles.png) |
@@ -409,9 +418,22 @@ Each ad has a description file (`<id>.md`) next to it: product, format, angle, b
 | Vitamin C 10% Face Serum | Social-proof creative | low | [vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28__scale.png](vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/social-proof-creative/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t28__scale.png) |
 | Vitamin C 10% Face Serum | Stat-led creative | low | [vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25__proof.png](vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/stat-led-creative/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t25__proof.png) |
 | Vitamin C 10% Face Serum | Texture shot | low | [vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t21__formats.png](vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1/texture-shot/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1__t21__formats.png) |
+| Vitamin K + Retinal 1% Eye Cream | Application macro | severe | [vitamin-k-retinal-01-eye-cream__t9__g2.png](vitamin-k-retinal-01-eye-cream/application-macro/vitamin-k-retinal-01-eye-cream__t9__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Before / after | severe | [vitamin-k-retinal-01-eye-cream__t12__g2.png](vitamin-k-retinal-01-eye-cream/before-after/vitamin-k-retinal-01-eye-cream__t12__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Bundle / kit image | low | [vitamin-k-retinal-01-eye-cream__t38__g2.png](vitamin-k-retinal-01-eye-cream/bundle-kit-image/vitamin-k-retinal-01-eye-cream__t38__g2.png) |
 | Vitamin K + Retinal 1% Eye Cream | Clinical / science visual | low | [vitamin-k-retinal-01-eye-cream__t24__proof.png](vitamin-k-retinal-01-eye-cream/clinical-science-visual/vitamin-k-retinal-01-eye-cream__t24__proof.png) |
 | Vitamin K + Retinal 1% Eye Cream | Comparison image (Us vs Them) | high | [vitamin-k-retinal-01-eye-cream__t17__g2.png](vitamin-k-retinal-01-eye-cream/comparison-image-us-vs-them/vitamin-k-retinal-01-eye-cream__t17__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Creator selfie | severe | [vitamin-k-retinal-01-eye-cream__t31__g2.png](vitamin-k-retinal-01-eye-cream/creator-selfie/vitamin-k-retinal-01-eye-cream__t31__g2.png) |
 | Vitamin K + Retinal 1% Eye Cream | How-to / steps | low | [vitamin-k-retinal-01-eye-cream__t22__g2.png](vitamin-k-retinal-01-eye-cream/how-to-steps/vitamin-k-retinal-01-eye-cream__t22__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Ingredient flat lay | low | [vitamin-k-retinal-01-eye-cream__t4__g2.png](vitamin-k-retinal-01-eye-cream/ingredient-flat-lay/vitamin-k-retinal-01-eye-cream__t4__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Lifestyle product shot | severe | [vitamin-k-retinal-01-eye-cream__t6__g2.png](vitamin-k-retinal-01-eye-cream/lifestyle-product-shot/vitamin-k-retinal-01-eye-cream__t6__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Offer creative | medium | [vitamin-k-retinal-01-eye-cream__t36__g2.png](vitamin-k-retinal-01-eye-cream/offer-creative/vitamin-k-retinal-01-eye-cream__t36__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Problem macro | severe | [vitamin-k-retinal-01-eye-cream__t10__g2.png](vitamin-k-retinal-01-eye-cream/problem-macro/vitamin-k-retinal-01-eye-cream__t10__g2.png) |
 | Vitamin K + Retinal 1% Eye Cream | Problem → product | low | [vitamin-k-retinal-01-eye-cream__t15__g2.png](vitamin-k-retinal-01-eye-cream/problem-product/vitamin-k-retinal-01-eye-cream__t15__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Product + benefit badges | low | [vitamin-k-retinal-01-eye-cream__t2__g2.png](vitamin-k-retinal-01-eye-cream/product-benefit-badges/vitamin-k-retinal-01-eye-cream__t2__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Product + ingredients | low | [vitamin-k-retinal-01-eye-cream__t3__g2.png](vitamin-k-retinal-01-eye-cream/product-ingredients/vitamin-k-retinal-01-eye-cream__t3__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Product-in-use | severe | [vitamin-k-retinal-01-eye-cream__t8__g2.png](vitamin-k-retinal-01-eye-cream/product-in-use/vitamin-k-retinal-01-eye-cream__t8__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Progress / timeline | severe | [vitamin-k-retinal-01-eye-cream__t14__g2.png](vitamin-k-retinal-01-eye-cream/progress-timeline/vitamin-k-retinal-01-eye-cream__t14__g2.png) |
+| Vitamin K + Retinal 1% Eye Cream | Review creative | low | [vitamin-k-retinal-01-eye-cream__t26__g2.png](vitamin-k-retinal-01-eye-cream/review-creative/vitamin-k-retinal-01-eye-cream__t26__g2.png) |
 | Vitamin K + Retinal 1% Eye Cream | Stat-led creative | low | [vitamin-k-retinal-01-eye-cream__t25__proof.png](vitamin-k-retinal-01-eye-cream/stat-led-creative/vitamin-k-retinal-01-eye-cream__t25__proof.png) |
 | Vitamin K + Retinal 1% Eye Cream | Texture shot | low | [vitamin-k-retinal-01-eye-cream__t21__g2.png](vitamin-k-retinal-01-eye-cream/texture-shot/vitamin-k-retinal-01-eye-cream__t21__g2.png) |

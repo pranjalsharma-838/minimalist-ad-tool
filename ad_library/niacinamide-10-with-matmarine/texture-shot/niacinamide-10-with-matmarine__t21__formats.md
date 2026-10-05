@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Niacinamide 10% Face Serum is a lightweight serum with Zinc that leaves smooth textured skin with no sticky residue. 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning.
+Niacinamide 10% Face Serum is a lightweight serum with Zinc that leaves smooth textured skin with no sticky residue. Niacinamide 10%. Apply 2-3 drops after cleansing & toning.
 
 ## Facts cited (from the product page)
 ```json

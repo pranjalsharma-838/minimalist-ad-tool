@@ -1,4 +1,4 @@
-﻿import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
+import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
 import {
   VERDICTS, RISKS, SIZES, IMG_TYPES, IMG_GROUPS, IMG_SORTS,
   adDefaults, cleanAdState, filterAds, sortAds, adSortsFor, defaultAdSort, adFacetCounts, adOptions, activeAdFilters, countText,
@@ -195,6 +195,93 @@ function cornerColour(dataUrl) {
   return cornerCache.get(dataUrl);
 }
 
+// Studio product photos on a plain light backdrop (no verified render yet): each colour channel is scaled so the
+// backdrop becomes pure white, then the last few shades are lifted to 255. The pack keeps its own shading and soft
+// shadow, nothing is cut (a white tube on light grey cuts raggedly), and the photo sits on the white canvas like
+// every other ad (user, 2026-10-05: "different background, this is not acceptable").
+const whiteCache = new Map();
+function autoWhite(dataUrl) {
+  if (!whiteCache.has(dataUrl)) whiteCache.set(dataUrl, (async () => {
+    try {
+      const img = new Image(); img.src = dataUrl; await img.decode();
+      const W = img.naturalWidth, H = img.naturalHeight, c = document.createElement("canvas"); c.width = W; c.height = H;
+      const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(img, 0, 0);
+      const d = x.getImageData(0, 0, W, H), p = d.data;
+      const border = []; for (let i = 0; i < W; i += 4) border.push(i, (H - 1) * W + i); for (let j = 0; j < H; j += 4) border.push(j * W, j * W + W - 1);
+      // the brightest 60% of border pixels describe the backdrop (the floor shadow is darker)
+      const lum = border.map((i) => [p[i * 4] + p[i * 4 + 1] + p[i * 4 + 2], i]).sort((a, b) => b[0] - a[0]).slice(0, Math.ceil(border.length * 0.6));
+      const mean = [0, 1, 2].map((k) => lum.reduce((s, [, i]) => s + p[i * 4 + k], 0) / lum.length);
+      const sat = Math.max(...mean) - Math.min(...mean);
+      if (Math.min(...mean) >= 254.5 || Math.min(...mean) < 150 || sat > 24) return ""; // pure white already, too dark, or a coloured scene
+      const gain = mean.map((m) => 255 / m);
+      for (let q = 0; q < p.length; q += 4) for (let k = 0; k < 3; k++) { let v = p[q + k] * gain[k]; if (v > 238) v = 238 + (v - 238) * 3; p[q + k] = v > 255 ? 255 : v; }
+      x.putImageData(d, 0, 0);
+      return c.toDataURL("image/png");
+    } catch { return ""; }
+  })());
+  return whiteCache.get(dataUrl);
+}
+
+// Background removal for studio product photos: flood-fills from the image border through pixels close to the
+// backdrop colour (it tolerates the soft gradient of a studio sweep), makes them transparent and feathers the edge.
+// Returns "" when the border is not a plain backdrop (a scene, a white photo already, or a busy background).
+const cutCache = new Map();
+function autoCut(dataUrl) {
+  if (!cutCache.has(dataUrl)) cutCache.set(dataUrl, (async () => {
+    try {
+      const img = new Image(); img.src = dataUrl; await img.decode();
+      const W = img.naturalWidth, H = img.naturalHeight, c = document.createElement("canvas"); c.width = W; c.height = H;
+      const x = c.getContext("2d", { willReadFrequently: true }); x.drawImage(img, 0, 0);
+      const d = x.getImageData(0, 0, W, H), p = d.data, at = (i) => [p[i * 4], p[i * 4 + 1], p[i * 4 + 2]];
+      const border = []; for (let i = 0; i < W; i += 4) border.push(i, (H - 1) * W + i); for (let j = 0; j < H; j += 4) border.push(j * W, j * W + W - 1);
+      const cols = border.map(at), mean = [0, 1, 2].map((k) => cols.reduce((s, v) => s + v[k], 0) / cols.length);
+      const spread = Math.sqrt(cols.reduce((s, v) => s + (v[0] - mean[0]) ** 2 + (v[1] - mean[1]) ** 2 + (v[2] - mean[2]) ** 2, 0) / cols.length);
+      if (spread > 40 || Math.min(...mean) > 248) return ""; // busy scene, or already on white
+      const dist = (a, b) => Math.abs(a[0] - b[0]) + Math.abs(a[1] - b[1]) + Math.abs(a[2] - b[2]);
+      const seen = new Uint8Array(W * H), stack = [];
+      for (const i of border) { seen[i] = 1; stack.push(i); }
+      while (stack.length) {
+        const i = stack.pop(), v = at(i); p[i * 4 + 3] = 0;
+        const yy = (i / W) | 0, xx = i % W;
+        for (const n of [xx > 0 ? i - 1 : -1, xx < W - 1 ? i + 1 : -1, yy > 0 ? i - W : -1, yy < H - 1 ? i + W : -1]) {
+          if (n < 0 || seen[n]) continue;
+          const u = at(n);
+          if (dist(u, v) <= 18 && dist(u, mean) <= 90) { seen[n] = 1; stack.push(n); }
+        }
+      }
+      // feather: a half-transparent rim on product pixels that touch the removed backdrop
+      for (let i = 0; i < W * H; i++) if (p[i * 4 + 3] && ((i % W && !p[(i - 1) * 4 + 3]) || (i % W < W - 1 && !p[(i + 1) * 4 + 3]) || (i >= W && !p[(i - W) * 4 + 3]) || (i < W * H - W && !p[(i + W) * 4 + 3]))) p[i * 4 + 3] = 140;
+      const A = (xx, yy) => p[(yy * W + xx) * 4 + 3] > 200;
+      // bounding box of the product
+      let x0 = W, x1 = -1, y0 = H, y1 = -1;
+      for (let yy = 0; yy < H; yy++) for (let xx = 0; xx < W; xx++) if (A(xx, yy)) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; if (yy < y0) y0 = yy; if (yy > y1) y1 = yy; }
+      if (x1 < 0) return "";
+      // the photo's own cast shadow: the pack's width is measured on its body (40-65% down); anything opaque outside
+      // that span in the bottom 30% is the old shadow, not the pack (same rule as scripts/trim_cutout_shadows.py)
+      const ls = [], rs = [];
+      for (let yy = Math.round(y0 + (y1 - y0) * 0.4); yy < y0 + (y1 - y0) * 0.65; yy++) { let a = -1, b = -1; for (let xx = x0; xx <= x1; xx++) if (A(xx, yy)) { if (a < 0) a = xx; b = xx; } if (a >= 0) { ls.push(a); rs.push(b); } }
+      const med = (v) => v.sort((m, n) => m - n)[v.length >> 1];
+      const bgLum = mean[0] + mean[1] + mean[2]; // a shadow is darker than the backdrop; the pack's own edge pixels are not removed
+      if (ls.length) { const L = med(ls) - 4, R = med(rs) + 4; for (let yy = Math.round(y0 + (y1 - y0) * 0.7); yy <= y1; yy++) for (let xx = x0; xx <= x1; xx++) { const q = (yy * W + xx) * 4; if ((xx < L || xx > R) && p[q] + p[q + 1] + p[q + 2] < bgLum - 24) p[q + 3] = 0; } }
+      x.putImageData(d, 0, 0);
+      // re-measure after the trim and crop tight, so the drop shadow the layout adds sits right under the pack
+      // rows / columns count only when 1% of them is product, so a stray speck can't stretch the crop
+      const rowN = new Array(H).fill(0), colN = new Array(W).fill(0);
+      for (let yy = 0; yy < H; yy++) for (let xx = 0; xx < W; xx++) if (p[(yy * W + xx) * 4 + 3] > 20) { rowN[yy]++; colN[xx]++; }
+      const rOk = (yy) => rowN[yy] > W * 0.01, cOk = (xx) => colN[xx] > H * 0.01;
+      y0 = rowN.findIndex((_, i) => rOk(i)); y1 = H - 1 - [...rowN].reverse().findIndex((_, i) => rOk(H - 1 - i));
+      x0 = colN.findIndex((_, i) => cOk(i)); x1 = W - 1 - [...colN].reverse().findIndex((_, i) => cOk(W - 1 - i));
+      if (y0 < 0 || x0 < 0) return "";
+      const kept = ((x1 - x0 + 1) * (y1 - y0 + 1)) / (W * H);
+      if (x1 < 0 || kept < 0.03 || kept > 0.95) return ""; // nothing sensible left: keep the photo as it is
+      const o = document.createElement("canvas"); o.width = x1 - x0 + 1; o.height = y1 - y0 + 1;
+      o.getContext("2d").drawImage(c, x0, y0, o.width, o.height, 0, 0, o.width, o.height);
+      return o.toDataURL("image/png");
+    } catch { return ""; }
+  })());
+  return cutCache.get(dataUrl);
+}
+
 // ---------- product: library first, then facts ----------
 let sheet = null, handle = "";
 let copy = null, mode = "", log = [];
@@ -222,9 +309,9 @@ function showSheet(s, refusal, cached) {
     .join("");
   $("#facts-body").innerHTML = `<p class="hint">${esc(s.title)} · actives from pack title: ${s.actives.map((a) => esc(a.pct + " " + a.name)).join(", ") || "none"} · source: ${s.source}${cached ? ` · page read ${esc(new Date(cached).toLocaleDateString())} (saved copy; tick "Re-read" to refresh)` : ""}. Greyed rows (testimonials, FAQ answers, full INCI) cannot be cited as claims; prices, offers, the rating and reviews are quoted only by the offer, price, rating and quote formats.</p><table>${rows}</table>`;
   $("#facts").classList.remove("hidden");
-  $("#gen-controls").classList.toggle("hidden", Boolean(refusal));
+  $("#gen-controls").classList.remove("hidden");
   $("#img-studio").classList.remove("hidden");
-  $("#extract-msg").innerHTML = refusal ? `<div class="refusal"><b>Generator won't write this one.</b> ${esc(refusal)}</div>` : `${esc(s.title)}: ${s.facts.length} facts.`;
+  $("#extract-msg").innerHTML = refusal ? `${esc(s.title)}: ${s.facts.length} facts.<div class="warnbox blocked"><b>Severe: every ad for this product</b> ${esc(refusal)}</div>` : `${esc(s.title)}: ${s.facts.length} facts.`;
   loadRequests();
 }
 
@@ -338,13 +425,30 @@ function setSelectCounts(sel, counts) {
   for (const o of $(sel).options) if (o.value) o.textContent = `${o.dataset.label} (${counts[o.value] || 0})`;
 }
 
+// Ads that are not ready stay in the library with a plain warning (user, 2026-10-05: "bring back and give warning").
+const WARN_WHY = {
+  "AI-01": "AI-made result image: banned by India's ASCI rule on AI content, even with a label. Needs real, consented photos.",
+  "CLM-12": "Comparison: attach the proof behind it (what was compared, how, source) before use.",
+  "CLM-21": "Customer quote: show it as one person's experience ('results vary').",
+  "CLM-24": "Body-function wording: describe the visible result instead.",
+  "CLM-01": "Lab result worded like a medical claim: needs legal sign-off.",
+  "CLM-19": "SPF figure differs from the pack: use the labelled SPF.",
+};
+function adWarning(a) {
+  const v = a.scores?.verdict;
+  if (!v || v === "READY_FOR_REVIEW") return "";
+  const ids = [...new Set((a.scores.findings || []).map((f) => (String(f).match(/\b([A-Z]{2,4}-\d{2})\b/) || [])[1]).filter(Boolean))];
+  const why = ids.map((id) => WARN_WHY[id]).filter(Boolean)[0] || "Open findings: see the description.";
+  return `<span class="warnbox ${v === "BLOCKED" ? "blocked" : "fix"}"><b>${v === "BLOCKED" ? "Blocked, do not use" : "Needs a fix before use"}</b> ${esc(why)}</span>`;
+}
 function adCard(a, i, flat) {
   return `<div class="lib-card">
           <button type="button" class="lib-open" data-i="${i}" title="Open" aria-label="Open ${esc(a.fmt_title)}, ${esc(a.product)}"><img src="${esc(a.png)}" alt="${esc(a.fmt_title)}" loading="lazy" /></button>
           ${flat ? `<span class="lib-where"><b>${esc(a.fmt_title)}</b><br>${esc(a.product)}</span>` : ""}
           <span class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk) || "?")} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span>${a.ai ? '<span class="chip no">AI image</span>' : ""}</span>
           ${a.scores ? scoresCompact(libScores(a.scores)) : '<span class="hint small">Not scored yet</span>'}
-          <span class="dlrow" title="Download PNG">${adSizes(a).map((s) => `<a class="dl" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}" title="Download ${esc(s.label)} PNG">${esc(s.label)}</a>`).join("")}</span>
+          ${adWarning(a)}
+          ${a.scores?.verdict === "BLOCKED" ? "" : `<span class="dlrow" title="Download PNG">${adSizes(a).map((s) => `<a class="dl" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}" title="Download ${esc(s.label)} PNG">${esc(s.label)}</a>`).join("")}</span>`}
           <span class="hint small">${esc(a.run)}</span>
         </div>`;
 }
@@ -587,15 +691,19 @@ const fmtOf = (id) => formats.find((f) => f.id === id) || drafts.find((f) => f.i
 
 async function hydrate(id) {
   const it = items[id], spec = it.spec, up = uploads[id] || {};
-  const s = { ...spec, cutoutHrefs: [] };
-  s.imageHref = await dataUrlOf(spec.imageSrc);
-  if (spec.cutout && s.imageHref) s.cutoutHrefs.push(s.imageHref);
+  const s = { ...spec, cutoutHrefs: [], groundedHrefs: [] };
+  // A product-page photo on a coloured studio backdrop (no verified render yet) is cut out here, so every ad sits on
+  // the same white canvas (user, 2026-10-05: "different background, this is not acceptable").
+  const asCut = async (src, cutout) => {
+    let href = await dataUrlOf(src);
+    let white = false;
+    if (href && !cutout) { const c = await autoWhite(href); if (c) { href = c; white = true; } }
+    if (cutout && href) s.cutoutHrefs.push(href); else if (href && !white) s.rawPhotoHref = s.rawPhotoHref || href;
+    return href;
+  };
+  s.imageHref = await asCut(spec.imageSrc, spec.cutout);
   for (const k of ["steps", "range"]) {
-    s[k] = await Promise.all((spec[k] || []).map(async (x) => {
-      const href = await dataUrlOf(x.imageSrc);
-      if (x.cutout && href) s.cutoutHrefs.push(href);
-      return { ...x, imageHref: href };
-    }));
+    s[k] = await Promise.all((spec[k] || []).map(async (x) => ({ ...x, imageHref: await asCut(x.imageSrc, x.cutout) })));
   }
   if (spec.textureSrc) s.textureHref = await dataUrlOf(spec.textureSrc);
   // The product's own AI images (no upload needed): person, before/after and progress frames from the library's runs. An uploaded photo replaces them.
@@ -606,8 +714,8 @@ async function hydrate(id) {
   if (up.person) s.personHref = up.person;
   if (up.before && up.after) s.photos = [up.before, up.after];
   // White canvas when every pack is a clean cut-out (as in the library); else the photo's own studio colour.
-  const photo = [spec, ...(spec.steps || []), ...(spec.range || [])].find((x) => x.imageSrc && !x.cutout);
-  s.canvas = photo ? (await cornerColour(await dataUrlOf(photo.imageSrc))) || "#FFFFFF" : "#FFFFFF";
+  // White canvas whenever every pack is a cut-out (verified, from the library, or cut here); else the photo's own colour.
+  s.canvas = s.rawPhotoHref ? (await cornerColour(s.rawPhotoHref)) || "#FFFFFF" : "#FFFFFF";
   // Several packs side by side (range / steps) always share one white background (user, 2026-10-05: "all should be on the same background").
   if (spec.textureScene || spec.range?.length || spec.steps?.length) s.canvas = "#FFFFFF"; // the texture shot sits on white, as in pipeline/08_compose.js
   return s;
@@ -641,7 +749,8 @@ function updatePendingNote() {
   let note = $("#pending-note");
   if (!note) { note = document.createElement("p"); note.id = "pending-note"; note.className = "hint"; $("#strip").after(note); }
   const making = formats.filter((f) => f.pending && !["failed", "unavailable"].includes(f.pending.state)).length;
-  note.textContent = making ? `${making} more ad${making > 1 ? "s are" : " is"} being made: each appears here when its new image is ready (about a minute each).` : "";
+  const forRender = formats.some((f) => f.pending && /product render/.test(f.pending.text || ""));
+  note.textContent = !making ? "" : forRender ? `Making the label-checked product render first (ChatGPT, checked against the real pack, up to 3 tries; 1–3 minutes). ${making} ads appear here once it passes.` : `${making} more ad${making > 1 ? "s are" : " is"} being made: each appears here when its new image is ready (about a minute each).`;
 }
 
 function stateOf(id) {
@@ -668,10 +777,11 @@ function updateThumbInfo(id) {
 }
 
 function renderStrip() {
-  $("#strip").innerHTML = formats.map((f) => `<button type="button" class="thumb${f.id === selected ? " on" : ""}" data-id="${f.id}" role="option" aria-selected="${f.id === selected}">
+  $("#strip").innerHTML = formats.map((f) => `<button type="button" class="thumb${f.id === selected ? " on" : ""}" data-id="${f.id}" role="option" aria-selected="${f.id === selected}"${f.pending ? " hidden" : ""}>
       <span class="tim"><span class="skel"></span></span><span class="tinfo"></span></button>`).join("");
   $("#strip").querySelectorAll(".thumb").forEach((b) => (b.onclick = () => select(b.dataset.id)));
   formats.forEach((f) => updateThumbInfo(f.id));
+  updatePendingNote();
   $("#not-shown").onclick = (e) => { const a = e.target.closest(".fillin"); if (a) { e.preventDefault(); select(a.dataset.id); $("#preview").scrollIntoView({ behavior: "smooth" }); } };
   $("#not-shown").innerHTML = notShown.length ? `Not offered for this product: ${notShown.map((n) => `<b>${esc(n.label)}</b> (${esc(n.why)})${n.draft ? ` <a href="#" class="fillin" data-id="${esc(n.id)}">fill in</a>` : ""}`).join("; ")}.` : "";
 }
@@ -717,8 +827,9 @@ async function drawMain() {
   if (myGen !== gen || id !== selected) return;
   $("#preview").innerHTML = f.pending ? `<div class="pending big">${pendingCard(f.pending)}</div>` : svgFor(spec, previewSize);
   const block = exportBlock(id);
-  drawSizeButtons(Boolean(block));
-  $("#export-note").textContent = block || "Exports include the review ticket — send both to the reviewer. This is not an approval.";
+  drawSignoff(id, block);
+  drawSizeButtons(Boolean(block) || !signedOff(id));
+  $("#export-note").textContent = block || (signedOff(id) ? `Signed off by ${signoff[id].name}, line by line. The review ticket records it.` : "Download unlocks once a reviewer has ticked every line above against its source. This is not an approval.");
   $("#fmt-head").innerHTML = `
     <h3 class="fmt-title"><span class="tag new">New</span> #${f.rank} ${esc(f.label)}</h3>
     <p class="chips"><span class="chip risk-${f.risk}">${esc(f.risk_label)} risk</span>${f.status === "needs_input" ? '<span class="chip st-need">Needs input</span>' : ""}${f.image_review ? '<span class="chip no">Warning: label check failed, not exportable</span>' : ""}${it.judging ? '<span class="chip st-wait">AI check running…</span>' : ""}</p>
@@ -925,8 +1036,37 @@ $("#recheck").onclick = async () => {
   } catch (err) { $("#export-note").textContent = err.message; }
 };
 
+// Per-line reviewer sign-off (DeepSeek review: "Ready for human review" must not drift into "approved"; user 2026-10-05:
+// "fix these as well"). Before any download, a named reviewer ticks every line on the image and in the caption as checked
+// against its source. The ticket records who signed and which lines. Edits clear it. Held in this page only.
+const signoff = {};
+const signLines = (id) => { const ad = items[id]?.report?.ad || {}; return [ad.headline, ...String(ad.on_image_text || "").split("\n"), ad.footnote, ad.primary_text].map((s) => String(s || "").trim()).filter(Boolean); };
+const signedOff = (id) => { const s = signoff[id], n = signLines(id).length; return Boolean(s && s.name.trim() && s.lines.length === n && s.lines.every(Boolean) && s.key === signLines(id).join("\n")); };
+function drawSignoff(id, block) {
+  let box = $("#signoff");
+  if (!box) { box = document.createElement("details"); box.id = "signoff"; box.className = "signoff"; $("#export-note").before(box); }
+  if (block) { box.classList.add("hidden"); return; }
+  box.classList.remove("hidden");
+  const lines = signLines(id), key = lines.join("\n");
+  if (!signoff[id] || signoff[id].key !== key) signoff[id] = { name: signoff[id]?.name || "", lines: lines.map(() => false), key };
+  const s = signoff[id];
+  box.open = !signedOff(id);
+  box.innerHTML = `<summary>Reviewer sign-off ${signedOff(id) ? "(done)" : `(${s.lines.filter(Boolean).length} of ${lines.length} lines)`}</summary>
+    <p class="hint">Tick each line once you have checked it against its source (product page, study, offer terms). Download stays off until every line is ticked.</p>
+    ${lines.map((l, i) => `<label class="signline"><input type="checkbox" data-i="${i}"${s.lines[i] ? " checked" : ""}> ${esc(l)}</label>`).join("")}
+    <label class="signline">Reviewer name <input type="text" id="signer" value="${esc(s.name)}" placeholder="Your name"></label>`;
+  box.querySelectorAll("input[type=checkbox]").forEach((c) => (c.onchange = () => { s.lines[+c.dataset.i] = c.checked; refreshSign(id); }));
+  box.querySelector("#signer").oninput = (e) => { s.name = e.target.value; refreshSign(id); };
+}
+function refreshSign(id) {
+  const ok = signedOff(id);
+  $("#size-dl").querySelectorAll("button").forEach((b) => (b.disabled = Boolean(exportBlock(id)) || !ok));
+  $("#signoff summary").textContent = `Reviewer sign-off ${ok ? "(done)" : `(${signoff[id].lines.filter(Boolean).length} of ${signoff[id].lines.length} lines)`}`;
+  $("#export-note").textContent = ok ? `Signed off by ${signoff[id].name}, line by line. The review ticket records it.` : "Download unlocks once a reviewer has ticked every line above against its source. This is not an approval.";
+}
+
 async function downloadSize(key) {
-  if (exportBlock(selected)) return;
+  if (exportBlock(selected) || !signedOff(selected)) return;
   const p = placementOf(key), id = selected;
   const svg = svgFor(await hydrate(id), key);
   const img = new Image();
@@ -967,6 +1107,8 @@ function ticket() {
     f.status === "needs_input" ? `- DRAFT, still needs: ${f.missing.join(", ")}` : "",
     ...(f.typed.length ? [``, `## Lines typed in the app (no page source yet)`, ...f.typed.map((t) => `- ${t.label}: ${t.text}`)] : []),
     ...(uploads[selected] && Object.keys(uploads[selected]).length ? [``, `Uploaded photos: ${Object.keys(uploads[selected]).join(", ")} (treated as AI models: AI mark, Severe).`] : []),
+    ``,
+    signedOff(selected) ? `- Reviewer sign-off: **${signoff[selected].name}** ticked all ${signoff[selected].lines.length} lines against their sources (${new Date().toISOString().slice(0, 16)})` : `- Reviewer sign-off: **not done**`,
     ``,
     `## What the image shows`,
     ...[r.ad.headline, ...String(r.ad.on_image_text || "").split("\n")].filter(Boolean).map((l) => `- ${l}`),

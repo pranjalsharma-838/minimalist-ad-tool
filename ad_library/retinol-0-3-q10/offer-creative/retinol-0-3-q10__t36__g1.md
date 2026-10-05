@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Retinol 0.3% Face Serum: apply on a cleansed face, in the PM; use in the PM. Offer: "Buy 2, Get 3rd Free", beminimalist.co homepage, captured 2026-10-02; terms on the offer page. 0.3% Retinol. As on beminimalist.co, 2026-10-02.
+Retinol 0.3% Face Serum: apply on a cleansed face, in the PM; use in the PM. Offer: "Buy 2, Get 3rd Free", terms on the offer page. 0.3% Retinol. As on beminimalist.co, 2026-10-02.
 
 ## Facts cited (from the product page)
 ```json

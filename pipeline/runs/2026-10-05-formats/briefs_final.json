@@ -23,7 +23,7 @@
     "angle": "social_proof",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page. Apply 2-3 drops after cleansing & toning, AM & PM, and use sunscreen during the day.",
+    "caption": "Alpha Arbutin 2% Face Serum: Alpha Arbutin 2%. Apply 2-3 drops after cleansing & toning, AM & PM, and use sunscreen during the day.",
     "citations": {
       "headline": [
         "F1",
@@ -109,7 +109,7 @@
     "angle": "concern_solved",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+    "caption": "Alpha Arbutin 2% Face Serum: Alpha Arbutin 2%; use AM & PM. The two frames are AI illustrations, not results.",
     "citations": {
       "headline": [
         "F1",
@@ -194,7 +194,7 @@
     "angle": "transformation",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "caption": "Alpha Arbutin 2% Face Serum: Alpha Arbutin 2%; use AM & PM. The frames are AI illustrations of a routine, not study results.",
     "citations": {
       "headline": [
         "F1",
@@ -291,7 +291,7 @@
     "angle": "situation",
     "ai_label_required": true,
     "hook_type": "ingredient",
-    "caption": "Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face with a gentle circular motion, AM & PM. Use sunscreen during the day. 2% is the Alpha Arbutin strength stated on the page.",
+    "caption": "Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face with a gentle circular motion, AM & PM. Use sunscreen during the day. Alpha Arbutin 2%.",
     "citations": {
       "headline": [
         "F19"
@@ -358,7 +358,7 @@
     "source_ad_id": "alpha-arbutin-2__t26",
     "product_title": "Alpha Arbutin 2% Face Serum",
     "headline": "3.9 out of 5 from 1,800 reviews",
-    "subhead": "",
+    "subhead": "Rated on beminimalist.co",
     "tag": "",
     "proof_points": [],
     "actives": [],
@@ -376,7 +376,7 @@
     "angle": "ingredient_science",
     "ai_label_required": false,
     "hook_type": "social_proof",
-    "caption": "Alpha Arbutin 2% Face Serum: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 2% is the Alpha Arbutin strength stated on the page.",
+    "caption": "Alpha Arbutin 2% Face Serum: rated 3.9 out of 5 from 1,800 reviews on beminimalist.co.",
     "citations": {
       "headline": [
         "RATING"
@@ -412,11 +412,6 @@
       }
     ],
     "writer": "stand-in (Claude orchestrator agent) following prompts/pipeline_brief_writer.md; user rule 2026-10-05 transparency / no exaggeration",
-    "review": {
-      "stars": "★★★★",
-      "quote": "Like the texture. I like the texture of the serum…",
-      "source": "Anusuya R., verified buyer, 4★, 2024-09-08 (beminimalist.co, captured 2026-10-02)"
-    },
     "product_handle": "alpha-arbutin-2",
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Dot & Key",
@@ -460,14 +455,6 @@
       },
       {
         "pct": "",
-        "name": "Butylresorcinol",
-        "line": "A tyrosinase inhibitor",
-        "cites": [
-          "F6"
-        ]
-      },
-      {
-        "pct": "",
         "name": "Ferulic Acid",
         "line": "An antioxidant",
         "cites": [
@@ -489,7 +476,7 @@
     "angle": "sensorial",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Alpha Arbutin 2% Face Serum: 2% is the Alpha Arbutin strength stated on the page, sourced from Alfa Aesar, USA, and combined with Butylresorcinol and Ferulic Acid.",
+    "caption": "Alpha Arbutin 2% Face Serum: Alpha Arbutin 2%, sourced from Alfa Aesar, USA, and combined with Butylresorcinol and Ferulic Acid.",
     "citations": {
       "headline": [
         "F1",
@@ -573,7 +560,7 @@
     "angle": "routine",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face, AM & PM, and use sunscreen during the day. 2% is the Alpha Arbutin strength stated on the page.",
+    "caption": "Alpha Arbutin 2% Face Serum: after cleansing & toning, spread 2-3 drops over the face, AM & PM, and use sunscreen during the day. Alpha Arbutin 2%.",
     "citations": {
       "headline": [
         "F1",
@@ -753,7 +740,7 @@
     "angle": "situation",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Alpha Arbutin 2% Face Serum is formulated with Alpha Arbutin sourced from Alfa Aesar, USA, along with Butylresorcinol and Ferulic Acid; 2% is the Alpha Arbutin strength stated on the page.",
+    "caption": "Alpha Arbutin 2% Face Serum is formulated with Alpha Arbutin sourced from Alfa Aesar, USA, along with Butylresorcinol and Ferulic Acid; Alpha Arbutin 2%.",
     "citations": {
       "headline": [
         "F8"
@@ -1626,7 +1613,7 @@
     "source_ad_id": "niacinamide-10-with-matmarine__t10",
     "product_title": "Niacinamide 10% Face Serum",
     "headline": "10% Niacinamide for oily skin",
-    "subhead": "For reducing sebum & pores",
+    "subhead": "For the look of oiliness & pores",
     "tag": "Skin Science",
     "proof_points": [],
     "actives": [],
@@ -1644,7 +1631,7 @@
     "angle": "concern_solved",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Niacinamide 10% Face Serum: 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning, AM & PM.",
+    "caption": "Niacinamide 10% Face Serum: Niacinamide 10%. Apply 2-3 drops after cleansing & toning, AM & PM.",
     "citations": {
       "headline": [
         "F1",
@@ -1730,7 +1717,7 @@
     "angle": "transformation",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Niacinamide 10% Face Serum: 10% is the Niacinamide strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "caption": "Niacinamide 10% Face Serum: Niacinamide 10%; use AM & PM. The frames are AI illustrations of a routine, not study results.",
     "citations": {
       "headline": [
         "F1",
@@ -1817,13 +1804,13 @@
     "stat": null,
     "callouts": [
       {
-        "text": "Matmarine helps regulate oiliness",
+        "text": "With Matmarine",
         "cites": [
           "F7"
         ]
       },
       {
-        "text": "Zinc balances sebum activity",
+        "text": "With Zinc",
         "cites": [
           "F8"
         ]
@@ -1840,7 +1827,7 @@
     "angle": "routine",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Niacinamide 10% Face Serum is formulated with pure Vitamin B3 (Niacinamide) and Matmarine; 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning, AM & PM.",
+    "caption": "Niacinamide 10% Face Serum is formulated with pure Vitamin B3 (Niacinamide) and Matmarine; Niacinamide 10%. Apply 2-3 drops after cleansing & toning, AM & PM.",
     "citations": {
       "headline": [
         "F1",
@@ -1924,7 +1911,7 @@
     "angle": "situation",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Niacinamide 10% Face Serum: 10% is the Niacinamide strength stated on the page; the Niacinamide comes from Lonza, Switzerland and Matmarine from Lipotec USA. Apply 2-3 drops after cleansing & toning, AM & PM.",
+    "caption": "Niacinamide 10% Face Serum: Niacinamide 10%; the Niacinamide comes from Lonza, Switzerland and Matmarine from Lipotec USA. Apply 2-3 drops after cleansing & toning, AM & PM.",
     "citations": {
       "headline": [
         "F1",
@@ -2031,7 +2018,7 @@
     "angle": "social_proof",
     "ai_label_required": true,
     "hook_type": "ingredient",
-    "caption": "Niacinamide 10% Face Serum is a lightweight serum with Zinc that leaves smooth textured skin with no sticky residue. 10% is the Niacinamide strength stated on the page. Apply 2-3 drops after cleansing & toning.",
+    "caption": "Niacinamide 10% Face Serum is a lightweight serum with Zinc that leaves smooth textured skin with no sticky residue. Niacinamide 10%. Apply 2-3 drops after cleansing & toning.",
     "citations": {
       "headline": [
         "F8"
@@ -2116,7 +2103,7 @@
     "angle": "sensorial",
     "ai_label_required": false,
     "hook_type": "social_proof",
-    "caption": "Niacinamide 10% Face Serum: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 10% is the Niacinamide strength stated on the page.",
+    "caption": "Niacinamide 10% Face Serum: Rating and review from beminimalist.co. One customer's experience; results vary. Niacinamide 10%.",
     "citations": {
       "headline": [
         "RATING"
@@ -2155,7 +2142,7 @@
     "review": {
       "stars": "★★★★★",
       "quote": "I have been using your product since 1 & halfyear…",
-      "source": "Pratika B., verified buyer, 5★, 2025-09-27 (beminimalist.co, captured 2026-10-02)"
+      "source": "Pratika B., verified buyer, 5★, 2025-09-27 (beminimalist.co, captured 2026-10-02) · One customer's experience; results vary."
     },
     "product_handle": "niacinamide-10-with-matmarine",
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
@@ -2204,7 +2191,7 @@
     "angle": "ingredient_science",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Niacinamide 10% Face Serum: apply 2-3 drops after cleansing & toning and let the serum absorb fully before the next step, AM & PM. 10% is the Niacinamide strength stated on the page.",
+    "caption": "Niacinamide 10% Face Serum: apply 2-3 drops after cleansing & toning and let the serum absorb fully before the next step, AM & PM. Niacinamide 10%.",
     "citations": {
       "headline": [
         "F1",
@@ -2280,7 +2267,7 @@
     "angle": "social_proof",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Niacinamide 10% Face Serum: a blend of Niacinamide, Matmarine, Zinc and Acetyl Glucosamine; 10% is the Niacinamide strength stated on the page. Niacinamide comes from Lonza, Switzerland.",
+    "caption": "Niacinamide 10% Face Serum: a blend of Niacinamide, Matmarine, Zinc and Acetyl Glucosamine; Niacinamide 10%. Niacinamide comes from Lonza, Switzerland.",
     "citations": {
       "headline": [
         "F5"
@@ -2843,7 +2830,7 @@
     "angle": "situation",
     "ai_label_required": false,
     "hook_type": "social_proof",
-    "caption": "Salicylic Acid 2% Face Serum: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 2% is the Salicylic Acid strength stated on the page.",
+    "caption": "Salicylic Acid 2% Face Serum: Rating and review from beminimalist.co. One customer's experience; results vary. Salicylic Acid 2%.",
     "citations": {
       "headline": [
         "RATING"
@@ -2882,7 +2869,7 @@
     "review": {
       "stars": "★★★★★",
       "quote": "It's light, goes well with my skin and other products.",
-      "source": "S S., verified buyer, 5★, 2025-02-24 (beminimalist.co, captured 2026-10-02)"
+      "source": "S S., verified buyer, 5★, 2025-02-24 (beminimalist.co, captured 2026-10-02) · One customer's experience; results vary."
     },
     "product_handle": "salicylic-acid-2",
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
@@ -3250,7 +3237,7 @@
     "angle": "concern_solved",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Salicylic Acid + LHA 2% Cleanser: 2% is the combined BHA + LHA strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+    "caption": "Salicylic Acid + LHA 2% Cleanser: combined BHA + LHA 2%; use AM & PM. The two frames are AI illustrations, not results.",
     "citations": {
       "headline": [
         "F1",
@@ -3335,7 +3322,7 @@
     "angle": "transformation",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Salicylic Acid + LHA 2% Cleanser: 2% is the combined BHA + LHA strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "caption": "Salicylic Acid + LHA 2% Cleanser: combined BHA + LHA 2%; use AM & PM. The frames are AI illustrations of a routine, not study results.",
     "citations": {
       "headline": [
         "F1",
@@ -3614,7 +3601,7 @@
     "angle": "social_proof",
     "ai_label_required": false,
     "hook_type": "social_proof",
-    "caption": "Salicylic Acid + LHA 2% Cleanser: rating and review are from beminimalist.co, captured 2026-10-02; the review is quoted verbatim (trimmed with an ellipsis) with the buyer's name and date. 2% is the combined strength of BHA + LHA.",
+    "caption": "Salicylic Acid + LHA 2% Cleanser: Rating and review from beminimalist.co. One customer's experience; results vary. 2% is the combined strength of BHA + LHA.",
     "citations": {
       "headline": [
         "RATING"
@@ -3653,7 +3640,7 @@
     "review": {
       "stars": "★★★★★",
       "quote": "This cleanser works really well for daily use…",
-      "source": "Shruti J., verified buyer, 5★, 2026-04-17 (beminimalist.co, captured 2026-10-02)"
+      "source": "Shruti J., verified buyer, 5★, 2026-04-17 (beminimalist.co, captured 2026-10-02) · One customer's experience; results vary."
     },
     "product_handle": "salicylic-lha-2-cleanser",
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
@@ -4057,7 +4044,7 @@
     "angle": "ingredient_science",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Vitamin B5 10% Moisturizer: 10% is the Vitamin B5 strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+    "caption": "Vitamin B5 10% Moisturizer: Vitamin B5 10%; use AM & PM. The two frames are AI illustrations, not results.",
     "citations": {
       "headline": [
         "F1",
@@ -4142,7 +4129,7 @@
     "angle": "transformation",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Vitamin B5 10% Moisturizer: 10% is the Vitamin B5 strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "caption": "Vitamin B5 10% Moisturizer: Vitamin B5 10%; use AM & PM. The frames are AI illustrations of a routine, not study results.",
     "citations": {
       "headline": [
         "F1",
@@ -4523,7 +4510,7 @@
     "angle": "sensorial",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Vitamin B5 10% Moisturizer: use after cleansing, toning and applying all serums; massage into face and neck until fully absorbed, AM & PM. 10% is the Vitamin B5 strength stated on the page.",
+    "caption": "Vitamin B5 10% Moisturizer: use after cleansing, toning and applying all serums; massage into face and neck until fully absorbed, AM & PM. Vitamin B5 10%.",
     "citations": {
       "headline": [
         "F1",
@@ -4599,7 +4586,7 @@
     "angle": "concern_solved",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Vitamin B5 10% Moisturizer: a very high concentration of Vitamin B5 / Panthenol (10%, as stated on the page) for oil-free moisturization and repairing skin. The D-Panthenol USP is sourced from BASF, Germany.",
+    "caption": "Vitamin B5 10% Moisturizer: a very high concentration of Vitamin B5 / Panthenol (10%) for oil-free moisturization and repairing skin. The D-Panthenol USP is sourced from BASF, Germany.",
     "citations": {
       "headline": [
         "F5"
@@ -4691,7 +4678,7 @@
     "angle": "sensorial",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Vitamin C 10% Face Serum: 10% is the Vitamin C strength stated on the page. Take 2-3 drops on your fingertips after cleansing and toning and spread evenly; use AM & PM.",
+    "caption": "Vitamin C 10% Face Serum: Vitamin C 10%. Take 2-3 drops on your fingertips after cleansing and toning and spread evenly; use AM & PM.",
     "citations": {
       "headline": [
         "F1",
@@ -4777,7 +4764,7 @@
     "angle": "ingredient_science",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Vitamin C 10% Face Serum: 10% is the Vitamin C strength stated on the page; use AM & PM. The two frames are AI illustrations, not results.",
+    "caption": "Vitamin C 10% Face Serum: Vitamin C 10%; use AM & PM. The two frames are AI illustrations, not results.",
     "citations": {
       "headline": [
         "F1",
@@ -4862,7 +4849,7 @@
     "angle": "transformation",
     "ai_label_required": true,
     "hook_type": "statement",
-    "caption": "Vitamin C 10% Face Serum: 10% is the Vitamin C strength stated on the page; use AM & PM. The frames are AI illustrations of a routine, not study results.",
+    "caption": "Vitamin C 10% Face Serum: Vitamin C 10%; use AM & PM. The frames are AI illustrations of a routine, not study results.",
     "citations": {
       "headline": [
         "F1",
@@ -4959,7 +4946,7 @@
     "angle": "routine",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative, and contains 1% Acetyl Glucosamine; 10% is the Vitamin C strength stated on the page. Use AM & PM after cleansing and toning.",
+    "caption": "Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative, and contains 1% Acetyl Glucosamine; Vitamin C 10%. Use AM & PM after cleansing and toning.",
     "citations": {
       "headline": [
         "F1",
@@ -5058,7 +5045,7 @@
     "angle": "ingredient_science",
     "ai_label_required": true,
     "hook_type": "ingredient",
-    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly. Use AM & PM. 10% is the Vitamin C strength stated on the page.",
+    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly. Use AM & PM. Vitamin C 10%.",
     "citations": {
       "headline": [
         "F14"
@@ -5143,7 +5130,7 @@
     "angle": "situation",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap in gently and spread evenly, AM & PM. 10% is the Vitamin C strength stated on the page.",
+    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap in gently and spread evenly, AM & PM. Vitamin C 10%.",
     "citations": {
       "headline": [
         "F1",
@@ -5220,7 +5207,7 @@
     "angle": "concern_solved",
     "ai_label_required": false,
     "hook_type": "ingredient",
-    "caption": "Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative with 86% pure Vitamin C content, and contains 1% Acetyl Glucosamine; 10% is the Vitamin C strength stated on the page.",
+    "caption": "Vitamin C 10% Face Serum is made with Ethyl Ascorbic Acid, a stabilized Vitamin C derivative with 86% pure Vitamin C content, and contains 1% Acetyl Glucosamine; Vitamin C 10%.",
     "citations": {
       "headline": [
         "F5"
@@ -5315,7 +5302,7 @@
     "angle": "social_proof",
     "ai_label_required": true,
     "hook_type": "situation",
-    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly with a circular motion. Use AM & PM, every day. 10% is the Vitamin C strength stated on the page.",
+    "caption": "Vitamin C 10% Face Serum: after cleansing and toning, take 2-3 drops on your fingertips, tap gently onto the skin, then spread evenly with a circular motion. Use AM & PM, every day. Vitamin C 10%.",
     "citations": {
       "headline": [
         "F14"

@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Alpha Arbutin 2% Face Serum is formulated with Alpha Arbutin sourced from Alfa Aesar, USA, along with Butylresorcinol and Ferulic Acid; 2% is the Alpha Arbutin strength stated on the page.
+Alpha Arbutin 2% Face Serum is formulated with Alpha Arbutin sourced from Alfa Aesar, USA, along with Butylresorcinol and Ferulic Acid; Alpha Arbutin 2%.
 
 ## Facts cited (from the product page)
 ```json

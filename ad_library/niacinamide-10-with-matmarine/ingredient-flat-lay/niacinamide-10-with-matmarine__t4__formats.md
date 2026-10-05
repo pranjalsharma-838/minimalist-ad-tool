@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-Niacinamide 10% Face Serum: a blend of Niacinamide, Matmarine, Zinc and Acetyl Glucosamine; 10% is the Niacinamide strength stated on the page. Niacinamide comes from Lonza, Switzerland.
+Niacinamide 10% Face Serum: a blend of Niacinamide, Matmarine, Zinc and Acetyl Glucosamine; Niacinamide 10%. Niacinamide comes from Lonza, Switzerland.
 
 ## Facts cited (from the product page)
 ```json

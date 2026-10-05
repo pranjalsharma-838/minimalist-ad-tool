@@ -26,7 +26,7 @@
 - CTA: Shop now · sign-off: Hide Nothing.
 
 ## Caption (primary text; compliance-checked like the creative)
-The 3rd product is free when you buy 2. T&C apply. As on beminimalist.co, 2026-10-02. T&C apply. Vitamin C + E + Ferulic 16% Face Serum: 2-3 drops after cleansing & toning; use AM & PM. Offer: "Buy 2, Get 3rd Free", beminimalist.co homepage, captured 2026-10-02; terms on the offer page. 16% Vitamin C + E + Ferulic.
+The 3rd product is free when you buy 2. T&C apply. Vitamin C + E + Ferulic 16% Face Serum: 2-3 drops after cleansing & toning; use AM & PM. Offer: "Buy 2, Get 3rd Free", terms on the offer page. 16% Vitamin C + E + Ferulic.
 
 ## Style edits (cuts only; the replaced line moved to the caption)
 - footnote: "As on beminimalist.co, 2026-10-02. T&C apply." → "T&C apply." (footnote cut to the T&C line to fit the 20-word budget; capture date stays in the caption)

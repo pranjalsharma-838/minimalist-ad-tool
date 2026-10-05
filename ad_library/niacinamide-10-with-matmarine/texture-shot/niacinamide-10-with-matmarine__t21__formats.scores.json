@@ -22,7 +22,7 @@
       {
         "name": "Meta voice match",
         "score": 84,
-        "why": "Measured against 10 long-running brand copies and 8 top statics (meta_voice_profile.json, built 2026-10-05): sentence length 100 — median 4 words per sentence vs the brand's 7 (middle half 4–9); exclamation marks 100 — 0 per 100 words vs the brand's 0.6; emoji 100 — 0 per 100 words vs the brand's 0.6; hype words 100 — none (0/100 words vs the brand's 0.2); fear / problem words 100 — none (0/100 words vs the brand's 0.4); ingredient / % first 100 — opens with an active or a concentration (as the brand does in 37% of its openers); hook type 75 — opening hook reads as \"statement\" (10% of the brand's long-running copies); hedged outcomes 0 — 0 of 1 outcome lines hedged (\"helps\", \"visibly\", \"designed to\") vs the brand's 12%; hedging more than the brand is never marked down."
+        "why": "Measured against 10 long-running brand copies and 8 top statics (meta_voice_profile.json, built 2026-10-05): sentence length 100 — median 3 words per sentence vs the brand's 7 (middle half 4–9); exclamation marks 100 — 0 per 100 words vs the brand's 0.6; emoji 100 — 0 per 100 words vs the brand's 0.6; hype words 100 — none (0/100 words vs the brand's 0.2); fear / problem words 100 — none (0/100 words vs the brand's 0.4); ingredient / % first 100 — opens with an active or a concentration (as the brand does in 37% of its openers); hook type 75 — opening hook reads as \"statement\" (10% of the brand's long-running copies); hedged outcomes 0 — 0 of 1 outcome lines hedged (\"helps\", \"visibly\", \"designed to\") vs the brand's 12%; hedging more than the brand is never marked down."
       },
       {
         "name": "transparency & no exaggeration",
@@ -124,5 +124,5 @@
       }
     ]
   },
-  "scored_at": "2026-10-05T08:19:41.901Z"
+  "scored_at": "2026-10-05T12:17:26.272Z"
 }
