@@ -331,7 +331,7 @@ function adCard(a, i, flat) {
   return `<div class="lib-card">
           <button type="button" class="lib-open" data-i="${i}" title="Open" aria-label="Open ${esc(a.fmt_title)}, ${esc(a.product)}"><img src="${esc(a.png)}" alt="${esc(a.fmt_title)}" loading="lazy" /></button>
           ${flat ? `<span class="lib-where"><b>${esc(a.fmt_title)}</b><br>${esc(a.product)}</span>` : ""}
-          <span class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk) || "?")} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span>${a.ai ? '<span class="chip no">AI person</span>' : ""}</span>
+          <span class="chips"><span class="chip risk-${esc(a.risk)}">${esc(cap(a.risk) || "?")} risk</span><span class="chip ${a.exportable ? "ok" : "no"}">${a.exportable ? "Exportable" : "Not exportable"}</span>${a.ai ? '<span class="chip no">AI image</span>' : ""}</span>
           ${a.scores ? scoresCompact(libScores(a.scores)) : '<span class="hint small">Not scored yet</span>'}
           <span class="dlrow" title="Download PNG">${adSizes(a).map((s) => `<a class="dl" href="${esc(s.url)}" download="${esc(s.url.split("/").pop())}" title="Download ${esc(s.label)} PNG">${esc(s.label)}</a>`).join("")}</span>
           <span class="hint small">${esc(a.run)}</span>
