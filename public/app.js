@@ -64,6 +64,17 @@ document.querySelectorAll(".tab").forEach((b) =>
     document.querySelectorAll(".tab").forEach((x) => { x.classList.toggle("active", x === b); x.setAttribute("aria-selected", x === b); });
     document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("hidden", p.id !== `tab-${b.dataset.tab}`));
     if (b.dataset.tab === "images") initImageLibrary();
+    // "Final ads" (user, 2026-10-05): every finished library ad, all products, ads only. The same saved-ads browser,
+    // moved into its own tab and opened on "All ads"; it moves back under the product when that tab is shown.
+    const lib = $("#library"), home = $("#tab-generate");
+    if (b.dataset.tab === "final") {
+      $("#tab-final").appendChild(lib);
+      $("#lib-details").open = true;
+      openLibrary("all", { state: adDefaults() });
+    } else if (b.dataset.tab === "generate" && lib.parentElement !== home) {
+      home.appendChild(lib);
+      if (!libHandle) { lib.classList.add("hidden"); libVisible = false; } else openLibrary("p", { h: libHandle, state: adDefaults() });
+    }
     syncHash();
   })
 );
@@ -610,18 +621,27 @@ async function drawThumb(id) {
   if (!it) return;
   if (fmtOf(id)?.pending) {
     const card = $(`#strip [data-id="${id}"]`);
-    // An image that failed or can't be made leaves no empty slot behind (user, 2026-10-05: "no placeholders anywhere").
-    if (card && ["failed", "unavailable"].includes(fmtOf(id).pending.state)) { card.hidden = true; return; }
-    if (card) card.querySelector(".tim").innerHTML = pendingCard(fmtOf(id).pending);
-    updateThumbInfo(id);
+    // No empty slots (user, 2026-10-05: "there are still many placeholders"): an ad whose new image isn't ready is not
+    // shown at all; it appears in the grid once its image arrives (the poll redraws it). The header counts what's coming.
+    if (card) card.hidden = true;
+    updatePendingNote();
     return;
   }
+  { const c = $(`#strip [data-id="${id}"]`); if (c) c.hidden = false; updatePendingNote(); }
   const svg = renderAdSvg(await hydrate(id));
   if (thumbUrls[id]) URL.revokeObjectURL(thumbUrls[id]);
   thumbUrls[id] = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
   const card = $(`#strip [data-id="${id}"]`);
   if (card) card.querySelector(".tim").innerHTML = `<img src="${thumbUrls[id]}" alt="" />`;
   updateThumbInfo(id);
+}
+
+// One quiet line under the grid instead of placeholder tiles: "3 more ads are being made (new images from the Image Studio)".
+function updatePendingNote() {
+  let note = $("#pending-note");
+  if (!note) { note = document.createElement("p"); note.id = "pending-note"; note.className = "hint"; $("#strip").after(note); }
+  const making = formats.filter((f) => f.pending && !["failed", "unavailable"].includes(f.pending.state)).length;
+  note.textContent = making ? `${making} more ad${making > 1 ? "s are" : " is"} being made: each appears here when its new image is ready (about a minute each).` : "";
 }
 
 function stateOf(id) {
