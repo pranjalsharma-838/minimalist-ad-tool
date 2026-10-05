@@ -1,5 +1,7 @@
 # Minimalist Ad Desk
 
+**Start here:** `docs/ONE_PAGER.md` (the brief in its own words, how it works, ratings, decisions, fixes) and the flowchart `docs/how_it_works.png`.
+
 Turns a product page into a checked, on-brand static ad, and scores any ad for claims and brand fit. Minimalist is the test brand; nothing here is published.
 
 ## Run it
