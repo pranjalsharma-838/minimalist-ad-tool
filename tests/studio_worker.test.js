@@ -30,10 +30,10 @@ test("the prompt gets the fixed pack-protection suffix and a draw instruction", 
   assert.match(W.CORRECTION, /^The pack changed — keep the pack exactly as in the photo: Use the attached photo/);
 });
 
-test("picks up the oldest queued request, skips finished and non-queued ones", () => {
+test("picks up the newest queued request first, skips finished and non-queued ones", () => {
   make("1_a"); make("2_b"); make("3_c", { status: "working" }); make("4_d");
   fs.writeFileSync(path.join(dir, "4_d.result.json"), JSON.stringify({ status: "done" }));
-  assert.deepEqual(W.listQueued().map((r) => r.id), ["1_a", "2_b"]);
+  assert.deepEqual(W.listQueued().map((r) => r.id), ["2_b", "1_a"]);
 });
 
 test("a passing check: working -> done, image and result file written", async () => {
@@ -106,5 +106,5 @@ test("tick() processes one request per call", async () => {
   for (const f of fs.readdirSync(dir)) fs.rmSync(path.join(dir, f));
   make("1_x"); make("2_y");
   assert.equal(await W.tick(W.createDryStudio()), "done");
-  assert.deepEqual(W.listQueued().map((r) => r.id), ["2_y"]);
+  assert.deepEqual(W.listQueued().map((r) => r.id), ["1_x"]);
 });
