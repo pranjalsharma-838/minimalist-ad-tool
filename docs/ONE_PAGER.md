@@ -4,38 +4,9 @@
 
 ## How it works
 
-```
-Competitor research  (Meta Ad Library, 10-12 brands, statics live 30+ days; re-checked every Monday)
-        │   → 48 ad formats, ranked;  17 agreed + 2 proof formats per product
-        ▼
-Product link (beminimalist.co)
-        │
-        ▼
-1. Read the product page
-        │   facts numbered F1, F2 ... · claims, studies, usage, reviews, offers
-        │   who it is for (e.g. babies + grown-ups with sensitive skin)
-        ▼
-2. Write the copy
-        │   Claude (or word for word from the page) · every line cites a fact
-        │   code checks every number against its fact · risky page lines skipped
-        ▼
-3. Make the product image
-        │   real pack photo → ChatGPT / OpenAI re-render on white
-        │   label compared word by word · up to 3 tries · saved and reused
-        ▼
-4. Make the scene images  (all at once, after step 3 passes)
-        │   person · creator · product in hand · texture · before/after · progress
-        │   written for the product's real user · AI label on every image
-        ▼
-5. Check the ad
-        │   44 rules  →  AI judge (rulebook only)  →  brand decisions DEC-01..07
-        │   →  verdict set in code  ·  risk level  ·  3 scores
-        ▼
-6. Review and export
-        │   named reviewer ticks every line  →  download 1:1, 4:5, 9:16 + review ticket
-        ▼
-Ad library  (433 ads, all sizes, Hindi/Tamil; warnings on any ad that is not ready)
-```
+![How an ad is made](how_it_works.png)
+
+Purple: Claude agents · grey: code · green: images (OpenAI first, ChatGPT as backup) · red: human sign-off. The gate loops flagged lines back up to 3 times; the product image is checked word by word against the real label before any scene is made. Source: `docs/how_it_works.html`.
 
 17 agreed formats + 2 proof ads per product, ranked from 122 competitor statics. The library holds **433 ads** for the top 20 sellers + the underarm roll-on: 391 ready for human review, 41 need a fix, 1 blocked; **242 can be downloaded after review today** (the rest show AI people or results and need real, consented photos first). Every not-ready ad shows why.
 

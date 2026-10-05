@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>body{margin:0;background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}.wrap{padding:22px 28px;width:1100px}h1{font-size:20px;margin:0 0 2px;color:#111}.sub{color:#666;font-size:12.5px;margin:0 0 6px}
+.legend{font-size:12px;color:#333;margin:0 0 4px}.legend span{display:inline-block;padding:2px 9px;border-radius:999px;margin-right:6px;border:1.5px solid}</style>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script></head><body><div class="wrap">
+<h1>Minimalist Ad Desk: how an ad is made</h1>
+<div class="sub">The library pipeline as built. The app's "Build new ads" runs a lighter version live: no competitor blending, style fit or translation.</div>
+<div class="legend"><span style="border-color:#6B4EFF;background:#F1EDFF">Claude agent</span><span style="border-color:#666;background:#F4F4F4">Code</span><span style="border-color:#0E8A5F;background:#E7F6EF">Images (OpenAI / ChatGPT)</span><span style="border-color:#B42318;background:#FDECEC">Human</span><span style="border-color:#999;background:#FAF8F3">Input</span></div>
+<pre class="mermaid">
+flowchart TB
+  A([Brand context agent]):::agent --> W[Write cited ad briefs]:::agent
+  A --> F[Pick formats per product]:::code
+  C([Competitor ads, live 30+ days]):::in --> F
+  F --> W
+  W --> G[Compliance gate: rules + judge]:::code
+  G -- flagged --> R[Rewrite flagged lines, max 3]:::agent
+  R --> G
+  G -- passed --> S[Fit Minimalist's text budget]:::agent
+  O([Minimalist's own top ads]):::in --> S
+  S --> T[Hindi and Tamil versions]:::agent
+  B([Asset library agent]):::agent --> P[Product image, label-checked]:::img
+  S --> P
+  P --> Q[Scene images, in parallel]:::img
+  P --> M[Compose ads, three sizes]:::code
+  Q --> M
+  T --> M
+  M --> K[Score, risk and warnings]:::code
+  K --> L[(Ad library: 433 ads)]:::code
+  K --> H[Reviewer signs every line]:::human
+  H --> D([Download with review ticket]):::human
+  classDef agent fill:#F1EDFF,stroke:#6B4EFF,stroke-width:1.5px,color:#111
+  classDef code fill:#F4F4F4,stroke:#666,stroke-width:1.5px,color:#111
+  classDef img fill:#E7F6EF,stroke:#0E8A5F,stroke-width:1.5px,color:#111
+  classDef human fill:#FDECEC,stroke:#B42318,stroke-width:1.5px,color:#111
+  classDef in fill:#FAF8F3,stroke:#999,stroke-width:1.5px,color:#111
+</pre></div>
+<script>mermaid.initialize({ startOnLoad: true, theme: "base", flowchart: { curve: "basis", nodeSpacing: 40, rankSpacing: 42, htmlLabels: true, useMaxWidth: false, padding: 14 }, themeVariables: { fontFamily: "Helvetica Neue, Helvetica, Arial, sans-serif", fontSize: "17px", lineColor: "#444" } });</script>
+</body></html>
