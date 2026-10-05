@@ -332,7 +332,7 @@
     "product_url": "https://beminimalist.co/products/alpha-arbutin-2",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -349,7 +349,8 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "testimonial_ugc",
@@ -1277,7 +1278,7 @@
     "product_url": "https://beminimalist.co/products/multi-vitamin-spf-50",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -1303,7 +1304,8 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "ingredient_explainer",
@@ -2070,7 +2072,7 @@
     "product_url": "https://beminimalist.co/products/niacinamide-10-with-matmarine",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -2087,7 +2089,8 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "testimonial_ugc",
@@ -2786,7 +2789,7 @@
     "product_url": "https://beminimalist.co/products/salicylic-acid-2",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -2813,7 +2816,8 @@
       }
     ],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "testimonial_ugc",
@@ -3566,7 +3570,7 @@
     "product_url": "https://beminimalist.co/products/salicylic-lha-2-cleanser",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -3583,7 +3587,8 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "testimonial_ugc",
@@ -4375,7 +4380,7 @@
     "product_url": "https://beminimalist.co/products/vitamin-b5-10-moisturizer",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -4392,7 +4397,8 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "ingredient_explainer",
@@ -5093,7 +5099,7 @@
     "product_url": "https://beminimalist.co/products/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1",
     "source_brand": "Dot & Key",
     "status": "approved_for_image_step",
-    "risk_level": "high",
+    "risk_level": "low",
     "warnings": [],
     "hard_failures": [],
     "verdict": {
@@ -5110,7 +5116,8 @@
     },
     "findings": [],
     "rounds_tried": 2,
-    "kept_because": "passed"
+    "kept_because": "passed",
+    "risk_note": "AI-made texture swatch beside the label-verified pack: Low risk (user decision 2026-10-05, DEC-04); keeps the AI-generated - illustrative mark for transparency."
   },
   {
     "ad_type": "other",

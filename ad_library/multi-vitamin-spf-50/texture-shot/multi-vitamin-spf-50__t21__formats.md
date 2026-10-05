@@ -12,7 +12,7 @@
 | Social proof | none |
 | Placements | 1:1 multi-vitamin-spf-50__t21.png · 4:5 multi-vitamin-spf-50__t21.4x5.png · 9:16 multi-vitamin-spf-50__t21.9x16.png |
 | Language versions | none |
-| Risk level | **high** · carries the AI-GENERATED — ILLUSTRATIVE mark |
+| Risk level | **low** · carries the AI-GENERATED — ILLUSTRATIVE mark |
 | AI imagery | yes — AI-generated people/skin, shown with the visible AI-GENERATED mark |
 | Compliance verdict | Ready for human review (limited check) (rules only) |
 | Retry rounds | 2 |

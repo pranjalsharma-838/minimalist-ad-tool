@@ -103,11 +103,14 @@ test("drafts show placeholders on the image but never score them", () => {
 });
 
 test("people and before/after photos carry the AI mark and Severe risk, like the library", () => {
-  // A product with no AI person image in the library still asks for a photo; the product used here has none.
+  // Since 2026-10-05 every best seller has a library AI person image, so the format is ready with the AI mark; a
+  // product with none (here: an unknown handle) still asks for a photo.
   const s = sheet("light-fluid-spf-50-sunscreen"), copy = verbatimCopy(s);
-  const empty = buildFormat("person", copy, s);
+  const lib = buildFormat("person", copy, s);
+  assert.equal(lib.meta.risk, "severe");
+  if (lib.meta.status === "ready") assert.equal(lib.spec.aiLabel, true);
+  const empty = buildFormat("person", copy, { ...s, url: "https://beminimalist.co/products/no-such-product" });
   assert.equal(empty.meta.status, "needs_input");
-  assert.equal(empty.meta.risk, "severe");
   assert.equal(empty.spec.aiLabel, false);
   const withPhoto = buildFormat("person", copy, s, { person: { photos: { person: true } } });
   assert.equal(withPhoto.meta.status, "ready");
@@ -116,7 +119,7 @@ test("people and before/after photos carry the AI mark and Severe risk, like the
   const ba = buildFormat("before_after", copy, s, { before_after: { photos: { before: true, after: true } } });
   assert.equal(ba.spec.aiLabel, true);
   assert.deepEqual(ba.layout, []);
-  assert.equal(buildFormat("before_after", copy, s).meta.status, "needs_input", "no AI frames and no upload: still asks for the photos");
+  assert.equal(buildFormat("before_after", copy, { ...s, url: "https://beminimalist.co/products/no-such-product" }).meta.status, "needs_input", "no AI frames and no upload: still asks for the photos");
   assert.equal(buildFormat("timeline", copy, s).notFit.length > 10, true, "no AI progress frames for this product: not offered, with a reason");
 });
 
