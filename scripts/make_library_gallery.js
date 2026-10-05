@@ -40,6 +40,7 @@ const trendRow = (t) => {
   // when the format exists; user 2026-10-05: nothing pending).
   const all = ads.filter((a) => tid(a) === t.template_id);
   const ours = [...all.filter((a) => a.run === "trending"), ...all.filter((a) => a.run !== "trending")].slice(0, 4);
+  if (!ours.length) return ""; // no finished ad of ours for this trend: the row is left out, never a "not made yet" slot
   const refs = t.ads.filter((x, i, all) => all.findIndex((y) => y.brand === x.brand) === i).slice(0, 4);
   return `<div class="trow"><div class="tinfo"><h3>#${t.template_id} ${esc(t.name)}</h3><p><b>${t.brands.length} brands</b> · ${t.ads.length} ads · newest ${t.ads[0].days} days ago</p><p class="tb">${esc(t.brands.join(", "))}</p></div>
   <div class="trefs">${refs.map((x) => `<a href="${esc(x.url)}" target="_blank" title="${esc(x.one_line)}"><img loading="lazy" src="../${esc(x.image_file)}" alt="${esc(x.brand)}"><span>${esc(x.brand)} · ${x.days}d</span></a>`).join("")}</div>

@@ -186,8 +186,9 @@ test("filters work on the real ad library and the real image list", () => {
   assert.equal(filterAds(ads, { ...adDefaults(), verdict: ["ready", "fix", "blocked"] }).length, count);
   const risk = adFacetCounts(ads, adDefaults(), "risk");
   assert.equal(Object.values(risk).reduce((a, b) => a + b, 0), count);
-  const sev = filterAds(ads, { ...adDefaults(), risk: ["severe"] });
-  assert.ok(sev.length > 0 && sev.length < count && sev.every((a) => a.risk === "severe"));
+  // The curated library (scripts/curate_library.js) holds only good, exportable ads: nothing Severe, nothing blocked.
+  assert.equal(filterAds(ads, { ...adDefaults(), risk: ["severe"] }).length, 0);
+  assert.ok(ads.every((a) => a.exportable !== false), "a not-exportable ad is still in the library");
   assert.ok(filterAds(ads, { ...adDefaults(), exp: "yes", ai: "yes" }).every((a) => a.exportable && a.ai));
   const top = sortAds(filterAds(ads, { ...adDefaults(), align: 90 }), "align", "all");
   assert.ok(top.length > 0 && top.every((a) => a.scores.alignment >= 90));

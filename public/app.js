@@ -610,6 +610,8 @@ async function drawThumb(id) {
   if (!it) return;
   if (fmtOf(id)?.pending) {
     const card = $(`#strip [data-id="${id}"]`);
+    // An image that failed or can't be made leaves no empty slot behind (user, 2026-10-05: "no placeholders anywhere").
+    if (card && ["failed", "unavailable"].includes(fmtOf(id).pending.state)) { card.hidden = true; return; }
     if (card) card.querySelector(".tim").innerHTML = pendingCard(fmtOf(id).pending);
     updateThumbInfo(id);
     return;

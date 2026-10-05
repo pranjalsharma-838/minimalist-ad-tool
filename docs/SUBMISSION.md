@@ -14,7 +14,7 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 ## Making ads
 
 - **From a product link:** the app reads the page and writes copy where every line traces back to it. It puts the real product photo on a clean layout and checks the result. Seven layouts: product hero, ingredient focus, benefit badges, study result, customer review (verified reviews captured from the brand site, stars and date kept), question and answer, and texture shot (real texture photos only). A layout the product can't fill honestly is shown greyed out with the reason. You can edit and re-check, then download the PNG with a review note. Timed on 10 products: about 3–4 seconds each without a key (`results/timing_2026-10-04.md`).
-- **The ad library** (`ad_library/index.html`) shows what the full pipeline makes: 411 ads across Minimalist's top 20 best sellers plus its underarm roll-on, 17 agreed formats per product plus 2 proof ads built on each page's study or lab figures, all in 1:1, 4:5 and 9:16 (a few in Hindi and Tamil). Every ad carries three scores and an AI judge review: 323 ready for human review, 30 need fixes, 58 blocked (mostly AI result images, which India's new AI-content rule bans even with a label).
+- **The ad library** (`ad_library/index.html`, and the "Saved ads" section in the app) holds only finished, good ads: 224 across Minimalist's top 20 best sellers plus its underarm roll-on, each ready for human review and exportable, in 1:1, 4:5 and 9:16 (a few in Hindi and Tamil). They come from 411 the pipeline made (17 agreed formats per product plus 2 proof ads built on each page's study or lab figures). Every ad carries three scores (alignment, win, compliance) and an AI judge review. The other 187 (58 blocked, mostly AI result images, which India's new AI-content rule bans even with a label; 30 needing fixes; 99 ready but not exportable because they use AI people) are kept in `ad_library_archive/`, not deleted.
 - **Product images:** each product's pack and a texture shot were re-rendered in ChatGPT from the brand's own photo, then checked word by word against the real label (automatic comparison plus a visual read), up to 3 rounds. 21 of 21 passed; the AI texture is rated Low risk and keeps an "illustrative" mark.
 - **The look** comes from Minimalist's own longest-running static ads: white background, the product big, about 15 words on the image, details in the caption, and its "Hide Nothing." sign-off.
 - **The ideas** come from competitor ads that have run for over 30 days, blended so nothing is copied.
@@ -22,7 +22,7 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 - **Safety:**
   - The product photo is always real, never AI-drawn.
   - Any ad with an AI person or hands carries a visible AI label and is rated Severe, so it can't be exported until real, consented photos replace it.
-  - About half the library can't be exported yet, by design.
+  - Ads that can't be exported are kept out of the library, in `ad_library_archive/`.
 
 ## The deliverables
 

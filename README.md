@@ -16,7 +16,7 @@ Turns a product page into a checked, on-brand static ad, and scores any ad for c
 ## What's where
 - `docs/SUBMISSION.md` is the place to start.
 - Also in `docs/`: the decision doc (`DECISIONS.md`), the failure modes (`FAILURE_MODES.md`) and the build transcript (`TRANSCRIPT.md`).
-- `ad_library/index.html` is every ad made, with a Trending section on top. Open it in a browser.
+- `ad_library/index.html` holds the 224 finished, good ads (ready for review and exportable), with a Trending section on top. Open it in a browser. Everything else the pipeline made is in `ad_library_archive/`; `node scripts/curate_library.js` does the sorting.
 - `prompts/` holds every prompt the tool uses.
 - `pipeline/RUNBOOK.md` explains how to run the ad library pipeline.
 
