@@ -4,7 +4,7 @@ None of these are bugs. Each is what happens when the tool does exactly what it 
 
 ## 1. "Ready for human review" turns into "approved"
 
-**What happens.** The pre-screen catches most of what reviewers catch: 91% of reviewer-flagged phrases in the eval. So reviewers start trusting it, and review shrinks to a glance at the verdict. Then a claim of a kind the rulebook has never seen goes out with a clean pre-screen. Examples: a new ingredient trend, a new regulator focus, a claim made through the image rather than the words.
+**What happens.** The pre-screen catches most of what reviewers catch: 90% of reviewer-flagged phrases on the held-back ads (91% across all 49 test ads), measured with a stand-in judge on the same prompt. So reviewers start trusting it, and review shrinks to a glance at the verdict. Then a claim of a kind the rulebook has never seen goes out with a clean pre-screen. Examples: a new ingredient trend, a new regulator focus, a claim made through the image rather than the words.
 
 **Why it's likely.** The better the tool performs, the stronger this effect gets. The eval itself shows the gap: rules alone caught 52% on the sealed set, so nearly half of what was caught depended on model judgement, which can't be audited the same way.
 

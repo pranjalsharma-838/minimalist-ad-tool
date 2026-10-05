@@ -1,61 +1,63 @@
 # Minimalist Ad Desk: one page
 
-**The ask, in the brief's own words:** build the loop that makes ads the way "the video script and image brief generator we made" does, "but instead that is passed to ChatGPT for image generation"; "select 10–12 competitor ad pools, and the brand context engine runs on it and makes the changes, then the brief passes through the compliance, and then GPT receives things". Minimalist is the test brand, "so the same pipeline can later be reused for other brands". Formats go beyond before/after: "product journey, actives and information on those, and many other formats you must have found on Meta from competitors".
+**The ask, in the brief's own words:** make ads the way "the video script and image brief generator we made" does, "but instead that is passed to ChatGPT for image generation": competitor ads that ran 30+ days feed "the brand context engine", "then the brief passes through the compliance, and then GPT receives things". Minimalist is the test brand, "so the same pipeline can later be reused for other brands". **Run it:** `npm start`, open http://localhost:5173, add a Claude and an OpenAI key (or continue without them). Repo: github.com/pranjalsharma-838/minimalist-ad-tool.
 
-## Architecture
+## How it works
 
 ```
+Competitor research  (Meta Ad Library, 10-12 brands, statics live 30+ days; re-checked every Monday)
+        │   → 48 ad formats, ranked;  17 agreed + 2 proof formats per product
+        ▼
 Product link (beminimalist.co)
-  -> Facts: the page, read into numbered facts (F1, F2 ...); every ad line cites them
-  -> Audiences: who the page says it is for (e.g. "Newborns & Up" + "Sensitive skin" -> parents, and grown-ups with sensitive skin)
-  -> Formats: 17 agreed formats + 2 proof ads, ranked from competitor statics that ran 30+ days (Meta Ad Library)
-  -> Copy: Claude (or, with no key, word for word from the page / a Claude stand-in on the same prompt)
-  -> Product image FIRST: ChatGPT re-renders the real pack photo; the label is checked word by word, up to 3 rounds; reused after
-  -> Scenes AFTER, in parallel: person, creator, product in hand, texture, before/after, progress (written for the product's real user)
-  -> Checks: 44 rules -> AI judge (rulebook only) -> brand decisions -> verdict set in code -> three scores
-  -> Review: named reviewer ticks every line before download; review ticket travels with the PNG (1:1, 4:5, 9:16)
+        │
+        ▼
+1. Read the product page
+        │   facts numbered F1, F2 ... · claims, studies, usage, reviews, offers
+        │   who it is for (e.g. babies + grown-ups with sensitive skin)
+        ▼
+2. Write the copy
+        │   Claude (or word for word from the page) · every line cites a fact
+        │   code checks every number against its fact · risky page lines skipped
+        ▼
+3. Make the product image
+        │   real pack photo → ChatGPT / OpenAI re-render on white
+        │   label compared word by word · up to 3 tries · saved and reused
+        ▼
+4. Make the scene images  (all at once, after step 3 passes)
+        │   person · creator · product in hand · texture · before/after · progress
+        │   written for the product's real user · AI label on every image
+        ▼
+5. Check the ad
+        │   44 rules  →  AI judge (rulebook only)  →  brand decisions DEC-01..07
+        │   →  verdict set in code  ·  risk level  ·  3 scores
+        ▼
+6. Review and export
+        │   named reviewer ticks every line  →  download 1:1, 4:5, 9:16 + review ticket
+        ▼
+Ad library  (433 ads, all sizes, Hindi/Tamil; warnings on any ad that is not ready)
 ```
 
-Two front ends share this engine: the app (`npm start`: Ads for a product, Score any ad incl. bulk upload, Final ads, Image library) and the library pipeline (`pipeline/`, 433 ads for the top 20 sellers + the underarm roll-on). A weekly script re-checks the Meta Ad Library every Monday 10:00.
+17 agreed formats + 2 proof ads per product, ranked from 122 competitor statics. The library holds **433 ads** for the top 20 sellers + the underarm roll-on: 391 ready for human review, 41 need a fix, 1 blocked; **242 can be downloaded after review today** (the rest show AI people or results and need real, consented photos first). Every not-ready ad shows why.
 
 ## How ads are rated
 
-| Layer | Values | Who sets it |
+| | Values | Set by |
 |---|---|---|
-| Finding severity | **Block** (stops the ad), **Fix** (change before use), **Advisory** (a note) | Rulebook; the AI judge can only be milder, never harsher |
-| Verdict | Ready for human review / Ready (limited check, no AI judge) / Needs a fix / Blocked | Code, from the findings. Never "approved": "Humans approve." |
-| Risk | Low / Medium / High / **Severe** | Format and imagery. "Whenever models are used in concepts we will say the risk is severe, but we will keep those as well." Severe = no download until real, consented photos |
-| Scores | Brand alignment 0–100, Chance to win 0–100, Compliance | Alignment: matches Minimalist's long-running ads. Win: share of comparable statics that ran 30+ days (122 ads, 11 brands). Compliance: the verdict |
+| Problem severity | **Block** / **Fix** / **Advisory** | 44 rules (Indian ad law, platform policy, brand voice); the AI judge can only be milder |
+| Verdict | Ready for human review / Needs a fix / Blocked, never "approved" | Code, from the findings ("Humans approve") |
+| Risk | Low / Medium / High / **Severe** (AI people or results: no download until real photos) | Format and imagery |
+| Scores | Brand alignment, Chance to win (0–100), Compliance | Brand's own long-running ads; 30+ day survival of comparable statics |
 
-## Decisions made (all applied in code: `rules/brand_decisions.json`, `lib/rules.js`)
+**Checker accuracy:** 90% of reviewer-flagged phrases on held-back ads (rules alone 52%), 81% on unseen brands, no missed blocks; measured with a Claude stand-in on the exact judge prompt.
 
-- **DEC-01** acne wording allowed (cure/treat/prevent still flagged). **DEC-02/03** comparison ads in, proof attached before use. **DEC-04** AI texture shots are Low risk, marked illustrative.
-- **DEC-05** "Things which are mentioned in the listing will be treated leniently": listing claims one step milder, proof still confirmed.
-- **DEC-06** pregnancy/lactation safety stated on the listing: accepted.
-- **DEC-07** AI images: "don't block this, just a warning". Made, warned, rated Severe (India's ASCI AI rule, from about late Dec 2026).
-- **Customer quotes** allowed; "customer consent needed if name is shown, otherwise fine".
-- **AI judge** "should strictly stick to rules and never its own judgement": off-rulebook notes are advisory only.
-- **Baby products**: ads made and rated Severe, "because this is for babies"; no before/after or progress images; parent-and-baby scenes.
-- **Images**: "after the product image is rendered correctly we send the request for rest of the images", "all shoot parallely"; the real pack photo must attach or nothing is sent.
-- **Library**: every ad shown, "fix and bring back and give warning", random order, blocked ads shown with the reason, no download.
+## Decisions (applied in code)
 
-## What we fixed (the main ones)
+Acne wording allowed (DEC-01) · comparisons in, with proof (DEC-02/03) · AI textures Low risk (DEC-04) · "things mentioned in the listing will be treated leniently" (DEC-05) · pregnancy/lactation on the listing accepted (DEC-06) · AI images: "don't block, just a warning", rated Severe (DEC-07) · customer quotes fine, "consent needed if name is shown" · AI judge "strictly sticks to rules" · baby products: ads made, Severe, parent-and-baby scenes, no result images · product image first, then "all shoot parallely"; OpenAI first, ChatGPT as backup.
 
-| Problem (as raised) | Fix |
-|---|---|
-| "New ads are loading the previously made ones" | Build makes everything fresh; old scenes never reused (approved textures excepted) |
-| "Many placeholders" / blank tiles | No empty tiles; one loading line per ad with its progress |
-| "Different background, this is not acceptable"; grey shelf under bottles | Renders whitened to pure white; cut-out shadows trimmed; page photos whitened |
-| "Why are we not using the loop I established for getting the product image?" | Products without a checked image wait for the ChatGPT render + label check, then reuse it |
-| "The original image is missing" in the ChatGPT prompt | Photo must visibly attach; Send fallback for ChatGPT's new layout |
-| "This is for babies and you made random shit" | Scenes written from the page's real use and audience |
-| "Hindi and Tamil ads are also in English" | Line-by-line swap via back-translation |
-| Client name, emails, passwords in shared files | Removed from the repo, history and transcript |
+## What we fixed
 
-## Tools used
-
-Node (no installs), headless Edge for PNGs, ChatGPT via a signed-in browser window (or the OpenAI API), Claude API (or a Claude stand-in on the exact prompt), Python + OpenCV for the label check, Meta Ad Library, Git/GitHub. Cheaper models (Sonnet) did the repetitive judging and grammar work.
+"New ads loading the previously made ones" → built fresh · "many placeholders" → loading line per ad, no empty tiles · "different background, not acceptable" → every pack on pure white · "the loop I established for the product image" → products wait for the checked render · "original image missing" in the prompt → photo must attach before sending · "this is for babies" → scenes from the page's real user · Hindi/Tamil in English → line-by-line swap · client name, emails, passwords → removed everywhere.
 
 ## Not yet proven
 
-The AI judge and the copy model have only run as stand-ins (no keys); `scripts/check_claude_route.mjs` and `check_api_route.mjs` re-run both live. The win score is a proxy until real spend and sales data exist.
+The AI judge and copy model ran as stand-ins (no keys); `scripts/check_claude_route.mjs` and `check_api_route.mjs` re-run them live. The win score is a proxy until ads run with real spend. Detail: `docs/SUBMISSION.md`, `DECISIONS.md`, `FAILURE_MODES.md`, `TRANSCRIPT.md`.
