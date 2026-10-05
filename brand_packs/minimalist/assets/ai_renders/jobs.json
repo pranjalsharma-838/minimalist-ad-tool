@@ -1,8 +1,8 @@
 [
- {
-  "h": "niacinamide-5-hyaluronic-acid-1_texture_r3",
-  "image": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\brand_packs\\minimalist\\assets\\ai_renders\\niacinamide-5-hyaluronic-acid-1\\round1.png",
-  "out": "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\brand_packs\\minimalist\\assets\\ai_renders\\niacinamide-5-hyaluronic-acid-1\\texture3.png",
-  "prompt": "Use the attached photo as the exact product. Create a premium, minimal studio photo on a seamless pure white background: this same product standing upright on the right, and beside it on the left a few drops and a short smear of the serum, showing a realistic texture consistent with this kind of product. Soft diffused light from the upper left, soft natural shadows, crisp focus, photorealistic, 4:5 portrait, highest resolution. The product must stay identical to the photo: same shape, cap, colours, label layout and every word on the label exactly as printed. Do not add, remove or change any text or logo. No hands, no people, no extra props, no text outside the product. CORRECTION (final round): the glass bottle must be near-black very dark brown, almost opaque, exactly like the attached photo; NOT amber, NOT translucent, NOT reddish. Re-render the Minimalist Niacinamide 05% serum bottle exactly as in the reference photo. The glass must be near-black neutral dark brown (about RGB 42,38,33 on the shoulders): NO amber, NO orange or red cast, no warm glow through the glass at the shoulders or neck. Make the glass look the same as the Salicylic Acid bottle - almost black. Keep every label word, the teal line, black ribbed collar and black bulb, label size/position, and bottle shape unchanged. Only the white background and the clear gel swatch beside it may change."
- }
+    {
+        "out":  "C:\\Users\\pranjal.sharma_onegu\\Desktop\\minimalist-ad-tool\\pipeline\\runs\\2026-10-05-formats\\backgrounds\\alpha-arbutin-2__t10.person.png",
+        "image":  "",
+        "prompt":  "Photorealistic close-up macro photo of the cheek of an Indian woman in her late 20s with a few small, flat, light-brown dark spots and mild uneven tone, natural skin texture with visible pores, soft daylight, shallow depth of field, calm and realistic, not dramatic, no makeup, no product, no text, no logos, square composition with the skin filling the frame.",
+        "h":  "alpha-arbutin-2__t10"
+    }
 ]

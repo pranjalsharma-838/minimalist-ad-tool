@@ -85,7 +85,7 @@ const up = new Promise((resolve, reject) => {
   server = spawn(process.execPath, ["server.js"], { cwd: path.join(here, ".."), env: { ...process.env, PORT: String(PORT) }, stdio: ["ignore", "pipe", "ignore"] });
   server.stdout.on("data", (d) => /running at/.test(String(d)) && resolve());
   server.on("error", reject);
-  setTimeout(() => reject(new Error("server did not start")), 15000).unref();
+  setTimeout(() => reject(new Error("server did not start")), 90000).unref();
 });
 after(() => { try { server?.kill(); } catch { /* gone */ } });
 

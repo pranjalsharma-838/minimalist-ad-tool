@@ -150,9 +150,10 @@ async function handleApi(req, res, url) {
     else {
       // LIVE by default (user, 2026-10-05): the page is read now, every time, for any brand. A saved copy (beminimalist.co only,
       // up to 7 days old) is used only when "useSaved" is asked for.
-      const { extractFromAnyUrl, brandSiteOf } = await lazy("./lib/extract_generic.js");
+      const { extractFromAnyUrl, brandSiteOf, NOT_MINIMALIST } = await lazy("./lib/extract_generic.js");
       const { cachedSheet, saveSheet } = await lazy("./lib/library.js");
       const isMin = brandSiteOf(body.url) === "minimalist";
+      if (!isMin) throw new Error(NOT_MINIMALIST);
       const handle = isMin ? parseProductUrl(body.url).handle : "";
       const c = body.useSaved && isMin ? cachedSheet(handle) : null;
       if (c) { sheet = c.sheet; cached = c.fetched_at; } else { sheet = await extractFromAnyUrl(body.url); if (isMin) saveSheet(handle, sheet); }

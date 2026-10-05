@@ -1,4 +1,4 @@
-// The app's formats (2026-10-05: "I don't see all the formats, many are not even clickable"): every format that fits the
+﻿// The app's formats (2026-10-05: "I don't see all the formats, many are not even clickable"): every format that fits the
 // product is offered, ranked by the library's archetype scoring, and drawn + scored through the library's own brief code
 // (specFromBrief / adFromBrief). A format missing an input opens as a draft that says what's missing; nothing is invented.
 import { test } from "node:test";
@@ -218,7 +218,7 @@ test("all formats are checked in one quick call; the judge runs per format later
   const t = Date.now();
   const out = await allFormats(copy, s);
   assert.ok(Date.now() - t < 3000, "rules-only for every format stays fast");
-  assert.equal(Object.keys(out.items).length, out.formats.length);
+  assert.equal(Object.keys(out.items).length, out.formats.length + out.drafts.length);
   const one = await formatItem(copy, s, "offer", {}, { rulesOnly: true });
   assert.equal(one.meta.id, "offer");
 });
@@ -232,3 +232,4 @@ test("the existing library is read for the product, grouped by format", () => {
   assert.deepEqual(libraryFor("../secrets").groups, []);
   assert.ok(Array.isArray(imageRequests("salicylic-acid-2")));
 });
+

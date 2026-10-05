@@ -191,9 +191,7 @@ function chromeStart(spec, panel) {
 // missing"): "Hide Nothing." sits under the logo on the end card of Minimalist's two longest-running ads (121 days)
 // and on its Amazon gallery's brand slate. Drawn on every layout; adFromBrief scores it with the rest of the text.
 export const SIGN_OFF = "Hide Nothing.";
-function wordmark(x, spec = {}) {
-  // Another brand's ad carries ITS name; "Hide Nothing." is Minimalist's own sign-off.
-  if (spec.brand) return `<text x="${x}" y="${PAD + 10}" font-family="${FONT}" font-size="22" font-weight="700" letter-spacing="0.6" fill="${C.ink}">${esc(String(spec.brand).slice(0, 26))}</text>`;
+function wordmark(x) {
   return `<text x="${x}" y="${PAD + 10}" font-family="${FONT}" font-size="22" font-weight="700" letter-spacing="0.6" fill="${C.ink}">Minimalist</text>` +
     `<text x="${x + 1}" y="${PAD + 30}" font-family="${FONT}" font-size="13" letter-spacing="0.4" fill="${C.muted}">${esc(SIGN_OFF)}</text>`;
 }
@@ -407,7 +405,8 @@ LAYOUTS.range = (spec, s) => {
     let bottom = y;
     items.forEach((it, i) => {
       const x = PAD + i * (colW + gap);
-      tp.push(pack(spec, it.imageHref, x, y, colW, imgH));
+      // multiply: each photo's near-white studio backdrop melts into the white canvas, so every pack sits on one background.
+      tp.push(`<g style="mix-blend-mode:multiply">${pack(spec, it.imageHref, x, y, colW, imgH)}</g>`);
       const lb = wrap(it.label, Math.round(22 * s), colW, 0.56);
       tp.push(T(lb, x, y + imgH + Math.round(38 * s), Math.round(22 * s), Math.round(28 * s), `font-weight="600" fill="${C.ink}"`));
       const ny = y + imgH + Math.round(38 * s) + lb.length * Math.round(28 * s);

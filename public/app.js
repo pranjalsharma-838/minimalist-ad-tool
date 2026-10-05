@@ -187,7 +187,7 @@ function cornerColour(dataUrl) {
 // ---------- product: library first, then facts ----------
 let sheet = null, handle = "";
 let copy = null, mode = "", log = [];
-let formats = [], items = {}, notShown = [], selected = "";
+let formats = [], drafts = [], items = {}, notShown = [], selected = "";
 let inputs = {}, uploads = {}, aiValues = {};
 // One number per Build per product (kept in this browser): the server rotates facts, headlines and images by it, so a new Build is never a repeat.
 let variant = 0;
@@ -572,7 +572,7 @@ async function refreshImages() {
 }
 
 // ---------- new ads: every format, ranked, rendered progressively ----------
-const fmtOf = (id) => formats.find((f) => f.id === id);
+const fmtOf = (id) => formats.find((f) => f.id === id) || drafts.find((f) => f.id === id);
 
 async function hydrate(id) {
   const it = items[id], spec = it.spec, up = uploads[id] || {};
@@ -597,13 +597,14 @@ async function hydrate(id) {
   // White canvas when every pack is a clean cut-out (as in the library); else the photo's own studio colour.
   const photo = [spec, ...(spec.steps || []), ...(spec.range || [])].find((x) => x.imageSrc && !x.cutout);
   s.canvas = photo ? (await cornerColour(await dataUrlOf(photo.imageSrc))) || "#FFFFFF" : "#FFFFFF";
-  if (spec.textureScene) s.canvas = "#FFFFFF"; // the texture shot sits on white, as in pipeline/08_compose.js
+  // Several packs side by side (range / steps) always share one white background (user, 2026-10-05: "all should be on the same background").
+  if (spec.textureScene || spec.range?.length || spec.steps?.length) s.canvas = "#FFFFFF"; // the texture shot sits on white, as in pipeline/08_compose.js
   return s;
 }
 
 const thumbUrls = {};
 // A format whose image is still being made (or can't be): a loading card, never an ad with something drawn in its place.
-const pendingCard = (p) => `<span class="pending ${esc(p.state)}"><b>${p.state === "making" ? "Making a new image…" : p.state === "failed" ? "New image failed" : "New image needs the Image Studio"}</b><small>${esc(p.text)}${p.progress ? " " + esc(p.progress) : ""}</small></span>`;
+const pendingCard = (p) => `<span class="pending ${esc(p.state)}"><b>${p.state === "making" ? "Making a new image…" : p.state === "failed" ? "New image failed" : "New image needs the Image Studio"}</b><small>${esc(p.text.replace(/^New image needs the Image Studio: /, ""))}${p.progress ? " " + esc(p.progress) : ""}</small></span>`;
 async function drawThumb(id) {
   const it = items[id];
   if (!it) return;
@@ -634,11 +635,14 @@ function stateOf(id) {
 function updateThumbInfo(id) {
   const card = $(`#strip [data-id="${id}"]`), f = fmtOf(id);
   if (!card || !f) return;
-  const st = stateOf(id);
+  const st = stateOf(id), sc = items[id]?.report?.scores;
+  // One small coloured dot (risk + verdict, in its tooltip) and three small scores on one line.
+  const bad = ["BLOCKED"].includes(st.cls) || ["high", "severe"].includes(f.risk), warn = ["need", "NEEDS_CHANGES"].includes(st.cls) || f.risk === "medium";
+  const dot = st.cls === "wait" ? "grey" : bad ? "red" : warn ? "amber" : "green";
+  const line = f.pending ? esc(st.text) : sc ? [sc.alignment && `Fit ${pct(sc.alignment.score)}`, sc.win && `Win ${pct(sc.win.score)}`, sc.compliance && `Comp ${sc.compliance.score != null ? pct(sc.compliance.score) : esc(sc.compliance.label || sc.compliance.code)}`].filter(Boolean).join(" · ") : "";
   card.querySelector(".tinfo").innerHTML = `
-    <span class="tlab"><span class="rank">#${f.rank}</span> ${esc(f.label)}</span>
-    <span class="chips"><span class="chip risk-${f.risk}">${esc(f.risk_label)}</span><span class="chip st-${st.cls}">${esc(st.text)}</span></span>
-    ${scoresCompact(items[id]?.report?.scores)}`;
+    <span class="tlab"><span class="dot ${dot}" title="${esc(f.risk_label)} risk · ${esc(st.text)}"></span>${esc(f.label)}</span>
+    <span class="tscores">${line}</span>`;
 }
 
 function renderStrip() {
@@ -646,7 +650,8 @@ function renderStrip() {
       <span class="tim"><span class="skel"></span></span><span class="tinfo"></span></button>`).join("");
   $("#strip").querySelectorAll(".thumb").forEach((b) => (b.onclick = () => select(b.dataset.id)));
   formats.forEach((f) => updateThumbInfo(f.id));
-  $("#not-shown").innerHTML = notShown.length ? `Not offered for this product: ${notShown.map((n) => `<b>${esc(n.label)}</b> (${esc(n.why)})`).join("; ")}.` : "";
+  $("#not-shown").onclick = (e) => { const a = e.target.closest(".fillin"); if (a) { e.preventDefault(); select(a.dataset.id); $("#preview").scrollIntoView({ behavior: "smooth" }); } };
+  $("#not-shown").innerHTML = notShown.length ? `Not offered for this product: ${notShown.map((n) => `<b>${esc(n.label)}</b> (${esc(n.why)})${n.draft ? ` <a href="#" class="fillin" data-id="${esc(n.id)}">fill in</a>` : ""}`).join("; ")}.` : "";
 }
 
 function select(id) {
@@ -779,8 +784,9 @@ async function rescoreOne(id, { rulesOnly = !llm } = {}) {
   try {
     const out = await api("/api/rescore", { copy, sheet, format: id, inputs, rulesOnly, variant });
     if (myGen !== gen) return;
-    const i = formats.findIndex((f) => f.id === id);
-    formats[i] = { ...out.meta, rank: formats[i].rank };
+    const i = formats.findIndex((f) => f.id === id), di = drafts.findIndex((f) => f.id === id);
+    if (i >= 0) formats[i] = { ...out.meta, rank: formats[i].rank };
+    else if (di >= 0) drafts[di] = out.meta;
     items[id] = { spec: out.spec, report: out.report, judged: !rulesOnly };
   } catch (err) {
     if (items[id]) items[id].judging = false;
@@ -819,7 +825,7 @@ function fillEditor(c) {
 
 // Shows a freshly built set: the first format large at once, then the strip fills in, then the AI judge (if on).
 async function showBuild(out, t0) {
-  formats = out.formats; items = Object.fromEntries(Object.entries(out.items).map(([k, v]) => [k, { ...v, judged: false }])); notShown = out.notShown;
+  formats = out.formats; drafts = out.drafts || []; items = Object.fromEntries(Object.entries(out.items).map(([k, v]) => [k, { ...v, judged: false }])); notShown = out.notShown;
   formats.forEach((f, i) => (f.rank = i + 1));
   if (!fmtOf(selected)) selected =out.format || formats.find((f) => f.status === "ready")?.id || formats[0].id;
   $("#gen-result").classList.remove("hidden");
@@ -838,10 +844,21 @@ async function showBuild(out, t0) {
   pollImages();
 }
 // Every few seconds, formats waiting for a new image are re-read; the card swaps to the finished ad by itself.
-let imgPoll = null;
+let imgPoll = null, renderSeen = false;
 function pollImages() {
   clearTimeout(imgPoll);
-  const myGen = gen, waiting = formats.filter((f) => f.pending && f.pending.state !== "failed" && f.pending.state !== "unavailable");
+  const myGen = gen, rid = inputs.requests?.render;
+  if (rid && !renderSeen) {
+    clearTimeout(imgPoll);
+    imgPoll = setTimeout(async () => {
+      if (myGen !== gen) return;
+      const r = ((await api(`/api/image-requests?handle=${encodeURIComponent(handle)}`).catch(() => ({ requests: [] }))).requests || []).find((x) => x.id === rid);
+      if (r && ["done", "needs_review", "failed"].includes(r.status)) { renderSeen = true; if (r.status === "done") await showBuild(await api("/api/formats", { copy, sheet, inputs, variant })); else pollImages(); return; }
+      pollImages();
+    }, 6000);
+    return;
+  }
+  const waiting = formats.filter((f) => f.pending && f.pending.state !== "failed" && f.pending.state !== "unavailable");
   if (!waiting.length) return;
   imgPoll = setTimeout(async () => {
     if (myGen !== gen) return;
@@ -850,6 +867,7 @@ function pollImages() {
   }, 6000);
 }
 
+$("#settings-btn").onclick = () => $("#settings").showModal();
 $("#generate").onclick = async () => {
   const t0 = performance.now();
   gen++;
@@ -860,7 +878,7 @@ $("#generate").onclick = async () => {
     const out = await api("/api/generate", { sheet, mode: $("#mode").value, variant });
     if (out.refused) return ($("#extract-msg").innerHTML = `<div class="refusal">${esc(out.reason)}</div>`);
     copy = out.copy; mode = out.mode; log = out.log || [];
-    inputs = { requests: out.requests || {} };
+    inputs = { requests: out.requests || {} }; renderSeen = false;
     fillEditor(copy);
     $("#extract-msg").textContent = "";
     await showBuild(out, t0);
@@ -1150,3 +1168,4 @@ async function applyHash() {
 }
 window.addEventListener("hashchange", applyHash);
 if (location.hash) applyHash();
+

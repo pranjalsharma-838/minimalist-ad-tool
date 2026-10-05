@@ -3735,6 +3735,18 @@
       "cutout": "brand_packs/minimalist/assets/cutouts/vitamin-c-ethyl-ascorbic-acid-10-acetyl-glucosamine-1_render.png",
       "cutout_status": "clean (render on white)",
       "notes": "Verified render: Round 2: all label words identical (Vitamin C / 10% / FACE SERUM / with acetyl glucosamine + polyhydroxy acid + centella / brightens & illuminates skin / for all skin types / 30ml / 1 fl oz / Minimalist); orange line, black glass (shoulder RGB 31,31,31 both), ribbed collar match. Correction to round 1 note: the current hires photo (1100x1600) is NOT cropped at the top - it shows the full rounded black bulb above the collar - so the AI bulb is the same as the photo (shape and size match in a top crop), not invented. Rounds: 2."
+    },
+    {
+      "product_handle": "nonapeptide-aha-06-underarm-roll-on",
+      "file": "brand_packs/minimalist/assets/ai_renders/nonapeptide-aha-06-underarm-roll-on/round1.png",
+      "type": "pack_shot",
+      "background": "plain_white",
+      "people": "none",
+      "source": "AI re-render of the brand's own pack photo (ChatGPT, label verified word by word + scripts/verify_pack.py)",
+      "preferred": true,
+      "cutout": "brand_packs/minimalist/assets/cutouts/nonapeptide-aha-06-underarm-roll-on_render.png",
+      "cutout_status": "clean (render on white)",
+      "notes": "Verified render: All label text identical: Nonapeptide + AHA 06% / red line / UNDERARM ROLL-ON / with mandelic acid + salicylic acid + licorice extract / controls odour & fades underarm darkness / for all skin types / 40ml / 1.35 fl. oz. / Minimalist. Cap, roller and bottle match. Rounds: 1."
     }
   ]
 }

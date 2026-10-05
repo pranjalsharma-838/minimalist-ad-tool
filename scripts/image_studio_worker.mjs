@@ -58,7 +58,8 @@ export function listQueued() {
     .filter((f) => /^\d.*\.json$/.test(f) && !/\.(result|progress)\.json$/.test(f))
     .map((f) => readJson(path.join(dir, f)))
     .filter((r) => r?.id && r.status === "queued" && !fs.existsSync(path.join(dir, `${r.id}.result.json`)))
-    .sort((a, b) => String(a.requested_at).localeCompare(String(b.requested_at)));
+    // Newest first: the Build the user is looking at right now gets its images before older, abandoned builds.
+    .sort((a, b) => String(b.requested_at).localeCompare(String(a.requested_at)));
 }
 // A request this worker marked "working" before it was stopped goes back to the queue (one worker, one request at a time).
 export function resetStale() {
@@ -233,6 +234,8 @@ export function createStudio() {
     async signedIn() {
       const p = await ensure();
       let s = await state(p).catch(() => null);
+      // Mid-login the window is on auth.openai.com / a Google or Apple sign-in page: never pull it back (user, 2026-10-05: "it refreshes before i enter details").
+      if (s && /openai\.com|accounts\.google|appleid\.apple|login\.live|microsoftonline/.test(s.url)) return false;
       if (!s || !/chatgpt\.com/.test(s.url)) { await p.goto("https://chatgpt.com/"); await sleep(4000); s = await state(p).catch(() => null); }
       return Boolean(s && s.composer && !s.login && !/auth\.|\/auth\//.test(s.url));
     },

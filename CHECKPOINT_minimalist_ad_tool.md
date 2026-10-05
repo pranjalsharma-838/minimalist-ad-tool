@@ -208,3 +208,5 @@ Amazon best-seller competitor search, Flipkart, Instagram, Amazon 11–20, deep 
 - [ ] GitHub: clean copy rebuilt; push needs the user's login
 
 - 2026-10-05 DONE: 20/20 verified pack renders, 20/20 textures, 58-ad format batch (153 ads, 463 files, all sizes), all ads scored + judged (107 ready / 14 fix / 32 blocked, 31 = ASCI AI-01), app image library + live Image Studio (npm run studio; not yet run live against ChatGPT), size downloads. Open: GitHub push (user login); Alpha Arbutin problem-macro reused a sofa scene (redo).
+
+- 2026-10-05 02:50 USER: the automation browser is logged in to GitHub and ChatGPT - never close it. Final submission when ready: push clean copy (commit history, transcript, README, all deliverables) + an 'assistant workspace' folder of my own; the original unedited transcript stays only locally (docs/TRANSCRIPT_original kept out of the push). Resume 03:47.

@@ -1,4 +1,4 @@
-// "Creating from scratch should not be showing old images": a Build queues a fresh image request per AI-image format and never
+﻿// "Creating from scratch should not be showing old images": a Build queues a fresh image request per AI-image format and never
 // returns a library background for it; pack-only formats still render at once.
 import { test, after } from "node:test";
 import assert from "node:assert/strict";
@@ -44,7 +44,7 @@ test("a Build queues one request per AI-image format and shows no library image 
   assert.equal(out.formats.find((f) => f.id === "person").pending.state, "no_studio");
   assert.match(out.formats.find((f) => f.id === "person").pending.text, /npm run studio/);
   // Pack-only formats are unaffected.
-  for (const id of ["hero", "badges"]) {
+  for (const id of ["hero", "actives"]) {
     const m = out.formats.find((f) => f.id === id);
     assert.ok(!m.pending && m.status !== "generating", id);
     assert.ok(out.items[id].spec.imageSrc, `${id} has the pack visual`);
@@ -77,3 +77,4 @@ test("without fresh (direct library use) nothing changes", () => {
   const { built } = listFormats(verbatimCopy(sheet), sheet);
   assert.ok(built.every((b) => !b.meta.pending));
 });
+

@@ -15,7 +15,10 @@ let n = 0;
 const squareOnly = process.env.SQUARE_ONLY === "1";
 // ONLY=<ad id> re-renders one ad (all its sizes and languages) after a single-brief change.
 const only = process.env.ONLY || "";
-for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg") && (!squareOnly || f.split(".").length === 2) && (!only || f.startsWith(`${only}.`)))) {
+// TEMPLATES=15-23 re-renders just those template numbers (the __t<n> part of the id) after a layout change.
+const [tLo, tHi] = (process.env.TEMPLATES || "").split("-").map(Number);
+const tOk = (f) => !tLo || ((n) => n >= tLo && n <= (tHi || tLo))(Number((f.match(/__t(\d+)\./) || [, -1])[1]));
+for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".svg") && (!squareOnly || f.split(".").length === 2) && (!only || f.startsWith(`${only}.`)) && tOk(f))) {
   const svg = path.join(dir, f), png = svg.replace(/\.svg$/, ".png");
   const head = fs.readFileSync(svg, "utf8").slice(0, 300);
   const w = Number((head.match(/width="(\d+)"/) || [, 1080])[1]), h = Number((head.match(/height="(\d+)"/) || [, 1080])[1]);
