@@ -207,8 +207,9 @@ test("routine and range use other real products from the catalogue, each with it
 });
 
 test("the product visual comes from the asset library on disk when there is one", () => {
-  assert.ok(packVisual("salicylic-lha-2-cleanser").file.endsWith("salicylic-lha-2-cleanser_render.png"), "verified render cut-out first");
-  assert.equal(packVisual("salicylic-acid-2").cutout, true);
+  // The verified render is used whole (its cut left a ragged base, user review 2026-10-05).
+  assert.ok(/ai_renders\/salicylic-lha-2-cleanser\/round\d\.png$/.test(packVisual("salicylic-lha-2-cleanser").file), "verified render first");
+  assert.equal(packVisual("salicylic-lha-2-cleanser").cutout, false);
   assert.ok(packVisual("not-a-product", { images: ["https://cdn.shopify.com/x.png"] }).url);
 });
 

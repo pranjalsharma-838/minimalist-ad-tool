@@ -6,7 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { specFromBrief, adFromBrief } from "../lib/brief_check.js";
-import { renderAdSvg, layoutProblems } from "../public/render.js";
+import { renderAdSvg, layoutProblems, SIGN_OFF } from "../public/render.js";
 import { scoreAd } from "../lib/score.js";
 
 const date = process.argv[2];
@@ -45,7 +45,16 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   const cut = (handle) => {
     // A verified render marked "preferred" (scripts/register_render.py) comes first, then any clean cut-out.
     const ok = (x) => x.product_handle === handle && x.cutout && !/unusable/i.test(`${x.cutout_status || ""} ${x.notes || ""}`) && fs.existsSync(x.cutout);
-    const a = ASSETS.find((x) => ok(x) && x.preferred) || ASSETS.find(ok);
+    const pref = ASSETS.find((x) => ok(x) && x.preferred);
+    const real = ASSETS.find((x) => ok(x) && !x.preferred);
+    // User review 2026-10-05: cutting the white-background ChatGPT render out left a ragged base. The render is already
+    // a clean studio shot on white with its own soft shadow, so on the white canvas it is placed whole (no cut, no added
+    // shadow). Layouts that put the pack over a photo use the real cut-out instead (spec.realCutHref).
+    if (pref && fs.existsSync(pref.file)) {
+      if (real) spec.realCutHref = spec.realCutHref || dataUrl(fs.readFileSync(real.cutout), "image/png");
+      return dataUrl(fs.readFileSync(pref.file), "image/png");
+    }
+    const a = real;
     if (!a) return "";
     const href = dataUrl(fs.readFileSync(a.cutout), "image/png");
     spec.cutoutHrefs.push(href);
@@ -79,6 +88,8 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
   if (spec.layout === "before_after") { const ph = [aiImg("frame1"), aiImg("frame2")].filter(Boolean); if (ph.length === 2) { spec.photos = ph; spec.aiLabel = true; } }
   const person = aiImg("person");
   if (person) { spec.personHref = person; spec.aiLabel = true; }
+  // Over a photo (person / frames) the whole white render would show as a box: use the real cut-out there.
+  if ((spec.personHref || (spec.frames || []).some((f) => f.imageHref)) && spec.realCutHref) { spec.imageHref = spec.realCutHref; spec.cutoutHrefs.push(spec.realCutHref); }
   if (bg) spec.backgroundHref = dataUrl(fs.readFileSync(bg), `image/${path.extname(bg).slice(1).replace("jpg", "jpeg")}`);
   const square = renderAdSvg(spec);
   fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.svg`), square);
@@ -103,6 +114,13 @@ for (const b of briefs.filter((b) => ["approved_for_image_step", "kept_with_warn
     for (const f of ["headline", "footnote", "cta", "primary_text"]) if (enAd[f] && tr[f]?.text) map.set(enAd[f].trim(), tr[f].text.trim());
     const enLines = (enAd.on_image_text || "").split("\n"), trLines = (tr.on_image_text?.text || "").split("\n");
     if (enLines.length === trLines.length) enLines.forEach((l, i) => map.set(l.trim(), trLines[i].trim()));
+    // User review 2026-10-05: "Hindi and Tamil ads are also in English". Lines added after translation (sign-off,
+    // lockup) broke the positional match, so pills and callouts stayed English. Also match each line through the
+    // translator's own back-translation (same order as the translated lines), and drop the sign-off from the count.
+    const backLines = (tr.on_image_text?.back_translation || "").split("\n");
+    if (backLines.length === trLines.length) backLines.forEach((l, i) => { if (l.trim() && !map.has(l.trim())) map.set(l.trim(), trLines[i].trim()); });
+    const enCore = enLines.filter((l) => l.trim() && l.trim() !== SIGN_OFF);
+    if (enCore.length === trLines.length) enCore.forEach((l, i) => { if (!map.has(l.trim())) map.set(l.trim(), trLines[i].trim()); });
     const swap = (v) => (typeof v === "string" ? map.get(v.trim()) ?? v : Array.isArray(v) ? v.map(swap) : v && typeof v === "object" ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, swap(x)])) : v);
     const lspec = { ...swap({ ...spec, imageHref: undefined, backgroundHref: undefined, cutoutHrefs: undefined, steps: undefined, range: undefined }), imageHref: spec.imageHref, backgroundHref: spec.backgroundHref, cutoutHrefs: spec.cutoutHrefs, shadowDx: spec.shadowDx, steps: spec.steps.map((s) => ({ ...swap(s), imageHref: s.imageHref })), range: spec.range.map((s) => ({ ...swap(s), imageHref: s.imageHref })) };
     fs.writeFileSync(path.join(runDir, "finals", `${b.source_ad_id}.${c.lang}.svg`), renderAdSvg(lspec));
