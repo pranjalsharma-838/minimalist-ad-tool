@@ -155,6 +155,9 @@ async function handleApi(req, res, url) {
       // up to 7 days old) is used only when "useSaved" is asked for.
       const { extractFromAnyUrl, brandSiteOf, NOT_MINIMALIST } = await lazy("./lib/extract_generic.js");
       const { cachedSheet, saveSheet } = await lazy("./lib/library.js");
+      // A link pasted without "https://" (e.g. "beminimalist.co/products/…") or with spaces around it is accepted.
+      body.url = String(body.url || "").trim();
+      if (body.url && !/^https?:\/\//i.test(body.url)) body.url = `https://${body.url.replace(/^\/+/, "")}`;
       const isMin = brandSiteOf(body.url) === "minimalist";
       if (!isMin) throw new Error(NOT_MINIMALIST);
       const handle = isMin ? parseProductUrl(body.url).handle : "";

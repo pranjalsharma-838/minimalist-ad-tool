@@ -39,7 +39,7 @@
     <!-- GENERATE -->
     <section id="tab-generate" class="panel">
       <form id="extract-form" class="row">
-        <input id="url" type="url" placeholder="Paste a beminimalist.co product link" required />
+        <input id="url" type="text" inputmode="url" autocomplete="off" spellcheck="false" placeholder="Paste a beminimalist.co product link" required />
         <button type="submit">Open product</button>
         <details class="more"><summary>More</summary>
           <div class="morebox">
@@ -168,7 +168,7 @@
         <label>On-image text<textarea name="on_image_text" rows="3"></textarea></label>
         <label>Footnote / small print<input name="footnote" /></label>
         <label>CTA<input name="cta" /></label>
-        <label>Product URL (optional — checks claims against that product's page)<input name="product_url" type="url" /></label>
+        <label>Product URL (optional — checks claims against that product's page)<input name="product_url" type="text" inputmode="url" spellcheck="false" /></label>
         <div class="row">
           <button type="submit">Score ad</button>
           <label class="file">or upload an image ad<input id="image" type="file" accept="image/png,image/jpeg,image/webp" /></label>

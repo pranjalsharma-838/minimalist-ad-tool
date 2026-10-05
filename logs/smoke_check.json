@@ -1,14 +1,14 @@
 {
-  "at": "2026-10-05T17:21:35.264Z",
+  "at": "2026-10-05T18:19:00.890Z",
   "product": "alpha-arbutin-2",
   "results": [
     {
       "name": "status",
       "ok": true,
-      "ms": 114,
+      "ms": 62,
       "detail": {
         "openai": false,
-        "studio": true,
+        "studio": false,
         "llm": false,
         "rulesVersion": "0.4"
       }
@@ -16,19 +16,19 @@
     {
       "name": "page loads",
       "ok": true,
-      "ms": 10,
+      "ms": 7,
       "detail": "ok"
     },
     {
       "name": "extract a product page",
       "ok": true,
-      "ms": 4472,
-      "detail": "49 facts"
+      "ms": 3704,
+      "detail": "70 facts"
     },
     {
       "name": "build new ads (generate)",
       "ok": true,
-      "ms": 905,
+      "ms": 652,
       "detail": {
         "formats": 20,
         "ready": 15,
@@ -44,19 +44,19 @@
     {
       "name": "new formats present (journey, in hand)",
       "ok": true,
-      "ms": 0,
+      "ms": 1,
       "detail": "ok"
     },
     {
       "name": "rebuild after an edit (formats)",
       "ok": true,
-      "ms": 173,
+      "ms": 129,
       "detail": "20 formats"
     },
     {
       "name": "re-check one ad (rescore)",
       "ok": true,
-      "ms": 19,
+      "ms": 14,
       "detail": {
         "format": "offer",
         "verdict": "LIMITED_CHECK",
@@ -73,7 +73,7 @@
     {
       "name": "score any ad (checker)",
       "ok": true,
-      "ms": 17,
+      "ms": 13,
       "detail": {
         "verdict": "BLOCKED",
         "rules": [
@@ -87,13 +87,13 @@
     {
       "name": "library: this product",
       "ok": true,
-      "ms": 46,
+      "ms": 29,
       "detail": "118350 bytes"
     },
     {
       "name": "library: all final ads",
       "ok": true,
-      "ms": 1483,
+      "ms": 550,
       "detail": {
         "ads": 433,
         "blocked": 1,
@@ -103,37 +103,37 @@
     {
       "name": "library image served",
       "ok": true,
-      "ms": 610,
+      "ms": 678,
       "detail": "/library/2-hyaluronic-acid/application-macro/2-hyaluronic-acid__t9__g2.png"
     },
     {
       "name": "image library search",
       "ok": true,
-      "ms": 486,
-      "detail": "51 images"
+      "ms": 276,
+      "detail": "53 images"
     },
     {
       "name": "product image (pack)",
       "ok": true,
-      "ms": 9,
+      "ms": 11,
       "detail": "image/png"
     },
     {
       "name": "image requests for this product",
       "ok": true,
-      "ms": 21,
-      "detail": "10 requests"
+      "ms": 36,
+      "detail": "15 requests"
     },
     {
       "name": "gallery file",
       "ok": true,
-      "ms": 9,
+      "ms": 11,
       "detail": "433 cards"
     },
     {
       "name": "path traversal refused",
       "ok": true,
-      "ms": 5,
+      "ms": 6,
       "detail": 404
     }
   ]

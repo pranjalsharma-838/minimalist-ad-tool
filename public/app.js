@@ -300,7 +300,7 @@ const nextVariant = () => {
 let gen = 0; // bumps on every new build or edit, so late answers from an older one are dropped
 
 $("#manual-toggle").onclick = () => $("#manual-form").classList.toggle("hidden");
-const handleFromUrl = (u) => (/^https?:\/\/(www\.)?beminimalist\.co\//i.test(String(u).trim()) ? (String(u).match(/\/products\/([^/?#]+)/) || [])[1] || "" : "");
+const handleFromUrl = (u) => (/^(https?:\/\/)?(www\.)?beminimalist\.co\//i.test(String(u).trim()) ? (String(u).match(/\/products\/([^/?#]+)/) || [])[1] || "" : "");
 
 function showSheet(s, refusal, cached) {
   sheet = s;
