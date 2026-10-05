@@ -26,3 +26,5 @@ Run on any computer: put ANTHROPIC_API_KEY and OPENAI_API_KEY in .env, npm start
 **Final-day changes and how each was checked:** docs/PROCESS_LOG_2026-10-05.md (logs in logs/). Check the API-key routes without a key: 
 ode scripts/check_api_route.mjs and 
 ode scripts/check_claude_route.mjs <product>.
+
+**About this copy:** to fit GitHub's size limits, the ads' working SVG files (`pipeline/runs/*/finals/*.svg`, about 4 GB) are left out; `node pipeline/08_compose.js <run>` rebuilds them. Past commits keep every code and text change; older versions of images are left out of history, and the current images are added in the last commit.
