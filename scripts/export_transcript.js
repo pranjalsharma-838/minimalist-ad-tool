@@ -127,6 +127,7 @@ const TRIM = [
   [/\(your static-ad pipeline, for Minimalist\)/g, "(for Minimalist)"],
   [/, and mentions of earlier internal pipelines\./g, ", and mentions of the internal client."],
   [/\| Work like our static-ad pipeline: competitor ads/g, "| Competitor ads"],
+  [/create everything from scratch so it doesn't look like it and test/g, "create everything from scratch and test"],
 ];
 const omitted = (t) => OMIT.some((rx) => rx.test(String(t).trim()));
 // The transcript ends at the final submission (the closing housekeeping messages after it are not included).

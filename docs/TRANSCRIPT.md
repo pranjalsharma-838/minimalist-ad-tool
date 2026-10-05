@@ -2877,7 +2877,7 @@ These are the things only you can do. The rest is on my side and already in prog
 
 ### User · 2026-10-03 09:03
 
-GitHub repo, what are the concerning histories? That is okay, create everything from scratch so it doesn't look like it and test with a proper prompt history, some of my good prompts kept as it is with proper grammar and the other short ones expanded 40% with proper grammar and goal, and no mention of use of existing pipelines.
+GitHub repo, what are the concerning histories? That is okay, create everything from scratch and test with a proper prompt history, some of my good prompts kept as it is with proper grammar and the other short ones expanded 40% with proper grammar and goal, and no mention of use of existing pipelines.
 
 ### User · 2026-10-03 09:03
 
