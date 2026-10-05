@@ -118,7 +118,7 @@ function layout(spec, s) {
   const { w } = SIZE;
   const colW = 430;
   const px = (n) => Math.round(n * s);
-  const parts = [`<rect width="${w}" height="${w}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD)];
+  const parts = [`<rect width="${w}" height="${w}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD, spec)];
   if (spec.imageHref || spec.personHref) parts.push(productVisual(spec, 490, ZT, 550, 760));
   const title = spec.headline || spec.productName || "";
   const hs = px(52), hl = px(60), head = wrap(title, hs, colW, 0.55).slice(0, 4);
@@ -184,14 +184,16 @@ const T = (lines, x, y, size, lh, attrs) => textBlock(lines, x, y, size, lh, `fo
 // (A generated background is still accepted by the pipeline but no longer drawn.)
 function chromeStart(spec, panel) {
   const { w, h } = SIZE;
-  return [`<rect width="${w}" height="${h}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD)];
+  return [`<rect width="${w}" height="${h}" fill="${spec.canvas || C.bg}"/>`, wordmark(PAD, spec)];
 }
 
 // Wordmark with the brand's sign-off underneath, as in its own lockup. User review (2026-10-04: "hide nothing tg is
 // missing"): "Hide Nothing." sits under the logo on the end card of Minimalist's two longest-running ads (121 days)
 // and on its Amazon gallery's brand slate. Drawn on every layout; adFromBrief scores it with the rest of the text.
 export const SIGN_OFF = "Hide Nothing.";
-function wordmark(x) {
+function wordmark(x, spec = {}) {
+  // Another brand's ad carries ITS name; "Hide Nothing." is Minimalist's own sign-off.
+  if (spec.brand) return `<text x="${x}" y="${PAD + 10}" font-family="${FONT}" font-size="22" font-weight="700" letter-spacing="0.6" fill="${C.ink}">${esc(String(spec.brand).slice(0, 26))}</text>`;
   return `<text x="${x}" y="${PAD + 10}" font-family="${FONT}" font-size="22" font-weight="700" letter-spacing="0.6" fill="${C.ink}">Minimalist</text>` +
     `<text x="${x + 1}" y="${PAD + 30}" font-family="${FONT}" font-size="13" letter-spacing="0.4" fill="${C.muted}">${esc(SIGN_OFF)}</text>`;
 }
@@ -445,6 +447,8 @@ LAYOUTS.offer = (spec, s) => {
   });
   return chromeEnd(spec, parts, r.fit, r.cta);
 };
+// One AI image made of equal panels (2:3 picture, cols x rows): panel idx drawn into the box x,y,w,h.
+const sheetPanel = (href, x, y, w, h, cols, rows, idx) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="0 0 ${100 / cols} ${150 / rows}" preserveAspectRatio="xMidYMid slice"><image href="${esc(href)}" x="${-(idx % cols) * 100 / cols}" y="${-Math.floor(idx / cols) * 150 / rows}" width="100" height="150" preserveAspectRatio="none"/></svg>`;
 // Before/after -> two frames that only ever hold REAL, unretouched study photos (never generated).
 LAYOUTS.before_after = (spec, s) => {
   const parts = chromeStart(spec, "left");
@@ -454,7 +458,8 @@ LAYOUTS.before_after = (spec, s) => {
     const fh = Math.max(180, Math.min(Math.round(300 * s), Math.floor((790 - y - 16) / 2)));
     ["BEFORE", "AFTER"].forEach((lab, i) => {
       const photo = (spec.photos || [])[i];
-      if (photo) tp.push(`<image href="${esc(photo)}" x="${PAD}" y="${y}" width="480" height="${fh}" preserveAspectRatio="xMidYMid slice"/>`);
+      if (photo && spec.photoSheet) tp.push(sheetPanel(photo, PAD, y, 480, fh, 1, 2, i));
+      else if (photo) tp.push(`<image href="${esc(photo)}" x="${PAD}" y="${y}" width="480" height="${fh}" preserveAspectRatio="xMidYMid slice"/>`);
       else {
         tp.push(`<rect x="${PAD}" y="${y}" width="480" height="${fh}" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/>`);
         tp.push(`<text x="${PAD + 240}" y="${y + fh / 2 + 8}" text-anchor="middle" font-family="${FONT}" font-size="20" font-weight="700" fill="#B42318">REAL STUDY PHOTO REQUIRED</text>`);
@@ -572,7 +577,7 @@ LAYOUTS.thisvsthat = (spec, s) => twoColumns(spec, s, (spec.columns || [])[0], (
 // House look: white canvas, the real pack as the hero on the left, ≤ 3 short rows on the right.
 LAYOUTS.usvsthem = (spec, s) => {
   const { w, h } = SIZE;
-  const parts = [`<rect width="${w}" height="${h}" fill="${spec.canvas || "#FFFFFF"}"/>`, wordmark(PAD)];
+  const parts = [`<rect width="${w}" height="${h}" fill="${spec.canvas || "#FFFFFF"}"/>`, wordmark(PAD, spec)];
   const c = spec.compare || {};
   const r0 = stack(parts, (tp, yt) => {
     let y0 = headlineBlock(tp, spec.headline, PAD, yt, w - 2 * PAD, s, 46);
@@ -755,7 +760,8 @@ LAYOUTS.timeline = (spec, s) => {
   const packW = spec.packInFrames ? 0 : 190, n = Math.max(1, frames.length), gap = 16, fw = Math.floor((w - 2 * PAD - (packW ? packW + 24 : 0) - (n - 1) * gap) / n), fh = Math.min(Math.round(fw * 1.3), 790 - 50 - y0);
   frames.forEach((f, i) => {
     const x = PAD + i * (fw + gap);
-    if (f.imageHref) parts.push(`<clipPath id="fr${i}"><rect x="${x}" y="${y0}" width="${fw}" height="${fh}" rx="6"/></clipPath><image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice" clip-path="url(#fr${i})"/>`);
+    if (f.imageHref && spec.frameSheet) parts.push(sheetPanel(f.imageHref, x, y0, fw, fh, 2, 2, i));
+    else if (f.imageHref) parts.push(`<clipPath id="fr${i}"><rect x="${x}" y="${y0}" width="${fw}" height="${fh}" rx="6"/></clipPath><image href="${esc(f.imageHref)}" x="${x}" y="${y0}" width="${fw}" height="${fh}" preserveAspectRatio="xMidYMid slice" clip-path="url(#fr${i})"/>`);
     else parts.push(`<rect x="${x}" y="${y0}" width="${fw}" height="${fh}" fill="#FFFFFF" stroke="${C.muted}" stroke-dasharray="8 6"/><text x="${x + fw / 2}" y="${y0 + fh / 2}" text-anchor="middle" font-family="${FONT}" font-size="16" font-weight="700" fill="#B42318">PHOTO REQUIRED</text>`);
     // Minimal look (2026-10-04): the label sits under the frame in small capitals, not on a dark bar over it.
     parts.push(T(wrap(String(f.label || "").toUpperCase(), 16, fw, 0.66).slice(0, 2), x, y0 + fh + 30, 16, 20, `font-weight="700" letter-spacing="1.2" fill="${C.ink}"`));

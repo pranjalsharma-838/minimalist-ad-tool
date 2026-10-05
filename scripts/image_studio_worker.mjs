@@ -112,28 +112,29 @@ export function verifyPack(ref, img, checkOut, round = 1) {
 }
 
 // ---------- one request: up to 3 rounds, then the result file ----------
-export function fullPrompt(prompt) {
+export function fullPrompt(prompt, textOnly = false) {
   let p = String(prompt || "").replace(/\s+/g, " ").trim();
   // ChatGPT sometimes answers a bare description with words; an explicit "create an image" makes it draw.
   if (!/^(create|generate|make|draw|render|edit|show|produce|design)\b/i.test(p)) p = `Create an image: ${p}`;
-  return `${p} ${SUFFIX}`;
+  return textOnly ? p : `${p} ${SUFFIX}`;
 }
 
 export async function processRequest(req, studio) {
   const id = req.id, dir = Q();
   setRequest(id, { status: "working", worker: "studio", working_since: new Date().toISOString(), progress: "Starting" });
   log(`[${id}] start (${DRY() ? "dry run" : "ChatGPT"})`);
-  const base = await baseFile(req);
-  const ref = refFor(req, base);
+  const textOnly = Boolean(req.text_only);
+  const base = textOnly ? "" : await baseFile(req);
+  const ref = textOnly ? "" : refFor(req, base);
   const rounds = [];
   let finalCheck = null;
   for (let round = 1; round <= ROUNDS; round++) {
     const out = path.join(dir, `${id}_r${round}.png`), checkOut = path.join(dir, `${id}_r${round}_check.png`);
     setRequest(id, { progress: `Round ${round} of ${ROUNDS}: drawing the image` });
-    if (round === 1) await studio.generate({ prompt: fullPrompt(req.prompt), baseFile: base, outFile: out });
+    if (round === 1) await studio.generate({ prompt: fullPrompt(req.prompt, textOnly), baseFile: base, outFile: out });
     else await studio.correct({ text: CORRECTION, outFile: out });
     setRequest(id, { progress: `Round ${round} of ${ROUNDS}: checking the pack label against the real pack` });
-    const check = await verifyPack(ref, out, checkOut, round);
+    const check = textOnly ? { verdict_hint: "PASS (scene only: no pack in the image, nothing to label-check)", label_similarity: null } : await verifyPack(ref, out, checkOut, round);
     const pass = /^PASS/i.test(check.verdict_hint || "");
     rounds.push({ round, out, checkOut: fs.existsSync(checkOut) ? checkOut : "", check, pass, sim: typeof check.label_similarity === "number" ? check.label_similarity : -1 });
     log(`[${id}] round ${round}: ${check.verdict_hint} (similarity ${check.label_similarity ?? "n/a"})`);
@@ -151,7 +152,7 @@ export async function processRequest(req, studio) {
   const inRoot = path.resolve(dir).startsWith(ROOT + path.sep);
   const imgRef = inRoot ? path.relative(ROOT, path.join(dir, `${id}.png`)).replace(/\\/g, "/") : path.join(dir, `${id}.png`);
   const notes = status === "done"
-    ? `Label check passed (similarity ${finalCheck.label_similarity ?? "?"}, ${rounds.length} round(s)). Automatic check only: still read the label by eye. Any person in the image is an AI model: Severe, AI mark.${best.check.dry ? " (Dry run: nothing was drawn.)" : ""}`
+    ? `${textOnly ? "Scene only: no pack in this image, so there was no label to check; the real pack is placed by the app. Any person in it is an AI model: Severe, AI mark." : ""}Label check passed (similarity ${finalCheck.label_similarity ?? "?"}, ${rounds.length} round(s)). Automatic check only: still read the label by eye. Any person in the image is an AI model: Severe, AI mark.${best.check.dry ? " (Dry run: nothing was drawn.)" : ""}`
     : `Pack label did NOT pass after ${rounds.length} round(s): ${finalCheck.verdict_hint} (similarity ${finalCheck.label_similarity ?? "?"}). Not offered for ads: check the label by eye or ask again.`;
   writeJson(path.join(dir, `${id}.result.json`), { status, image: imgRef, rounds: rounds.length, similarity: finalCheck.label_similarity ?? null, verdict: finalCheck.verdict_hint, notes, finished_at: new Date().toISOString() });
   setRequest(id, { status, progress: undefined, worker: undefined });
@@ -186,8 +187,8 @@ export async function handleRequest(req, studio) {
 export function createDryStudio() {
   let base = "";
   return {
-    async generate({ baseFile, outFile }) { base = baseFile; if (!base) throw new Error("dry run needs a base image"); fs.copyFileSync(base, outFile); },
-    async correct({ outFile }) { fs.copyFileSync(base, outFile); },
+    async generate({ baseFile, outFile }) { base = baseFile; if (!base) { fs.writeFileSync(outFile, Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==", "base64")); base = outFile; return; } fs.copyFileSync(base, outFile); },
+    async correct({ outFile }) { if (base !== outFile) fs.copyFileSync(base, outFile); },
   };
 }
 
@@ -348,6 +349,9 @@ async function main() {
       if (!ok) lastSignInNote = Date.now();
     } catch (e) { log(`Could not open the browser: ${e.message}`); }
   }
+  // Heartbeat: the app shows "needs the Image Studio" unless this file was touched in the last 90 s.
+  const beat = () => { try { fs.mkdirSync(Q(), { recursive: true }); fs.writeFileSync(path.join(Q(), "worker.heartbeat"), new Date().toISOString()); } catch { /* never stop the worker */ } };
+  beat(); setInterval(beat, 30000).unref();
   let stop = false;
   process.on("SIGINT", async () => { stop = true; log("Stopping."); try { await studio.close?.(); } catch { /* ignore */ } process.exit(0); });
   while (!stop) {

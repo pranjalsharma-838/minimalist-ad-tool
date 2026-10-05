@@ -28,6 +28,8 @@ import { extractFromUrl, factSheetFromManual, parseProductUrl } from "./lib/extr
 const here = path.dirname(fileURLToPath(import.meta.url));
 const PORT = Number(process.env.PORT || 5173);
 const IMAGE_HOSTS = new Set(["cdn.shopify.com", "beminimalist.co", "www.beminimalist.co"]);
+// Images referenced by a product page this server has just read (any brand): the only other images /api/image will fetch.
+const pageImages = new Set();
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript; charset=utf-8", ".css": "text/css; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".md": "text/markdown; charset=utf-8" };
 
 // Loaded lazily so the server still starts (extract + render) while those modules are being built.
@@ -64,7 +66,8 @@ async function handleApi(req, res, url) {
   if (req.method === "GET") {
     if (url.pathname === "/api/image") {
       const src = new URL(q("src"));
-      if (!IMAGE_HOSTS.has(src.hostname)) return send(res, 400, { error: "Image host not allowed" });
+      const { checkPublicUrl } = await lazy("./lib/extract_generic.js");
+      if (!IMAGE_HOSTS.has(src.hostname)) { try { checkPublicUrl(src.href); } catch (e) { return send(res, 400, { error: e.message }); } if (!pageImages.has(src.href)) return send(res, 400, { error: "Image host not allowed" }); }
       const r = await fetch(src, { headers: { "user-agent": "Mozilla/5.0" } });
       if (!r.ok) return send(res, 502, { error: `Image fetch failed: HTTP ${r.status}` });
       res.writeHead(200, { "content-type": r.headers.get("content-type") || "image/png", "cache-control": "max-age=3600" });
@@ -145,11 +148,15 @@ async function handleApi(req, res, url) {
     let sheet, cached = null;
     if (body.manual) sheet = factSheetFromManual(body.manual);
     else {
-      // The page is read once a week per product (user, 2026-10-05: repeat runs skip the page fetch); "refresh" re-reads it.
-      const { handle } = parseProductUrl(body.url);
+      // LIVE by default (user, 2026-10-05): the page is read now, every time, for any brand. A saved copy (beminimalist.co only,
+      // up to 7 days old) is used only when "useSaved" is asked for.
+      const { extractFromAnyUrl, brandSiteOf } = await lazy("./lib/extract_generic.js");
       const { cachedSheet, saveSheet } = await lazy("./lib/library.js");
-      const c = body.refresh ? null : cachedSheet(handle);
-      if (c) { sheet = c.sheet; cached = c.fetched_at; } else { sheet = await extractFromUrl(body.url); saveSheet(handle, sheet); }
+      const isMin = brandSiteOf(body.url) === "minimalist";
+      const handle = isMin ? parseProductUrl(body.url).handle : "";
+      const c = body.useSaved && isMin ? cachedSheet(handle) : null;
+      if (c) { sheet = c.sheet; cached = c.fetched_at; } else { sheet = await extractFromAnyUrl(body.url); if (isMin) saveSheet(handle, sheet); }
+      for (const i of sheet.images || []) if (/^https?:/.test(i)) pageImages.add(i);
     }
     sheet = addLiveFacts(sheet);
     return send(res, 200, { sheet, refusal: refusalReason(sheet), cached });
@@ -160,12 +167,12 @@ async function handleApi(req, res, url) {
   }
   if (url.pathname === "/api/formats") {
     const { allFormats } = await lazy("./lib/generate.js");
-    return send(res, 200, await allFormats(body.copy, body.sheet, { ...(body.inputs || {}), variant: Number(body.variant) || 0 }));
+    return send(res, 200, await allFormats(body.copy, body.sheet, { ...(body.inputs || {}), fresh: true, variant: Number(body.variant) || 0 }));
   }
   if (url.pathname === "/api/rescore") {
     // One format: re-render spec, re-check layout, score (rules + AI judge when a key is set) against the same page.
     const { formatItem } = await lazy("./lib/generate.js");
-    return send(res, 200, await formatItem(body.copy, body.sheet, body.format || "hero", { ...(body.inputs || {}), variant: Number(body.variant) || 0 }, { rulesOnly: Boolean(body.rulesOnly) }));
+    return send(res, 200, await formatItem(body.copy, body.sheet, body.format || "hero", { ...(body.inputs || {}), fresh: true, variant: Number(body.variant) || 0 }, { rulesOnly: Boolean(body.rulesOnly) }));
   }
   if (url.pathname === "/api/draft") {
     const { draftLines } = await lazy("./lib/app_draft.js");

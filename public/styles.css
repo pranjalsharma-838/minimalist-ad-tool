@@ -229,3 +229,5 @@ table.results tbody tr.brow:hover { background: var(--bg); }
 .buildrow{align-items:center;gap:16px}
 button.big{font-size:1.15rem;padding:14px 28px;font-weight:700}
 #gen-controls{margin:14px 0}
+
+.pending{display:flex;flex-direction:column;gap:4px;align-items:center;justify-content:center;text-align:center;min-height:160px;padding:12px;border:1px dashed #999;background:#f6f6f4;color:#333}.pending.big{min-height:420px}.pending small{color:#666}

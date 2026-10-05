@@ -1,4 +1,4 @@
-import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
+﻿import { renderAdSvg, SIZE, PLACEMENTS, placementSvg } from "./render.js";
 import {
   VERDICTS, RISKS, SIZES, IMG_TYPES, IMG_GROUPS, IMG_SORTS,
   adDefaults, cleanAdState, filterAds, sortAds, adSortsFor, defaultAdSort, adFacetCounts, adOptions, activeAdFilters, countText,
@@ -202,7 +202,7 @@ const nextVariant = () => {
 let gen = 0; // bumps on every new build or edit, so late answers from an older one are dropped
 
 $("#manual-toggle").onclick = () => $("#manual-form").classList.toggle("hidden");
-const handleFromUrl = (u) => (String(u).match(/\/products\/([^/?#]+)/) || [])[1] || "";
+const handleFromUrl = (u) => (/^https?:\/\/(www\.)?beminimalist\.co\//i.test(String(u).trim()) ? (String(u).match(/\/products\/([^/?#]+)/) || [])[1] || "" : "");
 
 function showSheet(s, refusal, cached) {
   sheet = s;
@@ -226,7 +226,8 @@ $("#extract-form").onsubmit = async (e) => {
   // Library first: the existing ads show while the facts load (nothing is generated).
   if (handle) loadLibrary(handle);
   try {
-    const { sheet: s, refusal, cached } = await api("/api/extract", { url, refresh: $("#refresh").checked });
+    const { sheet: s, refusal, cached } = await api("/api/extract", { url, useSaved: $("#useSaved").checked });
+    if (!handle && s.slug) { handle = s.slug; loadLibrary(handle); } // another brand: its saved ads (if any) are looked up by its own name
     showSheet(s, refusal, cached);
   } catch (err) {
     $("#extract-msg").innerHTML = `<span class="err">${esc(err.message)}</span> You can enter the product manually instead.`;
@@ -253,7 +254,7 @@ let adShown = [];       // what is on screen, in order (card clicks index into i
 let libSeq = 0, adTimer = null;
 
 const loadLibrary = (h) => openLibrary("p", { h, state: adDefaults() });
-$("#lib-all").onclick = async () => { await openLibrary("all", { state: adDefaults() }); $("#library").scrollIntoView({ behavior: "smooth", block: "start" }); };
+$("#lib-all").onclick = async () => { $("#lib-details").open = true; await openLibrary("all", { state: adDefaults() }); $("#library").scrollIntoView({ behavior: "smooth", block: "start" }); };
 
 async function openLibrary(mode, { h = libHandle, state = null } = {}) {
   const my = ++libSeq;
@@ -344,7 +345,7 @@ function renderLibrary() {
   $("#lib-shown").textContent = libAds.length ? `${countText(sorted.length, libAds.length)}${libMode === "p" ? " for this product" : ""}` : "";
   $("#f-clear").disabled = !activeAdFilters(adState, libMode) && !adState.sort;
   let html;
-  if (!libAds.length) html = `<p class="hint">${libMode === "p" ? "No ads for this product in the library yet. Click Build new ads above." : "No ads in the library yet."}</p>`;
+  if (!libAds.length) html = `<p class="hint">${libMode === "p" ? "No saved ads for this product. Click Build new ads above." : "No ads in the library yet."}</p>`;
   else if (!sorted.length) html = `<p class="hint empty-note">No ads match these filters. <button type="button" class="ghost" data-clear>Clear filters</button></p>`;
   else if (!grouped) html = `<div class="lib-cards">${sorted.map((a, i) => adCard(a, i, true)).join("")}</div>`;
   else {
@@ -601,9 +602,17 @@ async function hydrate(id) {
 }
 
 const thumbUrls = {};
+// A format whose image is still being made (or can't be): a loading card, never an ad with something drawn in its place.
+const pendingCard = (p) => `<span class="pending ${esc(p.state)}"><b>${p.state === "making" ? "Making a new image…" : p.state === "failed" ? "New image failed" : "New image needs the Image Studio"}</b><small>${esc(p.text)}${p.progress ? " " + esc(p.progress) : ""}</small></span>`;
 async function drawThumb(id) {
   const it = items[id];
   if (!it) return;
+  if (fmtOf(id)?.pending) {
+    const card = $(`#strip [data-id="${id}"]`);
+    if (card) card.querySelector(".tim").innerHTML = pendingCard(fmtOf(id).pending);
+    updateThumbInfo(id);
+    return;
+  }
   const svg = renderAdSvg(await hydrate(id));
   if (thumbUrls[id]) URL.revokeObjectURL(thumbUrls[id]);
   thumbUrls[id] = URL.createObjectURL(new Blob([svg], { type: "image/svg+xml" }));
@@ -615,6 +624,8 @@ async function drawThumb(id) {
 function stateOf(id) {
   const f = fmtOf(id), it = items[id];
   if (!it) return { cls: "wait", text: "Rendering…" };
+  if (f.pending) return { cls: f.pending.state === "making" ? "wait" : "need", text: f.pending.state === "making" ? "Making a new image…" : f.pending.state === "failed" ? "Image failed" : "Needs Image Studio" };
+  if (f.image_review) return { cls: "BLOCKED", text: "Needs review" };
   if (f.status === "needs_input") return { cls: "need", text: "Needs input" };
   if (it.judging) return { cls: "wait", text: "AI check…" };
   const code = it.report.scores?.compliance?.code === "BLOCKED" ? "BLOCKED" : it.report.verdict.code;
@@ -663,6 +674,8 @@ function drawSizeButtons(blocked) {
 function exportBlock(id) {
   const f = fmtOf(id), it = items[id];
   if (!f || !it) return "Still rendering.";
+  if (f.pending) return "Export disabled: the new image is not ready yet.";
+  if (f.image_review) return "Export disabled: the pack label in the new image did not pass the check. Needs review.";
   if (f.status === "needs_input") return `Draft: still needs ${f.missing.join(", ")}. Fill it in above, then it can be checked and exported.`;
   if (it.report.verdict.code === "BLOCKED" || it.report.scores?.compliance?.code === "BLOCKED") return "Export disabled: the ad has a blocking finding. Fix it and re-check.";
   if (f.risk === "severe") return "Export disabled: Severe risk (a person, hands or skin photo is used). Kept for review until a reviewer confirms real, consented photos.";
@@ -673,16 +686,16 @@ async function drawMain() {
   const id = selected, f = fmtOf(id), it = items[id];
   if (!f || !it) return;
   const myGen = gen;
-  const spec = await hydrate(id);
+  const spec = f.pending ? null : await hydrate(id);
   if (myGen !== gen || id !== selected) return;
-  $("#preview").innerHTML = svgFor(spec, previewSize);
+  $("#preview").innerHTML = f.pending ? `<div class="pending big">${pendingCard(f.pending)}</div>` : svgFor(spec, previewSize);
   const block = exportBlock(id);
   drawSizeButtons(Boolean(block));
   $("#export-note").textContent = block || "Exports include the review ticket — send both to the reviewer. This is not an approval.";
   $("#fmt-head").innerHTML = `
     <h3 class="fmt-title"><span class="tag new">New</span> #${f.rank} ${esc(f.label)}</h3>
-    <p class="chips"><span class="chip risk-${f.risk}">${esc(f.risk_label)} risk</span>${f.status === "needs_input" ? '<span class="chip st-need">Needs input</span>' : ""}${it.judging ? '<span class="chip st-wait">AI check running…</span>' : ""}</p>
-    <p class="hint">${f.template ? `Catalog format #${f.template.id} ${esc(f.template.name)} · ranked by the same scoring as the library: ${esc(f.template.why)}.` : ""} ${esc(f.risk_note)}${f.visual ? ` Product image: ${esc(f.visual)}.` : ""}</p>`;
+    <p class="chips"><span class="chip risk-${f.risk}">${esc(f.risk_label)} risk</span>${f.status === "needs_input" ? '<span class="chip st-need">Needs input</span>' : ""}${f.image_review ? '<span class="chip no">Warning: label check failed, not exportable</span>' : ""}${it.judging ? '<span class="chip st-wait">AI check running…</span>' : ""}</p>
+    <p class="hint">${f.template ? `Catalog format #${f.template.id} ${esc(f.template.name)} · ranked by the same scoring as the library: ${esc(f.template.why)}.` : ""} ${esc(f.risk_note)}${f.visual ? ` Product image: ${esc(f.visual)}.` : ""}${f.image_note ? ` New image: ${esc(f.image_note)}` : ""}</p>`;
   if (f.status === "needs_input") $("#gen-report").innerHTML = `<div class="verdict DRAFT"><b>Draft — needs input</b><span>Still missing: ${esc(f.missing.join(", "))}. Empty slots show as [brackets] on the image and are not scored. Anything already filled is checked below.</span></div><div id="draft-report"></div>`;
   renderReport(it.report, f.status === "needs_input" ? $("#draft-report") : $("#gen-report"));
   drawNeeds(id);
@@ -822,6 +835,19 @@ async function showBuild(out, t0) {
   }
   $("#gen-progress").textContent = `${formats.length} formats: ${formats.filter((f) => f.status === "ready").length} ready, ${formats.filter((f) => f.status !== "ready").length} need input.${llm ? "" : " Rules-only check (add a Claude API key for the AI judge)."}`;
   judgeAll();
+  pollImages();
+}
+// Every few seconds, formats waiting for a new image are re-read; the card swaps to the finished ad by itself.
+let imgPoll = null;
+function pollImages() {
+  clearTimeout(imgPoll);
+  const myGen = gen, waiting = formats.filter((f) => f.pending && f.pending.state !== "failed" && f.pending.state !== "unavailable");
+  if (!waiting.length) return;
+  imgPoll = setTimeout(async () => {
+    if (myGen !== gen) return;
+    await Promise.all(waiting.map((f) => rescoreOne(f.id, { rulesOnly: true })));
+    pollImages();
+  }, 6000);
 }
 
 $("#generate").onclick = async () => {
@@ -834,6 +860,7 @@ $("#generate").onclick = async () => {
     const out = await api("/api/generate", { sheet, mode: $("#mode").value, variant });
     if (out.refused) return ($("#extract-msg").innerHTML = `<div class="refusal">${esc(out.reason)}</div>`);
     copy = out.copy; mode = out.mode; log = out.log || [];
+    inputs = { requests: out.requests || {} };
     fillEditor(copy);
     $("#extract-msg").textContent = "";
     await showBuild(out, t0);
