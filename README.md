@@ -22,3 +22,7 @@ Turns a product page into a checked, on-brand static ad, and scores any ad for c
 
 
 Run on any computer: put ANTHROPIC_API_KEY and OPENAI_API_KEY in .env, npm start; no ChatGPT browser needed. (Or paste the keys in the app header; they stay in server memory only.) With an OpenAI key the server makes queued image requests itself through the OpenAI Images edit API (the real pack photo attached, 1024x1536, same label check and up to 3 rounds); without one, `npm run studio` and the ChatGPT window stay the way.
+
+**Final-day changes and how each was checked:** docs/PROCESS_LOG_2026-10-05.md (logs in logs/). Check the API-key routes without a key: 
+ode scripts/check_api_route.mjs and 
+ode scripts/check_claude_route.mjs <product>.

@@ -225,7 +225,9 @@ setInterval(async () => {
   apiBusy = true;
   try {
     const W = await import("./scripts/image_studio_worker.mjs"), { createApiStudio } = await import("./lib/image_api.js");
-    for (let i = 0; i < 5 && (await W.tick(createApiStudio())); i++);
+    // Up to 4 images at once (user, 2026-10-05: "all shoot parallely"); the product render still comes first, because
+    // the queue holds a build's other images until it has a result.
+    await Promise.all(W.listQueued().slice(0, 4).map((r) => W.handleRequest(r, createApiStudio())));
   } catch (e) { console.log(`image requests: ${e.message.replace(/sk-[A-Za-z0-9_-]+/g, "[key]")}`); }
   apiBusy = false;
 }, 5000).unref();

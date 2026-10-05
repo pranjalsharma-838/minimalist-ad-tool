@@ -956,14 +956,24 @@ function fillEditor(c) {
   $("#e-cta").value = c.cta;
 }
 
+// One honest status line: ready / still being made / needing typed input are three different things.
+function progressLine() {
+  const ready = formats.filter((f) => f.status === "ready").length, making = formats.filter((f) => f.pending).length, input = formats.filter((f) => !f.pending && f.status !== "ready").length;
+  $("#gen-progress").textContent = [`${ready} ready`, making ? `${making} being made` : "", input ? `${input} need input` : ""].filter(Boolean).join(", ") + `.${llm ? "" : " Rules-only check (add a Claude API key for the AI judge)."}`;
+  // Nothing ready yet: no big preview or scores for an ad that can't be seen (no placeholder), just the waiting line.
+  document.querySelector("#gen-result .result")?.classList.toggle("hidden", !ready);
+  if (ready && fmtOf(selected)?.pending) select(formats.find((f) => f.status === "ready").id);
+}
+
 // Shows a freshly built set: the first format large at once, then the strip fills in, then the AI judge (if on).
 async function showBuild(out, t0) {
   formats = out.formats; drafts = out.drafts || []; items = Object.fromEntries(Object.entries(out.items).map(([k, v]) => [k, { ...v, judged: false }])); notShown = out.notShown;
   formats.forEach((f, i) => (f.rank = i + 1));
-  if (!fmtOf(selected)) selected =out.format || formats.find((f) => f.status === "ready")?.id || formats[0].id;
+  if (!fmtOf(selected) || fmtOf(selected).pending) selected = formats.find((f) => f.status === "ready")?.id || out.format || formats[0].id;
   $("#gen-result").classList.remove("hidden");
   if ($("#variant-tag")) $("#variant-tag").textContent = variant ? `Variant ${variant}` : "";
   renderStrip();
+  progressLine();
   await drawMain();
   await drawThumb(selected);
   if (t0) $("#gen-progress").textContent = `First ad shown in ${((performance.now() - t0) / 1000).toFixed(1)} s. Rendering the other ${formats.length - 1} formats…`;
@@ -972,7 +982,7 @@ async function showBuild(out, t0) {
     if (myGen !== gen) return;
     if (f.id !== selected) { await drawThumb(f.id); await new Promise((r) => setTimeout(r, 0)); }
   }
-  $("#gen-progress").textContent = `${formats.length} formats: ${formats.filter((f) => f.status === "ready").length} ready, ${formats.filter((f) => f.status !== "ready").length} need input.${llm ? "" : " Rules-only check (add a Claude API key for the AI judge)."}`;
+  progressLine();
   judgeAll();
   pollImages();
 }
@@ -996,6 +1006,7 @@ function pollImages() {
   imgPoll = setTimeout(async () => {
     if (myGen !== gen) return;
     await Promise.all(waiting.map((f) => rescoreOne(f.id, { rulesOnly: true })));
+    progressLine();
     pollImages();
   }, 6000);
 }
@@ -1004,7 +1015,7 @@ $("#settings-btn").onclick = () => $("#settings").showModal();
 $("#generate").onclick = async () => {
   const t0 = performance.now();
   gen++;
-  inputs = {}; uploads = {}; aiValues = {}; selected = "";
+  inputs = {}; uploads = {}; aiValues = {}; selected = ""; renderSeen = false;
   $("#extract-msg").textContent = $("#mode").value === "model" ? "Writing the copy (the model takes a few seconds), then building every format…" : "Building every format…";
   try {
     variant = nextVariant();
@@ -1013,7 +1024,8 @@ $("#generate").onclick = async () => {
     copy = out.copy; mode = out.mode; log = out.log || [];
     inputs = { requests: out.requests || {} }; renderSeen = false;
     fillEditor(copy);
-    $("#extract-msg").textContent = "";
+    // Who the page says the product is for; the scene images rotate across these audiences.
+    $("#extract-msg").innerHTML = (out.audiences || []).length ? `<p class="hint">Audiences from the product page: ${out.audiences.map((a) => `<b>${esc(a.label)}</b>${a.cites.length ? ` (${esc(a.cites.join(", "))})` : ""}`).join(" · ")}. New scene images rotate across them.</p>` : "";
     await showBuild(out, t0);
     $("#gen-result").scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (err) {

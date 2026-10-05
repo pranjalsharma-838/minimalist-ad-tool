@@ -1,4 +1,4 @@
-﻿// "Creating from scratch should not be showing old images": a Build queues a fresh image request per AI-image format and never
+// "Creating from scratch should not be showing old images": a Build queues a fresh image request per AI-image format and never
 // returns a library background for it; pack-only formats still render at once.
 import { test, after } from "node:test";
 import assert from "node:assert/strict";
@@ -29,7 +29,7 @@ test("a Build queues one request per AI-image format and shows no library image 
   for (const r of queued) {
     assert.equal(r.status, "queued");
     assert.ok(r.prompt.length > 40);
-    if (r.format === "texture") assert.ok(r.base_image, "the pack must appear: verified render as base");
+    if (r.format === "texture" || r.format === "in_hand") assert.ok(r.base_image, "the pack must appear: verified render as base");
     else { assert.equal(r.text_only, true); assert.equal(r.base_image, ""); }
   }
   for (const id of ids) {

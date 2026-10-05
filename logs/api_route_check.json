@@ -1,0 +1,42 @@
+{
+  "started": "2026-10-05T13:04:22.235Z",
+  "steps": [
+    {
+      "step": "queued before the render ran",
+      "visible": [
+        "render"
+      ]
+    },
+    {
+      "step": "render result",
+      "status": "done"
+    },
+    {
+      "step": "queued after the render",
+      "visible": [
+        "creator",
+        "texture",
+        "person"
+      ]
+    },
+    {
+      "step": "other images",
+      "ms": 2263,
+      "results": [
+        {
+          "format": "person",
+          "status": "done"
+        },
+        {
+          "format": "texture",
+          "status": "done"
+        },
+        {
+          "format": "creator",
+          "status": "done"
+        }
+      ]
+    }
+  ],
+  "api_calls": 4
+}

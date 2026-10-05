@@ -58,6 +58,9 @@ export function listQueued() {
     .filter((f) => /^\d.*\.json$/.test(f) && !/\.(result|progress)\.json$/.test(f))
     .map((f) => readJson(path.join(dir, f)))
     .filter((r) => r?.id && r.status === "queued" && !fs.existsSync(path.join(dir, `${r.id}.result.json`)))
+    // A request that waits for the product render ("after") is held until that render has a result (user, 2026-10-05:
+    // "after the product image is rendered correctly we send the request for rest of the images").
+    .filter((r) => !r.after || !fs.existsSync(path.join(dir, `${r.after}.json`)) || fs.existsSync(path.join(dir, `${r.after}.result.json`)))
     // Newest first: the Build the user is looking at right now gets its images before older, abandoned builds.
     .sort((a, b) => String(b.requested_at).localeCompare(String(a.requested_at)));
 }
@@ -76,6 +79,11 @@ export function resetStale() {
 const absPath = (p) => (path.isAbsolute(p) ? p : path.join(ROOT, p));
 // The photo to attach: a project file, or (when the product photo was a web address) a downloaded copy.
 async function baseFile(req) {
+  // Built on the product render this request waited for, when that render passed its label check.
+  if (req.after) {
+    const r = readJson(path.join(Q(), `${req.after}.result.json`));
+    if (r?.status === "done" && r.image && fs.existsSync(absPath(r.image))) return absPath(r.image);
+  }
   const b = req.base_image || "";
   if (!b) return "";
   if (/^https?:/i.test(b)) {
@@ -201,12 +209,12 @@ const SEL = {
   addFiles: 'button[aria-label="Add files and more"]:not([disabled])',
 };
 
-export function createStudio() {
+export function createStudio(opts = {}) {
   let page = null;
   const ensure = async () => {
     if (page?.alive) return page;
     try { await page?.close(); } catch { /* already gone */ }
-    page = await launch({ headless: false, profileDir: PROFILE });
+    page = await launch({ headless: false, profileDir: PROFILE, attachPort: opts.attachPort?.() || 0 });
     await page.goto("https://chatgpt.com/");
     return page;
   };
@@ -246,6 +254,7 @@ export function createStudio() {
     },
     async restart() { try { await page?.close(); } catch { /* ignore */ } page = null; },
     async close() { await api.restart(); },
+    get port() { return page?.port || 0; },
 
     async generate({ prompt, baseFile: file, outFile }) {
       const p = await ensure();
@@ -256,15 +265,22 @@ export function createStudio() {
       if (!(await p.waitFor(readyExpr, { timeout: 45000 }))) throw new Error("the ChatGPT page did not become ready");
       for (let i = 0; i < 3; i++) await key(p, "Escape", "Escape");
       if (file) {
-        let obj = null;
-        for (let i = 0; i < 15 && !obj; i++) {
-          const r = await p.send("Runtime.evaluate", { expression: "document.querySelectorAll('input[type=\"file\"]')[0]", returnByValue: false });
-          obj = r.result?.objectId || null;
-          if (!obj) await sleep(1000);
+        // The real pack photo must be attached, or the request is not sent (user, 2026-10-05: "the original image is
+        // missing, this shouldn't happen"). ChatGPT's page has several file inputs; each is tried until an attachment
+        // preview shows in the composer.
+        const attached = `(() => { const f = document.querySelector(${JSON.stringify(SEL.composer)})?.closest("form") || document; return f.querySelectorAll('img[src^="blob:"], img[src^="data:"], [data-testid*="attachment"], [aria-label*="Remove file" i], [aria-label*="remove attachment" i]').length; })()`;
+        let n = 0;
+        for (let i = 0; i < 15 && !n; i++) { n = (await p.send("Runtime.evaluate", { expression: "document.querySelectorAll('input[type=\"file\"]').length", returnByValue: true })).result?.value || 0; if (!n) await sleep(1000); }
+        if (!n) throw new Error("ChatGPT has no file box to attach the photo to");
+        let ok = false;
+        for (let k = 0; k < n && !ok; k++) {
+          const r = await p.send("Runtime.evaluate", { expression: `document.querySelectorAll('input[type="file"]')[${k}]`, returnByValue: false });
+          if (!r.result?.objectId) continue;
+          await p.send("DOM.setFileInputFiles", { objectId: r.result.objectId, files: [path.resolve(file)] });
+          for (let w = 0; w < 10 && !ok; w++) { await sleep(1000); ok = (await p.send("Runtime.evaluate", { expression: attached, returnByValue: true })).result?.value > 0; }
         }
-        if (!obj) throw new Error("ChatGPT has no file box to attach the photo to");
-        await p.send("DOM.setFileInputFiles", { objectId: obj, files: [path.resolve(file)] });
-        await sleep(4000);
+        if (!ok) throw new Error("the product photo did not attach in ChatGPT, so the request was not sent");
+        await sleep(2000);
       }
       await typeText(p, prompt);
       await clickSend(p);
@@ -290,7 +306,17 @@ export function createStudio() {
   // The send button stays disabled while the photo uploads; wait for it (up to 90 s).
   async function clickSend(p) {
       for (let i = 0; i < 45; i++) {
-        if (await p.eval((s) => Boolean(document.querySelector(s)), SEL.send)) { await click(p, SEL.send); return; }
+        if (await p.eval((s) => Boolean(document.querySelector(s)), SEL.send)) {
+          await click(p, SEL.send);
+          // ChatGPT's 2026 layout can swallow the positional click (the prompt then sits unsent until the 4-minute
+          // timeout). If the text is still in the box, press the button directly, then submit the form.
+          await sleep(2500);
+          const stillThere = () => p.eval((c) => { const el = document.querySelector(c); return Boolean(el && ((el.value ?? el.innerText) || "").trim().length); }, SEL.composer);
+          if (await stillThere()) await p.eval((s) => document.querySelector(s)?.click(), SEL.send);
+          await sleep(2500);
+          if (await stillThere()) await p.eval((s) => { const b = document.querySelector(s); (b?.form || b?.closest("form"))?.requestSubmit?.(b); }, SEL.send);
+          return;
+        }
         await sleep(2000);
       }
       throw new Error("the send button never became available");
@@ -357,8 +383,25 @@ async function main() {
   beat(); setInterval(beat, 30000).unref();
   let stop = false;
   process.on("SIGINT", async () => { stop = true; log("Stopping."); try { await studio.close?.(); } catch { /* ignore */ } process.exit(0); });
+  // Several images at once (user, 2026-10-05: "all shoot parallely"): up to STUDIO_PARALLEL requests run side by side,
+  // each in its own ChatGPT tab of the same signed-in browser. The product render still goes first: the other images
+  // of a build are held in the queue until it has a result (listQueued, "after").
+  const MAX = DRY() ? 1 : Math.max(1, Number(process.env.STUDIO_PARALLEL || 3));
+  const tabs = [studio], busy = new Set(), taken = new Set();
+  const slot = () => { for (let i = 0; i < MAX; i++) if (!busy.has(i)) return i; return -1; };
   while (!stop) {
-    try { await tick(studio); } catch (e) { log(`loop error (continuing): ${e.message}`); }
+    try {
+      let i;
+      while ((i = slot()) >= 0) {
+        const next = listQueued().find((r) => !taken.has(r.id));
+        if (!next) break;
+        if (!tabs[i]) { tabs[i] = createStudio({ attachPort: () => studio.port }); try { await withTimeout(tabs[i].open(), 60000, "opening a ChatGPT tab"); } catch (e) { log(`could not open tab ${i + 1}: ${e.message}`); tabs[i] = null; break; } }
+        if (!DRY() && !(await withTimeout(tabs[i].ready(), 45000, "checking the ChatGPT tab").catch(() => false))) { if (Date.now() - lastSignInNote > 60000) { log(SIGN_IN_MSG); lastSignInNote = Date.now(); } break; }
+        busy.add(i); taken.add(next.id);
+        handleRequest(next, tabs[i]).catch((e) => log(`[${next.id}] error: ${e.message}`)).finally(() => { busy.delete(i); });
+        await sleep(1500); // stagger the tabs a little so the uploads don't collide
+      }
+    } catch (e) { log(`loop error (continuing): ${e.message}`); }
     await sleep(POLL_MS);
   }
 }

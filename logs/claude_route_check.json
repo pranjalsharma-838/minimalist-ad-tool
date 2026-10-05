@@ -1,0 +1,28 @@
+{
+  "product": "kojic-mandelic-body-lotion",
+  "started": "2026-10-05T13:04:52.480Z",
+  "copy_mode": "model",
+  "copy_log": [],
+  "headline": "Helps Reduce Pigmentation, Dark Spots & Evens Skin Tone",
+  "formats_ready": 7,
+  "audiences": [
+    "People with dry skin"
+  ],
+  "judge": {
+    "format": "offer",
+    "coverage_model": true,
+    "verdict": "READY_FOR_REVIEW"
+  },
+  "api_calls": [
+    {
+      "model": "claude-opus-5-5",
+      "has_schema": true,
+      "system_chars": 3245
+    },
+    {
+      "model": "claude-opus-5-5",
+      "has_schema": true,
+      "system_chars": 24435
+    }
+  ]
+}

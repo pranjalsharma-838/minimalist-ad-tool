@@ -46,6 +46,7 @@ A tool that turns a product page into a ready-to-review static ad, and checks an
 | Transcript | `docs/TRANSCRIPT.md`, which opens with an index of what went wrong and how it was caught |
 | Prompts | `prompts/`, including one that rebuilds this pipeline for any brand |
 | Decision doc | `docs/DECISIONS.md` |
+| Final-day process log | `docs/PROCESS_LOG_2026-10-05.md` (what changed, why, how it was checked; logs in `logs/`) |
 | Rulebook changelog | `rules/CHANGELOG.md` (every rule change, from the commit history) |
 | Failure modes | `docs/FAILURE_MODES.md` |
 
